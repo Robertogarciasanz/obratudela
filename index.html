@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Excavaciones y Servicios Arturo — Movimiento de tierras, excavaciones, demoliciones, piscinas y alquiler de maquinaria en Tudela de Duero, Valladolid.">
+  <title>Excavaciones y Servicios Arturo | Tudela de Duero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --amarillo: #F5A800;
+      --amarillo-dark: #D4900A;
+      --negro: #111111;
+      --gris-oscuro: #1E1E1E;
+      --gris-medio: #2E2E2E;
+      --gris-claro: #F2F0EB;
+      --blanco: #FFFFFF;
+      --texto: #333333;
+      --radio: 4px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      color: var(--texto);
+      background: var(--blanco);
+      line-height: 1.6;
+    }
+
+    /* ========== NAV ========== */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--negro);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--amarillo);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--negro);
+      flex-shrink: 0;
+    }
+
+    .nav-nombre {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--blanco);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .nav-nombre span {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: var(--amarillo);
+      letter-spacing: 0.1em;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.25rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #CCCCCC;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radio);
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.activo {
+      color: var(--negro);
+      background: var(--amarillo);
+    }
+
+    .nav-cta {
+      background: var(--amarillo);
+      color: var(--negro) !important;
+      font-weight: 600;
+      padding: 0.5rem 1.1rem !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--amarillo-dark) !important;
+      color: var(--negro) !important;
+    }
+
+    /* hamburger */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--blanco);
+      transition: all 0.3s;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      background: var(--gris-oscuro);
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(245,168,0,0.12) 0%, transparent 60%),
+        repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 40px,
+          rgba(255,255,255,0.015) 40px,
+          rgba(255,255,255,0.015) 41px
+        );
+    }
+
+    .hero-accent {
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 500px;
+      height: 500px;
+      background: var(--amarillo);
+      opacity: 0.06;
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--amarillo);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--blanco);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--amarillo);
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: #BBBBBB;
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primario {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--amarillo);
+      color: var(--negro);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.85rem 1.8rem;
+      border-radius: var(--radio);
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primario:hover {
+      background: var(--amarillo-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secundario {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--blanco);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.85rem 1.8rem;
+      border-radius: var(--radio);
+      border: 2px solid rgba(255,255,255,0.3);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-secundario:hover {
+      border-color: var(--amarillo);
+      color: var(--amarillo);
+    }
+
+    /* ========== FRANJA DATOS ========== */
+    .datos-franja {
+      background: var(--amarillo);
+      padding: 1.2rem 2rem;
+    }
+
+    .datos-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .dato-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--negro);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .dato-item svg {
+      flex-shrink: 0;
+    }
+
+    /* ========== SECCIÓN SERVICIOS ========== */
+    .section {
+      padding: 5rem 2rem;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .section-eyebrow {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--amarillo-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--negro);
+      line-height: 1.1;
+    }
+
+    .section-title span {
+      color: var(--amarillo-dark);
+    }
+
+    .section-desc {
+      margin-top: 1rem;
+      color: #666;
+      max-width: 560px;
+      font-size: 1rem;
+    }
+
+    /* ========== TARJETA SERVICIO ========== */
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .servicio-card {
+      background: var(--gris-claro);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .servicio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .servicio-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .servicio-img-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .servicio-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .servicio-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      line-height: 1;
+    }
+
+    .servicio-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--negro);
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .servicio-lista {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      flex: 1;
+    }
+
+    .servicio-lista li {
+      font-size: 0.9rem;
+      color: #555;
+      padding-left: 1.2rem;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .servicio-lista li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--amarillo-dark);
+      font-size: 0.75rem;
+      top: 2px;
+    }
+
+    .servicio-precio {
+      margin-top: 1rem;
+      display: inline-block;
+      background: var(--negro);
+      color: var(--amarillo);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radio);
+      letter-spacing: 0.05em;
+    }
+
+    /* ========== CTA CENTRAL ========== */
+    .cta-section {
+      background: var(--negro);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--blanco);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .cta-section p {
+      color: #AAAAAA;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    .cta-section .telefono {
+      display: inline-block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--amarillo);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: #0A0A0A;
+      color: #888;
+      padding: 2.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      color: var(--blanco);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-info {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      color: #888;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--amarillo); }
+
+    /* ========== SECCIÓN OSCURA ========== */
+    .section-dark {
+      background: var(--gris-oscuro);
+    }
+
+    .section-dark .section-eyebrow { color: var(--amarillo); }
+    .section-dark .section-title { color: var(--blanco); }
+    .section-dark .section-desc { color: #999; }
+    .section-dark .servicio-card {
+      background: var(--gris-medio);
+    }
+    .section-dark .servicio-titulo { color: var(--blanco); }
+    .section-dark .servicio-lista li { color: #AAAAAA; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .nav-links.abierto {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0; right: 0;
+        background: var(--negro);
+        padding: 1rem;
+        gap: 0.25rem;
+        border-top: 2px solid var(--amarillo);
+      }
+      .nav-toggle { display: flex; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+
+    /* ========== ANIMACIÓN ENTRADA ========== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-content > * {
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-content > *:nth-child(1) { animation-delay: 0.05s; }
+    .hero-content > *:nth-child(2) { animation-delay: 0.15s; }
+    .hero-content > *:nth-child(3) { animation-delay: 0.25s; }
+    .hero-content > *:nth-child(4) { animation-delay: 0.35s; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">EA</div>
+    <div class="nav-nombre">Excavaciones Arturo<span>Tudela de Duero · Valladolid</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="activo">Inicio</a></li>
+    <li><a href="piscinas.html">Piscinas</a></li>
+    <li><a href="alquileres.html">Alquileres</a></li>
+    <li><a href="presupuestador.html">Presupuestador</a></li>
+    <li><a href="mailto:info@obratudela.com" class="nav-cta">Presupuesto</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Tudela de Duero · Valladolid · Castilla y León</p>
+    <h1>Movimiento de Tierras,<br><em>Excavaciones</em><br>y Demoliciones</h1>
+    <p class="hero-desc">La base de cualquier proyecto, desde viviendas unifamiliares hasta naves industriales. Más de 20 años de experiencia en la zona.</p>
+    <div class="hero-btns">
+      <a href="presupuestador.html" class="btn-primario">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        Pedir Presupuesto
+      </a>
+      <a href="tel:607444903" class="btn-secundario">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        607 444 903
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FRANJA DATOS -->
+<div class="datos-franja">
+  <div class="datos-inner">
+    <div class="dato-item">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Presupuesto Gratuito
+    </div>
+    <div class="dato-item">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Respuesta en 24h
+    </div>
+    <div class="dato-item">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      Tudela de Duero y alrededores
+    </div>
+    <div class="dato-item">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      607 444 903
+    </div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Nuestros Servicios</p>
+      <h2 class="section-title">Todo lo que <span>necesita</span> tu obra</h2>
+      <p class="section-desc">Ofrecemos servicios integrales de excavación, construcción y alquiler de maquinaria para proyectos de cualquier envergadura.</p>
+    </div>
+
+    <div class="servicios-grid">
+
+      <div class="servicio-card">
+        <div class="servicio-img-placeholder" style="background: linear-gradient(135deg,#2E2E2E,#1a1a1a);">
+          <span>🏗️</span>
+        </div>
+        <div class="servicio-body">
+          <div class="servicio-icon">⛏️</div>
+          <h3 class="servicio-titulo">Movimiento de Tierras</h3>
+          <ul class="servicio-lista">
+            <li>Vaciados y zanjas para cimentaciones, saneamientos o instalaciones eléctricas</li>
+            <li>Nivelación de parcelas agrícolas o urbanas</li>
+            <li>Desbroces y limpieza de solares</li>
+            <li>Demoliciones totales o parciales de edificios, muros o naves</li>
+            <li>Gestión de residuos y retirada de escombros a vertederos autorizados</li>
+          </ul>
+          <span class="servicio-precio">Desde 12 € / m²</span>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-img-placeholder" style="background: linear-gradient(135deg,#1e3a5f,#0d2035);">
+          <span>🏊</span>
+        </div>
+        <div class="servicio-body">
+          <div class="servicio-icon">🏊</div>
+          <h3 class="servicio-titulo">Construcción de Piscinas</h3>
+          <ul class="servicio-lista">
+            <li>Excavación del vaso con precisión máxima</li>
+            <li>Piscinas de obra o proyectadas en gresite o lámina armada</li>
+            <li>Preparación de playas, bordes perimetrales y solárium</li>
+            <li>Especializados en el clima y terreno de Tudela de Duero</li>
+          </ul>
+          <a href="piscinas.html" class="btn-primario" style="margin-top:1rem;font-size:0.8rem;padding:0.5rem 1rem;">Ver más →</a>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-img-placeholder" style="background: linear-gradient(135deg,#2d1a00,#1a0f00);">
+          <span>🚜</span>
+        </div>
+        <div class="servicio-body">
+          <div class="servicio-icon">🚜</div>
+          <h3 class="servicio-titulo">Alquiler de Maquinaria</h3>
+          <ul class="servicio-lista">
+            <li>Miniexcavadoras para espacios reducidos y jardines</li>
+            <li>Retroexcavadoras para movimientos de mayor envergadura</li>
+            <li>Con o sin operario, adaptado a tus necesidades</li>
+            <li>Consulta disponibilidad: 607 444 903</li>
+          </ul>
+          <a href="alquileres.html" class="btn-primario" style="margin-top:1rem;font-size:0.8rem;padding:0.5rem 1rem;">Ver más →</a>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-img-placeholder" style="background: linear-gradient(135deg,#1a2e1a,#0d1a0d);">
+          <span>🧱</span>
+        </div>
+        <div class="servicio-body">
+          <div class="servicio-icon">🧱</div>
+          <h3 class="servicio-titulo">Albañilería General</h3>
+          <ul class="servicio-lista">
+            <li>Cerramientos de parcelas: muros de bloque, piedra o vallados</li>
+            <li>Soleras de hormigón impreso o pulido para garajes y patios</li>
+            <li>Reformas integrales y rehabilitación de bodegas tradicionales</li>
+          </ul>
+          <a href="presupuestador.html" class="btn-primario" style="margin-top:1rem;font-size:0.8rem;padding:0.5rem 1rem;">Pedir presupuesto →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>¿Tienes un proyecto en mente?</h2>
+  <p>Contacta con nosotros y te damos presupuesto sin compromiso en menos de 24 horas.</p>
+  <a href="tel:607444903" class="telefono">📞 607 444 903</a>
+  <br>
+  <a href="presupuestador.html" class="btn-primario" style="margin-top:1rem;">Calculador de Presupuesto Online</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Excavaciones y Servicios Arturo</div>
+    <div class="footer-info">
+      Tudela de Duero, Valladolid · <a href="tel:607444903" style="color:var(--amarillo);text-decoration:none;">607 444 903</a>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="piscinas.html">Piscinas</a>
+      <a href="alquileres.html">Alquileres</a>
+      <a href="presupuestador.html">Presupuesto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Menú móvil
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('abierto'));
+</script>
+
+</body>
+</html>

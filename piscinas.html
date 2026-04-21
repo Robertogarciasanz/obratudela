@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Construcción de piscinas y albañilería general en Tudela de Duero. Excavación del vaso, piscinas de obra, gresite, lámina armada. Presupuesto gratuito.">
+  <title>Piscinas y Albañilería | Excavaciones Arturo · Tudela de Duero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --amarillo: #F5A800;
+      --amarillo-dark: #D4900A;
+      --negro: #111111;
+      --gris-oscuro: #1E1E1E;
+      --gris-medio: #2E2E2E;
+      --gris-claro: #F2F0EB;
+      --azul-piscina: #0077B6;
+      --azul-claro: #E0F4FF;
+      --blanco: #FFFFFF;
+      --texto: #333333;
+      --radio: 4px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--texto);
+      background: var(--blanco);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--negro);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-logo-icon {
+      width: 36px; height: 36px; background: var(--amarillo);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.1rem;
+      color: var(--negro); flex-shrink: 0;
+    }
+    .nav-nombre {
+      font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem;
+      color: var(--blanco); letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.2;
+    }
+    .nav-nombre span { display: block; font-size: 0.65rem; font-weight: 400; color: var(--amarillo); letter-spacing: 0.1em; }
+    .nav-links { display: flex; list-style: none; gap: 0.25rem; }
+    .nav-links a {
+      text-decoration: none; color: #CCCCCC;
+      font-family: 'Oswald', sans-serif; font-size: 0.85rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.4rem 0.9rem; border-radius: var(--radio);
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.activo { color: var(--negro); background: var(--amarillo); }
+    .nav-cta { background: var(--amarillo); color: var(--negro) !important; font-weight: 600; padding: 0.5rem 1.1rem !important; }
+    .nav-cta:hover { background: var(--amarillo-dark) !important; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--blanco); }
+
+    /* PAGE HERO */
+    .page-hero {
+      background: linear-gradient(135deg, #0d4f6e 0%, #023e56 60%, #011d26 100%);
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg, transparent, transparent 30px,
+        rgba(255,255,255,0.02) 30px, rgba(255,255,255,0.02) 31px
+      );
+    }
+    .page-hero-inner {
+      position: relative;
+      max-width: 1100px; margin: 0 auto;
+    }
+    .breadcrumb {
+      font-family: 'Oswald', sans-serif; font-size: 0.75rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(255,255,255,0.5); margin-bottom: 1rem;
+    }
+    .breadcrumb a { color: var(--amarillo); text-decoration: none; }
+    .page-hero h1 {
+      font-family: 'Oswald', sans-serif; font-weight: 700;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--blanco); text-transform: uppercase;
+      letter-spacing: 0.02em; line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 560px;
+    }
+
+    /* SECCIONES */
+    .section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-alt { background: var(--gris-claro); }
+    .section-dark { background: var(--gris-oscuro); }
+
+    .bloque-servicio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+    .bloque-servicio:last-child { margin-bottom: 0; }
+    .bloque-servicio.invertido { direction: rtl; }
+    .bloque-servicio.invertido > * { direction: ltr; }
+
+    .bloque-visual {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bloque-placeholder {
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .bloque-placeholder::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 12px;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+
+    .eyebrow {
+      font-family: 'Oswald', sans-serif; font-size: 0.75rem;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--azul-piscina); margin-bottom: 0.75rem;
+    }
+
+    .bloque-titulo {
+      font-family: 'Oswald', sans-serif; font-weight: 700;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      text-transform: uppercase; color: var(--negro);
+      line-height: 1.1; margin-bottom: 1rem;
+    }
+
+    .bloque-desc {
+      color: #666; font-size: 0.95rem;
+      margin-bottom: 1.5rem; line-height: 1.7;
+    }
+
+    .lista-check {
+      list-style: none; display: flex; flex-direction: column; gap: 0.6rem;
+    }
+    .lista-check li {
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      font-size: 0.95rem; color: #444;
+    }
+    .lista-check li::before {
+      content: '✓';
+      color: var(--azul-piscina);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Albañilería */
+    .albanileria-eyebrow { color: var(--amarillo-dark) !important; }
+    .albanileria-check li::before { color: var(--amarillo-dark); }
+
+    .btn-primario {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--amarillo); color: var(--negro);
+      font-family: 'Oswald', sans-serif; font-size: 0.95rem;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; padding: 0.85rem 1.8rem;
+      border-radius: var(--radio); transition: background 0.2s, transform 0.15s;
+      border: none; cursor: pointer;
+    }
+    .btn-primario:hover { background: var(--amarillo-dark); transform: translateY(-1px); }
+
+    /* CTA */
+    .cta-section {
+      background: var(--negro); padding: 4rem 2rem; text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700; color: var(--blanco);
+      text-transform: uppercase; margin-bottom: 0.75rem;
+    }
+    .cta-section p { color: #AAAAAA; margin-bottom: 2rem; }
+    .cta-section .telefono {
+      display: inline-block;
+      font-family: 'Oswald', sans-serif; font-size: 2rem;
+      font-weight: 700; color: var(--amarillo);
+      text-decoration: none; letter-spacing: 0.05em; margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background: #0A0A0A; color: #888; padding: 2.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap;
+    }
+    .footer-logo { font-family: 'Oswald', sans-serif; font-size: 1rem; color: var(--blanco); font-weight: 600; text-transform: uppercase; }
+    .footer-links { display: flex; gap: 1rem; }
+    .footer-links a { color: #888; text-decoration: none; font-size: 0.85rem; font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--amarillo); }
+
+    @media (max-width: 768px) {
+      .bloque-servicio { grid-template-columns: 1fr; gap: 2rem; }
+      .bloque-servicio.invertido { direction: ltr; }
+      .nav-links { display: none; }
+      .nav-links.abierto { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--negro); padding: 1rem; gap: 0.25rem; border-top: 2px solid var(--amarillo); }
+      .nav-toggle { display: flex; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">EA</div>
+    <div class="nav-nombre">Excavaciones Arturo<span>Tudela de Duero · Valladolid</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="piscinas.html" class="activo">Piscinas</a></li>
+    <li><a href="alquileres.html">Alquileres</a></li>
+    <li><a href="presupuestador.html">Presupuestador</a></li>
+    <li><a href="presupuestador.html" class="nav-cta">Presupuesto</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Inicio</a> / Piscinas y Albañilería</p>
+    <h1>Piscinas &amp;<br>Albañilería</h1>
+    <p>Construcción de piscinas a medida y servicios completos de albañilería en Tudela de Duero y alrededores.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+
+    <div class="bloque-servicio">
+      <div class="bloque-visual">
+        <div class="bloque-placeholder" style="background: linear-gradient(135deg,#0d4f6e,#023e56);">
+          🏊
+        </div>
+      </div>
+      <div class="bloque-texto">
+        <p class="eyebrow">Servicio Especializado</p>
+        <h2 class="bloque-titulo">Construcción de Piscinas</h2>
+        <p class="bloque-desc">Tudela de Duero es una zona con mucha demanda de piscinas por su clima cálido en verano y el tipo de terreno. Trabajamos con precisión para garantizar la durabilidad y el acabado de tu piscina.</p>
+        <ul class="lista-check">
+          <li>Excavación del vaso con precisión máxima para evitar sobrecostes en hormigón</li>
+          <li>Piscinas de obra o proyectadas con acabados en gresite o lámina armada</li>
+          <li>Preparación de playas: bordes perimetrales y zonas de solárium</li>
+          <li>Adaptadas al terreno y clima de la zona</li>
+          <li>Presupuesto sin compromiso en 24 horas</li>
+        </ul>
+        <a href="presupuestador.html" class="btn-primario" style="margin-top:1.5rem;">Pedir Presupuesto</a>
+      </div>
+    </div>
+
+    <div class="bloque-servicio invertido">
+      <div class="bloque-visual">
+        <div class="bloque-placeholder" style="background: linear-gradient(135deg,#2d1a00,#1a0f00);">
+          🧱
+        </div>
+      </div>
+      <div class="bloque-texto">
+        <p class="eyebrow albanileria-eyebrow">Construcción y Reforma</p>
+        <h2 class="bloque-titulo">Albañilería General</h2>
+        <p class="bloque-desc">Soluciones completas de construcción y rehabilitación para viviendas, parcelas y propiedades rurales en Castilla y León.</p>
+        <ul class="lista-check albanileria-check">
+          <li>Cerramientos de parcelas: muros de bloque, piedra o vallados metálicos</li>
+          <li>Soleras de hormigón impreso o pulido para garajes y patios</li>
+          <li>Reformas integrales de viviendas</li>
+          <li>Rehabilitación de bodegas tradicionales</li>
+          <li>Trabajos de mampostería y restauración de piedra</li>
+        </ul>
+        <a href="presupuestador.html" class="btn-primario" style="margin-top:1.5rem;">Pedir Presupuesto</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>¿Quieres tu piscina este verano?</h2>
+  <p>Llámanos ahora y te planificamos el proyecto a tiempo.</p>
+  <a href="tel:607444903" class="telefono">📞 607 444 903</a><br>
+  <a href="presupuestador.html" class="btn-primario">Calculador de Presupuesto Online</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Excavaciones y Servicios Arturo</div>
+    <div style="font-size:0.85rem;">Tudela de Duero, Valladolid · <a href="tel:607444903" style="color:var(--amarillo);text-decoration:none;">607 444 903</a></div>
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="piscinas.html">Piscinas</a>
+      <a href="alquileres.html">Alquileres</a>
+      <a href="presupuestador.html">Presupuesto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('abierto'));
+</script>
+</body>
+</html>

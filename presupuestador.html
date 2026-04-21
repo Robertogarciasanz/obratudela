@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calcula el presupuesto de tu obra en Tudela de Duero. Excavaciones, piscinas, demoliciones y alquiler de maquinaria. Presupuesto orientativo online.">
+  <title>Calculador de Presupuesto | Excavaciones Arturo · Tudela de Duero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --amarillo: #F5A800;
+      --amarillo-dark: #D4900A;
+      --negro: #111111;
+      --gris-oscuro: #1E1E1E;
+      --gris-medio: #2E2E2E;
+      --gris-claro: #F2F0EB;
+      --blanco: #FFFFFF;
+      --texto: #333333;
+      --radio: 4px;
+      --verde: #2E7D32;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; color: var(--texto); background: var(--gris-claro); line-height: 1.6; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--negro);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--amarillo); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--negro); flex-shrink: 0; }
+    .nav-nombre { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; color: var(--blanco); letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.2; }
+    .nav-nombre span { display: block; font-size: 0.65rem; font-weight: 400; color: var(--amarillo); letter-spacing: 0.1em; }
+    .nav-links { display: flex; list-style: none; gap: 0.25rem; }
+    .nav-links a { text-decoration: none; color: #CCCCCC; font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.4rem 0.9rem; border-radius: var(--radio); transition: color 0.2s, background 0.2s; }
+    .nav-links a:hover, .nav-links a.activo { color: var(--negro); background: var(--amarillo); }
+    .nav-cta { background: var(--amarillo); color: var(--negro) !important; font-weight: 600; padding: 0.5rem 1.1rem !important; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--blanco); }
+
+    .page-hero {
+      background: var(--negro);
+      padding: 3rem 2rem 3rem;
+    }
+    .page-hero-inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--amarillo); text-decoration: none; }
+    .page-hero h1 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--blanco); text-transform: uppercase; margin-bottom: 0.5rem; }
+    .page-hero p { color: rgba(255,255,255,0.65); font-size: 0.95rem; }
+
+    /* CALCULADOR */
+    .calc-wrapper {
+      max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .calc-form {
+      background: var(--blanco);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+
+    .form-section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      text-transform: uppercase; color: var(--negro);
+      letter-spacing: 0.05em;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--gris-claro);
+      margin-bottom: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .form-section-title:first-child { margin-top: 0; }
+
+    .form-group { margin-bottom: 1.25rem; }
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    select, input[type="number"], textarea {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      border: 2px solid #DDD;
+      border-radius: var(--radio);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.95rem;
+      color: var(--texto);
+      background: var(--blanco);
+      transition: border-color 0.2s;
+      appearance: auto;
+    }
+
+    select:focus, input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--amarillo);
+    }
+
+    textarea { resize: vertical; min-height: 90px; }
+
+    .radio-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .radio-option {
+      flex: 1; min-width: 100px;
+      cursor: pointer;
+    }
+    .radio-option input { display: none; }
+    .radio-label {
+      display: block;
+      text-align: center;
+      padding: 0.6rem 0.5rem;
+      border: 2px solid #DDD;
+      border-radius: var(--radio);
+      font-size: 0.85rem;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #777;
+      transition: all 0.15s;
+      cursor: pointer;
+    }
+    .radio-option input:checked + .radio-label {
+      border-color: var(--amarillo);
+      background: var(--amarillo);
+      color: var(--negro);
+    }
+
+    /* RESUMEN */
+    .calc-resumen {
+      background: var(--negro);
+      border-radius: 12px;
+      padding: 2rem;
+      position: sticky;
+      top: 80px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .resumen-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      text-transform: uppercase; color: var(--blanco);
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+
+    .resumen-linea {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.87rem;
+    }
+    .resumen-linea:last-of-type { border-bottom: none; }
+    .resumen-key { color: #AAAAAA; }
+    .resumen-val { color: var(--blanco); font-weight: 600; font-family: 'Oswald', sans-serif; font-size: 0.95rem; }
+
+    .resumen-total {
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 2px solid rgba(255,255,255,0.15);
+    }
+
+    .total-etiqueta {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: #888;
+      margin-bottom: 0.4rem;
+    }
+
+    .total-precio {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5rem; font-weight: 700;
+      color: var(--amarillo);
+      line-height: 1;
+    }
+
+    .total-aviso {
+      font-size: 0.75rem; color: #666;
+      margin-top: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .btn-primario {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--amarillo); color: var(--negro);
+      font-family: 'Oswald', sans-serif; font-size: 0.95rem;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; padding: 0.85rem 1.8rem;
+      border-radius: var(--radio); transition: background 0.2s, transform 0.15s;
+      border: none; cursor: pointer; width: 100%; justify-content: center;
+      margin-top: 1.25rem;
+    }
+    .btn-primario:hover { background: var(--amarillo-dark); }
+
+    .btn-email {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: transparent; color: #AAA;
+      font-family: 'Oswald', sans-serif; font-size: 0.85rem;
+      font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none; padding: 0.65rem 1rem;
+      border-radius: var(--radio); transition: color 0.2s;
+      border: 1px solid rgba(255,255,255,0.15); cursor: pointer;
+      width: 100%; justify-content: center;
+      margin-top: 0.6rem;
+    }
+    .btn-email:hover { color: var(--blanco); border-color: rgba(255,255,255,0.35); }
+
+    footer { background: #0A0A0A; color: #888; padding: 2.5rem 2rem; margin-top: 2rem; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-logo { font-family: 'Oswald', sans-serif; font-size: 1rem; color: var(--blanco); font-weight: 600; text-transform: uppercase; }
+    .footer-links { display: flex; gap: 1rem; }
+    .footer-links a { color: #888; text-decoration: none; font-size: 0.85rem; font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--amarillo); }
+
+    @media (max-width: 720px) {
+      .calc-grid { grid-template-columns: 1fr; }
+      .calc-resumen { position: static; }
+      .nav-links { display: none; }
+      .nav-links.abierto { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--negro); padding: 1rem; gap: 0.25rem; border-top: 2px solid var(--amarillo); }
+      .nav-toggle { display: flex; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">EA</div>
+    <div class="nav-nombre">Excavaciones Arturo<span>Tudela de Duero · Valladolid</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="piscinas.html">Piscinas</a></li>
+    <li><a href="alquileres.html">Alquileres</a></li>
+    <li><a href="presupuestador.html" class="activo">Presupuestador</a></li>
+    <li><a href="presupuestador.html" class="nav-cta">Presupuesto</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Inicio</a> / Presupuestador</p>
+    <h1>Calculador de Presupuesto</h1>
+    <p>Obtén una estimación orientativa al instante. Después te llamamos para confirmar el precio exacto.</p>
+  </div>
+</section>
+
+<div class="calc-wrapper">
+  <div class="calc-grid">
+
+    <!-- FORMULARIO -->
+    <div class="calc-form">
+
+      <p class="form-section-title">Tipo de Trabajo</p>
+
+      <div class="form-group">
+        <label for="servicio">Servicio principal</label>
+        <select id="servicio">
+          <option value="">— Selecciona un servicio —</option>
+          <option value="excavacion">Excavación / Vaciado</option>
+          <option value="zanja">Zanjas y canalizaciones</option>
+          <option value="demolicion">Demolición</option>
+          <option value="nivelacion">Nivelación de parcela</option>
+          <option value="desbroce">Desbroce / Limpieza de solar</option>
+          <option value="piscina">Construcción de piscina</option>
+          <option value="albanileria">Albañilería general</option>
+          <option value="alquiler_mini">Alquiler miniexcavadora</option>
+          <option value="alquiler_retro">Alquiler retroexcavadora</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="grupo-metros">
+        <label for="metros" id="label-metros">Superficie / Metros lineales</label>
+        <input type="number" id="metros" placeholder="0" min="0" value="0">
+      </div>
+
+      <div class="form-group" id="grupo-dias" style="display:none;">
+        <label for="dias">Número de días de alquiler</label>
+        <input type="number" id="dias" placeholder="1" min="1" value="1">
+      </div>
+
+      <p class="form-section-title">Detalles</p>
+
+      <div class="form-group">
+        <label>¿Con operario?</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="operario" value="si" checked>
+            <span class="radio-label">✅ Con operario</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="operario" value="no">
+            <span class="radio-label">🔑 Sin operario</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Dificultad del terreno</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="dificultad" value="facil" checked>
+            <span class="radio-label">Fácil</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="dificultad" value="medio">
+            <span class="radio-label">Medio</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="dificultad" value="dificil">
+            <span class="radio-label">Difícil</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Gestión de residuos</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="residuos" value="no" checked>
+            <span class="radio-label">No incluir</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="residuos" value="si">
+            <span class="radio-label">Incluir (+15%)</span>
+          </label>
+        </div>
+      </div>
+
+      <p class="form-section-title">Contacto (opcional)</p>
+
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+      </div>
+
+      <div class="form-group">
+        <label for="telefono-input">Teléfono</label>
+        <input type="tel" id="telefono-input" placeholder="6XX XXX XXX">
+      </div>
+
+      <div class="form-group">
+        <label for="notas">Notas adicionales</label>
+        <textarea id="notas" placeholder="Describe brevemente tu proyecto, ubicación, fechas..."></textarea>
+      </div>
+
+    </div>
+
+    <!-- RESUMEN -->
+    <div class="calc-resumen">
+      <div class="resumen-titulo">
+        📋 Resumen estimado
+      </div>
+
+      <div id="resumen-lineas">
+        <div class="resumen-linea">
+          <span class="resumen-key">Servicio</span>
+          <span class="resumen-val" id="r-servicio">—</span>
+        </div>
+        <div class="resumen-linea">
+          <span class="resumen-key">Cantidad</span>
+          <span class="resumen-val" id="r-cantidad">—</span>
+        </div>
+        <div class="resumen-linea">
+          <span class="resumen-key">Operario</span>
+          <span class="resumen-val" id="r-operario">Sí</span>
+        </div>
+        <div class="resumen-linea">
+          <span class="resumen-key">Terreno</span>
+          <span class="resumen-val" id="r-dificultad">Fácil</span>
+        </div>
+        <div class="resumen-linea">
+          <span class="resumen-key">Residuos</span>
+          <span class="resumen-val" id="r-residuos">No</span>
+        </div>
+      </div>
+
+      <div class="resumen-total">
+        <div class="total-etiqueta">Estimación orientativa</div>
+        <div class="total-precio" id="total-precio">0 €</div>
+        <p class="total-aviso">* Precio orientativo. El precio final puede variar según visita técnica.</p>
+      </div>
+
+      <a href="#" class="btn-primario" id="btn-llamar" onclick="return llamar();">
+        📞 Llamar: 607 444 903
+      </a>
+      <a href="#" class="btn-email" id="btn-email" onclick="return enviarEmail();">
+        ✉️ Enviar por email
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Excavaciones y Servicios Arturo</div>
+    <div style="font-size:0.85rem;">Tudela de Duero, Valladolid · <a href="tel:607444903" style="color:var(--amarillo);text-decoration:none;">607 444 903</a></div>
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="piscinas.html">Piscinas</a>
+      <a href="alquileres.html">Alquileres</a>
+      <a href="presupuestador.html">Presupuesto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Menú
+  const toggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => navLinks.classList.toggle('abierto'));
+
+  // Precios base por servicio (€/m² o €/ml o €/día)
+  const PRECIOS = {
+    excavacion:     { base: 12, unidad: 'm²', label: 'Excavación/Vaciado' },
+    zanja:          { base: 18, unidad: 'ml', label: 'Zanjas' },
+    demolicion:     { base: 15, unidad: 'm²', label: 'Demolición' },
+    nivelacion:     { base: 8,  unidad: 'm²', label: 'Nivelación parcela' },
+    desbroce:       { base: 4,  unidad: 'm²', label: 'Desbroce' },
+    piscina:        { base: 180, unidad: 'm²', label: 'Piscina (vaso)' },
+    albanileria:    { base: 35, unidad: 'm²', label: 'Albañilería' },
+    alquiler_mini:  { base: 220, unidad: 'día', label: 'Miniexcavadora', esAlquiler: true },
+    alquiler_retro: { base: 380, unidad: 'día', label: 'Retroexcavadora', esAlquiler: true },
+  };
+
+  const DIFICULTAD = { facil: 1.0, medio: 1.25, dificil: 1.5 };
+  const DIFICULTAD_LABEL = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' };
+
+  function calcular() {
+    const servicioKey = document.getElementById('servicio').value;
+    const metros = parseFloat(document.getElementById('metros').value) || 0;
+    const dias = parseFloat(document.getElementById('dias').value) || 1;
+    const operario = document.querySelector('input[name="operario"]:checked')?.value === 'si';
+    const dificultad = document.querySelector('input[name="dificultad"]:checked')?.value || 'facil';
+    const residuos = document.querySelector('input[name="residuos"]:checked')?.value === 'si';
+
+    const grupoMetros = document.getElementById('grupo-metros');
+    const grupoDias = document.getElementById('grupo-dias');
+    const labelMetros = document.getElementById('label-metros');
+
+    if (!servicioKey) {
+      document.getElementById('total-precio').textContent = '0 €';
+      document.getElementById('r-servicio').textContent = '—';
+      document.getElementById('r-cantidad').textContent = '—';
+      return;
+    }
+
+    const info = PRECIOS[servicioKey];
+    const esAlquiler = info.esAlquiler;
+
+    // Mostrar campo correcto
+    if (esAlquiler) {
+      grupoMetros.style.display = 'none';
+      grupoDias.style.display = 'block';
+    } else {
+      grupoMetros.style.display = 'block';
+      grupoDias.style.display = 'none';
+      labelMetros.textContent = `Cantidad (${info.unidad})`;
+    }
+
+    let base;
+    if (esAlquiler) {
+      base = info.base * dias;
+      if (!operario) base *= 0.65; // sin operario más barato
+    } else {
+      base = info.base * metros;
+      const mult = DIFICULTAD[dificultad];
+      base *= mult;
+      if (operario) base *= 1.0; // ya incluido
+    }
+
+    if (residuos) base *= 1.15;
+
+    // Actualizar resumen
+    document.getElementById('r-servicio').textContent = info.label;
+    document.getElementById('r-cantidad').textContent = esAlquiler
+      ? `${dias} día${dias !== 1 ? 's' : ''}`
+      : `${metros} ${info.unidad}`;
+    document.getElementById('r-operario').textContent = operario ? 'Sí' : 'No';
+    document.getElementById('r-dificultad').textContent = DIFICULTAD_LABEL[dificultad];
+    document.getElementById('r-residuos').textContent = residuos ? 'Sí (+15%)' : 'No';
+
+    const total = Math.round(base);
+    const desde = Math.round(total * 0.9);
+    const hasta = Math.round(total * 1.15);
+    document.getElementById('total-precio').textContent =
+      total > 0 ? `${desde.toLocaleString('es-ES')} – ${hasta.toLocaleString('es-ES')} €` : '0 €';
+  }
+
+  function llamar() {
+    window.location.href = 'tel:607444903';
+    return false;
+  }
+
+  function enviarEmail() {
+    const servicio = document.getElementById('r-servicio').textContent;
+    const cantidad = document.getElementById('r-cantidad').textContent;
+    const total = document.getElementById('total-precio').textContent;
+    const nombre = document.getElementById('nombre').value;
+    const tel = document.getElementById('telefono-input').value;
+    const notas = document.getElementById('notas').value;
+
+    const asunto = encodeURIComponent(`Solicitud de presupuesto – ${servicio}`);
+    const cuerpo = encodeURIComponent(
+      `Hola, me gustaría recibir un presupuesto:\n\nServicio: ${servicio}\nCantidad: ${cantidad}\nEstimación: ${total}\n\nNombre: ${nombre}\nTeléfono: ${tel}\nNotas: ${notas}\n\nGracias.`
+    );
+    window.location.href = `mailto:info@obratudela.com?subject=${asunto}&body=${cuerpo}`;
+    return false;
+  }
+
+  // Escuchar cambios
+  document.getElementById('servicio').addEventListener('change', calcular);
+  document.getElementById('metros').addEventListener('input', calcular);
+  document.getElementById('dias').addEventListener('input', calcular);
+  document.querySelectorAll('input[type="radio"]').forEach(r => r.addEventListener('change', calcular));
+</script>
+</body>
+</html>

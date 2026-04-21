@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alquiler de maquinaria de excavación en Tudela de Duero. Miniexcavadoras y retroexcavadoras con o sin operario. Consulta disponibilidad: 607 444 903.">
+  <title>Alquiler de Maquinaria | Excavaciones Arturo · Tudela de Duero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --amarillo: #F5A800;
+      --amarillo-dark: #D4900A;
+      --negro: #111111;
+      --gris-oscuro: #1E1E1E;
+      --gris-medio: #2E2E2E;
+      --gris-claro: #F2F0EB;
+      --naranja: #E05A00;
+      --blanco: #FFFFFF;
+      --texto: #333333;
+      --radio: 4px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; color: var(--texto); background: var(--blanco); line-height: 1.6; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--negro);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--amarillo); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--negro); flex-shrink: 0; }
+    .nav-nombre { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; color: var(--blanco); letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.2; }
+    .nav-nombre span { display: block; font-size: 0.65rem; font-weight: 400; color: var(--amarillo); letter-spacing: 0.1em; }
+    .nav-links { display: flex; list-style: none; gap: 0.25rem; }
+    .nav-links a { text-decoration: none; color: #CCCCCC; font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.4rem 0.9rem; border-radius: var(--radio); transition: color 0.2s, background 0.2s; }
+    .nav-links a:hover, .nav-links a.activo { color: var(--negro); background: var(--amarillo); }
+    .nav-cta { background: var(--amarillo); color: var(--negro) !important; font-weight: 600; padding: 0.5rem 1.1rem !important; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--blanco); }
+
+    .page-hero {
+      background: linear-gradient(135deg, #2d1a00 0%, #1a0f00 60%, #0d0800 100%);
+      padding: 4rem 2rem; position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(255,255,255,0.015) 30px, rgba(255,255,255,0.015) 31px);
+    }
+    .page-hero-inner { position: relative; max-width: 1100px; margin: 0 auto; }
+    .breadcrumb { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--amarillo); text-decoration: none; }
+    .page-hero h1 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(2rem, 5vw, 3.5rem); color: var(--blanco); text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.05; margin-bottom: 1rem; }
+    .page-hero p { color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 560px; }
+
+    .section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .maquinaria-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .maq-card {
+      background: var(--gris-claro);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .maq-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
+
+    .maq-header {
+      padding: 2.5rem 2rem 1.5rem;
+      position: relative;
+    }
+    .maq-icono {
+      font-size: 3.5rem;
+      display: block;
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+    .maq-nombre {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem; font-weight: 700;
+      text-transform: uppercase; color: var(--negro);
+      margin-bottom: 0.4rem;
+    }
+    .maq-subtitulo { font-size: 0.9rem; color: #777; }
+
+    .maq-body { padding: 0 2rem 2rem; }
+    .maq-lista { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .maq-lista li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.92rem; color: #444; }
+    .maq-lista li::before { content: '▸'; color: var(--amarillo-dark); font-size: 0.75rem; flex-shrink: 0; margin-top: 3px; }
+
+    .maq-tag {
+      display: inline-block;
+      background: var(--negro);
+      color: var(--amarillo);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem; font-weight: 600;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radio);
+      letter-spacing: 0.05em;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .opciones-seccion {
+      background: var(--negro);
+      border-radius: 12px;
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .opcion-item h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+      text-transform: uppercase; color: var(--amarillo);
+      margin-bottom: 0.5rem;
+    }
+    .opcion-item p { color: #AAAAAA; font-size: 0.92rem; line-height: 1.6; }
+
+    .section-eyebrow {
+      font-family: 'Oswald', sans-serif; font-size: 0.75rem;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--amarillo-dark); margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; text-transform: uppercase;
+      color: var(--negro); line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .section-desc { color: #666; max-width: 560px; font-size: 1rem; margin-bottom: 3rem; }
+
+    .btn-primario {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--amarillo); color: var(--negro);
+      font-family: 'Oswald', sans-serif; font-size: 0.95rem;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; padding: 0.85rem 1.8rem;
+      border-radius: var(--radio); transition: background 0.2s, transform 0.15s;
+      border: none; cursor: pointer;
+    }
+    .btn-primario:hover { background: var(--amarillo-dark); transform: translateY(-1px); }
+
+    .cta-section { background: var(--gris-oscuro); padding: 4rem 2rem; text-align: center; }
+    .cta-section h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: var(--blanco); text-transform: uppercase; margin-bottom: 0.75rem; }
+    .cta-section p { color: #AAAAAA; margin-bottom: 2rem; }
+    .cta-section .telefono { display: inline-block; font-family: 'Oswald', sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--amarillo); text-decoration: none; letter-spacing: 0.05em; margin-bottom: 1.5rem; }
+
+    footer { background: #0A0A0A; color: #888; padding: 2.5rem 2rem; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-logo { font-family: 'Oswald', sans-serif; font-size: 1rem; color: var(--blanco); font-weight: 600; text-transform: uppercase; }
+    .footer-links { display: flex; gap: 1rem; }
+    .footer-links a { color: #888; text-decoration: none; font-size: 0.85rem; font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--amarillo); }
+
+    @media (max-width: 680px) {
+      .opciones-seccion { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-links.abierto { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--negro); padding: 1rem; gap: 0.25rem; border-top: 2px solid var(--amarillo); }
+      .nav-toggle { display: flex; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">EA</div>
+    <div class="nav-nombre">Excavaciones Arturo<span>Tudela de Duero · Valladolid</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="piscinas.html">Piscinas</a></li>
+    <li><a href="alquileres.html" class="activo">Alquileres</a></li>
+    <li><a href="presupuestador.html">Presupuestador</a></li>
+    <li><a href="presupuestador.html" class="nav-cta">Presupuesto</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Inicio</a> / Alquiler de Maquinaria</p>
+    <h1>Alquiler de<br>Maquinaria</h1>
+    <p>Ponemos a tu disposición nuestra flota de maquinaria para tus obras y proyectos, con o sin operario.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">Nuestra Flota</p>
+    <h2 class="section-title">Maquinaria disponible</h2>
+    <p class="section-desc">Adaptamos el servicio a cada necesidad. Tanto si necesitas una pequeña máquina para el jardín como una retroexcavadora para grandes movimientos.</p>
+
+    <div class="maquinaria-grid">
+
+      <div class="maq-card">
+        <div class="maq-header" style="background: linear-gradient(135deg,#1a2e1a,#0d1a0d);">
+          <span class="maq-icono">🚜</span>
+          <div class="maq-nombre" style="color:white;">Miniexcavadora</div>
+          <div class="maq-subtitulo" style="color:rgba(255,255,255,0.6);">Compacta y versátil</div>
+        </div>
+        <div class="maq-body">
+          <ul class="maq-lista">
+            <li>Ideal para trabajos en espacios reducidos</li>
+            <li>Perfecta para jardines y patios privados</li>
+            <li>Mínimo impacto en el terreno circundante</li>
+            <li>Acceso a zonas de difícil entrada</li>
+          </ul>
+          <div>
+            <span class="maq-tag">Jardines</span>
+            <span class="maq-tag">Zanjas</span>
+            <span class="maq-tag">Cimientos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="maq-card">
+        <div class="maq-header" style="background: linear-gradient(135deg,#2d1a00,#1a0f00);">
+          <span class="maq-icono">🏗️</span>
+          <div class="maq-nombre" style="color:white;">Retroexcavadora</div>
+          <div class="maq-subtitulo" style="color:rgba(255,255,255,0.6);">Para grandes proyectos</div>
+        </div>
+        <div class="maq-body">
+          <ul class="maq-lista">
+            <li>Para movimientos de tierra de mayor envergadura</li>
+            <li>Vaciados, explanaciones y desmontajes</li>
+            <li>Carga y transporte de material</li>
+            <li>Demoliciones controladas</li>
+          </ul>
+          <div>
+            <span class="maq-tag">Vaciados</span>
+            <span class="maq-tag">Explanaciones</span>
+            <span class="maq-tag">Demoliciones</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="opciones-seccion">
+      <div class="opcion-item">
+        <h3>🧑‍🔧 Con Operario</h3>
+        <p>Nuestros operarios experimentados se hacen cargo del trabajo de principio a fin. Tú solo indicas qué necesitas y nosotros lo ejecutamos con precisión y seguridad.</p>
+      </div>
+      <div class="opcion-item">
+        <h3>🔑 Sin Operario</h3>
+        <p>Alquila la máquina y condúcela tú mismo si tienes experiencia. Entregamos la maquinaria en perfecto estado y te explicamos el funcionamiento básico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Consulta disponibilidad ahora</h2>
+  <p>Llámanos y te decimos qué máquina tenemos libre para tu fecha.</p>
+  <a href="tel:607444903" class="telefono">📞 607 444 903</a><br>
+  <a href="presupuestador.html" class="btn-primario">Pedir Presupuesto Online</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Excavaciones y Servicios Arturo</div>
+    <div style="font-size:0.85rem;">Tudela de Duero, Valladolid · <a href="tel:607444903" style="color:var(--amarillo);text-decoration:none;">607 444 903</a></div>
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="piscinas.html">Piscinas</a>
+      <a href="alquileres.html">Alquileres</a>
+      <a href="presupuestador.html">Presupuesto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('abierto'));
+</script>
+</body>
+</html>
