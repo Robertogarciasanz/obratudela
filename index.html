@@ -91,13 +91,19 @@
 
     /* ── HERO ── */
     #inicio {
-      min-height: 100vh;
+      min-height: 70vh;
       background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
                   url('excavadora mixta.png') center/cover no-repeat;
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
       text-align: center;
-      padding: 64px 24px 0;
+      padding: 64px 24px 40px;
+    }
+    @media (max-width: 600px) {
+      #inicio {
+        min-height: 55vh;
+        background-position: 60% center;
+      }
     }
     .hero-logo { width: 150px; border: 2px solid var(--orange); border-radius: 10px; margin-bottom: 24px; }
     .hero-title {
@@ -310,8 +316,7 @@
     <a href="#inicio">Inicio</a>
     <a href="#servicios">Servicios</a>
     <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="#contacto" style="font-size:0.72rem;">Contacto</a>
     <a href="presupuesto BCEXTREM 2026.html" class="btn-presupuesto">Presupuestos</a>
   </div>
   <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
@@ -324,7 +329,6 @@
   <a href="#servicios" onclick="toggleMenu()">Servicios</a>
   <a href="#galeria" onclick="toggleMenu()">Galería</a>
   <a href="#contacto" onclick="toggleMenu()">Contacto</a>
-  <a href="aviso-legal.html">Aviso legal</a>
   <a href="presupuesto BCEXTREM 2026.html">Presupuestos</a>
 </div>
 
@@ -397,17 +401,9 @@
       <img src="retro pequeña.png" alt="Retroexcavadora compacta">
       <div class="overlay"><span>Retroexcavadora compacta</span></div>
     </div>
-    <div class="galeria-item">
-      <img src="Gemini_Generated_Image_6odl9t6odl9t6odl.png" alt="Trabajos de excavación">
-      <div class="overlay"><span>Excavación de cimentación</span></div>
-    </div>
-    <div class="galeria-item">
+<div class="galeria-item">
       <img src="Gemini_Generated_Image_42yhq642yhq642yh.png" alt="Movimiento de tierras">
       <div class="overlay"><span>Movimiento de tierras</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="Gemini_Generated_Image_2l6l1g2l6l1g2l6l.png" alt="Preparación de terreno">
-      <div class="overlay"><span>Preparación de terreno</span></div>
     </div>
   </div>
 </section>
