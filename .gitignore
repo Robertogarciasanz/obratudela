@@ -11,3 +11,8 @@ Thumbs.db
 *.csv
 Nuevo documento de texto.txt
 BIND.txt
+
+# Node
+node_modules/
+package-lock.json
+package.json
