@@ -1,0 +1,12 @@
+# Editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Borradores y exports
+*reparado*.html
+*.csv
+*.txt
