@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--
+    ================================================
+    Topografía Pro — GPS Híbrido
+    Versión: 2.1
+    Autor:   Roberto Garcia Sanz
+    ================================================
+    v2.1 - Diálogos propios (sin alert/prompt/confirm)
+           Responsive mobile (botones 48px, fuentes)
+           Accesibilidad: zoom permitido, lang=es
+           DNS-prefetch para tiles satelitales
+           Font canvas fuera de bucles (rendimiento)
+           Object URL revocado tras descarga (memoria)
+    ================================================
+-->
+<html lang="es">
+<head>
+    <title>Topografía Pro v2.1 — Roberto Garcia Sanz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herramienta de medición de parcelas con GPS híbrido y exportación de plano PDF profesional.">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Topografía">
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="dns-prefetch" href="https://mt1.google.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: sans-serif; background: #2c3e50; }
+        body { display: flex; flex-direction: column; }
+        .controles { padding: 10px; display: flex; gap: 5px; flex-wrap: wrap; z-index: 1000; background: #2c3e50; }
+        .autor { width: 100%; color: #ecf0f1; font-size: .75em; padding: 2px 4px 6px; letter-spacing: .5px; }
+        .autor a { color: #ff6b00; text-decoration: none; }
+        #map { flex: 1; width: 100%; border-bottom: 2px solid #ddd; }
+        #info { padding: 12px; background: white; z-index: 1000; max-height: 35%; overflow-y: auto; border-radius: 15px 15px 0 0; }
+
+        .btn { border: none; padding: 12px 5px; border-radius: 6px; color: white; font-weight: bold; font-size: 12px; flex: 1; min-width: 80px; text-align: center; cursor: pointer; }
+        .btn-seguir  { background: #16a085; }
+        .btn-seguir.activo { background: #1abc9c; box-shadow: 0 0 0 3px rgba(26,188,156,0.5); }
+        .btn-coord   { background: #f39c12; }
+        .btn-add     { background: #3498db; }
+        .btn-print   { background: #8e44ad; }
+        .btn-borrar  { background: #e74c3c; }
+
+        #areaDisplay { font-size: 1.4em; font-weight: bold; color: #27ae60; display: block; }
+        #status { font-size: 0.8em; color: #555; margin-bottom: 5px; display: block; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
+        th, td { border: 1px solid #ddd; padding: 4px; text-align: left; }
+
+        /* ── DIÁLOGO PROPIO ── */
+        .dialog-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        .dialog-box {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 90vw;
+            width: 340px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .dialog-msg {
+            font-size: 15px;
+            color: #2c3e50;
+            margin: 0 0 16px;
+            line-height: 1.5;
+            white-space: pre-line;
+        }
+        .dialog-inp {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .dialog-inp:focus { border-color: #3498db; }
+        .dialog-btns { display: flex; gap: 8px; justify-content: flex-end; }
+        .dialog-btn { padding: 10px 20px; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; }
+        .dialog-btn-ok     { background: #3498db; color: white; }
+        .dialog-btn-ok:hover { background: #2980b9; }
+        .dialog-btn-cancel { background: #ecf0f1; color: #555; }
+        .dialog-btn-cancel:hover { background: #ddd; }
+
+        /* ── MÓVIL ── */
+        @media (max-width: 600px) {
+            .btn { font-size: 13px; min-height: 48px; padding: 10px 4px; }
+            .autor { font-size: 0.7em; }
+            #info { max-height: 42%; }
+            table { font-size: 12px; }
+            th, td { padding: 5px 4px; }
+            #status { font-size: 0.85em; }
+            #areaDisplay { font-size: 1.2em; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- DIÁLOGO PROPIO (reemplaza alert / confirm / prompt) -->
+<div class="dialog-overlay" id="dlgOverlay">
+    <div class="dialog-box">
+        <p class="dialog-msg" id="dlgMsg"></p>
+        <input class="dialog-inp" id="dlgInp" type="text" style="display:none">
+        <div class="dialog-btns">
+            <button class="dialog-btn dialog-btn-cancel" id="dlgCancel" style="display:none">Cancelar</button>
+            <button class="dialog-btn dialog-btn-ok" id="dlgOk">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+<div class="controles">
+    <div class="autor">📐 <strong>Topografía Pro</strong> &nbsp;·&nbsp; <a href="/">ObraTudela</a> &nbsp;·&nbsp; v2.1</div>
+    <button class="btn btn-seguir" id="btnSeguir" onclick="toggleSeguir()">🎯 POSICIÓN</button>
+    <button class="btn btn-add"    onclick="manualPunto()">➕ PUNTO</button>
+    <button class="btn btn-print"  onclick="generarPlanoJPG()">💾 PLANO</button>
+    <button class="btn btn-borrar" onclick="borrarTodo()">🗑️ RESET</button>
+</div>
+
+<div id="map"></div>
+
+<div id="info">
+    <span id="status">Esperando datos...</span>
+    <span id="areaDisplay">0.00 m²</span>
+    <table id="tablaCoord">
+        <thead><tr><th>Nº</th><th>Latitud</th><th>Longitud</th><th>Fuente</th></tr></thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
+</div>
+
+<script>
+    // ── SISTEMA DE DIÁLOGOS ──
+    function _dlg(msg, hasInput, hasCancel, placeholder) {
+        return new Promise(function(resolve) {
+            document.getElementById('dlgMsg').textContent = msg;
+            var inp = document.getElementById('dlgInp');
+            var cancelBtn = document.getElementById('dlgCancel');
+            inp.style.display = hasInput ? '' : 'none';
+            cancelBtn.style.display = hasCancel ? '' : 'none';
+            if (hasInput) { inp.value = ''; inp.placeholder = placeholder || ''; }
+            document.getElementById('dlgOverlay').style.display = 'flex';
+            if (hasInput) setTimeout(function() { inp.focus(); }, 50);
+
+            function ok() {
+                document.getElementById('dlgOverlay').style.display = 'none';
+                resolve(hasInput ? (inp.value.trim() || null) : true);
+            }
+            function cancel() {
+                document.getElementById('dlgOverlay').style.display = 'none';
+                resolve(hasInput ? null : false);
+            }
+            document.getElementById('dlgOk').onclick = ok;
+            cancelBtn.onclick = cancel;
+            if (hasInput) {
+                inp.onkeydown = function(e) {
+                    if (e.key === 'Enter') ok();
+                    if (e.key === 'Escape') cancel();
+                };
+            }
+        });
+    }
+    var dlgAlert   = function(msg)            { return _dlg(msg, false, false, ''); };
+    var dlgConfirm = function(msg)            { return _dlg(msg, false, true,  ''); };
+    var dlgPrompt  = function(msg, hint)      { return _dlg(msg, true,  true,  hint || ''); };
+
+    // ── MAPA ──
+    var map = L.map('map', { maxZoom: 22 }).setView([40, -3], 5);
+    L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', { maxZoom: 22, maxNativeZoom: 20 }).addTo(map);
+
+    var marcadores = [], poligono = null;
+    var seguirActivo = false, watchId = null;
+    var marcadorGPS = null, circuloGPS = null, gpsCongelado = false;
+
+    function toggleSeguir() {
+        seguirActivo ? desactivarSeguir() : activarSeguir();
+    }
+
+    function activarSeguir() {
+        if (!navigator.geolocation) {
+            dlgAlert("Tu dispositivo no soporta geolocalización.");
+            return;
+        }
+        seguirActivo = true;
+        gpsCongelado = false;
+        document.getElementById('btnSeguir').classList.add('activo');
+        document.getElementById('btnSeguir').innerText = '🎯 SIGUIENDO…';
+        document.getElementById('status').innerText = '📡 Buscando señal GPS…';
+
+        watchId = navigator.geolocation.watchPosition(
+            function(pos) {
+                var lat = pos.coords.latitude, lon = pos.coords.longitude, acc = pos.coords.accuracy;
+                if (!marcadorGPS) {
+                    circuloGPS = L.circle([lat, lon], {
+                        radius: acc, color: '#2980b9', fillColor: '#3498db',
+                        fillOpacity: 0.12, weight: 1, interactive: false
+                    }).addTo(map);
+                    var iconGPS = L.divIcon({
+                        className: '',
+                        html: '<div title="Arrastra para ajustar" style="width:22px;height:22px;border-radius:50%;background:#3498db;border:3px solid white;box-shadow:0 0 10px rgba(52,152,219,0.9);cursor:grab;"></div>',
+                        iconSize: [22, 22], iconAnchor: [11, 11]
+                    });
+                    marcadorGPS = L.marker([lat, lon], { icon: iconGPS, draggable: true, zIndexOffset: 1000 }).addTo(map);
+                    marcadorGPS.on('dragstart', function() {
+                        gpsCongelado = true;
+                        document.getElementById('status').innerText = '✋ Ajustando posición…';
+                    });
+                    marcadorGPS.on('dragend', function() {
+                        circuloGPS.setLatLng(marcadorGPS.getLatLng());
+                        document.getElementById('status').innerText = '📌 Posición ajustada · Pulsa ➕ PUNTO para fijar el vértice';
+                    });
+                    map.setView([lat, lon], Math.max(map.getZoom(), 19));
+                    nuevoMarcador(lat, lon, "GPS");
+                    document.getElementById('status').innerText = '📍 Punto A fijado · GPS activo · Muévete al siguiente vértice y pulsa ➕ PUNTO';
+                } else if (!gpsCongelado) {
+                    marcadorGPS.setLatLng([lat, lon]);
+                    circuloGPS.setLatLng([lat, lon]);
+                    circuloGPS.setRadius(acc);
+                    map.setView([lat, lon], Math.max(map.getZoom(), 19));
+                }
+                if (!gpsCongelado) {
+                    document.getElementById('status').innerText = '📡 GPS activo · Precisión: ±' + Math.round(acc) + ' m · Arrastra el punto azul para ajustar';
+                }
+            },
+            function(err) {
+                document.getElementById('status').innerText = '⚠️ Error GPS: ' + err.message;
+                desactivarSeguir();
+            },
+            { enableHighAccuracy: true, maximumAge: 2000, timeout: 10000 }
+        );
+    }
+
+    function desactivarSeguir() {
+        seguirActivo = false; gpsCongelado = false;
+        if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
+        if (marcadorGPS) { map.removeLayer(marcadorGPS); marcadorGPS = null; }
+        if (circuloGPS)  { map.removeLayer(circuloGPS);  circuloGPS  = null; }
+        document.getElementById('btnSeguir').classList.remove('activo');
+        document.getElementById('btnSeguir').innerText = '🎯 POSICIÓN';
+        document.getElementById('status').innerText = 'Seguimiento GPS desactivado.';
+    }
+
+    function manualPunto() {
+        if (marcadorGPS) {
+            var ll = marcadorGPS.getLatLng();
+            nuevoMarcador(ll.lat, ll.lng, "GPS");
+            gpsCongelado = false;
+            return;
+        }
+        var centro = map.getCenter();
+        nuevoMarcador(centro.lat, centro.lng, "Pantalla");
+    }
+
+    function nuevoMarcador(lat, lon, fuente) {
+        var idx = marcadores.length;
+        var label = String.fromCharCode(65 + idx);
+        var mkIcon = function(lbl) {
+            return L.divIcon({
+                className: '',
+                html: '<div style="background:#e74c3c;color:#fff;font-weight:bold;font-size:12px;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)">' + lbl + '</div>',
+                iconSize: [26, 26], iconAnchor: [13, 13]
+            });
+        };
+        var m = L.marker([lat, lon], { draggable: true, icon: mkIcon(label) }).addTo(map);
+        m._fuente = fuente;
+        m.on('dragend', calcularTodo);
+        m.on('click', async function() {
+            if (await dlgConfirm("¿Borrar punto " + label + "?")) {
+                map.removeLayer(m);
+                marcadores = marcadores.filter(function(i) { return i !== m; });
+                reconstruirIconos();
+                calcularTodo();
+            }
+        });
+        marcadores.push(m);
+        calcularTodo();
+        map.flyTo([lat, lon], 19);
+        document.getElementById('status').innerText = 'Punto ' + label + ' añadido.';
+    }
+
+    function reconstruirIconos() {
+        marcadores.forEach(function(m, idx) {
+            var label = String.fromCharCode(65 + idx);
+            m.setIcon(L.divIcon({
+                className: '',
+                html: '<div style="background:#e74c3c;color:#fff;font-weight:bold;font-size:12px;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)">' + label + '</div>',
+                iconSize: [26, 26], iconAnchor: [13, 13]
+            }));
+        });
+    }
+
+    function calcularTodo() {
+        var p = marcadores.map(function(m) { return m.getLatLng(); });
+        var html = "";
+        p.forEach(function(pt, i) {
+            html += '<tr><td>' + String.fromCharCode(65+i) + '</td><td>' + pt.lat.toFixed(6) + '</td><td>' + pt.lng.toFixed(6) + '</td><td>' + (marcadores[i]._fuente || '—') + '</td></tr>';
+        });
+        document.getElementById('cuerpoTabla').innerHTML = html;
+        if (poligono) map.removeLayer(poligono);
+        if (p.length > 2) {
+            poligono = L.polygon(p, { color: 'yellow', weight: 4, fillOpacity: 0.3 }).addTo(map);
+            var area = 0, r = 6378137;
+            for (var i = 0; i < p.length; i++) {
+                var p1 = p[i], p2 = p[(i+1) % p.length];
+                area += (p2.lng-p1.lng)*Math.PI/180 * (2 + Math.sin(p1.lat*Math.PI/180) + Math.sin(p2.lat*Math.PI/180));
+            }
+            var areaM2 = Math.abs(area * r * r / 2);
+            document.getElementById('areaDisplay').innerText = areaM2.toLocaleString('es-ES', { maximumFractionDigits: 2 }) + ' m²  ·  ' + (areaM2/10000).toFixed(4) + ' ha';
+        } else {
+            document.getElementById('areaDisplay').innerText = '0.00 m²';
+        }
+    }
+
+    function generarPlanoJPG() {
+        if (marcadores.length < 2) {
+            dlgAlert("Añade al menos 2 puntos para generar el plano.");
+            return;
+        }
+        document.getElementById('status').innerText = '⏳ Cargando jsPDF…';
+        if (typeof window.jspdf === 'undefined') {
+            var s = document.createElement('script');
+            s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+            s.onload = function() { _generarPDF(); };
+            s.onerror = function() { dlgAlert('Error cargando jsPDF. Comprueba la conexión.'); };
+            document.head.appendChild(s);
+        } else {
+            _generarPDF();
+        }
+    }
+
+    function _generarPDF() {
+        document.getElementById('status').innerText = '⏳ Encuadrando parcela…';
+        var group = L.featureGroup(marcadores);
+        map.fitBounds(group.getBounds().pad(0.25));
+
+        setTimeout(function() {
+            var bounds = group.getBounds();
+            var zoom = Math.min(map.getBoundsZoom(bounds.pad(0.25)), 20);
+
+            function ll2tile(lat, lng, z) {
+                var n = Math.pow(2, z);
+                return { x: Math.floor((lng+180)/360*n), y: Math.floor((1-Math.log(Math.tan(lat*Math.PI/180)+1/Math.cos(lat*Math.PI/180))/Math.PI)/2*n) };
+            }
+            var nw = bounds.getNorthWest(), se = bounds.getSouthEast();
+            var tNW = ll2tile(nw.lat, nw.lng, zoom), tSE = ll2tile(se.lat, se.lng, zoom);
+            tNW.x -= 1; tNW.y -= 1; tSE.x += 1; tSE.y += 1;
+
+            var TILE = 256, tilesX = tSE.x-tNW.x+1, tilesY = tSE.y-tNW.y+1;
+            var mc = document.createElement('canvas');
+            mc.width = tilesX*TILE; mc.height = tilesY*TILE;
+            var mCtx = mc.getContext('2d');
+            mCtx.fillStyle = '#ccc'; mCtx.fillRect(0, 0, mc.width, mc.height);
+
+            function ll2px(lat, lng) {
+                var n = Math.pow(2, zoom);
+                var tx = (lng+180)/360*n;
+                var ty = (1-Math.log(Math.tan(lat*Math.PI/180)+1/Math.cos(lat*Math.PI/180))/Math.PI)/2*n;
+                return { x: (tx-tNW.x)*TILE, y: (ty-tNW.y)*TILE };
+            }
+
+            var total = tilesX*tilesY, cargados = 0;
+            for (var tx = tNW.x; tx <= tSE.x; tx++) {
+                for (var ty2 = tNW.y; ty2 <= tSE.y; ty2++) {
+                    (function(tx2, ty3) {
+                        var img = new Image();
+                        img.crossOrigin = 'anonymous';
+                        img.onload = function() {
+                            mCtx.drawImage(img, (tx2-tNW.x)*TILE, (ty3-tNW.y)*TILE);
+                            if (++cargados === total) dibujarYExportar();
+                            else document.getElementById('status').innerText = '⏳ Tiles ' + cargados + '/' + total + '…';
+                        };
+                        img.onerror = function() { if (++cargados === total) dibujarYExportar(); };
+                        img.src = 'https://mt1.google.com/vt/lyrs=s&x='+tx2+'&y='+ty3+'&z='+zoom;
+                    })(tx, ty2);
+                }
+            }
+
+            function dibujarYExportar() {
+                document.getElementById('status').innerText = '✏️ Dibujando polígono…';
+                var p = marcadores.map(function(m) { return m.getLatLng(); });
+
+                // Polígono
+                if (p.length > 2) {
+                    var pts = p.map(function(ll) { return ll2px(ll.lat, ll.lng); });
+                    mCtx.beginPath(); mCtx.moveTo(pts[0].x, pts[0].y);
+                    for (var i=1; i<pts.length; i++) mCtx.lineTo(pts[i].x, pts[i].y);
+                    mCtx.closePath();
+                    mCtx.strokeStyle = '#f1c40f'; mCtx.lineWidth = 6; mCtx.stroke();
+                    mCtx.fillStyle = 'rgba(241,196,15,0.18)'; mCtx.fill();
+                } else if (p.length === 2) {
+                    var pts = p.map(function(ll) { return ll2px(ll.lat, ll.lng); });
+                    mCtx.beginPath(); mCtx.moveTo(pts[0].x, pts[0].y); mCtx.lineTo(pts[1].x, pts[1].y);
+                    mCtx.strokeStyle = '#f1c40f'; mCtx.lineWidth = 6; mCtx.stroke();
+                }
+
+                // Distancias — font fijada una vez fuera del bucle
+                mCtx.font = 'bold 20px sans-serif';
+                mCtx.textAlign = 'center';
+                mCtx.textBaseline = 'alphabetic';
+                for (var i=0; i<p.length; i++) {
+                    var j = (i+1)%p.length;
+                    if (p.length < 3 && j === 0) continue;
+                    var pt1 = ll2px(p[i].lat, p[i].lng), pt2 = ll2px(p[j].lat, p[j].lng);
+                    var mx = (pt1.x+pt2.x)/2, my = (pt1.y+pt2.y)/2;
+                    var R=6371000, dLat=(p[j].lat-p[i].lat)*Math.PI/180, dLon=(p[j].lng-p[i].lng)*Math.PI/180;
+                    var a = Math.sin(dLat/2)*Math.sin(dLat/2) + Math.cos(p[i].lat*Math.PI/180)*Math.cos(p[j].lat*Math.PI/180)*Math.sin(dLon/2)*Math.sin(dLon/2);
+                    var dist = R*2*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                    mCtx.strokeStyle = 'rgba(255,255,255,1)'; mCtx.lineWidth = 5;
+                    mCtx.strokeText(dist.toFixed(1)+' m', mx, my-10);
+                    mCtx.fillStyle = '#1a252f'; mCtx.fillText(dist.toFixed(1)+' m', mx, my-10);
+                }
+
+                // Marcadores — font fijada una vez fuera del bucle
+                mCtx.font = 'bold 18px sans-serif';
+                mCtx.textAlign = 'center'; mCtx.textBaseline = 'middle';
+                p.forEach(function(ll, i) {
+                    var pt = ll2px(ll.lat, ll.lng), lbl = String.fromCharCode(65+i);
+                    mCtx.beginPath(); mCtx.arc(pt.x, pt.y, 18, 0, Math.PI*2);
+                    mCtx.fillStyle = '#e74c3c'; mCtx.fill();
+                    mCtx.strokeStyle = '#fff'; mCtx.lineWidth = 3; mCtx.stroke();
+                    mCtx.fillStyle = '#fff'; mCtx.fillText(lbl, pt.x, pt.y);
+                });
+
+                // Norte
+                mCtx.font = 'bold 24px sans-serif';
+                mCtx.textAlign = 'left'; mCtx.textBaseline = 'top';
+                mCtx.strokeStyle = 'rgba(0,0,0,0.7)'; mCtx.lineWidth = 5;
+                mCtx.strokeText('N ↑', 18, 18); mCtx.fillStyle = '#fff'; mCtx.fillText('N ↑', 18, 18);
+
+                // PDF
+                document.getElementById('status').innerText = '📄 Generando PDF…';
+                var jsPDF = window.jspdf.jsPDF;
+                var doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
+                var PW = 297, PH = 210, M = 8;
+
+                doc.setFillColor(44,62,80); doc.rect(0,0,PW,16,'F');
+                doc.setTextColor(255,255,255);
+                doc.setFontSize(13); doc.setFont('helvetica','bold'); doc.text('Topografía Pro v2.1', M, 10.5);
+                doc.setFontSize(10); doc.setFont('helvetica','normal'); doc.text('Técnico: Roberto Garcia Sanz', 90, 10.5);
+                doc.text(new Date().toLocaleDateString('es-ES'), PW-M, 10.5, {align:'right'});
+
+                var mapaY = 18, mapaH = PH-mapaY-M, tablaW = 80;
+                var mapaW = PW-M*2-tablaW-4;
+                var pxNW = ll2px(nw.lat, nw.lng), pxSE = ll2px(se.lat, se.lng);
+                var pad = Math.round(TILE*0.4);
+                var cx = Math.max(0, pxNW.x-pad), cy = Math.max(0, pxNW.y-pad);
+                var cw = Math.min(mc.width, pxSE.x+pad)-cx, ch = Math.min(mc.height, pxSE.y+pad)-cy;
+                var crop = document.createElement('canvas');
+                crop.width = cw; crop.height = ch;
+                crop.getContext('2d').drawImage(mc, cx, cy, cw, ch, 0, 0, cw, ch);
+                var escH = (ch/cw)*mapaW, mapaWfinal, mapaHfinal;
+                if (escH <= mapaH) { mapaWfinal = mapaW; mapaHfinal = escH; }
+                else { mapaHfinal = mapaH; mapaWfinal = (cw/ch)*mapaH; }
+
+                doc.addImage(crop.toDataURL('image/jpeg', 0.95), 'JPEG', M, mapaY, mapaWfinal, mapaHfinal);
+                doc.setDrawColor(80,80,80); doc.setLineWidth(0.3); doc.rect(M, mapaY, mapaWfinal, mapaHfinal);
+
+                var tx0 = M+mapaWfinal+4, ty = mapaY;
+                var areaText = document.getElementById('areaDisplay').innerText;
+                doc.setFontSize(10); doc.setFont('helvetica','bold'); doc.setTextColor(44,62,80);
+                doc.text('Superficie:', tx0, ty+5); ty += 7;
+                doc.setFontSize(9); doc.setTextColor(39,174,96); doc.text(areaText, tx0, ty+4); ty += 9;
+                doc.setFillColor(44,62,80); doc.rect(tx0, ty, tablaW, 7, 'F');
+                doc.setTextColor(255,255,255); doc.setFontSize(8); doc.setFont('helvetica','bold');
+                var colX = [tx0+1, tx0+8, tx0+33, tx0+58];
+                ['Vért.','Latitud','Longitud','Fuente'].forEach(function(h,i){ doc.text(h, colX[i], ty+5); });
+                ty += 7;
+                doc.setFont('helvetica','normal'); doc.setFontSize(8);
+                marcadores.forEach(function(m, i) {
+                    var ll = m.getLatLng(), lbl = String.fromCharCode(65+i);
+                    if (i%2===0) { doc.setFillColor(245,245,245); doc.rect(tx0, ty, tablaW, 6, 'F'); }
+                    doc.setTextColor(50,50,50);
+                    [lbl, ll.lat.toFixed(6), ll.lng.toFixed(6), m._fuente||'—'].forEach(function(v,c){ doc.text(v, colX[c], ty+4.5); });
+                    ty += 6;
+                });
+                doc.setFontSize(7); doc.setTextColor(150,150,150);
+                doc.text('Topografía Pro v2.1 · ObraTudela · obratudela.com', PW/2, PH-3, {align:'center'});
+
+                var pdfBlob = doc.output('blob');
+                var url = URL.createObjectURL(pdfBlob);
+                var win = window.open(url, '_blank');
+                if (!win) {
+                    var a = document.createElement('a');
+                    a.href = url; a.download = 'parcela_'+new Date().toISOString().slice(0,10)+'.pdf'; a.click();
+                }
+                setTimeout(function() { URL.revokeObjectURL(url); }, 30000);
+                document.getElementById('status').innerText = '✅ PDF generado correctamente.';
+
+                // Enviar datos a WhatsApp
+                var waLineas = marcadores.map(function(m, i) {
+                    var ll = m.getLatLng();
+                    return String.fromCharCode(65+i) + ': ' + ll.lat.toFixed(6) + ', ' + ll.lng.toFixed(6);
+                }).join('\n');
+                var waMsg = encodeURIComponent(
+                    '📐 NUEVA MEDICIÓN DE PARCELA\n' +
+                    '📅 ' + new Date().toLocaleDateString('es-ES') + '\n' +
+                    '📊 Superficie: ' + areaText + '\n' +
+                    '📍 Vértices:\n' + waLineas
+                );
+                setTimeout(function() {
+                    window.open('https://wa.me/34607444903?text=' + waMsg, '_blank');
+                }, 1000);
+            }
+        }, 900);
+    }
+
+    async function borrarTodo() {
+        if (await dlgConfirm("¿Borrar todos los puntos?")) {
+            marcadores.forEach(function(m) { map.removeLayer(m); });
+            marcadores = [];
+            if (poligono) { map.removeLayer(poligono); poligono = null; }
+            if (seguirActivo) desactivarSeguir();
+            calcularTodo();
+            map.setView([40, -3], 5);
+            document.getElementById('status').innerText = 'Borrado.';
+        }
+    }
+
+    // Auto-activar GPS al cargar
+    window.addEventListener('load', function() {
+        activarSeguir();
+    });
+</script>
+</body>
+</html>
