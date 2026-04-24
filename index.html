@@ -304,12 +304,17 @@
     }
     .contacto-cta:hover { background: var(--orange2); transform: scale(1.03); }
 
-    .contacto-mapa {
-      border-radius: 6px; overflow: hidden;
-      border: 1px solid var(--border);
-      aspect-ratio: 4/3;
+    .contacto-maps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+      margin-top: 8px;
     }
-    .contacto-mapa iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .contacto-maps-link:hover { color: var(--orange); }
 
     /* ── FOOTER ── */
     footer {
@@ -494,12 +499,9 @@
       </div>
       <a href="presupuesto_v2.html" class="contacto-cta">Abrir gestor de presupuestos</a>
     </div>
-    <div class="contacto-mapa">
-      <iframe
-        data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.9!2d-4.5509!3d41.5817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd478d8e8c0c3a3f%3A0x0!2sTudela%20de%20Duero%2C%20Valladolid!5e0!3m2!1ses!2ses!4v1713916800000"
-        allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-        title="Ubicación ObraTudela" id="mapaIframe"></iframe>
-    </div>
+    <a href="https://maps.google.com/?q=Calle+Manzano+2+Tudela+de+Duero+Valladolid" target="_blank" rel="noopener" class="contacto-maps-link">
+      📍 Ver en Google Maps — Calle Manzano, 2 · Tudela de Duero
+    </a>
   </div>
 </section>
 
@@ -526,18 +528,6 @@
     a.addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
   });
 
-  // Carga diferida del mapa: sólo cuando el usuario hace scroll hasta la sección
-  const mapaEl = document.getElementById('mapaIframe');
-  if (mapaEl && 'IntersectionObserver' in window) {
-    new IntersectionObserver((entries, obs) => {
-      if (entries[0].isIntersecting) {
-        mapaEl.src = mapaEl.dataset.src;
-        obs.disconnect();
-      }
-    }, { rootMargin: '200px' }).observe(mapaEl);
-  } else if (mapaEl) {
-    mapaEl.src = mapaEl.dataset.src;
-  }
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0541fc0e492f4807832c5c2e63e9d1f2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
