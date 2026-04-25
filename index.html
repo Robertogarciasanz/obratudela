@@ -106,6 +106,32 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--orange); }
+
+    /* ── TOPOGRAFÍA PRO ── */
+    #topografia { background: var(--surface); }
+    .topo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+      max-width: 1200px; margin: 0 auto 56px;
+    }
+    .topo-feature {
+      background: var(--bg);
+      padding: 40px 32px;
+      border-left: 3px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .topo-feature:hover { border-left-color: var(--orange); background: #141414; }
+    .topo-feature-icon { font-size: 2.2rem; margin-bottom: 16px; }
+    .topo-feature h3 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.5rem;
+      color: var(--orange);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .topo-feature p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+    .topo-cta-wrap { text-align: center; }
     .nav-links .btn-presupuesto {
       background: var(--orange);
       color: #000;
@@ -366,6 +392,7 @@
     <a href="#servicios">Servicios</a>
     <a href="#galeria">Galería</a>
     <a href="#contacto" style="font-size:0.72rem;">Contacto</a>
+    <a href="#topografia" style="font-size:0.72rem;">Topografía</a>
     <a href="presupuesto_v2.html" class="btn-presupuesto">Presupuestos</a>
   </div>
   <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
@@ -378,6 +405,7 @@
   <a href="#servicios" onclick="toggleMenu()">Servicios</a>
   <a href="#galeria" onclick="toggleMenu()">Galería</a>
   <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+  <a href="#topografia" onclick="toggleMenu()">Topografía</a>
   <a href="presupuesto_v2.html">Presupuestos</a>
 </div>
 
@@ -457,6 +485,50 @@
       <img src="Gemini_Generated_Image_42yhq642yhq642yh.webp" alt="Movimiento de tierras" width="2752" height="1536" loading="lazy" decoding="async">
       <div class="overlay"><span>Movimiento de tierras</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ── TOPOGRAFÍA PRO ── -->
+<section id="topografia">
+  <div class="section-header">
+    <p class="section-tag">Herramienta digital</p>
+    <h2 class="section-title">Topografía Pro</h2>
+    <p class="section-desc">Mide parcelas con GPS en tiempo real y genera planos PDF profesionales desde cualquier móvil. Sin instalar nada.</p>
+  </div>
+  <div class="topo-grid">
+    <div class="topo-feature">
+      <div class="topo-feature-icon">🎯</div>
+      <h3>GPS en tiempo real</h3>
+      <p>Localización automática al abrir la app. Mueve el marcador azul para ajustar la posición cuando el GPS no es exacto.</p>
+    </div>
+    <div class="topo-feature">
+      <div class="topo-feature-icon">📍</div>
+      <h3>Marcadores de vértices</h3>
+      <p>Añade los puntos de la parcela uno a uno, etiquetados A, B, C… Arrástralos para corregir su posición.</p>
+    </div>
+    <div class="topo-feature">
+      <div class="topo-feature-icon">📐</div>
+      <h3>Cálculo de superficie</h3>
+      <p>La superficie se calcula automáticamente en m² y hectáreas con cada punto que añades.</p>
+    </div>
+    <div class="topo-feature">
+      <div class="topo-feature-icon">🛰️</div>
+      <h3>Mapa satelital</h3>
+      <p>Fondo de imagen satelital de alta resolución para identificar límites y referencias visuales con precisión.</p>
+    </div>
+    <div class="topo-feature">
+      <div class="topo-feature-icon">💾</div>
+      <h3>Plano PDF profesional</h3>
+      <p>Genera un plano en A4 con imagen satelital, polígono de la parcela, distancias entre vértices y tabla de coordenadas.</p>
+    </div>
+    <div class="topo-feature">
+      <div class="topo-feature-icon">💬</div>
+      <h3>Envío por WhatsApp</h3>
+      <p>Al generar el plano, los datos de la medición se envían automáticamente al técnico responsable por WhatsApp.</p>
+    </div>
+  </div>
+  <div class="topo-cta-wrap">
+    <a href="/topografia/" class="btn-primary">▶ Abrir Topografía Pro</a>
   </div>
 </section>
 

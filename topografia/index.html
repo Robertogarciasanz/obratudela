@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topografía Pro — Medición de Parcelas con GPS | ObraTudela</title>
+    <meta name="description" content="Herramienta profesional para medir parcelas con GPS en tiempo real y generar planos PDF con imagen satelital.">
+    <meta name="theme-color" content="#2c3e50">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #1a252f; color: #ecf0f1; min-height: 100vh; }
+
+        .top-bar {
+            background: #0f1923;
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #2c3e50;
+        }
+        .top-bar a {
+            color: #ff6b00;
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .top-bar a:hover { color: #ff8c38; }
+        .top-bar span { color: #4a4a4a; font-size: 0.82rem; }
+
+        header {
+            background: #2c3e50;
+            padding: 40px 24px 32px;
+            text-align: center;
+            border-bottom: 3px solid #27ae60;
+        }
+        .logo { font-size: 52px; margin-bottom: 12px; }
+        header h1 { font-size: 2rem; font-weight: 800; letter-spacing: 1px; color: #fff; }
+        header p { font-size: 1rem; color: #95a5a6; margin-top: 8px; }
+
+        .cta {
+            display: block;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 18px 32px;
+            border-radius: 10px;
+            margin: 32px auto 0;
+            max-width: 320px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .cta:hover { background: #2ecc71; transform: scale(1.03); }
+
+        .features {
+            padding: 40px 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .features h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid #2c3e50;
+        }
+        .feature:last-child { border-bottom: none; }
+        .feature-icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+        .feature h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #ecf0f1; }
+        .feature p  { font-size: 0.875rem; color: #95a5a6; line-height: 1.5; }
+
+        .cta-bottom {
+            padding: 32px 24px 48px;
+            text-align: center;
+        }
+
+        footer {
+            background: #0f1923;
+            padding: 20px 24px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            border-top: 1px solid #2c3e50;
+        }
+        footer a { color: #ff6b00; text-decoration: none; }
+        footer a:hover { color: #ff8c38; }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="/">← Volver a ObraTudela</a>
+    <span>|</span>
+    <span>Herramienta de medición de parcelas</span>
+</div>
+
+<header>
+    <div class="logo">📐</div>
+    <h1>Topografía Pro</h1>
+    <p>Medición de parcelas con GPS en tiempo real</p>
+    <a href="app.html" class="cta">▶ Abrir aplicación</a>
+</header>
+
+<div class="features">
+    <h2>Funcionalidades</h2>
+
+    <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <div>
+            <h3>GPS en tiempo real</h3>
+            <p>Sigue tu posición con alta precisión. Mueve el marcador azul para ajustar la ubicación cuando el GPS no es exacto.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">📍</div>
+        <div>
+            <h3>Marcadores de vértices</h3>
+            <p>Añade los puntos de la parcela uno a uno. Etiquetados A, B, C… Puedes arrastrarlos para corregir su posición.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">📐</div>
+        <div>
+            <h3>Cálculo de superficie</h3>
+            <p>La superficie se calcula automáticamente en m² y hectáreas con cada punto añadido.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🛰️</div>
+        <div>
+            <h3>Mapa satelital</h3>
+            <p>Fondo de imagen satelital de alta resolución para identificar límites y referencias visuales con precisión.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">💾</div>
+        <div>
+            <h3>Plano PDF profesional</h3>
+            <p>Genera un plano en A4 con imagen satelital, polígono de la parcela, distancias entre vértices y tabla de coordenadas.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">💬</div>
+        <div>
+            <h3>Envío automático por WhatsApp</h3>
+            <p>Al generar el plano, los datos de la medición (superficie y vértices) se envían automáticamente al técnico responsable.</p>
+        </div>
+    </div>
+</div>
+
+<div class="cta-bottom">
+    <a href="app.html" class="cta">▶ Abrir aplicación</a>
+</div>
+
+<footer>
+    Desarrollado por <a href="/">ObraTudela</a> · Excavaciones y Servicios Arturo S.L.
+</footer>
+
+</body>
+</html>
