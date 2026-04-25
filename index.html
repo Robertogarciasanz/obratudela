@@ -47,8 +47,10 @@
   <meta property="og:url" content="https://www.obratudela.com/">
   <meta property="og:type" content="website">
   <link rel="preload" href="fonts/bebas-neue-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-300-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="excavadora mixta.webp" as="image" type="image/webp">
+  <link rel="preload" href="fonts/ibm-plex-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="excavadora-1200w.webp" as="image" type="image/webp" fetchpriority="high">
   <style>
     @font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/bebas-neue-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
     @font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/bebas-neue-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -88,7 +90,7 @@
       display: flex; align-items: center; gap: 12px;
       text-decoration: none;
     }
-    .nav-logo img { height: 38px; border-radius: 4px; }
+    .nav-logo img { height: 38px; width: auto; border-radius: 4px; }
     .nav-logo span {
       font-family: 'Bebas Neue', cursive;
       font-size: 1.6rem;
@@ -137,7 +139,7 @@
     #inicio {
       min-height: 70vh;
       background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
-                  url('excavadora mixta.webp') center/cover no-repeat;
+                  url('excavadora-1200w.webp') center/cover no-repeat;
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
       text-align: center;
@@ -149,7 +151,7 @@
         background-position: 60% center;
       }
     }
-    .hero-logo { width: 150px; border: 2px solid var(--orange); border-radius: 10px; margin-bottom: 24px; }
+    .hero-logo { width: 150px; height: auto; border: 2px solid var(--orange); border-radius: 10px; margin-bottom: 24px; }
     .hero-title {
       font-family: 'Bebas Neue', cursive;
       font-size: clamp(3.5rem, 10vw, 7rem);
@@ -330,7 +332,7 @@
     .footer-left {
       display: flex; align-items: center; gap: 12px;
     }
-    .footer-left img { height: 32px; border-radius: 3px; opacity: 0.8; }
+    .footer-left img { height: 32px; width: auto; border-radius: 3px; opacity: 0.8; }
     .footer-left span {
       font-family: 'Bebas Neue', cursive;
       font-size: 1.2rem; color: var(--muted); letter-spacing: 2px;
@@ -446,15 +448,24 @@
   </div>
   <div class="galeria-grid">
     <div class="galeria-item featured">
-      <img src="excavadora mixta.webp" alt="Excavadora mixta en obra" width="2752" height="1536" loading="lazy" decoding="async">
+      <img src="excavadora-800w.webp"
+           srcset="excavadora-800w.webp 800w, excavadora-1200w.webp 1200w"
+           sizes="(max-width: 640px) calc(100vw - 80px), (max-width: 900px) calc(100vw - 80px), 800px"
+           alt="Excavadora mixta en obra" width="800" height="447" loading="lazy" decoding="async">
       <div class="overlay"><span>Excavadora mixta</span></div>
     </div>
     <div class="galeria-item">
-      <img src="retro pequeña.webp" alt="Retroexcavadora compacta" width="2752" height="1536" loading="lazy" decoding="async">
+      <img src="retro-pequena-400w.webp"
+           srcset="retro-pequena-400w.webp 400w, retro-pequena-800w.webp 800w"
+           sizes="(max-width: 640px) calc(100vw - 80px), (max-width: 900px) calc(50vw - 42px), 400px"
+           alt="Retroexcavadora compacta" width="400" height="224" loading="lazy" decoding="async">
       <div class="overlay"><span>Retroexcavadora compacta</span></div>
     </div>
     <div class="galeria-item">
-      <img src="Gemini_Generated_Image_42yhq642yhq642yh.webp" alt="Movimiento de tierras" width="2752" height="1536" loading="lazy" decoding="async">
+      <img src="gemini-400w.webp"
+           srcset="gemini-400w.webp 400w, gemini-800w.webp 800w"
+           sizes="(max-width: 640px) calc(100vw - 80px), (max-width: 900px) calc(50vw - 42px), 400px"
+           alt="Movimiento de tierras" width="400" height="224" loading="lazy" decoding="async">
       <div class="overlay"><span>Movimiento de tierras</span></div>
     </div>
   </div>
