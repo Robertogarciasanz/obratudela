@@ -2,6 +2,6 @@
   "name": "obratudela",
   "compatibility_date": "2026-04-24",
   "assets": {
-    "directory": "./public/"
+    "directory": "./"
   }
 }
