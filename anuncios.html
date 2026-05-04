@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuncios de Maquinaria y Obra — ObraTudela</title>
+<meta name="description" content="Compra y vende maquinaria, herramientas y materiales de construcción en Castilla y León. Anuncios gratuitos en ObraTudela.">
+<meta name="keywords" content="maquinaria segunda mano, herramientas obra, anuncios construcción, Castilla y León, Valladolid">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.obratudela.com/anuncios.html">
+<meta property="og:title" content="Anuncios de Maquinaria y Obra — ObraTudela">
+<meta property="og:description" content="Compra y vende maquinaria, herramientas y materiales de construcción en Castilla y León.">
+<meta property="og:url" content="https://www.obratudela.com/anuncios.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+<style>
+/* ===== RESET Y BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary:      #ff6b00;
+  --primary-osc:  #e05e00;
+  --negro:        #0D0D0D;
+  --gris-oscuro:  #1a1a1a;
+  --gris-medio:   #555;
+  --gris-claro:   #f4f4f4;
+  --gris-borde:   #ddd;
+  --blanco:       #ffffff;
+  --verde:        #2ecc71;
+  --rojo:         #e74c3c;
+  --sombra:       0 2px 12px rgba(0,0,0,0.12);
+  --sombra-hover: 0 8px 28px rgba(255,107,0,0.25);
+  --radio:        8px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #111;
+  color: #eee;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ===== HEADER ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(13,13,13,0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--primary);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  gap: 16px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--blanco);
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  height: 36px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.nav-logo span { color: var(--primary); }
+
+nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+
+nav a {
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+nav a:hover { color: white; background: rgba(255,255,255,0.08); }
+nav a.activo { color: var(--primary); font-weight: 700; }
+
+.nav-tel {
+  background: var(--primary);
+  color: var(--negro) !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+  padding: 7px 14px !important;
+}
+.nav-tel:hover { background: var(--primary-osc) !important; color: var(--negro) !important; }
+
+/* ===== HERO SECCIÓN ===== */
+.hero-anuncios {
+  background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 36px 20px 28px;
+  text-align: center;
+}
+
+.hero-anuncios .subtitulo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.hero-anuncios h1 {
+  font-size: clamp(28px, 5vw, 46px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: var(--blanco);
+  margin-bottom: 14px;
+}
+
+.hero-anuncios h1 span { color: var(--primary); }
+
+.hero-anuncios p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.55);
+  max-width: 480px;
+  margin: 0 auto 22px;
+  line-height: 1.5;
+}
+
+/* BUSCADOR */
+.buscador-wrap {
+  display: flex;
+  max-width: 560px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+#buscador {
+  flex: 1;
+  padding: 12px 18px;
+  border: 1.5px solid #333;
+  border-radius: var(--radio);
+  background: #1a1a1a;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#buscador::placeholder { color: #555; }
+#buscador:focus { border-color: var(--primary); }
+
+.btn-buscar {
+  background: var(--primary);
+  color: var(--negro);
+  border: none;
+  border-radius: var(--radio);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.btn-buscar:hover { background: var(--primary-osc); }
+
+/* CATEGORÍAS */
+.cats-bar {
+  background: #0d0d0d;
+  border-bottom: 1px solid #222;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.cats-bar::-webkit-scrollbar { display: none; }
+
+.cats-inner {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cat-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cat-btn:hover { color: rgba(255,255,255,0.85); }
+.cat-btn.activa { color: var(--primary); border-bottom-color: var(--primary); }
+
+/* ===== LAYOUT PRINCIPAL ===== */
+.contenido {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar { display: flex; flex-direction: column; gap: 14px; }
+
+.filtro-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radio);
+  padding: 16px;
+}
+
+.filtro-card h3 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.filtro-card label {
+  display: block;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.filtro-card input,
+.filtro-card select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  background: #111;
+  color: #eee;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.filtro-card input:focus,
+.filtro-card select:focus { border-color: var(--primary); }
+.filtro-card select option { background: #1a1a1a; }
+
+.rango-precio { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.rango-precio > div { display: flex; flex-direction: column; }
+
+.btn-filtrar {
+  width: 100%;
+  background: var(--primary);
+  color: var(--negro);
+  border: none;
+  border-radius: 6px;
+  padding: 9px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+.btn-filtrar:hover { background: var(--primary-osc); }
+
+.btn-limpiar {
+  width: 100%;
+  background: none;
+  color: rgba(255,255,255,0.35);
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: all 0.2s;
+}
+.btn-limpiar:hover { border-color: var(--primary); color: var(--primary); }
+
+/* ===== ZONA ANUNCIOS ===== */
+.zona-anuncios { display: flex; flex-direction: column; gap: 14px; }
+
+.barra-resultado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radio);
+  padding: 12px 16px;
+}
+
+.barra-resultado span { font-size: 13px; color: rgba(255,255,255,0.5); }
+.barra-resultado strong { color: var(--primary); }
+
+.ordenar-select {
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #111;
+  color: #eee;
+  outline: none;
+  cursor: pointer;
+}
+
+/* GRID TARJETAS */
+.grid-anuncios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.tarjeta {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radio);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.tarjeta:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--sombra-hover);
+}
+
+.tarjeta-foto {
+  position: relative;
+  width: 100%;
+  height: 155px;
+  background: #111;
+  overflow: hidden;
+}
+.tarjeta-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.tarjeta:hover .tarjeta-foto img { transform: scale(1.05); }
+
+.placeholder-foto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  color: #333;
+}
+
+.badge-destacado {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--primary);
+  color: var(--negro);
+  font-size: 10px;
+  font-weight: 800;
+  padding: 3px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.badge-fotos {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.75);
+  color: rgba(255,255,255,0.85);
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.tarjeta-body {
+  padding: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tarjeta-titulo {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blanco);
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tarjeta-precio {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.tarjeta-meta {
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.badge-activo {
+  background: rgba(46,204,113,0.15);
+  color: var(--verde);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(46,204,113,0.3);
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 60px 20px;
+  color: rgba(255,255,255,0.3);
+  font-size: 15px;
+  grid-column: 1 / -1;
+}
+.sin-resultados .emoji { font-size: 48px; display: block; margin-bottom: 12px; }
+
+/* ===== BTN PUBLICAR HERO ===== */
+.btn-publicar-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: var(--negro);
+  border: none;
+  border-radius: var(--radio);
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+.btn-publicar-hero:hover { background: var(--primary-osc); transform: translateY(-1px); }
+
+/* ===== MODALES ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.modal-overlay.visible { display: flex; }
+
+.modal-contenido {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  max-width: 760px;
+  width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalEntrada 0.22s ease;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+@keyframes modalEntrada {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.modal-cerrar {
+  position: sticky;
+  top: 12px;
+  float: right;
+  margin: 12px 12px 0 0;
+  background: #2a2a2a;
+  color: rgba(255,255,255,0.7);
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.2s;
+}
+.modal-cerrar:hover { background: var(--rojo); color: white; }
+
+/* GALERÍA MODAL */
+.galeria-principal {
+  position: relative;
+  background: #0d0d0d;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.galeria-img-grande {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  display: block;
+}
+
+.galeria-placeholder {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  color: #2a2a2a;
+}
+
+.galeria-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.65);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.galeria-nav:hover { background: var(--primary); color: var(--negro); }
+.galeria-nav.prev { left: 12px; }
+.galeria-nav.next { right: 12px; }
+
+.galeria-contador {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  background: rgba(0,0,0,0.7);
+  color: rgba(255,255,255,0.8);
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.galeria-thumbs {
+  display: flex;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #0d0d0d;
+  overflow-x: auto;
+}
+
+.thumb {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+.thumb:hover { opacity: 0.9; }
+.thumb.activa { border-color: var(--primary); opacity: 1; }
+
+.modal-info { padding: 20px; }
+
+.modal-titulo {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--blanco);
+  margin-bottom: 6px;
+}
+
+.modal-precio {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.modal-tag {
+  background: rgba(255,107,0,0.1);
+  color: var(--primary);
+  border: 1px solid rgba(255,107,0,0.25);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.modal-descripcion {
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 18px;
+  padding: 14px;
+  background: #111;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+.modal-contacto {
+  background: rgba(46,204,113,0.08);
+  border: 1px solid rgba(46,204,113,0.2);
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.modal-contacto p { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 3px; }
+.modal-contacto strong { font-size: 20px; color: var(--blanco); }
+
+.btn-llamar {
+  background: var(--verde);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: filter 0.2s;
+}
+.btn-llamar:hover { filter: brightness(1.1); }
+
+/* MODAL PUBLICAR */
+.form-header {
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 18px 20px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-header h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--blanco);
+}
+
+.form-header h2 span { color: var(--primary); }
+
+.form-body { padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-grid .full { grid-column: 1 / -1; }
+
+.form-grupo { display: flex; flex-direction: column; gap: 5px; }
+
+.form-grupo label {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  padding: 10px 13px;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 7px;
+  font-size: 14px;
+  background: #111;
+  color: #eee;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-grupo input::placeholder { color: #444; }
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus { border-color: var(--primary); }
+.form-grupo select option { background: #1a1a1a; }
+.form-grupo textarea { resize: vertical; min-height: 85px; }
+
+/* ZONA FOTOS */
+.zona-fotos-upload {
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  padding: 22px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #111;
+}
+.zona-fotos-upload:hover {
+  border-color: var(--primary);
+  background: rgba(255,107,0,0.04);
+}
+.zona-fotos-upload .icono { font-size: 30px; margin-bottom: 8px; }
+.zona-fotos-upload p { font-size: 13px; color: rgba(255,255,255,0.35); line-height: 1.5; }
+.zona-fotos-upload strong { color: var(--primary); }
+
+#inputFotos { display: none; }
+
+.previsualizacion-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.prev-foto {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #2a2a2a;
+}
+.prev-foto.principal { border-color: var(--primary); }
+.prev-foto img { width: 100%; height: 100%; object-fit: cover; }
+
+.badge-principal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary);
+  color: var(--negro);
+  font-size: 8px;
+  font-weight: 800;
+  text-align: center;
+  padding: 2px;
+  letter-spacing: 0.5px;
+}
+
+.btn-eliminar-foto {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.btn-eliminar-foto:hover { background: var(--rojo); }
+
+.aviso-fotos { font-size: 11px; color: rgba(255,255,255,0.25); margin-top: 5px; }
+
+.btn-publicar-form {
+  background: var(--primary);
+  color: var(--negro);
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 0.3px;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+.btn-publicar-form:hover { background: var(--primary-osc); transform: translateY(-1px); }
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0d0d0d;
+  border-top: 1px solid #1e1e1e;
+  text-align: center;
+  padding: 28px 16px;
+  margin-top: 50px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+}
+
+footer .footer-logo {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--blanco);
+  margin-bottom: 10px;
+}
+footer .footer-logo span { color: var(--primary); }
+
+footer a {
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+footer a:hover { color: var(--primary); }
+
+/* TOAST */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: #2a2a2a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  border: 1px solid #333;
+}
+.toast.visible { transform: translateX(-50%) translateY(0); }
+.toast.exito { background: #1a4d2e; border-color: var(--verde); color: var(--verde); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contenido { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .grid-anuncios { grid-template-columns: repeat(2, 1fr); }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .full { grid-column: 1; }
+  .galeria-img-grande { height: 220px; }
+  .galeria-placeholder { height: 220px; }
+}
+@media (max-width: 420px) {
+  .grid-anuncios { grid-template-columns: 1fr; }
+  .buscador-wrap { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="logo.jpg" alt="ObraTudela" onerror="this.style.display='none'">
+      Obra<span>Tudela</span>
+    </a>
+    <nav>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="alquileres.html">Alquileres</a>
+      <a href="topografia-info.html">Topografía</a>
+      <a href="anuncios.html" class="activo">Anuncios</a>
+      <a href="presupuesto_v2.html">Presupuestos</a>
+      <a href="tel:+34607444903" class="nav-tel">📞 607 444 903</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-anuncios">
+  <p class="subtitulo">Castilla y León · Compraventa</p>
+  <h1>ANUNCIOS DE <span>OBRA Y MAQUINARIA</span></h1>
+  <p>Compra y vende maquinaria, herramientas y materiales de construcción. Anuncios gratuitos para profesionales.</p>
+  <div class="buscador-wrap">
+    <input type="text" id="buscador" placeholder="Buscar excavadora, hormigonera, andamio..." oninput="filtrarAnuncios()">
+    <button class="btn-buscar" onclick="filtrarAnuncios()">🔍 Buscar</button>
+  </div>
+  <br>
+  <button class="btn-publicar-hero" onclick="abrirModalPublicar()">+ Publicar anuncio gratis</button>
+</section>
+
+<!-- CATEGORÍAS -->
+<div class="cats-bar">
+  <div class="cats-inner">
+    <button class="cat-btn activa" onclick="filtrarCategoria('Todos',this)">🏗️ Todos</button>
+    <button class="cat-btn" onclick="filtrarCategoria('Maquinaria',this)">🚜 Maquinaria</button>
+    <button class="cat-btn" onclick="filtrarCategoria('Herramientas',this)">🔧 Herramientas</button>
+    <button class="cat-btn" onclick="filtrarCategoria('Materiales',this)">🧱 Materiales</button>
+    <button class="cat-btn" onclick="filtrarCategoria('Vehículos',this)">🚛 Vehículos</button>
+    <button class="cat-btn" onclick="filtrarCategoria('Electrónica',this)">💻 Electrónica</button>
+    <button class="cat-btn" onclick="filtrarCategoria('Otros',this)">📦 Otros</button>
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="contenido">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="filtro-card">
+      <h3>Precio</h3>
+      <div class="rango-precio">
+        <div>
+          <label>Mín (€)</label>
+          <input type="number" id="precioMin" placeholder="0" min="0">
+        </div>
+        <div>
+          <label>Máx (€)</label>
+          <input type="number" id="precioMax" placeholder="∞" min="0">
+        </div>
+      </div>
+      <button class="btn-filtrar" onclick="filtrarAnuncios()">Aplicar</button>
+      <button class="btn-limpiar" onclick="limpiarFiltros()">✕ Limpiar filtros</button>
+    </div>
+
+    <div class="filtro-card">
+      <h3>Provincia</h3>
+      <select id="filtroProvinicia" onchange="filtrarAnuncios()">
+        <option value="">Todas</option>
+        <option>Ávila</option><option>Burgos</option><option>León</option>
+        <option>Palencia</option><option>Salamanca</option><option>Segovia</option>
+        <option>Soria</option><option selected>Valladolid</option><option>Zamora</option>
+      </select>
+    </div>
+
+    <div class="filtro-card">
+      <h3>Ordenar</h3>
+      <select id="ordenar" onchange="filtrarAnuncios()">
+        <option value="reciente">Más reciente</option>
+        <option value="precio-asc">Precio ↑</option>
+        <option value="precio-desc">Precio ↓</option>
+      </select>
+    </div>
+  </aside>
+
+  <!-- ANUNCIOS -->
+  <main class="zona-anuncios">
+    <div class="barra-resultado">
+      <span><strong id="contadorAnuncios">0</strong> anuncios en <strong>Castilla y León</strong></span>
+      <select class="ordenar-select" id="ordenarMovil" onchange="filtrarAnuncios()">
+        <option value="reciente">Más reciente</option>
+        <option value="precio-asc">Menor precio</option>
+        <option value="precio-desc">Mayor precio</option>
+      </select>
+    </div>
+    <div class="grid-anuncios" id="gridAnuncios"></div>
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Obra<span>Tudela</span></div>
+  <p>Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Tudela de Duero, Valladolid</p>
+  <p style="margin-top:12px;">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="tel:+34607444903">607 444 903</a>
+    <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>
+  </p>
+  <p style="margin-top:12px; font-size:11px;">© 2026 ObraTudela.com · Tudela de Duero, Valladolid</p>
+</footer>
+
+<!-- MODAL DETALLE -->
+<div class="modal-overlay" id="modalDetalle" onclick="cerrarModalSiOverlay(event,'modalDetalle')">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" onclick="cerrarModal('modalDetalle')">✕</button>
+    <div class="galeria-principal">
+      <div class="galeria-placeholder" id="galeriaPlaceholder">🏗️</div>
+      <img class="galeria-img-grande" id="galeriaImgGrande" src="" alt="" style="display:none">
+      <button class="galeria-nav prev" id="galeriaAnterior" onclick="navegarGaleria(-1)" style="display:none">‹</button>
+      <button class="galeria-nav next" id="galeriaSiguiente" onclick="navegarGaleria(1)" style="display:none">›</button>
+      <span class="galeria-contador" id="galeriaContador" style="display:none"></span>
+    </div>
+    <div class="galeria-thumbs" id="galeriaThumbs" style="display:none"></div>
+    <div class="modal-info">
+      <div class="modal-titulo" id="modalTitulo"></div>
+      <div class="modal-precio" id="modalPrecio"></div>
+      <div class="modal-tags" id="modalTags"></div>
+      <div class="modal-descripcion" id="modalDescripcion"></div>
+      <div class="modal-contacto">
+        <div>
+          <p>Vendedor · <span id="modalProvincia"></span></p>
+          <strong id="modalTelefono"></strong>
+        </div>
+        <a class="btn-llamar" id="modalBtnLlamar" href="#">📞 Llamar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PUBLICAR -->
+<div class="modal-overlay" id="modalPublicar" onclick="cerrarModalSiOverlay(event,'modalPublicar')">
+  <div class="modal-contenido" style="max-width:580px;">
+    <div class="form-header">
+      <h2>📋 Publicar anuncio <span>gratis</span></h2>
+      <button onclick="cerrarModal('modalPublicar')" style="background:#2a2a2a;color:rgba(255,255,255,0.6);border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;">✕</button>
+    </div>
+    <div class="form-body">
+      <div class="form-grid">
+        <div class="form-grupo full">
+          <label>Título del anuncio *</label>
+          <input type="text" id="nuevoTitulo" placeholder="Ej: Retroexcavadora Komatsu PC45 2018">
+        </div>
+        <div class="form-grupo">
+          <label>Categoría *</label>
+          <select id="nuevoCategoria">
+            <option value="">Selecciona...</option>
+            <option>Maquinaria</option>
+            <option>Herramientas</option>
+            <option>Materiales</option>
+            <option>Vehículos</option>
+            <option>Electrónica</option>
+            <option>Otros</option>
+          </select>
+        </div>
+        <div class="form-grupo">
+          <label>Precio (€) — 0 = A convenir</label>
+          <input type="number" id="nuevoPrecio" placeholder="0" min="0">
+        </div>
+        <div class="form-grupo">
+          <label>Provincia *</label>
+          <select id="nuevoProvincia">
+            <option value="">Selecciona...</option>
+            <option>Ávila</option><option>Burgos</option><option>León</option>
+            <option>Palencia</option><option>Salamanca</option><option>Segovia</option>
+            <option>Soria</option><option>Valladolid</option><option>Zamora</option>
+          </select>
+        </div>
+        <div class="form-grupo">
+          <label>Teléfono de contacto *</label>
+          <input type="tel" id="nuevoTelefono" placeholder="6XX XXX XXX">
+        </div>
+        <div class="form-grupo full">
+          <label>Descripción</label>
+          <textarea id="nuevoDescripcion" placeholder="Estado, características, motivo de venta, horas de trabajo..."></textarea>
+        </div>
+        <div class="form-grupo full">
+          <label>Fotos (hasta 10)</label>
+          <div class="zona-fotos-upload" onclick="document.getElementById('inputFotos').click()">
+            <div class="icono">📷</div>
+            <p>Pulsa para añadir fotos desde tu dispositivo</p>
+            <p><strong>La primera foto será la imagen principal del anuncio</strong></p>
+          </div>
+          <input type="file" id="inputFotos" accept="image/*" multiple onchange="cargarFotos(event)">
+          <p class="aviso-fotos">JPG, PNG, WEBP · Máximo 10 fotos por anuncio</p>
+          <div class="previsualizacion-fotos" id="prevFotos"></div>
+        </div>
+      </div>
+      <button class="btn-publicar-form" onclick="publicarAnuncio()">✅ Publicar anuncio ahora</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ===== DATOS =====
+const DEFAULTS = [
+  { id:1, titulo:"EXCAVADORA YANMAR B27", precio:9200, categoria:"Maquinaria", provincia:"Zamora", telefono:"620 345 678", descripcion:"Excavadora Yanmar B27 en muy buen estado. Motor impecable, oruga nueva. Documentación al día. Ideal para obras pequeñas y medianas.", fotos:[], emoji:"🚜", destacado:true, fecha:new Date(Date.now()-2*86400000).toISOString() },
+  { id:2, titulo:"SILLA DE RUEDAS ELÉCTRICA", precio:250, categoria:"Otros", provincia:"Zamora", telefono:"615 234 567", descripcion:"Silla de ruedas eléctrica en buen estado. Batería nueva. Cargador incluido. Se vende por cambio de modelo.", fotos:[], emoji:"♿", destacado:false, fecha:new Date(Date.now()-5*86400000).toISOString() },
+  { id:3, titulo:"CAJA DE ORDENADOR TORRE ATX", precio:45, categoria:"Electrónica", provincia:"Zamora", telefono:"609 876 543", descripcion:"Caja de ordenador torre Midi ATX. Incluye fuente de alimentación 500W. Buen estado. Recogida en mano.", fotos:[], emoji:"💻", destacado:false, fecha:new Date(Date.now()-8*86400000).toISOString() },
+  { id:4, titulo:"DRONE DJI MINI POCO USO", precio:0, categoria:"Electrónica", provincia:"Zamora", telefono:"630 111 222", descripcion:"Drone DJI Mini con muy pocas horas de vuelo. 2 baterías, cargador y maletín. Precio a convenir.", fotos:[], emoji:"🚁", destacado:true, fecha:new Date(Date.now()-1*86400000).toISOString() },
+  { id:5, titulo:"HORMIGONERA ELÉCTRICA 300L", precio:380, categoria:"Maquinaria", provincia:"Valladolid", telefono:"625 444 555", descripcion:"Hormigonera eléctrica 300 litros. Motor potente, tambor sin fisuras. Poco uso. Ideal obras y reforma.", fotos:[], emoji:"🏗️", destacado:false, fecha:new Date(Date.now()-3*86400000).toISOString() },
+  { id:6, titulo:"ANDAMIO TUBULAR METÁLICO 6M", precio:220, categoria:"Materiales", provincia:"Valladolid", telefono:"635 777 888", descripcion:"Andamio tubular completo 6 metros altura. Plataformas, escalera y protecciones incluidas. Excelente estado.", fotos:[], emoji:"🔩", destacado:true, fecha:new Date(Date.now()-4*86400000).toISOString() },
+  { id:7, titulo:"DUMPER THWAITES 1 TONELADA", precio:2800, categoria:"Maquinaria", provincia:"Burgos", telefono:"640 999 111", descripcion:"Dumper Thwaites 1t. Motor diesel 4 cilindros. Revisado. Ruedas nuevas. Muy útil para obra civil.", fotos:[], emoji:"🚚", destacado:false, fecha:new Date(Date.now()-6*86400000).toISOString() },
+  { id:8, titulo:"SIERRA CIRCULAR FESTOOL TS 55", precio:290, categoria:"Herramientas", provincia:"León", telefono:"618 222 333", descripcion:"Sierra circular Festool TS 55 con guía paralela y maletín original. Hoja nueva. Cortes de precisión.", fotos:[], emoji:"🔧", destacado:false, fecha:new Date(Date.now()-9*86400000).toISOString() },
+  { id:9, titulo:"CAMIÓN VOLQUETE IVECO 7TN", precio:14500, categoria:"Vehículos", provincia:"Palencia", telefono:"655 333 444", descripcion:"Camión volquete Iveco 7 toneladas. Año 2012. 280.000 km. ITV pasada. Caja basculante perfecta.", fotos:[], emoji:"🚛", destacado:true, fecha:new Date(Date.now()-10*86400000).toISOString() },
+  { id:10, titulo:"LOTE 20 PALÉS EUROPEOS", precio:120, categoria:"Materiales", provincia:"Segovia", telefono:"628 555 666", descripcion:"20 palés europeos madera 120x80cm en buen estado. Almacenamiento, obra, manualidades. Recogida en nave.", fotos:[], emoji:"🧱", destacado:false, fecha:new Date(Date.now()-12*86400000).toISOString() }
+];
+
+let anuncios = [];
+let categoriaActiva = 'Todos';
+let fotosNuevas = [];
+let galeriaActual = { fotos:[], indice:0 };
+
+// INIT
+function init() {
+  try {
+    const g = localStorage.getItem('obratudela_anuncios');
+    anuncios = g ? JSON.parse(g) : [...DEFAULTS];
+    const ids = anuncios.map(a=>a.id);
+    DEFAULTS.forEach(d => { if (!ids.includes(d.id)) anuncios.push(d); });
+  } catch(e) { anuncios = [...DEFAULTS]; }
+  filtrarAnuncios();
+}
+
+function guardar() {
+  try { localStorage.setItem('obratudela_anuncios', JSON.stringify(anuncios)); } catch(e) {}
+}
+
+// RENDER
+function renderTarjetas(lista) {
+  document.getElementById('contadorAnuncios').textContent = lista.length;
+  const grid = document.getElementById('gridAnuncios');
+
+  if (!lista.length) {
+    grid.innerHTML = `<div class="sin-resultados"><span class="emoji">🔍</span>Sin resultados. Prueba otros filtros.</div>`;
+    return;
+  }
+
+  grid.innerHTML = lista.map(a => {
+    const foto = a.fotos && a.fotos.length ? a.fotos[0] : null;
+    const n = a.fotos ? a.fotos.length : 0;
+    const precio = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')}€` : 'A convenir';
+    const d = Math.floor((Date.now() - new Date(a.fecha)) / 86400000);
+    const cuando = d === 0 ? 'Hoy' : d === 1 ? 'Ayer' : `Hace ${d} días`;
+    return `
+      <div class="tarjeta" onclick="abrirDetalle(${a.id})">
+        <div class="tarjeta-foto">
+          ${foto ? `<img src="${foto}" alt="${a.titulo}" loading="lazy">` : `<div class="placeholder-foto">${a.emoji||'🏗️'}</div>`}
+          ${a.destacado ? '<span class="badge-destacado">⭐ Destacado</span>' : ''}
+          ${n > 0 ? `<span class="badge-fotos">📷 ${n}</span>` : ''}
+        </div>
+        <div class="tarjeta-body">
+          <div class="tarjeta-titulo">${a.titulo}</div>
+          <div class="tarjeta-precio">${precio}</div>
+          <div class="tarjeta-meta">
+            <span>📍 ${a.provincia}</span>
+            <span class="badge-activo">✓ Activo</span>
+          </div>
+          <div style="font-size:11px;color:#444;margin-top:4px;">${a.categoria} · ${cuando}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// FILTROS
+function filtrarAnuncios() {
+  const txt = document.getElementById('buscador').value.toLowerCase();
+  const pMin = parseFloat(document.getElementById('precioMin').value) || 0;
+  const pMax = parseFloat(document.getElementById('precioMax').value) || Infinity;
+  const prov = document.getElementById('filtroProvinicia').value;
+  const ord = document.getElementById('ordenar').value;
+  const ordMovil = document.getElementById('ordenarMovil').value;
+
+  const finalOrd = (window.innerWidth <= 768) ? ordMovil : ord;
+
+  let res = anuncios.filter(a => {
+    const okTxt = !txt || a.titulo.toLowerCase().includes(txt) || (a.descripcion||'').toLowerCase().includes(txt);
+    const okCat = categoriaActiva === 'Todos' || a.categoria === categoriaActiva;
+    const okP = a.precio >= pMin && (a.precio <= pMax || a.precio === 0);
+    const okProv = !prov || a.provincia === prov;
+    return okTxt && okCat && okP && okProv;
+  });
+
+  if (finalOrd === 'precio-asc') res.sort((a,b) => a.precio - b.precio);
+  else if (finalOrd === 'precio-desc') res.sort((a,b) => b.precio - a.precio);
+  else res.sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
+
+  renderTarjetas(res);
+}
+
+function filtrarCategoria(cat, btn) {
+  categoriaActiva = cat;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('activa'));
+  btn.classList.add('activa');
+  filtrarAnuncios();
+}
+
+function limpiarFiltros() {
+  ['precioMin','precioMax','filtroProvinicia','buscador'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  filtrarAnuncios();
+}
+
+// DETALLE
+function abrirDetalle(id) {
+  const a = anuncios.find(x => x.id === id);
+  if (!a) return;
+
+  document.getElementById('modalTitulo').textContent = a.titulo;
+  document.getElementById('modalPrecio').textContent = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')}€` : 'A convenir';
+  document.getElementById('modalDescripcion').textContent = a.descripcion || 'Sin descripción.';
+  document.getElementById('modalProvincia').textContent = a.provincia;
+  document.getElementById('modalTelefono').textContent = a.telefono || 'Consultar';
+  document.getElementById('modalBtnLlamar').href = `tel:+34${(a.telefono||'').replace(/\s/g,'')}`;
+  document.getElementById('modalTags').innerHTML = `
+    <span class="modal-tag">📂 ${a.categoria}</span>
+    <span class="modal-tag">📍 ${a.provincia}</span>
+    ${a.destacado ? '<span class="modal-tag">⭐ Destacado</span>' : ''}
+    <span class="modal-tag" style="background:rgba(46,204,113,0.1);color:#2ecc71;border-color:rgba(46,204,113,0.2);">✓ Activo</span>
+  `;
+
+  const fotos = a.fotos || [];
+  galeriaActual = { fotos, indice: 0 };
+
+  const imgG = document.getElementById('galeriaImgGrande');
+  const ph   = document.getElementById('galeriaPlaceholder');
+  const thumbs = document.getElementById('galeriaThumbs');
+  const cnt  = document.getElementById('galeriaContador');
+  const bPrev = document.getElementById('galeriaAnterior');
+  const bNext = document.getElementById('galeriaSiguiente');
+
+  if (fotos.length) {
+    imgG.src = fotos[0]; imgG.style.display = 'block';
+    ph.style.display = 'none';
+    if (fotos.length > 1) {
+      bPrev.style.display = bNext.style.display = 'flex';
+      cnt.style.display = 'block';
+      cnt.textContent = `Foto 1 de ${fotos.length}`;
+      thumbs.style.display = 'flex';
+      thumbs.innerHTML = fotos.map((f,i) =>
+        `<img src="${f}" class="thumb ${i===0?'activa':''}" onclick="irFoto(${i})" alt="Foto ${i+1}">`
+      ).join('');
+    } else {
+      bPrev.style.display = bNext.style.display = 'none';
+      cnt.style.display = 'none';
+      thumbs.style.display = 'none';
+    }
+  } else {
+    ph.textContent = a.emoji || '🏗️';
+    ph.style.display = 'flex'; imgG.style.display = 'none';
+    bPrev.style.display = bNext.style.display = 'none';
+    cnt.style.display = 'none'; thumbs.style.display = 'none';
+  }
+
+  document.getElementById('modalDetalle').classList.add('visible');
+  document.body.style.overflow = 'hidden';
+}
+
+function navegarGaleria(dir) {
+  const t = galeriaActual.fotos.length;
+  if (t < 2) return;
+  irFoto((galeriaActual.indice + dir + t) % t);
+}
+
+function irFoto(idx) {
+  galeriaActual.indice = idx;
+  document.getElementById('galeriaImgGrande').src = galeriaActual.fotos[idx];
+  document.getElementById('galeriaContador').textContent = `Foto ${idx+1} de ${galeriaActual.fotos.length}`;
+  document.querySelectorAll('.thumb').forEach((t,i) => t.classList.toggle('activa', i===idx));
+}
+
+// PUBLICAR
+function abrirModalPublicar() {
+  fotosNuevas = [];
+  document.getElementById('prevFotos').innerHTML = '';
+  ['nuevoTitulo','nuevoPrecio','nuevoDescripcion','nuevoTelefono'].forEach(id => document.getElementById(id).value = '');
+  ['nuevoCategoria','nuevoProvincia'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('modalPublicar').classList.add('visible');
+  document.body.style.overflow = 'hidden';
+}
+
+function cargarFotos(e) {
+  const archivos = Array.from(e.target.files);
+  const libre = 10 - fotosNuevas.length;
+  if (archivos.length > libre) mostrarToast(`Máximo 10 fotos. Se añadirán solo ${libre}.`);
+  archivos.slice(0, libre).forEach(f => {
+    const r = new FileReader();
+    r.onload = ev => { fotosNuevas.push(ev.target.result); renderPrevFotos(); };
+    r.readAsDataURL(f);
+  });
+  e.target.value = '';
+}
+
+function renderPrevFotos() {
+  document.getElementById('prevFotos').innerHTML = fotosNuevas.map((src, i) => `
+    <div class="prev-foto ${i===0?'principal':''}">
+      <img src="${src}" alt="">
+      ${i===0 ? '<span class="badge-principal">PRINCIPAL</span>' : ''}
+      <button class="btn-eliminar-foto" onclick="eliminarFoto(${i})">✕</button>
+    </div>`).join('');
+}
+
+function eliminarFoto(idx) { fotosNuevas.splice(idx,1); renderPrevFotos(); }
+
+function publicarAnuncio() {
+  const titulo    = document.getElementById('nuevoTitulo').value.trim();
+  const categoria = document.getElementById('nuevoCategoria').value;
+  const precio    = parseFloat(document.getElementById('nuevoPrecio').value) || 0;
+  const provincia = document.getElementById('nuevoProvincia').value;
+  const telefono  = document.getElementById('nuevoTelefono').value.trim();
+  const desc      = document.getElementById('nuevoDescripcion').value.trim();
+
+  if (!titulo)    { mostrarToast('El título es obligatorio'); return; }
+  if (!categoria) { mostrarToast('Selecciona una categoría'); return; }
+  if (!provincia) { mostrarToast('Selecciona una provincia'); return; }
+  if (!telefono)  { mostrarToast('El teléfono es obligatorio'); return; }
+
+  const emojis = {Maquinaria:'🚜',Herramientas:'🔧',Materiales:'🧱',Vehículos:'🚛',Electrónica:'💻',Otros:'📦'};
+  anuncios.unshift({
+    id: Date.now(), titulo: titulo.toUpperCase(),
+    precio, categoria, provincia, telefono, descripcion: desc,
+    fotos: [...fotosNuevas], emoji: emojis[categoria]||'📦',
+    destacado: false, fecha: new Date().toISOString()
+  });
+  guardar();
+  cerrarModal('modalPublicar');
+  categoriaActiva = 'Todos';
+  document.querySelectorAll('.cat-btn').forEach((b,i) => b.classList.toggle('activa', i===0));
+  filtrarAnuncios();
+  mostrarToast('✅ Anuncio publicado correctamente', true);
+}
+
+// UTILS
+function cerrarModal(id) { document.getElementById(id).classList.remove('visible'); document.body.style.overflow=''; }
+function cerrarModalSiOverlay(e,id) { if (e.target===document.getElementById(id)) cerrarModal(id); }
+
+function mostrarToast(msg, ok=false) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast visible' + (ok?' exito':'');
+  setTimeout(() => t.className='toast', 3200);
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key==='Escape') { cerrarModal('modalDetalle'); cerrarModal('modalPublicar'); }
+  if (e.key==='ArrowLeft') navegarGaleria(-1);
+  if (e.key==='ArrowRight') navegarGaleria(1);
+});
+
+init();
+</script>
+</body>
+</html>

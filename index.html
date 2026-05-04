@@ -63,13 +63,13 @@
 
     :root {
       --orange: #ff6b00;
-      --orange2: #ff8c38;
-      --bg: #0f0f0f;
-      --surface: #1a1a1a;
-      --surface2: #222;
-      --border: #2e2e2e;
-      --text: #e8e8e8;
-      --muted: #888;
+      --orange2: #e05e00;
+      --bg: #fdfdfd;
+      --surface: #ffffff;
+      --surface2: #f4f4f4;
+      --border: #e0e0e0;
+      --text: #222222;
+      --muted: #666666;
     }
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -79,7 +79,7 @@
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(15,15,15,0.95);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
       border-bottom: 2px solid var(--orange);
       padding: 0 40px;
@@ -108,6 +108,37 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--orange); }
+
+    /* ── DROPDOWN ── */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 4px; }
+    .nav-dropdown > a::after { content: '▾'; font-size: 0.65rem; opacity: 0.6; }
+    .nav-dropdown-menu {
+      display: none;
+      position: absolute; top: 100%; left: 50%;
+      transform: translateX(-50%);
+      padding-top: 14px;
+      background: transparent;
+      min-width: 160px;
+      flex-direction: column;
+      z-index: 1001;
+    }
+    .nav-dropdown-menu-inner {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--orange);
+      border-radius: 0 0 6px 6px;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: flex; }
+    .nav-dropdown-menu a {
+      padding: 10px 16px;
+      font-size: 0.78rem;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .nav-dropdown-menu a:last-child { border-bottom: none; }
     .nav-links .btn-presupuesto {
       background: var(--orange);
       color: #000;
@@ -138,7 +169,7 @@
     /* ── HERO ── */
     #inicio {
       min-height: 70vh;
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+      background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.40)),
                   url('excavadora-1200w.webp') center/cover no-repeat;
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
@@ -224,7 +255,8 @@
       transition: border-color 0.2s, background 0.2s;
       cursor: default;
     }
-    .servicio-card:hover { border-left-color: var(--orange); background: #141414; }
+    .servicio-card:hover { border-left-color: var(--orange); background: var(--surface2); }
+    a.servicio-card { text-decoration: none; color: inherit; display: block; cursor: pointer; }
     .servicio-icon { font-size: 2.2rem; margin-bottom: 16px; }
     .servicio-card h3 {
       font-family: 'Bebas Neue', cursive;
@@ -295,16 +327,7 @@
       line-height: 1.5;
     }
     .contacto-item a:hover { color: var(--orange); }
-    .contacto-cta {
-      margin-top: 16px;
-      display: inline-block;
-      padding: 14px 36px;
-      background: var(--orange); color: #000;
-      text-decoration: none; font-family: 'Bebas Neue', cursive;
-      font-size: 1.3rem; letter-spacing: 1px; border-radius: 3px;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .contacto-cta:hover { background: var(--orange2); transform: scale(1.03); }
+    .contacto-cta { margin-top: 16px; display: inline-block; }
 
     .contacto-maps-link {
       display: inline-flex;
@@ -320,7 +343,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: #0a0a0a;
+      background: var(--surface2);
       border-top: 1px solid var(--border);
       padding: 32px 40px;
       display: flex;
@@ -353,6 +376,44 @@
       nav { padding: 0 20px; }
       footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
     }
+
+    /* ── ANUNCIOS PREVIEW ── */
+    .anuncios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+    .anuncio-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .anuncio-card:hover {
+      border-color: var(--orange);
+      box-shadow: 0 4px 20px rgba(255,107,0,0.12);
+      transform: translateY(-2px);
+    }
+    .anuncio-foto {
+      height: 110px;
+      background: var(--surface2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .anuncio-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .anuncio-titulo { font-weight: 600; font-size: 0.9rem; line-height: 1.3; }
+    .anuncio-precio { font-family: 'Bebas Neue', cursive; font-size: 1.5rem; color: var(--orange); }
+    .anuncio-meta { font-size: 0.75rem; color: var(--muted); margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border); }
+    .section-cta { text-align: center; }
   </style>
 </head>
 <body>
@@ -360,26 +421,39 @@
 <!-- ── NAVEGACIÓN ── -->
 <nav>
   <a href="#inicio" class="nav-logo">
-    <img src="logo.jpg" alt="" width="300" height="225" decoding="async">
+    <img src="logo.jpg" alt="Logo ObraTudela" width="300" height="225" decoding="async">
     <span>ObraTudela</span>
   </a>
   <div class="nav-links">
     <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
+    <div class="nav-dropdown">
+      <a href="#servicios">Servicios</a>
+      <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu-inner">
+          <a href="#servicios">Ver servicios</a>
+          <a href="alquileres.html">Alquileres</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="topografia-info.html">Topografía</a>
+        </div>
+      </div>
+    </div>
     <a href="#galeria">Galería</a>
-    <a href="#contacto" style="font-size:0.72rem;">Contacto</a>
+    <a href="#contacto">Contacto</a>
     <a href="presupuesto_v2.html" class="btn-presupuesto">Presupuestos</a>
   </div>
-  <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menú" aria-expanded="false" id="hamburger">
     <span></span><span></span><span></span>
   </div>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#inicio" onclick="toggleMenu()">Inicio</a>
-  <a href="#servicios" onclick="toggleMenu()">Servicios</a>
-  <a href="#galeria" onclick="toggleMenu()">Galería</a>
-  <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="alquileres.html" style="padding-left:20px;font-size:0.8rem;opacity:0.8;">↳ Alquileres</a>
+  <a href="anuncios.html" style="padding-left:20px;font-size:0.8rem;opacity:0.8;">↳ Anuncios</a>
+  <a href="topografia.html" style="padding-left:20px;font-size:0.8rem;opacity:0.8;">↳ Topografía</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contacto">Contacto</a>
   <a href="presupuesto_v2.html">Presupuestos</a>
 </div>
 
@@ -408,13 +482,8 @@
   <div class="servicios-grid">
     <div class="servicio-card">
       <div class="servicio-icon">⛏️</div>
-      <h3>Excavaciones</h3>
-      <p>Excavación de zanjas, pozos y vaciados para cimentaciones, redes de saneamiento y cualquier tipo de obra civil.</p>
-    </div>
-    <div class="servicio-card">
-      <div class="servicio-icon">🚜</div>
-      <h3>Movimiento de Tierras</h3>
-      <p>Desmontes, terraplenes, rellenos y compactaciones con maquinaria de última generación para grandes y pequeñas superficies.</p>
+      <h3>Excavaciones, Movimiento de Tierras y Nivelaciones</h3>
+      <p>Zanjas, pozos, desmontes, terraplenes, rellenos y nivelación de terrenos. Con maquinaria propia para cualquier escala de proyecto.</p>
     </div>
     <div class="servicio-card">
       <div class="servicio-icon">🏗️</div>
@@ -426,16 +495,31 @@
       <h3>Desbroce y Limpieza</h3>
       <p>Limpieza de solares, desbroce de vegetación y preparación de terrenos para nuevas construcciones o usos agrícolas.</p>
     </div>
-    <div class="servicio-card">
-      <div class="servicio-icon">📐</div>
-      <h3>Nivelaciones</h3>
-      <p>Nivelación y explanación de terrenos con precisión para urbanizaciones, aparcamientos e instalaciones industriales.</p>
-    </div>
-    <div class="servicio-card">
+    <a href="alquileres.html" class="servicio-card">
       <div class="servicio-icon">🔧</div>
       <h3>Alquiler de Maquinaria</h3>
-      <p>Alquiler de retroexcavadoras mixtas y compactas con o sin operario para adaptarnos a cada proyecto y presupuesto.</p>
-    </div>
+      <p>Retroexcavadoras mixtas y compactas, con o sin operario. Adaptado a tu proyecto y presupuesto.</p>
+      <span style="display:inline-block;margin-top:12px;font-size:0.8rem;color:var(--orange);">Ver catálogo →</span>
+    </a>
+    <a href="anuncios.html" class="servicio-card">
+      <div class="servicio-icon">📢</div>
+      <h3>Anuncios de Compraventa</h3>
+      <p>Portal gratuito para compra y venta de maquinaria, herramientas y materiales de construcción entre profesionales.</p>
+      <span style="display:inline-block;margin-top:12px;font-size:0.8rem;color:var(--orange);">Ver anuncios →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── ANUNCIOS ── -->
+<section id="anuncios" style="background:var(--surface2)">
+  <div class="section-header">
+    <p class="section-tag">Compraventa entre profesionales</p>
+    <h2 class="section-title">Anuncios Recientes</h2>
+    <p class="section-desc">Portal gratuito de compra y venta de maquinaria, herramientas y materiales en Castilla y León.</p>
+  </div>
+  <div class="anuncios-grid" id="anuncios-preview"></div>
+  <div class="section-cta">
+    <a href="anuncios.html" class="btn-primary">Ver todos los anuncios →</a>
   </div>
 </section>
 
@@ -508,7 +592,7 @@
           <p>Excavaciones y Servicios Arturo S.L.<br>NIF: B47489612</p>
         </div>
       </div>
-      <a href="presupuesto_v2.html" class="contacto-cta">Abrir gestor de presupuestos</a>
+      <a href="presupuesto_v2.html" class="btn-primary contacto-cta">Abrir gestor de presupuestos</a>
     </div>
     <a href="https://maps.google.com/?q=Calle+Manzano+2+Tudela+de+Duero+Valladolid" target="_blank" rel="noopener" class="contacto-maps-link">
       📍 Ver en Google Maps — Calle Manzano, 2 · Tudela de Duero
@@ -533,12 +617,43 @@
 
 <script>
   function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
+    const menu = document.getElementById('mobileMenu');
+    const btn = document.getElementById('hamburger');
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
   }
-  document.querySelectorAll('.mobile-menu a[href^="#"]').forEach(a => {
-    a.addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  document.querySelectorAll('.mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+    });
   });
 
+  // ── ANUNCIOS PREVIEW ──
+  (function() {
+    const MUESTRA = [
+      { titulo:"Excavadora Yanmar B27", precio:9200, categoria:"Maquinaria", provincia:"Zamora", emoji:"🚜" },
+      { titulo:"Hormigonera eléctrica 300L", precio:380, categoria:"Maquinaria", provincia:"Valladolid", emoji:"🏗️" },
+      { titulo:"Andamio tubular metálico 6m", precio:220, categoria:"Materiales", provincia:"Valladolid", emoji:"🔩" },
+      { titulo:"Camión volquete Iveco 7tn", precio:14500, categoria:"Vehículos", provincia:"Palencia", emoji:"🚛" },
+    ];
+    let items;
+    try {
+      const saved = localStorage.getItem('obratudela_anuncios');
+      items = saved ? JSON.parse(saved).slice(0, 4) : MUESTRA;
+    } catch(e) { items = MUESTRA; }
+    document.getElementById('anuncios-preview').innerHTML = items.map(a => {
+      const precio = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')} €` : 'A convenir';
+      return `<a href="anuncios.html" class="anuncio-card">
+        <div class="anuncio-foto">${a.emoji || '🏗️'}</div>
+        <div class="anuncio-body">
+          <div class="anuncio-titulo">${a.titulo}</div>
+          <div class="anuncio-precio">${precio}</div>
+          <div class="anuncio-meta">${a.categoria} · 📍 ${a.provincia}</div>
+        </div>
+      </a>`;
+    }).join('');
+  })();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0541fc0e492f4807832c5c2e63e9d1f2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

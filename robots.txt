@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /extract.js
+Disallow: /validate.js
+
 Sitemap: https://www.obratudela.com/sitemap.xml

@@ -1,6 +1,7 @@
 # Editor
 .vscode/
 .idea/
+.claude/
 
 # OS
 Thumbs.db
@@ -16,3 +17,11 @@ BIND.txt
 node_modules/
 package-lock.json
 package.json
+
+# Cloudflare cache
+.wrangler/
+
+# Archivos temporales y backups
+*.bc3
+*.bak
+*.tmp

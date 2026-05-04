@@ -18,3 +18,7 @@ wrangler.jsonc
 .wranglerignore
 CNAME
 README.md
+
+# Scripts de desarrollo Node.js (solo uso local)
+extract.js
+validate.js
