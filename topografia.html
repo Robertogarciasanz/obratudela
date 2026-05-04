@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Topografía">
     <meta name="theme-color" content="#2c3e50">
-    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
     <link rel="dns-prefetch" href="https://mt1.google.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -100,6 +100,25 @@
     </style>
 </head>
 <body>
+
+<!-- INTRO OVERLAY -->
+<div id="introOverlay" style="position:fixed;inset:0;z-index:9998;background:linear-gradient(135deg,#0d1b2a 0%,#1a2e42 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;font-family:sans-serif;color:#ecf0f1;">
+  <div style="max-width:480px;width:100%">
+    <div style="font-size:2.5rem;margin-bottom:10px">📐</div>
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:3px;color:#ff6b00;text-transform:uppercase;margin-bottom:8px">Herramienta gratuita · ObraTudela</div>
+    <h1 style="font-size:clamp(1.6rem,6vw,2.6rem);font-weight:900;line-height:1.1;margin-bottom:10px">MIDE TU PARCELA<br>DESDE EL MÓVIL</h1>
+    <p style="color:#94a3b8;font-size:0.88rem;margin-bottom:20px;line-height:1.6">GPS en tiempo real · Mapa satelital · Plano PDF profesional.<br>Sin apps. Funciona desde el navegador.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px;text-align:left">
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">🎯</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">GPS en tiempo real</div><div style="font-size:0.72rem;color:#94a3b8">Alta precisión</div></div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">📐</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">Cálculo automático</div><div style="font-size:0.72rem;color:#94a3b8">m² y hectáreas</div></div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">🛰️</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">Mapa satelital</div><div style="font-size:0.72rem;color:#94a3b8">Alta resolución</div></div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">💾</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">Plano PDF</div><div style="font-size:0.72rem;color:#94a3b8">Con coordenadas y distancias</div></div>
+    </div>
+    <button onclick="cerrarIntro()" style="background:#ff6b00;color:#000;border:none;border-radius:6px;padding:14px 48px;font-size:1.05rem;font-weight:900;cursor:pointer;letter-spacing:1px;width:100%;max-width:260px;margin-bottom:10px">Comenzar →</button>
+    <p style="font-size:0.7rem;color:#64748b;margin-bottom:14px">Requiere activar la ubicación en el dispositivo</p>
+    <a href="index.html" style="color:#64748b;font-size:0.76rem;text-decoration:none;border:1px solid #334155;border-radius:4px;padding:4px 12px">← Volver a inicio</a>
+  </div>
+</div>
 
 <!-- DIÁLOGO PROPIO (reemplaza alert / confirm / prompt) -->
 <div class="dialog-overlay" id="dlgOverlay">
@@ -504,6 +523,12 @@
             }
         }, 900);
     }
+
+    function cerrarIntro() {
+        document.getElementById('introOverlay').style.display = 'none';
+        try { localStorage.setItem('topo_intro', '1'); } catch(_) {}
+    }
+    try { if (localStorage.getItem('topo_intro')) document.getElementById('introOverlay').style.display = 'none'; } catch(_) {}
 
     async function borrarTodo() {
         if (await dlgConfirm("¿Borrar todos los puntos?")) {
