@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "id": "movejtx3b7fc77",
+    "titulo": "Excavadora Yanmar B27",
+    "descripcion": "En tudela de Duero 3700 horas      funcionando\nDATOS DEL MODELO Y POTENCIA\n•\tMODEL / MODELO: B 27-2A\n•\tOUTPUT / POTENCIA: 16.2 Kw\nNÚMEROS DE SERIE E IDENTIFICACIÓN\n•\tSERIAL Nr. / Nº DE SERIE: C D 8 5 A 1 0 2 8 6\nPESO Y FABRICACIÓN\n•\tWEIGHT / PESO: 3030 kg\n•\tPRODUCTION YEAR / AÑO DE FABRICACIÓN: 1998\nINFORMACIÓN DEL FABRICANTE\n•\tTIPO DE MÁQUINA: YANMAR CRAWLER BACKHOE\n•\tFABRICANTE: AMMANN + YANMAR S.A.",
+    "precio": 9500,
+    "categoria": "Maquinaria",
+    "provincia": "Valladolid",
+    "telefono": "607 444 903",
+    "emoji": "🏗️",
+    "destacado": false,
+    "fotos": [
+      "img/anuncios/movejtx3b7fc77/foto1.jpg",
+      "img/anuncios/movejtx3b7fc77/foto2.jpg",
+      "img/anuncios/movejtx3b7fc77/foto3.jpg",
+      "img/anuncios/movejtx3b7fc77/foto4.jpg",
+      "img/anuncios/movejtx3b7fc77/foto5.jpg"
+    ],
+    "fecha": "2026-05-07T11:27:57.644Z"
+  }
+]
