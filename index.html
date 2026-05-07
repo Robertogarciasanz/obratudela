@@ -36,9 +36,64 @@
       "@type": "AdministrativeArea",
       "name": "Valladolid"
     },
-    "serviceType": ["Excavaciones", "Movimiento de tierras", "Demoliciones", "Alquiler de maquinaria", "Piscinas", "Albañilería"],
     "image": "https://www.obratudela.com/img/logo.jpg",
-    "priceRange": "€€"
+    "priceRange": "€€",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de construcción y maquinaria",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Excavaciones y movimiento de tierras",
+            "description": "Excavaciones en todo tipo de terreno, desmontes y movimiento de tierras con maquinaria propia.",
+            "provider": {"@type": "Organization", "name": "Excavaciones y Servicios Arturo S.L."}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Demoliciones",
+            "description": "Demolición de edificaciones, naves industriales y estructuras con maquinaria especializada."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Alquiler de maquinaria de obra",
+            "url": "https://www.obratudela.com/alquileres.html",
+            "description": "Alquiler por horas de dozers, excavadoras, camiones, compresores y más de 70 equipos."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Construcción de piscinas",
+            "description": "Construcción de piscinas particulares y comunitarias, incluyendo excavación, estructura y acabados."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Albañilería",
+            "description": "Trabajos de albañilería general: muros, soleras, cimentaciones y obras de fábrica."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Gestión de residuos y escombros",
+            "description": "Retirada y gestión de escombros con contenedores de 5, 6 y 8 m³."
+          }
+        }
+      ]
+    }
   }
   </script>
   <link rel="canonical" href="https://www.obratudela.com/">
@@ -473,38 +528,51 @@
 </section>
 
 <!-- ── SERVICIOS ── -->
-<section id="servicios">
+<section id="servicios" itemscope itemtype="https://schema.org/ItemList">
+  <meta itemprop="name" content="Servicios — ObraTudela">
   <div class="section-header">
     <p class="section-tag">Lo que hacemos</p>
     <h2 class="section-title">Nuestros Servicios</h2>
     <p class="section-desc">Maquinaria propia y operarios especializados para todo tipo de trabajos de movimiento de tierras y obra civil.</p>
   </div>
   <div class="servicios-grid">
-    <div class="servicio-card">
+    <div class="servicio-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="position" content="1">
+      <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
       <div class="servicio-icon">⛏️</div>
-      <h3>Excavaciones, Movimiento de Tierras y Nivelaciones</h3>
-      <p>Zanjas, pozos, desmontes, terraplenes, rellenos y nivelación de terrenos. Con maquinaria propia para cualquier escala de proyecto.</p>
+      <h3 itemprop="name">Excavaciones, Movimiento de Tierras y Nivelaciones</h3>
+      <p itemprop="description">Zanjas, pozos, desmontes, terraplenes, rellenos y nivelación de terrenos. Con maquinaria propia para cualquier escala de proyecto.</p>
     </div>
-    <div class="servicio-card">
+    <div class="servicio-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="position" content="2">
+      <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
       <div class="servicio-icon">🏗️</div>
-      <h3>Demoliciones</h3>
-      <p>Derribo controlado de edificaciones, muros y estructuras con gestión completa de residuos y escombros.</p>
+      <h3 itemprop="name">Demoliciones</h3>
+      <p itemprop="description">Derribo controlado de edificaciones, muros y estructuras con gestión completa de residuos y escombros.</p>
     </div>
-    <div class="servicio-card">
+    <div class="servicio-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="position" content="3">
+      <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
       <div class="servicio-icon">🌿</div>
-      <h3>Desbroce y Limpieza</h3>
-      <p>Limpieza de solares, desbroce de vegetación y preparación de terrenos para nuevas construcciones o usos agrícolas.</p>
+      <h3 itemprop="name">Desbroce y Limpieza</h3>
+      <p itemprop="description">Limpieza de solares, desbroce de vegetación y preparación de terrenos para nuevas construcciones o usos agrícolas.</p>
     </div>
-    <a href="alquileres.html" class="servicio-card">
+    <a href="alquileres.html" class="servicio-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="position" content="4">
+      <meta itemprop="url" content="https://www.obratudela.com/alquileres.html">
+      <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
       <div class="servicio-icon">🔧</div>
-      <h3>Alquiler de Maquinaria</h3>
-      <p>Retroexcavadoras mixtas y compactas, con o sin operario. Adaptado a tu proyecto y presupuesto.</p>
+      <h3 itemprop="name">Alquiler de Maquinaria</h3>
+      <p itemprop="description">Retroexcavadoras mixtas y compactas, con o sin operario. Adaptado a tu proyecto y presupuesto.</p>
       <span style="display:inline-block;margin-top:12px;font-size:0.8rem;color:var(--orange);">Ver catálogo →</span>
     </a>
-    <a href="anuncios.html" class="servicio-card">
+    <a href="anuncios.html" class="servicio-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="position" content="5">
+      <meta itemprop="url" content="https://www.obratudela.com/anuncios.html">
+      <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
       <div class="servicio-icon">📢</div>
-      <h3>Anuncios de Compraventa</h3>
-      <p>Portal gratuito para compra y venta de maquinaria, herramientas y materiales de construcción entre profesionales.</p>
+      <h3 itemprop="name">Anuncios de Compraventa</h3>
+      <p itemprop="description">Portal gratuito para compra y venta de maquinaria, herramientas y materiales de construcción entre profesionales.</p>
       <span style="display:inline-block;margin-top:12px;font-size:0.8rem;color:var(--orange);">Ver anuncios →</span>
     </a>
   </div>
@@ -563,33 +631,39 @@
     <p class="section-desc">Solicita tu presupuesto sin compromiso. Respondemos en menos de 24 horas.</p>
   </div>
   <div class="contacto-layout">
-    <div class="contacto-info">
+    <div class="contacto-info" itemscope itemtype="https://schema.org/LocalBusiness">
+      <meta itemprop="name" content="Excavaciones y Servicios Arturo S.L.">
+      <meta itemprop="url" content="https://www.obratudela.com">
+      <meta itemprop="image" content="https://www.obratudela.com/img/logo.jpg">
       <div class="contacto-item">
         <div class="contacto-icon">📍</div>
         <div>
           <h3>Dirección</h3>
-          <p>Calle Manzano, 2<br>47320 Tudela de Duero, Valladolid</p>
+          <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Calle Manzano, 2</span><br>
+            <span itemprop="postalCode">47320</span> <span itemprop="addressLocality">Tudela de Duero</span>, <span itemprop="addressRegion">Valladolid</span>
+          </p>
         </div>
       </div>
       <div class="contacto-item">
         <div class="contacto-icon">📞</div>
         <div>
           <h3>Teléfono</h3>
-          <a href="tel:+34607444903">607 444 903</a>
+          <a href="tel:+34607444903" itemprop="telephone">607 444 903</a>
         </div>
       </div>
       <div class="contacto-item">
         <div class="contacto-icon">✉️</div>
         <div>
           <h3>Email</h3>
-          <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>
+          <a href="mailto:excavacionesart@gmail.com" itemprop="email">excavacionesart@gmail.com</a>
         </div>
       </div>
       <div class="contacto-item">
         <div class="contacto-icon">🏢</div>
         <div>
           <h3>Empresa</h3>
-          <p>Excavaciones y Servicios Arturo S.L.<br>NIF: B47489612</p>
+          <p><span itemprop="legalName">Excavaciones y Servicios Arturo S.L.</span><br>NIF: <span itemprop="taxID">B47489612</span></p>
         </div>
       </div>
       <a href="presupuesto_v2.html" class="btn-primary contacto-cta">Abrir gestor de presupuestos</a>

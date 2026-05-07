@@ -7,6 +7,50 @@
   <title>Gestor de Presupuestos — BCEXTREM 2026</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.obratudela.com/presupuesto_v2.html",
+        "url": "https://www.obratudela.com/presupuesto_v2.html",
+        "name": "Gestor de Presupuestos de Obra — BCEXTREM",
+        "description": "Herramienta profesional para crear presupuestos de obra con base de datos de precios de construcción. Exportación a Excel.",
+        "inLanguage": "es",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.obratudela.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Gestor de Presupuestos", "item": "https://www.obratudela.com/presupuesto_v2.html"}
+          ]
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Gestor de Presupuestos de Obra BCEXTREM",
+        "url": "https://www.obratudela.com/presupuesto_v2.html",
+        "description": "Generador de presupuestos de construcción con base de datos de precios BEDEC. Búsqueda por código y descripción, cálculo de IVA, exportación a Excel e impresión profesional.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "inLanguage": "es",
+        "featureList": [
+          "Base de datos de precios de construcción BEDEC",
+          "Búsqueda por código y descripción",
+          "Generación de presupuesto con IVA configurable",
+          "Exportación a Excel (.xlsx)",
+          "Impresión de presupuesto profesional con logo"
+        ],
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+        "provider": {
+          "@type": "Organization",
+          "name": "Excavaciones y Servicios Arturo S.L.",
+          "url": "https://www.obratudela.com"
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 
@@ -473,6 +517,7 @@
       padding: 10px 16px;
       background: var(--bg);
       border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
     }
 
     .logo-box img {
@@ -1046,11 +1091,12 @@
         </div>
         <div class="pagination" id="pagination"></div>
       </div>
-      <!-- SIDEBAR CATEGORÍAS -->
-      <div class="sidebar">
-        <div class="sidebar-title">CATEGORÍAS</div>
-        <div id="categories"></div>
-      </div>
+    </div>
+
+    <!-- SIDEBAR CATEGORÍAS -->
+    <div class="sidebar">
+      <div class="sidebar-title">CATEGORÍAS</div>
+      <div id="categories"></div>
     </div>
 
     <!-- RESIZER DIVIDER -->
@@ -1705,7 +1751,7 @@
       document.addEventListener('mousemove', function (e) {
         if (!isResizing) return;
         const delta = startX - e.clientX; // panel crece hacia la izquierda
-        const newWidth = Math.max(320, Math.min(900, startWidth + delta));
+        const newWidth = Math.max(320, Math.min(1200, startWidth + delta));
         presPanel.style.width = newWidth + 'px';
       });
 
@@ -1729,7 +1775,7 @@
       document.addEventListener('touchmove', function (e) {
         if (!isResizing) return;
         const delta = startX - e.touches[0].clientX;
-        const newWidth = Math.max(320, Math.min(900, startWidth + delta));
+        const newWidth = Math.max(320, Math.min(1200, startWidth + delta));
         presPanel.style.width = newWidth + 'px';
       }, { passive: false });
 

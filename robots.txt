@@ -1,6 +1,48 @@
+# Rastreadores generales
 User-agent: *
 Allow: /
-Disallow: /extract.js
-Disallow: /validate.js
+
+# Google — incluye Gemini/SGE
+User-agent: Googlebot
+Allow: /
+
+# Google Extended (Bard / Gemini entrenamiento)
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI browsing (ChatGPT con búsqueda)
+User-agent: ChatGPT-User
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: Bingbot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (dataset IA abierto)
+User-agent: CCBot
+Allow: /
+
+# Apple Applebot (Siri / AI features)
+User-agent: Applebot
+Allow: /
 
 Sitemap: https://www.obratudela.com/sitemap.xml
+
+# Catálogo de datos estructurado (AI-readable)
+# https://www.obratudela.com/catalogo.json

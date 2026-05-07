@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Fontanería Reforma · BCEXTREM 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --surface2: #242424;
+  --border: #2e2e2e;
+  --orange: #ff6b00;
+  --orange2: #ff8c38;
+  --text: #e8e8e8;
+  --muted: #888;
+  --green: #4caf7d;
+  --red: #e05353;
+  --blue: #4a9eff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: var(--surface);
+  border-bottom: 2px solid var(--orange);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: var(--orange);
+}
+.header-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+.btn-back {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 5px 12px;
+  transition: all .2s;
+}
+.btn-back:hover { color: var(--orange); border-color: var(--orange); }
+
+/* LAYOUT */
+.wrap { display: flex; height: calc(100vh - 54px); overflow: hidden; }
+
+/* PANEL IZQUIERDO */
+.panel-left {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* PANEL DERECHO - PRESUPUESTO */
+.panel-right {
+  width: 380px;
+  min-width: 320px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* SECCIÓN */
+.seccion {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.seccion-header {
+  background: var(--surface2);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+}
+.seccion-header:hover { background: #2c2c2c; }
+.seccion-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--orange);
+  background: #2a1800;
+  border: 1px solid #ff6b0055;
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+.seccion-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text);
+  flex: 1;
+}
+.seccion-arrow {
+  font-size: 10px;
+  color: var(--muted);
+  transition: transform .2s;
+}
+.seccion.open .seccion-arrow { transform: rotate(90deg); }
+.seccion-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .3s ease;
+}
+.seccion.open .seccion-body { max-height: 2000px; }
+
+/* TABLA PARTIDAS */
+.partidas-table { width: 100%; border-collapse: collapse; }
+.partidas-table thead th {
+  background: var(--bg);
+  padding: 8px 12px;
+  text-align: left;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+.partidas-table tbody tr {
+  border-bottom: 1px solid #1f1f1f;
+  transition: background .1s;
+}
+.partidas-table tbody tr:hover { background: var(--surface2); }
+.partidas-table td { padding: 9px 12px; }
+td.t-cod {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--orange2);
+  white-space: nowrap;
+  width: 100px;
+}
+td.t-desc { font-size: 12px; color: var(--text); }
+td.t-ud {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  text-align: center;
+  width: 36px;
+}
+td.t-precio {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+  color: #b8e0c8;
+  white-space: nowrap;
+  width: 80px;
+}
+td.t-cant {
+  width: 90px;
+  text-align: center;
+}
+.qty-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.qty-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 22px; height: 22px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .15s;
+  flex-shrink: 0;
+}
+.qty-btn:hover { border-color: var(--orange); color: var(--orange); }
+.qty-input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 36px;
+  height: 22px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  border-radius: 3px;
+  outline: none;
+}
+.qty-input:focus { border-color: var(--orange); }
+
+/* NOTA DESESCOMBRO */
+.info-box {
+  background: #1a1400;
+  border: 1px solid #3a2c00;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #c8b887;
+  line-height: 1.6;
+  margin: 12px 16px;
+}
+.info-box strong { color: var(--orange2); }
+
+/* SLIDERS SUPERFICIE */
+.slider-group {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.slider-row { display: flex; flex-direction: column; gap: 6px; }
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--muted);
+}
+.slider-label span { color: var(--orange2); font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--orange);
+  cursor: pointer;
+  transition: background .15s;
+}
+input[type=range]::-webkit-slider-thumb:hover { background: var(--orange2); }
+
+/* PANEL DERECHO - PRESUPUESTO */
+.budget-header {
+  padding: 14px 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.budget-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+.budget-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--muted);
+  font-size: 13px;
+  gap: 8px;
+  padding: 40px;
+  text-align: center;
+}
+.budget-empty .ico { font-size: 2.5rem; opacity: .3; }
+
+.budget-item {
+  padding: 10px 16px;
+  border-bottom: 1px solid #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  animation: fadeIn .2s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: none; } }
+.bi-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.bi-cod { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: var(--orange2); }
+.bi-desc { font-size: 11px; color: var(--text); flex: 1; line-height: 1.4; }
+.bi-delete {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 2px;
+  transition: color .15s;
+  flex-shrink: 0;
+}
+.bi-delete:hover { color: var(--red); }
+.bi-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+}
+.bi-cant { color: var(--muted); }
+.bi-total { color: var(--green); font-weight: 600; }
+
+/* SUBTOTALES DESESCOMBRO */
+.desescombro-box {
+  background: #0f1a12;
+  border: 1px solid #1e3a24;
+  border-radius: 4px;
+  margin: 0 16px 12px;
+  padding: 10px 14px;
+  font-size: 12px;
+  display: none;
+}
+.desescombro-box.visible { display: block; }
+.des-row { display: flex; justify-content: space-between; color: var(--muted); margin-bottom: 4px; }
+.des-row:last-child { margin-bottom: 0; color: var(--green); font-weight: 600; }
+
+/* TOTALES */
+.budget-footer {
+  padding: 14px 16px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--muted);
+}
+.total-row.main {
+  font-size: 16px;
+  color: var(--text);
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+.total-row.main span:last-child { color: var(--orange); font-weight: 600; }
+
+/* IVA SELECTOR */
+.iva-row { display: flex; align-items: center; gap: 8px; }
+.iva-row label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--muted); }
+.iva-select {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* BOTONES FOOTER */
+.footer-btns {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+.btn {
+  flex: 1;
+  padding: 9px;
+  border-radius: 4px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  cursor: pointer;
+  border: none;
+  transition: all .15s;
+}
+.btn-print { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+.btn-print:hover { border-color: var(--orange); color: var(--orange); }
+.btn-clear { background: none; color: var(--red); border: 1px solid #3a1a1a; }
+.btn-clear:hover { background: #2a0a0a; }
+
+/* RESUMEN RAPIDO */
+.resumen-box {
+  background: var(--surface2);
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 0 16px 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.res-item { display: flex; flex-direction: column; gap: 2px; }
+.res-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
+.res-val { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; color: var(--blue); }
+
+/* PRINT */
+@media print {
+  header, .panel-left, .footer-btns { display: none; }
+  .wrap { display: block; }
+  .panel-right { width: 100%; border: none; }
+  body { background: #fff; color: #000; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ FONTANERÍA REFORMA</h1>
+  <span class="header-sub">BCEXTREM 2026 · PRECIOS REALES</span>
+  <a href="https://www.obratudela.com/presupuesto_v2.html" class="btn-back">← Volver</a>
+</header>
+
+<div class="wrap">
+
+  <!-- PANEL IZQUIERDO -->
+  <div class="panel-left">
+
+    <!-- DESESCOMBRO/SUPERFICIE -->
+    <div class="seccion open">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">01</span>
+        <span class="seccion-title">Demolición y Desescombro</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <div class="slider-group">
+          <div class="slider-row">
+            <div class="slider-label">
+              <span>Superficie a levantar</span>
+              <span id="lbl-sup">100 m²</span>
+            </div>
+            <input type="range" id="sl-sup" min="10" max="300" value="100" oninput="updateDesescombro()">
+          </div>
+        </div>
+        <div class="info-box">
+          <strong>Precio BCEXTREM:</strong> 15 €/m² (mínimo) — 25 €/m² (con martillo)<br>
+          El cálculo usa el rango de demolición de solería a mano (15 €/m²) y con martillo (25 €/m²) según base BCEXTREM 2026. Si lo haces tú: <strong>0 €</strong>.
+        </div>
+        <div style="padding: 0 16px 16px;">
+          <table class="partidas-table" style="font-size:12px;">
+            <thead>
+              <tr>
+                <th>Concepto</th>
+                <th>Ud</th>
+                <th style="text-align:center">Cant.</th>
+                <th style="text-align:right">P.Unit.</th>
+                <th style="text-align:right">Total</th>
+              </tr>
+            </thead>
+            <tbody id="des-tabla">
+              <tr>
+                <td colspan="5" style="color:var(--muted); padding:10px; font-size:11px;">Ajusta el slider para calcular.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 0 16px 12px; display:flex; gap:8px; align-items:center;">
+          <input type="checkbox" id="des-yo" onchange="updateDesescombro()" style="accent-color:var(--orange); width:14px; height:14px;">
+          <label for="des-yo" style="font-size:12px; cursor:pointer; color:var(--muted)">Lo hago yo → <strong style="color:var(--green)">Ahorro esta partida</strong></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEVANTADO INSTALACIONES -->
+    <div class="seccion open">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">02</span>
+        <span class="seccion-title">Levantado de Instalaciones</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <table class="partidas-table" id="tbl-levantado"></table>
+      </div>
+    </div>
+
+    <!-- INSTALACIÓN AGUA -->
+    <div class="seccion open">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">03</span>
+        <span class="seccion-title">Instalación de Agua Fría/Caliente</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <div class="info-box" style="margin-top:12px;">
+          Precios de instalación completa por zonas (tubería + conexiones + desagüe). Materiales: <strong>B</strong>=Bicapa, <strong>C</strong>=Cobre, <strong>M</strong>=Multicapa, <strong>P</strong>=PEX, <strong>R</strong>=CPVC
+        </div>
+        <table class="partidas-table" id="tbl-instalacion"></table>
+      </div>
+    </div>
+
+    <!-- APARATOS SANITARIOS -->
+    <div class="seccion">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">04</span>
+        <span class="seccion-title">Aparatos Sanitarios — Lavabos</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <table class="partidas-table" id="tbl-lavabos"></table>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">05</span>
+        <span class="seccion-title">Aparatos Sanitarios — Inodoros</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <table class="partidas-table" id="tbl-inodoros"></table>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">06</span>
+        <span class="seccion-title">Aparatos Sanitarios — Bañeras</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <table class="partidas-table" id="tbl-baneras"></table>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="seccion-header" onclick="toggleSec(this)">
+        <span class="seccion-num">07</span>
+        <span class="seccion-title">Aparatos Sanitarios — Duchas</span>
+        <span class="seccion-arrow">▶</span>
+      </div>
+      <div class="seccion-body">
+        <table class="partidas-table" id="tbl-duchas"></table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PANEL DERECHO -->
+  <div class="panel-right">
+    <div class="budget-header">
+      <span>📋 PRESUPUESTO FONTANERÍA</span>
+      <span id="n-items" style="color:var(--orange)">0 partidas</span>
+    </div>
+
+    <!-- Resumen rápido -->
+    <div class="resumen-box" id="resumen-box" style="display:none; margin-top:12px;">
+      <div class="res-item">
+        <span class="res-label">Levantado</span>
+        <span class="res-val" id="res-levantado">0,00 €</span>
+      </div>
+      <div class="res-item">
+        <span class="res-label">Instalación</span>
+        <span class="res-val" id="res-instalacion">0,00 €</span>
+      </div>
+      <div class="res-item">
+        <span class="res-label">Aparatos</span>
+        <span class="res-val" id="res-aparatos">0,00 €</span>
+      </div>
+      <div class="res-item">
+        <span class="res-label">Desescombro</span>
+        <span class="res-val" id="res-desescombro">0,00 €</span>
+      </div>
+    </div>
+
+    <div class="budget-items" id="budget-items">
+      <div class="budget-empty">
+        <span class="ico">🔧</span>
+        <span>Añade partidas usando<br><strong style="color:var(--orange2)">+</strong> en cada fila</span>
+      </div>
+    </div>
+
+    <!-- Totales -->
+    <div class="budget-footer">
+      <div class="total-row"><span>Subtotal partidas</span><span id="t-subtotal">0,00 €</span></div>
+      <div class="total-row"><span>Desescombro</span><span id="t-desescombro">0,00 €</span></div>
+      <div class="total-row iva-row">
+        <label for="iva-sel">IVA</label>
+        <select class="iva-select" id="iva-sel" onchange="recalc()">
+          <option value="0">Sin IVA</option>
+          <option value="10" selected>10%</option>
+          <option value="21">21%</option>
+        </select>
+        <span id="t-iva">0,00 €</span>
+      </div>
+      <div class="total-row main">
+        <span>TOTAL</span>
+        <span id="t-total">0,00 €</span>
+      </div>
+    </div>
+    <div class="footer-btns">
+      <button class="btn btn-print" onclick="window.print()">🖨️ Imprimir</button>
+      <button class="btn btn-clear" onclick="clearAll()">🗑 Limpiar</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── BASE DE PRECIOS BCEXTREM 2026 ──────────────────────────────────────────
+const DB = {
+  LEVANTADO: [
+    ["E01EIF010","ud","LEVANTADO INSTALACIÓN FONTANERÍA/DESAGÜES 1 VIVIENDA",209.69],
+    ["E01EIF020","ud","LEVANTADO INSTALACIÓN FONTANERÍA/DESAGÜES BAÑO 4 APARATOS",79.98],
+    ["E01EIF030","ud","LEVANTADO INSTALACIÓN FONTANERÍA/DESAGÜES BAÑO 3 APARATOS",74.35],
+    ["E01EIF040","ud","LEVANTADO INSTALACIÓN FONTANERÍA/DESAGÜES ASEO 2 APARATOS",65.12],
+    ["E01EIF050","ud","LEVANTADO INSTALACIÓN FONTANERÍA/DESAGÜES COCINA",70.73],
+    ["E01EIF060","ud","LEVANTADO CONTADOR INDIVIDUAL AGUA",9.62],
+    ["E01EIF080","ud","LEVANTADO APARATOS SANITARIOS",17.51],
+    ["E01EIF090","ud","LEVANTADO BAÑERA/DUCHA",32.87],
+    ["E01EIF100","ud","LEVANTADO FREGADERO COCINA VIVIENDA",31.94],
+    ["E01EIF110","ud","LEVANTADO LAVADERO",16.35],
+    ["E01EIF120","ud","LEVANTADO GRIFERÍA",9.62]
+  ],
+  INSTALACION_AGUA: [
+    ["E12FXEB010","ud","INSTALACIÓN AGUA BICAPA — ASEO (LAVABO+INODORO)",207.57],
+    ["E12FXEB020","ud","INSTALACIÓN AGUA BICAPA — ASEO CON DUCHA",295.17],
+    ["E12FXEB030","ud","INSTALACIÓN AGUA BICAPA — BAÑO COMPLETO C/BAÑERA",363.00],
+    ["E12FXEB040","ud","INSTALACIÓN AGUA BICAPA — BAÑO COMPLETO C/DUCHA",351.75],
+    ["E12FXEB050","ud","INSTALACIÓN AGUA BICAPA — COCINA COMPLETA",290.65],
+    ["E12FXEC010","ud","INSTALACIÓN AGUA COBRE — ASEO (LAVABO+INODORO)",227.47],
+    ["E12FXEC020","ud","INSTALACIÓN AGUA COBRE — ASEO CON DUCHA",333.91],
+    ["E12FXEC030","ud","INSTALACIÓN AGUA COBRE — BAÑO COMPLETO C/BAÑERA",416.81],
+    ["E12FXEC041","ud","INSTALACIÓN AGUA COBRE — BAÑO COMPLETO C/DUCHA",402.60],
+    ["E12FXEC050","ud","INSTALACIÓN AGUA COBRE — COCINA COMPLETA",332.62],
+    ["E12FXEM010","ud","INSTALACIÓN AGUA MULTICAPA — ASEO (LAVABO+INODORO)",183.18],
+    ["E12FXEM020","ud","INSTALACIÓN AGUA MULTICAPA — ASEO CON DUCHA",251.10],
+    ["E12FXEM030","ud","INSTALACIÓN AGUA MULTICAPA — BAÑO COMPLETO C/BAÑERA",302.30],
+    ["E12FXEM040","ud","INSTALACIÓN AGUA MULTICAPA — BAÑO COMPLETO C/DUCHA",294.48],
+    ["E12FXEM050","ud","INSTALACIÓN AGUA MULTICAPA — COCINA COMPLETA",243.67],
+    ["E12FXEP010","ud","INSTALACIÓN AGUA PEX — ASEO (LAVABO+INODORO)",228.96],
+    ["E12FXEP020","ud","INSTALACIÓN AGUA PEX — ASEO CON DUCHA",338.64],
+    ["E12FXEP030","ud","INSTALACIÓN AGUA PEX — BAÑO COMPLETO C/BAÑERA",422.34],
+    ["E12FXEP040","ud","INSTALACIÓN AGUA PEX — BAÑO COMPLETO C/DUCHA",407.64],
+    ["E12FXEP050","ud","INSTALACIÓN AGUA PEX — COCINA COMPLETA",336.19],
+    ["E12FXER011","ud","INSTALACIÓN AGUA CPVC — ASEO (LAVABO+INODORO)",233.59],
+    ["E12FXER021","ud","INSTALACIÓN AGUA CPVC — ASEO CON DUCHA",349.83],
+    ["E12FXER031","ud","INSTALACIÓN AGUA CPVC — BAÑO COMPLETO C/BAÑERA",437.44],
+    ["E12FXER041","ud","INSTALACIÓN AGUA CPVC — BAÑO COMPLETO C/DUCHA",421.83],
+    ["E12FXER051","ud","INSTALACIÓN AGUA CPVC — COCINA COMPLETA",347.65],
+    ["E12FXV030","ud","INSTALACIÓN FONTANERÍA COBRE — TOMA GRIFO",40.64],
+    ["E12FXV060","ud","INSTALACIÓN FONTANERÍA PEX — TOMA GRIFO",44.84],
+    ["E12FXV070","ud","INSTALACIÓN COBRE — AGUA FRÍA PARA PILA",96.55],
+    ["E12FXV080","ud","INSTALACIÓN COBRE — AGUA FRÍA PARA VERTEDERO",94.01]
+  ],
+  LAVABOS: [
+    ["E16SALA010","ud","LAVABO 65x51 SERIE NORMAL COLOR GRIFERÍA MONOBLOC",174.37],
+    ["E16SALA030","ud","LAVABO 56x46 SERIE NORMAL BLANCO GRIFERÍA REPISA",149.30],
+    ["E16SALA050","ud","LAVABO 70x56 SERIE MEDIA COLOR GRIFERÍA MONOBLOC",261.74],
+    ["E16SALA080","ud","LAVABO 63x50 SERIE MEDIA BLANCO GRIFERÍA MONOMANDO",223.54],
+    ["E16SALA100","ud","LAVABO 70x55 SERIE ALTA COLOR GRIFERÍA MONOMANDO",374.89],
+    ["E16SALA120","ud","LAVABO 81x58 SERIE EXTRA BLANCO GRIFERÍA MONOMANDO",405.95],
+    ["E16SALA130","ud","LAVABO 73x55 SERIE EXTRA COLOR GRIFERÍA MONOMANDO",544.13],
+    ["E16SALE010","ud","LAVABO 56x47 SERIE NORMAL COLOR GRIFERÍA MONOBLOC",176.62],
+    ["E16SALE020","ud","LAVABO 51x39 SERIE NORMAL BLANCO GRIFERÍA MONOBLOC",174.22],
+    ["E16SALE040","ud","LAVABO 62x48 SERIE ALTA COLOR GRIFERÍA MONOMANDO",234.90],
+    ["E16SALE050","ud","LAVABO 62x48 SERIE ALTA BLANCO GRIFERÍA MONOMANDO",220.49],
+    ["E16SALU020","ud","LAVABO 1 SENO 100x56 BLANCO GRIFERÍA MONOBLOC",338.82],
+    ["E16SALU030","ud","LAVABO MURAL 1 SENO 70x56 BLANCO GRIFERÍA MONOBLOC",327.82]
+  ],
+  INODOROS: [
+    ["E16SANA010","ud","INODORO TANQUE ALTO SERIE NORMAL BLANCO",138.22],
+    ["E16SANB010","ud","INODORO TANQUE BAJO SERIE NORMAL, COLOR",305.81],
+    ["E16SANB020","ud","INODORO TANQUE BAJO SERIE NORMAL, BLANCO",241.55],
+    ["E16SANB030","ud","INODORO TANQUE BAJO SERIE MEDIA, COLOR",352.61],
+    ["E16SANB040","ud","INODORO TANQUE BAJO SERIE MEDIA, BLANCO",276.19],
+    ["E16SANB050","ud","INODORO C/FLUXOR SERIE ALTA, COLOR",780.45],
+    ["E16SANB060","ud","INODORO C/FLUXOR SERIE ALTA, BLANCO",691.08],
+    ["E16SANB070","ud","INODORO T.BAJO SERIE EXTRA, BLANCO",640.28]
+  ],
+  BANERAS: [
+    ["E16SABA030","ud","BAÑERA ACRÍLICA 170x85 GRIFERÍA MONOMANDO",664.14],
+    ["E16SABA010","ud","BAÑERA ACRÍLICA 180x91 GRIFERÍA MONOMANDO",1122.97],
+    ["E16SABA020","ud","BAÑERA ACRÍLICA ESCUADRA 145x145 GRIFERÍA MONOMANDO",1283.38],
+    ["E16SABC050","ud","BAÑERA CHAPA 160x70 BLANCA GRIFERÍA MONOMANDO",204.56],
+    ["E16SABC030","ud","BAÑERA CHAPA 150x75 BLANCA GRIFERÍA MONOMANDO",233.99],
+    ["E16SABC040","ud","BAÑERA CHAPA 160x70 COLOR GRIFERÍA MONOMANDO",239.47],
+    ["E16SABC010","ud","BAÑERA CHAPA 170x75 COLOR GRIFERÍA MONOMANDO",420.57],
+    ["E16SABF040","ud","BAÑERA FUNDICIÓN 160x70 BLANCA GRIFERÍA MONOMANDO",405.64],
+    ["E16SABF030","ud","BAÑERA FUNDICIÓN 160x70 COLOR GRIFERÍA MONOMANDO",654.98],
+    ["E16SABF010","ud","BAÑERA FUNDICIÓN 170x80 COLOR GRIFERÍA MONOMANDO",1004.11]
+  ],
+  DUCHAS: [
+    ["E16SADC030","ud","PLATO DUCHA CHAPA 70x70 BLANCO GRIFERÍA MONOBLOC",120.15],
+    ["E16SADC020","ud","PLATO DUCHA CHAPA 80x80 BLANCO GRIFERÍA MONOBLOC",125.83],
+    ["E16SADP010","ud","PLATO DUCHA PORCELANA 75x75 COLOR GRIFERÍA MONOMANDO",261.91],
+    ["E16SADP030","ud","PLATO DUCHA PORCELANA 80x80 BLANCO GRIFERÍA MONOMANDO",267.19],
+    ["E16SADA030","ud","PLATO DUCHA ACRÍLICO 90x75 GRIFERÍA MONOBLOC",384.03],
+    ["E16SADA020","ud","PLATO DUCHA ACRÍLICO 90x90 ANGULAR GRIFERÍA MONOMANDO",427.70],
+    ["E16SADR010","ud","PLATO DUCHA 90x120 RESINA GRIFERÍA TERMOSTÁTICA",562.15]
+  ]
+};
+
+// GRUPOS para clasificar en resumen
+const GRP_LEV = new Set(DB.LEVANTADO.map(i=>i[0]));
+const GRP_INS = new Set(DB.INSTALACION_AGUA.map(i=>i[0]));
+
+// Estado
+const presupuesto = {}; // cod -> {item, qty}
+let desescombro = { min: 0, max: 0, yo: false };
+
+// ── RENDER TABLAS ─────────────────────────────────────────────────────────
+function buildTable(tbId, data) {
+  const tb = document.getElementById(tbId);
+  if (!tb) return;
+  tb.innerHTML = `
+    <thead><tr>
+      <th>Código</th><th>Descripción</th><th>Ud</th><th style="text-align:right">€/ud</th><th style="text-align:center">Cant.</th><th></th>
+    </tr></thead>
+    <tbody>
+      ${data.map(item => `
+        <tr id="tr-${item[0]}">
+          <td class="t-cod">${item[0]}</td>
+          <td class="t-desc">${item[2]}</td>
+          <td class="t-ud">${item[1]}</td>
+          <td class="t-precio">${fmt(item[3])}</td>
+          <td class="t-cant">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty('${item[0]}', -1)">−</button>
+              <input class="qty-input" type="number" id="qi-${item[0]}" value="0" min="0" max="99"
+                onchange="setQty('${item[0]}', this.value, ${item[3]}, '${item[2].replace(/'/g,"'")}')">
+              <button class="qty-btn" onclick="changeQty('${item[0]}', 1)">+</button>
+            </div>
+          </td>
+          <td style="width:28px;">
+            <button class="qty-btn" style="border-color:#2a4a1a; color:var(--green);"
+              onclick="changeQty('${item[0]}', 1, ${item[3]}, '${item[2].replace(/'/g,"'")}')">＋</button>
+          </td>
+        </tr>
+      `).join('')}
+    </tbody>`;
+}
+
+// ── DESESCOMBRO ───────────────────────────────────────────────────────────
+function updateDesescombro() {
+  const sup = +document.getElementById('sl-sup').value;
+  document.getElementById('lbl-sup').textContent = sup + ' m²';
+  const yo = document.getElementById('des-yo').checked;
+  const min = yo ? 0 : sup * 15;
+  const max = yo ? 0 : sup * 25;
+  desescombro = { min, max, yo };
+
+  const tbody = document.getElementById('des-tabla');
+  if (yo) {
+    tbody.innerHTML = `<tr><td colspan="5" style="color:var(--green); padding:10px; font-size:11px;">✓ Lo haces tú → 0,00 € (ahorro entre ${fmt(sup*15)} y ${fmt(sup*25)})</td></tr>`;
+  } else {
+    tbody.innerHTML = `
+      <tr>
+        <td class="t-desc">Demolición solería a mano</td>
+        <td class="t-ud">m²</td>
+        <td style="text-align:center; font-family:'IBM Plex Mono', monospace; font-size:11px;">${sup}</td>
+        <td class="t-precio">15,00 €</td>
+        <td class="t-precio" style="color:var(--orange2);">${fmt(min)}</td>
+      </tr>
+      <tr>
+        <td class="t-desc">Demolición solería c/martillo</td>
+        <td class="t-ud">m²</td>
+        <td style="text-align:center; font-family:'IBM Plex Mono', monospace; font-size:11px;">${sup}</td>
+        <td class="t-precio">25,00 €</td>
+        <td class="t-precio" style="color:var(--orange2);">${fmt(max)}</td>
+      </tr>`;
+  }
+  recalc();
+}
+
+// ── GESTIÓN CANTIDADES ────────────────────────────────────────────────────
+function changeQty(cod, delta) {
+  // Buscar item en DB
+  let item = null;
+  for (const grupo of Object.values(DB)) {
+    item = grupo.find(i => i[0] === cod);
+    if (item) break;
+  }
+  if (!item) return;
+
+  const input = document.getElementById('qi-' + cod);
+  let qty = parseInt(input.value || 0) + delta;
+  if (qty < 0) qty = 0;
+  input.value = qty;
+  setQty(cod, qty, item[3], item[2]);
+}
+
+function setQty(cod, qty, precio, desc) {
+  qty = Math.max(0, parseInt(qty) || 0);
+  const input = document.getElementById('qi-' + cod);
+  if (input) input.value = qty;
+
+  if (qty === 0) {
+    delete presupuesto[cod];
+  } else {
+    presupuesto[cod] = { cod, desc, precio, qty };
+  }
+  renderBudget();
+}
+
+// ── RENDER PRESUPUESTO ────────────────────────────────────────────────────
+function renderBudget() {
+  const items = Object.values(presupuesto);
+  const container = document.getElementById('budget-items');
+  const nItems = document.getElementById('n-items');
+  const rsBox = document.getElementById('resumen-box');
+
+  nItems.textContent = items.length + (items.length === 1 ? ' partida' : ' partidas');
+
+  if (items.length === 0) {
+    container.innerHTML = `<div class="budget-empty"><span class="ico">🔧</span><span>Añade partidas usando<br><strong style="color:var(--orange2)">+</strong> en cada fila</span></div>`;
+    rsBox.style.display = 'none';
+  } else {
+    rsBox.style.display = 'grid';
+    container.innerHTML = items.map(it => `
+      <div class="budget-item">
+        <div class="bi-top">
+          <div>
+            <div class="bi-cod">${it.cod}</div>
+            <div class="bi-desc">${it.desc}</div>
+          </div>
+          <button class="bi-delete" onclick="removeItem('${it.cod}')">✕</button>
+        </div>
+        <div class="bi-bottom">
+          <span class="bi-cant">${it.qty} ud × ${fmt(it.precio)}</span>
+          <span class="bi-total">${fmt(it.qty * it.precio)}</span>
+        </div>
+      </div>`).join('');
+  }
+  recalc();
+}
+
+function removeItem(cod) {
+  delete presupuesto[cod];
+  const input = document.getElementById('qi-' + cod);
+  if (input) input.value = 0;
+  renderBudget();
+}
+
+// ── RECALCULAR TOTALES ────────────────────────────────────────────────────
+function recalc() {
+  const items = Object.values(presupuesto);
+  let levAmt = 0, insAmt = 0, aparAmt = 0;
+  let subtotal = 0;
+  for (const it of items) {
+    const t = it.qty * it.precio;
+    subtotal += t;
+    if (GRP_LEV.has(it.cod)) levAmt += t;
+    else if (GRP_INS.has(it.cod)) insAmt += t;
+    else aparAmt += t;
+  }
+
+  const desMin = desescombro.yo ? 0 : desescombro.min;
+  const desMax = desescombro.yo ? 0 : desescombro.max;
+  const desMed = (desMin + desMax) / 2;
+  const iva = +document.getElementById('iva-sel').value / 100;
+  const total = subtotal + desMed;
+  const ivaAmt = total * iva;
+
+  document.getElementById('t-subtotal').textContent = fmt(subtotal);
+  document.getElementById('t-desescombro').textContent =
+    desMin === 0 ? '0,00 €' : fmt(desMin) + ' – ' + fmt(desMax);
+  document.getElementById('t-iva').textContent = fmt(ivaAmt);
+  document.getElementById('t-total').textContent = fmt(total + ivaAmt);
+
+  document.getElementById('res-levantado').textContent = fmt(levAmt);
+  document.getElementById('res-instalacion').textContent = fmt(insAmt);
+  document.getElementById('res-aparatos').textContent = fmt(aparAmt);
+  document.getElementById('res-desescombro').textContent =
+    desMin === 0 ? '0,00 €' : fmt(desMin) + '–' + fmt(desMax);
+}
+
+// ── UTILS ─────────────────────────────────────────────────────────────────
+function fmt(n) {
+  return n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+}
+
+function toggleSec(header) {
+  header.closest('.seccion').classList.toggle('open');
+}
+
+function clearAll() {
+  if (!confirm('¿Borrar todo el presupuesto?')) return;
+  for (const cod of Object.keys(presupuesto)) {
+    const input = document.getElementById('qi-' + cod);
+    if (input) input.value = 0;
+  }
+  for (const k in presupuesto) delete presupuesto[k];
+  renderBudget();
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────
+buildTable('tbl-levantado', DB.LEVANTADO);
+buildTable('tbl-instalacion', DB.INSTALACION_AGUA);
+buildTable('tbl-lavabos', DB.LAVABOS);
+buildTable('tbl-inodoros', DB.INODOROS);
+buildTable('tbl-baneras', DB.BANERAS);
+buildTable('tbl-duchas', DB.DUCHAS);
+updateDesescombro();
+</script>
+</body>
+</html>
