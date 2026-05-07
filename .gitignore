@@ -21,6 +21,10 @@ package.json
 # Cloudflare cache
 .wrangler/
 
+# Admin local (no se sube al servidor)
+admin-server.js
+iniciar-admin.bat
+
 # Archivos temporales y backups
 *.bc3
 *.bak

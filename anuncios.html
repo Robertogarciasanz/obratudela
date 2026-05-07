@@ -736,132 +736,6 @@ footer a:hover { color: var(--primary); }
 .toast.visible { transform: translateX(-50%) translateY(0); }
 .toast.exito { background: #1a4d2e; border-color: var(--verde); color: var(--verde); }
 
-/* ===== PANEL ADMIN ===== */
-.btn-admin-flotante {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background: var(--primary);
-  color: var(--negro);
-  border: none;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  font-size: 28px;
-  font-weight: 800;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 500;
-  box-shadow: 0 4px 20px rgba(255,107,0,0.4);
-  transition: transform 0.2s;
-}
-.btn-admin-flotante.visible { display: flex; }
-.btn-admin-flotante:hover { transform: scale(1.1); }
-
-.admin-badge {
-  position: fixed;
-  top: 70px;
-  right: 12px;
-  background: var(--primary);
-  color: var(--negro);
-  font-size: 11px;
-  font-weight: 800;
-  padding: 4px 12px;
-  border-radius: 20px;
-  z-index: 500;
-  display: none;
-  letter-spacing: 1px;
-}
-.admin-badge.visible { display: block; }
-
-.btn-del-card {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: rgba(231,76,60,0.9);
-  color: white;
-  border: none;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  font-size: 14px;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
-body.admin-mode .btn-del-card { display: flex; }
-.btn-del-card:hover { background: var(--rojo); }
-
-.form-admin label {
-  display: block;
-  font-size: 12px;
-  color: rgba(255,255,255,0.45);
-  margin: 10px 0 4px;
-  font-weight: 600;
-}
-.form-admin input[type=text],
-.form-admin input[type=number],
-.form-admin select,
-.form-admin textarea {
-  width: 100%;
-  padding: 9px 11px;
-  border: 1px solid #333;
-  border-radius: 6px;
-  font-size: 13px;
-  background: #111;
-  color: #eee;
-  outline: none;
-  transition: border-color 0.2s;
-  font-family: inherit;
-}
-.form-admin input:focus,
-.form-admin select:focus,
-.form-admin textarea:focus { border-color: var(--primary); }
-.form-admin select option { background: #1a1a1a; }
-.form-admin textarea { resize: vertical; min-height: 80px; }
-.form-check {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-  font-size: 13px;
-  color: rgba(255,255,255,0.6);
-  cursor: pointer;
-}
-.form-check input { width: auto; cursor: pointer; }
-.preview-fotos { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.preview-fotos img { width: 72px; height: 72px; object-fit: cover; border-radius: 6px; border: 2px solid #333; }
-.form-error {
-  display: none;
-  background: rgba(231,76,60,0.1);
-  border: 1px solid rgba(231,76,60,0.3);
-  border-radius: 6px;
-  padding: 10px 12px;
-  font-size: 13px;
-  color: #e74c3c;
-  margin-bottom: 8px;
-}
-.form-error.visible { display: block; }
-.btn-publicar {
-  width: 100%;
-  background: var(--verde);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 15px;
-  font-weight: 800;
-  cursor: pointer;
-  margin-top: 16px;
-  transition: filter 0.2s;
-}
-.btn-publicar:hover { filter: brightness(1.15); }
-.btn-publicar:disabled { opacity: 0.5; cursor: default; }
-.progreso-fotos { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 4px; height: 16px; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -985,7 +859,7 @@ body.admin-mode .btn-del-card { display: flex; }
     <a href="tel:+34607444903">607 444 903</a>
     <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>
   </p>
-  <p style="margin-top:12px; font-size:11px;">© 2026 ObraTudela.com · Tudela de Duero, Valladolid · <a href="#" onclick="abrirModalClave();return false;" style="opacity:0.2;font-size:11px;">⚙</a></p>
+  <p style="margin-top:12px; font-size:11px;">© 2026 ObraTudela.com · Tudela de Duero, Valladolid</p>
 </footer>
 
 <!-- MODAL DETALLE -->
@@ -1016,99 +890,16 @@ body.admin-mode .btn-del-card { display: flex; }
   </div>
 </div>
 
-<!-- MODAL CLAVE ADMIN -->
-<div class="modal-overlay" id="modalClave" onclick="cerrarModalSiOverlay(event,'modalClave')">
-  <div class="modal-contenido" style="max-width:340px">
-    <button class="modal-cerrar" onclick="cerrarModal('modalClave')">✕</button>
-    <div class="modal-info" style="padding:32px 24px 24px;text-align:center">
-      <div class="modal-titulo" style="margin-bottom:6px">🔐 Administrador</div>
-      <p style="font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:20px">Introduce la clave para gestionar anuncios</p>
-      <input type="password" id="inputClave" placeholder="Clave de acceso"
-        style="width:100%;padding:11px 14px;border:1.5px solid #333;border-radius:8px;background:#111;color:#eee;font-size:15px;outline:none;text-align:center;letter-spacing:3px"
-        oninput="document.getElementById('errorClave').style.display='none'">
-      <p id="errorClave" style="display:none;color:var(--rojo);font-size:13px;margin-top:8px">Clave incorrecta.</p>
-      <button onclick="verificarClave()" style="width:100%;margin-top:14px;background:var(--primary);color:var(--negro);border:none;border-radius:8px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;transition:background .2s" onmouseover="this.style.background='var(--primary-osc)'" onmouseout="this.style.background='var(--primary)'">Entrar</button>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL ADMIN: NUEVO ARTÍCULO -->
-<div class="modal-overlay" id="modalAdmin" onclick="cerrarModalSiOverlay(event,'modalAdmin')">
-  <div class="modal-contenido" style="max-width:520px">
-    <button class="modal-cerrar" onclick="cerrarModal('modalAdmin')">✕</button>
-    <div class="modal-info" style="padding-top:20px">
-      <div class="modal-titulo" style="margin-bottom:16px">➕ Nuevo artículo</div>
-      <div class="form-error" id="formError"></div>
-      <div class="form-admin">
-        <label>Título *</label>
-        <input type="text" id="fTitulo" placeholder="Ej: Hormigonera 500L — buen estado">
-        <label>Precio € (0 = "A convenir")</label>
-        <input type="number" id="fPrecio" min="0" value="0">
-        <label>Categoría</label>
-        <select id="fCategoria">
-          <option>Maquinaria</option><option>Herramientas</option>
-          <option>Materiales</option><option>Vehículos</option>
-          <option>Electrónica</option><option>Otros</option>
-        </select>
-        <label>Provincia</label>
-        <select id="fProvincia">
-          <option>Valladolid</option><option>Ávila</option><option>Burgos</option>
-          <option>León</option><option>Palencia</option><option>Salamanca</option>
-          <option>Segovia</option><option>Soria</option><option>Zamora</option>
-        </select>
-        <label>Teléfono</label>
-        <input type="text" id="fTelefono" value="607 444 903">
-        <label>Descripción</label>
-        <textarea id="fDescripcion" placeholder="Estado, características, horas de uso..."></textarea>
-        <label>Emoji (si no hay fotos)</label>
-        <input type="text" id="fEmoji" value="🏗️" maxlength="4" style="max-width:80px">
-        <label class="form-check"><input type="checkbox" id="fDestacado"> Marcar como Destacado</label>
-        <label style="margin-top:14px">📷 Fotos (máx. 5, se comprimen automáticamente)</label>
-        <input type="file" id="fFotos" multiple accept="image/*" onchange="previsualizarFotos(this)">
-        <p class="progreso-fotos" id="progFotos"></p>
-        <div class="preview-fotos" id="previewFotos"></div>
-        <button class="btn-publicar" id="btnPublicar" onclick="guardarNuevoAnuncio()">✅ Publicar artículo</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<button class="btn-admin-flotante" id="btnAdminFlot" onclick="abrirAdmin()" title="Añadir artículo">+</button>
-<span class="admin-badge" id="adminBadge">⚙ ADMIN</span>
 
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-import { getDatabase, ref as dbRef, push, remove, onValue, query as dbQuery, orderByChild }
-  from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
-import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject }
-  from "https://www.gstatic.com/firebasejs/11.1.0/firebase-storage.js";
-
-const firebaseConfig = {
-  apiKey:            "AIzaSyBjh8KqDnlRyjuJCX-3ccJ8KNzbV7faGkQ",
-  authDomain:        "geoparcelas-2d4fb.firebaseapp.com",
-  projectId:         "geoparcelas-2d4fb",
-  storageBucket:     "geoparcelas-2d4fb.firebasestorage.app",
-  messagingSenderId: "873178119432",
-  appId:             "1:873178119432:web:a7296b251d05db8b8f80bd"
-};
-
-const CLAVE_ADMIN = 'arturo2026'; // ← Cambia esta clave cuando quieras
-
-const app     = initializeApp(firebaseConfig);
-const db      = getDatabase(app);
-const storage = getStorage(app);
-
+<script>
 
 let anuncios = [];
 let categoriaActiva = 'Todos';
 let galeriaActual = { fotos: [], indice: 0 };
-let fotosFiles = [];
-let adminActivo = false;
 
-// ── SCHEMA.ORG DINÁMICO ───────────────────────────────────────────────────────
 function inyectarSchemaProductos(items) {
   const el = document.getElementById('schema-productos');
   if (el) el.remove();
@@ -1138,171 +929,17 @@ function inyectarSchemaProductos(items) {
   document.head.appendChild(script);
 }
 
-// ── INIT ──────────────────────────────────────────────────────────────────────
-function init() {
-  const q = dbQuery(dbRef(db, 'anuncios'), orderByChild('fecha'));
-  onValue(q, snap => {
-    anuncios = [];
-    snap.forEach(child => {
-      const d = child.val();
-      anuncios.push({ ...d, id: child.key, fecha: d.fecha ? new Date(d.fecha).toISOString() : new Date().toISOString() });
-    });
-    anuncios.reverse(); // más reciente primero
+fetch('anuncios.json')
+  .then(r => r.json())
+  .then(data => {
+    anuncios = data;
     filtrarAnuncios();
     inyectarSchemaProductos(anuncios);
-  }, () => mostrarToast('Error al cargar anuncios. Revisa las reglas de Realtime Database.'));
-}
-
-// ── ADMIN — CLAVE ─────────────────────────────────────────────────────────────
-function abrirModalClave() {
-  document.getElementById('inputClave').value = '';
-  document.getElementById('errorClave').style.display = 'none';
-  document.getElementById('modalClave').classList.add('visible');
-  document.body.style.overflow = 'hidden';
-  setTimeout(() => document.getElementById('inputClave').focus(), 120);
-}
-
-function verificarClave() {
-  if (document.getElementById('inputClave').value === CLAVE_ADMIN) {
-    cerrarModal('modalClave');
-    activarAdmin();
-  } else {
-    document.getElementById('errorClave').style.display = 'block';
-    document.getElementById('inputClave').select();
-  }
-}
-
-function activarAdmin() {
-  adminActivo = true;
-  document.body.classList.add('admin-mode');
-  document.getElementById('btnAdminFlot').classList.add('visible');
-  document.getElementById('adminBadge').classList.add('visible');
-  mostrarToast('Modo administrador activado', true);
-  filtrarAnuncios();
-}
-
-// ── ADMIN — NUEVO ANUNCIO ─────────────────────────────────────────────────────
-function abrirAdmin() {
-  ['fTitulo','fDescripcion'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('fPrecio').value = '0';
-  document.getElementById('fCategoria').value = 'Maquinaria';
-  document.getElementById('fProvincia').value = 'Valladolid';
-  document.getElementById('fTelefono').value = '607 444 903';
-  document.getElementById('fEmoji').value = '🏗️';
-  document.getElementById('fDestacado').checked = false;
-  document.getElementById('fFotos').value = '';
-  document.getElementById('previewFotos').innerHTML = '';
-  document.getElementById('progFotos').textContent = '';
-  document.getElementById('formError').classList.remove('visible');
-  document.getElementById('btnPublicar').disabled = false;
-  document.getElementById('btnPublicar').textContent = '✅ Publicar artículo';
-  fotosFiles = [];
-  document.getElementById('modalAdmin').classList.add('visible');
-  document.body.style.overflow = 'hidden';
-}
-
-function comprimirImagen(file) {
-  return new Promise(resolve => {
-    const reader = new FileReader();
-    reader.onload = e => {
-      const img = new Image();
-      img.onload = () => {
-        const MAX = 1200;
-        let w = img.width, h = img.height;
-        if (w > MAX) { h = Math.round(h * MAX / w); w = MAX; }
-        const canvas = document.createElement('canvas');
-        canvas.width = w; canvas.height = h;
-        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-        canvas.toBlob(blob => resolve(blob), 'image/jpeg', 0.82);
-      };
-      img.src = e.target.result;
-    };
-    reader.readAsDataURL(file);
+  })
+  .catch(() => {
+    document.getElementById('gridAnuncios').innerHTML = '<div class="sin-resultados"><span class="emoji">📋</span>No hay artículos disponibles.</div>';
+    document.getElementById('contadorAnuncios').textContent = '0';
   });
-}
-
-async function previsualizarFotos(input) {
-  const files = [...input.files].slice(0, 5);
-  const prog = document.getElementById('progFotos');
-  const preview = document.getElementById('previewFotos');
-  preview.innerHTML = '';
-  fotosFiles = [];
-  if (!files.length) { prog.textContent = ''; return; }
-  prog.textContent = 'Procesando fotos…';
-  document.getElementById('btnPublicar').disabled = true;
-  for (let i = 0; i < files.length; i++) {
-    prog.textContent = `Procesando ${i+1} de ${files.length}…`;
-    const blob = await comprimirImagen(files[i]);
-    fotosFiles.push(blob);
-    const img = document.createElement('img');
-    img.src = URL.createObjectURL(blob);
-    preview.appendChild(img);
-  }
-  prog.textContent = `${files.length} foto${files.length > 1 ? 's' : ''} lista${files.length > 1 ? 's' : ''}.`;
-  document.getElementById('btnPublicar').disabled = false;
-}
-
-async function guardarNuevoAnuncio() {
-  const titulo = document.getElementById('fTitulo').value.trim();
-  const errEl  = document.getElementById('formError');
-  if (!titulo) {
-    errEl.textContent = 'El título es obligatorio.';
-    errEl.classList.add('visible');
-    document.getElementById('fTitulo').focus();
-    return;
-  }
-  errEl.classList.remove('visible');
-  const btn = document.getElementById('btnPublicar');
-  btn.disabled = true;
-  btn.textContent = 'Publicando…';
-  try {
-    const fotos = [], fotoPaths = [];
-    const uid = Date.now().toString(36);
-    for (let i = 0; i < fotosFiles.length; i++) {
-      document.getElementById('progFotos').textContent = `Subiendo foto ${i+1} de ${fotosFiles.length}…`;
-      const path = `anuncios/${uid}/${i}.jpg`;
-      await uploadBytes(ref(storage, path), fotosFiles[i]);
-      fotos.push(await getDownloadURL(ref(storage, path)));
-      fotoPaths.push(path);
-    }
-    document.getElementById('progFotos').textContent = '';
-    await push(dbRef(db, 'anuncios'), {
-      titulo,
-      precio:      parseFloat(document.getElementById('fPrecio').value) || 0,
-      categoria:   document.getElementById('fCategoria').value,
-      provincia:   document.getElementById('fProvincia').value,
-      telefono:    document.getElementById('fTelefono').value.trim() || '607 444 903',
-      descripcion: document.getElementById('fDescripcion').value.trim(),
-      emoji:       document.getElementById('fEmoji').value || '🏗️',
-      destacado:   document.getElementById('fDestacado').checked,
-      fotos, fotoPaths,
-      fecha: { '.sv': 'timestamp' }
-    });
-    cerrarModal('modalAdmin');
-    mostrarToast('✅ Artículo publicado', true);
-  } catch (err) {
-    console.error(err);
-    errEl.textContent = 'Error al publicar. Comprueba la conexión.';
-    errEl.classList.add('visible');
-    btn.disabled = false;
-    btn.textContent = '✅ Publicar artículo';
-  }
-}
-
-async function eliminarAnuncio(id, e) {
-  e.stopPropagation();
-  if (!confirm('¿Eliminar este artículo?')) return;
-  const a = anuncios.find(x => x.id === id);
-  try {
-    if (a?.fotoPaths?.length)
-      await Promise.all(a.fotoPaths.map(p => deleteObject(ref(storage, p)).catch(() => {})));
-    await remove(dbRef(db, `anuncios/${id}`));
-    mostrarToast('Artículo eliminado.');
-  } catch (err) {
-    console.error(err);
-    mostrarToast('Error al eliminar.');
-  }
-}
 
 // RENDER
 function renderTarjetas(lista) {
@@ -1326,7 +963,6 @@ function renderTarjetas(lista) {
           ${foto ? `<img src="${foto}" alt="${a.titulo}" loading="lazy">` : `<div class="placeholder-foto">${a.emoji||'🏗️'}</div>`}
           ${a.destacado ? '<span class="badge-destacado">⭐ Destacado</span>' : ''}
           ${n > 1 ? `<span class="badge-fotos">📷 ${n}</span>` : ''}
-          <button class="btn-del-card" onclick="eliminarAnuncio('${a.id}',event)" title="Eliminar">✕</button>
         </div>
         <div class="tarjeta-body">
           <div class="tarjeta-titulo">${a.titulo}</div>
@@ -1464,22 +1100,10 @@ function mostrarToast(msg, ok = false) {
 }
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') ['modalDetalle','modalAdmin','modalClave'].forEach(id => cerrarModal(id));
+  if (e.key === 'Escape')     cerrarModal('modalDetalle');
   if (e.key === 'ArrowLeft')  navegarGaleria(-1);
   if (e.key === 'ArrowRight') navegarGaleria(1);
-  if (e.key === 'Enter' && document.getElementById('modalClave').classList.contains('visible')) verificarClave();
 });
-
-// Exponer al ámbito global (requerido con type="module")
-Object.assign(window, {
-  filtrarAnuncios, filtrarCategoria, limpiarFiltros,
-  abrirDetalle, navegarGaleria, irFoto,
-  cerrarModal, cerrarModalSiOverlay,
-  previsualizarFotos, guardarNuevoAnuncio, eliminarAnuncio,
-  abrirAdmin, abrirModalClave, verificarClave
-});
-
-init();
 </script>
 </body>
 </html>
