@@ -44,5 +44,6 @@ Allow: /
 
 Sitemap: https://www.obratudela.com/sitemap.xml
 
-# Catálogo de datos estructurado (AI-readable)
-# https://www.obratudela.com/catalogo.json
+# Catálogos de datos estructurados (AI-readable)
+# https://www.obratudela.com/catalogo.json   — 71 equipos de alquiler con precios
+# https://www.obratudela.com/precios.json    — 54.777 partidas BCEXTREM 2026
