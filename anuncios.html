@@ -737,10 +737,66 @@ footer a:hover { color: var(--primary); }
 .toast.exito { background: #1a4d2e; border-color: var(--verde); color: var(--verde); }
 
 
+/* Botón filtros móvil */
+.btn-filtros-movil {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: #1a1a1a;
+  color: var(--primary);
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-filtros-movil:hover { border-color: var(--primary); }
+
+.sidebar-cerrar {
+  display: none;
+  width: 100%;
+  background: none;
+  color: rgba(255,255,255,0.4);
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.sidebar-cerrar:hover { border-color: var(--primary); color: var(--primary); }
+
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 599;
+}
+.sidebar-backdrop.v { display: block; }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .contenido { grid-template-columns: 1fr; }
-  .sidebar { display: none; }
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: min(300px, 90vw);
+    height: 100vh;
+    background: #1a1a1a;
+    border-right: 1px solid #2a2a2a;
+    padding: 20px 16px 40px;
+    overflow-y: auto;
+    z-index: 600;
+    gap: 14px;
+  }
+  .sidebar.abierto { display: flex; }
+  .sidebar-cerrar { display: block; }
+  .btn-filtros-movil { display: flex; }
   .grid-anuncios { grid-template-columns: repeat(2, 1fr); }
   .galeria-img-grande { height: 220px; }
   .galeria-placeholder { height: 220px; }
@@ -799,7 +855,9 @@ footer a:hover { color: var(--primary); }
 <div class="contenido">
 
   <!-- SIDEBAR -->
-  <aside class="sidebar">
+  <div class="sidebar-backdrop" id="sidebarBackdrop" onclick="cerrarFiltros()"></div>
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-cerrar" onclick="cerrarFiltros()">✕ Cerrar filtros</button>
     <div class="filtro-card">
       <h3>Precio</h3>
       <div class="rango-precio">
@@ -818,7 +876,7 @@ footer a:hover { color: var(--primary); }
 
     <div class="filtro-card">
       <h3>Provincia</h3>
-      <select id="filtroProvinicia" onchange="filtrarAnuncios()">
+      <select id="filtroProvincia" onchange="filtrarAnuncios()">
         <option value="">Todas</option>
         <option>Ávila</option><option>Burgos</option><option>León</option>
         <option>Palencia</option><option>Salamanca</option><option>Segovia</option>
@@ -828,7 +886,7 @@ footer a:hover { color: var(--primary); }
 
     <div class="filtro-card">
       <h3>Ordenar</h3>
-      <select id="ordenar" onchange="filtrarAnuncios()">
+      <select id="ordenar" onchange="document.getElementById('ordenarMovil').value=this.value;filtrarAnuncios()">
         <option value="reciente">Más reciente</option>
         <option value="precio-asc">Precio ↑</option>
         <option value="precio-desc">Precio ↓</option>
@@ -840,7 +898,8 @@ footer a:hover { color: var(--primary); }
   <main class="zona-anuncios">
     <div class="barra-resultado">
       <span><strong id="contadorAnuncios">0</strong> anuncios en <strong>Castilla y León</strong></span>
-      <select class="ordenar-select" id="ordenarMovil" onchange="filtrarAnuncios()">
+      <button class="btn-filtros-movil" onclick="toggleFiltros()">⚙ Filtros</button>
+      <select class="ordenar-select" id="ordenarMovil" onchange="document.getElementById('ordenar').value=this.value;filtrarAnuncios()">
         <option value="reciente">Más reciente</option>
         <option value="precio-asc">Menor precio</option>
         <option value="precio-desc">Mayor precio</option>
@@ -951,7 +1010,7 @@ function renderTarjetas(lista) {
     return;
   }
 
-  grid.innerHTML = lista.map(a => {
+  grid.innerHTML = lista.map((a, index) => {
     const foto = a.fotos && a.fotos.length ? a.fotos[0] : null;
     const n = a.fotos ? a.fotos.length : 0;
     const precio = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')}€` : 'A convenir';
@@ -960,7 +1019,7 @@ function renderTarjetas(lista) {
     return `
       <div class="tarjeta" onclick="abrirDetalle('${a.id}')">
         <div class="tarjeta-foto">
-          ${foto ? `<img src="${foto}" alt="${a.titulo}" loading="lazy">` : `<div class="placeholder-foto">${a.emoji||'🏗️'}</div>`}
+          ${foto ? `<img src="${foto}" alt="${a.titulo}" loading="${index === 0 ? 'eager' : 'lazy'}">` : `<div class="placeholder-foto">${a.emoji||'🏗️'}</div>`}
           ${a.destacado ? '<span class="badge-destacado">⭐ Destacado</span>' : ''}
           ${n > 1 ? `<span class="badge-fotos">📷 ${n}</span>` : ''}
         </div>
@@ -982,22 +1041,19 @@ function filtrarAnuncios() {
   const txt = document.getElementById('buscador').value.toLowerCase();
   const pMin = parseFloat(document.getElementById('precioMin').value) || 0;
   const pMax = parseFloat(document.getElementById('precioMax').value) || Infinity;
-  const prov = document.getElementById('filtroProvinicia').value;
+  const prov = document.getElementById('filtroProvincia').value;
   const ord = document.getElementById('ordenar').value;
-  const ordMovil = document.getElementById('ordenarMovil').value;
-
-  const finalOrd = (window.innerWidth <= 768) ? ordMovil : ord;
 
   let res = anuncios.filter(a => {
     const okTxt = !txt || a.titulo.toLowerCase().includes(txt) || (a.descripcion||'').toLowerCase().includes(txt);
     const okCat = categoriaActiva === 'Todos' || a.categoria === categoriaActiva;
-    const okP = a.precio >= pMin && (a.precio <= pMax || a.precio === 0);
+    const okP = a.precio === 0 ? (pMin === 0 && pMax === Infinity) : (a.precio >= pMin && a.precio <= pMax);
     const okProv = !prov || a.provincia === prov;
     return okTxt && okCat && okP && okProv;
   });
 
-  if (finalOrd === 'precio-asc') res.sort((a,b) => a.precio - b.precio);
-  else if (finalOrd === 'precio-desc') res.sort((a,b) => b.precio - a.precio);
+  if (ord === 'precio-asc') res.sort((a,b) => a.precio - b.precio);
+  else if (ord === 'precio-desc') res.sort((a,b) => b.precio - a.precio);
   else res.sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
 
   renderTarjetas(res);
@@ -1012,7 +1068,7 @@ function filtrarCategoria(cat, btn) {
 
 function limpiarFiltros() {
   ['precioMin','precioMax','buscador'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('filtroProvinicia').value = '';
+  document.getElementById('filtroProvincia').value = '';
   document.getElementById('ordenar').value = 'reciente';
   document.getElementById('ordenarMovil').value = 'reciente';
   categoriaActiva = 'Todos';
@@ -1089,6 +1145,19 @@ function irFoto(idx) {
 }
 
 // ── UTILS ─────────────────────────────────────────────────────────────────────
+function toggleFiltros() {
+  const s = document.getElementById('sidebar');
+  const b = document.getElementById('sidebarBackdrop');
+  const open = s.classList.toggle('abierto');
+  b.classList.toggle('v', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+function cerrarFiltros() {
+  document.getElementById('sidebar').classList.remove('abierto');
+  document.getElementById('sidebarBackdrop').classList.remove('v');
+  document.body.style.overflow = '';
+}
+
 function cerrarModal(id) { document.getElementById(id).classList.remove('visible'); document.body.style.overflow = ''; }
 function cerrarModalSiOverlay(e, id) { if (e.target === document.getElementById(id)) cerrarModal(id); }
 
