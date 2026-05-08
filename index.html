@@ -240,7 +240,7 @@
     /* ── HERO ── */
     #inicio {
       min-height: 70vh;
-      background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.40)),
+      background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)),
                   url('img/bobcat.png') center/cover no-repeat;
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
@@ -263,7 +263,7 @@
     }
     .hero-sub {
       font-size: clamp(1rem, 2.5vw, 1.3rem);
-      color: #ccc;
+      color: rgba(255,255,255,0.88);
       max-width: 560px;
       margin: 16px auto 0;
       font-weight: 300;
@@ -512,7 +512,7 @@
     <a href="#contacto">Contacto</a>
     <a href="presupuesto_v2.html" class="btn-presupuesto">Presupuestos</a>
   </div>
-  <div class="hamburger" onclick="toggleMenu()" aria-label="Menú" aria-expanded="false" id="hamburger">
+  <div class="hamburger" role="button" tabindex="0" onclick="toggleMenu()" aria-label="Menú" aria-expanded="false" id="hamburger">
     <span></span><span></span><span></span>
   </div>
 </nav>
