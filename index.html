@@ -720,30 +720,26 @@
   });
 
   // ── ANUNCIOS PREVIEW ──
-  (function() {
-    const MUESTRA = [
-      { titulo:"Excavadora Yanmar B27", precio:9200, categoria:"Maquinaria", provincia:"Zamora", emoji:"🚜" },
-      { titulo:"Hormigonera eléctrica 300L", precio:380, categoria:"Maquinaria", provincia:"Valladolid", emoji:"🏗️" },
-      { titulo:"Andamio tubular metálico 6m", precio:220, categoria:"Materiales", provincia:"Valladolid", emoji:"🔩" },
-      { titulo:"Camión volquete Iveco 7tn", precio:14500, categoria:"Vehículos", provincia:"Palencia", emoji:"🚛" },
-    ];
-    let items;
-    try {
-      const saved = localStorage.getItem('obratudela_anuncios');
-      items = saved ? JSON.parse(saved).slice(0, 4) : MUESTRA;
-    } catch(e) { items = MUESTRA; }
-    document.getElementById('anuncios-preview').innerHTML = items.map(a => {
-      const precio = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')} €` : 'A convenir';
-      return `<a href="anuncios.html" class="anuncio-card">
-        <div class="anuncio-foto">${a.emoji || '🏗️'}</div>
-        <div class="anuncio-body">
-          <div class="anuncio-titulo">${a.titulo}</div>
-          <div class="anuncio-precio">${precio}</div>
-          <div class="anuncio-meta">${a.categoria} · 📍 ${a.provincia}</div>
-        </div>
-      </a>`;
-    }).join('');
-  })();
+  fetch('anuncios.json')
+    .then(r => r.json())
+    .then(data => {
+      const items = data.slice(0, 4);
+      const grid = document.getElementById('anuncios-preview');
+      if (!items.length) { grid.innerHTML = '<p style="color:rgba(255,255,255,0.4);text-align:center;padding:20px;">Próximamente nuevos anuncios.</p>'; return; }
+      grid.innerHTML = items.map(a => {
+        const precio = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')} €` : 'A convenir';
+        const foto = a.fotos && a.fotos.length ? `<img src="${a.fotos[0]}" alt="${a.titulo}" style="width:100%;height:100%;object-fit:cover;">` : (a.emoji || '🏗️');
+        return `<a href="anuncios.html" class="anuncio-card">
+          <div class="anuncio-foto">${foto}</div>
+          <div class="anuncio-body">
+            <div class="anuncio-titulo">${a.titulo}</div>
+            <div class="anuncio-precio">${precio}</div>
+            <div class="anuncio-meta">${a.categoria} · 📍 ${a.provincia}</div>
+          </div>
+        </a>`;
+      }).join('');
+    })
+    .catch(() => { document.getElementById('anuncios-preview').innerHTML = ''; });
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0541fc0e492f4807832c5c2e63e9d1f2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
