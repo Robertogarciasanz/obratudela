@@ -1051,6 +1051,15 @@
 
 <body>
 
+  <!-- Aviso móvil -->
+  <div id="avisoMovil" style="display:none;position:fixed;inset:0;z-index:9999;background:#0d0d0d;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;font-family:'Segoe UI',system-ui,sans-serif;color:#eee;">
+    <div style="font-size:56px;margin-bottom:20px;">🖥️</div>
+    <h2 style="font-size:22px;font-weight:800;color:#ff6b00;margin-bottom:12px;">Mejor desde el ordenador</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.6);max-width:320px;line-height:1.6;margin-bottom:28px;">La herramienta de presupuestos es compleja y necesita pantalla grande para usarse bien.</p>
+    <button onclick="document.getElementById('avisoMovil').style.display='none'" style="background:none;border:1px solid #444;color:rgba(255,255,255,0.4);padding:10px 20px;border-radius:8px;font-size:13px;cursor:pointer;">Continuar de todas formas</button>
+  </div>
+  <script>if(window.innerWidth < 900) document.getElementById('avisoMovil').style.display='flex';</script>
+
   <div id="loading">
     <h2>CARGANDO BASE DE PRECIOS</h2>
     <div class="spinner"></div>
