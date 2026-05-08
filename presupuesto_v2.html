@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestor de Presupuestos — BCEXTREM 2026</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script type="application/ld+json">
   {
@@ -1166,12 +1165,10 @@
     </div>
   </div>
 
-  <script src="datos_precios.js"></script>
   <script>
     // ========================
     // DATA LOADING
     // ========================
-    // La base de datos (DATA_B64) ahora se carga desde datos_precios.js
 
     let allData = {};
     let currentCat = null;
@@ -1218,29 +1215,24 @@
         loadStatus.textContent = 'Cargando base de datos...';
         await new Promise(r => setTimeout(r, 50));
 
-        if (typeof DATA_B64 === 'undefined') {
-          throw new Error('DATA_B64 no está definida. ¿Se ha cargado datos_precios.js correctamente?');
-        }
+        const resp = await fetch('precios.json');
+        if (!resp.ok) throw new Error('No se pudo cargar precios.json (código ' + resp.status + ')');
 
-        loadStatus.textContent = 'Descomprimiendo base de datos...';
+        loadStatus.textContent = 'Procesando base de datos...';
         await new Promise(r => setTimeout(r, 50));
 
-        const binary = atob(DATA_B64);
-        const bytes = new Uint8Array(binary.length);
-        for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-        const decompressed = pako.inflate(bytes, { to: 'string' });
-        const raw = JSON.parse(decompressed);
+        const data = await resp.json();
+        const items = data.items || data;
 
         loadStatus.textContent = 'Indexando registros...';
         await new Promise(r => setTimeout(r, 50));
 
-        let total = 0;
-        for (const [sheet, rows] of Object.entries(raw)) {
-          allData[sheet] = rows.map(r => ({
-            cod: r[0], uni: r[1], res: r[2], precio: r[3], descLong: r[4] || ''
-          }));
-          total += rows.length;
+        for (const item of items) {
+          const cat = item.categoria || 'OTROS';
+          if (!allData[cat]) allData[cat] = [];
+          allData[cat].push({ cod: item.cod, uni: item.uni, res: item.res, precio: item.precio, descLong: item.desc || '' });
         }
+        const total = items.length;
 
         document.getElementById('db-info').textContent = `BASE DE PRECIOS · ${total.toLocaleString('es-ES')} PARTIDAS`;
         document.getElementById('loading').style.display = 'none';
@@ -1257,7 +1249,7 @@
         initTextMode();
       } catch (err) {
         console.error('Error en init:', err);
-        document.getElementById('load-status').innerHTML = `<span style="color:var(--red)">ERROR: ${err.message}</span><br><br>Verifica que datos_precios.js existe y es válido.`;
+        document.getElementById('load-status').innerHTML = `<span style="color:var(--red)">ERROR: ${err.message}</span><br><br>Verifica que precios.json está disponible.`;
         document.querySelector('.spinner').style.display = 'none';
       }
     }
