@@ -143,7 +143,7 @@
     "id": "movkie30chg4",
     "titulo": "Polipasto Eléctrico / Elevador de Carga",
     "descripcion": "Vendo polipasto eléctrico ideal para obras, talleres o almacenes. Es una herramienta muy potente y fiable para elevar materiales pesados sin esfuerzo.\nEstado: En buen estado de funcionamiento. Se ha usado en [menciona si fue en obra, garaje, etc.].\nCapacidad de carga: [Indicar aquí los kg, ej. 150kg/300kg o 300kg/600kg].\nIncluye:\nMotor eléctrico con disipador de calor.\nCable de acero resistente en buen estado.\nPolea de reenvío para duplicar fuerza.",
-    "precio": 0,
+    "precio": 80,
     "categoria": "Maquinaria",
     "provincia": "Valladolid",
     "telefono": "607 444 903",
@@ -152,7 +152,7 @@
     "fotos": [
       "img/anuncios/movkie30chg4/foto1.jpg"
     ],
-    "fecha": "2026-05-09T10:40:01.203Z"
+    "fecha": "2026-05-09T11:51:57.445Z"
   },
   {
     "id": "moviuonwqujf",
@@ -186,18 +186,18 @@
     "fecha": "2026-05-09T10:42:45.757Z"
   },
   {
-    "id": "movdhlrhuo2b",
-    "titulo": "Pestañas para sujetar mantel",
-    "descripcion": "Son muy útiles para sujetar los manteles para que no se te vuelen en el jardín está muy bien",
-    "precio": 5,
-    "categoria": "Otros",
+    "id": "movk9bygblun",
+    "titulo": "Martillo Hidráulico Korota 140kg - Para Miniexcavador",
+    "descripcion": "vende martillo hidráulico marca Korota en buen estado.Peso: 140 kg.Compatibilidad: Ideal para miniexcavadoras de 1.5 a 3.5 toneladas.Incluye: Latiguillos hidráulicos y pica en uso.El martillo ha sido revisado y está listo para trabajar. Potente y fiable, marca líder en el sector por su bajo mantenimiento y durabilidad. Se puede ver sin compromiso.",
+    "precio": 2500,
+    "categoria": "Herramientas",
     "provincia": "Valladolid",
     "telefono": "607 444 903",
     "emoji": "🏗️",
     "destacado": false,
     "fotos": [
-      "img/anuncios/movdhlrhuo2b/foto1.webp"
+      "img/anuncios/movk9bygblun/foto1.webp"
     ],
-    "fecha": "2026-05-09T11:39:06.496Z"
+    "fecha": "2026-05-09T11:49:47.719Z"
   }
 ]
