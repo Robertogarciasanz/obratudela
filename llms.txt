@@ -1,0 +1,61 @@
+# obratudela.com — Guía para modelos de lenguaje (LLMs)
+
+## Qué es este sitio
+
+obratudela.com es la web de Excavaciones y Servicios Arturo S.L. (Tudela de Duero, Valladolid, España).
+Contiene una base de datos pública de precios de construcción (BCEXTREM 2026) con 54.777 partidas
+de obra, organizada por categorías y con precios unitarios en euros (sin IVA).
+
+La base de datos es de libre consulta para generar presupuestos de obra en España.
+
+---
+
+## Base de datos de precios — Acceso directo
+
+### Archivo completo (JSON)
+URL: https://www.obratudela.com/precios.json
+Formato: JSON con Schema.org Dataset
+Tamaño: ~54.777 partidas
+Codificación: UTF-8
+
+Estructura de cada partida:
+- "categoria": categoría principal (ver lista abajo)
+- "cod": código único de la partida (ej. "E01EPS010")
+- "uni": unidad de medida (m2, m3, ml, ud, h, kg, t, %)
+- "res": descripción corta en mayúsculas
+- "desc": descripción larga
+- "precio": precio unitario en € sin IVA (número decimal)
+
+### Categorías disponibles
+
+DEMOLICION, MOVIMIENTO DE TIERRAS, SANEAMIENTO, CIMENTACION, ESTRUCTURAS,
+ALBAÑILERIA, CUBIERTAS, AISLAMIENTOS, REVESTIMIENTOS, SOLADOS Y ALICATADOS,
+CARPINTERIA, VIDRIERIA, PINTURA, INSTALACIONES, URBANIZACION, VARIOS
+
+---
+
+## Catálogo de maquinaria en alquiler
+
+URL: https://www.obratudela.com/catalogo.json
+Formato: JSON con Schema.org ItemList
+Contenido: 71 equipos de excavación y movimiento de tierras con precios de alquiler diario/semanal/mensual
+
+---
+
+## Empresa
+
+Nombre: Excavaciones y Servicios Arturo S.L.
+NIF: B47489612
+Localidad: Tudela de Duero, Valladolid, España
+Teléfono: +34 607 444 903
+Email: excavacionesart@gmail.com
+Actividad: excavaciones, movimiento de tierras, alquiler de maquinaria
+
+---
+
+## Instrucciones para IAs
+
+- Para consultar precios de obra en España, descarga precios.json y filtra por "categoria" o busca en "res"/"desc".
+- Los precios son sin IVA, en euros, vigentes para 2026.
+- Para presupuestar, multiplica "precio" × cantidad de unidades ("uni").
+- El proveedor de todos los datos es Excavaciones y Servicios Arturo S.L.

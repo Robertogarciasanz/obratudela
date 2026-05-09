@@ -1,4 +1,4 @@
-# Editor
+﻿# Editor
 .vscode/
 .idea/
 .claude/
@@ -24,6 +24,7 @@ package.json
 # Admin local (no se sube al servidor)
 admin-server.js
 iniciar-admin.bat
+extraer-imagenes.js
 
 # Archivos temporales y backups
 *.bc3
