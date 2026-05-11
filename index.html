@@ -121,7 +121,10 @@
   <link rel="preload" href="fonts/ibm-plex-sans-300-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="img/bobcat.png" as="image" type="image/png" fetchpriority="high">
+  <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="img/bobcat-400w.webp 400w, img/bobcat-800w.webp 800w, img/bobcat-1200w.webp 1200w"
+        imagesizes="100vw"
+        href="img/bobcat-800w.webp">
   <style>
     @font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/bebas-neue-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
     @font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/bebas-neue-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -242,6 +245,8 @@
       min-height: 70vh;
       background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)),
                   url('img/bobcat.png') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)),
+                  image-set(url('img/bobcat-1200w.webp') type("image/webp"), url('img/bobcat.png') type("image/png")) center/cover no-repeat;
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
       text-align: center;
@@ -474,7 +479,6 @@
       <a href="#servicios">Servicios</a>
       <div class="nav-dropdown-menu">
         <div class="nav-dropdown-menu-inner">
-          <a href="#servicios">Ver servicios</a>
           <a href="alquileres.html">Alquileres</a>
           <a href="anuncios.html">Anuncios</a>
           <a href="topografia.html">Topografía</a>
@@ -541,7 +545,10 @@
     <div class="servicio-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
       <meta itemprop="position" content="3">
       <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
-      <img class="servicio-card-img" src="img/yanmar.jpg" alt="Mini excavadora Yanmar" loading="lazy">
+      <picture>
+        <source srcset="img/yanmar-400w.webp 400w, img/yanmar-800w.webp 800w" type="image/webp" sizes="(max-width:600px) 100vw, 360px">
+        <img class="servicio-card-img" src="img/yanmar.jpg" alt="Mini excavadora Yanmar" loading="lazy" width="360" height="240">
+      </picture>
       <h3 itemprop="name">Desbroce y Limpieza</h3>
       <p itemprop="description">Limpieza de solares, desbroce de vegetación y preparación de terrenos para nuevas construcciones o usos agrícolas.</p>
     </div>
@@ -549,7 +556,10 @@
       <meta itemprop="position" content="4">
       <meta itemprop="url" content="https://www.obratudela.com/alquileres.html">
       <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
-      <img class="servicio-card-img" src="img/retrogrande.jpg" alt="Retroexcavadora Kobelco SK50" loading="lazy">
+      <picture>
+        <source srcset="img/retrogrande-400w.webp 400w, img/retrogrande-800w.webp 800w" type="image/webp" sizes="(max-width:600px) 100vw, 360px">
+        <img class="servicio-card-img" src="img/retrogrande.jpg" alt="Retroexcavadora Kobelco SK50" loading="lazy" width="360" height="240">
+      </picture>
       <h3 itemprop="name">Alquiler de Maquinaria</h3>
       <p itemprop="description">Retroexcavadoras mixtas y compactas, con o sin operario. Adaptado a tu proyecto y presupuesto.</p>
       <span style="display:inline-block;margin-top:12px;font-size:0.8rem;color:var(--orange);">Ver catálogo →</span>
@@ -558,7 +568,10 @@
       <meta itemprop="position" content="5">
       <meta itemprop="url" content="https://www.obratudela.com/anuncios.html">
       <span itemprop="provider" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Excavaciones y Servicios Arturo S.L."><meta itemprop="url" content="https://www.obratudela.com"></span>
-      <img class="servicio-card-img" src="img/bobcat.png" alt="Maquinaria de construcción" loading="lazy">
+      <picture>
+        <source srcset="img/bobcat-400w.webp 400w, img/bobcat-800w.webp 800w" type="image/webp" sizes="(max-width:600px) 100vw, 360px">
+        <img class="servicio-card-img" src="img/bobcat.png" alt="Maquinaria de construcción" loading="lazy" width="360" height="240">
+      </picture>
       <h3 itemprop="name">Anuncios de Compraventa</h3>
       <p itemprop="description">Portal gratuito de compra y venta de maquinaria, herramientas y materiales en Castilla y León.</p>
       <span style="display:inline-block;margin-top:12px;font-size:0.8rem;color:var(--orange);">Ver anuncios →</span>
