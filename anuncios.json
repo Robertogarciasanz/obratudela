@@ -32,7 +32,7 @@
   {
     "id": "movtah8h39e6e5",
     "titulo": "soldadora MIG-100 o MIG-130",
-    "descripcion": "Esta máquina es una soldadora MIG-100 o MIG-130 (comúnmente de marcas como Style, German Force o Royal Power), diseñada principalmente para soldadura con hilo tubular (flux-core) sin necesidad de gas externo. \n\nConfiguración del Panel de Control\nEl panel frontal cuenta con controles manuales para ajustar la potencia y la alimentación del hilo:\nInterruptores de Potencia (MIN/MAX y 1/2): Estos dos interruptores combinados ofrecen 4 niveles de potencia.\nNivel 1 (Más bajo): MIN + 1 (Ideal para láminas muy finas).\nNivel 2: MIN + 2.\nNivel 3: MAX + 1.",
+    "descripcion": "Esta máquina es una soldadora MIG-100 o MIG-130 (comúnmente de marcas como Style, German Force o Royal Power), diseñada principalmente para soldadura con hilo tubular (flux-core) sin necesidad de gas externo. \n\nConfiguración del Panel de Control\nEl panel frontal cuenta con controles manuales para ajustar la potencia y la alimentación del hilo:\nInterruptores de Potencia (MIN/MAX y 1/2): Estos dos interruptores combinados ofrecen 4 niveles de potencia.\nNivel 1 (Más bajo): MIN + 1",
     "precio": 250,
     "categoria": "Herramientas",
     "provincia": "Valladolid",
@@ -42,7 +42,7 @@
     "fotos": [
       "img/anuncios/movtah8h39e6e5/foto1.jpg"
     ],
-    "fecha": "2026-05-07T18:20:35.468Z"
+    "fecha": "2026-05-11T16:37:20.143Z"
   },
   {
     "id": "movsdk7e282a57",
