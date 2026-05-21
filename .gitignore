@@ -30,3 +30,8 @@ extraer-imagenes.js
 *.bc3
 *.bak
 *.tmp
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
