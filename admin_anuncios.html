@@ -605,25 +605,25 @@ body {
           <label>Fotos (hasta 4)</label>
           <div class="zona-fotos" id="zonaFotos">
             <div class="slot-foto" id="slot0">
-              <input type="file" accept="image/*" capture="environment" onchange="cargarFoto(0,this)">
+              <input type="file" accept="image/*" onchange="cargarFoto(0,this)">
               <div class="icono-add">📷</div>
               <div class="num-foto">Foto 1</div>
               <button class="quitar-foto" onclick="quitarFoto(0,event)">✕</button>
             </div>
             <div class="slot-foto" id="slot1">
-              <input type="file" accept="image/*" capture="environment" onchange="cargarFoto(1,this)">
+              <input type="file" accept="image/*" onchange="cargarFoto(1,this)">
               <div class="icono-add">📷</div>
               <div class="num-foto">Foto 2</div>
               <button class="quitar-foto" onclick="quitarFoto(1,event)">✕</button>
             </div>
             <div class="slot-foto" id="slot2">
-              <input type="file" accept="image/*" capture="environment" onchange="cargarFoto(2,this)">
+              <input type="file" accept="image/*" onchange="cargarFoto(2,this)">
               <div class="icono-add">📷</div>
               <div class="num-foto">Foto 3</div>
               <button class="quitar-foto" onclick="quitarFoto(2,event)">✕</button>
             </div>
             <div class="slot-foto" id="slot3">
-              <input type="file" accept="image/*" capture="environment" onchange="cargarFoto(3,this)">
+              <input type="file" accept="image/*" onchange="cargarFoto(3,this)">
               <div class="icono-add">📷</div>
               <div class="num-foto">Foto 4</div>
               <button class="quitar-foto" onclick="quitarFoto(3,event)">✕</button>
@@ -935,7 +935,7 @@ function resetSlotUI(index) {
   const slot = document.getElementById('slot' + index);
   slot.classList.remove('tiene-foto');
   slot.innerHTML = `
-    <input type="file" accept="image/*" capture="environment" onchange="cargarFoto(${index},this)" style="display:block;width:100%;height:100%;cursor:pointer;">
+    <input type="file" accept="image/*" onchange="cargarFoto(${index},this)" style="display:block;width:100%;height:100%;cursor:pointer;">
     <div class="icono-add" style="pointer-events:none;">📷</div>
     <div class="num-foto" style="pointer-events:none;">Foto ${index+1}</div>
     <button class="quitar-foto" onclick="quitarFoto(${index},event)">✕</button>
