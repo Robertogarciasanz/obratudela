@@ -1,80 +1,72 @@
-        html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: sans-serif; background: #2c3e50; }
-        body { display: flex; flex-direction: column; }
-        .controles { padding: 10px; display: flex; gap: 5px; flex-wrap: wrap; z-index: 1000; background: #2c3e50; }
-        .autor { width: 100%; color: #ecf0f1; font-size: .75em; padding: 2px 4px 6px; letter-spacing: .5px; display: flex; align-items: center; justify-content: space-between; }
-        .btn-volver {
-            color: #bdc3c7; text-decoration: none; font-size: 12px;
-            border: 1px solid #4a6278; border-radius: 5px; padding: 3px 10px;
-            transition: color 0.2s, border-color 0.2s;
-        }
-        .btn-volver:hover { color: #ff6b00; border-color: #ff6b00; }
-        #map { flex: 1; width: 100%; border-bottom: 2px solid #ddd; }
-        #info { padding: 12px; background: white; z-index: 1000; max-height: 35%; overflow-y: auto; border-radius: 15px 15px 0 0; }
+html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: 'IBM Plex Sans', sans-serif; background: var(--bg); }
+body { display: flex; flex-direction: column; }
+.controles { padding: 10px; display: flex; gap: 5px; flex-wrap: wrap; z-index: 1000; background: var(--surface); border-bottom: 1px solid var(--border); }
+#map { flex: 1; width: 100%; border-bottom: 2px solid var(--border); }
+#info { padding: 12px; background: var(--surface); z-index: 1000; max-height: 35%; overflow-y: auto; border-radius: 15px 15px 0 0; }
 
-        .btn { border: none; padding: 12px 5px; border-radius: 6px; color: white; font-weight: bold; font-size: 12px; flex: 1; min-width: 80px; text-align: center; cursor: pointer; }
-        .btn-seguir  { background: #16a085; }
-        .btn-seguir.activo { background: #1abc9c; box-shadow: 0 0 0 3px rgba(26,188,156,0.5); }
-        .btn-coord   { background: #f39c12; }
-        .btn-add     { background: #3498db; }
-        .btn-print   { background: #8e44ad; }
-        .btn-borrar  { background: #e74c3c; }
+.btn { border: 1px solid transparent; padding: 12px 5px; border-radius: 6px; font-weight: bold; font-size: 12px; flex: 1; min-width: 80px; text-align: center; cursor: pointer; transition: background 0.2s, color 0.2s; }
+.btn-seguir  { background: #e6f7f4; color: #0f766e; border-color: #16a085; }
+.btn-seguir.activo { background: #16a085; color: #fff; box-shadow: 0 0 0 3px rgba(22,160,133,0.35); }
+.btn-coord   { background: #fdf3e3; color: #b9770e; border-color: #f39c12; }
+.btn-add     { background: #e8f2fc; color: #1b6fa8; border-color: #3498db; }
+.btn-print   { background: #f3ebf7; color: #6c3483; border-color: #8e44ad; }
+.btn-borrar  { background: #fdecea; color: #c0392b; border-color: #e74c3c; }
 
-        #areaDisplay { font-size: 1.4em; font-weight: bold; color: #27ae60; display: block; }
-        #status { font-size: 0.8em; color: #555; margin-bottom: 5px; display: block; }
+#areaDisplay { font-size: 1.4em; font-weight: bold; color: #27ae60; display: block; }
+#status { font-size: 0.8em; color: var(--muted); margin-bottom: 5px; display: block; }
 
-        table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
-        th, td { border: 1px solid #ddd; padding: 4px; text-align: left; }
+table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
+th, td { border: 1px solid var(--border); padding: 4px; text-align: left; }
 
-        /* ── DIÁLOGO PROPIO ── */
-        .dialog-overlay {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-            z-index: 9999;
-            align-items: center;
-            justify-content: center;
-        }
-        .dialog-box {
-            background: white;
-            border-radius: 12px;
-            padding: 24px;
-            max-width: 90vw;
-            width: 340px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-        }
-        .dialog-msg {
-            font-size: 15px;
-            color: #2c3e50;
-            margin: 0 0 16px;
-            line-height: 1.5;
-            white-space: pre-line;
-        }
-        .dialog-inp {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #ddd;
-            border-radius: 6px;
-            font-size: 15px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            outline: none;
-        }
-        .dialog-inp:focus { border-color: #3498db; }
-        .dialog-btns { display: flex; gap: 8px; justify-content: flex-end; }
-        .dialog-btn { padding: 10px 20px; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; }
-        .dialog-btn-ok     { background: #3498db; color: white; }
-        .dialog-btn-ok:hover { background: #2980b9; }
-        .dialog-btn-cancel { background: #ecf0f1; color: #555; }
-        .dialog-btn-cancel:hover { background: #ddd; }
+/* ── DIÁLOGO PROPIO (reemplaza alert / confirm / prompt) ── */
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+.dialog-box {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 90vw;
+    width: 340px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+.dialog-msg {
+    font-size: 15px;
+    color: var(--text);
+    margin: 0 0 16px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+.dialog-inp {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+.dialog-inp:focus { border-color: var(--orange); }
+.dialog-btns { display: flex; gap: 8px; justify-content: flex-end; }
+.dialog-btn { padding: 10px 20px; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; }
+.dialog-btn-ok     { background: var(--orange); color: #000; }
+.dialog-btn-ok:hover { background: var(--orange2); }
+.dialog-btn-cancel { background: var(--surface2); color: var(--muted); }
+.dialog-btn-cancel:hover { background: var(--border); }
 
-        /* ── MÓVIL ── */
-        @media (max-width: 600px) {
-            .btn { font-size: 13px; min-height: 48px; padding: 10px 4px; }
-            .autor { font-size: 0.7em; }
-            #info { max-height: 42%; }
-            table { font-size: 12px; }
-            th, td { padding: 5px 4px; }
-            #status { font-size: 0.85em; }
-            #areaDisplay { font-size: 1.2em; }
-        }
+/* ── MÓVIL ── */
+@media (max-width: 600px) {
+    .btn { font-size: 13px; min-height: 48px; padding: 10px 4px; }
+    #info { max-height: 42%; }
+    table { font-size: 12px; }
+    th, td { padding: 5px 4px; }
+    #status { font-size: 0.85em; }
+    #areaDisplay { font-size: 1.2em; }
+}

@@ -40,6 +40,10 @@
     var seguirActivo = false, watchId = null;
     var marcadorGPS = null, circuloGPS = null, gpsCongelado = false;
 
+    map.on('click', function(e) {
+        nuevoMarcador(e.latlng.lat, e.latlng.lng, "Mapa");
+    });
+
     function toggleSeguir() {
         seguirActivo ? desactivarSeguir() : activarSeguir();
     }
@@ -69,6 +73,7 @@
                         iconSize: [22, 22], iconAnchor: [11, 11]
                     });
                     marcadorGPS = L.marker([lat, lon], { icon: iconGPS, draggable: true, zIndexOffset: 1000 }).addTo(map);
+                    marcadorGPS.on('click', function(e) { L.DomEvent.stopPropagation(e); });
                     marcadorGPS.on('dragstart', function() {
                         gpsCongelado = true;
                         document.getElementById('status').innerText = '✋ Ajustando posición…';
@@ -79,7 +84,7 @@
                     });
                     map.setView([lat, lon], Math.max(map.getZoom(), 19));
                     nuevoMarcador(lat, lon, "GPS");
-                    document.getElementById('status').innerText = '📍 Punto A fijado · GPS activo · Muévete al siguiente vértice y pulsa ➕ PUNTO';
+                    document.getElementById('status').innerText = '📍 Punto A fijado · Toca el mapa para añadir cada vértice siguiente';
                 } else if (!gpsCongelado) {
                     marcadorGPS.setLatLng([lat, lon]);
                     circuloGPS.setLatLng([lat, lon]);
@@ -129,16 +134,19 @@
                 iconSize: [26, 26], iconAnchor: [13, 13]
             });
         };
-        var m = L.marker([lat, lon], { draggable: true, icon: mkIcon(label) }).addTo(map);
+        var m = L.marker([lat, lon], { draggable: true, icon: mkIcon(label), zIndexOffset: 2000 }).addTo(map);
         m._fuente = fuente;
         m.on('dragend', calcularTodo);
-        m.on('click', async function() {
-            if (await dlgConfirm("¿Borrar punto " + label + "?")) {
-                map.removeLayer(m);
-                marcadores = marcadores.filter(function(i) { return i !== m; });
-                reconstruirIconos();
-                calcularTodo();
-            }
+        m.on('click', function(e) {
+            L.DomEvent.stopPropagation(e);
+            (async function() {
+                if (await dlgConfirm("¿Borrar punto " + label + "?")) {
+                    map.removeLayer(m);
+                    marcadores = marcadores.filter(function(i) { return i !== m; });
+                    reconstruirIconos();
+                    calcularTodo();
+                }
+            })();
         });
         marcadores.push(m);
         calcularTodo();
@@ -340,14 +348,7 @@
                 doc.text('ObraTudela · www.obratudela.com · 607 444 903', PW/2, PH-3, {align:'center'});
 
                 var pdfBlob = doc.output('blob');
-                var url = URL.createObjectURL(pdfBlob);
-                var win = window.open(url, '_blank');
-                if (!win) {
-                    var a = document.createElement('a');
-                    a.href = url; a.download = 'parcela_'+new Date().toISOString().slice(0,10)+'.pdf'; a.click();
-                }
-                setTimeout(function() { URL.revokeObjectURL(url); }, 30000);
-                document.getElementById('status').innerText = '✅ PDF generado correctamente.';
+                var fileName = 'parcela_'+new Date().toISOString().slice(0,10)+'.pdf';
 
                 var waLineas = marcadores.map(function(m, i) {
                     var ll = m.getLatLng();
@@ -359,9 +360,38 @@
                     '📊 Superficie: ' + areaText + '\n' +
                     '📍 Vértices:\n' + waLineas
                 );
-                setTimeout(function() {
-                    window.open('https://wa.me/34607444903?text=' + waMsg, '_blank');
-                }, 1000);
+
+                var pdfFile = null;
+                try { pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' }); } catch(_) {}
+
+                if (pdfFile && navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
+                    document.getElementById('status').innerText = '📤 Abriendo panel para compartir…';
+                    navigator.share({
+                        files: [pdfFile],
+                        title: 'Plano de parcela — ObraTudela',
+                        text: '📐 Medición de parcela · Superficie: ' + areaText
+                    }).then(function() {
+                        document.getElementById('status').innerText = '✅ Plano compartido.';
+                    }).catch(function(err) {
+                        if (err && err.name === 'AbortError') {
+                            document.getElementById('status').innerText = '✅ PDF generado correctamente.';
+                        } else {
+                            document.getElementById('status').innerText = '⚠️ No se pudo compartir: ' + (err && err.message || 'error desconocido');
+                        }
+                    });
+                } else {
+                    var url = URL.createObjectURL(pdfBlob);
+                    var win = window.open(url, '_blank');
+                    if (!win) {
+                        var a = document.createElement('a');
+                        a.href = url; a.download = fileName; a.click();
+                    }
+                    setTimeout(function() { URL.revokeObjectURL(url); }, 30000);
+                    document.getElementById('status').innerText = '✅ PDF generado correctamente.';
+                    setTimeout(function() {
+                        window.open('https://wa.me/34607444903?text=' + waMsg, '_blank');
+                    }, 1000);
+                }
             }
         }, 900);
     }

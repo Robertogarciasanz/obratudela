@@ -60,6 +60,7 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/topografia.css">
 </head>
 <body>
@@ -95,12 +96,16 @@
     </div>
 </div>
 
+<nav>
+  <div class="nav-left">
+    <a href="index.html" class="nav-back">← Volver</a>
+    <span class="nav-title">TOPOGRAFÍA</span>
+  </div>
+  <a href="anuncios.html" class="nav-link">📢 Anuncios</a>
+  <a href="alquileres.html" class="nav-link">🚜 Alquileres</a>
+</nav>
+
 <div class="controles">
-    <div class="autor">
-        <span>📐 <strong>Topografía Pro</strong> &nbsp;·&nbsp; ObraTudela &nbsp;·&nbsp; v2.1</span>
-        <a href="anuncios.html" class="btn-volver" style="margin-right:5px">📢 Anuncios</a>
-        <a href="index.html" class="btn-volver">← Volver</a>
-    </div>
     <button class="btn btn-seguir" id="btnSeguir">🎯 POSICIÓN</button>
     <button class="btn btn-add">➕ PUNTO</button>
     <button class="btn btn-print">💾 PLANO</button>
