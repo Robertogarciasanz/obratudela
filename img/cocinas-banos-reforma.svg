@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustración de reforma de cocina y baño">
+  <defs>
+    <linearGradient id="floorShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8cdbd"/>
+      <stop offset="1" stop-color="#c7baa6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fondo -->
+  <rect width="800" height="500" fill="#f4efe7"/>
+
+  <!-- ===== COCINA (izquierda) ===== -->
+  <g>
+    <rect x="0" y="0" width="400" height="500" fill="#efe6d8"/>
+    <rect x="0" y="380" width="400" height="120" fill="url(#floorShade)"/>
+
+    <!-- armarios altos -->
+    <rect x="30" y="60" width="140" height="120" rx="6" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <rect x="190" y="60" width="140" height="120" rx="6" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <circle cx="150" cy="120" r="4" fill="#ff6b00"/>
+    <circle cx="210" cy="120" r="4" fill="#ff6b00"/>
+
+    <!-- lámpara colgante -->
+    <line x1="260" y1="0" x2="260" y2="55" stroke="#2c2620" stroke-width="3"/>
+    <path d="M240 55 h40 l-8 25 h-24 z" fill="#ff6b00"/>
+
+    <!-- encimera -->
+    <rect x="20" y="230" width="360" height="26" rx="4" fill="#2c2620"/>
+
+    <!-- muebles bajos -->
+    <rect x="20" y="256" width="150" height="124" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <rect x="185" y="256" width="175" height="124" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <rect x="60" y="300" width="70" height="60" rx="4" fill="#ff6b00" opacity="0.85"/>
+    <rect x="225" y="300" width="95" height="60" rx="4" fill="#ff6b00" opacity="0.85"/>
+
+    <!-- fregadero -->
+    <rect x="60" y="200" width="120" height="30" rx="6" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <path d="M95 200 v-22 q0 -10 14 -10 h6" fill="none" stroke="#2c2620" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- separador -->
+  <rect x="396" y="0" width="8" height="500" fill="#2c2620" opacity="0.08"/>
+
+  <!-- ===== BAÑO (derecha) ===== -->
+  <g>
+    <rect x="400" y="0" width="400" height="500" fill="#e7eeee"/>
+    <!-- azulejo -->
+    <g stroke="#d3dfdf" stroke-width="2">
+      <line x1="400" y1="60" x2="800" y2="60"/>
+      <line x1="400" y1="120" x2="800" y2="120"/>
+      <line x1="400" y1="180" x2="800" y2="180"/>
+      <line x1="460" y1="0" x2="460" y2="230"/>
+      <line x1="520" y1="0" x2="520" y2="230"/>
+      <line x1="580" y1="0" x2="580" y2="230"/>
+      <line x1="640" y1="0" x2="640" y2="230"/>
+      <line x1="700" y1="0" x2="700" y2="230"/>
+      <line x1="760" y1="0" x2="760" y2="230"/>
+    </g>
+    <rect x="400" y="380" width="400" height="120" fill="url(#floorShade)"/>
+
+    <!-- espejo -->
+    <rect x="560" y="70" width="120" height="90" rx="10" fill="#dff1f1" stroke="#2c2620" stroke-width="3"/>
+
+    <!-- encimera baño / mueble -->
+    <rect x="500" y="230" width="240" height="26" rx="4" fill="#2c2620"/>
+    <rect x="500" y="256" width="240" height="100" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <rect x="530" y="290" width="70" height="55" rx="4" fill="#ff6b00" opacity="0.85"/>
+    <rect x="640" y="290" width="70" height="55" rx="4" fill="#ff6b00" opacity="0.85"/>
+
+    <!-- lavabo -->
+    <ellipse cx="620" cy="222" rx="60" ry="18" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <path d="M620 204 v-20 q0 -10 12 -10 h8" fill="none" stroke="#2c2620" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bañera -->
+    <rect x="420" y="300" width="150" height="80" rx="30" fill="#fbfbf9" stroke="#2c2620" stroke-width="3"/>
+    <path d="M440 300 v-24 q0 -10 12 -10 h6" fill="none" stroke="#2c2620" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- planta -->
+    <rect x="760" y="330" width="30" height="30" rx="4" fill="#ff6b00"/>
+    <path d="M775 330 q-18 -30 0 -46 M775 330 q18 -26 4 -44" fill="none" stroke="#3d7a53" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
