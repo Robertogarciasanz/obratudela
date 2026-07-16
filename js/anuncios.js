@@ -85,15 +85,25 @@ function renderTarjetas(lista) {
 }
 
 // FILTROS
+function normalizarTexto(s) {
+  return (s || '')
+    .toString()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '') // quita acentos
+    .toLowerCase()
+    .trim();
+}
+
 function filtrarAnuncios() {
-  const txt = document.getElementById('buscador').value.toLowerCase();
+  const txt = normalizarTexto(document.getElementById('buscador').value);
+  const palabras = txt.split(/\s+/).filter(Boolean);
   const pMin = parseFloat(document.getElementById('precioMin').value) || 0;
   const pMax = parseFloat(document.getElementById('precioMax').value) || Infinity;
   const prov = document.getElementById('filtroProvincia').value;
   const ord = document.getElementById('ordenar').value;
 
   let res = anuncios.filter(a => {
-    const okTxt = !txt || a.titulo.toLowerCase().includes(txt) || (a.descripcion||'').toLowerCase().includes(txt);
+    const haystack = normalizarTexto([a.titulo, a.descripcion, a.categoria, a.provincia].join(' '));
+    const okTxt = !palabras.length || palabras.every(p => haystack.includes(p));
     const okCat = categoriaActiva === 'Todos' || a.categoria === categoriaActiva;
     const okP = a.precio === 0 ? (pMin === 0 && pMax === Infinity) : (a.precio >= pMin && a.precio <= pMax);
     const okProv = !prov || a.provincia === prov;
