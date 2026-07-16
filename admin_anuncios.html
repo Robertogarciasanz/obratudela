@@ -894,7 +894,10 @@ function comprimirImagen(file, maxWidth = 1200) {
     
     img.onerror = () => {
       URL.revokeObjectURL(url);
-      reject(new Error('No se pudo cargar la imagen'));
+      const esHeic = /heic|heif/i.test(file.type) || /\.(heic|heif)$/i.test(file.name || '');
+      reject(new Error(esHeic
+        ? 'Este navegador no puede procesar fotos HEIC. Cámbiala a JPG (en el iPhone: Ajustes → Cámara → Formatos → Más compatible) o elige otra foto.'
+        : 'No se pudo procesar esta imagen. Prueba con otra foto.'));
     };
     
     img.src = url;
@@ -906,8 +909,8 @@ async function cargarFoto(index, input) {
   const file = input.files[0];
   if (!file) return;
   
-  // Validar tipo
-  if (!file.type.startsWith('image/')) {
+  // Validar tipo (algunos selectores de archivo en móvil no rellenan file.type)
+  if (file.type && !file.type.startsWith('image/')) {
     toast('❌ Solo se aceptan imágenes', 'error');
     return;
   }
