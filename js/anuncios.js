@@ -2,6 +2,12 @@ let anuncios = [];
 let categoriaActiva = 'Todos';
 let galeriaActual = { fotos: [], indice: 0 };
 
+function escapeHtml(s) {
+  return (s ?? '').toString().replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
 function inyectarSchemaProductos(items) {
   const el = document.getElementById('schema-productos');
   if (el) el.remove();
@@ -62,18 +68,18 @@ function renderTarjetas(lista) {
     return `
       <div class="tarjeta" data-id="${a.id}">
         <div class="tarjeta-foto">
-          ${foto ? `<img src="${foto}" alt="${a.titulo}" width="360" height="240" loading="${index === 0 ? 'eager' : 'lazy'}">` : `<div class="placeholder-foto">${a.emoji||'🏗️'}</div>`}
+          ${foto ? `<img src="${escapeHtml(foto)}" alt="${escapeHtml(a.titulo)}" width="360" height="240" loading="${index === 0 ? 'eager' : 'lazy'}">` : `<div class="placeholder-foto">${escapeHtml(a.emoji||'🏗️')}</div>`}
           ${a.destacado ? '<span class="badge-destacado">⭐ Destacado</span>' : ''}
           ${n > 1 ? `<span class="badge-fotos">📷 ${n}</span>` : ''}
         </div>
         <div class="tarjeta-body">
-          <div class="tarjeta-titulo">${a.titulo}</div>
+          <div class="tarjeta-titulo">${escapeHtml(a.titulo)}</div>
           <div class="tarjeta-precio">${precio}</div>
           <div class="tarjeta-meta">
-            <span>📍 ${a.provincia}</span>
+            <span>📍 ${escapeHtml(a.provincia)}</span>
             <span class="badge-activo">✓ Activo</span>
           </div>
-          <div style="font-size:11px;color:#444;margin-top:4px;">${a.categoria} · ${cuando}</div>
+          <div style="font-size:11px;color:#444;margin-top:4px;">${escapeHtml(a.categoria)} · ${cuando}</div>
         </div>
       </div>`;
   }).join('');
@@ -146,8 +152,8 @@ function abrirDetalle(id) {
   document.getElementById('modalTelefono').textContent = a.telefono || 'Consultar';
   document.getElementById('modalBtnLlamar').href = `tel:+34${(a.telefono||'').replace(/\s/g,'')}`;
   document.getElementById('modalTags').innerHTML = `
-    <span class="modal-tag">📂 ${a.categoria}</span>
-    <span class="modal-tag">📍 ${a.provincia}</span>
+    <span class="modal-tag">📂 ${escapeHtml(a.categoria)}</span>
+    <span class="modal-tag">📍 ${escapeHtml(a.provincia)}</span>
     ${a.destacado ? '<span class="modal-tag">⭐ Destacado</span>' : ''}
     <span class="modal-tag" style="background:rgba(46,204,113,0.1);color:#2ecc71;border-color:rgba(46,204,113,0.2);">✓ Activo</span>
   `;
@@ -171,7 +177,7 @@ function abrirDetalle(id) {
       cnt.textContent = `Foto 1 de ${fotos.length}`;
       thumbs.style.display = 'flex';
       thumbs.innerHTML = fotos.map((f,i) =>
-        `<img src="${f}" class="thumb ${i===0?'activa':''}" data-index="${i}" alt="Foto ${i+1}">`
+        `<img src="${escapeHtml(f)}" class="thumb ${i===0?'activa':''}" data-index="${i}" alt="Foto ${i+1}">`
       ).join('');
       // Add event listeners to thumbs
       thumbs.querySelectorAll('.thumb').forEach(t => {

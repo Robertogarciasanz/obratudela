@@ -7,9 +7,12 @@ const crypto = require('crypto');
 const { exec } = require('child_process');
 
 const PORT          = 3000;
+const HOST          = '127.0.0.1';
 const ROOT          = __dirname;
 const ANUNCIOS_FILE = path.join(ROOT, 'anuncios.json');
 const IMG_DIR       = path.join(ROOT, 'img', 'anuncios');
+const ADMIN_KEY     = crypto.randomBytes(24).toString('hex');
+const ALLOWED_ORIGINS = new Set([`http://localhost:${PORT}`, `http://127.0.0.1:${PORT}`]);
 
 if (!fs.existsSync(IMG_DIR)) fs.mkdirSync(IMG_DIR, { recursive: true });
 
@@ -67,13 +70,29 @@ const MIME = {
   '.svg': 'image/svg+xml', '.xml': 'application/xml', '.txt': 'text/plain',
 };
 
+function tieneClaveValida(req) {
+  return req.headers['x-admin-key'] === ADMIN_KEY;
+}
+function rechazar(res) {
+  res.writeHead(403, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ ok: false, error: 'No autorizado' }));
+}
+
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
 
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  if (ALLOWED_ORIGINS.has(req.headers.origin)) {
+    res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Admin-Key');
   if (req.method === 'OPTIONS') { res.writeHead(200); res.end(); return; }
+
+  // Las rutas que modifican datos o publican requieren la clave de admin generada al arrancar
+  const esMutacion = (req.method === 'POST' && (url.pathname === '/api/anuncio' || url.pathname === '/api/publicar'))
+    || (req.method === 'PUT' && url.pathname.startsWith('/api/anuncio/'))
+    || (req.method === 'DELETE' && url.pathname.startsWith('/api/anuncio/'));
+  if (esMutacion && !tieneClaveValida(req)) { rechazar(res); return; }
 
   // Panel admin
   if (req.method === 'GET' && (url.pathname === '/' || url.pathname === '/admin')) {
@@ -247,12 +266,13 @@ const server = http.createServer(async (req, res) => {
   res.writeHead(404); res.end('Not found');
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, HOST, () => {
   console.log('');
   console.log('  ObraTudela — Panel de administracion local');
   console.log('  ───────────────────────────────────────────');
   console.log(`  Panel admin:   http://localhost:${PORT}`);
   console.log(`  Vista previa:  http://localhost:${PORT}/anuncios.html`);
+  console.log('  Solo accesible desde este equipo (127.0.0.1).');
   console.log('  Pulsa Ctrl+C para cerrar.');
   console.log('');
   // Abrir Edge automáticamente al arrancar
@@ -428,6 +448,7 @@ textarea{resize:vertical;min-height:80px}
 </div>
 
 <script>
+var ADMIN_KEY = ${JSON.stringify(ADMIN_KEY)};
 var fotosData = [];
 var editMode = false;
 
@@ -542,7 +563,7 @@ async function publicar() {
     
     var res = await fetch(url, {
       method: method,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'X-Admin-Key': ADMIN_KEY },
       body: JSON.stringify({
         titulo: titulo,
         precio: parseFloat(document.getElementById('fP').value) || 0,
@@ -667,6 +688,7 @@ function subirInterno(onStatus) {
   return new Promise(function(resolve) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '/api/publicar');
+    xhr.setRequestHeader('X-Admin-Key', ADMIN_KEY);
     xhr.onprogress = function() { onStatus(xhr.responseText.split('\\n').pop() || '…', null); };
     xhr.onload = function() {
       var txt = xhr.responseText;
@@ -684,7 +706,7 @@ function subirInterno(onStatus) {
 async function eliminar(id, titulo) {
   if (!confirm('¿Eliminar "' + titulo + '"?')) return;
   try {
-    var res = await fetch('/api/anuncio/' + id, { method: 'DELETE' });
+    var res = await fetch('/api/anuncio/' + id, { method: 'DELETE', headers: { 'X-Admin-Key': ADMIN_KEY } });
     var data = await res.json();
     if (data.ok) cargarLista();
     else alert('El servidor no pudo eliminar el anuncio.');
@@ -718,7 +740,9 @@ async function cargarLista() {
     if (foto) { var img = document.createElement('img'); img.src = '/' + foto; img.alt = ''; thumb.appendChild(img); }
     else { thumb.textContent = a.emoji || '🏗️'; }
     var info = document.createElement('div'); info.className = 'ainfo';
-    info.innerHTML = '<div class="atit">' + a.titulo + '</div><div class="amet">' + a.categoria + ' · ' + a.provincia + ' · ' + (a.fotos ? a.fotos.length : 0) + ' foto(s)</div>';
+    var atit = document.createElement('div'); atit.className = 'atit'; atit.textContent = a.titulo;
+    var amet = document.createElement('div'); amet.className = 'amet'; amet.textContent = a.categoria + ' · ' + a.provincia + ' · ' + (a.fotos ? a.fotos.length : 0) + ' foto(s)';
+    info.appendChild(atit); info.appendChild(amet);
     var pre = document.createElement('span'); pre.className = 'apre'; pre.textContent = precio;
     var edit = document.createElement('button'); edit.className = 'bedit'; edit.textContent = '📝 Editar';
     edit.dataset.id = a.id;

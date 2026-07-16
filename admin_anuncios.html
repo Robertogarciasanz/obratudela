@@ -740,6 +740,12 @@ let anuncios = [];
 let fotosBase64 = [null, null, null, null];
 let haycambios = false;
 
+function escapeHtml(s) {
+  return (s ?? '').toString().replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
 // ── CARGAR DESDE ARCHIVO LOCAL ────────────────────────────────────────────────
 async function cargarDesdeArchivo() {
   if ('showOpenFilePicker' in window) {
@@ -829,22 +835,22 @@ function renderLista() {
     const fotoSrc = fotoRaw && !fotoRaw.startsWith('data:') && !fotoRaw.startsWith('http')
       ? BASE + fotoRaw : fotoRaw;
     const fotoHtml = fotoSrc
-      ? `<div class="item-foto"><img src="${fotoSrc}" alt="" onerror="this.parentElement.textContent='🏗️'"></div>`
+      ? `<div class="item-foto"><img src="${escapeHtml(fotoSrc)}" alt="" onerror="this.parentElement.textContent='🏗️'"></div>`
       : `<div class="item-foto">🏗️</div>`;
     return `
       <div class="item-anuncio">
         ${fotoHtml}
         <div class="item-info">
-          <div class="item-titulo">${a.titulo}</div>
+          <div class="item-titulo">${escapeHtml(a.titulo)}</div>
           <div class="item-meta">
-            <span class="tag tag-precio">${precio}</span>
-            <span class="tag tag-cat">${a.categoria}</span>
+            <span class="tag tag-precio">${escapeHtml(precio)}</span>
+            <span class="tag tag-cat">${escapeHtml(a.categoria)}</span>
             ${numFotos > 0 ? `<span class="tag tag-fotos">📷 ${numFotos}</span>` : ''}
           </div>
         </div>
         <div class="item-acciones">
-          <button class="btn btn-editar" onclick="editarAnuncio('${a.id}')">✏️</button>
-          <button class="btn btn-peligro" onclick="borrarAnuncio('${a.id}')" style="font-size:12px;padding:6px 12px;">🗑️</button>
+          <button class="btn btn-editar" onclick="editarAnuncio('${escapeHtml(a.id)}')">✏️</button>
+          <button class="btn btn-peligro" onclick="borrarAnuncio('${escapeHtml(a.id)}')" style="font-size:12px;padding:6px 12px;">🗑️</button>
         </div>
       </div>`;
   }).join('');
@@ -1038,7 +1044,7 @@ function editarAnuncio(id) {
         fotosBase64[i] = foto;
         const slot = document.getElementById('slot' + i);
         slot.classList.add('tiene-foto');
-        slot.innerHTML = `<img src="${foto}" alt="Foto ${i+1}"><button class="quitar-foto" onclick="quitarFoto(${i},event)">✕</button>`;
+        slot.innerHTML = `<img src="${escapeHtml(foto)}" alt="Foto ${i+1}"><button class="quitar-foto" onclick="quitarFoto(${i},event)">✕</button>`;
       }
     });
   }
