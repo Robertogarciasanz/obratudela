@@ -48,7 +48,7 @@
     "id": "movsdk7e282a57",
     "titulo": "Cuadro Figurativa y realista",
     "descripcion": "Pintura de Javier Rodríguez Quesada \n\nLogró el primer premio de la Bienal de Zamora de 1992, año en el que logró el cuarto premio y la Medalla de Oro de la Bienal internacional de Arte Contemporáneo de Florencia y ese mismo ejercicio consiguió el reconocimiento de Zamorano del mes de diciembre del diario El Correo de Zamora y regalo otro cuadro del mismo autor\n\nSus obras forman parte de colecciones institucionales de prestigio, entre ellas la Junta de Castilla y León, Vega Sicilia y la Universidad de Valladolid. Su obra ha sido expuesta en Barcelona, Madrid y diversas galerías de Castilla y León\n\nTRAYECTORIA DEL ARTISTA\nJavier Rodríguez Quesada es uno de los pintores figurativos castellanos más destacados de la segunda mitad del siglo XX. Pintor y retratista de reconocido prestigio, desarrolló su carrera principalmente en Valladolid.\nPremios y reconocimientos:\n\nPrimer Premio, Bienal de Pintura de Zamora (1992)\n Medalla de Oro, I Bienal Internacional de Arte Contemporáneo de Florencia (1997)\n Reconocimiento «Zamorano del mes» — El Correo de Zamora, diciembre de 1992\n\nEncargos institucionales:\n\nAutor del retrato oficial del alcalde de Valladolid, D. Javier León de la Riva\n\nObra en colecciones públicas y privadas:\n\nJunta de Castilla y León\nBodega Vega Sicilia\nUniversidad de Valladolid",
-    "precio": 1200,
+    "precio": 2000,
     "categoria": "Otros",
     "provincia": "Valladolid",
     "telefono": "607 444 903",
@@ -60,7 +60,7 @@
       "img/anuncios/movsdk7e282a57/foto3.webp",
       "img/anuncios/movsdk7e282a57/foto4.webp"
     ],
-    "fecha": "2026-05-30T06:01:43.516Z"
+    "fecha": "2026-05-11T16:41:36.174Z"
   },
   {
     "id": "movs4zw7e1fe82",
@@ -94,6 +94,24 @@
     "fecha": "2026-05-07T17:46:05.725Z"
   },
   {
+    "id": "movr6kl3b12492",
+    "titulo": "Yanmar B 27-2A",
+    "descripcion": "Se vende miniexcavadora (Crawler Backhoe) Ammann-Yanmar B 27-2A en excelente estado de funcionamiento. Una máquina robusta, fiable y con una mecánica de las que ya no se fabrican.\n\nHoras de trabajo: Solo 3700 horas reales.\n\nPeso: 3030 kg (ideal para transporte y estabilidad).\n\nPotencia: 16.2 Kw.\n\nAño: 1998.\n\nLa máquina se encuentra en Tudela de Duero. Está lista para entrar a trabajar mañana mismo. Se puede ver y probar sin compromiso. ¡Mejor ver en persona para comprobar lo bien que suena el motor!\n\nNº de Serie: CD85A10286.",
+    "precio": 9300,
+    "categoria": "Maquinaria",
+    "provincia": "Valladolid",
+    "telefono": "607 444 903",
+    "emoji": "🏗️",
+    "destacado": false,
+    "fotos": [
+      "img/anuncios/movr6kl3b12492/foto1.webp",
+      "img/anuncios/movr6kl3b12492/foto2.webp",
+      "img/anuncios/movr6kl3b12492/foto3.webp",
+      "img/anuncios/movr6kl3b12492/foto4.webp"
+    ],
+    "fecha": "2026-05-11T16:31:39.852Z"
+  },
+  {
     "id": "mov3w6fdqfnq",
     "titulo": "Altavoz Bluetooth Portátil 20W",
     "descripcion": "Vendo altavoz inalámbrico portátil en color rojo vibrante, perfecto para exteriores, fiestas o para casa! Tiene un diseño moderno y resistente, muy similar a los modelos JBL, pero con una excelente relación calidad-precio.\nCaracterísticas principales:\nPotencia de sonido: 20W con graves reforzados (subwoofer integrado).\nConectividad total: Bluetooth 5.1 (conexión rápida y estable), entrada USB, ranura para tarjeta MicroSD y entrada auxiliar de 3.5mm.\nRadio FM: Sintoniza tus emisoras favoritas directamente.\nManos libres: Micrófono incorporado para responder llamadas.\nBatería: Larga duración para horas de música ininterrumpida.\nExtras: Incluye correa de transporte resistente y luces LED que se pueden sincronizar",
@@ -106,7 +124,7 @@
     "fotos": [
       "img/anuncios/mov3w6fdqfnq/foto1.webp"
     ],
-    "fecha": "2026-05-30T06:02:21.665Z"
+    "fecha": "2026-05-08T14:19:25.211Z"
   },
   {
     "id": "movqfei9dell",
@@ -154,5 +172,20 @@
       "img/anuncios/moviuonwqujf/foto2.jpg"
     ],
     "fecha": "2026-05-11T16:38:31.780Z"
+  },
+  {
+    "id": "movk9bygblun",
+    "titulo": "Martillo Hidráulico Korota 140kg - Para Miniexcavador",
+    "descripcion": "vende martillo hidráulico marca Korota en buen estado.Peso: 140 kg.Compatibilidad: Ideal para miniexcavadoras de 1.5 a 3.5 toneladas.Incluye: Latiguillos hidráulicos y pica en uso.El martillo ha sido revisado y está listo para trabajar. Potente y fiable, marca líder en el sector por su bajo mantenimiento y durabilidad. Se puede ver sin compromiso.",
+    "precio": 2500,
+    "categoria": "Herramientas",
+    "provincia": "Valladolid",
+    "telefono": "607 444 903",
+    "emoji": "🏗️",
+    "destacado": false,
+    "fotos": [
+      "img/anuncios/movk9bygblun/foto1.webp"
+    ],
+    "fecha": "2026-05-09T11:49:47.719Z"
   }
 ]
