@@ -142,7 +142,7 @@
     }
     .btn-primary:hover { background: var(--orange2); transform: scale(1.04); }
     .btn-outline {
-      padding: 14px 36px; border: 2px solid var(--orange); color: var(--orange);
+      padding: 14px 36px; border: 2px solid var(--orange); color: #fff;
       text-decoration: none; font-family: 'Bebas Neue', cursive;
       font-size: 1.3rem; letter-spacing: 1px; border-radius: 3px;
       transition: background 0.2s, color 0.2s, transform 0.15s;

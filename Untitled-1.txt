@@ -1,0 +1,1 @@
+dir /s /b C:\Users\xaxaj\*antigravity*.git 2>nul
