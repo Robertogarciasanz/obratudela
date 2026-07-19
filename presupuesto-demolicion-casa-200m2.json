@@ -1,0 +1,74 @@
+{
+  "titulo": "Demolición Completa Casa Unifamiliar",
+  "descripcion": "Demolición de casa unifamiliar 200 m² (2 plantas) incluyendo cubierta, tabiques, pisos, muros de carga y retirada de escombros",
+  "metros_totales": 200,
+  "plantas": 2,
+  "volumen_escombros": 130,
+  "tipo": "Mecánica (máquina)",
+  "lineas": [
+    {
+      "codigo": "E01ECC030",
+      "descripcion": "Demolición cubierta teja hormigón",
+      "cantidad": 200,
+      "unidad": "m2",
+      "precio_unitario": 7.49,
+      "subtotal": 1498.0
+    },
+    {
+      "codigo": "E01EFBF050",
+      "descripcion": "Demolición tabiques ladrillo hueco doble a máquina",
+      "cantidad": 350,
+      "unidad": "m2",
+      "precio_unitario": 4.86,
+      "subtotal": 1701.0
+    },
+    {
+      "codigo": "E01EPP030",
+      "descripcion": "Demolición solados a máquina",
+      "cantidad": 200,
+      "unidad": "m2",
+      "precio_unitario": 5.82,
+      "subtotal": 1164.0
+    },
+    {
+      "codigo": "E01EFBF140",
+      "descripcion": "Demolición muro hormigón a máquina",
+      "cantidad": 400,
+      "unidad": "m2",
+      "precio_unitario": 12.2,
+      "subtotal": 4880.0
+    },
+    {
+      "codigo": "E02AA010",
+      "descripcion": "Desbroce y limpieza terreno a mano",
+      "cantidad": 200,
+      "unidad": "m2",
+      "precio_unitario": 4.21,
+      "subtotal": 842.0
+    },
+    {
+      "codigo": "G01C030",
+      "descripcion": "Carga escombros sobre camión a máquina",
+      "cantidad": 130,
+      "unidad": "m3",
+      "precio_unitario": 2.65,
+      "subtotal": 344.5
+    }
+  ],
+  "totales": {
+    "sin_iva": 10429.5,
+    "iva_porcentaje": 21,
+    "iva_importe": 2190.19,
+    "con_iva": 12619.69
+  },
+  "notas": "Incluye demolición estructural mecánica, retirada de escombros con carga a camión. No incluye transporte a vertedero ni tratamiento especial de materiales.",
+  "fecha": "2026-07-19",
+  "fuente": "https://www.obratudela.com/precios.json",
+  "plazo_ejecucion": "15-20 días laborales",
+  "maquinaria_necesaria": [
+    "Excavadora CAT 320 o similar",
+    "Pala cargadora",
+    "Camión volquete 8-10 m³",
+    "Compresor"
+  ]
+}

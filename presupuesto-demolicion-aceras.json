@@ -1,0 +1,79 @@
+{
+  "titulo": "Demolición de Aceras y Retirada de Escombros",
+  "cliente": {
+    "nombre": "Ayuntamiento de Valladolid",
+    "email": "obra@valladolid.es",
+    "telefono": "+34-983-426-000",
+    "direccion": "Calle principal, Valladolid"
+  },
+  "descripcion": "Demolición de aceras de hormigón en mal estado y retirada de escombros con carga a camión",
+  "lineas": [
+    {
+      "codigo": "E01EPP010",
+      "descripcion": "Demolición solado de hormigón con compresor",
+      "unidad": "m2",
+      "cantidad": 150,
+      "precioUnitario": 9.43,
+      "subtotal": 1414.50,
+      "categoria": "DEMOLICION"
+    },
+    {
+      "codigo": "E01ECP010",
+      "descripcion": "Limpieza y retirada de escombros a pie de carga",
+      "unidad": "m3",
+      "cantidad": 30,
+      "precioUnitario": 12.50,
+      "subtotal": 375.00,
+      "categoria": "DEMOLICION"
+    },
+    {
+      "codigo": "E01AL020",
+      "descripcion": "Limpieza general, retirada material sobrante y escombros",
+      "unidad": "m2",
+      "cantidad": 150,
+      "precioUnitario": 10.62,
+      "subtotal": 1593.00,
+      "categoria": "LIMPIEZA"
+    },
+    {
+      "codigo": "E07CTM010",
+      "descripcion": "Carga de escombros en camión volquete",
+      "unidad": "m3",
+      "cantidad": 30,
+      "precioUnitario": 8.50,
+      "subtotal": 255.00,
+      "categoria": "TRANSPORTE"
+    }
+  ],
+  "totales": {
+    "sinIVA": 3637.50,
+    "ivaPorc": 21,
+    "ivaImporte": 763.88,
+    "conIVA": 4401.38
+  },
+  "desglose": {
+    "demolicion": 1414.50,
+    "retirada_escombros": 375.00,
+    "limpieza": 1593.00,
+    "carga_transporte": 255.00
+  },
+  "notas": "Presupuesto para 150 m2 de aceras de hormigón. Incluye demolición, limpieza completa y carga de escombros. No incluye transporte a vertedero (se proporciona por separado). Válido por 30 días. Consultar disponibilidad de maquinaria.",
+  "formaPago": "30 días",
+  "validezPresupuesto": 30,
+  "fichaTecnica": {
+    "materiales_necesarios": [
+      "Compresor neumático de 7 bar",
+      "Martillo neumático de demolición",
+      "Palas y herramientas manuales",
+      "Equipo de protección individual"
+    ],
+    "maquinaria_recomendada": [
+      "Excavadora CAT 320 o similar para retirada de escombros",
+      "Camión volquete 8m3 para transporte"
+    ],
+    "tiempo_estimado": "5-7 días",
+    "operarios_necesarios": "3-4 personas"
+  },
+  "fuente": "BCEXTREM 2026 - Base de precios de construcción actualizada",
+  "fechaPresupuesto": "2026-07-19"
+}

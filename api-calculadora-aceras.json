@@ -1,0 +1,141 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Calculadora Demolición Aceras",
+    "version": "1.0.0",
+    "description": "API para calcular presupuestos de demolición de aceras usando precios BCEXTREM 2026",
+    "contact": {
+      "name": "ObraTudela",
+      "email": "excavacionesart@gmail.com",
+      "url": "https://www.obratudela.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.obratudela.com",
+      "description": "API principal"
+    }
+  ],
+  "paths": {
+    "/calculadora-aceras.html": {
+      "get": {
+        "tags": ["Calculadora"],
+        "summary": "Página interactiva de calculadora",
+        "description": "Acceso a la calculadora web interactiva",
+        "parameters": [
+          {
+            "name": "metros",
+            "in": "query",
+            "description": "Metros cuadrados a precalcular (opcional)",
+            "schema": {"type": "integer", "minimum": 1}
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Página HTML interactiva"
+          }
+        }
+      }
+    },
+    "/presupuesto-aceras-{metros}m2.json": {
+      "get": {
+        "tags": ["Presupuestos"],
+        "summary": "Obtener presupuesto para cantidad específica",
+        "description": "Descarga presupuesto JSON pre-calculado para X metros cuadrados",
+        "parameters": [
+          {
+            "name": "metros",
+            "in": "path",
+            "required": true,
+            "description": "Metros cuadrados (50, 100, 150, 200, 500, 1000)",
+            "schema": {"type": "integer"}
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Presupuesto en formato JSON",
+            "content": {
+              "application/json": {
+                "schema": {"$ref": "#/components/schemas/Presupuesto"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Presupuesto": {
+        "type": "object",
+        "required": ["titulo", "metros", "lineas", "totales"],
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "example": "Demolición de Aceras"
+          },
+          "metros": {
+            "type": "number",
+            "example": 150,
+            "description": "Metros cuadrados"
+          },
+          "volumen_escombros": {
+            "type": "number",
+            "example": 37.5,
+            "description": "Volumen estimado de escombros en m³ (metros * 0.25)"
+          },
+          "lineas": {
+            "type": "array",
+            "items": {"$ref": "#/components/schemas/LineaPresupuesto"}
+          },
+          "totales": {
+            "type": "object",
+            "properties": {
+              "sin_iva": {"type": "number"},
+              "iva_porcentaje": {"type": "number"},
+              "iva_importe": {"type": "number"},
+              "con_iva": {"type": "number"}
+            }
+          },
+          "fecha": {"type": "string", "format": "date"}
+        }
+      },
+      "LineaPresupuesto": {
+        "type": "object",
+        "required": ["codigo", "descripcion", "cantidad", "unidad", "precio_unitario"],
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "example": "E01EPS050",
+            "description": "Código BCEXTREM"
+          },
+          "descripcion": {
+            "type": "string",
+            "example": "Demolición pavimento hormigón impreso/pulido con compresor"
+          },
+          "cantidad": {
+            "type": "number",
+            "example": 150
+          },
+          "unidad": {
+            "type": "string",
+            "example": "m2"
+          },
+          "precio_unitario": {
+            "type": "number",
+            "example": 16.51
+          },
+          "subtotal": {
+            "type": "number",
+            "example": 2476.50
+          }
+        }
+      }
+    }
+  },
+  "x-codigo-ejemplo": {
+    "python": "import requests; r = requests.get('https://www.obratudela.com/presupuesto-aceras-150m2.json'); print(r.json())",
+    "javascript": "fetch('https://www.obratudela.com/presupuesto-aceras-150m2.json').then(r => r.json()).then(d => console.log(d))",
+    "curl": "curl https://www.obratudela.com/presupuesto-aceras-150m2.json"
+  }
+}

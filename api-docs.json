@@ -1,0 +1,233 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ObraTudela API",
+    "description": "API pública para acceso a base de datos de precios, catálogo de maquinaria y generación de presupuestos de obra.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Excavaciones y Servicios Arturo S.L.",
+      "email": "excavacionesart@gmail.com",
+      "url": "https://www.obratudela.com"
+    },
+    "license": {
+      "name": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.obratudela.com/api",
+      "description": "Servidor de producción"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Precios",
+      "description": "Base de datos de precios de construcción BCEXTREM 2026 (54.777 partidas)"
+    },
+    {
+      "name": "Catálogo",
+      "description": "Catálogo de 71 equipos de alquiler de maquinaria"
+    },
+    {
+      "name": "Presupuestos",
+      "description": "Generación y gestión de presupuestos de obra"
+    },
+    {
+      "name": "Anuncios",
+      "description": "Portal de compraventa de maquinaria y materiales"
+    }
+  ],
+  "paths": {
+    "/precios": {
+      "get": {
+        "tags": ["Precios"],
+        "summary": "Buscar partidas de precios",
+        "description": "Búsqueda en base de datos BCEXTREM 2026 por código, descripción o categoría",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "description": "Búsqueda por texto en descripción",
+            "schema": {"type": "string"}
+          },
+          {
+            "name": "codigo",
+            "in": "query",
+            "description": "Código de partida (ej: E01EPS010)",
+            "schema": {"type": "string"}
+          },
+          {
+            "name": "categoria",
+            "in": "query",
+            "description": "Categoría (DEMOLICION, MOVIMIENTO DE TIERRAS, etc.)",
+            "schema": {"type": "string"}
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Número de página (defecto: 1)",
+            "schema": {"type": "integer", "default": 1}
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Resultados por página (defecto: 50, máximo: 500)",
+            "schema": {"type": "integer", "default": 50}
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de partidas encontradas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "total": {"type": "integer"},
+                    "page": {"type": "integer"},
+                    "limit": {"type": "integer"},
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "codigo": {"type": "string"},
+                          "descripcion": {"type": "string"},
+                          "unidad": {"type": "string"},
+                          "precio": {"type": "number"},
+                          "categoria": {"type": "string"}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/catalogo": {
+      "get": {
+        "tags": ["Catálogo"],
+        "summary": "Obtener catálogo de maquinaria",
+        "description": "Lista de 71 equipos de alquiler con precios de alquiler diario/semanal/mensual",
+        "parameters": [
+          {
+            "name": "tipo",
+            "in": "query",
+            "description": "Tipo de maquinaria (EXCAVADORA, DUMPER, COMPRESOR, etc.)",
+            "schema": {"type": "string"}
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {"type": "integer", "default": 1}
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Catálogo de maquinaria"
+          }
+        }
+      }
+    },
+    "/anuncios": {
+      "get": {
+        "tags": ["Anuncios"],
+        "summary": "Listar anuncios de compraventa",
+        "description": "Portal de compraventa de maquinaria y materiales en tiempo real",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "description": "Búsqueda por texto",
+            "schema": {"type": "string"}
+          },
+          {
+            "name": "categoria",
+            "in": "query",
+            "schema": {"type": "string"}
+          },
+          {
+            "name": "provincia",
+            "in": "query",
+            "description": "Provincia (Valladolid, etc.)",
+            "schema": {"type": "string"}
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de anuncios"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Partida": {
+        "type": "object",
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "description": "Código único de partida (ej: E01EPS010)",
+            "example": "E01EPS010"
+          },
+          "descripcion": {
+            "type": "string",
+            "description": "Descripción de la partida",
+            "example": "Excavación a máquina en terrenos intermedios"
+          },
+          "unidad": {
+            "type": "string",
+            "description": "Unidad de medida",
+            "enum": ["m2", "m3", "ml", "ud", "h", "kg", "t", "l", "%"],
+            "example": "m3"
+          },
+          "precio": {
+            "type": "number",
+            "description": "Precio unitario en € sin IVA",
+            "example": 8.45
+          },
+          "categoria": {
+            "type": "string",
+            "example": "MOVIMIENTO DE TIERRAS"
+          }
+        }
+      },
+      "Presupuesto": {
+        "type": "object",
+        "properties": {
+          "titulo": {"type": "string"},
+          "cliente": {"type": "object"},
+          "lineas": {
+            "type": "array",
+            "items": {"$ref": "#/components/schemas/LineaPresupuesto"}
+          },
+          "totales": {
+            "type": "object",
+            "properties": {
+              "sinIVA": {"type": "number"},
+              "ivaPorc": {"type": "number"},
+              "ivaImporte": {"type": "number"},
+              "conIVA": {"type": "number"}
+            }
+          }
+        }
+      },
+      "LineaPresupuesto": {
+        "type": "object",
+        "properties": {
+          "codigo": {"type": "string"},
+          "descripcion": {"type": "string"},
+          "unidad": {"type": "string"},
+          "cantidad": {"type": "number"},
+          "precioUnitario": {"type": "number"},
+          "subtotal": {"type": "number"}
+        }
+      }
+    }
+  }
+}

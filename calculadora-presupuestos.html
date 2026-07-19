@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto con IA — ObraTudela</title>
+  <meta name="description" content="Generador de presupuestos con IA: aceras, desbroce, demoliciones. Calcula en tiempo real con precios BCEXTREM 2026.">
+  <link rel="canonical" href="https://www.obratudela.com/calculadora-presupuestos.html">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --orange: #ff6b00;
+      --orange-hover: #e05e00;
+      --text: #222;
+      --text-light: #666;
+      --bg: #f9f9f9;
+      --border: #ddd;
+      --surface: #ffffff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 0;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--orange) 0%, #e05e00 100%);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--border);
+      overflow-x: auto;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 12px 24px;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--text-light);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      color: var(--orange);
+    }
+
+    .tab-btn.activo {
+      color: var(--orange);
+      border-bottom-color: var(--orange);
+    }
+
+    .tab-content {
+      display: none;
+      background: var(--surface);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .tab-content.activo {
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(255,107,0,0.1);
+    }
+
+    .input-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 12px;
+    }
+
+    .input-group input {
+      flex: 1;
+    }
+
+    .unit {
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      font-weight: 600;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    button.calcular {
+      background: var(--orange);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s;
+    }
+
+    button.calcular:hover {
+      background: var(--orange-hover);
+    }
+
+    .resultado {
+      margin-top: 40px;
+      padding: 24px;
+      background: #f9f9f9;
+      border-left: 4px solid var(--orange);
+      border-radius: 4px;
+      display: none;
+    }
+
+    .resultado.activo {
+      display: block;
+    }
+
+    .precio-total {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--orange);
+      margin: 16px 0;
+      text-align: center;
+    }
+
+    .desglose {
+      margin-top: 20px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+
+    .linea-presupuesto {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 13px;
+    }
+
+    .linea-presupuesto:last-child {
+      border-bottom: none;
+    }
+
+    .total-linea {
+      text-align: right;
+      font-weight: 600;
+      color: var(--orange);
+    }
+
+    .info {
+      background: #e8f4f8;
+      border-left: 4px solid #0096d6;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-top: 12px;
+      color: #333;
+    }
+
+    .botones-export {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      background: #666;
+      color: white;
+      border: none;
+      flex: 1;
+      font-size: 13px;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      min-width: 150px;
+      transition: background 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: #555;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: var(--orange);
+    }
+
+    #estado {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      color: #856404;
+      padding: 12px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    .totales-resumen {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .total-item {
+      padding: 16px;
+      background: white;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .total-label {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-bottom: 4px;
+    }
+
+    .total-valor {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--orange);
+    }
+
+    @media (max-width: 768px) {
+      .input-row { grid-template-columns: 1fr; }
+      .linea-presupuesto { grid-template-columns: 1.5fr 1fr 1fr; }
+      .totales-resumen { grid-template-columns: 1fr; }
+      .tabs { gap: 8px; }
+      .tab-btn { padding: 10px 16px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>💰 Calculadora de Presupuestos</h1>
+  <p>Calcula presupuestos en tiempo real usando precios BCEXTREM 2026</p>
+</div>
+
+<div class="container">
+  <div id="estado">⏳ Cargando precios de la base de datos...</div>
+
+  <div class="tabs">
+    <button class="tab-btn activo" onclick="mostrarTab('aceras')">🏗️ Aceras</button>
+    <button class="tab-btn" onclick="mostrarTab('desbroce')">🌿 Desbroce</button>
+    <button class="tab-btn" onclick="mostrarTab('demolicion')">🏢 Demolición</button>
+  </div>
+
+  <!-- TAB: ACERAS -->
+  <div id="aceras" class="tab-content activo">
+    <h2>Demolición de Aceras</h2>
+    <p style="color: #666; margin-bottom: 20px;">Demolición de aceras de hormigón con retirada de escombros</p>
+
+    <div class="form-group">
+      <label for="metros-aceras">Superficie de aceras a demoler</label>
+      <div class="input-group">
+        <input type="number" id="metros-aceras" placeholder="Ej: 150, 200, 500..." min="1" max="10000" value="">
+        <div class="unit">m²</div>
+      </div>
+      <div class="info">💡 Los precios se cargan dinámicamente de tu base de datos BCEXTREM 2026</div>
+    </div>
+
+    <div class="form-group">
+      <label for="iva-aceras">IVA</label>
+      <select id="iva-aceras">
+        <option value="21">21% (España estándar)</option>
+        <option value="10">10% (Reducido)</option>
+        <option value="0">0% (Sin IVA)</option>
+      </select>
+    </div>
+
+    <button class="calcular" onclick="calcularAceras()">Calcular Presupuesto</button>
+
+    <div id="resultado-aceras" class="resultado">
+      <h2>📊 Presupuesto Demolición Aceras</h2>
+      <div class="desglose" id="desglose-aceras"></div>
+      <div class="totales-resumen">
+        <div class="total-item">
+          <div class="total-label">Sin IVA</div>
+          <div class="total-valor" id="siniva-aceras">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">IVA</div>
+          <div class="total-valor" id="iva-aceras-valor">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">Total</div>
+          <div class="total-valor" id="total-aceras">€0,00</div>
+        </div>
+      </div>
+      <div class="botones-export">
+        <button class="btn-secondary" onclick="exportarJSON('aceras')">📥 JSON</button>
+        <button class="btn-secondary" onclick="exportarCSV('aceras')">📊 CSV</button>
+        <button class="btn-secondary" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: DESBROCE -->
+  <div id="desbroce" class="tab-content">
+    <h2>Desbroce del Terreno</h2>
+    <p style="color: #666; margin-bottom: 20px;">Desbroce, limpieza y retirada de tierra vegetal</p>
+
+    <div class="input-row">
+      <div class="form-group">
+        <label for="metros-desbroce">Superficie a desbrocar</label>
+        <div class="input-group">
+          <input type="number" id="metros-desbroce" placeholder="Ej: 200, 500..." min="1" max="100000" value="">
+          <div class="unit">m²</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tipo-desbroce">Tipo de desbroce</label>
+        <select id="tipo-desbroce">
+          <option value="basico">Básico (máquina + tierra)</option>
+          <option value="completo">Completo (máquina + tala + tierra)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="iva-desbroce">IVA</label>
+      <select id="iva-desbroce">
+        <option value="21">21% (España estándar)</option>
+        <option value="10">10% (Reducido)</option>
+        <option value="0">0% (Sin IVA)</option>
+      </select>
+    </div>
+
+    <button class="calcular" onclick="calcularDesbroce()">Calcular Presupuesto</button>
+
+    <div id="resultado-desbroce" class="resultado">
+      <h2>📊 Presupuesto Desbroce</h2>
+      <div class="desglose" id="desglose-desbroce"></div>
+      <div class="totales-resumen">
+        <div class="total-item">
+          <div class="total-label">Sin IVA</div>
+          <div class="total-valor" id="siniva-desbroce">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">IVA</div>
+          <div class="total-valor" id="iva-desbroce-valor">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">Total</div>
+          <div class="total-valor" id="total-desbroce">€0,00</div>
+        </div>
+      </div>
+      <div class="botones-export">
+        <button class="btn-secondary" onclick="exportarJSON('desbroce')">📥 JSON</button>
+        <button class="btn-secondary" onclick="exportarCSV('desbroce')">📊 CSV</button>
+        <button class="btn-secondary" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: DEMOLICIÓN -->
+  <div id="demolicion" class="tab-content">
+    <h2>Demolición de Edificios</h2>
+    <p style="color: #666; margin-bottom: 20px;">Demolición completa: cubierta, tabiques, pisos, muros y retirada de escombros</p>
+
+    <div class="input-row">
+      <div class="form-group">
+        <label for="metros-demolicion">Superficie total</label>
+        <div class="input-group">
+          <input type="number" id="metros-demolicion" placeholder="Ej: 200, 500..." min="1" max="100000" value="">
+          <div class="unit">m²</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="plantas-demolicion">Número de plantas</label>
+        <input type="number" id="plantas-demolicion" placeholder="1, 2, 3..." min="1" max="10" value="2">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="iva-demolicion">IVA</label>
+      <select id="iva-demolicion">
+        <option value="21">21% (España estándar)</option>
+        <option value="10">10% (Reducido)</option>
+        <option value="0">0% (Sin IVA)</option>
+      </select>
+    </div>
+
+    <button class="calcular" onclick="calcularDemolicion()">Calcular Presupuesto</button>
+
+    <div id="resultado-demolicion" class="resultado">
+      <h2>📊 Presupuesto Demolición</h2>
+      <div class="desglose" id="desglose-demolicion"></div>
+      <div class="totales-resumen">
+        <div class="total-item">
+          <div class="total-label">Sin IVA</div>
+          <div class="total-valor" id="siniva-demolicion">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">IVA</div>
+          <div class="total-valor" id="iva-demolicion-valor">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">Total</div>
+          <div class="total-valor" id="total-demolicion">€0,00</div>
+        </div>
+      </div>
+      <div id="notas-demolicion" style="margin-top: 20px; padding: 16px; background: #f0f0f0; border-radius: 4px; font-size: 13px; color: #333; border-left: 3px solid var(--orange);"></div>
+      <div class="botones-export">
+        <button class="btn-secondary" onclick="exportarJSON('demolicion')">📥 JSON</button>
+        <button class="btn-secondary" onclick="exportarCSV('demolicion')">📊 CSV</button>
+        <button class="btn-secondary" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let precios = {};
+
+// Cargar precios desde la base de datos
+async function cargarPrecios() {
+  try {
+    const response = await fetch('precios.json');
+    const data = await response.json();
+    const items = data.items || [];
+
+    const codigos = [
+      'E01EPS050', 'E01AL020', 'G01C020', 'G01C030',
+      'E02AM010', 'E02AA020', 'E02AM030',
+      'E01ECC030', 'E01EFBF050', 'E01EPP030', 'E01EFBF140', 'E02AA010'
+    ];
+
+    for (const codigo of codigos) {
+      const item = items.find(i => i.cod === codigo);
+      if (item) {
+        precios[codigo] = { desc: item.res, precio: item.precio, unidad: item.uni };
+      }
+    }
+
+    document.getElementById('estado').innerHTML = '✅ Base de datos cargada correctamente';
+  } catch (error) {
+    console.error('Error:', error);
+    document.getElementById('estado').innerHTML = '⚠️ Usando precios por defecto';
+    // Precios por defecto
+    precios = {
+      'E01EPS050': { desc: 'Demolición hormigón', precio: 16.51, unidad: 'm2' },
+      'E01AL020': { desc: 'Limpieza', precio: 10.62, unidad: 'm2' },
+      'G01C020': { desc: 'Carga dumper', precio: 19.97, unidad: 'm3' },
+      'G01C030': { desc: 'Carga camión', precio: 2.65, unidad: 'm3' },
+      'E02AM010': { desc: 'Desbroce máquina', precio: 0.68, unidad: 'm2' },
+      'E02AA020': { desc: 'Retirada tierra', precio: 5.13, unidad: 'm2' },
+      'E02AM030': { desc: 'Tala árboles', precio: 3.54, unidad: 'm2' },
+      'E01ECC030': { desc: 'Demolición cubierta', precio: 7.49, unidad: 'm2' },
+      'E01EFBF050': { desc: 'Demolición tabiques', precio: 4.86, unidad: 'm2' },
+      'E01EPP030': { desc: 'Demolición pisos', precio: 5.82, unidad: 'm2' },
+      'E01EFBF140': { desc: 'Demolición muros', precio: 12.2, unidad: 'm2' },
+      'E02AA010': { desc: 'Limpieza terreno', precio: 4.21, unidad: 'm2' }
+    };
+  }
+}
+
+function mostrarTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('activo'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('activo'));
+  document.getElementById(tab).classList.add('activo');
+  event.target.classList.add('activo');
+}
+
+// ACERAS
+function calcularAceras() {
+  if (!precios['E01EPS050']) { alert('Cargando precios...'); return; }
+  const metros = parseFloat(document.getElementById('metros-aceras').value) || 0;
+  const iva = parseFloat(document.getElementById('iva-aceras').value);
+  if (metros <= 0) { alert('Ingresa metros válidos'); return; }
+
+  const volumen = metros * 0.25;
+  const lineas = [
+    { cod: 'E01EPS050', desc: precios['E01EPS050'].desc, cant: metros, unit: 'm2', precio: 16.51 },
+    { cod: 'E01AL020', desc: precios['E01AL020'].desc, cant: metros, unit: 'm2', precio: 10.62 },
+    { cod: 'G01C020', desc: precios['G01C020'].desc, cant: volumen, unit: 'm3', precio: 19.97 },
+    { cod: 'G01C030', desc: precios['G01C030'].desc, cant: volumen, unit: 'm3', precio: 2.65 }
+  ];
+
+  let html = '';
+  const sinIVA = lineas.reduce((sum, l) => {
+    const sub = l.cant * l.precio;
+    html += `<div class="linea-presupuesto"><strong>${l.desc}</strong><span>${l.cant.toFixed(2)} ${l.unit}</span><span class="total-linea">€${sub.toFixed(2)}</span></div>`;
+    return sum + sub;
+  }, 0);
+
+  const ivaImporte = sinIVA * (iva / 100);
+  const conIVA = sinIVA + ivaImporte;
+
+  document.getElementById('desglose-aceras').innerHTML = html;
+  document.getElementById('siniva-aceras').textContent = `€${sinIVA.toFixed(2)}`;
+  document.getElementById('iva-aceras-valor').textContent = `€${ivaImporte.toFixed(2)}`;
+  document.getElementById('total-aceras').textContent = `€${conIVA.toFixed(2)}`;
+  document.getElementById('resultado-aceras').classList.add('activo');
+  window.presupuestoActual = { lineas, sinIVA, ivaImporte, conIVA, tipo: 'aceras' };
+}
+
+// DESBROCE
+function calcularDesbroce() {
+  if (!precios['E02AM010']) { alert('Cargando precios...'); return; }
+  const metros = parseFloat(document.getElementById('metros-desbroce').value) || 0;
+  const tipo = document.getElementById('tipo-desbroce').value;
+  const iva = parseFloat(document.getElementById('iva-desbroce').value);
+  if (metros <= 0) { alert('Ingresa metros válidos'); return; }
+
+  const volumen = metros * 0.15;
+  let lineas;
+
+  if (tipo === 'basico') {
+    lineas = [
+      { cod: 'E02AM010', desc: precios['E02AM010'].desc, cant: metros, unit: 'm2', precio: 0.68 },
+      { cod: 'E02AA020', desc: precios['E02AA020'].desc, cant: metros, unit: 'm2', precio: 5.13 },
+      { cod: 'G01C030', desc: precios['G01C030'].desc, cant: volumen, unit: 'm3', precio: 2.65 }
+    ];
+  } else {
+    lineas = [
+      { cod: 'E02AM010', desc: precios['E02AM010'].desc, cant: metros, unit: 'm2', precio: 0.68 },
+      { cod: 'E02AM030', desc: precios['E02AM030'].desc, cant: metros, unit: 'm2', precio: 3.54 },
+      { cod: 'E02AA020', desc: precios['E02AA020'].desc, cant: metros, unit: 'm2', precio: 5.13 },
+      { cod: 'G01C030', desc: precios['G01C030'].desc, cant: volumen, unit: 'm3', precio: 2.65 }
+    ];
+  }
+
+  let html = '';
+  const sinIVA = lineas.reduce((sum, l) => {
+    const sub = l.cant * l.precio;
+    html += `<div class="linea-presupuesto"><strong>${l.desc}</strong><span>${l.cant.toFixed(2)} ${l.unit}</span><span class="total-linea">€${sub.toFixed(2)}</span></div>`;
+    return sum + sub;
+  }, 0);
+
+  const ivaImporte = sinIVA * (iva / 100);
+  const conIVA = sinIVA + ivaImporte;
+
+  document.getElementById('desglose-desbroce').innerHTML = html;
+  document.getElementById('siniva-desbroce').textContent = `€${sinIVA.toFixed(2)}`;
+  document.getElementById('iva-desbroce-valor').textContent = `€${ivaImporte.toFixed(2)}`;
+  document.getElementById('total-desbroce').textContent = `€${conIVA.toFixed(2)}`;
+  document.getElementById('resultado-desbroce').classList.add('activo');
+  window.presupuestoActual = { lineas, sinIVA, ivaImporte, conIVA, tipo: 'desbroce' };
+}
+
+// DEMOLICIÓN
+function calcularDemolicion() {
+  if (!precios['E01ECC030']) { alert('Cargando precios...'); return; }
+  const metros = parseFloat(document.getElementById('metros-demolicion').value) || 0;
+  const plantas = parseInt(document.getElementById('plantas-demolicion').value) || 1;
+  const iva = parseFloat(document.getElementById('iva-demolicion').value);
+  if (metros <= 0) { alert('Ingresa metros válidos'); return; }
+
+  const cubierta = metros * 1.1;
+  const tabiques = (metros / plantas) * 1.5 * plantas;
+  const pisos = metros;
+  const muros = (Math.sqrt(metros) * 4) * (3 * plantas);
+  const escombros = metros * (5 + plantas) / 10;
+
+  const lineas = [
+    { cod: 'E01ECC030', desc: precios['E01ECC030'].desc, cant: cubierta, unit: 'm2', precio: 7.49 },
+    { cod: 'E01EFBF050', desc: precios['E01EFBF050'].desc, cant: tabiques, unit: 'm2', precio: 4.86 },
+    { cod: 'E01EPP030', desc: precios['E01EPP030'].desc, cant: pisos, unit: 'm2', precio: 5.82 },
+    { cod: 'E01EFBF140', desc: precios['E01EFBF140'].desc, cant: muros, unit: 'm2', precio: 12.2 },
+    { cod: 'E02AA010', desc: precios['E02AA010'].desc, cant: metros, unit: 'm2', precio: 4.21 },
+    { cod: 'G01C030', desc: precios['G01C030'].desc, cant: escombros, unit: 'm3', precio: 2.65 }
+  ];
+
+  let html = '';
+  const sinIVA = lineas.reduce((sum, l) => {
+    const sub = l.cant * l.precio;
+    html += `<div class="linea-presupuesto"><strong>${l.desc}</strong><span>${l.cant.toFixed(2)} ${l.unit}</span><span class="total-linea">€${sub.toFixed(2)}</span></div>`;
+    return sum + sub;
+  }, 0);
+
+  const ivaImporte = sinIVA * (iva / 100);
+  const conIVA = sinIVA + ivaImporte;
+  const plazo = `${Math.ceil(metros / 50)}-${Math.ceil(metros / 30)} días`;
+
+  document.getElementById('desglose-demolicion').innerHTML = html;
+  document.getElementById('siniva-demolicion').textContent = `€${sinIVA.toFixed(2)}`;
+  document.getElementById('iva-demolicion-valor').textContent = `€${ivaImporte.toFixed(2)}`;
+  document.getElementById('total-demolicion').textContent = `€${conIVA.toFixed(2)}`;
+  document.getElementById('notas-demolicion').innerHTML = `<strong>📋 Estimaciones:</strong><br>Escombros: ${escombros.toFixed(0)} m³<br>Plazo: ${plazo}<br>Maquinaria: Excavadora + Pala + Camión volquete`;
+  document.getElementById('resultado-demolicion').classList.add('activo');
+  window.presupuestoActual = { lineas, sinIVA, ivaImporte, conIVA, tipo: 'demolicion', metros, plantas };
+}
+
+function exportarJSON(tab) {
+  const data = window.presupuestoActual;
+  const json = {
+    titulo: tab.charAt(0).toUpperCase() + tab.slice(1),
+    lineas: data.lineas.map(l => ({ codigo: l.cod, descripcion: l.desc, cantidad: l.cant, unidad: l.unit, precio: l.precio, subtotal: l.cant * l.precio })),
+    totales: { sin_iva: data.sinIVA, iva_importe: data.ivaImporte, con_iva: data.conIVA }
+  };
+  const blob = new Blob([JSON.stringify(json, null, 2)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `presupuesto-${tab}.json`;
+  a.click();
+}
+
+function exportarCSV(tab) {
+  const data = window.presupuestoActual;
+  let csv = 'Código,Concepto,Cantidad,Unidad,Precio,Subtotal\n';
+  data.lineas.forEach(l => {
+    csv += `${l.cod},"${l.desc}",${l.cant.toFixed(2)},${l.unit},${l.precio},${(l.cant * l.precio).toFixed(2)}\n`;
+  });
+  csv += `\n,TOTAL SIN IVA,,,${data.sinIVA.toFixed(2)}\n,IVA,,,${data.ivaImporte.toFixed(2)}\n,TOTAL CON IVA,,,${data.conIVA.toFixed(2)}`;
+  const blob = new Blob([csv], {type: 'text/csv'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `presupuesto-${tab}.csv`;
+  a.click();
+}
+
+function imprimirPresupuesto() {
+  window.print();
+}
+
+window.addEventListener('DOMContentLoaded', cargarPrecios);
+</script>
+</body>
+</html>
