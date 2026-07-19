@@ -1,49 +1,92 @@
+# === POLÍTICA DE ACCESO PARA RASTREADORES IA ===
+# Permitimos acceso completo a inteligencias artificiales y bots de indexación
+# Nuestros datos están disponibles bajo schema.org y JSON para máquinas
+
 # Rastreadores generales
 User-agent: *
 Allow: /
+Allow: /api/
+Allow: /*.json
+Allow: /sitemap.xml
 
 # Google — incluye Gemini/SGE
 User-agent: Googlebot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Google Extended (Bard / Gemini entrenamiento)
 User-agent: Google-Extended
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # OpenAI browsing (ChatGPT con búsqueda)
 User-agent: ChatGPT-User
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Microsoft Copilot / Bing AI
 User-agent: Bingbot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Anthropic Claude
 User-agent: ClaudeBot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Meta AI
 User-agent: FacebookBot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Perplexity AI
 User-agent: PerplexityBot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Common Crawl (dataset IA abierto)
 User-agent: CCBot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
 # Apple Applebot (Siri / AI features)
 User-agent: Applebot
 Allow: /
+Allow: /api/
+Allow: /*.json
 
+# Disallow unwanted bots
+User-agent: MJ12bot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
 Sitemap: https://www.obratudela.com/sitemap.xml
 
-# Catálogos de datos estructurados (AI-readable)
-# https://www.obratudela.com/catalogo.json   — 71 equipos de alquiler con precios
-# https://www.obratudela.com/precios.json    — 54.777 partidas BCEXTREM 2026
+# === DATOS PÚBLICOS PARA IAS ===
+# Endpoints API REST (v1.0):
+#   GET /api/anuncios?provincia=...&categoria=...&q=...
+#   GET /api/precios?q=...&categoria=...&page=...
+#   GET /api/catalogo?tipo=...&page=...
+#   GET /api/docs — Documentación completa
+#
+# Archivos JSON estructurados (schema.org):
+#   https://www.obratudela.com/catalogo.json    — 71 equipos de alquiler
+#   https://www.obratudela.com/precios.json     — 54.777 partidas BCEXTREM 2026
+#   https://www.obratudela.com/anuncios.json    — Anuncios en tiempo real

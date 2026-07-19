@@ -78,14 +78,26 @@ function rechazar(res) {
   res.end(JSON.stringify({ ok: false, error: 'No autorizado' }));
 }
 
+// Funciones helper para leer precios y catálogo
+function readPrecios() {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'precios.json'), 'utf8')); }
+  catch { return { itemListElement: [] }; }
+}
+function readCatalogo() {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'catalogo.json'), 'utf8')); }
+  catch { return { itemListElement: [] }; }
+}
+
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
 
-  if (ALLOWED_ORIGINS.has(req.headers.origin)) {
-    res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
-  }
+  // CORS permisivo para APIs públicas de lectura (GET)
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Admin-Key');
+  res.setHeader('Access-Control-Max-Age', '86400');
+  res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.setHeader('X-API-Version', '1.0');
   if (req.method === 'OPTIONS') { res.writeHead(200); res.end(); return; }
 
   // Las rutas que modifican datos o publican requieren la clave de admin generada al arrancar
@@ -101,10 +113,201 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // API: listar anuncios
+  // API: documentación de endpoints públicos
+  if (req.method === 'GET' && url.pathname === '/api/docs') {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(`<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Documentación — ObraTudela</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'IBM Plex Sans', monospace, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    h1 { color: #ff6b00; margin-bottom: 20px; border-bottom: 2px solid #ff6b00; padding-bottom: 10px; }
+    h2 { color: #ff6b00; margin-top: 30px; margin-bottom: 15px; }
+    .endpoint { background: white; border-left: 4px solid #ff6b00; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+    .method { display: inline-block; padding: 4px 8px; border-radius: 3px; font-weight: bold; margin-right: 10px; }
+    .get { background: #4CAF50; color: white; }
+    .post { background: #2196F3; color: white; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+    pre { background: #f0f0f0; padding: 15px; border-radius: 4px; overflow-x: auto; margin-top: 10px; }
+    .param { background: #fafafa; padding: 10px; margin: 5px 0; border-left: 2px solid #ddd; }
+    footer { text-align: center; margin-top: 40px; color: #999; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 ObraTudela — Documentación API</h1>
+
+    <h2>Endpoints Públicos (GET)</h2>
+
+    <div class="endpoint">
+      <span class="method get">GET</span> <code>/api/anuncios</code>
+      <p>Lista todos los anuncios de compraventa con filtros opcionales.</p>
+      <h4>Parámetros:</h4>
+      <div class="param"><strong>provincia</strong> (string): Filtrar por provincia (ej: "Valladolid")</div>
+      <div class="param"><strong>categoria</strong> (string): Filtrar por categoría (ej: "Maquinaria")</div>
+      <div class="param"><strong>q</strong> (string): Búsqueda por palabra clave en título/descripción</div>
+      <div class="param"><strong>page</strong> (number): Número de página (default: 1, 10 por página)</div>
+      <h4>Ejemplo:</h4>
+      <pre>GET /api/anuncios?provincia=Valladolid&categoria=Maquinaria&page=1</pre>
+    </div>
+
+    <div class="endpoint">
+      <span class="method get">GET</span> <code>/api/precios</code>
+      <p>Base de precios BCEXTREM 2026 con filtros y paginación.</p>
+      <h4>Parámetros:</h4>
+      <div class="param"><strong>q</strong> (string): Búsqueda por nombre de partida</div>
+      <div class="param"><strong>categoria</strong> (string): Filtrar por categoría/tipo de obra</div>
+      <div class="param"><strong>page</strong> (number): Número de página (default: 1, 50 por página)</div>
+      <h4>Ejemplo:</h4>
+      <pre>GET /api/precios?q=excavación&page=1</pre>
+    </div>
+
+    <div class="endpoint">
+      <span class="method get">GET</span> <code>/api/catalogo</code>
+      <p>Catálogo de maquinaria disponible para alquiler.</p>
+      <h4>Parámetros:</h4>
+      <div class="param"><strong>tipo</strong> (string): Filtrar por tipo (ej: "Excavadora", "Dozer")</div>
+      <div class="param"><strong>page</strong> (number): Número de página (default: 1)</div>
+      <h4>Ejemplo:</h4>
+      <pre>GET /api/catalogo?tipo=Excavadora</pre>
+    </div>
+
+    <h2>Formato de Respuesta</h2>
+    <p>Todas las respuestas son JSON con estructura:</p>
+    <pre>{
+  "ok": true,
+  "data": [ /* elementos */ ],
+  "total": 10,
+  "page": 1,
+  "pageSize": 10,
+  "totalPages": 1
+}</pre>
+
+    <h2>Rate Limiting</h2>
+    <p>No hay límite de tasa (rate limiting) en APIs públicas de lectura. Para producción, contacta con excavacionesart@gmail.com</p>
+
+    <h2>Integración con IAs</h2>
+    <p><strong>Para sistemas como Claude, ChatGPT, etc.:</strong></p>
+    <pre>curl "https://www.obratudela.com/api/precios?q=excavación" \\
+  -H "Accept: application/json"</pre>
+    <p>Las APIs son 100% accesibles a bots y rastreadores. No hay restricciones de User-Agent.</p>
+
+    <footer>
+      <p>ObraTudela API v1.0 | Última actualización: 2026-07-18</p>
+      <p>Contacto: excavacionesart@gmail.com | Tel: 607 444 903</p>
+    </footer>
+  </div>
+</body>
+</html>`);
+    return;
+  }
+
+  // API: listar anuncios con filtros
   if (req.method === 'GET' && url.pathname === '/api/anuncios') {
+    const provincia = url.searchParams.get('provincia');
+    const categoria = url.searchParams.get('categoria');
+    const q = url.searchParams.get('q');
+    const page = parseInt(url.searchParams.get('page') || '1');
+    const pageSize = 10;
+
+    let anuncios = readAnuncios();
+    if (provincia) anuncios = anuncios.filter(a => a.provincia === provincia);
+    if (categoria) anuncios = anuncios.filter(a => a.categoria === categoria);
+    if (q) {
+      const query = q.toLowerCase();
+      anuncios = anuncios.filter(a =>
+        a.titulo.toLowerCase().includes(query) ||
+        a.descripcion.toLowerCase().includes(query)
+      );
+    }
+
+    const totalPages = Math.ceil(anuncios.length / pageSize);
+    const start = (page - 1) * pageSize;
+    const data = anuncios.slice(start, start + pageSize);
+
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify(readAnuncios()));
+    res.end(JSON.stringify({
+      ok: true,
+      data,
+      total: anuncios.length,
+      page,
+      pageSize,
+      totalPages
+    }));
+    return;
+  }
+
+  // API: precios con filtros y paginación
+  if (req.method === 'GET' && url.pathname === '/api/precios') {
+    const q = url.searchParams.get('q');
+    const categoria = url.searchParams.get('categoria');
+    const page = parseInt(url.searchParams.get('page') || '1');
+    const pageSize = 50;
+
+    const preciosData = readPrecios();
+    let items = preciosData.itemListElement || [];
+
+    if (q) {
+      const query = q.toLowerCase();
+      items = items.filter(item =>
+        item.name?.toLowerCase().includes(query) ||
+        item.description?.toLowerCase().includes(query)
+      );
+    }
+    if (categoria) {
+      items = items.filter(item => item.category === categoria);
+    }
+
+    const totalPages = Math.ceil(items.length / pageSize);
+    const start = (page - 1) * pageSize;
+    const data = items.slice(start, start + pageSize);
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      ok: true,
+      data,
+      total: items.length,
+      page,
+      pageSize,
+      totalPages,
+      source: 'BCEXTREM 2026'
+    }));
+    return;
+  }
+
+  // API: catálogo de maquinaria
+  if (req.method === 'GET' && url.pathname === '/api/catalogo') {
+    const tipo = url.searchParams.get('tipo');
+    const page = parseInt(url.searchParams.get('page') || '1');
+    const pageSize = 20;
+
+    const catalogoData = readCatalogo();
+    let items = catalogoData.itemListElement || [];
+
+    if (tipo) {
+      items = items.filter(item =>
+        item.name?.toLowerCase().includes(tipo.toLowerCase())
+      );
+    }
+
+    const totalPages = Math.ceil(items.length / pageSize);
+    const start = (page - 1) * pageSize;
+    const data = items.slice(start, start + pageSize);
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      ok: true,
+      data,
+      total: items.length,
+      page,
+      pageSize,
+      totalPages
+    }));
     return;
   }
 
