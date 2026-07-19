@@ -13,7 +13,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: clamp(2.8rem, 7vw, 5rem);
     letter-spacing: 3px; line-height: 1;
-    margin-bottom: 16px;
+    margin-bottom: 16px; color: #fff;
   }
   .page-hero p {
     color: #ccc; font-size: clamp(0.95rem, 2vw, 1.1rem);
