@@ -130,18 +130,170 @@
 <body>
 
 <div class="header">
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-    <a href="index.html" style="color: white; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 8px;">
-      ← Volver al inicio
-    </a>
-  </div>
   <h1>💰 Calculadora de Presupuestos</h1>
-  <p>Cálculo automático de presupuestos</p>
+  <p>Cálculo automático de presupuestos — Aceras • Desbroce • Demoliciones</p>
 </div>
 
 <div class="container">
-  <!-- TAB: IA (ÚNICA) -->
-  <div id="ia" class="tab-content activo">
+  <div class="tabs">
+    <button class="tab-btn activo" onclick="mostrarTab('aceras')">🏗️ Aceras</button>
+    <button class="tab-btn" onclick="mostrarTab('desbroce')">🌿 Desbroce</button>
+    <button class="tab-btn" onclick="mostrarTab('demolicion')">🏢 Demolición</button>
+    <button class="tab-btn" onclick="mostrarTab('ia')">🤖 Con IA</button>
+  </div>
+
+  <!-- TAB: ACERAS -->
+  <div id="aceras" class="tab-content activo">
+    <h2>Demolición de Aceras</h2>
+    <p style="color: #666; margin-bottom: 20px;">Demolición de aceras de hormigón con retirada de escombros</p>
+    <div class="form-group">
+      <label for="metros-aceras">Superficie de aceras a demoler</label>
+      <div class="input-group">
+        <input type="number" id="metros-aceras" placeholder="Ej: 150, 200, 500..." min="1" max="10000" value="">
+        <div class="unit">m²</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="iva-aceras">IVA</label>
+      <select id="iva-aceras">
+        <option value="21">21% (España estándar)</option>
+        <option value="10">10% (Reducido)</option>
+        <option value="0">0% (Sin IVA)</option>
+      </select>
+    </div>
+    <button class="calcular" onclick="calcularAceras()">Calcular Presupuesto</button>
+    <div id="resultado-aceras" class="resultado">
+      <h2>📊 Presupuesto Demolición Aceras</h2>
+      <div class="desglose" id="desglose-aceras"></div>
+      <div class="totales-resumen">
+        <div class="total-item">
+          <div class="total-label">Sin IVA</div>
+          <div class="total-valor" id="siniva-aceras">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">IVA</div>
+          <div class="total-valor" id="iva-aceras-valor">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">Total</div>
+          <div class="total-valor" id="total-aceras">€0,00</div>
+        </div>
+      </div>
+      <div class="botones-export">
+        <button class="btn-secondary" onclick="exportarJSON('aceras')">📥 JSON</button>
+        <button class="btn-secondary" onclick="exportarCSV('aceras')">📊 CSV</button>
+        <button class="btn-secondary" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: DESBROCE -->
+  <div id="desbroce" class="tab-content">
+    <h2>Desbroce del Terreno</h2>
+    <p style="color: #666; margin-bottom: 20px;">Desbroce, limpieza y retirada de tierra vegetal</p>
+    <div class="input-row">
+      <div class="form-group">
+        <label for="metros-desbroce">Superficie a desbrocar</label>
+        <div class="input-group">
+          <input type="number" id="metros-desbroce" placeholder="Ej: 200, 500..." min="1" max="100000" value="">
+          <div class="unit">m²</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tipo-desbroce">Tipo de desbroce</label>
+        <select id="tipo-desbroce">
+          <option value="basico">Básico (máquina + tierra)</option>
+          <option value="completo">Completo (máquina + tala + tierra)</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="iva-desbroce">IVA</label>
+      <select id="iva-desbroce">
+        <option value="21">21% (España estándar)</option>
+        <option value="10">10% (Reducido)</option>
+        <option value="0">0% (Sin IVA)</option>
+      </select>
+    </div>
+    <button class="calcular" onclick="calcularDesbroce()">Calcular Presupuesto</button>
+    <div id="resultado-desbroce" class="resultado">
+      <h2>📊 Presupuesto Desbroce</h2>
+      <div class="desglose" id="desglose-desbroce"></div>
+      <div class="totales-resumen">
+        <div class="total-item">
+          <div class="total-label">Sin IVA</div>
+          <div class="total-valor" id="siniva-desbroce">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">IVA</div>
+          <div class="total-valor" id="iva-desbroce-valor">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">Total</div>
+          <div class="total-valor" id="total-desbroce">€0,00</div>
+        </div>
+      </div>
+      <div class="botones-export">
+        <button class="btn-secondary" onclick="exportarJSON('desbroce')">📥 JSON</button>
+        <button class="btn-secondary" onclick="exportarCSV('desbroce')">📊 CSV</button>
+        <button class="btn-secondary" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: DEMOLICIÓN -->
+  <div id="demolicion" class="tab-content">
+    <h2>Demolición de Edificios</h2>
+    <p style="color: #666; margin-bottom: 20px;">Demolición completa: cubierta, tabiques, pisos, muros y retirada de escombros</p>
+    <div class="input-row">
+      <div class="form-group">
+        <label for="metros-demolicion">Superficie total</label>
+        <div class="input-group">
+          <input type="number" id="metros-demolicion" placeholder="Ej: 200, 500..." min="1" max="100000" value="">
+          <div class="unit">m²</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="plantas-demolicion">Número de plantas</label>
+        <input type="number" id="plantas-demolicion" placeholder="1, 2, 3..." min="1" max="10" value="2">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="iva-demolicion">IVA</label>
+      <select id="iva-demolicion">
+        <option value="21">21% (España estándar)</option>
+        <option value="10">10% (Reducido)</option>
+        <option value="0">0% (Sin IVA)</option>
+      </select>
+    </div>
+    <button class="calcular" onclick="calcularDemolicion()">Calcular Presupuesto</button>
+    <div id="resultado-demolicion" class="resultado">
+      <h2>📊 Presupuesto Demolición</h2>
+      <div class="desglose" id="desglose-demolicion"></div>
+      <div class="totales-resumen">
+        <div class="total-item">
+          <div class="total-label">Sin IVA</div>
+          <div class="total-valor" id="siniva-demolicion">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">IVA</div>
+          <div class="total-valor" id="iva-demolicion-valor">€0,00</div>
+        </div>
+        <div class="total-item">
+          <div class="total-label">Total</div>
+          <div class="total-valor" id="total-demolicion">€0,00</div>
+        </div>
+      </div>
+      <div class="botones-export">
+        <button class="btn-secondary" onclick="exportarJSON('demolicion')">📥 JSON</button>
+        <button class="btn-secondary" onclick="exportarCSV('demolicion')">📊 CSV</button>
+        <button class="btn-secondary" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: IA -->
+  <div id="ia" class="tab-content">
     <h2>🤖 Generador de Presupuestos con IA</h2>
     <p style="color: #666; margin-bottom: 20px;">Describe tu proyecto y la IA generará un presupuesto automáticamente</p>
     <div class="form-group">
@@ -316,23 +468,6 @@ async function generarPresupuestoIA() {
   btn.innerHTML = '<div class="spinner" style="display:inline-block;"></div> Analizando...';
 
   try {
-    // Validar datos antes de calcular
-    const validacion = validarDatos(descripcion);
-    if (!validacion.valido) {
-      document.getElementById('contenido-ia').innerHTML = `
-        <div class="info" style="background: #fff3cd; border-left-color: #ffc107; margin: 0;">
-          <strong>⚠️ Falta información:</strong><br><br>
-          ${validacion.faltantes.map(d => '• ' + d).join('<br>')}
-          <br><br>
-          <em>Por favor, agrega estos datos a tu descripción y vuelve a intentar.</em>
-        </div>
-      `;
-      document.getElementById('resultado-ia').classList.add('activo');
-      btn.disabled = false;
-      btn.innerHTML = 'Generar Presupuesto con IA';
-      return;
-    }
-
     // Simulación de análisis IA (en producción usaría Claude API)
     const presupuesto = analizarConReglas(descripcion, iva);
 
@@ -374,101 +509,15 @@ async function generarPresupuestoIA() {
   }
 }
 
-// Validar que tenemos datos suficientes
-function validarDatos(descripcion) {
-  const desc = descripcion.toLowerCase();
-  const faltantes = [];
-
-  // Verificar si hay cantidad (metros, m², m³, etc.)
-  const tieneNumero = /\d+/.test(descripcion);
-  if (!tieneNumero) {
-    faltantes.push('Cantidad: ¿Cuántos metros, m² o m³?');
-  }
-
-  // Verificar según tipo de trabajo
-  if (desc.includes('excavación') || desc.includes('zanja')) {
-    if (!desc.includes('profundidad') && !desc.match(/\d+\.?\d*\s*m\b/)) {
-      faltantes.push('Profundidad de excavación (ej: 1.5m, 2m)');
-    }
-  }
-
-  if (desc.includes('pavimento') || desc.includes('hormigón')) {
-    if (!desc.includes('cm') && !desc.includes('espesor')) {
-      faltantes.push('Espesor del pavimento (ej: 15cm, 20-25cm)');
-    }
-  }
-
-  return {
-    valido: faltantes.length === 0,
-    faltantes: faltantes
-  };
-}
-
 // Análisis con reglas (simulación de IA)
 function analizarConReglas(descripcion, iva) {
   const desc = descripcion.toLowerCase();
   let lineas = [];
   let analisis = '';
 
-  // Extraer cantidad (metros, m², m³, etc.)
-  let cantidad = extraerNumero(descripcion);
-  let unidad = 'm²';
-
-  // Detectar unidad de medida
-  if (desc.includes('m³') || desc.includes('volumen') || desc.includes('excavación')) unidad = 'm³';
-  if (desc.includes('ml') || desc.includes('metro lineal')) unidad = 'ml';
-  if (desc.includes('m²') || desc.includes('superficie')) unidad = 'm²';
-
-  if (!cantidad) {
-    // Si no encuentra cantidad, mostrar error
-    lineas = [
-      { cod: 'INFO', desc: 'Cantidad no especificada', cant: 1, unit: 'proyecto', precio: 0, subtotal: 0 }
-    ];
-    analisis = '⚠️ No encontré cantidad. Escribe: "250 m²", "500 m³", "150 metros", etc.';
-    return { lineas, sinIVA: 0, ivaImporte: 0, conIVA: 0, analisis };
-  }
-
-  // Detección de palabras clave para EXCAVACIÓN
-  if (desc.includes('excavación') || desc.includes('zanjas') || desc.includes('excavador') || desc.includes('cielo abierto')) {
-    // Excavación de tierras
-    const profundidad = extraerProfundidad(descripcion) || 1.5;
-    const volumen = unidad === 'm³' ? cantidad : cantidad * profundidad;
-
-    lineas = [
-      { cod: 'E02BM020', desc: 'Excavación en zanjas, profundidad ' + profundidad + 'm', cant: cantidad, unit: unidad, precio: 8.50, subtotal: cantidad * 8.50 },
-      { cod: 'G01C030', desc: 'Transporte y carga de tierras', cant: volumen, unit: 'm³', precio: 2.65, subtotal: volumen * 2.65 },
-      { cod: 'E02AA010', desc: 'Limpieza de excavación', cant: cantidad, unit: unidad, precio: 1.25, subtotal: cantidad * 1.25 }
-    ];
-    analisis = `Excavación de ${cantidad}${unidad} a profundidad ${profundidad}m. Volumen estimado: ${volumen.toFixed(2)}m³. Incluye extracción, transporte y carga.`;
-  }
-  // Detección de PAVIMENTO
-  else if (desc.includes('pavimento') || desc.includes('hormigón') || desc.includes('asfalto')) {
-    const espesor = extraerEspesor(descripcion) || 0.20;
-    const volumen = cantidad * espesor;
-
-    lineas = [
-      { cod: 'E01EPS060', desc: 'Demolición pavimento hormigón, espesor ' + (espesor*100).toFixed(0) + 'cm', cant: cantidad, unit: 'm²', precio: 12.45, subtotal: cantidad * 12.45 },
-      { cod: 'G01C020', desc: 'Carga y transporte escombros', cant: volumen, unit: 'm³', precio: 19.97, subtotal: volumen * 19.97 }
-    ];
-    analisis = `Demolición de ${cantidad}m² de pavimento, espesor ${(espesor*100).toFixed(0)}cm. Volumen de escombros: ${volumen.toFixed(2)}m³. Incluso carga y transporte.`;
-  }
-  // Detección de DRENAJE/ZANJAS
-  else if (desc.includes('zanja') || desc.includes('dren') || desc.includes('tubo') || desc.includes('PEAD')) {
-    // Estimar metros lineales de zanja
-    let ml = cantidad; // Asumir que la cantidad es en metros lineales
-    if (desc.includes('m²') || unidad === 'm²') {
-      ml = cantidad / 0.6; // Si es en m², convertir asumiendo 0.6m de ancho
-    }
-
-    lineas = [
-      { cod: 'E02AE010', desc: 'Excavación zanja drenante', cant: ml, unit: 'ml', precio: 45.00, subtotal: ml * 45.00 },
-      { cod: 'E04AS020', desc: 'Tubo PEAD drenante, Ø100mm', cant: ml, unit: 'ml', precio: 12.50, subtotal: ml * 12.50 },
-      { cod: 'E04AT010', desc: 'Grava filtrante', cant: ml * 0.5, unit: 'm³', precio: 28.00, subtotal: (ml * 0.5) * 28.00 }
-    ];
-    analisis = `Zanja drenante de ${ml.toFixed(0)}ml. Incluye excavación, tubo PEAD Ø100mm, grava filtrante y relleno.`;
-  }
-  // Detección de palabras clave para DEMOLICIÓN (edificios)
-  else if (desc.includes('demolición') || desc.includes('derribo') || desc.includes('derribar')) {
+  // Detección de palabras clave
+  if (desc.includes('demolición') || desc.includes('derribo')) {
+    const metros = extraerNumero(descripcion, /(\d+)\s*m²|(\d+)\s*metros/) || 200;
     const plantas = extraerNumero(descripcion, /(\d+)\s*plantas?/) || 1;
 
     const cubierta = metros * 1.1;
@@ -485,9 +534,10 @@ function analizarConReglas(descripcion, iva) {
       { cod: 'E02AA010', desc: 'Limpieza terreno', cant: metros, unit: 'm²', precio: 4.21, subtotal: metros * 4.21 },
       { cod: 'G01C030', desc: 'Carga y descarga camión', cant: escombros, unit: 'm³', precio: 2.65, subtotal: escombros * 2.65 }
     ];
-    analisis = `Demolición de ${metros}m² con ${plantas} plantas. Incluye estructura completa, retirada de escombros (${escombros.toFixed(0)}m³) y limpieza. Plazo: ${Math.ceil(metros / 40)}-${Math.ceil(metros / 25)} días.`;
-  } else if (desc.includes('desbroce') || desc.includes('limpieza') || desc.includes('limpiar')) {
-    const tipo = desc.includes('tala') || desc.includes('árboles') ? 'completo' : 'basico';
+    analisis = `Proyecto de demolición de ${metros}m² con ${plantas} plantas. Se incluye demolición completa, retirada de escombros (${escombros.toFixed(0)}m³) y limpieza del terreno. Plazo estimado: ${Math.ceil(metros / 40)}-${Math.ceil(metros / 25)} días.`;
+  } else if (desc.includes('desbroce') || desc.includes('limpieza')) {
+    const metros = extraerNumero(descripcion, /(\d+)\s*m²|(\d+)\s*metros/) || 500;
+    const tipo = desc.includes('tala') ? 'completo' : 'basico';
     const volumen = metros * 0.15;
 
     lineas = tipo === 'basico'
@@ -504,15 +554,11 @@ function analizarConReglas(descripcion, iva) {
         ];
     analisis = `Desbroce de ${metros}m² con retirada de ${volumen.toFixed(0)}m³ de tierra. ${tipo === 'completo' ? 'Incluye tala de árboles.' : ''} Plazo: ${Math.ceil(metros / 200)}-${Math.ceil(metros / 100)} días.`;
   } else {
-    // Si tiene metros pero tipo ambiguo, usar precios simples (demolición básica)
-    const volumen = metros * 0.25;  // Estimación de escombros
-
     lineas = [
-      { cod: 'E01EPS050', desc: 'Demolición/Reforma', cant: metros, unit: 'm²', precio: 16.51, subtotal: metros * 16.51 },
-      { cod: 'E01AL020', desc: 'Limpieza y retirada', cant: metros, unit: 'm²', precio: 10.62, subtotal: metros * 10.62 },
-      { cod: 'G01C030', desc: 'Carga y descarga', cant: volumen, unit: 'm³', precio: 2.65, subtotal: volumen * 2.65 }
+      { cod: 'E01EPS050', desc: 'Demolición hormigón armado', cant: 100, unit: 'm²', precio: 16.51, subtotal: 1651 },
+      { cod: 'E01AL020', desc: 'Limpieza y retirada', cant: 100, unit: 'm²', precio: 10.62, subtotal: 1062 }
     ];
-    analisis = `Presupuesto estimado para ${metros}m² de obra. Para un cálculo más preciso, especifica: demolición, desbroce, reforma, etc.`;
+    analisis = 'Presupuesto estándar. Por favor, detalla mejor el tipo de trabajo para un cálculo más preciso.';
   }
 
   const sinIVA = lineas.reduce((sum, l) => sum + l.subtotal, 0);
@@ -523,50 +569,8 @@ function analizarConReglas(descripcion, iva) {
 }
 
 function extraerNumero(texto, regex) {
-  // Buscar todos los números en el texto
-  const numeros = texto.match(/\d+\.?\d*/g);
-  if (!numeros || numeros.length === 0) return null;
-
-  // Retornar el número más grande (probablemente sea la cantidad principal)
-  let maxNum = 0;
-  for (let num of numeros) {
-    const n = parseFloat(num);
-    if (n > maxNum && n < 1000000) {  // Evitar números absurdos
-      maxNum = n;
-    }
-  }
-  return maxNum > 0 ? maxNum : null;
-}
-
-function extraerProfundidad(texto) {
-  // Buscar "profundidad X m" o "X.X m"
-  const match = texto.match(/profundidad\s*de?\s*(\d+\.?\d*)\s*m/i);
-  if (match) return parseFloat(match[1]);
-
-  // Buscar números decimales (típico para profundidades)
-  const decimales = texto.match(/\d+\.\d+/g);
-  if (decimales && decimales.length > 0) {
-    return parseFloat(decimales[0]);
-  }
-  return null;
-}
-
-function extraerEspesor(texto) {
-  // Buscar "espesor X cm" o "X-Y cm"
-  const match = texto.match(/espesor\s*(?:de\s+)?(\d+)\s*(?:a\s+)?(\d+)?\s*cm/i);
-  if (match) {
-    const min = parseInt(match[1]);
-    const max = match[2] ? parseInt(match[2]) : min;
-    return ((min + max) / 2) / 100; // Convertir cm a m
-  }
-
-  // Buscar solo números con "cm"
-  const cmMatch = texto.match(/(\d+)\s*cm/i);
-  if (cmMatch) {
-    return parseInt(cmMatch[1]) / 100;
-  }
-
-  return null;
+  const match = texto.match(regex);
+  return match ? parseInt(match[1] || match[2]) : null;
 }
 
 // Exportar
