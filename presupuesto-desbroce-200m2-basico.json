@@ -1,0 +1,41 @@
+{
+  "titulo": "Desbroce del Terreno",
+  "descripcion": "Desbroce, limpieza y retirada de tierra vegetal en 200 m²",
+  "metros": 200,
+  "volumen_restos": 30.0,
+  "lineas": [
+    {
+      "codigo": "E02AM010",
+      "descripcion": "Desbroce y limpieza terreno a máquina",
+      "cantidad": 200,
+      "unidad": "m2",
+      "precio_unitario": 0.68,
+      "subtotal": 136.0
+    },
+    {
+      "codigo": "E02AA020",
+      "descripcion": "Retirada capa tierra vegetal a mano",
+      "cantidad": 200,
+      "unidad": "m2",
+      "precio_unitario": 5.13,
+      "subtotal": 1026.0
+    },
+    {
+      "codigo": "G01C030",
+      "descripcion": "Carga restos sobre camión a máquina",
+      "cantidad": 30.0,
+      "unidad": "m3",
+      "precio_unitario": 2.65,
+      "subtotal": 79.5
+    }
+  ],
+  "totales": {
+    "sin_iva": 1241.5,
+    "iva_porcentaje": 21,
+    "iva_importe": 260.71,
+    "con_iva": 1502.21
+  },
+  "notas": "Desbroce básico con máquina. Si hay árboles de más de 10cm incluir E02AM030.",
+  "fecha": "2026-07-19",
+  "fuente": "https://www.obratudela.com/precios.json"
+}

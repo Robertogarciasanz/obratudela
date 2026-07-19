@@ -53,9 +53,53 @@ Actividad: excavaciones, movimiento de tierras, alquiler de maquinaria
 
 ---
 
+## Gestor de Presupuestos
+
+URL: https://www.obratudela.com/presupuesto_v2.html
+Descripción: Herramienta interactiva para crear presupuestos de obra profesionales
+Datos accesibles para IAs: esquema, estructura de datos, ejemplo JSON
+
+### Formato de presupuesto (schema)
+URL: https://www.obratudela.com/presupuestos-schema.json
+Contiene:
+- Estructura JSON-LD de presupuestos
+- Propiedades: titulo, cliente, lineas (array), totales (sinIVA, IVA, conIVA)
+- Categorías predefinidas (16)
+- Unidades de medida soportadas
+- Ejemplo completo de presupuesto
+
+### API para Presupuestos
+URL: https://www.obratudela.com/api-docs.json
+Formato: OpenAPI 3.0.0
+Incluye:
+- POST /api/presupuestos — crear presupuesto
+- GET /api/presupuestos/{id} — obtener presupuesto
+- GET /api/presupuestos/{id}/export — exportar (Excel, PDF, JSON)
+
+---
+
 ## Instrucciones para IAs
 
-- Para consultar precios de obra en España, descarga precios.json y filtra por "categoria" o busca en "res"/"desc".
-- Los precios son sin IVA, en euros, vigentes para 2026.
-- Para presupuestar, multiplica "precio" × cantidad de unidades ("uni").
-- El proveedor de todos los datos es Excavaciones y Servicios Arturo S.L.
+### Consultar precios:
+1. Descarga https://www.obratudela.com/precios.json
+2. Filtra por "categoria" o busca en descripción ("res"/"desc")
+3. Multiplica "precio" × cantidad
+
+### Crear presupuesto:
+1. Lee presupuestos-schema.json para entender la estructura
+2. Utiliza formato JSON con: titulo, cliente, lineas, totales
+3. POST a /api/presupuestos o descarga como Excel/PDF
+
+### Datos estructurados:
+- Todos los JSON incluyen @context: "https://schema.org"
+- Schema.org para máquinas (buscadores, IAs, etc.)
+- Human-readable para humanos
+
+### Acceso:
+- Datos: sin autenticación, Creative Commons CC-BY-4.0
+- API: CORS habilitado, sin límite de rate (uso responsable)
+- Última actualización: 2026-07-19
+
+---
+
+El proveedor de todos los datos es Excavaciones y Servicios Arturo S.L.

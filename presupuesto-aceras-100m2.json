@@ -1,0 +1,49 @@
+{
+  "titulo": "Demolición de Aceras",
+  "descripcion": "Demolición de 100 m² de aceras de hormigón con retirada y carga de escombros",
+  "metros": 100,
+  "volumen_escombros": 25.0,
+  "lineas": [
+    {
+      "codigo": "E01EPS050",
+      "descripcion": "Demolición pavimento hormigón impreso/pulido con compresor",
+      "cantidad": 100,
+      "unidad": "m2",
+      "precio_unitario": 16.51,
+      "subtotal": 1651.0000000000002
+    },
+    {
+      "codigo": "E01AL020",
+      "descripcion": "Limpieza local existente y retirada de escombros",
+      "cantidad": 100,
+      "unidad": "m2",
+      "precio_unitario": 10.62,
+      "subtotal": 1062.0
+    },
+    {
+      "codigo": "G01C020",
+      "descripcion": "Carga escombros sobre dumper a mano",
+      "cantidad": 25.0,
+      "unidad": "m3",
+      "precio_unitario": 19.97,
+      "subtotal": 499.25
+    },
+    {
+      "codigo": "G01C030",
+      "descripcion": "Carga escombros sobre camión a máquina",
+      "cantidad": 25.0,
+      "unidad": "m3",
+      "precio_unitario": 2.65,
+      "subtotal": 66.25
+    }
+  ],
+  "totales": {
+    "sin_iva": 3278.5,
+    "iva_porcentaje": 21,
+    "iva_importe": 688.49,
+    "con_iva": 3966.99
+  },
+  "notas": "Precios de BCEXTREM 2026. Válido por 30 días. Consultar disponibilidad de maquinaria.",
+  "fecha": "2026-07-19",
+  "fuente": "https://www.obratudela.com/precios.json"
+}
