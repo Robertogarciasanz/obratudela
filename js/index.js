@@ -19,28 +19,36 @@
       hamburger.addEventListener('click', toggleMenu);
     }
 
-    // Dropdown de Servicios: abrir/cerrar con clic (además del hover de CSS)
-    const dropdown = document.querySelector('.nav-dropdown');
-    if (dropdown) {
+    // Dropdowns: abrir/cerrar con clic en móvil
+    document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
       const trigger = dropdown.querySelector(':scope > a');
-      trigger.addEventListener('click', (e) => {
-        e.preventDefault();
-        dropdown.classList.toggle('open');
-      });
+      if (trigger) {
+        trigger.addEventListener('click', (e) => {
+          // Cerrar otros dropdowns
+          document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          // Toggle este dropdown
+          e.preventDefault();
+          dropdown.classList.toggle('open');
+        });
+      }
 
-      // Cerrar al hacer clic fuera
-      document.addEventListener('click', (e) => {
-        if (!dropdown.contains(e.target)) {
-          dropdown.classList.remove('open');
-        }
-      });
-
-      // Cerrar al seleccionar una opción del dropdown
+      // Cerrar al seleccionar una opción
       dropdown.querySelectorAll('.nav-dropdown-menu a').forEach(a => {
         a.addEventListener('click', () => {
           dropdown.classList.remove('open');
         });
       });
-    }
+    });
+
+    // Cerrar dropdowns al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+          d.classList.remove('open');
+        });
+      }
+    });
   });
 
