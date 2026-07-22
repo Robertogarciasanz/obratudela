@@ -125,6 +125,65 @@
       .linea-presupuesto { grid-template-columns: 1.5fr 1fr 1fr; }
       .totales-resumen { grid-template-columns: 1fr; }
     }
+
+    /* ESTILOS DE IMPRESIÓN */
+    @media print {
+      body { background: white; }
+      .header { display: none !important; }
+      .tabs { display: none !important; }
+      .tab-btn { display: none !important; }
+      .form-group { display: none !important; }
+      button { display: none !important; }
+      .botones-export { display: none !important; }
+      .container { max-width: 100%; padding: 0; }
+
+      /* Header de impresión con logo */
+      .resultado::before {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 60px;
+        background-image: url('img/logo.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+        margin-bottom: 20px;
+      }
+
+      .resultado::after {
+        content: "Excavaciones y Servicios Arturo S.L. | NIF: B47489612 | Tel: 607 444 903 | www.obratudela.com";
+        display: block;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        font-size: 10px;
+        color: #666;
+        text-align: center;
+      }
+
+      .resultado {
+        display: block !important;
+        background: white;
+        border: none;
+        padding: 20px;
+        page-break-inside: avoid;
+      }
+
+      h2 {
+        color: #000 !important;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
+      .linea-presupuesto {
+        border-bottom: 1px solid #ddd;
+        page-break-inside: avoid;
+      }
+
+      .total-linea { color: #000 !important; }
+      .total-valor { color: #000 !important; }
+      .total-item { border: 1px solid #ddd; }
+    }
   </style>
 </head>
 <body>
