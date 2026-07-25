@@ -125,8 +125,29 @@
         imagesrcset="img/bobcat-400w.webp 400w, img/bobcat-800w.webp 800w, img/bobcat-1200w.webp 1200w"
         imagesizes="100vw"
         href="img/bobcat-800w.webp">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/index.css">
+  <!-- CSS crítico inline para LCP óptimo -->
+  <style>
+:root{--orange:#ff6b00;--orange2:#e05e00;--bg:#fdfdfd;--surface:#fff;--surface2:#f4f4f4;--border:#e0e0e0;--text:#222;--muted:#666}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:2px solid var(--orange);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo img{height:38px;width:auto;border-radius:4px}
+.nav-logo span{font-family:'Bebas Neue',cursive;font-size:1.6rem;color:var(--orange);letter-spacing:2px}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:var(--text);text-decoration:none;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;transition:color .2s}
+.nav-links a:hover{color:var(--orange)}
+.hero{height:calc(100vh - 64px);margin-top:64px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;filter:brightness(.7)}
+.hero-content{position:relative;z-index:2;text-align:center;color:#fff;max-width:900px;padding:40px}
+.hero-title{font-family:'Bebas Neue',cursive;font-size:5rem;letter-spacing:8px;text-shadow:2px 2px 12px rgba(0,0,0,.8);margin-bottom:24px}
+@media (max-width:768px){nav{padding:0 16px}.hero-title{font-size:3rem}}
+  </style>
+  <!-- CSS completo cargado de forma asíncrona -->
+  <link rel="preload" href="css/combined-index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/combined-index.css"></noscript>
 </head>
 <body>
 
