@@ -1,0 +1,144 @@
+# Configuración de Continue.dev para ObraTudela
+# Ubicación: ~/.continue/config.yaml (o crear en .continue/ del proyecto)
+
+name: obratudela-dev
+version: 1.0.0
+schema: v1
+
+# Modelos disponibles (descomentar el que quieras usar)
+models:
+  # Opción 1: Claude (Anthropic) - Igual que Claude Code
+  - name: Claude Sonnet 4.5
+    provider: anthropic
+    model: claude-sonnet-4-5-20250929
+    apiKey: TU_API_KEY_ANTHROPIC_AQUI
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      temperature: 0.7
+      maxTokens: 4096
+
+  # Opción 2: OpenAI GPT-4
+  - name: GPT-4 Turbo
+    provider: openai
+    model: gpt-4-turbo-preview
+    apiKey: TU_API_KEY_OPENAI_AQUI
+    roles:
+      - chat
+      - autocomplete
+    defaultCompletionOptions:
+      temperature: 0.5
+      maxTokens: 4096
+
+  # Opción 3: Ollama (100% gratis, local)
+  - name: DeepSeek Coder Local
+    provider: ollama
+    model: deepseek-coder:6.7b
+    apiBase: http://localhost:11434
+    roles:
+      - chat
+      - edit
+      - autocomplete
+    defaultCompletionOptions:
+      temperature: 0.3
+      maxTokens: 2048
+
+  # Opción 4: Gemini (Google)
+  - name: Gemini 2.0 Flash
+    provider: gemini
+    model: gemini-2.0-flash-exp
+    apiKey: TU_API_KEY_GEMINI_AQUI
+    roles:
+      - chat
+      - edit
+    defaultCompletionOptions:
+      temperature: 0.7
+      maxTokens: 8192
+
+  # Opción 5: API Personalizada (Compatible con OpenAI)
+  # Útil para Antigravity u otros servicios custom
+  - name: Custom API
+    provider: openai
+    apiBase: https://tu-endpoint-api.com/v1
+    model: tu-modelo
+    apiKey: TU_API_KEY_AQUI
+    roles:
+      - chat
+      - edit
+    requestOptions:
+      headers:
+        Authorization: Bearer TU_API_KEY_AQUI
+      timeout: 60000
+      verifySsl: true
+
+# Proveedores de contexto
+context:
+  - name: code
+    provider: file
+  - name: terminal
+    provider: terminal
+  - name: problems
+    provider: problems
+  - name: folder
+    provider: folder
+
+# Reglas del sistema (personaliza el comportamiento)
+rules:
+  - role: system
+    content: |
+      Eres un asistente experto en desarrollo web para el proyecto ObraTudela.
+      El proyecto usa: Node.js, Python, JavaScript vanilla, HTML5, CSS3.
+      Principales funcionalidades:
+      - Base de precios de construcción (54,777 partidas)
+      - Sistema de desgloses MO/MAT/MAQ (30,300 descomposiciones)
+      - Calculadora de presupuestos con IA (Gemini 2.0 Flash)
+      - Parser BC3 (formato FIEBDC-3)
+      - Servidor admin con endpoints API REST
+
+      Siempre:
+      - Usa español para comentarios y mensajes
+      - Mantén el estilo de código existente
+      - Optimiza para rendimiento web
+      - Usa async/await para operaciones asíncronas
+
+# Documentación externa (opcional)
+docs:
+  - name: MDN Web Docs
+    url: https://developer.mozilla.org/es/
+  - name: Node.js Docs
+    url: https://nodejs.org/docs/latest/api/
+
+# Prompts personalizados (opcional)
+prompts:
+  - name: git-commit
+    description: Genera mensaje de commit profesional
+    prompt: |
+      Analiza los cambios y genera un mensaje de commit siguiendo este formato:
+
+      Título imperativo (máx 72 caracteres)
+
+      Detalles de los cambios:
+      - Listado de modificaciones principales
+      - Archivos afectados
+      - Mejoras implementadas
+
+      🤖 Generated with Continue.dev
+
+      Co-Authored-By: Continue <noreply@continue.dev>
+
+  - name: optimize-code
+    description: Optimiza código para rendimiento
+    prompt: |
+      Revisa este código y sugiere optimizaciones para:
+      1. Rendimiento (velocidad de ejecución)
+      2. Uso de memoria
+      3. Legibilidad
+      4. Mejores prácticas de JavaScript/Python
+
+      Mantén el estilo del proyecto ObraTudela.
+
+# Configuración de data/telemetría (opcional)
+data:
+  disableTelemetry: false
