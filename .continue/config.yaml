@@ -33,17 +33,39 @@ models:
       maxTokens: 4096
 
   # Opción 3: Ollama (100% gratis, local)
-  - name: DeepSeek Coder Local
+  # Modelo principal: qwen2.5-coder:7b (4.7GB - Excelente para código)
+  - name: Qwen Coder 7B
     provider: ollama
-    model: deepseek-coder:6.7b
+    model: qwen2.5-coder:7b
     apiBase: http://localhost:11434
     roles:
       - chat
       - edit
-      - autocomplete
     defaultCompletionOptions:
       temperature: 0.3
-      maxTokens: 2048
+      maxTokens: 4096
+
+  # Modelo rápido para autocompletado: qwen2.5-coder:1.5b
+  - name: Qwen Coder 1.5B Fast
+    provider: ollama
+    model: qwen2.5-coder:1.5b
+    apiBase: http://localhost:11434
+    roles:
+      - autocomplete
+    defaultCompletionOptions:
+      temperature: 0.2
+      maxTokens: 512
+
+  # Modelo general: ornith
+  - name: Ornith
+    provider: ollama
+    model: ornith:latest
+    apiBase: http://localhost:11434
+    roles:
+      - chat
+    defaultCompletionOptions:
+      temperature: 0.5
+      maxTokens: 4096
 
   # Opción 4: Gemini (Google)
   - name: Gemini 2.0 Flash
