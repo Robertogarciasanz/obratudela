@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto con IA — ObraTudela</title>
+    <meta name="description"
+        content="Calculadora de presupuestos de obra con IA. Describe tu proyecto (excavación, solera, demolición) y obtén una estimación al instante.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.obratudela.com/calculadora-presupuestos.html">
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Calculadora de Presupuestos con IA — ObraTudela",
+    "url": "https://www.obratudela.com/calculadora-presupuestos.html",
+    "description": "Herramienta de IA para estimar costes de obra. Describe tu proyecto en lenguaje natural y recibe un presupuesto orientativo para excavaciones, soleras, demoliciones y más.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any (Web Browser)",
+    "inLanguage": "es",
+    "featureList": [
+      "Procesamiento de Lenguaje Natural para descripciones de obra",
+      "Detección de trabajos: excavación, zanjas, soleras, demoliciones, desbroces",
+      "Extracción automática de mediciones (largo, ancho, profundidad)",
+      "Generación de presupuesto estimado con partidas de obra",
+      "Impresión de presupuesto profesional"
+    ],
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+    "provider": {
+      "@type": "Organization",
+      "name": "Excavaciones y Servicios Arturo S.L.",
+      "url": "https://www.obratudela.com"
+    }
+  }
+  </script>
+    <link rel="stylesheet" href="css/global.css">
+    <style>
+        :root {
+            --orange: #ff6b00;
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --border: #2e2e2e;
+            --text: #e8e8e8;
+            --muted: #888;
+            --ai-bg: #1f2937;
+            --user-bg: #374151;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'IBM Plex Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--surface);
+            border-bottom: 2px solid var(--orange);
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            flex-shrink: 0;
+        }
+
+        .header-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 3px;
+            color: var(--orange);
+        }
+
+        .btn-back {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 13px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 5px 12px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .btn-back:hover {
+            color: var(--orange);
+            border-color: var(--orange);
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message {
+            display: flex;
+            gap: 12px;
+            max-width: 90%;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .message-content {
+            background: var(--ai-bg);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .message-content p {
+            margin-bottom: 10px;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-content strong {
+            color: var(--orange);
+        }
+
+        .message-content code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 13px;
+        }
+
+        .message.user {
+            align-self: flex-end;
+        }
+
+        .message.user .message-content {
+            background: var(--user-bg);
+        }
+
+        .chat-input-area {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            background: var(--surface);
+            display: flex;
+            gap: 12px;
+        }
+
+        .chat-input-area textarea {
+            flex: 1;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s;
+            height: 50px;
+        }
+
+        .chat-input-area textarea:focus {
+            border-color: var(--orange);
+        }
+
+        .chat-input-area button {
+            background: var(--orange);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0 24px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .chat-input-area button:hover {
+            background: #e05e00;
+        }
+
+        .chat-input-area button:disabled {
+            background: var(--muted);
+            cursor: not-allowed;
+        }
+
+        #presupuestoResultado {
+            display: none;
+        }
+
+        #presupuestoResultado h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--orange);
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #presupuestoResultado table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        #presupuestoResultado th,
+        #presupuestoResultado td {
+            padding: 6px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #presupuestoResultado th {
+            font-weight: 600;
+            color: var(--muted);
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        #presupuestoResultado .total-row {
+            font-weight: 700;
+        }
+
+        #presupuestoResultado .total-row.grand-total {
+            color: var(--orange);
+            font-size: 15px;
+            border-top: 2px solid var(--orange);
+        }
+
+        .btn-print {
+            display: inline-block;
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-print:hover {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+
+        @media (max-width: 600px) {
+            .chat-messages {
+                padding: 16px;
+            }
+
+            .chat-input-area {
+                padding: 12px;
+            }
+
+            .message {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-title">🤖 PRESUPUESTO CON IA</div>
+        <a href="index.html" class="btn-back">← Volver</a>
+    </header>
+
+    <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+            <!-- Mensajes se añadirán aquí -->
+        </div>
+        <div class="chat-input-area">
+            <textarea id="userInput"
+                placeholder="Describe tu proyecto. Ej: 'necesito una zanja de 10 metros de largo y 50cm de profundo'"></textarea>
+            <button id="sendButton">➤</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- PRECIOS EMBEBIDOS (BCEXTREM 2026) ---
+            const PRECIOS = {
+                // Excavaciones y Movimiento de Tierras
+                'D01AA010': { res: 'Excavación de zanjas y pozos a mano en terreno de tránsito', uni: 'm³', precio: 38.58 },
+                'D02AA010': { res: 'Excavación de zanjas y pozos a máquina en terreno de tránsito', uni: 'm³', precio: 5.89 },
+                'G01C030': { res: 'Carga de escombros sobre camión a máquina', uni: 'm³', precio: 2.16 },
+                // Soleras y Pavimentos
+                'A01RP040': { res: 'Hormigón HA-25/B/20/X0 de central', uni: 'm³', precio: 105.45 },
+                'I04AC010': { res: 'Encofrado y desencofrado de madera para soleras', uni: 'm²', precio: 5.15 },
+                'I05DA010': { res: 'Acero en barras corrugadas B-500S', uni: 'kg', precio: 1.85 },
+                // Demoliciones
+                'Q01D010': { res: 'Demolición de arquetas de ladrillo macizo a mano', uni: 'ud', precio: 20.45 },
+                'Q02AA010': { res: 'Demolición de fábrica de ladrillo hueco a mano', uni: 'm²', precio: 7.34 },
+                'Q04BA010': { res: 'Demolición de solera de hormigón con compresor', uni: 'm³', precio: 65.20 },
+                // Desbroces
+                'F01C010': { res: 'Desbroce y limpieza de terreno con medios mecánicos', uni: 'm²', precio: 0.48 },
+            };
+
+            const chatMessages = document.getElementById('chatMessages');
+            const userInput = document.getElementById('userInput');
+            const sendButton = document.getElementById('sendButton');
+
+            let conversationState = {
+                task: null,
+                measurements: {},
+                required: [],
+                question: null
+            };
+
+            function addMessage(text, sender = 'ai') {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = `message ${sender}`;
+                msgDiv.innerHTML = `
+      <div class="avatar">${sender === 'ai' ? '🤖' : '👤'}</div>
+      <div class="message-content">${text}</div>
+    `;
+                chatMessages.appendChild(msgDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            function resetState() {
+                conversationState = { task: null, measurements: {}, required: [], question: null };
+            }
+
+            function parseInput(text) {
+                text = text.toLowerCase();
+                const measurements = {};
+
+                // Expresiones regulares para extraer medidas
+                const patterns = {
+                    largo: /(\d+[\.,]?\d*)\s*(metros|m)\s*(de\s*)?(largo|longitud)/,
+                    ancho: /(\d+[\.,]?\d*)\s*(metros|m)\s*(de\s*)?ancho/,
+                    profundo: /(\d+[\.,]?\d*)\s*(metros|m|centimetros|cm)\s*(de\s*)?(profundo|profundidad|hondo|altura)/,
+                    espesor: /(\d+[\.,]?\d*)\s*(metros|m|centimetros|cm)\s*(de\s*)?(espesor|grosor)/,
+                    superficie: /(\d+[\.,]?\d*)\s*(metros\s*cuadrados|m2)/,
+                    volumen: /(\d+[\.,]?\d*)\s*(metros\s*cubicos|m3)/,
+                    unidades: /(\d+)\s*unidades/,
+                };
+
+                for (const key in patterns) {
+                    const match = text.match(patterns[key]);
+                    if (match) {
+                        let value = parseFloat(match[1].replace(',', '.'));
+                        if (match[2] === 'cm' || match[2] === 'centimetros') {
+                            value /= 100; // Convertir a metros
+                        }
+                        measurements[key] = value;
+                    }
+                }
+
+                // Detectar tarea
+                if (/zanja|excavaci(o|ó)n/.test(text)) return { task: 'zanja', measurements };
+                if (/solera|hormig(o|ó)n|pavimento/.test(text)) return { task: 'solera', measurements };
+                if (/demoler|demolici(o|ó)n|derribar|tirar/.test(text)) return { task: 'demolicion', measurements };
+                if (/desbrozar|limpiar\s*terreno|limpieza\s*solar/.test(text)) return { task: 'desbroce', measurements };
+
+                return { task: null, measurements };
+            }
+
+            function processAI() {
+                const { task, measurements, required } = conversationState;
+
+                // Si no hay tarea, no hacer nada
+                if (!task) {
+                    addMessage("<p>No he entendido qué trabajo necesitas. Por favor, sé más específico.</p><p>Puedo calcular presupuestos para: <strong>zanjas, soleras de hormigón, demoliciones y desbroces</strong>.</p>");
+                    resetState();
+                    return;
+                }
+
+                // Comprobar si faltan medidas
+                const missing = required.filter(key => measurements[key] === undefined);
+
+                if (missing.length > 0) {
+                    const nextQuestion = missing[0];
+                    conversationState.question = nextQuestion;
+                    let questionText = '';
+                    switch (nextQuestion) {
+                        case 'largo': questionText = '¿Qué <strong>largo</strong> tiene? (en metros)'; break;
+                        case 'ancho': questionText = '¿Y de <strong>ancho</strong>? (en metros)'; break;
+                        case 'profundo': questionText = '¿Qué <strong>profundidad</strong> necesitas? (en metros o cm)'; break;
+                        case 'espesor': questionText = '¿Qué <strong>espesor</strong> debe tener? (en metros o cm)'; break;
+                        case 'superficie': questionText = '¿Cuántos <strong>metros cuadrados</strong> son en total?'; break;
+                    }
+                    addMessage(`<p>${questionText}</p>`);
+                } else {
+                    // Todas las medidas están, calcular presupuesto
+                    generateBudget();
+                }
+            }
+
+            function generateBudget() {
+                const { task, measurements } = conversationState;
+                let lineas = [];
+                let total = 0;
+
+                switch (task) {
+                    case 'zanja':
+                        const vol = measurements.largo * measurements.ancho * measurements.profundo;
+                        lineas.push({ cod: 'D02AA010', qty: vol });
+                        lineas.push({ cod: 'G01C030', qty: vol * 1.3 }); // Factor de esponjamiento
+                        break;
+                    case 'solera':
+                        const sup = measurements.superficie || (measurements.largo * measurements.ancho);
+                        const volHormigon = sup * measurements.espesor;
+                        lineas.push({ cod: 'A01RP040', qty: volHormigon });
+                        lineas.push({ cod: 'I04AC010', qty: sup });
+                        lineas.push({ cod: 'I05DA010', qty: sup * 5 }); // 5kg/m2 de acero estimado
+                        break;
+                    case 'demolicion':
+                        const supDem = measurements.superficie || (measurements.largo * measurements.ancho);
+                        lineas.push({ cod: 'Q02AA010', qty: supDem });
+                        lineas.push({ cod: 'G01C030', qty: supDem * 0.2 }); // 0.2 m3 de escombro por m2 de tabique
+                        break;
+                    case 'desbroce':
+                        const supDes = measurements.superficie || (measurements.largo * measurements.ancho);
+                        lineas.push({ cod: 'F01C010', qty: supDes });
+                        break;
+                }
+
+                const tablaHtml = lineas.map(linea => {
+                    const partida = PRECIOS[linea.cod];
+                    const importe = linea.qty * partida.precio;
+                    total += importe;
+                    return `
+        <tr>
+          <td>${partida.res}</td>
+          <td style="text-align:right;">${linea.qty.toFixed(2)}</td>
+          <td>${partida.uni}</td>
+          <td style="text-align:right;">${partida.precio.toFixed(2)} €</td>
+          <td style="text-align:right; font-weight:bold;">${importe.toFixed(2)} €</td>
+        </tr>
+      `;
+                }).join('');
+
+                const iva = total * 0.21;
+                const granTotal = total + iva;
+
+                const resultadoHtml = `
+      <div id="presupuestoResultado">
+        <h3>✅ Presupuesto Estimado</h3>
+        <table>
+          <thead>
+            <tr><th>Concepto</th><th>Cant.</th><th>Ud.</th><th>Precio</th><th>Importe</th></tr>
+          </thead>
+          <tbody>${tablaHtml}</tbody>
+        </table>
+        <table style="width: 300px; float: right;">
+          <tr class="total-row"><td>Subtotal</td><td style="text-align:right;">${total.toFixed(2)} €</td></tr>
+          <tr class="total-row"><td>IVA (21%)</td><td style="text-align:right;">${iva.toFixed(2)} €</td></tr>
+          <tr class="total-row grand-total"><td>TOTAL</td><td style="text-align:right;">${granTotal.toFixed(2)} €</td></tr>
+        </table>
+        <div style="clear:both;"></div>
+        <p style="font-size:11px; color:var(--muted); margin-top:15px;">*Este es un presupuesto orientativo. Los precios pueden variar. Para un presupuesto cerrado, contacta con nosotros.</p>
+        <button class="btn-print" onclick="imprimirPresupuesto()">🖨️ Imprimir</button>
+      </div>
+    `;
+
+                addMessage(resultadoHtml);
+                resetState();
+            }
+
+            function handleUserInput() {
+                const text = userInput.value.trim();
+                if (!text) return;
+
+                addMessage(text, 'user');
+                userInput.value = '';
+                sendButton.disabled = true;
+
+                setTimeout(() => {
+                    if (conversationState.question) {
+                        // Respondiendo a una pregunta
+                        const parsed = parseInput(text);
+                        if (parsed.measurements[conversationState.question] !== undefined) {
+                            conversationState.measurements[conversationState.question] = parsed.measurements[conversationState.question];
+                            conversationState.question = null;
+                        } else {
+                            // Si no se encuentra la medida, intentar con un número simple
+                            const numMatch = text.match(/(\d+[\.,]?\d*)/);
+                            if (numMatch) {
+                                let value = parseFloat(numMatch[1].replace(',', '.'));
+                                if (text.includes('cm') || text.includes('centimetros')) value /= 100;
+                                conversationState.measurements[conversationState.question] = value;
+                                conversationState.question = null;
+                            }
+                        }
+                    } else {
+                        // Nueva consulta
+                        resetState();
+                        const { task, measurements } = parseInput(text);
+                        conversationState.task = task;
+                        conversationState.measurements = measurements;
+
+                        switch (task) {
+                            case 'zanja': conversationState.required = ['largo', 'ancho', 'profundo']; break;
+                            case 'solera': conversationState.required = ['espesor'];
+                                if (!measurements.superficie) conversationState.required.push('largo', 'ancho');
+                                break;
+                            case 'demolicion':
+                                if (!measurements.superficie) conversationState.required.push('largo', 'ancho');
+                                break;
+                            case 'desbroce':
+                                if (!measurements.superficie) conversationState.required.push('largo', 'ancho');
+                                break;
+                        }
+                    }
+
+                    processAI();
+                    sendButton.disabled = false;
+                }, 500);
+            }
+
+            sendButton.addEventListener('click', handleUserInput);
+            userInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    handleUserInput();
+                }
+            });
+
+            // Mensaje inicial
+            setTimeout(() => {
+                addMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te daré una estimación. Por ejemplo: <code>quiero hacer una solera de hormigón de 50 m2 y 15 cm de espesor</code>.</p>");
+            }, 500);
+
+        });
+
+        function imprimirPresupuesto() {
+            const contenido = document.getElementById('presupuestoResultado').innerHTML;
+            const w = window.open('', '_blank');
+            w.document.write(`
+    <html><head><title>Presupuesto ObraTudela</title>
+    <style>
+      body{font-family:Arial,sans-serif;font-size:12px;margin:30px;color:#111}
+      h1{font-size:22px;margin-bottom:4px}
+      .meta{color:#555;margin-bottom:20px;font-size:11px}
+      table{width:100%;border-collapse:collapse;margin-bottom:20px}
+      th{background:#ff6b00;color:#fff;padding:6px 8px;text-align:left;font-size:11px}
+      td{padding:5px 8px;border-bottom:1px solid #eee;font-size:11px}
+      tr:nth-child(even)td{background:#f9f9f9}
+      .total-row{font-weight:700}
+      .grand-total{font-size:14px;border-top:2px solid #ff6b00}
+      @media print{@page{margin:15mm}}
+    </style>
+    </head><body>
+    <div style="display:flex;align-items:center;gap:20px;margin-bottom:16px;border-bottom:2px solid #ff6b00;padding-bottom:10px">
+      <img src="img/logo.jpg" style="max-height:90px;max-width:180px;object-fit:contain" alt="logo"/>
+      <div style="flex:1">
+        <h1 style="margin:0 0 4px">Presupuesto Orientativo</h1>
+        <div class="meta"><strong>Empresa:</strong> Excavaciones y Servicios Arturo S.L.</div>
+        <div class="meta"><strong>Teléfono:</strong> 607 444 903</div>
+        <div class="meta"><strong>Fecha:</strong> ${new Date().toLocaleDateString('es-ES')}</div>
+      </div>
+    </div>
+    ${contenido.replace(/<button.*<\/button>/g, '')}
+    <script>window.onload=()=>window.print()<\/script>
+    </body></html>
+  `);
+            w.document.close();
+        }
+    </script>
+
+</body>
+
+</html>
