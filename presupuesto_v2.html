@@ -5,16 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestor de Presupuestos — BCEXTREM 2026</title>
-  <meta name="description" content="Herramienta gratuita para generar presupuestos de obra con base de datos BCEXTREM 2026. 54.777 partidas de construcción en España. Búsqueda, cálculo y exportación a Excel.">
-  <meta name="keywords" content="presupuestos obra, BCEXTREM 2026, precios construcción, calculadora presupuestos, Excel presupuestos">
+  <meta name="description"
+    content="Herramienta gratuita para generar presupuestos de obra con base de datos BCEXTREM 2026. 54.777 partidas de construcción en España. Búsqueda, cálculo y exportación a Excel.">
+  <meta name="keywords"
+    content="presupuestos obra, BCEXTREM 2026, precios construcción, calculadora presupuestos, Excel presupuestos">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.obratudela.com/presupuesto_v2.html">
   <meta property="og:title" content="Gestor de Presupuestos de Obra — BCEXTREM 2026">
-  <meta property="og:description" content="Genera presupuestos profesionales con 54.777 partidas de precios. Búsqueda por código, descripción o categoría. Exporta a Excel.">
+  <meta property="og:description"
+    content="Genera presupuestos profesionales con 54.777 partidas de precios. Búsqueda por código, descripción o categoría. Exporta a Excel.">
   <meta property="og:url" content="https://www.obratudela.com/presupuesto_v2.html">
   <meta property="og:type" content="website">
   <link rel="icon" href="img/logo.jpg" type="image/jpeg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -523,8 +527,13 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     .modal-content {
@@ -541,8 +550,15 @@
     }
 
     @keyframes slideUp {
-      from { transform: translateY(40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     .modal-header {
@@ -641,9 +657,17 @@
       margin-top: 4px;
     }
 
-    .resumen-card.mo { border-left: 3px solid #ff6b00; }
-    .resumen-card.mat { border-left: 3px solid #4caf7d; }
-    .resumen-card.maq { border-left: 3px solid #5094ff; }
+    .resumen-card.mo {
+      border-left: 3px solid #ff6b00;
+    }
+
+    .resumen-card.mat {
+      border-left: 3px solid #4caf7d;
+    }
+
+    .resumen-card.maq {
+      border-left: 3px solid #5094ff;
+    }
 
     .desglose-grafico {
       background: var(--surface2);
@@ -671,9 +695,17 @@
       transition: all 0.3s;
     }
 
-    .grafico-barra.mo { background: #ff6b00; }
-    .grafico-barra.mat { background: #4caf7d; }
-    .grafico-barra.maq { background: #5094ff; }
+    .grafico-barra.mo {
+      background: #ff6b00;
+    }
+
+    .grafico-barra.mat {
+      background: #4caf7d;
+    }
+
+    .grafico-barra.maq {
+      background: #5094ff;
+    }
 
     .grafico-leyenda {
       display: flex;
@@ -743,9 +775,20 @@
       letter-spacing: 0.5px;
     }
 
-    .tipo-badge.mo { background: #ff6b0020; color: #ff8c38; }
-    .tipo-badge.mat { background: #4caf7d20; color: #4caf7d; }
-    .tipo-badge.maq { background: #5094ff20; color: #5094ff; }
+    .tipo-badge.mo {
+      background: #ff6b0020;
+      color: #ff8c38;
+    }
+
+    .tipo-badge.mat {
+      background: #4caf7d20;
+      color: #4caf7d;
+    }
+
+    .tipo-badge.maq {
+      background: #5094ff20;
+      color: #5094ff;
+    }
 
     .componentes-tabla .cod {
       font-family: 'IBM Plex Mono', monospace;
@@ -1335,24 +1378,170 @@
       background: #444;
     }
 
+    /* ======================== */
+    /* MOBILE RESPONSIVE STYLES */
+    /* ======================== */
+    .mobile-nav {
+      display: none;
+      /* Oculto en escritorio */
+    }
+
+    @media (max-width: 900px) {
+      body {
+        font-size: 15px;
+      }
+
+      /* Ocultar aviso de móvil y resizer */
+      #avisoMovil {
+        display: none !important;
+      }
+
+      .resizer {
+        display: none;
+      }
+
+      /* Ajustar header */
+      header {
+        padding: 0 12px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      .btn-back {
+        display: none;
+        /* Ocultar botón de volver en móvil */
+      }
+
+      #db-info {
+        display: none;
+        /* Ocultar info de la DB en móvil */
+      }
+
+      /* Layout principal en móvil */
+      .layout {
+        flex-direction: column;
+        height: calc(100vh - 56px - 60px);
+        /* Restar header y nav móvil */
+        position: relative;
+      }
+
+      .layout-left {
+        flex: 1;
+        height: 100%;
+      }
+
+      /* Paneles laterales (sidebar y presupuesto) se convierten en overlays */
+      .sidebar,
+      .presupuesto {
+        position: fixed;
+        top: 56px;
+        /* Debajo del header */
+        left: 0;
+        width: 100%;
+        height: calc(100% - 56px - 60px);
+        /* Altura completa menos header y nav */
+        z-index: 200;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        border-right: none;
+        border-left: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .presupuesto {
+        transform: translateX(100%);
+      }
+
+      .sidebar.visible,
+      .presupuesto.visible {
+        transform: translateX(0);
+      }
+
+      /* Panel principal */
+      .main {
+        height: 100%;
+      }
+
+      .search-bar {
+        padding: 8px 12px;
+      }
+
+      td {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+
+      td.cod {
+        font-size: 12px;
+      }
+
+      /* Barra de navegación móvil */
+      .mobile-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: var(--surface);
+        border-top: 1px solid var(--border);
+        z-index: 300;
+      }
+
+      .nav-btn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        background: none;
+        border: none;
+        color: var(--muted);
+        font-size: 11px;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      .nav-btn.active {
+        color: var(--orange);
+      }
+
+      .nav-btn .icon {
+        font-size: 22px;
+      }
+
+      /* Ajustes para el panel de presupuesto en móvil */
+      .presupuesto {
+        min-width: 100%;
+        max-width: 100%;
+      }
+
+      .logo-box {
+        display: none;
+      }
+
+      /* Ocultar logo en móvil para más espacio */
+      .pres-header h2 {
+        font-size: 18px;
+      }
+
+      .pres-items {
+        padding: 4px;
+      }
+    }
+
     .highlight {
       background: #ff6b0040;
       border-radius: 2px;
     }
-
   </style>
 </head>
 
 <body>
-
-  <!-- Aviso móvil -->
-  <div id="avisoMovil" style="display:none;position:fixed;inset:0;z-index:9999;background:#0d0d0d;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;font-family:'Segoe UI',system-ui,sans-serif;color:#eee;">
-    <div style="font-size:56px;margin-bottom:20px;">🖥️</div>
-    <h2 style="font-size:22px;font-weight:800;color:#ff6b00;margin-bottom:12px;">Mejor desde el ordenador</h2>
-    <p style="font-size:15px;color:rgba(255,255,255,0.6);max-width:320px;line-height:1.6;margin-bottom:28px;">La herramienta de presupuestos es compleja y necesita pantalla grande para usarse bien.</p>
-    <button onclick="document.getElementById('avisoMovil').style.display='none'" style="background:none;border:1px solid #444;color:rgba(255,255,255,0.4);padding:10px 20px;border-radius:8px;font-size:13px;cursor:pointer;">Continuar de todas formas</button>
-  </div>
-  <script>if(window.innerWidth < 900) document.getElementById('avisoMovil').style.display='flex';</script>
 
   <div id="loading">
     <h2>CARGANDO BASE DE PRECIOS</h2>
@@ -1468,6 +1657,22 @@
     </div>
   </div>
 
+  <!-- Barra de Navegación Móvil -->
+  <div class="mobile-nav">
+    <button class="nav-btn" id="nav-cat" onclick="showView('cat')">
+      <span class="icon">🗂️</span>
+      <span>Categorías</span>
+    </button>
+    <button class="nav-btn active" id="nav-search" onclick="showView('search')">
+      <span class="icon">🔍</span>
+      <span>Búsqueda</span>
+    </button>
+    <button class="nav-btn" id="nav-pres" onclick="showView('pres')">
+      <span class="icon">📋</span>
+      <span>Presupuesto</span>
+    </button>
+  </div>
+
   <!-- Modal de Desglose -->
   <div class="modal-overlay" id="modalDesglose" onclick="closeModalDesglose(event)">
     <div class="modal-content" onclick="event.stopPropagation()">
@@ -1490,15 +1695,16 @@
     // ========================
 
     let allData = {};
-    let currentCat = null;
-    let currentItems = [];
-    let filteredItems = [];
+    let categoriaActual = null;
+    let partidasActuales = [];
+    let partidasFiltradas = [];
     let page = 1;
     const PAGE_SIZE = 50;
-    let sortCol = 'cod';
+    let columnaOrden = 'cod';
     let sortAsc = true;
     let searchTerm = '';
     let presupuesto = [];
+    let fuse; // Instancia de Fuse.js para la búsqueda
 
     const CAT_LABELS = {
       'DEMOLICION': 'Demolición',
@@ -1524,11 +1730,13 @@
       { num: '03', name: 'Cimentaciones y Estructuras', keys: ['A0'], icon: '🏗️', color: '#4ECDC4' },
       { num: '04', name: 'Albañilería y Cerramientos', keys: ['N0'], icon: '🧱', color: '#95E1D3' },
       { num: '05', name: 'Cubiertas e Impermeabilizaciones', keys: ['AISLAMIENTO'], icon: '🏠', color: '#F38181' },
-      { num: '06', name: 'Instalaciones', keys: [], icon: '⚡', color: '#A8E6CF', subcapitulos: [
-        { num: '06.1', name: 'Electricidad e Iluminación', keys: [], icon: '💡', filter: /electric|iluminaci|lumi|cable.*elect|cuadro.*elect|enchuf|interr|luz|alumbr|lamp|conduct.*elect|protec.*difer|autom.*mag|fotovolt|solar.*elect|toma.*corr|punto.*luz|puesta.*tierra|línea.*elect|instalaci.*eléct/i },
-        { num: '06.2', name: 'Fontanería y Saneamiento', keys: [], icon: '🚰', filter: /fontaner|agua|tuberia|grifo|lavabo|inodoro|cisterna|ducha|baño|sanitari|desagüe|saneami|bajant|arqueta|sumidero|válvul.*agua|contador.*agua|alcantarilla|acometida.*agua|red.*agua|abastecimiento|evacuaci|residual/i },
-        { num: '06.3', name: 'Climatización y Ventilación', keys: [], icon: '❄️', filter: /clima|calefacc|ventilaci|aire.*acondic|caldera|radiador|termo|bomba.*calor|aerotermia|suelo.*radiante|split|conducto.*aire|extrac|refrigeraci|hvac/i }
-      ]},
+      {
+        num: '06', name: 'Instalaciones', keys: [], icon: '⚡', color: '#A8E6CF', subcapitulos: [
+          { num: '06.1', name: 'Electricidad e Iluminación', keys: [], icon: '💡', filter: /electric|iluminaci|lumi|cable.*elect|cuadro.*elect|enchuf|interr|luz|alumbr|lamp|conduct.*elect|protec.*difer|autom.*mag|fotovolt|solar.*elect|toma.*corr|punto.*luz|puesta.*tierra|línea.*elect|instalaci.*eléct/i },
+          { num: '06.2', name: 'Fontanería y Saneamiento', keys: [], icon: '🚰', filter: /fontaner|agua|tuberia|grifo|lavabo|inodoro|cisterna|ducha|baño|sanitari|desagüe|saneami|bajant|arqueta|sumidero|válvul.*agua|contador.*agua|alcantarilla|acometida.*agua|red.*agua|abastecimiento|evacuaci|residual/i },
+          { num: '06.3', name: 'Climatización y Ventilación', keys: [], icon: '❄️', filter: /clima|calefacc|ventilaci|aire.*acondic|caldera|radiador|termo|bomba.*calor|aerotermia|suelo.*radiante|split|conducto.*aire|extrac|refrigeraci|hvac/i }
+        ]
+      },
       { num: '07', name: 'Revestimientos, Enlucidos y Solados', keys: [], icon: '🎨', color: '#DCEDC1' },
       { num: '08', name: 'Carpintería Exterior e Interior', keys: [], icon: '🚪', color: '#8B4513' },
       { num: '09', name: 'Cerrajería y Vidriería', keys: [], icon: '🔩', color: '#C0C0C0' },
@@ -1553,7 +1761,7 @@
         const cachedVersion = sessionStorage.getItem(CACHE_VERSION_KEY);
         const currentVersion = '2026.1'; // Actualizar cuando cambie la base de datos
 
-        if (cachedData && cachedVersion === currentVersion) {
+        if (false && cachedData && cachedVersion === currentVersion) {
           loadStatus.textContent = 'Cargando desde caché (rápido)...';
           await new Promise(r => setTimeout(r, 50));
           data = JSON.parse(cachedData);
@@ -1561,7 +1769,7 @@
         } else {
           // Cargar desde servidor
           loadStatus.textContent = 'Descargando base de datos...';
-          await new Promise(r => setTimeout(r, 50));
+          await new Promise(r => setTimeout(r, 100));
 
           const resp = await fetch('precios.json');
           if (!resp.ok) throw new Error('No se pudo cargar precios.json (código ' + resp.status + ')');
@@ -1716,86 +1924,38 @@
     }
 
     function selectCat(key) {
-      currentCat = key;
+      categoriaActual = key;
       document.querySelectorAll('.cat-item').forEach(e => e.classList.remove('active'));
       const el = document.getElementById('cat-' + key);
       if (el) el.classList.add('active');
 
       if (key === 'ALL') {
-        currentItems = Object.values(allData).flat();
+        partidasActuales = Object.values(allData).flat();
       } else {
-        currentItems = allData[key] || [];
+        partidasActuales = allData[key] || [];
       }
       page = 1;
       applyFilter();
     }
 
-    // Función de búsqueda fuzzy (tolerancia a errores de tipeo)
-    function fuzzyMatch(text, pattern) {
-      pattern = pattern.toLowerCase();
-      text = text.toLowerCase();
-
-      // Búsqueda exacta (prioridad alta)
-      if (text.includes(pattern)) return 100;
-
-      // Búsqueda fuzzy por caracteres
-      let patternIdx = 0;
-      let score = 0;
-      let consecutiveMatches = 0;
-
-      for (let i = 0; i < text.length; i++) {
-        if (text[i] === pattern[patternIdx]) {
-          score += 1 + consecutiveMatches;
-          consecutiveMatches++;
-          patternIdx++;
-          if (patternIdx === pattern.length) {
-            return score;
-          }
-        } else {
-          consecutiveMatches = 0;
-        }
-      }
-
-      // Si no coincidió con todos los caracteres, no es match
-      if (patternIdx < pattern.length) return 0;
-
-      return score;
-    }
-
     function applyFilter() {
       if (searchTerm.length >= 2) {
-        filteredItems = [];
-        // Search across all categories if term is long enough
-        const source = searchTerm.length >= 3 ? Object.values(allData).flat() : currentItems;
-
-        // Búsqueda con scoring fuzzy
-        const matches = [];
-        for (const item of source) {
-          const codScore = fuzzyMatch(item.cod, searchTerm);
-          const resScore = fuzzyMatch(item.res, searchTerm);
-          const descScore = item.desc ? fuzzyMatch(item.desc, searchTerm) : 0;
-
-          const maxScore = Math.max(codScore, resScore, descScore);
-
-          if (maxScore > 0) {
-            matches.push({ item, score: maxScore });
-          }
-        }
-
-        // Ordenar por relevancia (score descendente)
-        matches.sort((a, b) => b.score - a.score);
-        filteredItems = matches.map(m => m.item);
+        // Usar Fuse.js para la búsqueda
+        const fuseResult = fuse.search(searchTerm);
+        partidasFiltradas = fuseResult.map(result => result.item);
+        // No es necesario ordenar, Fuse.js ya lo hace por relevancia
       } else {
-        filteredItems = [...currentItems];
+        // Si la búsqueda es corta, mostrar los de la categoría actual
+        partidasFiltradas = [...partidasActuales];
+        sortItems(); // Ordenar alfabéticamente si no hay búsqueda
       }
-      sortItems();
       renderTable();
       renderPagination();
     }
 
     function sort(col) {
-      if (sortCol === col) { sortAsc = !sortAsc; }
-      else { sortCol = col; sortAsc = true; }
+      if (columnaOrden === col) { sortAsc = !sortAsc; }
+      else { columnaOrden = col; sortAsc = true; }
       document.querySelectorAll('thead th').forEach(th => {
         th.classList.remove('sorted');
         if (th.id === 'th-' + col) th.classList.add('sorted');
@@ -1807,8 +1967,8 @@
     }
 
     function sortItems() {
-      filteredItems.sort((a, b) => {
-        let va = a[sortCol], vb = b[sortCol];
+      partidasFiltradas.sort((a, b) => {
+        let va = a[columnaOrden], vb = b[columnaOrden];
         if (typeof va === 'string') va = va.toLowerCase();
         if (typeof vb === 'string') vb = vb.toLowerCase();
         if (va < vb) return sortAsc ? -1 : 1;
@@ -1832,11 +1992,11 @@
 
     function renderTable() {
       const start = (page - 1) * PAGE_SIZE;
-      const slice = filteredItems.slice(start, start + PAGE_SIZE);
+      const slice = partidasFiltradas.slice(start, start + PAGE_SIZE);
       const tbody = document.getElementById('table-body');
       const info = document.getElementById('results-info');
 
-      info.textContent = `Mostrando ${start + 1}–${Math.min(start + PAGE_SIZE, filteredItems.length)} de ${filteredItems.length.toLocaleString('es-ES')} resultados`;
+      info.textContent = `Mostrando ${start + 1}–${Math.min(start + PAGE_SIZE, partidasFiltradas.length)} de ${partidasFiltradas.length.toLocaleString('es-ES')} resultados`;
 
       if (slice.length === 0) {
         tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:40px;color:var(--muted)">Sin resultados</td></tr>';
@@ -1862,7 +2022,7 @@
     }
 
     function renderPagination() {
-      const total = Math.ceil(filteredItems.length / PAGE_SIZE);
+      const total = Math.ceil(partidasFiltradas.length / PAGE_SIZE);
       const el = document.getElementById('pagination');
       if (total <= 1) { el.innerHTML = ''; return; }
 
@@ -1886,7 +2046,7 @@
     }
 
     function goPage(p) {
-      const total = Math.ceil(filteredItems.length / PAGE_SIZE);
+      const total = Math.ceil(partidasFiltradas.length / PAGE_SIZE);
       page = Math.max(1, Math.min(p, total));
       renderTable();
       renderPagination();
@@ -1897,7 +2057,7 @@
     // PRESUPUESTO
     // ========================
     function addItem(idx) {
-      const item = filteredItems[idx];
+      const item = partidasFiltradas[idx];
       if (!item) return;
 
       // Check duplicates
@@ -2429,6 +2589,31 @@
         closeModalDesglose();
       }
     });
+
+    // ========================
+    // MOBILE NAVIGATION
+    // ========================
+    function showView(view) {
+      const sidebar = document.querySelector('.sidebar');
+      const pres = document.querySelector('.presupuesto');
+
+      // Ocultar todos los paneles
+      sidebar.classList.remove('visible');
+      pres.classList.remove('visible');
+
+      // Actualizar botones activos
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+      if (view === 'cat') {
+        sidebar.classList.add('visible');
+        document.getElementById('nav-cat').classList.add('active');
+      } else if (view === 'pres') {
+        pres.classList.add('visible');
+        document.getElementById('nav-pres').classList.add('active');
+      } else { // search es la vista por defecto
+        document.getElementById('nav-search').classList.add('active');
+      }
+    }
 
     init().catch(console.error);
 

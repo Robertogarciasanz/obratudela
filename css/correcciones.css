@@ -1,0 +1,91 @@
+/* =================================================================
+   Archivo de correcciones visuales para ObraTudela.com
+   ================================================================= */
+
+/*
+ * OCULTAR SUBMENÚ REDUNDANTE BAJO LA NAVEGACIÓN PRINCIPAL
+ * Problema: Se muestra un menú de texto (tipo miga de pan) duplicado.
+ * Solución: Ocultar el contenedor de este submenú.
+ */
+.sub-menu {
+    display: none !important;
+}
+
+/*
+ * BOTÓN "VOLVER ARRIBA"
+ * Problema: Navegación difícil en páginas largas.
+ * Solución: Añadir un botón fijo que aparece al hacer scroll.
+ */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--orange);
+    color: #000;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+    transform: translateY(20px);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--orange2);
+    transform: scale(1.05);
+}
+
+/*
+ * ESTILOS PARA MENÚ DESPLEGABLE UNIFICADO
+ * Problema: El submenú es visible por defecto o no se comporta como un desplegable.
+ * Solución: Ocultarlo y mostrarlo solo al pasar el cursor o al hacer clic.
+ */
+.nav-dropdown {
+    position: relative;
+    /* Contexto para el menú absoluto */
+}
+
+.nav-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    /* Justo debajo del enlace 'Servicios' */
+    left: 0;
+    background-color: var(--surface, #fff);
+    /* Usa variable global con fallback */
+    border: 1px solid var(--border, #e0e0e0);
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 180px;
+    z-index: 1001;
+    opacity: 0;
+    /* Oculto por defecto */
+    visibility: hidden;
+    /* Oculto y no interactuable */
+    transform: translateY(10px);
+    /* Efecto de aparición */
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+/* Mostrar el desplegable al pasar el cursor sobre el contenedor o cuando tiene la clase 'open' */
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
