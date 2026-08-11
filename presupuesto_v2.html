@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestor de Presupuestos — BCEXTREM 2026</title>
+  <title>Gestor Profesional de Presupuestos — ObraTudela</title>
   <meta name="description"
-    content="Herramienta gratuita para generar presupuestos de obra con base de datos BCEXTREM 2026. 54.777 partidas de construcción en España. Búsqueda, cálculo y exportación a Excel.">
+    content="Herramienta profesional y gratuita para generar presupuestos de obra. Búsqueda en base de datos, cálculo de costes y exportación a Excel.">
   <meta name="keywords"
     content="presupuestos obra, BCEXTREM 2026, precios construcción, calculadora presupuestos, Excel presupuestos">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.obratudela.com/presupuesto_v2.html">
-  <meta property="og:title" content="Gestor de Presupuestos de Obra — BCEXTREM 2026">
+  <meta property="og:title" content="Gestor Profesional de Presupuestos — ObraTudela">
   <meta property="og:description"
     content="Genera presupuestos profesionales con 54.777 partidas de precios. Búsqueda por código, descripción o categoría. Exporta a Excel.">
   <meta property="og:url" content="https://www.obratudela.com/presupuesto_v2.html">
@@ -27,7 +27,7 @@
         "@type": "WebPage",
         "@id": "https://www.obratudela.com/presupuesto_v2.html",
         "url": "https://www.obratudela.com/presupuesto_v2.html",
-        "name": "Gestor de Presupuestos de Obra — BCEXTREM",
+        "name": "Gestor Profesional de Presupuestos — ObraTudela",
         "description": "Herramienta profesional para crear presupuestos de obra con base de datos de precios de construcción. Exportación a Excel.",
         "inLanguage": "es",
         "breadcrumb": {
@@ -40,7 +40,7 @@
       },
       {
         "@type": "SoftwareApplication",
-        "name": "Gestor de Presupuestos de Obra BCEXTREM",
+        "name": "Gestor Profesional de Presupuestos (Manual)",
         "url": "https://www.obratudela.com/presupuesto_v2.html",
         "description": "Generador de presupuestos de construcción con base de datos de precios BEDEC. Búsqueda por código y descripción, cálculo de IVA, exportación a Excel e impresión profesional.",
         "applicationCategory": "BusinessApplication",
@@ -478,28 +478,6 @@
       border-color: var(--orange);
       color: var(--orange);
       background: #2a1800;
-    }
-
-    .btn-desglose {
-      background: none;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      width: 26px;
-      height: 26px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      line-height: 1;
-      transition: all 0.15s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btn-desglose:hover {
-      border-color: #4caf7d;
-      color: #4caf7d;
-      background: #0a2818;
     }
 
     td.add-btn {
@@ -1552,7 +1530,7 @@
   <header>
     <div style="display:flex;align-items:center;gap:16px;">
       <a href="index.html" class="btn-back">← Volver</a>
-      <h1>⚡ PRESUPUESTADOR</h1>
+      <h1>📊 GESTOR PROFESIONAL</h1>
     </div>
     <span id="db-info">BASE DE PRECIOS · CARGANDO...</span>
   </header>
@@ -1673,26 +1651,33 @@
     </button>
   </div>
 
-  <!-- Modal de Desglose -->
-  <div class="modal-overlay" id="modalDesglose" onclick="closeModalDesglose(event)">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <div class="modal-header">
-        <div>
-          <h2 id="modalTitulo">Desglose de Partida</h2>
-          <div class="modal-codigo" id="modalCodigo"></div>
-        </div>
-        <button class="modal-close" onclick="closeModalDesglose()">&times;</button>
-      </div>
-      <div class="modal-body" id="modalBody">
-        <div class="desglose-loading">Cargando desglose...</div>
-      </div>
-    </div>
-  </div>
-
   <script>
     // ========================
     // DATA LOADING
     // ========================
+
+    // --- Base de datos de precios integrada para carga instantánea ---
+    const embeddedPriceData = {
+      "items": [
+        { "cod": "A01A030", "res": "PASTA DE YESO NEGRO", "desc": "Pasta de yeso negro amasado manualmente.", "uni": "m3", "precio": 91.28 },
+        { "cod": "A01A100", "res": "PASTA YESO ESTANCO P/PROYECTAR", "desc": "Pasta de yeso y aditivos especial para proyectar, amasado a mano.", "uni": "m2", "precio": 4.58 },
+        { "cod": "E01AA010", "res": "DEMOLICION DE FABRICA DE LADRILLO", "desc": "Demolición de fábrica de ladrillo de cualquier tipo y espesor, con compresor.", "uni": "m3", "precio": 60.55 },
+        { "cod": "E01AB010", "res": "DEMOLICION DE MURO DE MAMPOSTERIA", "desc": "Demolición de muro de mampostería con compresor.", "uni": "m3", "precio": 75.69 },
+        { "cod": "E01AC010", "res": "DEMOLICION DE MURO DE SILLERIA", "desc": "Demolición de muro de sillería con compresor.", "uni": "m3", "precio": 121.10 },
+        { "cod": "E01AD010", "res": "DEMOLICION DE FABRICA DE BLOQUE", "desc": "Demolición de fábrica de bloque de hormigón de cualquier tipo y espesor, con compresor.", "uni": "m3", "precio": 54.49 },
+        { "cod": "E01AE010", "res": "DEMOLICION DE PAVIMENTO DE HORMIGON", "desc": "Demolición de pavimento de hormigón en masa, con compresor.", "uni": "m3", "precio": 96.88 },
+        { "cod": "E01AF010", "res": "DEMOLICION DE SOLADO", "desc": "Demolición de solado de cualquier tipo, con compresor.", "uni": "m2", "precio": 5.45 },
+        { "cod": "E01AG010", "res": "DEMOLICION DE ALICATADO", "desc": "Demolición de alicatado de cualquier tipo, con compresor.", "uni": "m2", "precio": 4.84 },
+        { "cod": "E02AA010", "res": "EXCAVACION EN ZANJAS Y POZOS", "desc": "Excavación en zanjas y pozos en terreno de cualquier tipo, con retroexcavadora.", "uni": "m3", "precio": 8.48 },
+        { "cod": "E02AB010", "res": "EXCAVACION A CIELO ABIERTO", "desc": "Excavación a cielo abierto en terreno de cualquier tipo, con retroexcavadora.", "uni": "m3", "precio": 6.06 },
+        { "cod": "E02AC010", "res": "RELLENO Y COMPACTADO DE ZANJAS", "desc": "Relleno y compactado de zanjas con material procedente de la propia excavación.", "uni": "m3", "precio": 4.84 },
+        { "cod": "E03AA010", "res": "HORMIGON DE LIMPIEZA HNE-20", "desc": "Hormigón de limpieza HNE-20/P/20/I en cimientos.", "uni": "m3", "precio": 121.10 },
+        { "cod": "E04AA010", "res": "MURO DE LADRILLO PERFORADO", "desc": "Muro de ladrillo perforado de 1/2 pie de espesor, para revestir.", "uni": "m2", "precio": 36.33 },
+        { "cod": "E07AA010", "res": "SOLADO DE GRES PORCELANICO", "desc": "Solado de gres porcelánico de 45x45 cm, recibido con cemento cola.", "uni": "m2", "precio": 42.39 },
+        { "cod": "G01C020", "res": "CARGA DE ESCOMBROS SOBRE CAMION", "desc": "Carga de escombros sobre camión con retroexcavadora.", "uni": "m3", "precio": 2.42 },
+        { "cod": "M05RN020", "res": "RETROCARGADORA NEUMATICA 75 CV", "desc": "Alquiler de retrocargadora neumática de 75 CV, con conductor.", "uni": "h", "precio": 38.57 }
+      ]
+    };
 
     let allData = {};
     let categoriaActual = null;
@@ -1748,50 +1733,10 @@
 
     async function init() {
       try {
-        const loadStatus = document.getElementById('load-status');
-        const CACHE_KEY = 'preciosData_v1';
-        const CACHE_VERSION_KEY = 'preciosVersion_v1';
-        let data = null;
-
-        // Intentar cargar desde caché
-        loadStatus.textContent = 'Verificando caché local...';
-        await new Promise(r => setTimeout(r, 50));
-
-        const cachedData = sessionStorage.getItem(CACHE_KEY);
-        const cachedVersion = sessionStorage.getItem(CACHE_VERSION_KEY);
-        const currentVersion = '2026.1'; // Actualizar cuando cambie la base de datos
-
-        if (false && cachedData && cachedVersion === currentVersion) {
-          loadStatus.textContent = 'Cargando desde caché (rápido)...';
-          await new Promise(r => setTimeout(r, 50));
-          data = JSON.parse(cachedData);
-          console.log('✓ Datos cargados desde caché sessionStorage');
-        } else {
-          // Cargar desde servidor
-          loadStatus.textContent = 'Descargando base de datos...';
-          await new Promise(r => setTimeout(r, 100));
-
-          const resp = await fetch('precios.json');
-          if (!resp.ok) throw new Error('No se pudo cargar precios.json (código ' + resp.status + ')');
-
-          loadStatus.textContent = 'Procesando base de datos...';
-          await new Promise(r => setTimeout(r, 50));
-
-          data = await resp.json();
-
-          // Guardar en caché
-          try {
-            sessionStorage.setItem(CACHE_KEY, JSON.stringify(data));
-            sessionStorage.setItem(CACHE_VERSION_KEY, currentVersion);
-            console.log('✓ Datos guardados en caché sessionStorage');
-          } catch (e) {
-            console.warn('No se pudo guardar en caché (sessionStorage lleno):', e);
-          }
-        }
-
+        const data = embeddedPriceData;
         const items = data.items || data;
 
-        loadStatus.textContent = 'Indexando registros...';
+        document.getElementById('load-status').textContent = 'Indexando registros...';
         await new Promise(r => setTimeout(r, 50));
 
         for (const item of items) {
@@ -2009,8 +1954,7 @@
       <td>${highlight(item.res)}</td>
       <td class="uni">${escHtml(item.uni)}</td>
       <td class="precio">${item.precio.toFixed(2).replace('.', ',')} €</td>
-      <td class="add-btn">
-        <button class="btn-desglose" onclick="event.stopPropagation();verDesglose('${escHtml(item.cod)}')" title="Ver desglose">📊</button>
+      <td class="add-btn" style="text-align: center;">
         <button class="btn-add" onclick="event.stopPropagation();addItem(${start + i})" title="Añadir al presupuesto">+</button>
       </td>
     </tr>
@@ -2449,148 +2393,6 @@
     }
 
     // ========================
-    // MODAL DESGLOSE
-    // ========================
-    async function verDesglose(codigo) {
-      const modal = document.getElementById('modalDesglose');
-      const modalBody = document.getElementById('modalBody');
-      const modalTitulo = document.getElementById('modalTitulo');
-      const modalCodigo = document.getElementById('modalCodigo');
-
-      // Mostrar modal con loading
-      modal.classList.add('active');
-      modalBody.innerHTML = '<div class="desglose-loading">Cargando desglose...</div>';
-      modalTitulo.textContent = 'Desglose de Partida';
-      modalCodigo.textContent = codigo;
-
-      try {
-        const response = await fetch(`/api/precios/${encodeURIComponent(codigo)}/desglose`);
-        const data = await response.json();
-
-        if (!data.ok) {
-          throw new Error(data.error || 'Error al cargar desglose');
-        }
-
-        if (!data.desglose) {
-          modalBody.innerHTML = '<div class="no-desglose">Esta partida no tiene desglose disponible</div>';
-          return;
-        }
-
-        // Renderizar desglose completo
-        const { partida, desglose } = data;
-        const { resumen, componentes } = desglose;
-
-        modalTitulo.textContent = partida.res;
-
-        const html = `
-          <!-- Resumen de Costes -->
-          <div class="desglose-resumen">
-            <div class="resumen-card mo">
-              <div class="resumen-card-label">Mano de Obra</div>
-              <div class="resumen-card-value">${resumen.mano_obra.toFixed(2)} €</div>
-              <div class="resumen-card-percentage">${resumen.porcentaje_mo}%</div>
-            </div>
-            <div class="resumen-card mat">
-              <div class="resumen-card-label">Materiales</div>
-              <div class="resumen-card-value">${resumen.materiales.toFixed(2)} €</div>
-              <div class="resumen-card-percentage">${resumen.porcentaje_mat}%</div>
-            </div>
-            <div class="resumen-card maq">
-              <div class="resumen-card-label">Maquinaria</div>
-              <div class="resumen-card-value">${resumen.maquinaria.toFixed(2)} €</div>
-              <div class="resumen-card-percentage">${resumen.porcentaje_maq}%</div>
-            </div>
-          </div>
-
-          <!-- Gráfico de Barras -->
-          <div class="desglose-grafico">
-            <div class="grafico-barras">
-              ${resumen.porcentaje_mo > 0 ? `<div class="grafico-barra mo" style="width:${resumen.porcentaje_mo}%">${resumen.porcentaje_mo}%</div>` : ''}
-              ${resumen.porcentaje_mat > 0 ? `<div class="grafico-barra mat" style="width:${resumen.porcentaje_mat}%">${resumen.porcentaje_mat}%</div>` : ''}
-              ${resumen.porcentaje_maq > 0 ? `<div class="grafico-barra maq" style="width:${resumen.porcentaje_maq}%">${resumen.porcentaje_maq}%</div>` : ''}
-            </div>
-            <div class="grafico-leyenda">
-              <div class="grafico-leyenda-item">
-                <div class="grafico-leyenda-color" style="background:#ff6b00"></div>
-                <span>Mano de Obra</span>
-              </div>
-              <div class="grafico-leyenda-item">
-                <div class="grafico-leyenda-color" style="background:#4caf7d"></div>
-                <span>Materiales</span>
-              </div>
-              <div class="grafico-leyenda-item">
-                <div class="grafico-leyenda-color" style="background:#5094ff"></div>
-                <span>Maquinaria</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tabla de Componentes -->
-          <div class="componentes-titulo">Componentes (${componentes.length})</div>
-          <table class="componentes-tabla">
-            <thead>
-              <tr>
-                <th width="50">Tipo</th>
-                <th width="100">Código</th>
-                <th>Descripción</th>
-                <th width="80">Cantidad</th>
-                <th width="60">Unid.</th>
-                <th width="90">Precio/Unid.</th>
-                <th width="90">Subtotal</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${componentes.map(comp => `
-                <tr>
-                  <td><span class="tipo-badge ${comp.tipo.toLowerCase()}">${comp.tipo}</span></td>
-                  <td class="cod">${escHtml(comp.cod)}</td>
-                  <td>${escHtml(comp.descripcion)}</td>
-                  <td style="text-align:right">${comp.cantidad.toFixed(3)}</td>
-                  <td>${escHtml(comp.unidad)}</td>
-                  <td style="text-align:right">${comp.precio_unitario.toFixed(2)} €</td>
-                  <td style="text-align:right;font-weight:500">${comp.subtotal.toFixed(2)} €</td>
-                </tr>
-              `).join('')}
-            </tbody>
-          </table>
-
-          <div style="margin-top:20px;padding:16px;background:var(--surface2);border-radius:8px;border:1px solid var(--border)">
-            <div style="display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-bottom:8px">
-              <span>Total Costes Directos:</span>
-              <span style="font-weight:500">${resumen.total_directo.toFixed(2)} €</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-bottom:12px">
-              <span>Indirectos (GG + BI + MA):</span>
-              <span style="font-weight:500">${resumen.indirectos.toFixed(2)} €</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:16px;font-weight:600;color:var(--orange);padding-top:12px;border-top:1px solid var(--border)">
-              <span>Precio Base de Datos:</span>
-              <span>${resumen.precio_bd.toFixed(2)} €</span>
-            </div>
-          </div>
-        `;
-
-        modalBody.innerHTML = html;
-
-      } catch (error) {
-        modalBody.innerHTML = `<div class="desglose-error">Error: ${escHtml(error.message)}</div>`;
-      }
-    }
-
-    function closeModalDesglose(event) {
-      if (event && event.target.classList.contains('modal-content')) return;
-      const modal = document.getElementById('modalDesglose');
-      modal.classList.remove('active');
-    }
-
-    // Cerrar modal con tecla ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeModalDesglose();
-      }
-    });
-
-    // ========================
     // MOBILE NAVIGATION
     // ========================
     function showView(view) {
@@ -2618,6 +2420,31 @@
     init().catch(console.error);
 
   </script>
+</body>
+
+</html>onst pres = document.querySelector('.presupuesto');
+
+// Ocultar todos los paneles
+sidebar.classList.remove('visible');
+pres.classList.remove('visible');
+
+// Actualizar botones activos
+document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+if (view === 'cat') {
+sidebar.classList.add('visible');
+document.getElementById('nav-cat').classList.add('active');
+} else if (view === 'pres') {
+pres.classList.add('visible');
+document.getElementById('nav-pres').classList.add('active');
+} else { // search es la vista por defecto
+document.getElementById('nav-search').classList.add('active');
+}
+}
+
+init().catch(console.error);
+
+</script>
 </body>
 
 </html>
