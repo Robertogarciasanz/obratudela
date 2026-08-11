@@ -159,6 +159,23 @@
     position: relative;
 }
 
+/* Animación del icono de hamburguesa a "X" */
+.hamburger-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.mobile-menu-backdrop {
+    display: none;
+}
+
 .mobile-menu {
     display: none;
     /* Oculto por defecto */
@@ -184,7 +201,7 @@
         top: var(--header-height);
         left: 0;
         right: 0;
-        bottom: 0;
+        height: calc(100vh - var(--header-height));
         background: var(--bg);
         padding: 30px;
         transform: translateX(100%);
@@ -201,5 +218,17 @@
         text-decoration: none;
         color: var(--text);
         font-weight: 600;
+    }
+
+    /* Backdrop para cerrar el menú al hacer clic fuera */
+    .mobile-menu-backdrop.open {
+        display: block;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        /* Detrás del menú pero por encima del contenido */
     }
 }

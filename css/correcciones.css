@@ -89,3 +89,73 @@
     visibility: visible;
     transform: translateY(0);
 }
+
+/* =================================================================
+   ESTILOS PARA LA INTERFAZ DE CHAT (Presupuesto con IA)
+   ================================================================= */
+
+/* Ajuste de la zona de entrada para que suba en pantallas pequeñas */
+.chat-input-area {
+    padding: 12px 20px;
+    /* Añade espacio extra abajo respetando la barra del sistema del móvil */
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Reglas específicas para pantallas de teléfono (móviles) */
+@media (max-width: 600px) {
+
+    /* 
+     * Alternativa de layout para el chat en móvil.
+     * En lugar de reducir la altura del contenedor, lo hacemos ocupar
+     * toda la pantalla y hacemos que la caja de entrada sea "pegajosa"
+     * en la parte inferior. Esto es más robusto si el alto de la cabecera cambia.
+    */
+    .chat-container {
+        /* Ocupa toda la altura disponible en el viewport dinámico */
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-messages {
+        flex-grow: 1;
+        /* Ocupa todo el espacio sobrante */
+        overflow-y: auto;
+        /* Permite scroll si los mensajes exceden el alto */
+        padding: 12px 16px;
+        /* Espacio para que el último mensaje no quede tapado por la caja de entrada flotante */
+        padding-bottom: 100px;
+        /* Un valor generoso para asegurar visibilidad */
+    }
+
+    .chat-input-area {
+        /* Hacemos la caja de entrada "pegajosa" en la parte inferior del contenedor */
+        position: sticky;
+        bottom: 10px;
+
+        /* Estilos para que parezca una "píldora" flotante */
+        width: calc(100% - 24px);
+        /* Ancho menos los márgenes laterales */
+        margin: 0 auto;
+        /* Centrado horizontal */
+        padding: 10px 12px;
+        padding-bottom: calc(10px + env(safe-area-inset-bottom));
+        /* Respetar safe area */
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* Sombra para dar efecto flotante */
+        box-sizing: border-box;
+
+        /* Aseguramos que no se encoja y mantenga su posición */
+        flex-shrink: 0;
+    }
+}

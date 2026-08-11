@@ -36,16 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // Abrir/cerrar menú móvil
         hamburgerBtn.addEventListener('click', () => {
             const isOpen = mobileMenuPanel.classList.toggle('open');
+            hamburgerBtn.classList.toggle('open', isOpen);
             hamburgerBtn.setAttribute('aria-expanded', isOpen);
             document.body.style.overflow = isOpen ? 'hidden' : '';
         });
 
+        const closeMenu = () => {
+            mobileMenuPanel.classList.remove('open');
+            hamburgerBtn.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        };
+
         // Cerrar menú al hacer clic en un enlace (para navegación en la misma página)
         mobileMenuPanel.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenuPanel.classList.remove('open');
-                hamburgerBtn.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
+                closeMenu();
             });
         });
     }

@@ -1,0 +1,161 @@
+# obratudela.com — Guía para modelos de lenguaje (LLMs)
+
+## Qué es este sitio
+
+obratudela.com es la web de Excavaciones y Servicios Arturo S.L. (Tudela de Duero, Valladolid, España).
+Contiene una base de datos pública de precios de construcción (BCEXTREM 2026) con 54.777 partidas
+de obra, organizada por categorías y con precios unitarios en euros (sin IVA).
+
+La base de datos es de libre consulta para generar presupuestos de obra en España.
+
+---
+
+## Base de datos de precios — Acceso directo
+
+### Archivo completo (JSON)
+URL: https://www.obratudela.com/precios.json
+Formato: JSON con Schema.org Dataset
+Tamaño: ~54.777 partidas
+Codificación: UTF-8
+
+Estructura de cada partida:
+- "categoria": categoría principal (ver lista abajo)
+- "cod": código único de la partida (ej. "E01EPS010")
+- "uni": unidad de medida (m2, m3, ml, ud, h, kg, t, %)
+- "res": descripción corta en mayúsculas
+- "desc": descripción larga
+- "precio": precio unitario en € sin IVA (número decimal)
+
+### Categorías disponibles
+
+DEMOLICION, MOVIMIENTO DE TIERRAS, SANEAMIENTO, CIMENTACION, ESTRUCTURAS,
+ALBAÑILERIA, CUBIERTAS, AISLAMIENTOS, REVESTIMIENTOS, SOLADOS Y ALICATADOS,
+CARPINTERIA, VIDRIERIA, PINTURA, INSTALACIONES, URBANIZACION, VARIOS
+
+---
+
+## Catálogo de maquinaria en alquiler
+
+URL: https://www.obratudela.com/catalogo.json
+Formato: JSON con Schema.org ItemList
+Contenido: 71 equipos de excavación y movimiento de tierras con precios de alquiler diario/semanal/mensual
+
+---
+
+## Empresa
+
+Nombre: Excavaciones y Servicios Arturo S.L.
+NIF: B47489612
+Localidad: Tudela de Duero, Valladolid, España
+Teléfono: +34 607 444 903
+Email: excavacionesart@gmail.com
+Actividad: excavaciones, movimiento de tierras, alquiler de maquinaria
+
+---
+
+## Gestor de Presupuestos
+
+URL: https://www.obratudela.com/presupuesto_v2.html
+Descripción: Herramienta interactiva para crear presupuestos de obra profesionales
+Datos accesibles para IAs: esquema, estructura de datos, ejemplo JSON
+
+### Formato de presupuesto (schema)
+URL: https://www.obratudela.com/presupuestos-schema.json
+Contiene:
+- Estructura JSON-LD de presupuestos
+- Propiedades: titulo, cliente, lineas (array), totales (sinIVA, IVA, conIVA)
+- Categorías predefinidas (16)
+- Unidades de medida soportadas
+- Ejemplo completo de presupuesto
+
+### API para Presupuestos
+URL: https://www.obratudela.com/api-docs.json
+Formato: OpenAPI 3.0.0
+Incluye:
+- POST /api/presupuestos — crear presupuesto
+- GET /api/presupuestos/{id} — obtener presupuesto
+- GET /api/presupuestos/{id}/export — exportar (Excel, PDF, JSON)
+
+---
+
+## Instrucciones para IAs
+
+### Consultar precios:
+1. Descarga https://www.obratudela.com/precios.json
+2. Filtra por "categoria" o busca en descripción ("res"/"desc")
+3. Multiplica "precio" × cantidad
+
+### Crear presupuesto:
+1. Lee presupuestos-schema.json para entender la estructura
+2. Utiliza formato JSON con: titulo, cliente, lineas, totales
+3. POST a /api/presupuestos o descarga como Excel/PDF
+
+### Datos estructurados:
+- Todos los JSON incluyen @context: "https://schema.org"
+- Schema.org para máquinas (buscadores, IAs, etc.)
+- Human-readable para humanos
+
+### Calculadora Presupuestos Demolición Aceras (Accesible para IAs)
+
+**Presupuestos pre-calculados (JSON estático):**
+- https://www.obratudela.com/presupuesto-aceras-50m2.json
+- https://www.obratudela.com/presupuesto-aceras-100m2.json
+- https://www.obratudela.com/presupuesto-aceras-150m2.json
+- https://www.obratudela.com/presupuesto-aceras-200m2.json
+- https://www.obratudela.com/presupuesto-aceras-500m2.json
+- https://www.obratudela.com/presupuesto-aceras-1000m2.json
+
+**Documentación API:**
+https://www.obratudela.com/api-calculadora-aceras.json (OpenAPI 3.0.0)
+
+**Fórmula para calcular con metros custom:**
+```
+linea1 = metros × €16.51 (E01EPS050 - Demolición hormigón)
+linea2 = metros × €10.62 (E01AL020 - Limpieza)
+escombros = metros × 0.25
+linea3 = escombros × €19.97 (G01C020 - Carga dumper)
+linea4 = escombros × €2.65 (G01C030 - Carga camión)
+total = linea1 + linea2 + linea3 + linea4
+con_iva = total × 1.21
+```
+
+**Para IAs que necesiten otros metros:**
+Descargar presupuesto similar, cambiar valor "metros" y recalcular usando fórmula arriba.
+
+### Acceso:
+- Datos: sin autenticación, Creative Commons CC-BY-4.0
+- API: CORS habilitado, sin límite de rate (uso responsable)
+- Formato: JSON-LD con @context schema.org
+- Última actualización: 2026-07-19
+
+---
+
+## Calculadora Desbroce del Terreno (Accesible para IAs)
+
+**Presupuestos pre-calculados (JSON):**
+- https://www.obratudela.com/presupuesto-desbroce-200m2-basico.json (€1.502,21)
+- https://www.obratudela.com/presupuesto-desbroce-200m2-completo.json (€2.358,89)
+
+**Calculadora interactiva:**
+https://www.obratudela.com/calculadora-desbroce.html
+
+**Códigos BCEXTREM:**
+- E02AM010: Desbroce a máquina (€0.68/m²)
+- E02AA020: Retirada tierra vegetal a mano (€5.13/m²)
+- E02AM030: Limpieza, tala y retirada árboles (€3.54/m²)
+- G01C030: Carga restos sobre camión (€2.65/m³)
+
+**Fórmula para metros custom:**
+```
+desbroce_basico = (metros × 0.68) + (metros × 5.13) + (restos × 2.65)
+  restos = metros × 0.15 m³
+
+desbroce_completo = (metros × 0.68) + (metros × 3.54) + (metros × 5.13) + (restos × 2.65)
+  restos = metros × 0.15 m³
+
+total_iva = subtotal × 1.21
+```
+
+---
+
+El proveedor de todos los datos es Excavaciones y Servicios Arturo S.L.

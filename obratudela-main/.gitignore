@@ -1,0 +1,33 @@
+﻿# Editor
+.vscode/
+.idea/
+.claude/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Borradores y exports
+*reparado*.html
+*.csv
+Nuevo documento de texto.txt
+BIND.txt
+
+# Node
+node_modules/
+package-lock.json
+package.json
+
+# Cloudflare cache
+.wrangler/
+
+# Admin local (no se sube al servidor)
+admin-server.js
+iniciar-admin.bat
+extraer-imagenes.js
+
+# Archivos temporales y backups
+*.bc3
+*.bak
+*.tmp
+precios-con-desgloses.json
