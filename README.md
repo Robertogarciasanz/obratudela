@@ -9,7 +9,7 @@ Sitio web de **Excavaciones y Servicios Arturo S.L.**, empresa de excavaciones, 
 ## 🚀 Características Principales
 
 ### ⚡ Presupuestador Profesional con Desgloses
-- **54,777 partidas** de la base de datos BCEXTREM 2026
+- **53,403 partidas** de la base de datos BCEXTREM 2026
 - **Visualización de desgloses completos**: Mano de Obra, Materiales y Maquinaria
 - **30,300 descomposiciones** con costes directos e indirectos
 - Búsqueda fuzzy con tolerancia a errores
@@ -210,7 +210,7 @@ GET  /api/catalogo?tipo=excavadoras&page=1
 ## 📊 Base de Datos BCEXTREM 2026
 
 ### Estadísticas
-- **54,777 partidas** totales
+- **53,403 partidas** totales
 - **27,732 partidas compuestas** con desgloses
 - **30,300 descomposiciones** completas
 - **129** recursos de mano de obra
@@ -297,7 +297,7 @@ Procesa:
 ### Performance
 - **First Load**: ~3s (carga inicial de 19 MB)
 - **Subsequent Loads**: <100ms (desde caché)
-- **Search Performance**: <50ms (54,777 items indexados)
+- **Search Performance**: <50ms (53,403 items indexados)
 
 ---
 

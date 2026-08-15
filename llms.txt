@@ -3,7 +3,7 @@
 ## Qué es este sitio
 
 obratudela.com es la web de Excavaciones y Servicios Arturo S.L. (Tudela de Duero, Valladolid, España).
-Contiene una base de datos pública de precios de construcción (BCEXTREM 2026) con 54.777 partidas
+Contiene una base de datos pública de precios de construcción (BCEXTREM 2026) con 53.403 partidas
 de obra, organizada por categorías y con precios unitarios en euros (sin IVA).
 
 La base de datos es de libre consulta para generar presupuestos de obra en España.
@@ -15,7 +15,7 @@ La base de datos es de libre consulta para generar presupuestos de obra en Espa�
 ### Archivo completo (JSON)
 URL: https://www.obratudela.com/precios.json
 Formato: JSON con Schema.org Dataset
-Tamaño: ~54.777 partidas
+Tamaño: ~53.403 partidas
 Codificación: UTF-8
 
 Estructura de cada partida:
