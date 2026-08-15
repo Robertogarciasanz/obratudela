@@ -521,15 +521,43 @@ let budgetItems = [];
 
 // Cargar base de datos
 async function loadDatabase() {
+  const loadingText = document.querySelector('.loading-text');
   try {
+    loadingText.textContent = 'Descargando base de datos (18 MB)...';
+
     const response = await fetch('precios-combinado.json');
-    database = await response.json();
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const contentLength = response.headers.get('content-length');
+    const total = parseInt(contentLength, 10);
+    let loaded = 0;
+
+    const reader = response.body.getReader();
+    const chunks = [];
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      chunks.push(value);
+      loaded += value.length;
+      const percent = Math.round((loaded / total) * 100);
+      loadingText.textContent = `Descargando base de datos... ${percent}%`;
+    }
+
+    loadingText.textContent = 'Procesando datos...';
+    const blob = new Blob(chunks);
+    const text = await blob.text();
+    database = JSON.parse(text);
 
     document.getElementById('loading').style.display = 'none';
     console.log(`Base de datos cargada: ${database.length} partidas`);
   } catch (error) {
     console.error('Error cargando base de datos:', error);
-    document.querySelector('.loading-text').textContent = 'Error cargando la base de datos. Verifica que el servidor esté activo.';
+    loadingText.textContent = 'Error cargando la base de datos. Verifica que el servidor esté activo en http://localhost:8080';
   }
 }
 
