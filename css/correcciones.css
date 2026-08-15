@@ -175,3 +175,66 @@ input[type=number] {
     -moz-appearance: textfield;
     /* Firefox */
 }
+
+/* =================================================================
+   MENÚ DESPLEGABLE PRESUPUESTOS (compartido entre todas las páginas)
+   ================================================================= */
+.presupuestos-dropdown {
+    position: fixed;
+    top: 64px;
+    right: 40px;
+    background: white;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding: 12px;
+    z-index: 999;
+    display: none;
+    min-width: 280px;
+}
+
+.presupuestos-dropdown.active {
+    display: block;
+    animation: presupDropFadeIn 0.2s ease;
+}
+
+@keyframes presupDropFadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.presupuestos-dropdown a {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.presupuestos-dropdown a:hover {
+    background: var(--orange);
+    color: white;
+}
+
+.presupuestos-dropdown a small {
+    display: block;
+    font-size: 0.75em;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.presupuestos-dropdown .dropdown-title {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px 4px;
+    font-weight: 600;
+}

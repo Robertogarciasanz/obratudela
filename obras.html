@@ -71,8 +71,7 @@
           </div>
         </div>
         <a href="index.html#contacto">Contacto</a>
-        <a href="presupuesto_v2.html">Gestor Profesional</a>
-        <a href="calculadora-presupuestos.html" class="btn">Presupuesto con IA</a>
+        <a href="#" onclick="event.preventDefault(); togglePresupuestosMenu()">Presupuestos ▾</a>
       </nav>
 
       <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú" aria-expanded="false">
@@ -90,8 +89,24 @@
     <a href="anuncios.html" style="padding-left: 20px;">&ndash; Anuncios</a>
     <a href="topografia.html" style="padding-left: 20px;">&ndash; Topografía</a>
     <a href="index.html#contacto">Contacto</a>
-    <a href="presupuesto_v2.html">Gestor Profesional</a>
-    <a href="calculadora-presupuestos.html">Presupuesto con IA</a>
+    <a href="#" onclick="event.preventDefault(); togglePresupuestosMenu()">Presupuestos ▾</a>
+  </div>
+
+  <!-- Menú Desplegable Presupuestos -->
+  <div id="presupuestosDropdown" class="presupuestos-dropdown">
+    <div class="dropdown-title">Herramientas de Presupuestos</div>
+    <a href="gestor-presupuestos.html">
+      📋 Gestor Básico
+      <small>53.403 partidas BCEXTREM</small>
+    </a>
+    <a href="presupuestos-pro.html" style="border-left: 3px solid var(--orange);">
+      ⭐ Gestor PRO
+      <small>61.826 partidas (BCEXTREM + BCCA)</small>
+    </a>
+    <a href="calculadora-ia.html">
+      🤖 Presupuesto con IA
+      <small>Cálculo inteligente de presupuestos</small>
+    </a>
   </div>
 
   <div class="page-hero">
@@ -160,6 +175,21 @@
   </footer>
 
   <script src="js/global-features.js" defer></script>
+
+  <script>
+    function togglePresupuestosMenu() {
+      const dropdown = document.getElementById('presupuestosDropdown');
+      dropdown.classList.toggle('active');
+    }
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('presupuestosDropdown');
+      const target = event.target;
+      if (!target.closest('.presupuestos-dropdown') &&
+          !target.textContent.includes('Presupuestos')) {
+        dropdown.classList.remove('active');
+      }
+    });
+  </script>
 
 </body>
 

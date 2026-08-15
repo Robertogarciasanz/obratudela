@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Ocultar el botón cuando el footer es visible para evitar solapamiento
+        const footer = document.querySelector('footer');
+        if (footer) {
+            const observer = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    backToTopButton.style.opacity = '0';
+                    backToTopButton.style.pointerEvents = 'none';
+                } else {
+                    backToTopButton.style.opacity = '';
+                    backToTopButton.style.pointerEvents = '';
+                }
+            }, { threshold: 0.1 });
+            observer.observe(footer);
+        }
+
         // Scroll suave hacia arriba al hacer clic
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
