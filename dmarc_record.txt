@@ -1,1 +1,0 @@
-v=DMARC1; p=reject; rua=mailto:dmarc-reports@obratudela.com

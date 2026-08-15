@@ -7,7 +7,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.obratudela.com/calculadora-presupuestos.html</loc>
+    <loc>https://www.obratudela.com/calculadora-ia.html</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -25,28 +25,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.obratudela.com/alquileres.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.obratudela.com/anuncios.html</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.obratudela.com/materiales.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.obratudela.com/topografia.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.obratudela.com/aviso-legal.html</loc>
@@ -60,18 +42,6 @@
     <lastmod>2026-08-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.obratudela.com/catalogo.json</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.obratudela.com/anuncios.json</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.obratudela.com/llms.txt</loc>

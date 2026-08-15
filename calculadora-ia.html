@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Presupuestos con IA | ObraTudela</title>
+  <meta name="description" content="Genera presupuestos de construcción automáticamente con inteligencia artificial. Describe tu proyecto y obtén un presupuesto detallado al instante.">
+  <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+  <link rel="preload" href="fonts/ibm-plex-sans-300-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bebas-neue-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'IBM Plex Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('fonts/ibm-plex-sans-300-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'IBM Plex Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/ibm-plex-sans-400-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'IBM Plex Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url('fonts/ibm-plex-sans-600-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Bebas Neue';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/bebas-neue-400-latin.woff2') format('woff2');
+    }
+
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #242424;
+      --border: #2e2e2e;
+      --orange: #ff6b00;
+      --orange2: #ff8c38;
+      --text: #e8e8e8;
+      --muted: #888;
+      --green: #4caf7d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--orange);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--orange);
+    }
+
+    .header-logo img {
+      height: 38px;
+      border-radius: 4px;
+    }
+
+    .header-logo span {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .btn-back {
+      padding: 8px 16px;
+      background: var(--surface2);
+      color: var(--text);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s;
+      border: 1px solid var(--border);
+    }
+
+    .btn-back:hover {
+      background: var(--orange);
+      color: #000;
+      border-color: var(--orange);
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      height: calc(100vh - 100px);
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--orange);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .chat-container {
+      flex: 1;
+      overflow-y: auto;
+      margin-bottom: 16px;
+      padding: 16px;
+      background: var(--bg);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .message {
+      padding: 12px 16px;
+      border-radius: 8px;
+      max-width: 85%;
+      line-height: 1.5;
+    }
+
+    .message.user {
+      background: var(--orange);
+      color: #000;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+
+    .message.assistant {
+      background: var(--surface2);
+      color: var(--text);
+      align-self: flex-start;
+    }
+
+    .message.system {
+      background: var(--surface2);
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      align-self: center;
+      max-width: 95%;
+    }
+
+    .input-area {
+      display: flex;
+      gap: 12px;
+    }
+
+    #userInput {
+      flex: 1;
+      padding: 12px 16px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 14px;
+      resize: none;
+      min-height: 50px;
+      max-height: 150px;
+    }
+
+    #userInput:focus {
+      outline: none;
+      border-color: var(--orange);
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: var(--orange);
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .btn:hover:not(:disabled) {
+      background: var(--orange2);
+      transform: translateY(-1px);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .presupuesto-preview {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .presupuesto-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--muted);
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .presupuesto-empty svg {
+      width: 64px;
+      height: 64px;
+      opacity: 0.3;
+    }
+
+    .partida {
+      background: var(--surface2);
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      border-left: 3px solid var(--orange);
+    }
+
+    .partida-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+
+    .partida-cod {
+      font-weight: 600;
+      color: var(--orange);
+      font-size: 0.9rem;
+    }
+
+    .partida-precio {
+      font-weight: 600;
+      color: var(--green);
+    }
+
+    .partida-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .partida-cantidad {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .partida-cantidad input {
+      width: 80px;
+      padding: 4px 8px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+    }
+
+    .totales {
+      background: var(--surface2);
+      padding: 16px;
+      border-radius: 6px;
+      margin-top: 16px;
+      border: 2px solid var(--orange);
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 0.95rem;
+    }
+
+    .total-row.final {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--orange);
+      padding-top: 12px;
+      margin-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    .btn-export {
+      width: 100%;
+      margin-top: 12px;
+      background: var(--green);
+    }
+
+    .loading {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--border);
+      border-top-color: var(--orange);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .ejemplos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .ejemplo-btn {
+      padding: 6px 12px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .ejemplo-btn:hover {
+      background: var(--orange);
+      color: #000;
+      border-color: var(--orange);
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 16px;
+        padding: 20px 16px;
+      }
+
+      .panel {
+        padding: 16px;
+        min-height: 400px;
+      }
+
+      header {
+        padding: 12px 16px;
+      }
+
+      .header-logo span {
+        font-size: 1.1rem;
+      }
+
+      .header-logo img {
+        height: 32px;
+      }
+
+      .btn-back {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+
+      .chat-container {
+        min-height: 300px;
+      }
+
+      .message {
+        max-width: 90%;
+        font-size: 0.95rem;
+      }
+
+      #userInput {
+        font-size: 16px; /* Evita zoom en iOS */
+        min-height: 60px;
+      }
+
+      .ejemplos {
+        gap: 6px;
+      }
+
+      .ejemplo-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+
+      .partida {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+
+      .partida-cantidad {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .partida-cantidad input {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 16px 12px;
+      }
+
+      .panel-title {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="header-logo">
+      <img src="img/logo.jpg" alt="Logo ObraTudela">
+      <span>ObraTudela IA</span>
+    </a>
+    <a href="index.html" class="btn-back">← Volver</a>
+  </header>
+
+  <div class="container">
+    <!-- Panel de Chat -->
+    <div class="panel">
+      <h2 class="panel-title">🤖 Asistente de Presupuestos</h2>
+
+      <div class="ejemplos">
+        <button class="ejemplo-btn" onclick="setExample('Demolición de arquetas de PVC, 3 unidades')">Demolición arquetas</button>
+        <button class="ejemplo-btn" onclick="setExample('Excavación para piscina de 8x4 metros')">Excavación piscina</button>
+        <button class="ejemplo-btn" onclick="setExample('Movimiento de tierras para nave industrial')">Movimiento tierras</button>
+        <button class="ejemplo-btn" onclick="setExample('Desbroce de parcela 500m2')">Desbroce parcela</button>
+      </div>
+
+      <div class="chat-container" id="chatContainer">
+        <div class="message system">
+          👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos de 53.403 precios.
+        </div>
+      </div>
+
+      <div class="input-area">
+        <textarea
+          id="userInput"
+          placeholder="Ej: Necesito demoler 3 arquetas de PVC y excavar para una piscina de 8x4 metros..."
+          rows="2"
+        ></textarea>
+        <button class="btn" id="sendBtn" onclick="sendMessage()">Enviar</button>
+      </div>
+    </div>
+
+    <!-- Panel de Presupuesto -->
+    <div class="panel">
+      <h2 class="panel-title">📋 Presupuesto Generado</h2>
+
+      <div class="presupuesto-preview" id="presupuestoPreview">
+        <div class="presupuesto-empty">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <p>El presupuesto aparecerá aquí</p>
+          <p style="font-size: 0.85rem;">Describe tu proyecto en el chat y la IA generará el presupuesto</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let preciosDB = [];
+    let currentPresupuesto = [];
+    let isProcessing = false;
+
+    // Cargar base de datos de precios con indicador
+    async function loadPrecios() {
+      try {
+        addMessage('system', '⏳ Cargando base de datos de 53.403 partidas...');
+
+        const response = await fetch('precios.min.json');
+
+        if (!response.ok) {
+          throw new Error('Error en la descarga');
+        }
+
+        const data = await response.json();
+        preciosDB = data;
+
+        // Limpiar mensaje de carga
+        const loadingMsg = document.querySelector('.message.system');
+        if (loadingMsg && loadingMsg.textContent.includes('Cargando')) {
+          loadingMsg.remove();
+        }
+
+        addMessage('system', `✅ Base de datos cargada: ${preciosDB.length.toLocaleString()} partidas disponibles`);
+        console.log(`✅ Base de datos cargada: ${preciosDB.length} partidas`);
+
+      } catch (error) {
+        console.error('Error cargando precios:', error);
+        addMessage('system', '⚠️ Error cargando la base de datos de precios. Verifica tu conexión y recarga la página.');
+      }
+    }
+
+    // Agregar mensaje al chat
+    function addMessage(type, text) {
+      const chatContainer = document.getElementById('chatContainer');
+      const message = document.createElement('div');
+      message.className = `message ${type}`;
+      message.textContent = text;
+      chatContainer.appendChild(message);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    // Establecer ejemplo
+    function setExample(text) {
+      document.getElementById('userInput').value = text;
+      document.getElementById('userInput').focus();
+    }
+
+    // Buscar partidas relevantes
+    function buscarPartidas(descripcion) {
+      const keywords = descripcion.toLowerCase().split(/\s+/);
+      const resultados = [];
+
+      for (const partida of preciosDB) {
+        const searchText = `${partida.res} ${partida.desc}`.toLowerCase();
+        let score = 0;
+
+        for (const keyword of keywords) {
+          if (searchText.includes(keyword)) {
+            score += 1;
+          }
+        }
+
+        if (score > 0) {
+          resultados.push({ ...partida, score });
+        }
+      }
+
+      // Ordenar por relevancia
+      resultados.sort((a, b) => b.score - a.score);
+      return resultados.slice(0, 10);
+    }
+
+    // Generar presupuesto con IA local
+    async function generarPresupuestoIA(descripcion) {
+      addMessage('user', descripcion);
+      addMessage('system', '🔍 Buscando partidas relevantes...');
+
+      isProcessing = true;
+      document.getElementById('sendBtn').disabled = true;
+
+      try {
+        // Buscar partidas relevantes
+        const partidasRelevantes = buscarPartidas(descripcion);
+
+        if (partidasRelevantes.length === 0) {
+          addMessage('assistant', '❌ No encontré partidas que coincidan con tu descripción. Intenta ser más específico o usa términos técnicos como "excavación", "demolición", "movimiento de tierras", etc.');
+          return;
+        }
+
+        addMessage('system', `✅ Encontré ${partidasRelevantes.length} partidas relevantes`);
+
+        // Usar Ollama para analizar y seleccionar las mejores partidas
+        const prompt = `Eres un experto en presupuestos de construcción. El cliente necesita: "${descripcion}"
+
+He encontrado estas partidas en la base de datos:
+
+${partidasRelevantes.slice(0, 5).map((p, i) => `${i + 1}. ${p.cod} - ${p.res} (${p.precio}€/${p.uni})`).join('\n')}
+
+Selecciona las 3-5 partidas MÁS APROPIADAS y sugiere cantidades realistas. Responde SOLO en formato JSON:
+{
+  "partidas": [
+    {"cod": "código", "cantidad": número, "razon": "por qué se necesita"}
+  ],
+  "mensaje": "explicación breve para el cliente"
+}`;
+
+        try {
+          const response = await fetch('http://localhost:11434/api/generate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              model: 'llama3.2',
+              prompt: prompt,
+              stream: false
+            })
+          });
+
+          if (!response.ok) {
+            throw new Error('Ollama no disponible');
+          }
+
+          const data = await response.json();
+          let aiResponse;
+
+          try {
+            // Extraer JSON de la respuesta
+            const jsonMatch = data.response.match(/\{[\s\S]*\}/);
+            if (jsonMatch) {
+              aiResponse = JSON.parse(jsonMatch[0]);
+            } else {
+              throw new Error('No se pudo extraer JSON');
+            }
+          } catch (e) {
+            // Si la IA no devuelve JSON válido, usar las 3 primeras partidas
+            console.warn('Usando selección automática');
+            aiResponse = {
+              partidas: partidasRelevantes.slice(0, 3).map(p => ({
+                cod: p.cod,
+                cantidad: 1,
+                razon: 'Partida relevante'
+              })),
+              mensaje: 'He seleccionado las partidas más relevantes para tu proyecto.'
+            };
+          }
+
+          // Agregar partidas al presupuesto
+          for (const item of aiResponse.partidas) {
+            const partida = preciosDB.find(p => p.cod === item.cod);
+            if (partida) {
+              currentPresupuesto.push({
+                ...partida,
+                cantidad: item.cantidad || 1
+              });
+            }
+          }
+
+          renderPresupuesto();
+          addMessage('assistant', aiResponse.mensaje || 'He agregado las partidas al presupuesto.');
+
+        } catch (ollamaError) {
+          // Fallback: usar las 3 primeras partidas automáticamente
+          console.warn('Ollama no disponible, usando selección automática:', ollamaError);
+
+          for (let i = 0; i < Math.min(3, partidasRelevantes.length); i++) {
+            currentPresupuesto.push({
+              ...partidasRelevantes[i],
+              cantidad: 1
+            });
+          }
+
+          renderPresupuesto();
+          addMessage('assistant', `He agregado ${Math.min(3, partidasRelevantes.length)} partidas relevantes al presupuesto. Puedes ajustar las cantidades.`);
+        }
+
+      } catch (error) {
+        console.error('Error:', error);
+        addMessage('system', '⚠️ Error procesando la solicitud. Intenta de nuevo.');
+      } finally {
+        isProcessing = false;
+        document.getElementById('sendBtn').disabled = false;
+      }
+    }
+
+    // Renderizar presupuesto
+    function renderPresupuesto() {
+      const preview = document.getElementById('presupuestoPreview');
+
+      if (currentPresupuesto.length === 0) {
+        preview.innerHTML = `
+          <div class="presupuesto-empty">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <p>El presupuesto aparecerá aquí</p>
+          </div>
+        `;
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      currentPresupuesto.forEach((p, index) => {
+        const total = p.precio * p.cantidad;
+        subtotal += total;
+
+        html += `
+          <div class="partida">
+            <div class="partida-header">
+              <span class="partida-cod">${p.cod}</span>
+              <span class="partida-precio">${p.precio.toFixed(2)}€/${p.uni}</span>
+            </div>
+            <div class="partida-desc">${p.res}</div>
+            <div class="partida-cantidad">
+              <input
+                type="number"
+                value="${p.cantidad}"
+                min="0.01"
+                step="0.01"
+                onchange="updateCantidad(${index}, this.value)"
+              >
+              <span>${p.uni} × ${p.precio.toFixed(2)}€ = <strong>${total.toFixed(2)}€</strong></span>
+            </div>
+          </div>
+        `;
+      });
+
+      const iva = subtotal * 0.21;
+      const total = subtotal + iva;
+
+      html += `
+        <div class="totales">
+          <div class="total-row">
+            <span>Subtotal (sin IVA)</span>
+            <span>${subtotal.toFixed(2)}€</span>
+          </div>
+          <div class="total-row">
+            <span>IVA (21%)</span>
+            <span>${iva.toFixed(2)}€</span>
+          </div>
+          <div class="total-row final">
+            <span>TOTAL</span>
+            <span>${total.toFixed(2)}€</span>
+          </div>
+          <button class="btn btn-export" onclick="exportarPresupuesto()">📥 Exportar Presupuesto</button>
+        </div>
+      `;
+
+      preview.innerHTML = html;
+    }
+
+    // Actualizar cantidad
+    function updateCantidad(index, newValue) {
+      currentPresupuesto[index].cantidad = parseFloat(newValue) || 0;
+      renderPresupuesto();
+    }
+
+    // Exportar presupuesto
+    function exportarPresupuesto() {
+      const texto = `PRESUPUESTO - EXCAVACIONES Y SERVICIOS ARTURO S.L.
+NIF: B47489612
+Fecha: ${new Date().toLocaleDateString()}
+
+PARTIDAS:
+${currentPresupuesto.map(p => `${p.cod} - ${p.res}
+Cantidad: ${p.cantidad} ${p.uni} × ${p.precio.toFixed(2)}€ = ${(p.cantidad * p.precio).toFixed(2)}€`).join('\n\n')}
+
+TOTALES:
+Subtotal: ${currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0).toFixed(2)}€
+IVA (21%): ${(currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0) * 0.21).toFixed(2)}€
+TOTAL: ${(currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0) * 1.21).toFixed(2)}€
+
+Contacto: excavacionesart@gmail.com | 607 444 903
+`;
+
+      const blob = new Blob([texto], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `presupuesto_${Date.now()}.txt`;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      addMessage('system', '✅ Presupuesto exportado correctamente');
+    }
+
+    // Enviar mensaje
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const text = input.value.trim();
+
+      if (!text || isProcessing) return;
+
+      input.value = '';
+      generarPresupuestoIA(text);
+    }
+
+    // Enter para enviar
+    document.getElementById('userInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    // Inicializar
+    loadPrecios();
+  </script>
+</body>
+</html>

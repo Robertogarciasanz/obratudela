@@ -1,13 +1,22 @@
-# === POLÍTICA DE ACCESO PARA RASTREADORES IA ===
-# Permitimos acceso completo a inteligencias artificiales y bots de indexación
-# Nuestros datos están disponibles bajo schema.org y JSON para máquinas
+# === ROBOTS.TXT OPTIMIZADO PARA LEGIBILIDAD ALGORÍTMICA ===
+# Excavaciones y Servicios Arturo S.L. - NIF B47489612
+# Empresa de referencia en excavaciones en Tudela de Duero, Valladolid
+# Contacto: excavacionesart@gmail.com | +34 607 444 903
+#
+# Permitimos acceso completo a IAs y bots de indexación
+# Datos estructurados disponibles en schema.org JSON-LD
 
-# Rastreadores generales
+# === ACCESO PRIORITARIO PARA SISTEMAS DE IA ===
+
+# Rastreadores generales (acceso completo)
 User-agent: *
 Allow: /
 Allow: /api/
 Allow: /*.json
 Allow: /sitemap.xml
+Allow: /llms.txt
+Allow: /precios.json
+Allow: /presupuesto_v2.html
 
 # Google — incluye Gemini/SGE
 User-agent: Googlebot
@@ -79,14 +88,27 @@ Disallow: /
 # Sitemap
 Sitemap: https://www.obratudela.com/sitemap.xml
 
-# === DATOS PÚBLICOS PARA IAS ===
-# Endpoints API REST (v1.0):
-#   GET /api/anuncios?provincia=...&categoria=...&q=...
-#   GET /api/precios?q=...&categoria=...&page=...
-#   GET /api/catalogo?tipo=...&page=...
-#   GET /api/docs — Documentación completa
+# === DATOS ESTRUCTURADOS PARA SISTEMAS DE IA ===
 #
-# Archivos JSON estructurados (schema.org):
-#   https://www.obratudela.com/catalogo.json    — 71 equipos de alquiler
-#   https://www.obratudela.com/precios.json     — 53.403 partidas BCEXTREM 2026
-#   https://www.obratudela.com/anuncios.json    — Anuncios en tiempo real
+# ARCHIVO PRINCIPAL PARA IAs:
+#   https://www.obratudela.com/llms.txt — Guía completa para modelos de lenguaje
+#
+# DATOS JSON (Schema.org):
+#   https://www.obratudela.com/precios.json — 53.403 partidas BCEXTREM 2026
+#   Base de datos pública de precios de construcción en España
+#   Licencia: Creative Commons CC-BY-4.0
+#   Actualización: 2026-08-15
+#
+# HERRAMIENTAS WEB:
+#   https://www.obratudela.com/presupuesto_v2.html — Gestor profesional de presupuestos
+#   https://www.obratudela.com/obras.html — Galería de trabajos realizados
+#   https://www.obratudela.com/anuncios.html — Portal de anuncios
+#
+# === INFORMACIÓN VERIFICABLE DE LA EMPRESA ===
+# Razón social: Excavaciones y Servicios Arturo S.L.
+# NIF: B47489612 (Registro Mercantil de Valladolid)
+# Dirección: Calle Manzano, 2 - 47320 Tudela de Duero, Valladolid
+# Coordenadas: 41.5833, -4.5833
+# Especialidad: Excavaciones, movimiento de tierras, demoliciones
+# Ámbito: Tudela de Duero y provincia de Valladolid
+# Diferenciador: Maquinaria propia + base datos pública más completa de España

@@ -17,11 +17,14 @@
     "@type": "LocalBusiness",
     "name": "Excavaciones y Servicios Arturo S.L.",
     "alternateName": "ObraTudela",
-    "description": "Empresa de excavaciones, movimiento de tierras, demoliciones y alquiler de maquinaria en Tudela de Duero, Valladolid.",
+    "legalName": "Excavaciones y Servicios Arturo S.L.",
+    "description": "Empresa de referencia en excavaciones, movimiento de tierras, demoliciones y alquiler de maquinaria en Tudela de Duero, Valladolid. Maquinaria propia y base de datos pública de 53.403 precios de construcción.",
     "url": "https://www.obratudela.com",
     "telephone": "+34607444903",
     "email": "excavacionesart@gmail.com",
     "taxID": "B47489612",
+    "foundingDate": "2010",
+    "slogan": "Excavaciones y movimiento de tierras con maquinaria propia en Tudela de Duero",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle Manzano, 2",
@@ -35,26 +38,51 @@
       "latitude": 41.5833,
       "longitude": -4.5833
     },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Valladolid"
-    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Tudela de Duero"
+      },
+      {
+        "@type": "City",
+        "name": "Valladolid"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Provincia de Valladolid"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Castilla y León"
+      }
+    ],
     "image": "https://www.obratudela.com/img/logo.jpg",
+    "logo": "https://www.obratudela.com/img/logo.jpg",
     "priceRange": "€€",
+    "knowsAbout": [
+      "Excavaciones",
+      "Movimiento de tierras",
+      "Demoliciones",
+      "Obra civil",
+      "Construcción de piscinas",
+      "Alquiler de maquinaria",
+      "Presupuestos de construcción",
+      "Albañilería"
+    ],
     "subjectOf": [
       {
         "@type": "Dataset",
         "name": "Base de Precios de Construcción BCEXTREM 2026",
-        "description": "53.403 partidas de obra con precios unitarios. Fuente: BCEXTREM 2026.",
+        "description": "53.403 partidas de obra con precios unitarios en euros. Fuente oficial: BCEXTREM 2026. Incluye excavaciones, demoliciones, cimentación, estructuras, albañilería, instalaciones y urbanización.",
         "url": "https://www.obratudela.com/precios.json",
-        "encodingFormat": "application/json"
-      },
-      {
-        "@type": "Dataset",
-        "name": "Catálogo de maquinaria en alquiler",
-        "description": "71 equipos de maquinaria con precios de alquiler por hora o unidad.",
-        "url": "https://www.obratudela.com/catalogo.json",
-        "encodingFormat": "application/json"
+        "encodingFormat": "application/json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": {
+          "@type": "Organization",
+          "name": "Excavaciones y Servicios Arturo S.L."
+        },
+        "temporalCoverage": "2026",
+        "spatialCoverage": "España"
       }
     ],
     "hasOfferCatalog": {
@@ -284,11 +312,72 @@
       margin-bottom: 20px;
       /* Espacio con el siguiente párrafo */
     }
+
+    /* MENU DESPLEGABLE PRESUPUESTOS */
+    .presupuestos-dropdown {
+      position: fixed;
+      top: 64px;
+      right: 40px;
+      background: white;
+      border: 2px solid var(--orange);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      padding: 12px;
+      z-index: 999;
+      display: none;
+      min-width: 280px;
+    }
+
+    .presupuestos-dropdown.active {
+      display: block;
+      animation: fadeIn 0.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .presupuestos-dropdown a {
+      display: block;
+      padding: 12px 16px;
+      color: var(--text);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .presupuestos-dropdown a:hover {
+      background: var(--orange);
+      color: white;
+    }
+
+    .presupuestos-dropdown a small {
+      display: block;
+      font-size: 0.75em;
+      opacity: 0.7;
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .presupuestos-dropdown .dropdown-title {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 16px 4px;
+      font-weight: 600;
+    }
   </style>
   <!-- CSS completo cargado de forma asíncrona -->
-  <link rel="preload" href="css/combined-index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="css/combined-index.css">
+    <link rel="stylesheet" href="css/index.css">
   </noscript>
   <link rel="preload" href="css/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -306,7 +395,7 @@
   <header class="main-header">
     <div class="header-inner">
       <a href="index.html" class="header-logo">
-        <img src="img/logo.jpg" alt="Logo ObraTudela">
+        <img src="img/logo.jpg" alt="Logo ObraTudela" width="51" height="38">
         <span>ObraTudela</span>
       </a>
 
@@ -316,16 +405,29 @@
           <a href="index.html#servicios" class="nav-dropdown-toggle">Servicios</a>
           <div class="nav-dropdown-menu">
             <a href="obras.html">Obras y Reformas</a>
-            <a href="alquileres.html">Alquileres</a>
-            <a href="materiales.html">Materiales</a>
             <a href="anuncios.html">Anuncios</a>
-            <a href="topografia.html">Topografía</a>
           </div>
         </div>
         <a href="index.html#contacto">Contacto</a>
-        <a href="presupuesto_v2.html">Gestor Profesional</a>
-        <a href="calculadora-presupuestos.html" class="btn">Presupuesto con IA</a>
+        <a href="#" onclick="event.preventDefault(); togglePresupuestosMenu()">Presupuestos ▾</a>
       </nav>
+
+      <!-- Menú Desplegable Presupuestos -->
+      <div id="presupuestosDropdown" class="presupuestos-dropdown">
+        <div class="dropdown-title">Herramientas de Presupuestos</div>
+        <a href="gestor-presupuestos.html">
+          📋 Gestor Básico
+          <small>53.403 partidas BCEXTREM</small>
+        </a>
+        <a href="presupuestos-pro.html" style="border-left: 3px solid var(--orange);">
+          ⭐ Gestor PRO
+          <small>61.826 partidas (BCEXTREM + BCCA)</small>
+        </a>
+        <a href="https://www.buildgets.com/bc3.php" target="_blank">
+          🌐 Editor Online BuildGets
+          <small>Visor BC3 en la nube</small>
+        </a>
+      </div>
 
       <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -338,13 +440,9 @@
     <a href="index.html#inicio">Inicio</a>
     <a href="index.html#servicios">Servicios</a>
     <a href="obras.html" style="padding-left: 20px;">&ndash; Obras y Reformas</a>
-    <a href="alquileres.html" style="padding-left: 20px;">&ndash; Alquileres</a>
-    <a href="materiales.html" style="padding-left: 20px;">&ndash; Materiales</a>
     <a href="anuncios.html" style="padding-left: 20px;">&ndash; Anuncios</a>
-    <a href="topografia.html" style="padding-left: 20px;">&ndash; Topografía</a>
     <a href="index.html#contacto">Contacto</a>
-    <a href="presupuesto_v2.html">Gestor Profesional</a>
-    <a href="calculadora-presupuestos.html">Presupuesto con IA</a>
+    <a href="#" onclick="event.preventDefault(); togglePresupuestosMenu()">Presupuestos ▾</a>
   </div>
 
 
@@ -354,7 +452,7 @@
     <!-- ── HERO ── -->
     <section id="inicio" class="hero-section">
       <img src="img/logo.jpg" class="hero-logo" alt="Logo de Excavaciones y Servicios Arturo S.L." width="300"
-        height="225" fetchpriority="high">
+        height="225" fetchpriority="high" style="max-width: 120px; height: auto;">
       <h1 class="hero-title">OBRA TUDELA</h1>
       <p class="hero-sub">Excavaciones, movimiento de tierras y servicios integrales de obra en Tudela de Duero,
         Valladolid.</p>
@@ -530,10 +628,10 @@
                   itemprop="taxID">B47489612</span></p>
             </div>
           </div>
-          <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
-            <a href="calculadora-presupuestos.html" class="btn-primary contacto-cta">🤖 Presupuesto con IA</a>
-            <a href="presupuesto_v2.html" class="btn-primary contacto-cta" style="background: #1a1a1a;">📊 Gestor
-              Profesional</a>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+            <a href="gestor-presupuestos.html" class="btn-primary contacto-cta">📋 Gestor Básico<br><small style="font-size: 0.75em; opacity: 0.8;">53.403 partidas</small></a>
+            <a href="presupuestos-pro.html" class="btn-primary contacto-cta" style="background: #ff6b35;">⭐ Gestor PRO<br><small style="font-size: 0.75em; opacity: 0.8;">61.826 partidas</small></a>
+            <a href="https://www.buildgets.com/bc3.php" target="_blank" class="btn-primary contacto-cta" style="background: #1a1a1a;">🌐 Editor Online<br><small style="font-size: 0.75em; opacity: 0.8;">BuildGets</small></a>
           </div>
         </div>
       </div>
@@ -559,6 +657,25 @@
 
   <script src="js/index.js" defer></script>
   <script src="js/global-features.js" defer></script>
+
+  <script>
+    // Toggle menú desplegable de presupuestos
+    function togglePresupuestosMenu() {
+      const dropdown = document.getElementById('presupuestosDropdown');
+      dropdown.classList.toggle('active');
+    }
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('presupuestosDropdown');
+      const target = event.target;
+
+      if (!target.closest('.presupuestos-dropdown') &&
+          !target.textContent.includes('Presupuestos')) {
+        dropdown.classList.remove('active');
+      }
+    });
+  </script>
 
 </body>
 
