@@ -159,3 +159,19 @@
         flex-shrink: 0;
     }
 }
+
+/*
+ * OCULTAR FLECHAS EN INPUTS DE TIPO NÚMERO
+ * Problema: Los navegadores muestran flechas de incremento/decremento que son inconsistentes.
+ * Solución: Ocultarlas para un diseño más limpio.
+ */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
