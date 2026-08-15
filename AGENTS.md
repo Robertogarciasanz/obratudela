@@ -32,7 +32,8 @@ Este repositorio contiene el sitio web estático de ObraTudela (Excavaciones y S
 - Menú móvil: los mismos enlaces, incluido "Obras y Reformas". Si se añade una página nueva, añadirla a AMBOS menús.
 
 ## Datos
-- precios.json: base de precios BCEXTREM 2026 (54.777 partidas, ~19 MB). No cargarlo con fetch desde páginas públicas: es demasiado grande. Los precios usados por las calculadoras van embebidos en el HTML.
+- precios.json: base de precios BCEXTREM 2026 (53.403 partidas, ~19 MB). No cargarlo con fetch desde páginas públicas: es demasiado grande.
+- precios-busqueda.json: versión compacta (sin espacios) de precios.json, ~15,7 MB (~1,5 MB comprimido con gzip). Usado por calculadora-presupuestos.html vía fetch asíncrono en segundo plano tras el primer pintado, con caché en sessionStorage y fallback a una lista mínima embebida si falla la carga.
 - catalogo.json: maquinaria en alquiler (71 equipos).
 - anuncios.json: anuncios de compraventa.
 
