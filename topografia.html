@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Medición de Parcelas — ObraTudela</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herramienta de medición de parcelas con GPS híbrido y exportación de plano PDF profesional. ObraTudela, Tudela de Duero.">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Topografía">
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="canonical" href="https://www.obratudela.com/topografia.html">
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.obratudela.com/topografia.html",
+          "url": "https://www.obratudela.com/topografia.html",
+          "name": "Medición de Parcelas — ObraTudela",
+          "description": "Herramienta gratuita de medición de parcelas con GPS híbrido y exportación de plano PDF profesional.",
+          "inLanguage": "es",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.obratudela.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Medición de Parcelas", "item": "https://www.obratudela.com/topografia.html"}
+            ]
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Medidor de Parcelas con GPS — ObraTudela",
+          "url": "https://www.obratudela.com/topografia.html",
+          "description": "Herramienta web gratuita para medir parcelas con GPS en tiempo real, calcular áreas en m² y hectáreas, y exportar planos PDF profesionales.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Any (Web Browser)",
+          "inLanguage": "es",
+          "featureList": [
+            "Medición GPS en tiempo real con círculo de precisión",
+            "Cálculo de área en m² y hectáreas",
+            "Exportación de plano PDF profesional con brújula y tabla de vértices",
+            "Mapa satelital interactivo"
+          ],
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+          "provider": {
+            "@type": "Organization",
+            "name": "Excavaciones y Servicios Arturo S.L.",
+            "url": "https://www.obratudela.com"
+          }
+        }
+      ]
+    }
+    </script>
+    <link rel="dns-prefetch" href="https://mt1.google.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/topografia.css">
+</head>
+<body>
+
+<!-- INTRO OVERLAY -->
+<div id="introOverlay" style="position:fixed;inset:0;z-index:9998;background:linear-gradient(135deg,#0d1b2a 0%,#1a2e42 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;font-family:sans-serif;color:#ecf0f1;">
+  <div style="max-width:480px;width:100%">
+    <div style="font-size:2.5rem;margin-bottom:10px">📐</div>
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:3px;color:#ff6b00;text-transform:uppercase;margin-bottom:8px">Herramienta gratuita · ObraTudela</div>
+    <h1 style="font-size:clamp(1.6rem,6vw,2.6rem);font-weight:900;line-height:1.1;margin-bottom:10px">MIDE TU PARCELA<br>DESDE EL MÓVIL</h1>
+    <p style="color:#94a3b8;font-size:0.88rem;margin-bottom:20px;line-height:1.6">GPS en tiempo real · Mapa satelital · Plano PDF profesional.<br>Sin apps. Funciona desde el navegador.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px;text-align:left">
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">🎯</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">GPS en tiempo real</div><div style="font-size:0.72rem;color:#94a3b8">Alta precisión</div></div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">📐</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">Cálculo automático</div><div style="font-size:0.72rem;color:#94a3b8">m² y hectáreas</div></div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">🛰️</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">Mapa satelital</div><div style="font-size:0.72rem;color:#94a3b8">Alta resolución</div></div>
+      <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:10px"><div style="font-size:1.1rem;margin-bottom:3px">💾</div><div style="font-size:0.78rem;font-weight:700;color:#ff6b00;margin-bottom:2px">Plano PDF</div><div style="font-size:0.72rem;color:#94a3b8">Con coordenadas y distancias</div></div>
+    </div>
+    <button id="btnCerrarIntro" style="background:#ff6b00;color:#000;border:none;border-radius:6px;padding:14px 48px;font-size:1.05rem;font-weight:900;cursor:pointer;letter-spacing:1px;width:100%;max-width:260px;margin-bottom:10px">Comenzar →</button>
+    <p style="font-size:0.7rem;color:#64748b;margin-bottom:14px">Requiere activar la ubicación en el dispositivo</p>
+    <a href="index.html" style="color:#64748b;font-size:0.76rem;text-decoration:none;border:1px solid #334155;border-radius:4px;padding:4px 12px">← Volver a inicio</a>
+  </div>
+</div>
+
+<!-- DIÁLOGO PROPIO (reemplaza alert / confirm / prompt) -->
+<div class="dialog-overlay" id="dlgOverlay">
+    <div class="dialog-box">
+        <p class="dialog-msg" id="dlgMsg"></p>
+        <input class="dialog-inp" id="dlgInp" type="text" style="display:none">
+        <div class="dialog-btns">
+            <button class="dialog-btn dialog-btn-cancel" id="dlgCancel" style="display:none">Cancelar</button>
+            <button class="dialog-btn dialog-btn-ok" id="dlgOk">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+<div class="controles">
+    <div class="autor">
+        <span>📐 <strong>Topografía Pro</strong> &nbsp;·&nbsp; ObraTudela &nbsp;·&nbsp; v2.1</span>
+        <a href="anuncios.html" class="btn-volver" style="margin-right:5px">📢 Anuncios</a>
+        <a href="index.html" class="btn-volver">← Volver</a>
+    </div>
+    <button class="btn btn-seguir" id="btnSeguir">🎯 POSICIÓN</button>
+    <button class="btn btn-add">➕ PUNTO</button>
+    <button class="btn btn-print">💾 PLANO</button>
+    <button class="btn btn-borrar">🗑️ RESET</button>
+</div>
+
+<div id="map"></div>
+
+<div id="info">
+    <span id="status">Esperando datos...</span>
+    <span id="areaDisplay">0.00 m²</span>
+    <table id="tablaCoord">
+        <thead><tr><th>Nº</th><th>Latitud</th><th>Longitud</th><th>Fuente</th></tr></thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
+</div>
+
+<script src="js/topografia.js" defer></script>
+</body>
+</html>

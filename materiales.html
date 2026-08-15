@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiales de Construcción de Segunda Mano — ObraTudela</title>
+    <meta name="description"
+        content="Compra y venta de materiales de construcción de segunda mano y excedentes de obra en Castilla y León. Ladrillos, tejas, aislantes, sanitarios y más.">
+    <meta name="keywords"
+        content="materiales construcción segunda mano, excedentes obra, venta ladrillos, tejas usadas, aislantes baratos, Valladolid, Castilla y León">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://www.obratudela.com/materiales.html">
+    <meta property="og:title" content="Materiales de Construcción de Segunda Mano — ObraTudela">
+    <meta property="og:description"
+        content="Portal para la compra y venta de materiales de construcción de segunda mano y excedentes de obra en Castilla y León.">
+    <meta property="og:url" content="https://www.obratudela.com/materiales.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/correcciones.css">
+    <link rel="stylesheet" href="css/anuncios.css">
+    <style>
+        .hero-anuncios h1 span {
+            color: #4caf7d;
+            /* Un verde para diferenciar de la maquinaria */
+        }
+
+        .cats-bar .cat-btn.activa {
+            background-color: #4caf7d;
+            border-color: #4caf7d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="img/logo.jpg" alt="Logo ObraTudela" width="51" height="38">
+                <span>ObraTudela</span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html#inicio">Inicio</a>
+                <div class="nav-dropdown">
+                    <a href="index.html#servicios" class="nav-dropdown-toggle">Servicios</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="obras.html">Obras y Reformas</a>
+                        <a href="alquileres.html">Alquileres</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="materiales.html">Materiales</a>
+                        <a href="topografia.html">Topografía</a>
+                    </div>
+                </div>
+                <a href="index.html#contacto">Contacto</a>
+                <a href="presupuesto_v2.html">Gestor Profesional</a>
+                <a href="calculadora-presupuestos.html" class="btn">Presupuesto con IA</a>
+            </nav>
+
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PANEL MENÚ MÓVIL -->
+    <div class="mobile-menu" id="mobileMenuPanel">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="obras.html" style="padding-left: 20px;">&ndash; Obras y Reformas</a>
+        <a href="alquileres.html" style="padding-left: 20px;">&ndash; Alquileres</a>
+        <a href="anuncios.html" style="padding-left: 20px;">&ndash; Anuncios</a>
+        <a href="materiales.html" style="padding-left: 20px;">&ndash; Materiales</a>
+        <a href="topografia.html" style="padding-left: 20px;">&ndash; Topografía</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="presupuesto_v2.html">Gestor Profesional</a>
+        <a href="calculadora-presupuestos.html">Presupuesto con IA</a>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero-anuncios">
+        <p class="subtitulo">Compraventa entre particulares y profesionales</p>
+        <h1>MATERIALES DE <span>CONSTRUCCIÓN</span></h1>
+        <p>Encuentra excedentes de obra y materiales de segunda mano. Publica gratis lo que no necesites. Contacto
+            directo
+            por teléfono.</p>
+        <div class="buscador-wrap">
+            <input type="text" id="buscador" placeholder="Buscar tejas, ladrillos, aislante...">
+            <button class="btn-buscar">🔍 Buscar</button>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <div class="cats-bar">
+        <div class="cats-inner">
+            <button class="cat-btn activa" data-categoria="todos">🧱 Todos</button>
+            <button class="cat-btn" data-categoria="aridos-cementos">⛏️ Áridos y Cementos</button>
+            <button class="cat-btn" data-categoria="ladrillos-bloques">🧱 Ladrillos y Bloques</button>
+            <button class="cat-btn" data-categoria="aislamientos">🌡️ Aislamientos</button>
+            <button class="cat-btn" data-categoria="cubiertas-tejas">🏠 Cubiertas y Tejas</button>
+            <button class="cat-btn" data-categoria="carpinteria">🚪 Carpintería</button>
+            <button class="cat-btn" data-categoria="sanitarios-griferia">🚽 Sanitarios y Grifería</button>
+            <button class="cat-btn" data-categoria="pavimentos-revestimientos">🎨 Pavimentos</button>
+            <button class="cat-btn" data-categoria="otros">📦 Otros</button>
+        </div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="contenido">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-cerrar" id="sidebarCerrarBtn">✕ Cerrar filtros</button>
+            <div class="filtro-card">
+                <h3>Precio</h3>
+                <div class="rango-precio">
+                    <div>
+                        <label>Mín (€)</label>
+                        <input type="number" id="precioMin" placeholder="0" min="0">
+                    </div>
+                    <div>
+                        <label>Máx (€)</label>
+                        <input type="number" id="precioMax" placeholder="∞" min="0">
+                    </div>
+                </div>
+                <button class="btn-filtrar">Aplicar</button>
+                <button class="btn-limpiar">✕ Limpiar filtros</button>
+            </div>
+
+            <div class="filtro-card">
+                <h3>Provincia</h3>
+                <select id="filtroProvincia">
+                    <option value="">Todas</option>
+                    <option>Ávila</option>
+                    <option>Burgos</option>
+                    <option>León</option>
+                    <option>Palencia</option>
+                    <option>Salamanca</option>
+                    <option>Segovia</option>
+                    <option>Soria</option>
+                    <option>Valladolid</option>
+                    <option>Zamora</option>
+                </select>
+            </div>
+
+            <div class="filtro-card">
+                <h3>Ordenar</h3>
+                <select id="ordenar">
+                    <option value="reciente">Más reciente</option>
+                    <option value="precio-asc">Precio ↑</option>
+                    <option value="precio-desc">Precio ↓</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- ANUNCIOS -->
+        <main class="zona-anuncios">
+            <div class="barra-resultado">
+                <span><strong id="contadorAnuncios">0</strong> materiales encontrados</span>
+                <button class="btn-filtros-movil">⚙ Filtros</button>
+                <select class="ordenar-select" id="ordenarMovil">
+                    <option value="reciente">Más reciente</option>
+                    <option value="precio-asc">Menor precio</option>
+                    <option value="precio-desc">Mayor precio</option>
+                </select>
+            </div>
+            <div class="grid-anuncios" id="gridAnuncios">
+                <!-- Los anuncios se cargarán aquí con JavaScript -->
+                <div style="padding: 40px; text-align: center; grid-column: 1 / -1; color: #888;">
+                    <p>Cargando materiales...</p>
+                    <p style="margin-top: 10px; font-size: 12px;">(Esta sección es un ejemplo y no tiene funcionalidad
+                        real todavía)
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Obra<span>Tudela</span></div>
+        <p>Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Tudela de Duero, Valladolid</p>
+        <p style="margin-top:12px;">
+            <a href="aviso-legal.html">Aviso legal</a>
+            <a href="tel:+34607444903">607 444 903</a>
+            <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>
+        </p>
+        <p style="margin-top:12px; font-size:11px;">© 2026 ObraTudela.com · Tudela de Duero, Valladolid</p>
+    </footer>
+
+    <!-- MODAL DETALLE (reutilizado de anuncios.html) -->
+    <div class="modal-overlay" id="modalDetalle">
+        <div class="modal-contenido">
+            <button class="modal-cerrar" id="modalCerrar">✕</button>
+            <div class="galeria-principal">
+                <div class="galeria-placeholder" id="galeriaPlaceholder">🧱</div>
+                <img class="galeria-img-grande" id="galeriaImgGrande" src="" alt="" style="display:none">
+            </div>
+            <div class="modal-info">
+                <div class="modal-titulo" id="modalTitulo"></div>
+                <div class="modal-precio" id="modalPrecio"></div>
+                <div class="modal-tags" id="modalTags"></div>
+                <div class="modal-descripcion" id="modalDescripcion"></div>
+                <div class="modal-contacto">
+                    <div>
+                        <p>Vendedor · <span id="modalProvincia"></span></p>
+                        <strong id="modalTelefono"></strong>
+                    </div>
+                    <a class="btn-llamar" id="modalBtnLlamar" href="#">📞 Llamar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</a>
+
+    <script src="js/global.js" defer></script>
+    <!-- <script src="js/materiales.js" defer></script> -->
+    <script src="js/global-features.js" defer></script>
+</body>
+
+</html>
