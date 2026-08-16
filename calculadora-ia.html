@@ -6,6 +6,7 @@
   <title>Calculadora de Presupuestos con IA | ObraTudela</title>
   <meta name="description" content="Genera presupuestos de construcción automáticamente con inteligencia artificial. Describe tu proyecto y obtén un presupuesto detallado al instante.">
   <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="preload" href="fonts/ibm-plex-sans-300-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -613,10 +614,12 @@
         addMessage('system', '⏳ Cargando base de precios unificada...');
 
         // Lista de URLs a intentar en orden de preferencia (más ligera primero)
-        // Nginx/GitHub Pages sirve automáticamente .gz si existe con Content-Encoding: gzip
+        // Intentar explícitamente .gz primero para servidores sin negociación automática
         const urls = [
-          'precios-busqueda.json',  // 0.86 MB (gzip) o 5.65 MB (sin comprimir)
-          'base-precios.json'        // 1.82 MB (gzip) o 18 MB (sin comprimir) - fallback con desc
+          'precios-busqueda.json.gz',  // 0.86 MB (comprimido) - ÓPTIMO
+          'precios-busqueda.json',     // 5.65 MB (sin comprimir)
+          'base-precios.json.gz',      // 1.82 MB (comprimido) - fallback con desc
+          'base-precios.json'          // 18 MB (sin comprimir) - último recurso
         ];
 
         let response = null;
@@ -639,7 +642,17 @@
           throw new Error('No se pudo cargar ninguna versión de la base de precios');
         }
 
-        const data = await response.json();
+        // Detectar si es archivo .gz y descomprimir con pako
+        let data;
+        if (urlUsada.endsWith('.gz')) {
+          const arrayBuffer = await response.arrayBuffer();
+          const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+          data = JSON.parse(decompressed);
+          console.log(`🗜️ Archivo descomprimido: ${urlUsada}`);
+        } else {
+          data = await response.json();
+        }
+
         preciosDB = data;
 
         // Limpiar mensaje de carga
