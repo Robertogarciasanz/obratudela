@@ -506,7 +506,7 @@
 
       <div class="chat-container" id="chatContainer">
         <div class="message system">
-          👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos de +59.000 precios (BCEXTREM + BCCA Andalucía).
+          👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos unificada con +59.000 precios.
         </div>
       </div>
 
@@ -601,9 +601,9 @@
     // Cargar base de datos de precios con indicador
     async function loadPrecios() {
       try {
-        addMessage('system', '⏳ Cargando base de datos de precios (BCEXTREM + BCCA)...');
+        addMessage('system', '⏳ Cargando base de precios unificada...');
 
-        const response = await fetch('precios-combinado.json');
+        const response = await fetch('base-precios.json');
 
         if (!response.ok) {
           throw new Error('Error en la descarga');
@@ -629,7 +629,7 @@
         if (loadingMsg && loadingMsg.textContent.includes('Cargando')) {
           loadingMsg.remove();
         }
-        addMessage('system', `⚠️ Base de datos reducida (${preciosDB.length} partidas). Para acceder a las 59.915 partidas completas, abre la web en obratudela.com`);
+        addMessage('system', `⚠️ Modo offline: ${preciosDB.length} partidas disponibles. Para acceder a la base completa (59.915 partidas), visita obratudela.com`);
       }
     }
 
