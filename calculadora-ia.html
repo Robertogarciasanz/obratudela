@@ -278,7 +278,16 @@
     .partida-desc {
       font-size: 0.85rem;
       color: var(--muted);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .partida-desc-larga {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      line-height: 1.4;
+      opacity: 0.8;
     }
 
     .partida-cantidad {
@@ -861,6 +870,7 @@
               </div>
             </div>
             <div class="partida-desc">${p.res}</div>
+            ${p.desc ? `<div class="partida-desc-larga">${p.desc}</div>` : ''}
             <div class="partida-cantidad">
               <input
                 type="number"
@@ -1039,7 +1049,10 @@
     <tbody>
       ${currentPresupuesto.map(p => `<tr>
         <td><span class="cod">${p.cod}</span></td>
-        <td>${p.res}</td>
+        <td>
+          <strong>${p.res}</strong>
+          ${p.desc ? `<br><span style="font-size: 0.85em; color: #666;">${p.desc}</span>` : ''}
+        </td>
         <td class="cantidad-col">${p.cantidad} ${p.uni}</td>
         <td class="precio-col">${p.precio.toFixed(2)} €</td>
         <td class="total-col">${(p.cantidad * p.precio).toFixed(2)} €</td>
