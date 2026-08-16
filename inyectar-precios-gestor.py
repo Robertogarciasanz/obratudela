@@ -67,8 +67,8 @@ def guess_sheet(item):
 
 
 def main():
-    print("[INFO] Cargando precios-combinado.json...")
-    with open('precios-combinado.json', 'r', encoding='utf-8') as f:
+    print("[INFO] Cargando base-precios.json...")
+    with open('base-precios.json', 'r', encoding='utf-8') as f:
         partidas = json.load(f)
     print(f"[OK] {len(partidas)} partidas cargadas")
 
@@ -91,7 +91,8 @@ def main():
             item.get('cod', ''),
             item.get('uni', ''),
             item.get('res', ''),
-            float(precio)
+            float(precio),
+            item.get('desc', '')  # descripción larga
         ]
         sheets[sheet].append(row)
 
