@@ -38,9 +38,15 @@
   </url>
   <url>
     <loc>https://www.obratudela.com/gestor-presupuestos.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.obratudela.com/base-precios-listado.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
@@ -51,10 +57,10 @@
   </url>
   <!-- Datos estructurados para IAs / motores de búsqueda -->
   <url>
-    <loc>https://www.obratudela.com/precios.json</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.obratudela.com/base-precios.json</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.obratudela.com/llms.txt</loc>

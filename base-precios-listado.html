@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Base de Precios de la Construcción - BCEXTREM + BCCA con 59.915 partidas. Listado completo con descripciones técnicas detalladas.">
+    <meta name="keywords" content="precios construcción, bcextrem, bcca, presupuestos, partidas construcción, extremadura, andalucía">
+    <meta name="robots" content="index, follow">
+    <title>Base de Precios de la Construcción - 59.915 Partidas | ObraTudela</title>
+    <style>
+        :root {
+            --primary: #ff6b00;
+            --dark: #1a1a1a;
+            --light: #f5f5f5;
+            --border: #ddd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .intro h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .search-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .partida {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .partida-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .partida-codigo {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .partida-precio {
+            font-weight: bold;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+
+        .partida-resumen {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .partida-descripcion {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .partida-unidad {
+            display: inline-block;
+            background: var(--light);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        #loading {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .partida-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Base de Precios de la Construcción</h1>
+        <p>BCEXTREM + BCCA · 59.915 Partidas con Descripciones Técnicas</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Base de Datos Unificada de Precios de Construcción</h2>
+            <p>
+                Esta base de precios combina <strong>BCEXTREM</strong> (Banco de Costes de Extremadura) y
+                <strong>BCCA</strong> (Base de Costes de la Construcción de Andalucía) en un único listado
+                con <strong>59.915 partidas</strong> actualizadas. Cada partida incluye código, descripción
+                técnica detallada, unidad de medida y precio unitario.
+            </p>
+            <p style="margin-top: 1rem;">
+                Ideal para arquitectos, aparejadores, ingenieros y profesionales de la construcción que
+                necesitan consultar precios oficiales para presupuestos, proyectos y valoraciones.
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="stat-total">59.915</div>
+                <div class="stat-label">Partidas Totales</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="stat-con-desc">98.7%</div>
+                <div class="stat-label">Con Descripción Larga</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">BCEXTREM + BCCA</div>
+                <div class="stat-label">Bases Unificadas</div>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar por código, descripción o palabra clave..." />
+        </div>
+
+        <div id="loading">Cargando base de precios...</div>
+        <div id="partidasContainer" style="display: none;"></div>
+    </div>
+
+    <script>
+        let precios = [];
+
+        async function cargarPrecios() {
+            try {
+                const response = await fetch('base-precios.json');
+                precios = await response.json();
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('partidasContainer').style.display = 'block';
+
+                // Mostrar primeras 100 partidas
+                mostrarPartidas(precios.slice(0, 100));
+
+                // Activar búsqueda
+                document.getElementById('searchInput').addEventListener('input', buscar);
+            } catch (error) {
+                document.getElementById('loading').textContent = 'Error al cargar la base de precios';
+                console.error(error);
+            }
+        }
+
+        function mostrarPartidas(partidasFiltradas) {
+            const container = document.getElementById('partidasContainer');
+
+            if (partidasFiltradas.length === 0) {
+                container.innerHTML = '<p style="text-align: center; padding: 2rem; color: #666;">No se encontraron resultados</p>';
+                return;
+            }
+
+            const html = partidasFiltradas.map(p => `
+                <div class="partida">
+                    <div class="partida-header">
+                        <span class="partida-codigo">${p.cod}</span>
+                        <span class="partida-unidad">${p.uni}</span>
+                        <span class="partida-precio">${p.precio.toFixed(2).replace('.', ',')} €</span>
+                    </div>
+                    <div class="partida-resumen">${p.res}</div>
+                    ${p.desc ? `<div class="partida-descripcion">${p.desc}</div>` : ''}
+                </div>
+            `).join('');
+
+            container.innerHTML = html;
+        }
+
+        function buscar(e) {
+            const termino = e.target.value.toLowerCase().trim();
+
+            if (termino.length < 3) {
+                mostrarPartidas(precios.slice(0, 100));
+                return;
+            }
+
+            const resultados = precios.filter(p =>
+                p.cod.toLowerCase().includes(termino) ||
+                p.res.toLowerCase().includes(termino) ||
+                (p.desc && p.desc.toLowerCase().includes(termino))
+            );
+
+            mostrarPartidas(resultados.slice(0, 100));
+        }
+
+        // Cargar al iniciar
+        cargarPrecios();
+    </script>
+</body>
+</html>
