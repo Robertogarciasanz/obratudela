@@ -333,11 +333,17 @@ preciosDB = PARTIDAS_FALLBACK; // 46 partidas embebidas
 
 ### Problema: Calculadora IA no carga partidas completas
 **Síntoma:** Solo muestra 46 partidas (modo offline) en lugar de 59,915
+
+**⚠️ PROBLEMA CONOCIDO:** base-precios.json pesa **19 MB** (18,893,401 bytes)
+- Tiempo de descarga: ~2-10 segundos (según conexión)
+- Puede fallar en conexiones lentas o móviles
+- GitHub Pages tiene límite de timeout
+
 **Causas posibles:**
-1. **base-precios.json no accesible** (404, CORS)
-2. **Archivo muy grande** (15.95 MB puede tardar en descargar)
-3. **Tiempo límite del servidor/hosting**
-4. **Restricciones de memoria del navegador**
+1. **Archivo muy grande** (19 MB tarda en descargar)
+2. **Timeout del fetch** (navegador cancela la descarga)
+3. **Restricciones de memoria** del navegador móvil
+4. **Conexión lenta** del usuario
 
 **Solución:**
 ```bash
@@ -360,6 +366,46 @@ EOF
 **Indicadores de éxito:**
 - ✅ Mensaje: "Base de datos cargada: 59.915 partidas disponibles"
 - ⚠️ Fallback: "Modo offline: 46 partidas disponibles" (fetch falló)
+
+**Soluciones futuras (recomendadas):**
+
+**Opción 1: Comprimir con gzip** (más simple)
+```bash
+# Crear versión comprimida
+gzip -c base-precios.json > base-precios.json.gz  # ~2-3 MB
+
+# Modificar calculadora-ia.html para:
+# - Intentar fetch('base-precios.json.gz')
+# - Descomprimir con pako.js (ya está incluido en gestor)
+# - Si falla, usar fallback de 46 partidas
+```
+
+**Opción 2: Versión reducida sin descripciones largas** (rápida)
+```bash
+# Crear versión light (solo cod, uni, res, precio)
+node -e "const d=require('./base-precios.json'); \
+  const light=d.map(p=>({cod:p.cod,uni:p.uni,res:p.res,precio:p.precio})); \
+  require('fs').writeFileSync('base-precios-light.json', JSON.stringify(light));"
+
+# Resultado: ~5-6 MB (3x más pequeño)
+# Usar en calculadora-ia.html por defecto
+```
+
+**Opción 3: Carga progresiva** (óptima pero compleja)
+```javascript
+// Cargar primero partidas más usadas (~1000)
+fetch('base-precios-top1000.json')  // ~1 MB
+  .then(() => {
+    // Cargar resto en segundo plano
+    fetch('base-precios-resto.json')  // ~18 MB
+  });
+```
+
+**Recomendación:** Usar **Opción 1 (gzip)** por:
+- ✅ Reduce tamaño a ~2-3 MB (85% menos)
+- ✅ Mantiene todas las descripciones largas
+- ✅ pako.js ya está en el proyecto (gestor lo usa)
+- ✅ Cambio mínimo en calculadora-ia.html
 
 ### Problema: Errores de encoding en Python
 **Síntoma:** `UnicodeEncodeError` con emojis
