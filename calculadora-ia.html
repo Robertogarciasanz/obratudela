@@ -63,6 +63,7 @@
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
+      font-size: 14px;
     }
 
     header {
@@ -88,9 +89,9 @@
     }
 
     .header-logo span {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     .btn-back {
@@ -129,7 +130,7 @@
     }
 
     .panel-title {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 600;
       color: var(--orange);
       margin-bottom: 16px;
@@ -150,10 +151,11 @@
     }
 
     .message {
-      padding: 12px 16px;
-      border-radius: 8px;
+      padding: 10px 14px;
+      border-radius: 6px;
       max-width: 85%;
-      line-height: 1.5;
+      line-height: 1.4;
+      font-size: 0.9rem;
     }
 
     .message.user {
@@ -172,7 +174,7 @@
     .message.system {
       background: var(--surface2);
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-style: italic;
       align-self: center;
       max-width: 95%;
@@ -264,16 +266,17 @@
     .partida-cod {
       font-weight: 600;
       color: var(--orange);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .partida-precio {
       font-weight: 600;
       color: var(--green);
+      font-size: 0.9rem;
     }
 
     .partida-desc {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--muted);
       margin-bottom: 6px;
     }
@@ -282,7 +285,7 @@
       display: flex;
       gap: 8px;
       align-items: center;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .partida-cantidad input {
@@ -306,11 +309,11 @@
       display: flex;
       justify-content: space-between;
       padding: 6px 0;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     .total-row.final {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
       color: var(--orange);
       padding-top: 12px;
@@ -338,28 +341,68 @@
       to { transform: rotate(360deg); }
     }
 
-    .ejemplos {
+    .opciones-partidas {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 8px;
-      margin-bottom: 12px;
+      margin-top: 8px;
     }
 
-    .ejemplo-btn {
-      padding: 6px 12px;
-      background: var(--surface2);
+    .opcion-partida {
+      background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: 4px;
-      color: var(--text);
-      font-size: 0.85rem;
+      border-radius: 6px;
+      padding: 10px 12px;
       cursor: pointer;
       transition: all 0.2s;
+      position: relative;
     }
 
-    .ejemplo-btn:hover {
-      background: var(--orange);
-      color: #000;
+    .opcion-partida:hover {
       border-color: var(--orange);
+      background: var(--surface2);
+      transform: translateX(4px);
+    }
+
+    .opcion-partida.selected {
+      border-color: var(--orange);
+      background: var(--surface2);
+      border-width: 2px;
+    }
+
+    .opcion-partida.selected::before {
+      content: '✓';
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      color: var(--orange);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .opcion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .opcion-cod {
+      font-weight: 600;
+      color: var(--orange);
+      font-size: 0.8rem;
+    }
+
+    .opcion-precio {
+      font-weight: 600;
+      color: var(--green);
+      font-size: 0.85rem;
+    }
+
+    .opcion-desc {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.3;
     }
 
     @media (max-width: 1024px) {
@@ -461,13 +504,6 @@
     <div class="panel">
       <h2 class="panel-title">🤖 Asistente de Presupuestos</h2>
 
-      <div class="ejemplos">
-        <button class="ejemplo-btn" onclick="setExample('Demolición de arquetas de PVC, 3 unidades')">Demolición arquetas</button>
-        <button class="ejemplo-btn" onclick="setExample('Excavación para piscina de 8x4 metros')">Excavación piscina</button>
-        <button class="ejemplo-btn" onclick="setExample('Movimiento de tierras para nave industrial')">Movimiento tierras</button>
-        <button class="ejemplo-btn" onclick="setExample('Desbroce de parcela 500m2')">Desbroce parcela</button>
-      </div>
-
       <div class="chat-container" id="chatContainer">
         <div class="message system">
           👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos de +59.000 precios (BCEXTREM + BCCA Andalucía).
@@ -486,7 +522,10 @@
 
     <!-- Panel de Presupuesto -->
     <div class="panel">
-      <h2 class="panel-title">📋 Presupuesto Generado</h2>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h2 class="panel-title" style="margin: 0; padding: 0; border: none;">📋 Presupuesto Generado</h2>
+        <button class="btn" onclick="agregarPartidaManual()" style="padding: 8px 16px; font-size: 0.9rem;">+ Añadir Partida</button>
+      </div>
 
       <div class="presupuesto-preview" id="presupuestoPreview">
         <div class="presupuesto-empty">
@@ -508,6 +547,7 @@
     let preciosDB = [];
     let currentPresupuesto = [];
     let isProcessing = false;
+    let partidasSeleccionadas = [];
 
     // Partidas de emergencia embebidas (cuando falla el fetch)
     const PARTIDAS_FALLBACK = [
@@ -603,6 +643,87 @@
       chatContainer.scrollTop = chatContainer.scrollHeight;
     }
 
+    // Alternar selección de partida
+    function togglePartida(elemento, codigo, grupoId) {
+      console.log('togglePartida llamado:', codigo, grupoId);
+      const partida = preciosDB.find(p => p.cod === codigo);
+      if (!partida) {
+        console.error('Partida no encontrada:', codigo);
+        return;
+      }
+
+      const index = partidasSeleccionadas.findIndex(p => p.cod === codigo && p.grupoId === grupoId);
+
+      if (index >= 0) {
+        // Deseleccionar
+        partidasSeleccionadas.splice(index, 1);
+        elemento.classList.remove('selected');
+        console.log('Partida deseleccionada');
+      } else {
+        // Seleccionar
+        partidasSeleccionadas.push({ ...partida, grupoId });
+        elemento.classList.add('selected');
+        console.log('Partida seleccionada');
+      }
+
+      console.log('Partidas seleccionadas:', partidasSeleccionadas);
+      // Actualizar botón de confirmación del grupo específico
+      updateConfirmButton(grupoId);
+    }
+
+    // Actualizar botón de confirmación
+    function updateConfirmButton(grupoId) {
+      const btnConfirm = document.getElementById(`btnConfirmarSeleccion_${grupoId}`);
+      console.log('updateConfirmButton:', grupoId, btnConfirm ? 'encontrado' : 'NO encontrado');
+      if (btnConfirm) {
+        const partidasGrupo = partidasSeleccionadas.filter(p => p.grupoId === grupoId);
+        console.log('Partidas del grupo:', partidasGrupo.length);
+        if (partidasGrupo.length > 0) {
+          btnConfirm.textContent = `✓ Agregar ${partidasGrupo.length} partida${partidasGrupo.length > 1 ? 's' : ''} al presupuesto`;
+          btnConfirm.disabled = false;
+        } else {
+          btnConfirm.textContent = 'Selecciona al menos una partida';
+          btnConfirm.disabled = true;
+        }
+      }
+    }
+
+    // Confirmar selección de partidas
+    function confirmarSeleccion(grupoId) {
+      const partidasGrupo = partidasSeleccionadas.filter(p => p.grupoId === grupoId);
+
+      if (partidasGrupo.length === 0) return;
+
+      for (const partida of partidasGrupo) {
+        currentPresupuesto.push({
+          cod: partida.cod,
+          res: partida.res,
+          uni: partida.uni,
+          precio: partida.precio,
+          desc: partida.desc,
+          cantidad: 1
+        });
+        addMessage('system', `✅ Agregado: ${partida.cod} - ${partida.res}`);
+      }
+
+      renderPresupuesto();
+      const numPartidas = partidasGrupo.length;
+      addMessage('assistant', `✅ ${numPartidas === 1 ? 'Partida agregada' : numPartidas + ' partidas agregadas'}. Puedes ajustar cantidades en el panel derecho o seguir buscando más partidas.`);
+
+      // Remover solo las partidas de este grupo
+      partidasSeleccionadas = partidasSeleccionadas.filter(p => p.grupoId !== grupoId);
+
+      // Deshabilitar botón de este grupo
+      const btnConfirm = document.getElementById(`btnConfirmarSeleccion_${grupoId}`);
+      if (btnConfirm) {
+        btnConfirm.disabled = true;
+        btnConfirm.textContent = '✓ Partidas agregadas';
+      }
+
+      // Enfocar en el input para continuar buscando
+      document.getElementById('userInput').focus();
+    }
+
     // Establecer ejemplo
     function setExample(text) {
       document.getElementById('userInput').value = text;
@@ -611,16 +732,31 @@
 
     // Buscar partidas relevantes
     function buscarPartidas(descripcion) {
-      const keywords = descripcion.toLowerCase().split(/\s+/);
+      // Palabras a ignorar (stopwords en español)
+      const stopwords = ['de', 'del', 'la', 'el', 'los', 'las', 'a', 'en', 'con', 'para', 'por', 'y', 'o', 'un', 'una'];
+
+      // Limpiar puntos y caracteres especiales, luego dividir
+      const keywords = descripcion.toLowerCase()
+        .replace(/\./g, ' ')  // Reemplazar puntos por espacios
+        .replace(/[,;:]/g, ' ')  // Reemplazar otros separadores
+        .split(/\s+/)
+        .filter(word => word.length > 1 && !stopwords.includes(word)); // Aceptar palabras de 2+ letras
+
       const resultados = [];
 
       for (const partida of preciosDB) {
-        const searchText = `${partida.res} ${partida.desc}`.toLowerCase();
+        const searchText = `${partida.res} ${partida.desc || ''} ${partida.cod}`.toLowerCase();
         let score = 0;
 
         for (const keyword of keywords) {
           if (searchText.includes(keyword)) {
-            score += 1;
+            // Dar más peso si la palabra es larga (más específica)
+            score += keyword.length > 5 ? 2 : 1;
+
+            // Bonus si está en el código
+            if (partida.cod.toLowerCase().includes(keyword)) {
+              score += 3;
+            }
           }
         }
 
@@ -651,90 +787,34 @@
           return;
         }
 
-        addMessage('system', `✅ Encontré ${partidasRelevantes.length} partidas relevantes`);
+        // Mostrar opciones encontradas
+        const numMostrar = Math.min(5, partidasRelevantes.length);
+        const grupoId = Date.now() + Math.random(); // ID único para cada búsqueda
+        addMessage('system', `✅ Encontré ${partidasRelevantes.length} partidas similares (mostrando ${numMostrar}):`);
 
-        // Usar Ollama para analizar y seleccionar las mejores partidas
-        const prompt = `Eres un experto en presupuestos de construcción. El cliente necesita: "${descripcion}"
+        let opcionesHTML = '<div class="opciones-partidas" data-grupo-container="${grupoId}">';
+        partidasRelevantes.slice(0, 5).forEach((p, idx) => {
+          opcionesHTML += `
+            <div class="opcion-partida" data-codigo="${p.cod}" data-grupo="${grupoId}" onclick="togglePartida(this, '${p.cod}', ${grupoId})">
+              <div class="opcion-header">
+                <span class="opcion-cod">${p.cod}</span>
+                <span class="opcion-precio">${p.precio.toFixed(2)}€/${p.uni}</span>
+              </div>
+              <div class="opcion-desc">${p.res}</div>
+            </div>
+          `;
+        });
+        opcionesHTML += `<button class="btn" id="btnConfirmarSeleccion_${grupoId}" onclick="confirmarSeleccion(${grupoId})" disabled style="margin-top: 12px; width: 100%;">Selecciona al menos una partida</button>`;
+        opcionesHTML += '</div>';
 
-He encontrado estas partidas en la base de datos:
+        const chatContainer = document.getElementById('chatContainer');
+        const opcionesDiv = document.createElement('div');
+        opcionesDiv.className = 'message assistant';
+        opcionesDiv.innerHTML = opcionesHTML;
+        chatContainer.appendChild(opcionesDiv);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
 
-${partidasRelevantes.slice(0, 5).map((p, i) => `${i + 1}. ${p.cod} - ${p.res} (${p.precio}€/${p.uni})`).join('\n')}
-
-Selecciona las 3-5 partidas MÁS APROPIADAS y sugiere cantidades realistas. Responde SOLO en formato JSON:
-{
-  "partidas": [
-    {"cod": "código", "cantidad": número, "razon": "por qué se necesita"}
-  ],
-  "mensaje": "explicación breve para el cliente"
-}`;
-
-        try {
-          const response = await fetch('http://localhost:11434/api/generate', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              model: 'llama3.2',
-              prompt: prompt,
-              stream: false
-            })
-          });
-
-          if (!response.ok) {
-            throw new Error('Ollama no disponible');
-          }
-
-          const data = await response.json();
-          let aiResponse;
-
-          try {
-            // Extraer JSON de la respuesta
-            const jsonMatch = data.response.match(/\{[\s\S]*\}/);
-            if (jsonMatch) {
-              aiResponse = JSON.parse(jsonMatch[0]);
-            } else {
-              throw new Error('No se pudo extraer JSON');
-            }
-          } catch (e) {
-            // Si la IA no devuelve JSON válido, usar las 3 primeras partidas
-            console.warn('Usando selección automática');
-            aiResponse = {
-              partidas: partidasRelevantes.slice(0, 3).map(p => ({
-                cod: p.cod,
-                cantidad: 1,
-                razon: 'Partida relevante'
-              })),
-              mensaje: 'He seleccionado las partidas más relevantes para tu proyecto.'
-            };
-          }
-
-          // Agregar partidas al presupuesto
-          for (const item of aiResponse.partidas) {
-            const partida = preciosDB.find(p => p.cod === item.cod);
-            if (partida) {
-              currentPresupuesto.push({
-                ...partida,
-                cantidad: item.cantidad || 1
-              });
-            }
-          }
-
-          renderPresupuesto();
-          addMessage('assistant', aiResponse.mensaje || 'He agregado las partidas al presupuesto.');
-
-        } catch (ollamaError) {
-          // Fallback: usar las 3 primeras partidas automáticamente
-          console.warn('Ollama no disponible, usando selección automática:', ollamaError);
-
-          for (let i = 0; i < Math.min(3, partidasRelevantes.length); i++) {
-            currentPresupuesto.push({
-              ...partidasRelevantes[i],
-              cantidad: 1
-            });
-          }
-
-          renderPresupuesto();
-          addMessage('assistant', `He agregado ${Math.min(3, partidasRelevantes.length)} partidas relevantes al presupuesto. Puedes ajustar las cantidades.`);
-        }
+        addMessage('assistant', '👆 Selecciona una o varias partidas y confirma. Luego puedes seguir buscando más.');
 
       } catch (error) {
         console.error('Error:', error);
@@ -775,7 +855,10 @@ Selecciona las 3-5 partidas MÁS APROPIADAS y sugiere cantidades realistas. Resp
           <div class="partida">
             <div class="partida-header">
               <span class="partida-cod">${p.cod}</span>
-              <span class="partida-precio">${p.precio.toFixed(2)}€/${p.uni}</span>
+              <div>
+                <span class="partida-precio">${p.precio.toFixed(2)}€/${p.uni}</span>
+                <button onclick="eliminarPartida(${index})" style="background: #ff4444; border: none; color: white; padding: 4px 8px; margin-left: 8px; border-radius: 4px; cursor: pointer; font-size: 0.8rem;">×</button>
+              </div>
             </div>
             <div class="partida-desc">${p.res}</div>
             <div class="partida-cantidad">
@@ -822,33 +905,177 @@ Selecciona las 3-5 partidas MÁS APROPIADAS y sugiere cantidades realistas. Resp
       renderPresupuesto();
     }
 
+    // Eliminar partida
+    function eliminarPartida(index) {
+      const partida = currentPresupuesto[index];
+      if (confirm(`¿Eliminar partida "${partida.cod} - ${partida.res}"?`)) {
+        currentPresupuesto.splice(index, 1);
+        renderPresupuesto();
+        addMessage('system', `🗑️ Partida eliminada: ${partida.cod}`);
+      }
+    }
+
+    // Agregar partida manual
+    function agregarPartidaManual() {
+      const codigo = prompt('Código de la partida (ej: D02AA100):');
+      if (!codigo) return;
+
+      const partida = preciosDB.find(p => p.cod.toUpperCase() === codigo.toUpperCase());
+
+      if (partida) {
+        // Partida encontrada en la base de datos
+        const cantidad = prompt(`Cantidad de "${partida.res}" (${partida.uni}):`, '1');
+        if (cantidad && !isNaN(cantidad) && parseFloat(cantidad) > 0) {
+          currentPresupuesto.push({
+            ...partida,
+            cantidad: parseFloat(cantidad)
+          });
+          renderPresupuesto();
+          addMessage('system', `✅ Partida agregada: ${partida.cod} - ${partida.res} (${cantidad} ${partida.uni})`);
+        }
+      } else {
+        // Partida no encontrada, permitir crear una personalizada
+        const crear = confirm(`No se encontró la partida "${codigo}" en la base de datos.\n\n¿Deseas crear una partida personalizada?`);
+        if (!crear) return;
+
+        const descripcion = prompt('Descripción de la partida:');
+        if (!descripcion) return;
+
+        const precio = prompt('Precio unitario (€):');
+        if (!precio || isNaN(precio) || parseFloat(precio) < 0) return;
+
+        const unidad = prompt('Unidad (ej: m2, m3, ud, ml):', 'ud');
+        if (!unidad) return;
+
+        const cantidad = prompt('Cantidad:', '1');
+        if (!cantidad || isNaN(cantidad) || parseFloat(cantidad) <= 0) return;
+
+        currentPresupuesto.push({
+          cod: codigo.toUpperCase(),
+          res: descripcion,
+          uni: unidad,
+          precio: parseFloat(precio),
+          desc: descripcion,
+          cantidad: parseFloat(cantidad)
+        });
+
+        renderPresupuesto();
+        addMessage('system', `✅ Partida personalizada agregada: ${codigo.toUpperCase()} - ${descripcion} (${cantidad} ${unidad})`);
+      }
+    }
+
     // Exportar presupuesto
     function exportarPresupuesto() {
-      const texto = `PRESUPUESTO - EXCAVACIONES Y SERVICIOS ARTURO S.L.
-NIF: B47489612
-Fecha: ${new Date().toLocaleDateString()}
+      const subtotal = currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0);
+      const iva = subtotal * 0.21;
+      const total = subtotal + iva;
 
-PARTIDAS:
-${currentPresupuesto.map(p => `${p.cod} - ${p.res}
-Cantidad: ${p.cantidad} ${p.uni} × ${p.precio.toFixed(2)}€ = ${(p.cantidad * p.precio).toFixed(2)}€`).join('\n\n')}
+      const ventanaImpresion = window.open('', '_blank', 'width=800,height=600');
 
-TOTALES:
-Subtotal: ${currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0).toFixed(2)}€
-IVA (21%): ${(currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0) * 0.21).toFixed(2)}€
-TOTAL: ${(currentPresupuesto.reduce((sum, p) => sum + (p.cantidad * p.precio), 0) * 1.21).toFixed(2)}€
+      const htmlContent = `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presupuesto - EXCAVACIONES Y SERVICIOS ARTURO S.L.</title>
+  <style>
+    @page { margin: 2cm; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; color: #333; }
+    .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff6b00; padding-bottom: 20px; margin-bottom: 30px; }
+    .logo { display: flex; align-items: center; gap: 15px; }
+    .logo img { height: 80px; border-radius: 8px; }
+    .logo-text h1 { color: #ff6b00; font-size: 24px; margin-bottom: 5px; }
+    .logo-text p { font-size: 12px; color: #666; }
+    .company-info { text-align: right; font-size: 13px; line-height: 1.8; }
+    .company-info strong { color: #ff6b00; }
+    .presupuesto-info { background: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
+    .presupuesto-info h2 { color: #ff6b00; font-size: 18px; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+    thead { background: #ff6b00; color: white; }
+    th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+    th { font-weight: 600; font-size: 13px; }
+    td { font-size: 12px; }
+    .cod { font-weight: 600; color: #ff6b00; font-size: 11px; }
+    .cantidad-col { text-align: center; }
+    .precio-col { text-align: right; }
+    .total-col { text-align: right; font-weight: 600; }
+    .totales { margin-left: auto; width: 350px; border-top: 3px solid #ff6b00; padding-top: 15px; }
+    .total-row { display: flex; justify-content: space-between; padding: 8px 0; font-size: 14px; }
+    .total-row.final { font-size: 20px; font-weight: bold; color: #ff6b00; border-top: 2px solid #333; margin-top: 10px; padding-top: 15px; }
+    .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; font-size: 11px; color: #666; }
+    @media print { body { padding: 0; } .no-print { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo ObraTudela">
+      <div class="logo-text">
+        <h1>EXCAVACIONES Y SERVICIOS ARTURO S.L.</h1>
+        <p>Movimiento de tierras y construcción</p>
+      </div>
+    </div>
+    <div class="company-info">
+      <strong>NIF:</strong> B47489612<br>
+      <strong>Email:</strong> excavacionesart@gmail.com<br>
+      <strong>Teléfono:</strong> 607 444 903
+    </div>
+  </div>
+  <div class="presupuesto-info">
+    <h2>PRESUPUESTO</h2>
+    <strong>Fecha:</strong> ${new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}<br>
+    <strong>Nº Partidas:</strong> ${currentPresupuesto.length}
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 12%">CÓDIGO</th>
+        <th style="width: 48%">DESCRIPCIÓN</th>
+        <th style="width: 12%" class="cantidad-col">CANTIDAD</th>
+        <th style="width: 14%" class="precio-col">PRECIO UNIT.</th>
+        <th style="width: 14%" class="total-col">TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${currentPresupuesto.map(p => `<tr>
+        <td><span class="cod">${p.cod}</span></td>
+        <td>${p.res}</td>
+        <td class="cantidad-col">${p.cantidad} ${p.uni}</td>
+        <td class="precio-col">${p.precio.toFixed(2)} €</td>
+        <td class="total-col">${(p.cantidad * p.precio).toFixed(2)} €</td>
+      </tr>`).join('')}
+    </tbody>
+  </table>
+  <div class="totales">
+    <div class="total-row">
+      <span>Subtotal (sin IVA):</span>
+      <span><strong>${subtotal.toFixed(2)} €</strong></span>
+    </div>
+    <div class="total-row">
+      <span>IVA (21%):</span>
+      <span><strong>${iva.toFixed(2)} €</strong></span>
+    </div>
+    <div class="total-row final">
+      <span>TOTAL:</span>
+      <span>${total.toFixed(2)} €</span>
+    </div>
+  </div>
+  <div class="footer">
+    Presupuesto generado el ${new Date().toLocaleString('es-ES')}<br>
+    Este presupuesto tiene una validez de 30 días desde la fecha de emisión
+  </div>
+</body>
+</html>`;
 
-Contacto: excavacionesart@gmail.com | 607 444 903
-`;
+      ventanaImpresion.document.write(htmlContent);
+      ventanaImpresion.document.close();
 
-      const blob = new Blob([texto], { type: 'text/plain' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `presupuesto_${Date.now()}.txt`;
-      a.click();
-      URL.revokeObjectURL(url);
+      // Activar impresión después de cargar
+      setTimeout(function() {
+        ventanaImpresion.print();
+      }, 500);
 
-      addMessage('system', '✅ Presupuesto exportado correctamente');
+      addMessage('system', '✅ Ventana de impresión abierta');
     }
 
     // Enviar mensaje
