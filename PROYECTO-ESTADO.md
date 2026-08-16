@@ -407,6 +407,227 @@ fetch('base-precios-top1000.json')  // ~1 MB
 - ✅ pako.js ya está en el proyecto (gestor lo usa)
 - ✅ Cambio mínimo en calculadora-ia.html
 
+---
+
+## 🚀 Mejoras Técnicas Recomendadas (Pendientes)
+
+### 1. Comprimir base-precios.json con Content-Encoding
+**Problema:** 19 MB sin comprimir
+**Solución:** Configurar servidor para servir con gzip/Brotli automáticamente
+
+```bash
+# GitHub Pages automáticamente sirve con gzip si el archivo es .json
+# Verificar headers de respuesta:
+curl -I https://www.obratudela.com/base-precios.json | grep "Content-Encoding"
+
+# Si no hay compresión automática, crear .gz manualmente:
+gzip -k -9 base-precios.json  # Crea base-precios.json.gz (~2-3 MB)
+
+# Modificar calculadora-ia.html para intentar:
+# 1. fetch('base-precios.json.gz') + descomprimir con pako
+# 2. Si falla, fetch('base-precios.json')
+# 3. Si falla, usar fallback (46 partidas)
+```
+
+**Beneficio:** Reduce transferencia a ~2-3 MB sin cambiar el archivo original
+
+---
+
+### 2. Crear precios-busqueda.json (versión compacta)
+**Problema:** Calculadora solo necesita `cod`, `uni`, `res`, `precio` para búsqueda
+**Solución:** Versión ligera sin descripciones largas
+
+```bash
+# Generar versión compacta
+node -e "
+  const fs = require('fs');
+  const data = JSON.parse(fs.readFileSync('base-precios.json', 'utf8'));
+  const compact = data.map(p => ({
+    cod: p.cod,
+    uni: p.uni,
+    res: p.res,
+    precio: p.precio
+    // desc se omite → reduce ~70% del tamaño
+  }));
+  fs.writeFileSync('precios-busqueda.json', JSON.stringify(compact));
+"
+
+# Resultado: ~5-6 MB (3x más pequeño)
+```
+
+**Modificar calculadora-ia.html:**
+```javascript
+// Cargar versión compacta para búsqueda
+const response = await fetch('precios-busqueda.json');
+preciosDB = await response.json();
+
+// Descripción larga se puede cargar bajo demanda:
+// - Al seleccionar partida
+// - O desde gestor-presupuestos.html (ya tiene todo)
+```
+
+**Beneficio:**
+- ✅ Carga 3x más rápida
+- ✅ Búsqueda igual de efectiva
+- ✅ Descripciones largas disponibles en gestor
+
+---
+
+### 3. Índice invertido para búsquedas (óptimo)
+**Problema:** buscarPartidas() itera 59,915 partidas en cada búsqueda
+**Solución:** Pre-calcular índice invertido (palabra → códigos)
+
+```javascript
+// Ejemplo de índice invertido
+const searchIndex = {
+  "demolicion": ["01ALM90003", "01AAB00001", ...],
+  "muro": ["01ALM90003", "01ADS00001", ...],
+  "ladrillo": ["01ALM90003", "01ADS00002", ...],
+  // ...
+};
+
+// Búsqueda optimizada
+function buscarPartidas(descripcion) {
+  const keywords = extraerPalabras(descripcion);
+  const codigosSet = new Set();
+
+  // Buscar en índice (O(1) por palabra)
+  keywords.forEach(kw => {
+    (searchIndex[kw] || []).forEach(cod => codigosSet.add(cod));
+  });
+
+  // Devolver partidas completas
+  return Array.from(codigosSet).map(cod =>
+    preciosDB.find(p => p.cod === cod)
+  );
+}
+```
+
+**Script para generar índice:**
+```bash
+node generar-indice-busqueda.js
+# Output: search-index.json (~500 KB)
+```
+
+**Beneficio:**
+- ✅ Búsqueda instantánea (no itera todo el array)
+- ✅ Índice compacto (~500 KB)
+- ✅ Puede combinarse con precios-busqueda.json
+
+---
+
+### 4. Carga por chunks/paginada (avanzado)
+**Problema:** 19 MB se descarga todo de una vez
+**Solución:** Cargar progresivamente
+
+**Opción A: Múltiples archivos**
+```bash
+# Dividir en chunks
+node split-precios.js
+# Output:
+# - precios-chunk-1.json (0-10,000)    ~3 MB
+# - precios-chunk-2.json (10,000-20,000) ~3 MB
+# - precios-chunk-3.json (20,000-30,000) ~3 MB
+# ...
+```
+
+**Opción B: API endpoint (requiere backend)**
+```javascript
+// Endpoint paginado
+GET /api/precios?start=0&limit=5000
+
+// Calculadora carga bajo demanda
+async function cargarMasPartidas(start) {
+  const response = await fetch(`/api/precios?start=${start}&limit=5000`);
+  const partidas = await response.json();
+  preciosDB.push(...partidas);
+}
+```
+
+**Beneficio:**
+- ✅ Carga inicial rápida
+- ✅ Resto se carga en segundo plano
+- ⚠️ Requiere infraestructura backend
+
+---
+
+### 5. Service Worker + Caché (PWA)
+**Solución más robusta:**
+```javascript
+// service-worker.js
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('precios-v1').then(cache => {
+      return cache.addAll([
+        '/base-precios.json',
+        '/calculadora-ia.html'
+      ]);
+    })
+  );
+});
+
+// Primera carga: descarga 19 MB
+// Siguientes: desde caché local (instantáneo)
+```
+
+**Beneficio:**
+- ✅ Primera carga lenta, resto instantáneo
+- ✅ Funciona offline
+- ✅ Se actualiza en segundo plano
+
+---
+
+## 📝 Priorización de Mejoras
+
+**Corto plazo (1 sesión):**
+1. ✅ **Crear precios-busqueda.json** (5-6 MB, sin desc)
+2. ✅ **Modificar calculadora-ia.html** para usar versión compacta
+3. ✅ **Subir ambos archivos** al servidor
+
+**Medio plazo (2-3 sesiones):**
+4. ⬜ Generar índice invertido search-index.json
+5. ⬜ Optimizar búsqueda con índice
+6. ⬜ Comprimir con gzip automático
+
+**Largo plazo (futuro):**
+7. ⬜ Service Worker + PWA
+8. ⬜ Backend con API paginada
+9. ⬜ Carga por chunks progresiva
+
+---
+
+## 🎯 Próxima Sesión: Plan Sugerido
+
+**Objetivo:** Reducir tiempo de carga de calculadora-ia.html
+
+**Pasos:**
+```bash
+# 1. Crear versión compacta
+node -e "const d=require('./base-precios.json'); \
+  fs.writeFileSync('precios-busqueda.json', \
+  JSON.stringify(d.map(p=>({cod:p.cod,uni:p.uni,res:p.res,precio:p.precio}))));"
+
+# 2. Verificar tamaño
+ls -lh precios-busqueda.json  # Debería ser ~5-6 MB
+
+# 3. Modificar calculadora-ia.html línea ~620
+# Cambiar: fetch('base-precios.json')
+# Por:     fetch('precios-busqueda.json')
+
+# 4. Probar localmente
+python -m http.server 8000
+# Abrir http://localhost:8000/calculadora-ia.html
+# Verificar: "Base de datos cargada: 59,915 partidas"
+
+# 5. Subir
+git add precios-busqueda.json calculadora-ia.html
+git commit -m "Optimizar calculadora-ia: usar precios-busqueda.json (6 MB)"
+git push
+```
+
+**Tiempo estimado:** 15-20 minutos
+**Mejora esperada:** Carga 3x más rápida (2-3 seg vs 6-10 seg)
+
 ### Problema: Errores de encoding en Python
 **Síntoma:** `UnicodeEncodeError` con emojis
 **Solución:** Evitar emojis en prints o usar `errors='replace'`
