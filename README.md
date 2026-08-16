@@ -115,20 +115,44 @@ GitHub Actions ejecuta el workflow `.github/workflows/deploy.yml` y publica en *
 
 ---
 
-## 💻 Panel de Administración (Local)
+## 💻 Panel de Administración (Solo Desarrollo Local)
 
-### Iniciar el servidor
+⚠️ **Nota importante:** Los archivos del panel de administración (`admin-server.js`, `package.json`) están en `.gitignore` y **NO se incluyen en el repositorio público** por motivos de seguridad y porque solo son necesarios para desarrollo local.
+
+### Para desarrolladores
+
+Si necesitas el panel de administración para desarrollo local:
+
+1. **Crear `package.json`:**
+```json
+{
+  "name": "obratudela-admin",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.0"
+  }
+}
+```
+
+2. **Instalar dependencias:**
+```bash
+npm install
+```
+
+3. **Solicitar `admin-server.js`** al propietario del proyecto (no incluido en repo público)
+
+### Uso del panel (si tienes los archivos)
+
 ```bash
 node admin-server.js
+# O usando: iniciar-admin.bat
 ```
 
-O usando el lanzador incluido:
-```bash
-iniciar-admin.bat
-```
-
-### Acceder al panel
-Abre el navegador en: **http://localhost:3000**
+Acceder al panel: **http://localhost:3000**
 
 ### Funcionalidades
 - ✅ Gestión de anuncios de maquinaria

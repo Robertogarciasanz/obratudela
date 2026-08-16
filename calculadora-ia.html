@@ -608,9 +608,62 @@
       {cod:'D01AA010',res:'Demol. solera horm. en masa e=10cm, medios manuales',uni:'m2',precio:7.40,desc:'Demolición solera hormigón en masa'},
     ];
 
+    // ========================
+    // CACHE VERSIONADO
+    // ========================
+    const CACHE_VERSION = '2026.1';  // Actualizar al cambiar base-precios.json
+    const CACHE_KEY = 'precios_cache_v2';
+    const CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;  // 7 días
+
+    function loadFromCache() {
+      try {
+        const cached = sessionStorage.getItem(CACHE_KEY);
+        if (!cached) return null;
+
+        const { version, data, timestamp } = JSON.parse(cached);
+        const age = Date.now() - timestamp;
+
+        // Invalidar si versión antigua o >7 días
+        if (version === CACHE_VERSION && age < CACHE_MAX_AGE_MS) {
+          console.log(`💾 Cargado desde caché (${(age / 1000 / 60 / 60).toFixed(1)}h antiguo)`);
+          return data;
+        } else {
+          console.log(`🔄 Caché invalidado (versión: ${version} vs ${CACHE_VERSION}, edad: ${(age / 1000 / 60 / 60).toFixed(1)}h)`);
+          sessionStorage.removeItem(CACHE_KEY);
+          return null;
+        }
+      } catch (e) {
+        console.warn('Error leyendo caché:', e);
+        return null;
+      }
+    }
+
+    function saveToCache(data) {
+      try {
+        const cacheData = {
+          version: CACHE_VERSION,
+          data: data,
+          timestamp: Date.now()
+        };
+        sessionStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
+        console.log(`💾 Datos guardados en caché (${data.length} partidas)`);
+      } catch (e) {
+        console.warn('Error guardando en caché (posiblemente lleno):', e);
+        // sessionStorage puede estar lleno (~5-10 MB), continuar sin caché
+      }
+    }
+
     // Cargar base de datos de precios con indicador y fallback inteligente
     async function loadPrecios() {
       try {
+        // OPTIMIZACIÓN: Intentar cargar desde caché primero
+        const cachedData = loadFromCache();
+        if (cachedData) {
+          preciosDB = cachedData;
+          addMessage('system', `✅ Base de datos cargada (caché): ${preciosDB.length.toLocaleString()} partidas disponibles`);
+          return;  // ⚡ Carga instantánea desde caché
+        }
+
         addMessage('system', '⏳ Cargando base de precios unificada...');
 
         // Lista de URLs a intentar en orden de preferencia (más ligera primero)
@@ -654,6 +707,9 @@
         }
 
         preciosDB = data;
+
+        // OPTIMIZACIÓN: Guardar en caché para próximas visitas
+        saveToCache(data);
 
         // Limpiar mensaje de carga
         const loadingMsg = document.querySelector('.message.system');

@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 /**
- * Script para generar versiones comprimidas (.gz y .br) de los archivos de precios
+ * Script para generar versiones comprimidas (.gz y .br) de archivos grandes
  * Uso: node scripts/compress-precios.cjs
  *
  * Genera:
- * - base-precios.json.gz (gzip nivel 9)
- * - base-precios.json.br (brotli nivel 11)
- * - precios-busqueda.json.gz (gzip nivel 9)
- * - precios-busqueda.json.br (brotli nivel 11)
+ * - base-precios.json.gz/br (gzip/brotli nivel máximo)
+ * - precios-busqueda.json.gz/br
+ * - gestor-presupuestos.html.gz/br (optimización importante: 2.49 MB → ~600 KB)
  */
 
 const fs = require('fs');
@@ -17,7 +16,8 @@ const path = require('path');
 // Archivos a comprimir
 const files = [
   'base-precios.json',
-  'precios-busqueda.json'
+  'precios-busqueda.json',
+  'gestor-presupuestos.html'  // HTML grande con DATA_B64 embebido
 ];
 
 console.log('🗜️  Iniciando compresión de archivos de precios...\n');
