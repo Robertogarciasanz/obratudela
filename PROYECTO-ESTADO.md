@@ -84,23 +84,23 @@ git push
 **URL:** https://www.obratudela.com/calculadora-ia.html
 
 **Características:**
-- Integración con Ollama (modelo: qwen2.5-coder:1.5b)
-- Búsqueda inteligente con stopwords en español
+- **Motor de búsqueda local/heurístico** (NO usa Ollama)
+- Búsqueda por palabras clave con stopwords en español
+- Algoritmo de scoring por relevancia
 - Carga base-precios.json (59,915 partidas)
 - Fallback con 46 partidas embebidas (modo offline)
-- Selección múltiple de partidas
+- Selección múltiple de partidas con confirmación manual
 - Exportación a PDF con logo
-- Chat conversacional
 
-**Modelos Ollama disponibles:**
-- `qwen2.5-coder:1.5b` (principal, 986 MB)
-- `qwen2.5-coder:7b` (4.7 GB)
-- `ornith:latest` (5.6 GB)
+**Cómo funciona:**
+1. Usuario escribe descripción del trabajo
+2. Función `buscarPartidas()` busca palabras clave en base-precios.json
+3. Ordena resultados por relevancia (score)
+4. Muestra hasta 5 opciones al usuario
+5. Usuario selecciona manualmente las partidas que desea
+6. Añade al presupuesto con cantidad editable
 
-**Iniciar Ollama:**
-```bash
-ollama serve  # Puerto 11434
-```
+**Nota importante:** A pesar del nombre "calculadora-ia", **NO hace llamadas a servicios LLM externos**. Es un buscador local por palabras clave.
 
 ---
 
@@ -216,16 +216,16 @@ git commit -m "Actualizar base de precios"
 git push
 ```
 
-### Iniciar Ollama para Calculadora IA
+### Probar Calculadora IA Localmente
 ```bash
-# Iniciar servidor
-ollama serve
+# Iniciar servidor local
+python -m http.server 8000
 
-# En otra terminal, verificar
-curl http://localhost:11434/api/tags
+# Abrir en navegador
+start http://localhost:8000/calculadora-ia.html
 
-# Listar modelos instalados
-ollama list
+# La calculadora funciona sin dependencias externas
+# Busca en base-precios.json con algoritmo local
 ```
 
 ### Servidor Local de Desarrollo
@@ -287,6 +287,42 @@ git push
 13. SEGURIDAD
 14. U0 - Urbanización
 
+### Flujo de la Calculadora IA (calculadora-ia.html)
+
+**1. Carga inicial:**
+```javascript
+// Intenta cargar base-precios.json
+const response = await fetch('base-precios.json');
+preciosDB = await response.json();
+// Mensaje: "✅ Base de datos cargada: 59,915 partidas"
+
+// Si falla (404, CORS, timeout):
+preciosDB = PARTIDAS_FALLBACK; // 46 partidas embebidas
+// Mensaje: "⚠️ Modo offline: 46 partidas disponibles"
+```
+
+**2. Búsqueda (función buscarPartidas):**
+- Extrae palabras clave (ignora stopwords: de, la, el, etc.)
+- Busca en `cod`, `res` y `desc` de cada partida
+- Calcula score por relevancia (palabras largas > 5 letras = 2 puntos)
+- Bonus si coincide con código (+3 puntos)
+- Devuelve top 10 resultados ordenados
+
+**3. Selección manual:**
+- Usuario ve hasta 5 opciones
+- Click para seleccionar/deseleccionar (togglePartida)
+- Botón "Añadir X partidas seleccionadas"
+- NO hay autocompletado ni sugerencias automáticas
+
+**4. Panel de presupuesto:**
+- Partidas se añaden con cantidad editable
+- Botón para eliminar partidas
+- Opción de añadir partidas manualmente (código o custom)
+- Cálculo automático de subtotal + IVA 21%
+- Exportación a PDF con logo de empresa
+
+**Importante:** El nombre "IA" es histórico/marketing. **No hay machine learning ni LLM**. Es un buscador heurístico por palabras clave.
+
 ---
 
 ## ⚠️ Problemas Conocidos y Soluciones
@@ -295,16 +331,35 @@ git push
 **Síntoma:** Cambios no se ven en el sitio web
 **Solución:** Ctrl + F5 o modo incógnito
 
-### Problema: Ollama no responde
-**Síntoma:** Calculadora IA no funciona
+### Problema: Calculadora IA no carga partidas completas
+**Síntoma:** Solo muestra 46 partidas (modo offline) en lugar de 59,915
+**Causas posibles:**
+1. **base-precios.json no accesible** (404, CORS)
+2. **Archivo muy grande** (15.95 MB puede tardar en descargar)
+3. **Tiempo límite del servidor/hosting**
+4. **Restricciones de memoria del navegador**
+
 **Solución:**
 ```bash
-# Detener Ollama
-taskkill /F /IM ollama.exe
+# 1. Verificar que el archivo existe
+curl -I https://www.obratudela.com/base-precios.json
 
-# Reiniciar
-ollama serve
+# 2. Comprobar tamaño y tiempo de respuesta
+curl -w "@-" -o /dev/null -s https://www.obratudela.com/base-precios.json <<'EOF'
+    time_total:  %{time_total}\n
+    size_download:  %{size_download}\n
+EOF
+
+# 3. Revisar consola del navegador (F12 → Console)
+# Buscar errores de fetch o CORS
+
+# 4. Verificar en Network (F12 → Network)
+# Ver si base-precios.json se descarga completamente
 ```
+
+**Indicadores de éxito:**
+- ✅ Mensaje: "Base de datos cargada: 59.915 partidas disponibles"
+- ⚠️ Fallback: "Modo offline: 46 partidas disponibles" (fetch falló)
 
 ### Problema: Errores de encoding en Python
 **Síntoma:** `UnicodeEncodeError` con emojis
