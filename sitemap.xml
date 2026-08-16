@@ -42,12 +42,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.obratudela.com/presupuestos-pro.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   <url>
     <loc>https://www.obratudela.com/aviso-legal.html</loc>
     <lastmod>2026-08-15</lastmod>

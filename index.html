@@ -192,61 +192,8 @@
       color: inherit
     }
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, .95);
-      backdrop-filter: blur(8px);
-      border-bottom: 2px solid var(--orange);
-      padding: 0 40px;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between
-    }
 
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none
-    }
 
-    .nav-logo img {
-      height: 38px;
-      width: auto;
-      border-radius: 4px
-    }
-
-    .nav-logo span {
-      font-family: 'Bebas Neue', cursive;
-      font-size: 1.6rem;
-      color: var(--orange);
-      letter-spacing: 2px
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      align-items: center
-    }
-
-    .nav-links a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: .82rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      transition: color .2s
-    }
-
-    .nav-links a:hover {
-      color: var(--orange)
-    }
 
     .hero {
       height: calc(100vh - 64px);
@@ -379,10 +326,8 @@
   <noscript>
     <link rel="stylesheet" href="css/index.css">
   </noscript>
-  <link rel="preload" href="css/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="css/header.css">
-  </noscript>
+  <link rel="stylesheet" href="css/header.css">
+
   <link rel="preload" href="css/correcciones.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="css/correcciones.css">
@@ -421,10 +366,6 @@
           📋 Gestor Básico
           <small>53.403 partidas BCEXTREM</small>
         </a>
-        <a href="presupuestos-pro.html" style="border-left: 3px solid var(--orange);">
-          ⭐ Gestor PRO
-          <small>61.826 partidas (BCEXTREM + BCCA)</small>
-        </a>
         <a href="calculadora-ia.html">
           🤖 Presupuesto con IA
           <small>Cálculo inteligente de presupuestos</small>
@@ -455,8 +396,6 @@
 
     <!-- ── HERO ── -->
     <section id="inicio" class="hero-section">
-      <img src="img/logo.jpg" class="hero-logo" alt="Logo de Excavaciones y Servicios Arturo S.L." width="120"
-        height="90" fetchpriority="high">
       <h1 class="hero-title">OBRA TUDELA</h1>
       <p class="hero-sub">Excavaciones, movimiento de tierras y servicios integrales de obra en Tudela de Duero,
         Valladolid.</p>
@@ -634,7 +573,6 @@
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
             <a href="gestor-presupuestos.html" class="btn-primary contacto-cta">📋 Gestor Básico<br><small style="font-size: 0.75em; opacity: 0.8;">53.403 partidas</small></a>
-            <a href="presupuestos-pro.html" class="btn-primary contacto-cta" style="background: #ff6b35;">⭐ Gestor PRO<br><small style="font-size: 0.75em; opacity: 0.8;">61.826 partidas</small></a>
             <a href="calculadora-ia.html" class="btn-primary contacto-cta" style="background: #1a1a1a;">🤖 Presupuesto IA<br><small style="font-size: 0.75em; opacity: 0.8;">Cálculo inteligente</small></a>
           </div>
         </div>

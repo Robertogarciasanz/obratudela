@@ -1,35 +1,6 @@
     /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 2px solid var(--orange);
-      padding: 0 40px;
-      height: 64px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-logo {
-      display: flex; align-items: center; gap: 12px;
-      text-decoration: none;
-    }
-    .nav-logo img { height: 38px; width: auto; border-radius: 4px; }
-    .nav-logo span {
-      font-family: 'Bebas Neue', cursive;
-      font-size: 1.6rem;
-      color: var(--orange);
-      letter-spacing: 2px;
-    }
-    .nav-links { display: flex; gap: 32px; align-items: center; }
-    .nav-links a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--orange); }
+    /* Estilos de navegación definidos en header.css (.main-header, .main-nav) */
+
 
     /* ── DROPDOWN ── */
     .nav-dropdown { position: relative; }

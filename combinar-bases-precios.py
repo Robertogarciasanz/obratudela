@@ -3,6 +3,8 @@
 """
 Combinar bases de precios JSON
 Combina BCEXTREM (Extremadura) con BCCA (Andalucia) eliminando duplicados
+y normalizando campos para que todas las partidas usen el mismo esquema:
+  cod, res, desc, uni, precio, [fuente]
 """
 
 import json
@@ -40,6 +42,7 @@ def main():
     # Add new items from BCCA (with prefix to avoid conflicts)
     nuevas = 0
     duplicadas = 0
+    omitidas = 0
 
     for item in bcca:
         if 'cod' not in item or not item['cod']:
@@ -47,8 +50,13 @@ def main():
 
         codigo_original = item['cod']
 
-        # Skip auxiliary/chapter entries
+        # Skip auxiliary/chapter entries por código
         if codigo_original.startswith('-') or codigo_original.startswith('#'):
+            continue
+
+        # Skip chapter entries: en BCCA las partidas reales tienen pre > 0
+        if item.get('pre', 0) <= 0:
+            omitidas += 1
             continue
 
         # Check if exists
@@ -56,10 +64,16 @@ def main():
             duplicadas += 1
             continue
 
-        # Add with BCCA prefix to identify source
-        item_nuevo = item.copy()
-        item_nuevo['cod'] = f"BCCA_{codigo_original}"
-        item_nuevo['fuente'] = 'Andalucia'
+        # Normalizar campos: BCCA usa 'pre', BCEXTREM usa 'precio'
+        # Esquema unificado: cod, res, desc, uni, precio, [fuente]
+        item_nuevo = {
+            'cod': f"BCCA_{codigo_original}",
+            'res': item.get('res', ''),
+            'desc': item.get('desc', item.get('res', '')),
+            'uni': item.get('uni', ''),
+            'precio': item.get('pre', item.get('precio', 0.0)),
+            'fuente': 'Andalucia'
+        }
 
         bcextrem.append(item_nuevo)
         codigos_existentes.add(item_nuevo['cod'])
@@ -68,6 +82,7 @@ def main():
     print(f"\n[INFO] Resultados:")
     print(f"  - Partidas BCEXTREM originales: {len(bcextrem) - nuevas}")
     print(f"  - Partidas nuevas de BCCA: {nuevas}")
+    print(f"  - Capítulos/auxiliares omitidos: {omitidas}")
     print(f"  - Partidas duplicadas omitidas: {duplicadas}")
     print(f"  - TOTAL combinado: {len(bcextrem)} partidas")
 
@@ -82,7 +97,7 @@ def main():
         # Show file sizes
         import os
         size_mb = os.path.getsize(output_file) / (1024 * 1024)
-        print(f"[OK] Tamano del archivo: {size_mb:.2f} MB")
+        print(f"[OK] Tamaño del archivo: {size_mb:.2f} MB")
 
     except Exception as e:
         print(f"[ERROR] Error al guardar: {str(e)}")

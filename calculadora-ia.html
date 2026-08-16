@@ -470,7 +470,7 @@
 
       <div class="chat-container" id="chatContainer">
         <div class="message system">
-          👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos de 53.403 precios.
+          👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos de +59.000 precios (BCEXTREM + BCCA Andalucía).
         </div>
       </div>
 
@@ -512,9 +512,9 @@
     // Cargar base de datos de precios con indicador
     async function loadPrecios() {
       try {
-        addMessage('system', '⏳ Cargando base de datos de 53.403 partidas...');
+        addMessage('system', '⏳ Cargando base de datos de precios (BCEXTREM + BCCA)...');
 
-        const response = await fetch('precios.min.json');
+        const response = await fetch('precios-combinado.json');
 
         if (!response.ok) {
           throw new Error('Error en la descarga');
