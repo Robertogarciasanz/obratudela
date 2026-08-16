@@ -1,0 +1,97 @@
+name: Comprimir archivos grandes automáticamente
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'base-precios.json'
+      - 'precios-busqueda.json'
+      - 'gestor-presupuestos.html'
+      - 'scripts/compress-precios.cjs'
+
+permissions:
+  contents: write
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Para comparar cambios
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verificar si archivos grandes cambiaron
+        id: check_changes
+        run: |
+          # Verificar si los archivos fuente cambiaron
+          if git diff --name-only HEAD~1 HEAD | grep -E 'base-precios.json|precios-busqueda.json|gestor-presupuestos.html'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "🔄 Archivos grandes modificados, se ejecutará compresión"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "✅ No hay cambios en archivos grandes, saltando compresión"
+          fi
+
+      - name: Ejecutar script de compresión
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "🗜️ Comprimiendo archivos grandes..."
+          node scripts/compress-precios.cjs
+
+      - name: Verificar tamaños
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "📊 Reporte de compresión:"
+          echo ""
+          for file in base-precios.json precios-busqueda.json gestor-presupuestos.html; do
+            if [ -f "$file" ]; then
+              original=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null)
+              if [ -f "$file.gz" ]; then
+                gzip_size=$(stat -f%z "$file.gz" 2>/dev/null || stat -c%s "$file.gz" 2>/dev/null)
+                ratio=$(echo "scale=1; 100 - ($gzip_size * 100 / $original)" | bc)
+                echo "✅ $file:"
+                echo "   Original: $(numfmt --to=iec $original)"
+                echo "   Gzip: $(numfmt --to=iec $gzip_size) (${ratio}% reducción)"
+              fi
+              if [ -f "$file.br" ]; then
+                br_size=$(stat -f%z "$file.br" 2>/dev/null || stat -c%s "$file.br" 2>/dev/null)
+                ratio=$(echo "scale=1; 100 - ($br_size * 100 / $original)" | bc)
+                echo "   Brotli: $(numfmt --to=iec $br_size) (${ratio}% reducción)"
+              fi
+              echo ""
+            fi
+          done
+
+      - name: Commit archivos comprimidos
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Añadir solo archivos .gz y .br generados
+          git add -f *.gz *.br 2>/dev/null || true
+
+          # Commit solo si hay cambios
+          if git diff --staged --quiet; then
+            echo "✅ No hay archivos comprimidos nuevos para commitear"
+          else
+            git commit -m "🤖 Auto-compress: Generar versiones .gz/.br
+
+Archivos comprimidos actualizados automáticamente por GitHub Actions.
+
+Generados por: scripts/compress-precios.cjs
+Trigger: Cambio en archivos fuente
+
+Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+
+            git push
+            echo "✅ Archivos comprimidos commiteados y pusheados"
+          fi
