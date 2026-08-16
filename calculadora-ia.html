@@ -607,16 +607,36 @@
       {cod:'D01AA010',res:'Demol. solera horm. en masa e=10cm, medios manuales',uni:'m2',precio:7.40,desc:'Demolición solera hormigón en masa'},
     ];
 
-    // Cargar base de datos de precios con indicador
+    // Cargar base de datos de precios con indicador y fallback inteligente
     async function loadPrecios() {
       try {
         addMessage('system', '⏳ Cargando base de precios unificada...');
 
-        // Usar versión compacta (5.7 MB) en lugar de completa (19 MB) para mejor rendimiento
-        const response = await fetch('precios-busqueda.json');
+        // Lista de URLs a intentar en orden de preferencia (más ligera primero)
+        // Nginx/GitHub Pages sirve automáticamente .gz si existe con Content-Encoding: gzip
+        const urls = [
+          'precios-busqueda.json',  // 0.86 MB (gzip) o 5.65 MB (sin comprimir)
+          'base-precios.json'        // 1.82 MB (gzip) o 18 MB (sin comprimir) - fallback con desc
+        ];
 
-        if (!response.ok) {
-          throw new Error('Error en la descarga');
+        let response = null;
+        let urlUsada = null;
+
+        // Intentar cada URL hasta encontrar una que funcione
+        for (const url of urls) {
+          try {
+            response = await fetch(url);
+            if (response.ok) {
+              urlUsada = url;
+              break;
+            }
+          } catch (e) {
+            console.warn(`No se pudo cargar ${url}, intentando siguiente...`);
+          }
+        }
+
+        if (!response || !response.ok) {
+          throw new Error('No se pudo cargar ninguna versión de la base de precios');
         }
 
         const data = await response.json();
@@ -629,7 +649,7 @@
         }
 
         addMessage('system', `✅ Base de datos cargada: ${preciosDB.length.toLocaleString()} partidas disponibles`);
-        console.log(`✅ Base de datos cargada: ${preciosDB.length} partidas`);
+        console.log(`✅ Base de datos cargada desde ${urlUsada}: ${preciosDB.length} partidas`);
 
       } catch (error) {
         console.warn('Fetch fallido, usando partidas embebidas:', error);
