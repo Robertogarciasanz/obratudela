@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Búsqueda Semántica | ObraTudela</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .search-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+        .search-input-wrapper {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #searchInput {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s;
+        }
+        #searchInput:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+        button {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .filter-group label {
+            display: block;
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .filter-group select,
+        .filter-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        #loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+        }
+        .spinner {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        #results {
+            display: none;
+        }
+        .result-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .result-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+        .result-codigo {
+            font-family: 'Courier New', monospace;
+            color: #667eea;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .result-relevancia {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .result-resumen {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .result-desc {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .result-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+            color: #999;
+        }
+        .result-precio {
+            color: #22c55e;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        .no-results h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .ejemplos {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .ejemplos h4 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        .ejemplo-btn {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .ejemplo-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Búsqueda Semántica Inteligente</h1>
+
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <input type="text" id="searchInput" placeholder="Escribe lo que buscas: ej. 'demolición arcos', 'tubería agua', 'excavación'...">
+                <button onclick="buscar()">Buscar</button>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Categoría</label>
+                    <select id="filterCategoria">
+                        <option value="">Todas</option>
+                        <option value="DEMOLICIONES">Demoliciones</option>
+                        <option value="MOVIMIENTO_TIERRAS">Movimiento de Tierras</option>
+                        <option value="HORMIGONES">Hormigones</option>
+                        <option value="INSTALACIONES">Instalaciones</option>
+                        <option value="SANEAMIENTO">Saneamiento</option>
+                        <option value="CIMENTACIONES">Cimentaciones</option>
+                        <option value="ALBANILERIA">Albañilería</option>
+                        <option value="REVESTIMIENTOS">Revestimientos</option>
+                        <option value="CARPINTERIA">Carpintería</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Unidad</label>
+                    <select id="filterUnidad">
+                        <option value="">Todas</option>
+                        <option value="m">m (metro)</option>
+                        <option value="m2">m² (metro cuadrado)</option>
+                        <option value="m3">m³ (metro cúbico)</option>
+                        <option value="ud">ud (unidad)</option>
+                        <option value="kg">kg (kilogramo)</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Precio mínimo (€)</label>
+                    <input type="number" id="filterPrecioMin" placeholder="0.00" step="0.01">
+                </div>
+
+                <div class="filter-group">
+                    <label>Precio máximo (€)</label>
+                    <input type="number" id="filterPrecioMax" placeholder="1000.00" step="0.01">
+                </div>
+            </div>
+
+            <div class="stats" id="stats" style="display:none;">
+                <div class="stat">
+                    <div class="stat-value" id="statTotal">0</div>
+                    <div class="stat-label">Total partidas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="statPalabras">0</div>
+                    <div class="stat-label">Palabras indexadas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="statResultados">0</div>
+                    <div class="stat-label">Resultados</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <div>Cargando índice de búsqueda semántica...</div>
+            <div style="font-size: 14px; margin-top: 10px; opacity: 0.8;">61,835 partidas • 38,530 términos indexados</div>
+        </div>
+
+        <div id="results"></div>
+
+        <div class="ejemplos">
+            <h4>💡 Prueba estas búsquedas semánticas:</h4>
+            <span class="ejemplo-btn" onclick="buscarEjemplo('demolicion arcos')">demolición arcos</span>
+            <span class="ejemplo-btn" onclick="buscarEjemplo('tuberia agua')">tubería agua</span>
+            <span class="ejemplo-btn" onclick="buscarEjemplo('excavacion zanja')">excavación zanja</span>
+            <span class="ejemplo-btn" onclick="buscarEjemplo('pavimento ceramica')">pavimento cerámica</span>
+            <span class="ejemplo-btn" onclick="buscarEjemplo('hormigon armado')">hormigón armado</span>
+        </div>
+    </div>
+
+    <script src="../js/busqueda-semantica.js"></script>
+    <script>
+        // Inicializar al cargar
+        window.addEventListener('load', async () => {
+            const exito = await window.busquedaSemantica.inicializar();
+
+            if (exito) {
+                const stats = window.busquedaSemantica.obtenerEstadisticas();
+
+                document.getElementById('statTotal').textContent = stats.total_partidas.toLocaleString();
+                document.getElementById('statPalabras').textContent = stats.palabras_indexadas.toLocaleString();
+                document.getElementById('stats').style.display = 'flex';
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('results').style.display = 'block';
+
+                // Buscar automáticamente si hay query en URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const query = urlParams.get('q');
+                if (query) {
+                    document.getElementById('searchInput').value = query;
+                    buscar();
+                } else {
+                    mostrarMensajeInicial();
+                }
+            } else {
+                document.getElementById('loading').innerHTML = '<div style="color:red;">❌ Error al cargar el índice de búsqueda</div>';
+            }
+        });
+
+        // Buscar al presionar Enter
+        document.getElementById('searchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') buscar();
+        });
+
+        function buscar() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (!query) return;
+
+            const opciones = {
+                limite: 50,
+                categoria: document.getElementById('filterCategoria').value || null,
+                unidad: document.getElementById('filterUnidad').value || null,
+                precioMin: parseFloat(document.getElementById('filterPrecioMin').value) || null,
+                precioMax: parseFloat(document.getElementById('filterPrecioMax').value) || null
+            };
+
+            const inicio = performance.now();
+            const resultados = window.busquedaSemantica.buscar(query, opciones);
+            const tiempo = (performance.now() - inicio).toFixed(2);
+
+            mostrarResultados(resultados, query, tiempo);
+        }
+
+        function buscarEjemplo(query) {
+            document.getElementById('searchInput').value = query;
+            buscar();
+        }
+
+        function mostrarResultados(resultados, query, tiempo) {
+            const container = document.getElementById('results');
+            document.getElementById('statResultados').textContent = resultados.length.toLocaleString();
+
+            if (resultados.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        <h3>😕 No se encontraron resultados para "${query}"</h3>
+                        <p>Intenta con otros términos o revisa los filtros</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = `<div style="color:white; text-align:center; margin-bottom:20px;">
+                <strong>${resultados.length}</strong> resultados encontrados en <strong>${tiempo}ms</strong>
+            </div>`;
+
+            resultados.forEach(partida => {
+                const precio = partida.pre > 0 ? `${partida.pre.toFixed(2)} €/${partida.uni}` : 'Sin precio';
+                const relevancia = partida._relevancia || 0;
+
+                html += `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <div class="result-codigo">${partida.cod}</div>
+                            <div class="result-relevancia">${relevancia}% relevante</div>
+                        </div>
+                        <div class="result-resumen">${partida.res}</div>
+                        ${partida.desc ? `<div class="result-desc">${partida.desc.substring(0, 200)}...</div>` : ''}
+                        <div class="result-meta">
+                            <span class="result-precio">${precio}</span>
+                            <span>Unidad: <strong>${partida.uni}</strong></span>
+                            <span>Tipo: <strong>${['Partida', 'Capítulo', 'Subcapítulo'][partida.tipo] || 'Partida'}</strong></span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function mostrarMensajeInicial() {
+            document.getElementById('results').innerHTML = `
+                <div class="no-results">
+                    <h3>👋 Búsqueda Semántica Lista</h3>
+                    <p>Escribe lo que buscas y te mostraré resultados relevantes</p>
+                    <p style="font-size:14px; margin-top:10px; opacity:0.8;">
+                        El sistema expande automáticamente tu búsqueda con sinónimos y términos relacionados
+                    </p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

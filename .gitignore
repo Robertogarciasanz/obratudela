@@ -31,3 +31,6 @@ extraer-imagenes.js
 *.bak
 *.tmp
 precios-con-desgloses.json
+
+# Índices generados (muy grandes)
+data/indice-busqueda.json

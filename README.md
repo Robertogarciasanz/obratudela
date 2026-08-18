@@ -12,6 +12,11 @@ Sitio web de **Excavaciones y Servicios Arturo S.L.**, empresa de excavaciones, 
 - **61,835 partidas** unificadas (BCCA Andalucía + CYPE + Base histórica)
 - **Visualización de desgloses completos**: Mano de Obra, Materiales y Maquinaria
 - **30,300 descomposiciones** con costes directos e indirectos
+- **Búsqueda semántica inteligente** con índice invertido:
+  - 38,530 palabras indexadas con sinónimos
+  - Expansión automática de términos (ej: "demolición" → "derribo", "desmontaje")
+  - 9 categorías semánticas especializadas
+  - Búsqueda O(1) con relevancia calculada
 - Búsqueda fuzzy con tolerancia a errores
 - Organización jerárquica por oficios (12 capítulos)
 - Exportación a Excel e impresión profesional
@@ -41,14 +46,20 @@ Sitio web de **Excavaciones y Servicios Arturo S.L.**, empresa de excavaciones, 
 ├── topografia.html                 # Servicios de topografía
 ├── aviso-legal.html                # Aviso legal y política de privacidad
 │
-├── admin-server.js                 # Servidor Node.js con API REST
-├── convert-bc3-to-json.py          # Conversor de archivos BC3 (FIEBDC-3)
+├── pages/                          # Páginas HTML organizadas
+│   ├── demo-busqueda-semantica.html # Demo del motor de búsqueda inteligente
+│   └── ...                         # Otras páginas
 │
-├── anuncios.json                   # Base de datos de anuncios
-├── precios.json                    # Base de precios BCEXTREM 2026 (19 MB)
-├── precios-con-desgloses.json      # Base con desgloses completos (28 MB)
-├── catalogo.json                   # Catálogo schema.org de maquinaria
-├── capitulos-map.json              # Mapeo de capítulos por oficios
+├── scripts/                        # Scripts de procesamiento
+│   ├── generar-indice-busqueda.py  # Generador de índice invertido
+│   └── convert-bc3-to-json.py      # Conversor de archivos BC3 (FIEBDC-3)
+│
+├── data/                           # Datos de la aplicación
+│   ├── base-precios.json           # Base unificada (61,835 partidas, 21 MB)
+│   ├── indice-busqueda.json        # Índice invertido (42 MB, generado)
+│   ├── anuncios.json               # Base de datos de anuncios
+│   ├── catalogo.json               # Catálogo schema.org de maquinaria
+│   └── capitulos-map.json          # Mapeo de capítulos por oficios
 │
 ├── package.json                    # Dependencias Node.js
 ├── CNAME                           # Dominio personalizado
@@ -67,7 +78,8 @@ Sitio web de **Excavaciones y Servicios Arturo S.L.**, empresa de excavaciones, 
 │   └── logo.jpg                    # Logo de la empresa
 │
 ├── css/                            # Estilos (si existen)
-├── js/                             # Scripts del cliente (si existen)
+├── js/                             # Scripts del cliente
+│   └── busqueda-semantica.js       # Motor de búsqueda con índice invertido
 │
 └── .github/
     └── workflows/
