@@ -1,0 +1,5 @@
+Trigger GitHub Pages rebuild
+
+This file was created automatically to force a rebuild of GitHub Pages for the repository.
+
+Created by GitHub Copilot on 2026-08-18.
