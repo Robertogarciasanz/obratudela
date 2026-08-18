@@ -12,6 +12,26 @@ python scripts/convert-bc3-to-json.py data/archivo.bc3 data/salida.json
 
 ## Scripts disponibles
 
+### generar-indice-busqueda.py ⭐⭐
+Genera el índice invertido para búsqueda semántica inteligente
+
+**Uso:**
+```bash
+python scripts/generar-indice-busqueda.py
+```
+
+**Qué hace:**
+- Lee `data/base-precios.json` (61,835 partidas)
+- Crea índice invertido con 38,530 palabras
+- Expande términos con sinónimos (9 categorías semánticas)
+- Genera `data/indice-busqueda.json` (42 MB)
+- Permite búsquedas O(1) con relevancia calculada
+
+**Cuándo regenerar:**
+- Después de actualizar base-precios.json
+- Al agregar nuevas partidas desde BC3
+- Al modificar categorías semánticas
+
 ### convert-bc3-to-json.py ⭐
 Convierte archivos BC3 (FIEBDC-3) a JSON
 
