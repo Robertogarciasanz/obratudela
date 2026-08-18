@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T26SL49M');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto con IA — ObraTudela</title>
+    <meta name="description"
+        content="Calculadora de presupuestos de obra con IA. Describe tu proyecto y obtén un presupuesto detallado al instante con acceso a +54,000 partidas de precios.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.obratudela.com/calculadora-presupuestos.html">
+    <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Calculadora de Presupuestos con IA — ObraTudela",
+    "url": "https://www.obratudela.com/calculadora-presupuestos.html",
+    "description": "Herramienta de IA para estimar costes de obra. Describe tu proyecto en lenguaje natural y recibe un presupuesto detallado con acceso a la base de datos de precios de construcción BCEXTREM.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any (Web Browser)",
+    "inLanguage": "es",
+    "featureList": [
+      "Procesamiento de Lenguaje Natural para descripciones de obra",
+      "Búsqueda inteligente en +54,000 partidas de precios",
+      "Extracción automática de mediciones (largo, ancho, profundidad)",
+      "Generación de presupuesto estimado con partidas de obra",
+      "Impresión de presupuesto profesional"
+    ],
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+    "provider": {
+      "@type": "Organization",
+      "name": "Excavaciones y Servicios Arturo S.L.",
+      "url": "https://www.obratudela.com"
+    }
+  }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        :root {
+            --orange: #ff6b00;
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --border: #2e2e2e;
+            --text: #e8e8e8;
+            --muted: #888;
+            --ai-bg: #1f2937;
+            --user-bg: #374151;
+            --green: #4caf7d;
+            --blue: #3498db;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'IBM Plex Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .header {
+            background: var(--surface);
+            border-bottom: 2px solid var(--orange);
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            flex-shrink: 0;
+        }
+
+        .header-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 3px;
+            color: var(--orange);
+        }
+
+        .btn-back {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 13px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 5px 12px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .btn-back:hover {
+            color: var(--orange);
+            border-color: var(--orange);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message {
+            display: flex;
+            gap: 12px;
+            max-width: 90%;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .message-content {
+            background: var(--ai-bg);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            width: 100%;
+        }
+
+        .message-content p {
+            margin-bottom: 10px;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-content strong {
+            color: var(--orange);
+        }
+
+        .message-content code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 13px;
+        }
+
+        .message.user {
+            align-self: flex-end;
+        }
+
+        .message.user .message-content {
+            background: var(--user-bg);
+        }
+
+        .chat-input-area {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            background: var(--surface);
+            display: flex;
+            gap: 12px;
+        }
+
+        .chat-input-area textarea {
+            flex: 1;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s;
+            height: 50px;
+        }
+
+        .chat-input-area textarea {
+            max-height: 150px;
+        }
+
+        /* Límite para el crecimiento */
+
+        .chat-input-area textarea:focus {
+            border-color: var(--orange);
+        }
+
+        .chat-input-area button {
+            background: var(--orange);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0 24px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .chat-input-area button:hover {
+            background: #e05e00;
+        }
+
+        .chat-input-area button:disabled {
+            background: var(--muted);
+            cursor: not-allowed;
+        }
+
+        #presupuestoResultado {
+            animation: fadeIn 0.4s;
+        }
+
+        #presupuestoResultado h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--orange);
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #presupuestoResultado table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        #presupuestoResultado th,
+        #presupuestoResultado td {
+            padding: 6px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #presupuestoResultado th {
+            font-weight: 600;
+            color: var(--muted);
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        #presupuestoResultado .total-row {
+            font-weight: 700;
+        }
+
+        #presupuestoResultado .total-row.grand-total {
+            color: var(--orange);
+            font-size: 15px;
+            border-top: 2px solid var(--orange);
+        }
+
+        .btn-print {
+            display: inline-block;
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-print:hover {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+
+        .search-results {
+            background: var(--ai-bg);
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .search-results h3 {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .result-item {
+            display: flex;
+            gap: 12px;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background 0.2s;
+            align-items: flex-start;
+        }
+
+        .result-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .result-item-info {
+            flex: 1;
+        }
+
+        .result-item-res {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .result-item-meta {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .btn-add-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--green);
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        @media (max-width: 600px) {
+            .chat-messages {
+                padding: 16px;
+            }
+
+            .chat-input-area {
+                padding: 12px;
+            }
+
+            .message {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T26SL49M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header">
+        <div class="header-title">🤖 PRESUPUESTO CON IA</div>
+        <div class="header-actions">
+            <button id="nuevaConsultaBtn" class="btn-back">🔄 Nueva Consulta</button>
+            <a href="index.html" class="btn-back">← Volver</a>
+        </div>
+    </header>
+
+    <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+            <!-- Mensajes se añadirán dinámicamente -->
+        </div>
+        <div class="chat-input-area">
+            <textarea id="userInput"
+                placeholder="Describe tu proyecto. Ej: 'necesito una zanja de 10 metros de largo y 50cm de profundo'"></textarea>
+            <button id="sendButton">➤</button>
+        </div>
+    </div>
+
+    <script>
+        // Inicialización global de la aplicación
+        window.app = {};
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const chatMessages = document.getElementById('chatMessages');
+            const userInput = document.getElementById('userInput');
+            const sendButton = document.getElementById('sendButton');
+            const nuevaConsultaBtn = document.getElementById('nuevaConsultaBtn');
+
+            const STORAGE_KEY = 'ai_budget_obratudela';
+            const CHAT_STORAGE_KEY = 'ai_chat_history_obratudela';
+            // --- Base de datos de precios integrada para carga instantánea ---
+            const embeddedPriceData = {
+                "items": [
+                    { "cod": "A01A030", "res": "PASTA DE YESO NEGRO", "desc": "Pasta de yeso negro amasado manualmente.", "uni": "m3", "precio": 91.28 },
+                    { "cod": "A01A100", "res": "PASTA YESO ESTANCO P/PROYECTAR", "desc": "Pasta de yeso y aditivos especial para proyectar, amasado a mano.", "uni": "m2", "precio": 4.58 },
+                    { "cod": "E01AA010", "res": "DEMOLICION DE FABRICA DE LADRILLO", "desc": "Demolición de fábrica de ladrillo de cualquier tipo y espesor, con compresor.", "uni": "m3", "precio": 60.55 },
+                    { "cod": "E01AB010", "res": "DEMOLICION DE MURO DE MAMPOSTERIA", "desc": "Demolición de muro de mampostería con compresor.", "uni": "m3", "precio": 75.69 },
+                    { "cod": "E01AC010", "res": "DEMOLICION DE MURO DE SILLERIA", "desc": "Demolición de muro de sillería con compresor.", "uni": "m3", "precio": 121.10 },
+                    { "cod": "E01AD010", "res": "DEMOLICION DE FABRICA DE BLOQUE", "desc": "Demolición de fábrica de bloque de hormigón de cualquier tipo y espesor, con compresor.", "uni": "m3", "precio": 54.49 },
+                    { "cod": "E01AE010", "res": "DEMOLICION DE PAVIMENTO DE HORMIGON", "desc": "Demolición de pavimento de hormigón en masa, con compresor.", "uni": "m3", "precio": 96.88 },
+                    { "cod": "E01AF010", "res": "DEMOLICION DE SOLADO", "desc": "Demolición de solado de cualquier tipo, con compresor.", "uni": "m2", "precio": 5.45 },
+                    { "cod": "E01AG010", "res": "DEMOLICION DE ALICATADO", "desc": "Demolición de alicatado de cualquier tipo, con compresor.", "uni": "m2", "precio": 4.84 },
+                    { "cod": "E01AH010", "res": "DEMOLICION DE ENFOSCADO", "desc": "Demolición de enfoscado de cualquier tipo, con compresor.", "uni": "m2", "precio": 4.24 },
+                    { "cod": "E01AJ010", "res": "DEMOLICION DE CUBIERTA DE TEJA", "desc": "Demolición de cubierta de teja de cualquier tipo, con compresor.", "uni": "m2", "precio": 6.66 },
+                    { "cod": "E02AA010", "res": "EXCAVACION EN ZANJAS Y POZOS", "desc": "Excavación en zanjas y pozos en terreno de cualquier tipo, con retroexcavadora.", "uni": "m3", "precio": 8.48 },
+                    { "cod": "E02AB010", "res": "EXCAVACION A CIELO ABIERTO", "desc": "Excavación a cielo abierto en terreno de cualquier tipo, con retroexcavadora.", "uni": "m3", "precio": 6.06 },
+                    { "cod": "E02AC010", "res": "RELLENO Y COMPACTADO DE ZANJAS", "desc": "Relleno y compactado de zanjas con material procedente de la propia excavación.", "uni": "m3", "precio": 4.84 },
+                    { "cod": "E03AA010", "res": "HORMIGON DE LIMPIEZA HNE-20", "desc": "Hormigón de limpieza HNE-20/P/20/I en cimientos.", "uni": "m3", "precio": 121.10 },
+                    { "cod": "E03AB010", "res": "HORMIGON ARMADO HA-25", "desc": "Hormigón armado HA-25/P/20/I en cimientos, con 60 kg/m3 de acero B-500S.", "uni": "m3", "precio": 211.93 },
+                    { "cod": "E04AA010", "res": "MURO DE LADRILLO PERFORADO", "desc": "Muro de ladrillo perforado de 1/2 pie de espesor, para revestir.", "uni": "m2", "precio": 36.33 },
+                    { "cod": "E04AB010", "res": "TABIQUE DE LADRILLO HUECO DOBLE", "desc": "Tabique de ladrillo hueco doble de 7 cm de espesor.", "uni": "m2", "precio": 24.22 },
+                    { "cod": "E05AA010", "res": "CUBIERTA DE TEJA CERAMICA MIXTA", "desc": "Cubierta de teja cerámica mixta, sobre rastreles de madera.", "uni": "m2", "precio": 48.44 },
+                    { "cod": "E06AA010", "res": "ENFOSCADO MAESTREADO M-5", "desc": "Enfoscado maestreado con mortero de cemento M-5.", "uni": "m2", "precio": 14.53 },
+                    { "cod": "E07AA010", "res": "SOLADO DE GRES PORCELANICO", "desc": "Solado de gres porcelánico de 45x45 cm, recibido con cemento cola.", "uni": "m2", "precio": 42.39 },
+                    { "cod": "E07AB010", "res": "ALICATADO DE AZULEJO", "desc": "Alicatado de azulejo de 20x20 cm, recibido con cemento cola.", "uni": "m2", "precio": 36.33 },
+                    { "cod": "G01C020", "res": "CARGA DE ESCOMBROS SOBRE CAMION", "desc": "Carga de escombros sobre camión con retroexcavadora.", "uni": "m3", "precio": 2.42 },
+                    { "cod": "M05RN020", "res": "RETROCARGADORA NEUMATICA 75 CV", "desc": "Alquiler de retrocargadora neumática de 75 CV, con conductor.", "uni": "h", "precio": 38.57 },
+                    { "cod": "M07CB005", "res": "CAMION BASCULANTE DE 8 T.", "desc": "Alquiler de camión basculante de 8 t., con conductor.", "uni": "h", "precio": 38.57 }
+                ]
+            };
+            let fuse = null;
+            let allItems = [];
+            let presupuesto = [];
+            let chatHistory = [];
+            let lastParsedQuantity = null;
+
+            // Estado de la conversación para preguntas de seguimiento
+            let conversationState = {
+                isWaitingForData: false,
+                requiredDimensions: [],
+                collectedDimensions: {}
+            };
+
+            // --- Funciones públicas expuestas a través de window.app ---
+            window.app.addItemToBudget = (cod) => {
+                const item = allItems.find(i => i.cod === cod);
+                if (!item) return;
+
+                const qtyToAdd = lastParsedQuantity !== null ? lastParsedQuantity : 1;
+                const existing = presupuesto.find(p => p.cod === cod);
+
+                if (existing) {
+                    existing.qty += qtyToAdd;
+                } else {
+                    presupuesto.push({ ...item, qty: qtyToAdd });
+                }
+
+                lastParsedQuantity = null;
+                generateBudget();
+            };
+
+            // --- Carga de base de datos con caché ---
+            async function loadDatabase() {
+                return embeddedPriceData;
+            }
+
+            loadDatabase().then(data => {
+                if (!data) return;
+
+                allItems = data.items || data;
+
+                const fuseOptions = {
+                    keys: [{ name: 'res', weight: 0.8 }, { name: 'cod', weight: 0.2 }],
+                    includeScore: true,
+                    threshold: 0.4,
+                    minMatchCharLength: 3,
+                    ignoreLocation: true,
+                };
+
+                fuse = new Fuse(allItems, fuseOptions);
+
+                streamMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te ayudaré a encontrar las partidas. Por ejemplo: <code>20 m2 de muro de ladrillo perforado</code>.</p>");
+
+                loadBudget();
+            });
+
+            // --- Resto de funciones ---
+            window.app.updateItemQuantity = (cod, newQty) => {
+                const item = presupuesto.find(p => p.cod === cod);
+                if (!item) return;
+
+                const qty = parseFloat(String(newQty).replace(',', '.'));
+                if (isNaN(qty) || qty <= 0) {
+                    window.app.removeItem(cod);
+                    return;
+                }
+
+                item.qty = qty;
+                generateBudget();
+            };
+
+            window.app.removeItem = (cod) => {
+                presupuesto = presupuesto.filter(p => p.cod !== cod);
+                generateBudget();
+            };
+
+            window.app.vaciarPresupuesto = () => {
+                if (confirm('¿Seguro que quieres borrar el presupuesto actual?')) { presupuesto = []; generateBudget(); }
+            };
+
+            function addMessage(text, sender = 'ai') {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = `message ${sender}`;
+                msgDiv.innerHTML = `
+                    <div class="avatar">${sender === 'ai' ? '🤖' : '👤'}</div>
+                    <div class="message-content">${text}</div>
+                `;
+                chatMessages.appendChild(msgDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                chatHistory.push({ sender, text });
+                saveChatHistory();
+            }
+
+            /**
+             * Añade un mensaje de la IA con efecto de streaming (palabra por palabra).
+             * @param {string} text - El texto a mostrar.
+             */
+            async function streamMessage(text) {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = 'message ai';
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'message-content';
+
+                msgDiv.innerHTML = `<div class="avatar">🤖</div>`;
+                msgDiv.appendChild(contentDiv);
+                chatMessages.appendChild(msgDiv);
+
+                const words = text.split(' ');
+                for (let i = 0; i < words.length; i++) {
+                    contentDiv.innerHTML += (i > 0 ? ' ' : '') + words[i];
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                    await new Promise(resolve => setTimeout(resolve, 40));
+                }
+                contentDiv.innerHTML = text;
+                if (text.includes("¡Hola! Soy tu asistente")) { // No guardar el mensaje de bienvenida inicial
+                    chatHistory.push({ sender: 'ai', text });
+                    saveChatHistory();
+                }
+            }
+
+            /**
+             * Extrae múltiples dimensiones (largo, ancho, alto, m2, etc.) de una consulta.
+             * @param {string} query - El texto del usuario.
+             * @returns {{dimensions: object, cleanedQuery: string}}
+             */
+            function parseQueryForDimensions(query) {
+                const dimensions = {};
+                let cleanedQuery = query;
+                const regex = /(\d+[\.,]?\d*)\s*(m2|m²|m3|m³|ml|metros|m|cm|largo|ancho|alto|profundo|espesor)/gi;
+                let match;
+
+                while ((match = regex.exec(query)) !== null) {
+                    const value = parseFloat(match[1].replace(',', '.'));
+                    const unit = match[2].toLowerCase();
+
+                    if (unit.includes('largo')) dimensions.largo = value;
+                    else if (unit.includes('ancho')) dimensions.ancho = value;
+                    else if (unit.includes('alto') || unit.includes('profundo') || unit.includes('espesor')) dimensions.alto = value;
+                    else if (unit.includes('m2') || unit.includes('m²')) dimensions.area = value;
+                    else if (unit.includes('m3') || unit.includes('m³')) dimensions.volumen = value;
+                    else if (unit === 'cm') {
+                        dimensions.alto = value / 100; // Convertir cm a metros automáticamente
+                    }
+                    else if (unit.includes('ml') || unit.includes('metros') || unit === 'm') {
+                        if (!dimensions.largo) dimensions.largo = value;
+                        else if (!dimensions.ancho) dimensions.ancho = value;
+                        else if (!dimensions.alto) dimensions.alto = value;
+                    }
+                    cleanedQuery = cleanedQuery.replace(match[0], ' ');
+                }
+
+                if (dimensions.volumen) lastParsedQuantity = dimensions.volumen;
+                else if (dimensions.area) lastParsedQuantity = dimensions.area;
+                else if (dimensions.largo && dimensions.ancho && dimensions.alto) lastParsedQuantity = dimensions.largo * dimensions.ancho * dimensions.alto;
+                else if (dimensions.largo && dimensions.ancho) lastParsedQuantity = dimensions.largo * dimensions.ancho;
+                else if (dimensions.largo) lastParsedQuantity = dimensions.largo;
+
+                return { dimensions, cleanedQuery: cleanedQuery.replace(/\s+/g, ' ').trim() || query };
+            }
+
+            /**
+             * Limpia y convierte una entrada de texto a metros.
+             * @param {string} entradaTexto - El texto del usuario (ej: "25 cm", "10m").
+             * @returns {number|null} - El valor en metros o null si no es válido.
+             */
+            function normalizarMedida(entradaTexto) {
+                if (!entradaTexto) return null;
+                let texto = entradaTexto.toString().toLowerCase().trim();
+
+                let valorNumerico = parseFloat(texto.replace(',', '.'));
+                if (isNaN(valorNumerico)) return null;
+
+                if (texto.includes('cm')) {
+                    return valorNumerico / 100;
+                }
+
+                return valorNumerico;
+            }
+
+            function resetConversationState() {
+                conversationState.isWaitingForData = false;
+                conversationState.requiredDimensions = [];
+                conversationState.collectedDimensions = {};
+                lastParsedQuantity = null;
+            }
+
+            function searchAndDisplay(query) {
+                const results = fuse.search(query, { limit: 5 });
+                if (results.length === 0 && query) {
+                    addMessage("<p>No he encontrado partidas que coincidan. Intenta ser más específico o usar otras palabras.</p>");
+                    return;
+                }
+
+                const itemsHtml = results.map(result => {
+                    const item = result.item;
+                    return `
+                        <div class="result-item">
+                            <div class="result-item-info">
+                                <div class="result-item-res">${item.res}</div>
+                                <div class="result-item-meta">${item.cod} · ${item.precio.toFixed(2)} €/${item.uni}</div>
+                            </div>
+                            <button class="btn-add-item" title="Añadir al presupuesto" onclick="window.app.addItemToBudget('${item.cod}')">+</button>
+                        </div>
+                    `;
+                }).join('');
+
+                const resultsHtml = `
+                    <div class="search-results">
+                        <h3>He encontrado estas partidas, ¿cuál quieres añadir?</h3>
+                        ${itemsHtml}
+                    </div>
+                `;
+                addMessage(resultsHtml);
+            }
+
+            function generateBudget() {
+                saveBudget();
+
+                let total = 0;
+                const tablaConBorrado = presupuesto.map(item => {
+                    const importe = item.qty * item.precio;
+                    total += importe;
+                    return `
+                        <tr>
+                            <td>${item.res}</td>
+                            <td style="text-align:right;">
+                                <input type="number" value="${item.qty}" onchange="window.app.updateItemQuantity('${item.cod}', this.value)" style="width: 60px; text-align: right; background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 4px; border-radius: 4px; font-size: 13px;">
+                            </td>
+                            <td>${item.uni}</td>
+                            <td style="text-align:right;">${item.precio.toFixed(2)} €</td>
+                            <td style="text-align:right; font-weight:bold;">${importe.toFixed(2)} €</td>
+                            <td style="text-align:center;">
+                                <button onclick="window.app.removeItem('${item.cod}')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;" title="Eliminar partida">🗑️</button>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+
+                const iva = total * 0.21;
+                const granTotal = total + iva;
+
+                let existingBudget = document.getElementById('presupuestoResultado');
+                if (existingBudget) {
+                    existingBudget.parentElement.parentElement.remove();
+                }
+
+                if (presupuesto.length === 0) return;
+
+                const resultadoHtml = `
+                    <div id="presupuestoResultado">
+                        <h3>✅ Presupuesto Estimado</h3>
+                        <table id="tablaConceptos">
+                            <thead>
+                                <tr><th>Concepto</th><th>Cant.</th><th>Ud.</th><th>Precio</th><th>Importe</th><th></th></tr>
+                            </thead>
+                            <tbody>${tablaConBorrado}</tbody>
+                        </table>
+                        <table id="tablaTotales" style="width: 280px; float: right;">
+                            <tr class="total-row"><td>Subtotal</td><td style="text-align:right;">${total.toFixed(2)} €</td></tr>
+                            <tr class="total-row"><td>IVA (21%)</td><td style="text-align:right;">${iva.toFixed(2)} €</td></tr>
+                            <tr class="total-row grand-total"><td>TOTAL</td><td style="text-align:right; font-size: 16px;">${granTotal.toFixed(2)} €</td></tr>
+                        </table>
+                        <div style="clear:both;"></div>
+                        <p style="font-size:11px; color:var(--muted); margin-top:15px;">*Este es un presupuesto orientativo. Los precios pueden variar. Para un presupuesto cerrado, contacta con nosotros.</p>
+                        <button class="btn-print" onclick="window.app.generarYMostrarPresupuesto('share')" style="background:var(--blue);color:#fff;margin-right:8px;">📲 Compartir</button>
+                        <button class="btn-print" onclick="window.app.vaciarPresupuesto()" style="background:var(--user-bg);color:var(--muted);margin-right:8px;">🗑️ Vaciar</button>
+                        <button class="btn-print" onclick="window.app.generarYMostrarPresupuesto('print')">🖨️ Imprimir</button>
+                    </div>
+                `;
+
+                addMessage(resultadoHtml);
+            }
+
+            function handleUserInput() {
+                const text = userInput.value.trim();
+                if (!text) return;
+
+                addMessage(text, 'user');
+                userInput.value = '';
+                sendButton.disabled = true;
+
+                setTimeout(() => {
+                    if (!fuse) {
+                        streamMessage("<p>La base de datos aún no está lista. Por favor, espera un momento.</p>");
+                        sendButton.disabled = false;
+                        return;
+                    }
+
+                    if (conversationState.isWaitingForData) {
+                        const dimensionFaltante = conversationState.requiredDimensions[0];
+                        const valor = normalizarMedida(text);
+
+                        if (dimensionFaltante && valor !== null) {
+                            conversationState.collectedDimensions[dimensionFaltante] = valor;
+                            conversationState.requiredDimensions.shift();
+                        }
+
+                        if (conversationState.requiredDimensions.length > 0) {
+                            askForNextDimension();
+                        } else {
+                            conversationState.isWaitingForData = false;
+                            const { largo, ancho, alto } = conversationState.collectedDimensions;
+                            if (largo && ancho && alto) lastParsedQuantity = largo * ancho * alto;
+                            else if (largo && ancho) lastParsedQuantity = largo * ancho;
+                            else if (largo) lastParsedQuantity = largo;
+                            searchAndDisplay(conversationState.cleanedQuery);
+                        }
+                    } else {
+                        resetConversationState();
+                        const { dimensions, cleanedQuery } = parseQueryForDimensions(text);
+
+                        const required = ['largo', 'ancho', 'alto'];
+                        conversationState.requiredDimensions = required.filter(d => !dimensions[d]);
+                        conversationState.collectedDimensions = dimensions;
+                        conversationState.cleanedQuery = cleanedQuery;
+
+                        if (conversationState.requiredDimensions.length > 0 && Object.keys(dimensions).length > 0) {
+                            conversationState.isWaitingForData = true;
+                            askForNextDimension();
+                        } else {
+                            searchAndDisplay(cleanedQuery);
+                        }
+                    }
+
+                    sendButton.disabled = false;
+                }, 400);
+            }
+
+            sendButton.addEventListener('click', handleUserInput);
+            userInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    handleUserInput();
+                }
+            });
+
+            // --- Función para que el área de texto crezca automáticamente ---
+            userInput.addEventListener('input', () => {
+                // Resetea la altura para que pueda encogerse si se borra texto
+                userInput.style.height = 'auto';
+                // Ajusta la altura al contenido, respetando el max-height del CSS
+                const scrollHeight = userInput.scrollHeight;
+                userInput.style.height = `${scrollHeight}px`;
+            });
+
+            function askForNextDimension() {
+                const dimension = conversationState.requiredDimensions[0];
+                let question = '';
+                switch (dimension) {
+                    case 'largo': question = '¿Qué longitud tiene? (en metros)'; break;
+                    case 'ancho': question = '¿Y de ancho? (en metros)'; break;
+                    case 'alto': question = '¿Qué espesor o profundidad debe tener? (en metros o cm)'; break;
+                    default:
+                        searchAndDisplay(conversationState.cleanedQuery);
+                        return;
+                }
+                streamMessage(`<p>${question}</p>`);
+            }
+
+            function saveBudget() {
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(presupuesto));
+                } catch (e) {
+                    console.warn("No se pudo guardar el presupuesto en localStorage.", e);
+                }
+            }
+
+            function nuevaConsulta() {
+                if (chatHistory.length === 0 && presupuesto.length === 0) return;
+
+                if (confirm('¿Seguro que quieres borrar la conversación y el presupuesto actual?')) {
+                    // Limpiar estado en memoria
+                    presupuesto = [];
+                    chatHistory = [];
+                    resetConversationState();
+
+                    // Limpiar almacenamiento local
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(CHAT_STORAGE_KEY);
+
+                    // Limpiar la interfaz y reiniciar
+                    chatMessages.innerHTML = '';
+                    streamMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te ayudaré a encontrar las partidas. Por ejemplo: <code>20 m2 de muro de ladrillo perforado</code>.</p>");
+                }
+            }
+
+            function saveChatHistory() {
+                try {
+                    localStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify(chatHistory));
+                } catch (e) {
+                    console.warn("No se pudo guardar el historial del chat.", e);
+                }
+            }
+
+            function loadChatHistory() {
+                try {
+                    const saved = localStorage.getItem(CHAT_STORAGE_KEY);
+                    if (saved) {
+                        chatHistory = JSON.parse(saved);
+                        // Al cargar, no guardamos de nuevo en el historial
+                        chatHistory.forEach(msg => {
+                            addMessage(msg.text, msg.sender, false);
+                        });
+                    }
+                } catch (e) { console.error("Error al cargar historial del chat.", e); }
+            }
+
+            function encodeBudgetForUrl(budget) {
+                if (!budget || budget.length === 0) return '';
+                const items = budget.map(item => `${item.cod}:${item.qty}`);
+                return btoa(items.join(','));
+            }
+
+            function loadBudget() {
+                try {
+                    const saved = localStorage.getItem(STORAGE_KEY);
+                    if (saved) {
+                        presupuesto = JSON.parse(saved);
+                    }
+
+                    if (presupuesto.length > 0) generateBudget();
+                } catch (e) {
+                    console.error("Error al cargar el presupuesto desde localStorage.", e);
+                    localStorage.removeItem(STORAGE_KEY);
+                }
+            }
+
+            nuevaConsultaBtn.addEventListener('click', nuevaConsulta);
+
+            window.app.generarYMostrarPresupuesto = async (action) => {
+                if (presupuesto.length === 0) {
+                    alert("El presupuesto está vacío. Añade alguna partida primero.");
+                    return;
+                }
+
+                if (action === 'print') {
+                    const w = window.open('', '_blank', 'width=800,height=900,scrollbars=yes,resizable=yes');
+                    if (!w) {
+                        alert('Por favor, permite las ventanas emergentes para ver el presupuesto.');
+                        return;
+                    }
+                    w.document.write('<p style="font-family:sans-serif; padding:20px;">Generando presupuesto...</p>');
+                    try {
+                        await new Promise(r => setTimeout(r, 150));
+                        const presupuestoHTML = generarHtmlParaImprimir();
+                        w.document.open();
+                        w.document.write(presupuestoHTML);
+                        w.document.close();
+                        w.print();
+                    } catch (error) {
+                        console.error("Error al imprimir:", error);
+                        w.document.write('<p style="color:red;">Error al generar el documento.</p>');
+                        w.document.close();
+                    }
+                } else if (action === 'share') {
+                    const { texto, total } = generarTextoPlanoPresupuesto();
+                    const shareData = {
+                        title: 'Presupuesto Estimado - ObraTudela',
+                        text: texto,
+                        url: 'https://www.obratudela.com/calculadora-presupuestos.html'
+                    };
+
+                    if (navigator.share) {
+                        try {
+                            await navigator.share(shareData);
+                        } catch (err) {
+                            console.warn("Error al compartir:", err);
+                        }
+                    } else {
+                        try {
+                            await navigator.clipboard.writeText(texto);
+                            alert("Presupuesto copiado al portapapeles.");
+                        } catch (err) {
+                            console.error("Error al copiar:", err);
+                            alert("No se pudo copiar el presupuesto.");
+                        }
+                    }
+                }
+            };
+
+            function generarHtmlParaImprimir() {
+                const tablaConceptos = document.getElementById('tablaConceptos')?.outerHTML || '';
+                const tablaTotales = document.getElementById('tablaTotales')?.outerHTML || '';
+
+                if (!tablaConceptos) throw new Error("No hay tabla de presupuestos.");
+
+                const printStyles = `
+                    body { font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 12px; margin: 30px; color: #1f2937; line-height: 1.5; }
+                    h1 { font-size: 22px; margin: 0; color: #ff6b00; text-transform: uppercase; }
+                    h3 { font-size: 16px; margin-bottom: 10px; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }
+                    .header-container { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #ff6b00; padding-bottom: 15px; margin-bottom: 20px; }
+                    .company-info { font-size: 12px; color: #4b5563; }
+                    .company-info strong { color: #111827; }
+                    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+                    th { background-color: #f3f4f6; color: #374151; padding: 8px; text-align: left; font-size: 11px; text-transform: uppercase; border-bottom: 2px solid #e5e7eb; }
+                    td { padding: 8px; border-bottom: 1px solid #e5e7eb; }
+                    input { border: none; background: transparent; font-weight: bold; width: auto; }
+                    button { display: none !important; }
+                    #tablaTotales { width: 280px; float: right; margin-top: 10px; }
+                    #tablaTotales td { border-bottom: 1px solid #e5e7eb; }
+                    .total-row td { font-weight: bold; }
+                    .grand-total td { font-size: 16px; color: #ff6b00; border-top: 2px solid #ff6b00; padding-top: 8px; }
+                    .footer-notes { font-size: 11px; color: #6b7280; margin-top: 40px; clear: both; border-top: 1px solid #e5e7eb; padding-top: 10px; }
+                    @media print {
+                        .no-print { display: none; }
+                        body { margin: 0; }
+                    }
+                `;
+
+                return `
+                    <!DOCTYPE html>
+                    <html lang="es">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Presupuesto Estimado — ObraTudela</title>
+                            <style>${printStyles}</style>
+                        </head>
+                        <body>
+                            <div class="header-container">
+                                <div>
+                                    <h1>OBRA TUDELA</h1>
+                                    <p style="margin:3px 0 0 0; color:#6b7280;">Excavaciones y Servicios Arturo S.L.</p>
+                                </div>
+                                <div class="company-info" style="text-align:right;">
+                                    <div><strong>Teléfono:</strong> 607 444 903</div>
+                                    <div><strong>Email:</strong> excavacionesart@gmail.com</div>
+                                    <div><strong>Fecha:</strong> ${new Date().toLocaleDateString('es-ES')}</div>
+                                </div>
+                            </div>
+                            <h3>Detalle de Partidas</h3>
+                            ${tablaConceptos}
+                            ${tablaTotales}
+                            <div class="footer-notes">
+                                * Este documento es una estimación orientativa generada por la herramienta de asistencia técnica de ObraTudela. Precios sujetos a verificación sobre el terreno.
+                            </div>
+                        </body>
+                    </html>
+                `;
+            }
+
+            function generarTextoPlanoPresupuesto() {
+                let texto = "PRESUPUESTO ESTIMADO - ObraTudela\n\n";
+                let subtotal = 0;
+
+                presupuesto.forEach(item => {
+                    const importe = item.qty * item.precio;
+                    subtotal += importe;
+                    texto += `• ${item.res}\n`;
+                    texto += `  ${item.qty} ${item.uni} × ${item.precio.toFixed(2)} € = ${importe.toFixed(2)} €\n\n`;
+                });
+
+                const iva = subtotal * 0.21;
+                const total = subtotal + iva;
+
+                texto += "--------------------------------\n";
+                texto += `Subtotal: ${subtotal.toFixed(2)} €\n`;
+                texto += `IVA (21%): ${iva.toFixed(2)} €\n`;
+                texto += `TOTAL: ${total.toFixed(2)} €\n\n`;
+                texto += "Generado con la IA de https://www.obratudela.com";
+                return { texto, total };
+            }
+
+            // --- Inicialización al cargar la página ---
+            function initializeChat() {
+                loadChatHistory();
+                loadBudget();
+                if (chatHistory.length === 0) {
+                    streamMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te ayudaré a encontrar las partidas. Por ejemplo: <code>20 m2 de muro de ladrillo perforado</code>.</p>");
+                }
+            }
+            initializeChat();
+        });
+    </script>
+</body>
+
+</html>

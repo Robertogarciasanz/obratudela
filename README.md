@@ -325,6 +325,85 @@ Procesa:
 
 ---
 
+## 🛠️ Comandos útiles y convenciones de commits
+
+### Desarrollo Local
+
+Para probar la página y los servicios localmente antes de desplegar:
+
+* **Servidor web local (interfaz de usuario / frontend):**
+  Puedes iniciar un servidor local rápido en Python usando el script automatizado o comando:
+  ```bash
+  # Usando el script para Windows:
+  iniciar-servidor.bat
+
+  # O directamente en consola:
+  python -m http.server 8080
+  ```
+  Una vez iniciado, accede a: [http://localhost:8080](http://localhost:8080)
+
+* **Panel de administración (servidor de base de datos y anuncios / backend local):**
+  Para gestionar anuncios de maquinaria localmente (requiere configurar dependencias previamente):
+  ```bash
+  node admin-server.js
+  ```
+  Acceso: [http://localhost:3000](http://localhost:3000)
+
+* **Compresión de la base de precios (optimización):**
+  Para generar los archivos comprimidos de la base de precios en formato Brotli (`.br`) y Gzip (`.gz`):
+  ```bash
+  node scripts/compress-precios.cjs
+  ```
+  Opciones útiles:
+  * `--force`   → Regenera todo aunque no haya cambios detectados.
+  * `--skip-br` → Evita generar archivos Brotli (útil para subidas rápidas).
+  * `--skip-gz` → Evita generar archivos Gzip.
+
+---
+
+### Flujo de Git y Despliegue
+
+El sitio web está alojado en GitHub Pages y se actualiza de forma automática con cada envío de cambios (`git push`) a la rama principal (`main`).
+
+1. **Un solo commit por sesión:** Agrupar todos los cambios de la sesión de trabajo en **un solo envío (commit y push)**. Evita realizar múltiples publicaciones seguidas para pequeños ajustes visuales.
+2. **Validación local obligatoria:** Verifica que los menús (tanto en su versión de escritorio como móvil) funcionen de forma correcta antes de subir los cambios con `git push`.
+3. **Resolución de problemas de Git:**
+   * **Errores de archivo de bloqueo de índice (`index.lock` / `HEAD.lock`):** Si Git arroja este fallo de archivo bloqueado, elimina los temporales de bloqueo correspondientes:
+     ```bash
+     # En Windows (PowerShell/CMD):
+     del .git\index.lock
+     del .git\HEAD.lock
+     
+     # En sistemas Unix o consola de Git (Git Bash):
+     rm -f .git/index.lock .git/HEAD.lock
+     ```
+   * **Conflicto al subir cambios (rechazado por el servidor remoto):** Si se han subido cambios remotos previamente, realiza una descarga (`git pull`) priorizando tu copia local en caso de conflicto:
+     ```bash
+     git pull origin main -X ours
+     ```
+4. **Verificación en producción:** Tras subir los cambios (`git push`), espera de 1 a 3 minutos a que termine la acción de compilación de GitHub (GitHub Actions) y comprueba el sitio web en vivo en [www.obratudela.com](https://www.obratudela.com).
+
+---
+
+### Convenciones de mensajes de commits y solicitudes de cambios (PRs)
+
+Dado que el tono del repositorio es profesional y los comentarios están en español, se aconseja seguir una estructura clara para el mensaje del commit o la solicitud de fusión/cambios (Pull Request o PR):
+
+* **Idioma:** Redactar siempre en español, con un tono claro y descriptivo.
+* **Formato estándar (basado en commits convencionales / *Conventional Commits*):**
+  * `feat: descripción corta` (Para nuevas secciones, páginas o funcionalidades).
+  * `fix: descripción corta` (Para corregir fallos en scripts, visualización o enlaces rotos).
+  * `docs: descripción corta` (Para cambios en README, AGENTS u otra documentación).
+  * `style: descripción corta` (Cambios estéticos y de formato de código sin alterar la lógica).
+  * `refactor: descripción corta` (Reestructuraciones de código JS o Python sin modificar su comportamiento).
+
+**Ejemplo de commit ideal:**
+```bash
+git commit -m "feat: añade sección de comandos útiles al README y optimiza flujo de git"
+```
+
+---
+
 ## 🏢 Empresa
 
 | | |
