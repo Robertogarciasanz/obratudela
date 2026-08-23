@@ -3,7 +3,7 @@
  * Coordina todos los módulos y gestiona el flujo de la aplicación
  */
 
-import { loadPrecios } from './precios-loader.js';
+import { loadPrecios, loadSearchIndex, buscarConIndice } from './precios-loader-optimized.js';
 import { buscarPartidas } from './search.js';
 import {
   getPresupuesto,
@@ -37,6 +37,7 @@ import {
 
 // Estado de la aplicación
 let preciosDB = [];
+let searchIndex = null; // Índice invertido para búsquedas O(1)
 let isProcessing = false;
 let partidasSeleccionadas = [];
 
@@ -44,9 +45,10 @@ let partidasSeleccionadas = [];
  * Inicializa la aplicación
  */
 async function init() {
-  // Cargar base de datos de precios
+  // Cargar base de datos de precios e índice de búsqueda en paralelo
   const startTime = Date.now();
-  preciosDB = await loadPrecios((type, message) => {
+
+  const onMessage = (type, message) => {
     // Eliminar mensaje de carga si existe
     const loadingMsg = document.querySelector('.message.system');
     if (loadingMsg && loadingMsg.textContent.includes('Cargando')) {
@@ -61,7 +63,13 @@ async function init() {
                      message.includes('Modo offline') ? 'fallback' : 'network';
       trackPreciosLoaded(preciosDB.length, source, loadTime);
     }
-  });
+  };
+
+  // Cargar índice y datos en paralelo (más rápido)
+  [searchIndex, preciosDB] = await Promise.all([
+    loadSearchIndex(onMessage),
+    loadPrecios(onMessage)
+  ]);
 
   // Event listeners
   document.getElementById('sendBtn').addEventListener('click', sendMessage);
@@ -99,8 +107,15 @@ async function generarPresupuestoIA(descripcion) {
   setEnviarButtonEnabled(false);
 
   try {
-    // Buscar partidas relevantes
-    const partidasRelevantes = buscarPartidas(descripcion, preciosDB, 10);
+    // Buscar partidas relevantes usando índice invertido (O(1)) o búsqueda normal (O(N))
+    let partidasRelevantes;
+    if (searchIndex) {
+      // Búsqueda optimizada con índice invertido (~1-5ms)
+      partidasRelevantes = buscarConIndice(descripcion, searchIndex, preciosDB, 10);
+    } else {
+      // Fallback a búsqueda normal con sinónimos (~100-300ms)
+      partidasRelevantes = buscarPartidas(descripcion, preciosDB, 10);
+    }
 
     // Track búsqueda
     trackSearch(descripcion, partidasRelevantes.length);
