@@ -240,7 +240,44 @@ export function buscarConIndice(query, searchIndex, baseDatos, maxResults = 10) 
 
   // Obtener partidas completas
   const codigosSet = new Set(codigosComunes.slice(0, maxResults));
-  return baseDatos.filter(p => codigosSet.has(p.cod));
+  const resultados = baseDatos.filter(p => codigosSet.has(p.cod));
+
+  // Si no hay resultados con el índice, intentar fallback fuzzy
+  if (resultados.length === 0) {
+    console.log('⚠️ Índice no encontró resultados, usando búsqueda fuzzy...');
+    return buscarConFuzzy(query, baseDatos, maxResults);
+  }
+
+  return resultados;
+}
+
+/**
+ * Búsqueda fuzzy con Fuse.js (fallback cuando no hay resultados)
+ */
+function buscarConFuzzy(query, baseDatos, maxResults) {
+  if (typeof Fuse === 'undefined') {
+    console.error('❌ Fuse.js no está cargado, usando búsqueda lineal básica');
+    return buscarSinIndice(query, baseDatos, maxResults);
+  }
+
+  const fuse = new Fuse(baseDatos, {
+    keys: ['res', 'desc', 'cod'],
+    threshold: 0.4,
+    includeScore: true,
+    ignoreLocation: true,
+    minMatchCharLength: 3
+  });
+
+  const fuzzyResults = fuse.search(query)
+    .slice(0, maxResults)
+    .map(r => r.item);
+
+  if (fuzzyResults.length > 0) {
+    console.log('✨ Resultados fuzzy encontrados:', fuzzyResults.length);
+    console.log('  Top 3:', fuzzyResults.slice(0, 3).map(p => p.cod));
+  }
+
+  return fuzzyResults;
 }
 
 /**
