@@ -122,10 +122,9 @@ export async function loadPrecios(onMessage) {
 
     // Lista de URLs a intentar en orden de preferencia (más ligera primero)
     const urls = [
-      'precios-busqueda.json.gz',  // 0.86 MB (comprimido) - ÓPTIMO
-      'precios-busqueda.json',     // 5.65 MB (sin comprimir)
-      'base-precios.json.gz',      // 1.82 MB (comprimido) - fallback con desc
-      'base-precios.json'          // 18 MB (sin comprimir) - último recurso
+      '/data/base-precios.json.gz',      // 1.9 MB (comprimido) - ÓPTIMO
+      '/data/base-precios.json.br',      // 1.3 MB (Brotli) - MÁS ÓPTIMO si soportado
+      '/data/base-precios.json'          // 21 MB (sin comprimir) - último recurso
     ];
 
     let response = null;
@@ -170,7 +169,7 @@ export async function loadPrecios(onMessage) {
   } catch (error) {
     console.warn('Fetch fallido, usando partidas embebidas:', error);
     // Fallback: usar partidas embebidas para funcionar offline o en file://
-    onMessage('system', `⚠️ Modo offline: ${PARTIDAS_FALLBACK.length} partidas disponibles. Para acceder a la base completa (59.915 partidas), visita obratudela.com`);
+    onMessage('system', `⚠️ Modo offline: ${PARTIDAS_FALLBACK.length} partidas disponibles. Para acceder a la base completa (61.835 partidas), visita obratudela.com`);
     return PARTIDAS_FALLBACK;
   }
 }
