@@ -69,10 +69,6 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- ============================================== -->
-  <!-- DATOS ESTRUCTURADOS PARA IAs Y BUSCADORES     -->
-  <!-- ============================================== -->
-
   <!-- Base de datos principal -->
   <url>
     <loc>https://www.obratudela.com/data/base-precios.json</loc>
@@ -95,38 +91,6 @@
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- Base de datos con desgloses completos -->
-  <url>
-    <loc>https://www.obratudela.com/data/base-precios-con-desgloses-completa.json</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Documentación para LLMs -->
-  <url>
-    <loc>https://www.obratudela.com/llms.txt</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Manifiesto para APIs de IA -->
-  <url>
-    <loc>https://www.obratudela.com/ai-manifest.json</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Scripts y herramientas -->
-  <url>
-    <loc>https://www.obratudela.com/scripts/convert-bc3-to-json.py</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
 
 </urlset>
