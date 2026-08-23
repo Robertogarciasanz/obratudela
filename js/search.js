@@ -137,75 +137,70 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
     return [];
   }
 
+  // Pre-expandir keywords con sinónimos (solo una vez)
+  const keywordsExpandidas = new Map();
+  for (const keyword of keywordsRaw) {
+    const variantes = expandirConSinonimos(keyword);
+    keywordsExpandidas.set(keyword, variantes);
+    console.log(`  "${keyword}" → ${variantes.length} variantes`);
+  }
+
   const resultados = [];
+  const startTime = performance.now();
+
+  // Procesar solo hasta encontrar suficientes buenos candidatos
+  const candidatosNecesarios = maxResults * 5; // 5x el máximo para tener margen
 
   for (const partida of preciosDB) {
+    // Early exit si ya tenemos suficientes candidatos de alta calidad
+    if (resultados.length >= candidatosNecesarios) {
+      break;
+    }
+
     const resNorm = normalizar(partida.res);
     const descNorm = normalizar(partida.desc || '');
     const codNorm = normalizar(partida.cod);
-    const searchText = `${resNorm} ${descNorm}`;
 
     let score = 0;
     let keywordsEncontradas = 0;
     let palabrasExactas = 0;
 
-    for (const keyword of keywords) {
-      // Expandir keyword con sinónimos
-      const variantes = expandirConSinonimos(keyword);
-
-      if (resultados.length === 0) {
-        // Solo log en primera iteración para no saturar
-        console.log(`  "${keyword}" → variantes:`, variantes.slice(0, 5));
-      }
-
+    for (const keyword of keywordsRaw) {
+      const variantes = keywordsExpandidas.get(keyword);
       let encontradaVariante = false;
       let mejorScore = 0;
 
       for (const variante of variantes) {
-        if (searchText.includes(variante)) {
+        // Búsqueda rápida primero en res (más importante)
+        const enRes = resNorm.includes(variante);
+        const enDesc = !enRes && descNorm.includes(variante);
+        const enCod = !enRes && !enDesc && codNorm.includes(variante);
+
+        if (enRes || enDesc || enCod) {
           encontradaVariante = true;
           const esExacta = variante === keyword;
           let scoreVariante = 0;
 
-          // Bonus si la palabra aparece en la descripción corta (res)
-          if (resNorm.includes(variante)) {
-            scoreVariante += esExacta ? 10 : 5; // Priorizar palabras exactas
-
-            // Bonus ENORME si aparece al inicio (suele ser lo más relevante)
-            if (resNorm.startsWith(variante)) {
-              scoreVariante += 15;
+          if (enRes) {
+            scoreVariante += esExacta ? 10 : 5;
+            if (resNorm.startsWith(variante)) scoreVariante += 15;
+            // Palabra completa (sin regex, más rápido)
+            if (resNorm.indexOf(variante) > 0) {
+              const charAntes = resNorm[resNorm.indexOf(variante) - 1];
+              if (charAntes === ' ') scoreVariante += 5;
             }
-
-            // Bonus si es una palabra completa (no parte de otra)
-            const regex = new RegExp(`\\b${variante}\\b`);
-            if (regex.test(resNorm)) {
-              scoreVariante += 5;
-            }
-          }
-
-          // Bonus si aparece en la descripción larga
-          if (descNorm.includes(variante)) {
+          } else if (enDesc) {
             scoreVariante += esExacta ? 3 : 2;
-          }
-
-          // Bonus si está en el código
-          if (codNorm.includes(variante)) {
+          } else if (enCod) {
             scoreVariante += 8;
           }
 
-          // Dar más peso a palabras largas (más específicas)
-          if (variante.length > 5) {
-            scoreVariante += 3;
-          } else if (variante.length > 7) {
-            scoreVariante += 5;
-          }
+          // Peso por longitud
+          if (variante.length > 7) scoreVariante += 5;
+          else if (variante.length > 5) scoreVariante += 3;
 
-          // Guardar el mejor score de todas las variantes
           mejorScore = Math.max(mejorScore, scoreVariante);
-
-          if (esExacta) {
-            palabrasExactas++;
-          }
+          if (esExacta) palabrasExactas++;
         }
       }
 
@@ -217,30 +212,27 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
 
     // Solo incluir si encontró al menos 1 keyword
     if (keywordsEncontradas > 0) {
-      // BONUS MASIVO si encontró TODAS las keywords (búsqueda MUY precisa)
-      if (keywordsEncontradas === keywords.length) {
+      // BONUS MASIVO si encontró TODAS las keywords
+      if (keywordsEncontradas === keywordsRaw.length) {
         score += 50;
-
-        // Bonus adicional si todas son palabras exactas
-        if (palabrasExactas === keywords.length) {
-          score += 30;
-        }
+        if (palabrasExactas === keywordsRaw.length) score += 30;
       }
 
-      // Bonus proporcional por porcentaje de keywords encontradas
-      const porcentaje = keywordsEncontradas / keywords.length;
-      score += Math.floor(porcentaje * 20);
+      // Bonus proporcional
+      score += Math.floor((keywordsEncontradas / keywordsRaw.length) * 20);
 
       resultados.push({ ...partida, score });
     }
   }
 
+  const searchTime = Math.round(performance.now() - startTime);
+
   // Ordenar por relevancia
   resultados.sort((a, b) => b.score - a.score);
 
-  console.log(`✅ Encontradas ${resultados.length} partidas`);
+  console.log(`✅ ${resultados.length} partidas en ${searchTime}ms`);
   if (resultados.length > 0) {
-    console.log('  Top 3:', resultados.slice(0, 3).map(p => `${p.cod} (score: ${p.score})`));
+    console.log('  Top 3:', resultados.slice(0, 3).map(p => `${p.cod} (${p.score})`));
     return resultados.slice(0, maxResults);
   }
 
@@ -277,24 +269,32 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
     return topResults;
   }
 
-  const fuse = new Fuse(preciosDB, {
-    keys: ['res', 'desc', 'cod'],
+  // Optimización: Limitar Fuse.js a primeras 10,000 partidas para ser más rápido
+  // (las partidas están ordenadas por relevancia general)
+  const fuzzyStartTime = performance.now();
+  const datasetLimitado = preciosDB.slice(0, 10000);
+
+  const fuse = new Fuse(datasetLimitado, {
+    keys: ['res', 'desc'],
     threshold: 0.4,
     includeScore: true,
     ignoreLocation: true,
-    minMatchCharLength: 3
+    minMatchCharLength: 3,
+    distance: 100
   });
 
   const fuzzyResults = fuse.search(descripcion)
     .slice(0, maxResults)
     .map(r => ({
       ...r.item,
-      score: Math.round((1 - r.score) * 100) // Convertir score de Fuse (0-1) a nuestro sistema (0-100)
+      score: Math.round((1 - r.score) * 100)
     }));
 
+  const fuzzyTime = Math.round(performance.now() - fuzzyStartTime);
+
   if (fuzzyResults.length > 0) {
-    console.log('✨ Resultados fuzzy encontrados:', fuzzyResults.length);
-    console.log('  Top 3:', fuzzyResults.slice(0, 3).map(p => `${p.cod} (score: ${p.score})`));
+    console.log(`✨ Fuzzy: ${fuzzyResults.length} resultados en ${fuzzyTime}ms`);
+    console.log('  Top 3:', fuzzyResults.slice(0, 3).map(p => p.cod));
     return fuzzyResults;
   }
 
