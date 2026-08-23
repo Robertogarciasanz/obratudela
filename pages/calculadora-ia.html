@@ -15,6 +15,7 @@
   <meta name="description" content="Genera presupuestos de construcción automáticamente con inteligencia artificial. Describe tu proyecto y obtén un presupuesto detallado al instante.">
   <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="../css/cookie-consent.css">
   <link rel="preload" href="../fonts/ibm-plex-sans-300-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/ibm-plex-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -567,5 +568,9 @@
   </div>
 
   <script type="module" src="../js/main.js"></script>
+  <script type="module">
+    import { initCookieConsent } from '../js/cookie-consent.js';
+    initCookieConsent();
+  </script>
 </body>
 </html>
