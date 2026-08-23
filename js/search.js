@@ -20,6 +20,8 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
     // Demolición y retirada
     'demolicion': ['demolicion', 'demol', 'levantado', 'levant', 'picado', 'arranque', 'retirada', 'desmontaje', 'derribo', 'desmolicion', 'corte', 'recorte', 'sierra'],
     'demoler': ['demoler', 'demolicion', 'levantado', 'arranque', 'retirada', 'derribar', 'desmontar', 'corte', 'recorte'],
+    'picado': ['picado', 'picar', 'levantado', 'demolicion', 'fresado', 'corte'],
+    'levantado': ['levantado', 'levantar', 'picado', 'demolicion', 'retirada', 'arranque'],
     'corte': ['corte', 'recorte', 'sierra', 'disco', 'serrado'],
 
     // Pavimentos y aceras
@@ -98,12 +100,16 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
   };
 
   // Limpiar y dividir keywords
+  console.log('🔍 Buscar:', descripcion);
   const keywords = normalizar(descripcion)
     .split(/\s+/)
     .filter(word => word.length > 2 && !stopwords.includes(word)); // Palabras de 3+ letras
 
+  console.log('📋 Keywords normalizadas:', keywords);
+
   // Si no hay keywords válidas, buscar por la descripción completa
   if (keywords.length === 0) {
+    console.warn('⚠️ No hay keywords válidas después de filtrar');
     return [];
   }
 
@@ -122,6 +128,12 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
     for (const keyword of keywords) {
       // Expandir keyword con sinónimos
       const variantes = expandirConSinonimos(keyword);
+
+      if (resultados.length === 0) {
+        // Solo log en primera iteración para no saturar
+        console.log(`  "${keyword}" → variantes:`, variantes.slice(0, 5));
+      }
+
       let encontradaVariante = false;
       let mejorScore = 0;
 
@@ -201,5 +213,11 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
 
   // Ordenar por relevancia
   resultados.sort((a, b) => b.score - a.score);
+
+  console.log(`✅ Encontradas ${resultados.length} partidas`);
+  if (resultados.length > 0) {
+    console.log('  Top 3:', resultados.slice(0, 3).map(p => `${p.cod} (score: ${p.score})`));
+  }
+
   return resultados.slice(0, maxResults);
 }
