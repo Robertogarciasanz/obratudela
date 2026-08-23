@@ -245,11 +245,36 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
   }
 
   // Fallback: búsqueda fuzzy con Fuse.js cuando no hay resultados exactos
-  console.log('⚠️ No hay resultados exactos, usando búsqueda fuzzy con Fuse.js...');
+  console.log('⚠️ No hay resultados exactos, intentando búsqueda fuzzy...');
 
   if (typeof Fuse === 'undefined') {
-    console.error('❌ Fuse.js no está cargado');
-    return [];
+    console.warn('⚠️ Fuse.js no está cargado, intentando búsqueda parcial...');
+    // Fallback sin Fuse.js: búsqueda más permisiva
+    const fallbackResults = [];
+    for (const partida of preciosDB) {
+      const resNorm = normalizar(partida.res);
+      const descNorm = normalizar(partida.desc || '');
+      let matches = 0;
+
+      for (const keyword of keywordsRaw) {
+        if (resNorm.includes(keyword) || descNorm.includes(keyword)) {
+          matches++;
+        }
+      }
+
+      if (matches > 0) {
+        fallbackResults.push({ ...partida, score: matches * 10 });
+      }
+    }
+
+    fallbackResults.sort((a, b) => b.score - a.score);
+    const topResults = fallbackResults.slice(0, maxResults);
+
+    if (topResults.length > 0) {
+      console.log('✨ Resultados parciales encontrados:', topResults.length);
+    }
+
+    return topResults;
   }
 
   const fuse = new Fuse(preciosDB, {

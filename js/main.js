@@ -3,7 +3,7 @@
  * Coordina todos los módulos y gestiona el flujo de la aplicación
  */
 
-import { loadPrecios, loadSearchIndex, buscarConIndice } from './precios-loader-optimized.js';
+import { loadPrecios } from './precios-loader-optimized.js';
 import { buscarPartidas } from './search.js';
 import {
   getPresupuesto,
@@ -37,7 +37,6 @@ import {
 
 // Estado de la aplicación
 let preciosDB = [];
-let searchIndex = null; // Índice invertido para búsquedas O(1)
 let isProcessing = false;
 let partidasSeleccionadas = [];
 
@@ -65,11 +64,8 @@ async function init() {
     }
   };
 
-  // Cargar índice y datos en paralelo (más rápido)
-  [searchIndex, preciosDB] = await Promise.all([
-    loadSearchIndex(onMessage),
-    loadPrecios(onMessage)
-  ]);
+  // Cargar base de datos de precios
+  preciosDB = await loadPrecios(onMessage);
 
   // Event listeners
   document.getElementById('sendBtn').addEventListener('click', sendMessage);
@@ -107,15 +103,10 @@ async function generarPresupuestoIA(descripcion) {
   setEnviarButtonEnabled(false);
 
   try {
-    // Buscar partidas relevantes usando índice invertido (O(1)) o búsqueda normal (O(N))
-    let partidasRelevantes;
-    if (searchIndex) {
-      // Búsqueda optimizada con índice invertido (~1-5ms)
-      partidasRelevantes = buscarConIndice(descripcion, searchIndex, preciosDB, 10);
-    } else {
-      // Fallback a búsqueda normal con sinónimos (~100-300ms)
-      partidasRelevantes = buscarPartidas(descripcion, preciosDB, 10);
-    }
+    // Buscar partidas relevantes con búsqueda inteligente (sinónimos + fuzzy)
+    // NOTA: No usamos searchIndex porque precios-busqueda.json.gz tiene datos obsoletos
+    // La búsqueda con sinónimos y Fuse.js es más precisa y funciona mejor
+    let partidasRelevantes = buscarPartidas(descripcion, preciosDB, 10);
 
     // Track búsqueda
     trackSearch(descripcion, partidasRelevantes.length);
