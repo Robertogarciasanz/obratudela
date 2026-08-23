@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "name": "ObraTudela",
+  "version": "2026.1",
+  "description": "Excavaciones y Servicios Arturo S.L. - Base de datos pública de precios de construcción",
+  "url": "https://www.obratudela.com",
+  "type": "construction-price-database",
+  "updated": "2026-08-23",
+
+  "organization": {
+    "name": "Excavaciones y Servicios Arturo S.L.",
+    "legalName": "Excavaciones y Servicios Arturo S.L.",
+    "taxID": "B47489612",
+    "email": "excavacionesart@gmail.com",
+    "telephone": "+34607444903",
+    "address": {
+      "streetAddress": "Calle Manzano, 2",
+      "addressLocality": "Tudela de Duero",
+      "postalCode": "47320",
+      "addressRegion": "Valladolid",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "latitude": 41.5833,
+      "longitude": -4.5833
+    }
+  },
+
+  "services": [
+    "Excavaciones",
+    "Movimiento de tierras",
+    "Demoliciones",
+    "Construcción de piscinas",
+    "Albañilería",
+    "Alquiler de maquinaria",
+    "Desbroce y limpieza"
+  ],
+
+  "coverage": {
+    "geographic": ["Tudela de Duero", "Valladolid", "Castilla y León"],
+    "radius_km": 50
+  },
+
+  "datasets": [
+    {
+      "name": "Base de Precios de Construcción BCEXTREM 2026",
+      "description": "Base de datos completa con 61.835 partidas de construcción con precios unitarios en euros",
+      "url": "https://www.obratudela.com/data/base-precios.json",
+      "format": "application/json",
+      "encoding": "UTF-8",
+      "size_bytes": 22020096,
+      "size_human": "21 MB",
+      "license": "CC-BY-4.0",
+      "recordCount": 61835,
+      "fields": [
+        {
+          "name": "cod",
+          "type": "string",
+          "description": "Código único de la partida (ej: D02AA100)"
+        },
+        {
+          "name": "res",
+          "type": "string",
+          "description": "Resumen corto de la partida"
+        },
+        {
+          "name": "desc",
+          "type": "string",
+          "description": "Descripción completa de la partida"
+        },
+        {
+          "name": "uni",
+          "type": "string",
+          "description": "Unidad de medida (m2, m3, ud, ml, kg, etc.)"
+        },
+        {
+          "name": "precio",
+          "type": "number",
+          "description": "Precio unitario en euros (EUR)"
+        }
+      ],
+      "compressed": [
+        {
+          "url": "https://www.obratudela.com/data/base-precios.json.gz",
+          "format": "application/gzip",
+          "size_bytes": 1877196,
+          "size_human": "1.79 MB",
+          "compression": "gzip"
+        },
+        {
+          "url": "https://www.obratudela.com/data/base-precios.json.br",
+          "format": "application/x-br",
+          "size_bytes": 1363968,
+          "size_human": "1.3 MB",
+          "compression": "brotli"
+        }
+      ],
+      "sampleQuery": {
+        "description": "Buscar partidas de excavación con precio menor a 10 EUR/m3",
+        "example": "Filtrar por texto 'excavacion' y uni='m3' y precio<10"
+      }
+    },
+    {
+      "name": "Base de Precios con Desgloses Completos",
+      "description": "Incluye descomposiciones de Mano de Obra, Materiales y Maquinaria para 7.365 partidas",
+      "url": "https://www.obratudela.com/data/base-precios-con-desgloses-completa.json",
+      "format": "application/json",
+      "encoding": "UTF-8",
+      "size_bytes": 27262976,
+      "size_human": "26 MB",
+      "license": "CC-BY-4.0",
+      "recordCount": 61835,
+      "recordsWithBreakdown": 7365,
+      "totalBreakdowns": 34259,
+      "breakdownComponents": {
+        "MO": 7911,
+        "MAT": 22386,
+        "MAQ": 0
+      },
+      "fields": [
+        {
+          "name": "descomposicion",
+          "type": "array",
+          "description": "Array de componentes con tipo (MO/MAT/MAQ), cantidad, precio unitario y subtotal"
+        }
+      ]
+    }
+  ],
+
+  "tools": [
+    {
+      "name": "Gestor de Presupuestos Básico",
+      "description": "Buscador y gestor de partidas con exportación a Excel",
+      "url": "https://www.obratudela.com/pages/gestor-presupuestos.html",
+      "type": "web-application",
+      "features": ["search", "export-excel", "print"]
+    },
+    {
+      "name": "Calculadora de Presupuestos con IA",
+      "description": "Búsqueda por lenguaje natural y generación automática de presupuestos",
+      "url": "https://www.obratudela.com/pages/calculadora-ia.html",
+      "type": "web-application",
+      "features": ["natural-language-search", "auto-budget", "real-time-totals"]
+    },
+    {
+      "name": "Conversor BC3 a JSON",
+      "description": "Script Python para convertir archivos BC3 (FIEBDC-3) a JSON",
+      "url": "https://www.obratudela.com/scripts/convert-bc3-to-json.py",
+      "type": "cli-tool",
+      "language": "python",
+      "version": "1.0"
+    }
+  ],
+
+  "documentation": {
+    "llms": "https://www.obratudela.com/llms.txt",
+    "humans": "https://www.obratudela.com/README.md",
+    "sitemap": "https://www.obratudela.com/sitemap.xml",
+    "robots": "https://www.obratudela.com/robots.txt"
+  },
+
+  "api": {
+    "available": false,
+    "note": "Sitio estático. Datos accesibles mediante descarga de archivos JSON. API REST en desarrollo futuro.",
+    "planned": {
+      "endpoints": [
+        "GET /api/precios?q={query}&tipo={unit}&precio_max={max}",
+        "GET /api/precios/{codigo}",
+        "GET /api/precios/{codigo}/desglose",
+        "GET /api/stats"
+      ],
+      "format": "JSON",
+      "authentication": "none"
+    }
+  },
+
+  "useCases": [
+    {
+      "title": "Estimación de Costes",
+      "description": "Calcular el coste de excavación de una piscina de 8x4 metros",
+      "example": {
+        "query": "excavación piscina terreno flojo",
+        "partida": "D02HF100",
+        "precio_unitario": 6.80,
+        "unidad": "m3",
+        "cantidad": 48,
+        "total": 326.40
+      }
+    },
+    {
+      "title": "Búsqueda de Partidas",
+      "description": "Encontrar partidas para demolición de arquetas",
+      "example": {
+        "query": "demolición arqueta PVC",
+        "partida": "D01KA030",
+        "precio_unitario": 12.20,
+        "unidad": "ud"
+      }
+    },
+    {
+      "title": "Análisis de Desgloses",
+      "description": "Ver componentes de mano de obra y materiales de una partida",
+      "example": {
+        "partida": "01AAB00001",
+        "componentes": ["Mano de obra: 81.4%", "Materiales: 3.5%"],
+        "total_directo": 13.28,
+        "precio_bd": 15.89
+      }
+    }
+  ],
+
+  "integrations": {
+    "perplexity": {
+      "optimized": true,
+      "llms_txt": "https://www.obratudela.com/llms.txt",
+      "structured_data": true
+    },
+    "chatgpt": {
+      "browsing": true,
+      "data_sources": ["https://www.obratudela.com/data/base-precios.json"]
+    },
+    "claude": {
+      "web_fetch": true,
+      "llms_txt": "https://www.obratudela.com/llms.txt"
+    },
+    "gemini": {
+      "google_extended": true,
+      "schema_org": true
+    }
+  },
+
+  "performance": {
+    "first_load_time_ms": 3000,
+    "cached_load_time_ms": 100,
+    "search_time_ms": 50,
+    "total_records": 61835
+  },
+
+  "license": {
+    "data": "CC-BY-4.0",
+    "attribution": "Excavaciones y Servicios Arturo S.L.",
+    "commercial_use": true,
+    "modifications": true,
+    "distribution": true
+  },
+
+  "contact": {
+    "developer": "excavacionesart@gmail.com",
+    "business": "+34607444903",
+    "support": "excavacionesart@gmail.com"
+  },
+
+  "technical": {
+    "hosting": "GitHub Pages",
+    "cdn": "Cloudflare (migración en progreso)",
+    "framework": "Vanilla JavaScript",
+    "database": "Static JSON files",
+    "compression": ["gzip", "brotli"],
+    "cache": "sessionStorage (7 days)"
+  }
+}

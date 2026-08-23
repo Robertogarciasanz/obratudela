@@ -1,0 +1,28 @@
+# Cloudflare Pages - Configuración Wrangler
+# https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+
+name = "obratudela"
+compatibility_date = "2024-08-23"
+
+# Configuración de Pages
+pages_build_output_dir = "."
+
+# Variables de entorno (si se necesitan)
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.preview]
+vars = { ENVIRONMENT = "preview" }
+
+# Headers personalizados adicionales
+[[headers]]
+for = "/*"
+[headers.values]
+X-Powered-By = "Cloudflare Pages"
+X-Content-Type-Options = "nosniff"
+
+# Configuración de compresión (Cloudflare lo hace automáticamente)
+# Pero podemos especificar preferencias
+
+# Limitar tamaño de archivos
+# max_upload_size = 25MB (default es 25MB en Cloudflare Pages)

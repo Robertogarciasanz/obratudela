@@ -94,10 +94,11 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 #   https://www.obratudela.com/llms.txt — Guía completa para modelos de lenguaje
 #
 # DATOS JSON (Schema.org):
-#   https://www.obratudela.com/precios.json — 53.403 partidas BCEXTREM 2026
+#   https://www.obratudela.com/data/base-precios.json — 61.835 partidas BCEXTREM 2026
 #   Base de datos pública de precios de construcción en España
 #   Licencia: Creative Commons CC-BY-4.0
-#   Actualización: 2026-08-15
+#   Actualización: 2026-08-23
+#   Formatos disponibles: JSON, JSON.GZ (comprimido), JSON.BR (Brotli)
 #
 # HERRAMIENTAS WEB:
 #   https://www.obratudela.com/presupuesto_v2.html — Gestor profesional de presupuestos

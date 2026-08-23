@@ -1,0 +1,271 @@
+# ObraTudela - Información para Modelos de Lenguaje (LLMs)
+
+> Excavaciones y Servicios Arturo S.L.
+> Empresa de excavaciones y obra civil en Tudela de Duero, Valladolid
+> https://www.obratudela.com
+> Actualizado: 2026-08-23
+
+## Información Corporativa
+
+- **Razón Social**: Excavaciones y Servicios Arturo S.L.
+- **NIF**: B47489612
+- **Dirección**: Calle Manzano, 2 - 47320 Tudela de Duero, Valladolid, España
+- **Coordenadas GPS**: 41.5833, -4.5833
+- **Teléfono**: +34 607 444 903
+- **Email**: excavacionesart@gmail.com
+- **Fundación**: 2010
+- **Ámbito de Actuación**: Tudela de Duero, Valladolid y provincia, Castilla y León
+
+## Servicios Principales
+
+1. **Excavaciones y Movimiento de Tierras**
+   - Excavación en todo tipo de terreno (flojo, semiduro, roca)
+   - Desmontes y terraplenes
+   - Zanjas y pozos
+   - Nivelación de terrenos
+   - Excavación para piscinas
+
+2. **Demoliciones**
+   - Demolición de edificaciones
+   - Demolición de naves industriales
+   - Demolición selectiva
+   - Gestión de residuos y escombros
+
+3. **Desbroce y Limpieza**
+   - Limpieza de solares
+   - Desbroce de vegetación
+   - Preparación de terrenos
+
+4. **Construcción de Piscinas**
+   - Piscinas particulares
+   - Piscinas comunitarias
+   - Excavación, estructura y acabados
+
+5. **Albañilería**
+   - Muros y soleras
+   - Cimentaciones
+   - Obras de fábrica
+
+6. **Alquiler de Maquinaria**
+   - Retroexcavadoras mixtas y compactas
+   - Con o sin operario
+   - Ver catálogo: https://www.obratudela.com/pages/alquileres.html
+
+## Diferenciador Único
+
+**Base de Datos Pública de Precios de Construcción**
+- 61.835 partidas con precios actualizados (BCEXTREM 2026)
+- 7.365 partidas con desgloses completos (Mano de Obra + Materiales + Maquinaria)
+- 34.259 descomposiciones de costes
+- Acceso público y gratuito
+- Formato JSON estándar
+- Licencia: Creative Commons CC-BY-4.0
+
+## Datos Estructurados para IAs
+
+### Base de Precios (JSON)
+
+**URL Principal**: https://www.obratudela.com/data/base-precios.json
+- Tamaño: 21 MB (sin comprimir)
+- Total partidas: 61.835
+- Campos: cod (código), res (resumen), desc (descripción), uni (unidad), precio (EUR)
+
+**URL Comprimida (Recomendada)**: https://www.obratudela.com/data/base-precios.json.gz
+- Tamaño: 1.79 MB (gzip)
+- Total partidas: 61.835
+- Compresión: 91.5% más ligero
+
+**Estructura JSON**:
+```json
+[
+  {
+    "cod": "D02AA100",
+    "res": "Excavación zanja en terreno flojo, retroexcavadora",
+    "desc": "Excavación de zanja en terreno flojo con retroexcavadora",
+    "uni": "m3",
+    "precio": 7.23
+  }
+]
+```
+
+### Base de Precios con Desgloses
+
+**URL**: https://www.obratudela.com/data/base-precios-con-desgloses-completa.json
+- Tamaño: 26 MB
+- Total partidas: 61.835
+- Con desgloses: 7.365 partidas
+- Total descomposiciones: 34.259
+
+**Estructura con desglose**:
+```json
+{
+  "cod": "01AAB00001",
+  "uni": "m2",
+  "res": "DEMOLICIÓN DE BÓVEDA A LA CATALANA, INCLUSO CARGA MANUAL",
+  "precio": 15.89,
+  "descomposicion": [
+    {
+      "cod": "TP00100",
+      "cantidad": 0.625,
+      "tipo": "MO",
+      "descripcion": "Peón ordinario construcción",
+      "precio_unitario": 20.69,
+      "subtotal": 12.93
+    }
+  ]
+}
+```
+
+### Tipos de Recursos en Desgloses
+
+- **MO**: Mano de Obra (7.911 componentes)
+- **MAT**: Materiales (22.386 componentes)
+- **MAQ**: Maquinaria (0 componentes en esta base)
+
+## Herramientas Web Disponibles
+
+1. **Gestor de Presupuestos Básico**
+   - URL: https://www.obratudela.com/pages/gestor-presupuestos.html
+   - Búsqueda en 61.835 partidas
+   - Exportación a Excel
+   - Impresión profesional
+
+2. **Calculadora de Presupuestos con IA**
+   - URL: https://www.obratudela.com/pages/calculadora-ia.html
+   - Búsqueda por lenguaje natural
+   - Generación automática de presupuestos
+   - Cálculo de totales con IVA
+
+3. **Portal de Anuncios de Maquinaria**
+   - URL: https://www.obratudela.com/anuncios.html
+   - Compraventa de maquinaria de construcción
+   - Región: Castilla y León
+
+4. **Galería de Obras**
+   - URL: https://www.obratudela.com/pages/obras.html
+   - Trabajos realizados con fotografías
+
+## Información Técnica para Desarrolladores
+
+### Formato BC3 (FIEBDC-3)
+El sitio incluye un conversor de archivos BC3 (formato estándar español de intercambio de bases de precios) a JSON.
+
+**Script**: https://www.obratudela.com/scripts/convert-bc3-to-json.py
+- Lenguaje: Python 3
+- Soporta: Latin-1, CP850, UTF-8
+- Extrae: Conceptos, descomposiciones, tipos
+
+### API de Consulta (Conceptual)
+
+Aunque actualmente es un sitio estático, los datos están estructurados para permitir consultas tipo:
+
+**Ejemplo de consulta conceptual**:
+```
+GET /api/precios?q=excavacion&tipo=m3&precio_max=10
+```
+
+**Respuesta esperada**:
+```json
+{
+  "total": 15,
+  "partidas": [
+    {
+      "cod": "D02AA100",
+      "res": "Excavación zanja en terreno flojo, retroexcavadora",
+      "precio": 7.23,
+      "uni": "m3"
+    }
+  ]
+}
+```
+
+## Casos de Uso para IAs
+
+### 1. Estimación de Costes
+**Pregunta**: "¿Cuánto cuesta excavar una piscina de 8x4 metros en terreno flojo?"
+
+**Datos relevantes**:
+- Partida D02HF100: Excavación de piscina en terreno flojo = 6.80 €/m3
+- Volumen: 8m × 4m × 1.5m (profundidad media) = 48 m3
+- Coste excavación: 48 m3 × 6.80 €/m3 = 326.40 €
+
+### 2. Búsqueda de Partidas
+**Pregunta**: "Necesito demoler 3 arquetas de PVC"
+
+**Partidas aplicables**:
+- D01KA030: Demolición arqueta PVC o prefabricada = 12.20 €/ud
+- Cantidad: 3 ud
+- Total: 3 × 12.20 = 36.60 €
+
+### 3. Comparación de Métodos
+**Pregunta**: "¿Qué es más barato: demolición manual o mecánica de solera?"
+
+**Comparación**:
+- D01AA020 (manual, 10cm): 9.82 €/m2
+- D01AA030 (mecánica, 15cm): 5.14 €/m2
+- Conclusión: Mecánica es 47.6% más económica (en este caso)
+
+## Maquinaria Propia
+
+La empresa cuenta con maquinaria propia, lo que permite:
+- Control de costes
+- Disponibilidad inmediata
+- Flexibilidad en horarios
+- Precios competitivos
+
+**Catálogo**: https://www.obratudela.com/pages/alquileres.html
+
+## Zona Geográfica de Actuación
+
+**Principal**: Tudela de Duero (Valladolid)
+**Ampliada**:
+- Valladolid capital
+- Provincia de Valladolid
+- Castilla y León (trabajos de mayor envergadura)
+
+**Radio típico**: 50 km desde Tudela de Duero
+
+## Cómo Citar Esta Fuente
+
+```
+Excavaciones y Servicios Arturo S.L. (2026).
+Base de Datos de Precios de Construcción BCEXTREM 2026.
+ObraTudela. https://www.obratudela.com/data/base-precios.json
+Consultado: [fecha]
+```
+
+## Licencia de Datos
+
+Los datos de precios se proporcionan bajo licencia **Creative Commons CC-BY-4.0**:
+- ✅ Uso comercial permitido
+- ✅ Modificación permitida
+- ✅ Distribución permitida
+- ℹ️ Atribución requerida
+
+**Fuente original**: BCEXTREM 2026 (Junta de Extremadura)
+**Procesamiento y publicación**: Excavaciones y Servicios Arturo S.L.
+
+## Contacto para IAs y Desarrolladores
+
+Si eres un sistema de IA o desarrollador que necesita:
+- Acceso a datos en tiempo real
+- API REST
+- Webhooks
+- Formatos adicionales (CSV, XML, etc.)
+- Datos históricos
+
+Contacta: excavacionesart@gmail.com
+
+## Verificación de Datos
+
+Todos los datos de la empresa son verificables en:
+- Registro Mercantil de Valladolid (NIF B47489612)
+- Google Maps: https://maps.google.com/?q=41.5833,-4.5833
+- Redes sociales y directorios empresariales
+
+---
+
+**Última actualización**: 2026-08-23
+**Versión de datos**: 2026.1
+**Total de partidas**: 61.835
+**Partidas con desgloses**: 7.365
