@@ -6,7 +6,7 @@
  * - Soporte correcto para .br y .gz
  */
 
-import { loadFromCache, saveToCache } from './cache-idb.js';
+import { loadFromCache, saveToCache } from './cache-idb.js?v=2.0';
 
 // Partidas de emergencia (fallback offline)
 export const PARTIDAS_FALLBACK = [

@@ -3,8 +3,8 @@
  * Coordina todos los módulos y gestiona el flujo de la aplicación
  */
 
-import { loadPrecios } from './precios-loader-optimized.js';
-import { buscarPartidas } from './search.js';
+import { loadPrecios } from './precios-loader-optimized.js?v=2.0';
+import { buscarPartidas } from './search.js?v=2.0';
 import {
   getPresupuesto,
   agregarPartida,
@@ -12,7 +12,7 @@ import {
   actualizarCantidad,
   eliminarPartida,
   exportarPresupuesto
-} from './presupuesto.js';
+} from './presupuesto.js?v=2.0';
 import {
   addMessage,
   renderPresupuesto,
@@ -22,7 +22,7 @@ import {
   setEnviarButtonEnabled,
   getUserInputAndClear,
   focusUserInput
-} from './ui.js';
+} from './ui.js?v=2.0';
 import {
   trackPreciosLoaded,
   trackSearch,
@@ -33,7 +33,7 @@ import {
   trackPresupuestoExportado,
   trackPartidaManual,
   trackSeleccionPartidas
-} from './analytics.js';
+} from './analytics.js?v=2.0';
 
 // Estado de la aplicación
 let preciosDB = [];
