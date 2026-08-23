@@ -15,6 +15,7 @@
 <title>Gestor de Presupuestos — BCEXTREM + BCCA (59.915 partidas)</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js"></script>
 <style>
   @font-face {
     font-family: 'IBM Plex Sans';
@@ -1125,13 +1126,36 @@ function selectCat(key) {
 
 function applyFilter() {
   if (searchTerm.length >= 2) {
-    filteredItems = [];
     // Search across all categories if term is long enough
     const source = searchTerm.length >= 3 ? Object.values(allData).flat() : currentItems;
+
+    // Intentar búsqueda exacta primero (rápida)
+    filteredItems = [];
     for (const item of source) {
       if (item.cod.toLowerCase().includes(searchTerm) ||
-          item.res.toLowerCase().includes(searchTerm)) {
+          item.res.toLowerCase().includes(searchTerm) ||
+          (item.desc && item.desc.toLowerCase().includes(searchTerm))) {
         filteredItems.push(item);
+      }
+    }
+
+    // Si no hay resultados exactos, usar búsqueda fuzzy con Fuse.js
+    if (filteredItems.length === 0 && typeof Fuse !== 'undefined') {
+      console.log('⚠️ No hay resultados exactos, usando búsqueda fuzzy...');
+      const fuse = new Fuse(source, {
+        keys: ['cod', 'res', 'desc'],
+        threshold: 0.4,
+        includeScore: true,
+        ignoreLocation: true,
+        minMatchCharLength: 3
+      });
+
+      const fuzzyResults = fuse.search(searchTerm);
+      filteredItems = fuzzyResults.map(r => r.item);
+
+      if (filteredItems.length > 0) {
+        console.log('✨ Resultados fuzzy encontrados:', filteredItems.length);
+        console.log('  Top 3:', filteredItems.slice(0, 3).map(p => p.cod));
       }
     }
   } else {
