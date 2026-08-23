@@ -81,6 +81,15 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
       .replace(/[,;:]/g, ' ');
   };
 
+  // Stemming simple: convertir plurales a singular
+  const stemming = (palabra) => {
+    // Si termina en 's' y tiene más de 3 letras, quitar la 's'
+    if (palabra.length > 3 && palabra.endsWith('s') && !palabra.endsWith('ss')) {
+      return palabra.slice(0, -1);
+    }
+    return palabra;
+  };
+
   // Expandir keywords con sinónimos - buscar coincidencias parciales
   const expandirConSinonimos = (palabra) => {
     const variantes = new Set([palabra]); // Incluir la palabra original
@@ -101,9 +110,24 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
 
   // Limpiar y dividir keywords
   console.log('🔍 Buscar:', descripcion);
-  const keywords = normalizar(descripcion)
+  const keywordsRaw = normalizar(descripcion)
     .split(/\s+/)
     .filter(word => word.length > 2 && !stopwords.includes(word)); // Palabras de 3+ letras
+
+  // Aplicar stemming: incluir tanto palabra original como stemmed
+  const keywords = [];
+  const keywordsSet = new Set();
+
+  for (const word of keywordsRaw) {
+    keywords.push(word);
+    keywordsSet.add(word);
+
+    const stemmed = stemming(word);
+    if (stemmed !== word && !keywordsSet.has(stemmed)) {
+      keywords.push(stemmed);
+      keywordsSet.add(stemmed);
+    }
+  }
 
   console.log('📋 Keywords normalizadas:', keywords);
 
@@ -217,7 +241,50 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
   console.log(`✅ Encontradas ${resultados.length} partidas`);
   if (resultados.length > 0) {
     console.log('  Top 3:', resultados.slice(0, 3).map(p => `${p.cod} (score: ${p.score})`));
+    return resultados.slice(0, maxResults);
   }
 
-  return resultados.slice(0, maxResults);
+  // Fallback: búsqueda fuzzy con Fuse.js cuando no hay resultados exactos
+  console.log('⚠️ No hay resultados exactos, usando búsqueda fuzzy con Fuse.js...');
+
+  if (typeof Fuse === 'undefined') {
+    console.error('❌ Fuse.js no está cargado');
+    return [];
+  }
+
+  const fuse = new Fuse(preciosDB, {
+    keys: ['res', 'desc', 'cod'],
+    threshold: 0.4,
+    includeScore: true,
+    ignoreLocation: true,
+    minMatchCharLength: 3
+  });
+
+  const fuzzyResults = fuse.search(descripcion)
+    .slice(0, maxResults)
+    .map(r => ({
+      ...r.item,
+      score: Math.round((1 - r.score) * 100) // Convertir score de Fuse (0-1) a nuestro sistema (0-100)
+    }));
+
+  if (fuzzyResults.length > 0) {
+    console.log('✨ Resultados fuzzy encontrados:', fuzzyResults.length);
+    console.log('  Top 3:', fuzzyResults.slice(0, 3).map(p => `${p.cod} (score: ${p.score})`));
+    return fuzzyResults;
+  }
+
+  // Si ni siquiera fuzzy encuentra resultados, generar sugerencias
+  console.log('💡 Generando sugerencias basadas en sinónimos...');
+  const sugerencias = new Set();
+
+  for (const keyword of keywordsRaw) {
+    const variantes = expandirConSinonimos(keyword);
+    variantes.slice(0, 5).forEach(v => sugerencias.add(v));
+  }
+
+  if (sugerencias.size > 0) {
+    console.log('💡 Sugerencias:', Array.from(sugerencias).slice(0, 10).join(', '));
+  }
+
+  return [];
 }
