@@ -2,6 +2,7 @@
 .vscode/
 .idea/
 .claude/
+.continue/
 
 # OS
 Thumbs.db
@@ -31,3 +32,6 @@ extraer-imagenes.js
 *.bak
 *.tmp
 precios-con-desgloses.json
+
+# Archivos comprimidos generados
+compressed/
