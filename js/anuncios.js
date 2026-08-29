@@ -37,7 +37,7 @@ function inyectarSchemaProductos(items) {
   document.head.appendChild(script);
 }
 
-fetch('anuncios.json')
+fetch('../data/anuncios.json')
   .then(r => r.json())
   .then(data => {
     anuncios = data;
