@@ -631,7 +631,8 @@
             loadDatabase().then(data => {
                 if (!data) return;
 
-                allItems = data.items || data;
+                // base-precios.json es un array directo, embeddedPriceData tiene {items: [...]}
+                allItems = Array.isArray(data) ? data : (data.items || data);
 
                 const fuseOptions = {
                     keys: [{ name: 'res', weight: 0.8 }, { name: 'cod', weight: 0.2 }],
