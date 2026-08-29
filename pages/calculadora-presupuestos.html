@@ -573,7 +573,10 @@
                     { "cod": "E07AB010", "res": "ALICATADO DE AZULEJO", "desc": "Alicatado de azulejo de 20x20 cm, recibido con cemento cola.", "uni": "m2", "precio": 36.33 },
                     { "cod": "G01C020", "res": "CARGA DE ESCOMBROS SOBRE CAMION", "desc": "Carga de escombros sobre camión con retroexcavadora.", "uni": "m3", "precio": 2.42 },
                     { "cod": "M05RN020", "res": "RETROCARGADORA NEUMATICA 75 CV", "desc": "Alquiler de retrocargadora neumática de 75 CV, con conductor.", "uni": "h", "precio": 38.57 },
-                    { "cod": "M07CB005", "res": "CAMION BASCULANTE DE 8 T.", "desc": "Alquiler de camión basculante de 8 t., con conductor.", "uni": "h", "precio": 38.57 }
+                    { "cod": "M07CB005", "res": "CAMION BASCULANTE DE 8 T.", "desc": "Alquiler de camión basculante de 8 t., con conductor.", "uni": "h", "precio": 38.57 },
+                    { "cod": "21IFRS00010", "res": "Desmontaje y montaje de lavabo", "desc": "Desmontaje y montaje de lavabo", "uni": "ud", "precio": 14.92 },
+                    { "cod": "05HEM00251", "res": "ENCOFRADO DE MADERA EN MUROS PARA HORMIGÓN VISTO", "desc": "Encofrado de madera en muros para hormigón visto, incluso tratamiento previo del tablero, limpieza, aplicación del desencofrante, y p.p. de elementos complementarios para su estabilidad, estanqueidad, y adecuada ejecución; construido según CodE. Medida en superficie de encofrado útil.", "uni": "m2", "precio": 31.94 },
+                    { "cod": "E09IBP010", "res": "IMPERMEABILIZACIÓN FOSOS ASCENSOR GEOCOMPUESTO BENTONITA", "desc": "Suministro y colocación de geocompuesto de bentonita de sodio natural formado por geotextil tejido (100 gr/m2), geotextil no tejido (200 gr/m2) y bentonita (mínimo 5 kg/m2) unidos mediante proceso de agujado para impermeabilización de fosos de ascensor, incluso colocación de cordón hidroexpansivo (20x25 mm) en juntas de hormigonado, fijado con malla metálica.", "uni": "m2", "precio": 26.59 }
                 ]
             };
             let fuse = null;
@@ -616,23 +619,13 @@
 
             // --- Carga de base de datos con caché ---
             async function loadDatabase() {
-                try {
-                    const response = await fetch('../data/base-precios.json');
-                    if (!response.ok) throw new Error('Error al cargar base de precios');
-                    const data = await response.json();
-                    return data;
-                } catch (error) {
-                    console.error('Error cargando base de datos:', error);
-                    // Fallback a datos embebidos si falla la carga
-                    return embeddedPriceData;
-                }
+                return embeddedPriceData;
             }
 
             loadDatabase().then(data => {
                 if (!data) return;
 
-                // base-precios.json es un array directo, embeddedPriceData tiene {items: [...]}
-                allItems = Array.isArray(data) ? data : (data.items || data);
+                allItems = data.items || data;
 
                 const fuseOptions = {
                     keys: [{ name: 'res', weight: 0.8 }, { name: 'cod', weight: 0.2 }],
