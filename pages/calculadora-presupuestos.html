@@ -592,6 +592,171 @@
                 font-size: 16px;
             }
         }
+
+        /* Modal de Proyectos */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .modal-content {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 20px;
+            color: var(--text);
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--muted);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .modal-close:hover {
+            background: var(--border);
+            color: var(--text);
+        }
+
+        .modal-body {
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .proyecto-form {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .proyecto-form input {
+            flex: 1;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .proyecto-form input:focus {
+            outline: none;
+            border-color: var(--orange);
+        }
+
+        .btn-guardar {
+            background: var(--green);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .btn-guardar:hover {
+            background: #3ea863;
+        }
+
+        .proyectos-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .proyecto-item {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.2s;
+        }
+
+        .proyecto-item:hover {
+            border-color: var(--orange);
+        }
+
+        .proyecto-info {
+            flex: 1;
+        }
+
+        .proyecto-nombre {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .proyecto-meta {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .proyecto-acciones {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-proyecto {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .btn-proyecto:hover {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+
+        .btn-proyecto.eliminar:hover {
+            border-color: #e74c3c;
+            color: #e74c3c;
+        }
     </style>
 </head>
 
@@ -604,10 +769,28 @@
     <header class="header">
         <div class="header-title">🤖 PRESUPUESTO CON IA</div>
         <div class="header-actions">
+            <button id="proyectosBtn" class="btn-back" style="background: var(--green); color: #fff; border-color: var(--green);">💼 Mis Proyectos</button>
             <button id="nuevaConsultaBtn" class="btn-back">🔄 Nueva Consulta</button>
             <a href="index.html" class="btn-back">← Volver</a>
         </div>
     </header>
+
+    <!-- Modal de Proyectos -->
+    <div id="proyectosModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>💼 Mis Proyectos</h2>
+                <button class="modal-close" onclick="window.app.cerrarProyectos()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="proyecto-form">
+                    <input type="text" id="nombreProyecto" placeholder="Nombre del proyecto" />
+                    <button onclick="window.app.guardarProyectoActual()" class="btn-guardar">💾 Guardar proyecto actual</button>
+                </div>
+                <div id="listaProyectos" class="proyectos-lista"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="chat-container">
         <div class="chat-messages" id="chatMessages">
@@ -826,6 +1009,245 @@
                 if (confirm('¿Seguro que quieres borrar el presupuesto actual?')) { presupuesto = []; generateBudget(); }
             };
 
+            // Exportar a Excel (CSV compatible)
+            window.app.exportarExcel = () => {
+                if (presupuesto.length === 0) {
+                    showToast('El presupuesto está vacío', 'error');
+                    return;
+                }
+
+                let total = 0;
+                let csv = 'Codigo,Concepto,Cantidad,Unidad,Precio Unitario,Importe\n';
+
+                presupuesto.forEach(item => {
+                    const importe = item.qty * item.precio;
+                    total += importe;
+                    // Escapar comillas en el concepto
+                    const concepto = item.res.replace(/"/g, '""');
+                    csv += `"${item.cod}","${concepto}",${item.qty},"${item.uni}",${item.precio.toFixed(2)},${importe.toFixed(2)}\n`;
+                });
+
+                const iva = total * 0.21;
+                const granTotal = total + iva;
+
+                csv += `\n"","SUBTOTAL","","","",${total.toFixed(2)}\n`;
+                csv += `"","IVA (21%)","","","",${iva.toFixed(2)}\n`;
+                csv += `"","TOTAL","","","",${granTotal.toFixed(2)}\n`;
+
+                // Descargar archivo
+                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                const fecha = new Date().toISOString().split('T')[0];
+                link.href = URL.createObjectURL(blob);
+                link.download = `presupuesto_${fecha}.csv`;
+                link.click();
+
+                showToast('✅ Presupuesto exportado a Excel');
+            };
+
+            // Exportar a BC3 (formato construcción)
+            window.app.exportarBC3 = () => {
+                if (presupuesto.length === 0) {
+                    showToast('El presupuesto está vacío', 'error');
+                    return;
+                }
+
+                let total = 0;
+                let bc3 = '~V|FIEBDC-3/2012|ObraTudela|Presupuesto generado|\n';
+                bc3 += '~K|\\2026\\1\\EUR\\\n';
+
+                presupuesto.forEach(item => {
+                    const importe = item.qty * item.precio;
+                    total += importe;
+
+                    // Limpiar texto para BC3 (sin saltos de línea ni caracteres especiales)
+                    const concepto = item.res.replace(/\n/g, ' ').replace(/\|/g, '/');
+                    const desc = (item.desc || concepto).replace(/\n/g, ' ').replace(/\|/g, '/');
+
+                    // Formato BC3: ~D|codigo|unidad|resumen|precio|fecha|
+                    bc3 += `~D|${item.cod}|${item.uni}|${concepto}|${item.precio.toFixed(2)}||\n`;
+                    bc3 += `~T|${item.cod}|${desc}|\n`;
+                });
+
+                // Añadir capítulo raíz con todas las partidas
+                bc3 += '~C|PRESUP||Presupuesto||\n';
+                presupuesto.forEach(item => {
+                    bc3 += `~D|PRESUP\\${item.cod}|${item.qty}||\n`;
+                });
+
+                const iva = total * 0.21;
+                const granTotal = total + iva;
+                bc3 += `~V|Subtotal=${total.toFixed(2)}|IVA=${iva.toFixed(2)}|Total=${granTotal.toFixed(2)}|\n`;
+
+                // Descargar archivo
+                const blob = new Blob([bc3], { type: 'text/plain;charset=utf-8;' });
+                const link = document.createElement('a');
+                const fecha = new Date().toISOString().split('T')[0];
+                link.href = URL.createObjectURL(blob);
+                link.download = `presupuesto_${fecha}.bc3`;
+                link.click();
+
+                showToast('✅ Presupuesto exportado a BC3');
+            };
+
+            // Sistema de gestión de proyectos
+            const PROYECTOS_KEY = 'obratudela_proyectos';
+
+            window.app.abrirProyectos = () => {
+                document.getElementById('proyectosModal').style.display = 'flex';
+                cargarListaProyectos();
+            };
+
+            window.app.cerrarProyectos = () => {
+                document.getElementById('proyectosModal').style.display = 'none';
+            };
+
+            window.app.guardarProyectoActual = () => {
+                const nombreInput = document.getElementById('nombreProyecto');
+                const nombre = nombreInput.value.trim();
+
+                if (!nombre) {
+                    showToast('Escribe un nombre para el proyecto', 'error');
+                    return;
+                }
+
+                if (presupuesto.length === 0) {
+                    showToast('El presupuesto está vacío', 'error');
+                    return;
+                }
+
+                const proyectos = cargarProyectos();
+                const proyecto = {
+                    id: Date.now().toString(),
+                    nombre: nombre,
+                    presupuesto: presupuesto,
+                    chatHistory: chatHistory,
+                    fecha: new Date().toISOString(),
+                    total: calcularTotal()
+                };
+
+                proyectos.push(proyecto);
+                guardarProyectos(proyectos);
+
+                nombreInput.value = '';
+                showToast(`✅ Proyecto "${nombre}" guardado`);
+                cargarListaProyectos();
+            };
+
+            window.app.cargarProyecto = (id) => {
+                const proyectos = cargarProyectos();
+                const proyecto = proyectos.find(p => p.id === id);
+
+                if (!proyecto) {
+                    showToast('Proyecto no encontrado', 'error');
+                    return;
+                }
+
+                // Cargar presupuesto
+                presupuesto = proyecto.presupuesto || [];
+                chatHistory = proyecto.chatHistory || [];
+
+                // Guardar en localStorage para persistencia
+                saveBudget();
+                saveChatHistory();
+
+                // Regenerar interfaz
+                chatMessages.innerHTML = '';
+                chatHistory.forEach(msg => {
+                    const msgDiv = document.createElement('div');
+                    msgDiv.className = `message ${msg.sender}`;
+                    msgDiv.innerHTML = `
+                        <div class="avatar">${msg.sender === 'ai' ? '🤖' : '👤'}</div>
+                        <div class="message-content">${msg.text}</div>
+                    `;
+                    chatMessages.appendChild(msgDiv);
+                });
+
+                generateBudget();
+                window.app.cerrarProyectos();
+                showToast(`✅ Proyecto "${proyecto.nombre}" cargado`);
+            };
+
+            window.app.eliminarProyecto = (id) => {
+                if (!confirm('¿Seguro que quieres eliminar este proyecto?')) return;
+
+                const proyectos = cargarProyectos();
+                const proyecto = proyectos.find(p => p.id === id);
+                const nuevoProyectos = proyectos.filter(p => p.id !== id);
+
+                guardarProyectos(nuevoProyectos);
+                cargarListaProyectos();
+                showToast(`✅ Proyecto "${proyecto.nombre}" eliminado`);
+            };
+
+            function cargarProyectos() {
+                try {
+                    const data = localStorage.getItem(PROYECTOS_KEY);
+                    return data ? JSON.parse(data) : [];
+                } catch (e) {
+                    console.error('Error al cargar proyectos:', e);
+                    return [];
+                }
+            }
+
+            function guardarProyectos(proyectos) {
+                try {
+                    localStorage.setItem(PROYECTOS_KEY, JSON.stringify(proyectos));
+                } catch (e) {
+                    console.error('Error al guardar proyectos:', e);
+                    showToast('Error al guardar proyecto', 'error');
+                }
+            }
+
+            function cargarListaProyectos() {
+                const proyectos = cargarProyectos();
+                const lista = document.getElementById('listaProyectos');
+
+                if (proyectos.length === 0) {
+                    lista.innerHTML = '<p style="text-align: center; color: var(--muted); padding: 40px;">No tienes proyectos guardados todavía</p>';
+                    return;
+                }
+
+                // Ordenar por fecha (más reciente primero)
+                proyectos.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+                lista.innerHTML = proyectos.map(p => {
+                    const fecha = new Date(p.fecha).toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+
+                    return `
+                        <div class="proyecto-item">
+                            <div class="proyecto-info">
+                                <div class="proyecto-nombre">${p.nombre}</div>
+                                <div class="proyecto-meta">
+                                    ${p.presupuesto.length} partidas • ${p.total.toFixed(2)} € • ${fecha}
+                                </div>
+                            </div>
+                            <div class="proyecto-acciones">
+                                <button class="btn-proyecto" onclick="window.app.cargarProyecto('${p.id}')">📂 Cargar</button>
+                                <button class="btn-proyecto eliminar" onclick="window.app.eliminarProyecto('${p.id}')">🗑️</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            function calcularTotal() {
+                let total = 0;
+                presupuesto.forEach(item => {
+                    total += item.qty * item.precio;
+                });
+                return total * 1.21; // Con IVA
+            }
+
+            // Event listener para abrir modal de proyectos
+            document.getElementById('proyectosBtn').addEventListener('click', window.app.abrirProyectos);
+
             function addMessage(text, sender = 'ai', saveToHistory = true) {
                 const msgDiv = document.createElement('div');
                 msgDiv.className = `message ${sender}`;
@@ -1015,9 +1437,13 @@
                         </table>
                         <div style="clear:both;"></div>
                         <p style="font-size:11px; color:var(--muted); margin-top:15px;">*Este es un presupuesto orientativo. Los precios pueden variar. Para un presupuesto cerrado, contacta con nosotros.</p>
-                        <button class="btn-print" onclick="window.app.generarYMostrarPresupuesto('share')" style="background:var(--blue);color:#fff;margin-right:8px;">📲 Compartir</button>
-                        <button class="btn-print" onclick="window.app.vaciarPresupuesto()" style="background:var(--user-bg);color:var(--muted);margin-right:8px;">🗑️ Vaciar</button>
-                        <button class="btn-print" onclick="window.app.generarYMostrarPresupuesto('print')">🖨️ Imprimir</button>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                            <button class="btn-print" onclick="window.app.exportarExcel()" style="background:var(--green);color:#fff;">📊 Exportar Excel</button>
+                            <button class="btn-print" onclick="window.app.exportarBC3()" style="background:var(--orange);color:#000;">📁 Exportar BC3</button>
+                            <button class="btn-print" onclick="window.app.generarYMostrarPresupuesto('share')" style="background:var(--blue);color:#fff;">📲 Compartir</button>
+                            <button class="btn-print" onclick="window.app.vaciarPresupuesto()" style="background:var(--user-bg);color:var(--muted);">🗑️ Vaciar</button>
+                            <button class="btn-print" onclick="window.app.generarYMostrarPresupuesto('print')">🖨️ Imprimir</button>
+                        </div>
                     </div>
                 `;
 
