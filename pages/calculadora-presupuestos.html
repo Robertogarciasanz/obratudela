@@ -269,48 +269,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Toast notifications */
-        .toast {
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            background: var(--green);
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-            animation: slideInRight 0.3s ease;
-            z-index: 1000;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .toast.toast-error {
-            background: #e74c3c;
-        }
-
-        @keyframes slideInRight {
-            from {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideOutRight {
-            from {
-                transform: translateX(0);
-                opacity: 1;
-            }
-            to {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-        }
-
         /* Custom scrollbar */
         .chat-messages::-webkit-scrollbar {
             width: 8px;
@@ -862,17 +820,11 @@
             };
 
             // --- Funciones públicas expuestas a través de window.app ---
-            // Función para mostrar toast notifications
+            // Función para mostrar mensajes discretos en el chat (sin ventanas emergentes)
             function showToast(message, type = 'success') {
-                const toast = document.createElement('div');
-                toast.className = `toast ${type === 'error' ? 'toast-error' : ''}`;
-                toast.textContent = message;
-                document.body.appendChild(toast);
-
-                setTimeout(() => {
-                    toast.style.animation = 'slideOutRight 0.3s ease';
-                    setTimeout(() => toast.remove(), 300);
-                }, 3000);
+                // No hacer nada - los mensajes ya se muestran en el chat principal
+                // Esta función se mantiene para compatibilidad pero no muestra toasts
+                console.log(`[${type}] ${message}`);
             }
 
             window.app.addItemToBudget = (cod) => {
