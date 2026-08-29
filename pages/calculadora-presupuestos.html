@@ -462,6 +462,17 @@
                 font-size: 14px;
             }
 
+            /* Ocultar flechitas de inputs numéricos */
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+
             /* Botón de envío con altura mínima táctil */
             .chat-input-area button {
                 min-height: 50px;
@@ -605,7 +616,16 @@
 
             // --- Carga de base de datos con caché ---
             async function loadDatabase() {
-                return embeddedPriceData;
+                try {
+                    const response = await fetch('../data/base-precios.json');
+                    if (!response.ok) throw new Error('Error al cargar base de precios');
+                    const data = await response.json();
+                    return data;
+                } catch (error) {
+                    console.error('Error cargando base de datos:', error);
+                    // Fallback a datos embebidos si falla la carga
+                    return embeddedPriceData;
+                }
             }
 
             loadDatabase().then(data => {
@@ -819,12 +839,14 @@
                 const iva = total * 0.21;
                 const granTotal = total + iva;
 
-                let existingBudget = document.getElementById('presupuestoResultado');
-                if (existingBudget) {
-                    existingBudget.parentElement.parentElement.remove();
+                if (presupuesto.length === 0) {
+                    // Si no hay partidas, eliminar el presupuesto
+                    let existingBudget = document.getElementById('presupuestoResultado');
+                    if (existingBudget) {
+                        existingBudget.parentElement.parentElement.remove();
+                    }
+                    return;
                 }
-
-                if (presupuesto.length === 0) return;
 
                 const resultadoHtml = `
                     <div id="presupuestoResultado">
