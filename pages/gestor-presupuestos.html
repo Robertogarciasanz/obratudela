@@ -128,11 +128,15 @@
   cursor: col-resize;
   flex-shrink: 0;
   position: relative;
-  transition: background 0.15s;
+  transition: background 0.1s;
   z-index: 10;
+  will-change: background;
 }
 .resizer:hover, .resizer.dragging {
   background: var(--orange);
+}
+.resizer:active {
+  background: var(--orange2);
 }
 .resizer::after {
   content: '';
@@ -156,11 +160,12 @@
   overflow: hidden;
   width: 460px;
   min-width: 320px;
- max-width: 100%;
+  max-width: 100%;
   flex-shrink: 0;
+  will-change: width;
 }
-  
-  
+
+
 
   /* SIDEBAR CATEGORÍAS */
   .sidebar {
@@ -171,6 +176,7 @@
     width: 260px;
     min-width: 160px;
     flex-shrink: 0;
+    will-change: width;
   }
   .sidebar-title {
     font-family: 'IBM Plex Mono', monospace;
@@ -1025,10 +1031,25 @@ async function init() {
   const first = firstChapterKey();
   if (first) selectCat(first);
   document.getElementById('pres-fecha').valueAsDate = new Date();
+  // Debounce para búsqueda rápida
+  let searchTimeout = null;
   document.getElementById('search').addEventListener('input', e => {
     searchTerm = e.target.value.trim().toLowerCase();
     page = 1;
-    applyFilter();
+
+    // Cancelar búsqueda anterior
+    if (searchTimeout) clearTimeout(searchTimeout);
+
+    // Buscar inmediatamente si es menos de 3 caracteres (búsqueda local)
+    // o esperar 150ms para búsquedas largas (búsqueda global)
+    if (searchTerm.length < 3) {
+      applyFilter();
+    } else {
+      searchTimeout = setTimeout(() => {
+        applyFilter();
+        searchTimeout = null;
+      }, 150);
+    }
   });
   initLogo();
   initTextMode();
@@ -1132,18 +1153,28 @@ function applyFilter() {
     // Search across all categories if term is long enough
     const source = searchTerm.length >= 3 ? Object.values(allData).flat() : currentItems;
 
-    // Intentar búsqueda exacta primero (rápida)
+    // Intentar búsqueda exacta primero (rápida) - optimizada
     filteredItems = [];
-    for (const item of source) {
-      if (item.cod.toLowerCase().includes(searchTerm) ||
-          item.res.toLowerCase().includes(searchTerm) ||
-          (item.desc && item.desc.toLowerCase().includes(searchTerm))) {
+    const term = searchTerm; // ya está en minúsculas
+    const maxResults = 500; // limitar resultados para mejor rendimiento
+
+    for (let i = 0; i < source.length && filteredItems.length < maxResults; i++) {
+      const item = source[i];
+      const codLower = item.cod.toLowerCase();
+      const resLower = item.res.toLowerCase();
+
+      if (codLower.includes(term) || resLower.includes(term)) {
         filteredItems.push(item);
+      } else if (item.desc) {
+        const descLower = item.desc.toLowerCase();
+        if (descLower.includes(term)) {
+          filteredItems.push(item);
+        }
       }
     }
 
     // Si no hay resultados exactos, usar búsqueda fuzzy con Fuse.js
-    if (filteredItems.length === 0 && typeof Fuse !== 'undefined') {
+    if (filteredItems.length === 0 && typeof Fuse !== 'undefined' && term.length >= 3) {
       console.log('⚠️ No hay resultados exactos, usando búsqueda fuzzy...');
       const fuse = new Fuse(source, {
         keys: ['cod', 'res', 'desc'],
@@ -1153,16 +1184,15 @@ function applyFilter() {
         minMatchCharLength: 3
       });
 
-      const fuzzyResults = fuse.search(searchTerm);
+      const fuzzyResults = fuse.search(term).slice(0, maxResults);
       filteredItems = fuzzyResults.map(r => r.item);
 
       if (filteredItems.length > 0) {
         console.log('✨ Resultados fuzzy encontrados:', filteredItems.length);
-        console.log('  Top 3:', filteredItems.slice(0, 3).map(p => p.cod));
       }
     }
   } else {
-    filteredItems = [...currentItems];
+    filteredItems = currentItems.slice(); // más rápido que spread
   }
   sortItems();
   renderTable();
@@ -1545,10 +1575,21 @@ function toast(msg) {
   let isResizing = false;
   let startX = 0;
   let startWidth = 0;
+  let animationFrameId = null;
+  let currentX = 0;
+
+  function updateWidth() {
+    if (!isResizing) return;
+    const delta = startX - currentX;
+    const newWidth = Math.max(320, Math.min(900, startWidth + delta));
+    presPanel.style.width = newWidth + 'px';
+    animationFrameId = null;
+  }
 
   resizer.addEventListener('mousedown', function(e) {
     isResizing = true;
     startX = e.clientX;
+    currentX = e.clientX;
     startWidth = presPanel.offsetWidth;
     resizer.classList.add('dragging');
     document.body.style.cursor = 'col-resize';
@@ -1558,9 +1599,10 @@ function toast(msg) {
 
   document.addEventListener('mousemove', function(e) {
     if (!isResizing) return;
-    const delta = startX - e.clientX; // panel crece hacia la izquierda
-    const newWidth = Math.max(320, Math.min(900, startWidth + delta));
-    presPanel.style.width = newWidth + 'px';
+    currentX = e.clientX;
+    if (!animationFrameId) {
+      animationFrameId = requestAnimationFrame(updateWidth);
+    }
   });
 
   document.addEventListener('mouseup', function() {
@@ -1569,12 +1611,17 @@ function toast(msg) {
     resizer.classList.remove('dragging');
     document.body.style.cursor = '';
     document.body.style.userSelect = '';
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
   });
 
   // Touch support
   resizer.addEventListener('touchstart', function(e) {
     isResizing = true;
     startX = e.touches[0].clientX;
+    currentX = e.touches[0].clientX;
     startWidth = presPanel.offsetWidth;
     resizer.classList.add('dragging');
     e.preventDefault();
@@ -1582,14 +1629,19 @@ function toast(msg) {
 
   document.addEventListener('touchmove', function(e) {
     if (!isResizing) return;
-    const delta = startX - e.touches[0].clientX;
-    const newWidth = Math.max(320, Math.min(900, startWidth + delta));
-    presPanel.style.width = newWidth + 'px';
+    currentX = e.touches[0].clientX;
+    if (!animationFrameId) {
+      animationFrameId = requestAnimationFrame(updateWidth);
+    }
   }, { passive: false });
 
   document.addEventListener('touchend', function() {
     isResizing = false;
     resizer.classList.remove('dragging');
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
   });
 })();
 
