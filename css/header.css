@@ -17,7 +17,7 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 2px solid var(--orange);
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header-inner {
