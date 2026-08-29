@@ -507,7 +507,10 @@
 
                 fuse = new Fuse(allItems, fuseOptions);
 
-                streamMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te ayudaré a encontrar las partidas. Por ejemplo: <code>20 m2 de muro de ladrillo perforado</code>.</p>");
+                // Solo mostrar mensaje de bienvenida si no hay historial previo
+                if (chatHistory.length === 0) {
+                    streamMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te ayudaré a encontrar las partidas. Por ejemplo: <code>20 m2 de muro de ladrillo perforado</code>.</p>");
+                }
 
                 loadBudget();
             });
@@ -536,7 +539,7 @@
                 if (confirm('¿Seguro que quieres borrar el presupuesto actual?')) { presupuesto = []; generateBudget(); }
             };
 
-            function addMessage(text, sender = 'ai') {
+            function addMessage(text, sender = 'ai', saveToHistory = true) {
                 const msgDiv = document.createElement('div');
                 msgDiv.className = `message ${sender}`;
                 msgDiv.innerHTML = `
@@ -545,8 +548,10 @@
                 `;
                 chatMessages.appendChild(msgDiv);
                 chatMessages.scrollTop = chatMessages.scrollHeight;
-                chatHistory.push({ sender, text });
-                saveChatHistory();
+                if (saveToHistory) {
+                    chatHistory.push({ sender, text });
+                    saveChatHistory();
+                }
             }
 
             /**
@@ -570,7 +575,8 @@
                     await new Promise(resolve => setTimeout(resolve, 40));
                 }
                 contentDiv.innerHTML = text;
-                if (text.includes("¡Hola! Soy tu asistente")) { // No guardar el mensaje de bienvenida inicial
+                // Guardar en el historial siempre (excepto el mensaje de bienvenida inicial)
+                if (!text.includes("¡Hola! Soy tu asistente")) {
                     chatHistory.push({ sender: 'ai', text });
                     saveChatHistory();
                 }
@@ -857,8 +863,15 @@
                         chatHistory = JSON.parse(saved);
                         // Al cargar, no guardamos de nuevo en el historial
                         chatHistory.forEach(msg => {
-                            addMessage(msg.text, msg.sender, false);
+                            const msgDiv = document.createElement('div');
+                            msgDiv.className = `message ${msg.sender}`;
+                            msgDiv.innerHTML = `
+                                <div class="avatar">${msg.sender === 'ai' ? '🤖' : '👤'}</div>
+                                <div class="message-content">${msg.text}</div>
+                            `;
+                            chatMessages.appendChild(msgDiv);
                         });
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
                     }
                 } catch (e) { console.error("Error al cargar historial del chat.", e); }
             }
@@ -873,13 +886,27 @@
                 try {
                     const saved = localStorage.getItem(STORAGE_KEY);
                     if (saved) {
-                        presupuesto = JSON.parse(saved);
+                        const loadedBudget = JSON.parse(saved);
+                        // Validar integridad: verificar que las partidas existan en la BD
+                        presupuesto = loadedBudget.filter(item => {
+                            const exists = allItems.find(i => i.cod === item.cod);
+                            if (!exists) {
+                                console.warn(`Partida ${item.cod} ya no existe en la BD, se elimina del presupuesto.`);
+                            }
+                            return exists;
+                        });
+
+                        // Si hubo cambios, guardar el presupuesto limpio
+                        if (presupuesto.length !== loadedBudget.length) {
+                            saveBudget();
+                        }
                     }
 
                     if (presupuesto.length > 0) generateBudget();
                 } catch (e) {
                     console.error("Error al cargar el presupuesto desde localStorage.", e);
                     localStorage.removeItem(STORAGE_KEY);
+                    presupuesto = [];
                 }
             }
 
@@ -1021,10 +1048,8 @@
             // --- Inicialización al cargar la página ---
             function initializeChat() {
                 loadChatHistory();
-                loadBudget();
-                if (chatHistory.length === 0) {
-                    streamMessage("<p>¡Hola! Soy tu asistente de presupuestos.</p><p>Describe lo que necesitas y te ayudaré a encontrar las partidas. Por ejemplo: <code>20 m2 de muro de ladrillo perforado</code>.</p>");
-                }
+                // loadBudget() ya se llama en loadDatabase().then() (línea 512)
+                // No llamar aquí para evitar duplicados
             }
             initializeChat();
         });
