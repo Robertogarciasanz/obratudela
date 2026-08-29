@@ -856,7 +856,7 @@
             // --- Carga de base de datos con caché ---
             const DB_CACHE_KEY = 'precios_db_cache_v1';
             const DB_VERSION_KEY = 'precios_db_version';
-            const CURRENT_DB_VERSION = '2026.5';
+            const CURRENT_DB_VERSION = '2026.6';
 
             async function loadDatabase() {
                 // Intentar cargar desde caché localStorage
@@ -877,7 +877,7 @@
                     console.log('Cargando base de datos completa desde servidor...');
 
                     // Intentar cargar JSON directo (más compatible)
-                    const response = await fetch('../data/base-precios.json');
+                    const response = await fetch('../data/precios-2026.json');
 
                     if (!response.ok) throw new Error('Error al cargar base de precios');
 
