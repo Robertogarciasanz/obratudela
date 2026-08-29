@@ -385,6 +385,115 @@
             .message {
                 max-width: 100%;
             }
+
+            /* Fuente 16px para evitar zoom automático de iOS */
+            .chat-input-area textarea {
+                font-size: 16px;
+                min-height: 50px;
+                max-height: 120px;
+            }
+
+            /* Ocultar columnas innecesarias en móvil */
+            #presupuestoResultado th:nth-child(3),
+            #presupuestoResultado td:nth-child(3),
+            #presupuestoResultado th:nth-child(4),
+            #presupuestoResultado td:nth-child(4) {
+                display: none;
+            }
+
+            /* Tabla de totales a 100% en móvil */
+            #tablaTotales {
+                width: 100% !important;
+                float: none !important;
+                margin-top: 20px;
+            }
+
+            /* Botones de ancho completo con altura mínima 44px */
+            .btn-print {
+                display: block;
+                width: 100%;
+                min-height: 44px;
+                margin-bottom: 8px;
+                padding: 12px 16px;
+                text-align: center;
+            }
+
+            .btn-add-item {
+                min-width: 44px;
+                min-height: 44px;
+                width: 44px;
+                height: 44px;
+                font-size: 20px;
+            }
+
+            /* Header más compacto */
+            .header {
+                padding: 0 12px;
+                height: 56px;
+            }
+
+            .header-title {
+                font-size: 18px;
+                letter-spacing: 1.5px;
+            }
+
+            .btn-back {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            /* Ajustar tamaño de fuente en tablas */
+            #presupuestoResultado table {
+                font-size: 12px;
+            }
+
+            #presupuestoResultado th {
+                font-size: 10px;
+                padding: 4px 6px;
+            }
+
+            #presupuestoResultado td {
+                padding: 6px 6px;
+            }
+
+            /* Input de cantidad más ancho en móvil */
+            #presupuestoResultado input[type="number"] {
+                width: 80px !important;
+                font-size: 14px;
+            }
+
+            /* Botón de envío con altura mínima táctil */
+            .chat-input-area button {
+                min-height: 50px;
+                min-width: 50px;
+                padding: 0 20px;
+            }
+
+            /* Resultados de búsqueda más legibles */
+            .result-item-res {
+                font-size: 14px;
+            }
+
+            .result-item-meta {
+                font-size: 11px;
+            }
+
+            /* Header de acciones en móvil */
+            .header-actions {
+                gap: 6px;
+            }
+
+            /* Espaciado de mensajes */
+            .message-content {
+                font-size: 14px;
+                padding: 10px 14px;
+            }
+
+            .message .avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
