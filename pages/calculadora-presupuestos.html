@@ -252,6 +252,83 @@
             cursor: not-allowed;
         }
 
+        /* Spinner de carga animado */
+        .loading-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid var(--border);
+            border-top-color: var(--orange);
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Toast notifications */
+        .toast {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: var(--green);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            animation: slideInRight 0.3s ease;
+            z-index: 1000;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .toast.toast-error {
+            background: #e74c3c;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+        }
+
+        /* Custom scrollbar */
+        .chat-messages::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .chat-messages::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb:hover {
+            background: var(--orange);
+        }
+
         #presupuestoResultado {
             animation: fadeIn 0.4s;
         }
@@ -275,9 +352,18 @@
 
         #presupuestoResultado th,
         #presupuestoResultado td {
-            padding: 6px 8px;
+            padding: 10px 8px;
             text-align: left;
             border-bottom: 1px solid var(--border);
+        }
+
+        /* Zebra striping para mejor legibilidad */
+        #presupuestoResultado tbody tr:nth-child(odd) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        #presupuestoResultado tbody tr:hover {
+            background: rgba(255, 107, 0, 0.05);
         }
 
         #presupuestoResultado th {
@@ -593,6 +679,19 @@
             };
 
             // --- Funciones públicas expuestas a través de window.app ---
+            // Función para mostrar toast notifications
+            function showToast(message, type = 'success') {
+                const toast = document.createElement('div');
+                toast.className = `toast ${type === 'error' ? 'toast-error' : ''}`;
+                toast.textContent = message;
+                document.body.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.style.animation = 'slideOutRight 0.3s ease';
+                    setTimeout(() => toast.remove(), 300);
+                }, 3000);
+            }
+
             window.app.addItemToBudget = (cod) => {
                 const item = allItems.find(i => i.cod === cod);
                 if (!item) return;
@@ -602,8 +701,10 @@
 
                 if (existing) {
                     existing.qty += qtyToAdd;
+                    showToast(`✅ ${item.res} actualizada (${existing.qty} ${item.uni})`);
                 } else {
                     presupuesto.push({ ...item, qty: qtyToAdd });
+                    showToast(`✅ ${item.res} añadida al presupuesto`);
                 }
 
                 lastParsedQuantity = null;
@@ -664,12 +765,12 @@
                 }
             }
 
-            // Mostrar indicador de carga
+            // Mostrar indicador de carga con spinner
             const loadingMsg = document.createElement('div');
             loadingMsg.className = 'message ai';
             loadingMsg.innerHTML = `
                 <div class="avatar">🤖</div>
-                <div class="message-content"><p>⏳ Cargando base de datos de precios...</p></div>
+                <div class="message-content"><p><span class="loading-spinner"></span>Cargando base de datos de precios...</p></div>
             `;
             chatMessages.appendChild(loadingMsg);
 
