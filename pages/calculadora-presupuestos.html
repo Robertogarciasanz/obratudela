@@ -594,6 +594,13 @@
 
                 lastParsedQuantity = null;
                 generateBudget();
+
+                // Mensaje de confirmación y dejar listo para seguir buscando
+                streamMessage(`<p>✅ <strong>${item.res}</strong> añadida al presupuesto (${qtyToAdd} ${item.uni}).</p><p>¿Quieres añadir otra partida? Escribe lo que necesites.</p>`);
+
+                // Limpiar el input para que el usuario pueda seguir buscando
+                userInput.value = '';
+                userInput.focus();
             };
 
             // --- Carga de base de datos con caché ---
