@@ -856,7 +856,7 @@
             // --- Carga de base de datos con caché ---
             const DB_CACHE_KEY = 'precios_db_cache_v1';
             const DB_VERSION_KEY = 'precios_db_version';
-            const CURRENT_DB_VERSION = '2026.1';
+            const CURRENT_DB_VERSION = '2026.4';
 
             async function loadDatabase() {
                 // Intentar cargar desde caché localStorage
@@ -997,46 +997,51 @@
                 showToast('✅ Presupuesto exportado a Excel');
             };
 
-            // Exportar a BC3 (formato construcción)
+            // Exportar a BC3 (formato construcción FIEBDC-3/2012)
             window.app.exportarBC3 = () => {
                 if (presupuesto.length === 0) {
                     showToast('El presupuesto está vacío', 'error');
                     return;
                 }
 
-                let total = 0;
-                let bc3 = '~V|FIEBDC-3/2012|ObraTudela|Presupuesto generado|\n';
-                bc3 += '~K|\\2026\\1\\EUR\\\n';
+                const fecha = new Date();
+                const fechaStr = `${fecha.getDate().toString().padStart(2, '0')}/${(fecha.getMonth() + 1).toString().padStart(2, '0')}/${fecha.getFullYear()}`;
+                const año = fecha.getFullYear();
 
+                // CABECERA: ~V|VERSION|PROGRAMA|NOMBRE_FICHERO|FECHA|
+                let bc3 = `~V|FIEBDC-3/2012|ObraTudela|Presupuesto generado|${fechaStr}|\n`;
+
+                // INFORMACIÓN DE CAMBIO: ~K|\AÑO\MONEDA\
+                bc3 += `~K|\\${año}\\EUR\\\n`;
+
+                // CONCEPTOS: ~C|CODIGO|UNIDAD|RESUMEN|PRECIO|FECHA|TIPO|
                 presupuesto.forEach(item => {
-                    const importe = item.qty * item.precio;
-                    total += importe;
+                    const concepto = item.res.replace(/\n/g, ' ').replace(/\|/g, '/').substring(0, 250);
+                    const desc = (item.desc || concepto).replace(/\n/g, ' ').replace(/\|/g, '/').substring(0, 2000);
 
-                    // Limpiar texto para BC3 (sin saltos de línea ni caracteres especiales)
-                    const concepto = item.res.replace(/\n/g, ' ').replace(/\|/g, '/');
-                    const desc = (item.desc || concepto).replace(/\n/g, ' ').replace(/\|/g, '/');
+                    // Registro de concepto (TIPO: 0=sin clasificar)
+                    bc3 += `~C|${item.cod}|${item.uni}|${concepto}|${item.precio.toFixed(2)}||0|\n`;
 
-                    // Formato BC3: ~D|codigo|unidad|resumen|precio|fecha|
-                    bc3 += `~D|${item.cod}|${item.uni}|${concepto}|${item.precio.toFixed(2)}||\n`;
-                    bc3 += `~T|${item.cod}|${desc}|\n`;
+                    // Texto descriptivo
+                    if (desc) {
+                        bc3 += `~T|${item.cod}|${desc}|\n`;
+                    }
                 });
 
-                // Añadir capítulo raíz con todas las partidas
-                bc3 += '~C|PRESUP||Presupuesto||\n';
+                // CAPÍTULO RAÍZ: ~C|##||PRESUPUESTO|0||0|
+                bc3 += `~C|##||PRESUPUESTO|0||0|\n`;
+
+                // DESCOMPOSICIÓN: ~D|CODIGO_PADRE\CODIGO_HIJO|CANTIDAD|PRECIO|
                 presupuesto.forEach(item => {
-                    bc3 += `~D|PRESUP\\${item.cod}|${item.qty}||\n`;
+                    bc3 += `~D|##\\${item.cod}|${item.qty.toFixed(3)}||\n`;
                 });
 
-                const iva = total * 0.21;
-                const granTotal = total + iva;
-                bc3 += `~V|Subtotal=${total.toFixed(2)}|IVA=${iva.toFixed(2)}|Total=${granTotal.toFixed(2)}|\n`;
-
-                // Descargar archivo
-                const blob = new Blob([bc3], { type: 'text/plain;charset=utf-8;' });
+                // Descargar archivo (encoding Latin-1 para BC3)
+                const blob = new Blob([bc3], { type: 'text/plain;charset=iso-8859-1;' });
                 const link = document.createElement('a');
-                const fecha = new Date().toISOString().split('T')[0];
+                const fechaArchivo = fecha.toISOString().split('T')[0];
                 link.href = URL.createObjectURL(blob);
-                link.download = `presupuesto_${fecha}.bc3`;
+                link.download = `presupuesto_${fechaArchivo}.bc3`;
                 link.click();
 
                 showToast('✅ Presupuesto exportado a BC3');

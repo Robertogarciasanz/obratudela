@@ -1,0 +1,36 @@
+
+INFORME DE LIMPIEZA Y OPTIMIZACIÓN - ObraTudela
+================================================================================
+
+ESTADÍSTICAS GENERALES:
+  • Partidas originales:        46,142
+  • Partidas finales:            46,141
+  • Reducción:                   1 partidas
+
+PROBLEMAS CORREGIDOS:
+  • Duplicados eliminados:       1
+  • Códigos vacíos eliminados:   0
+  • Precios inválidos corregidos:0
+  • Textos limpiados:            39,673
+
+PARTIDAS POR CATEGORÍA:
+  • OTROS               : 21,179 ( 45.9%)
+  • MATERIALES          :  7,739 ( 16.8%)
+  • CARPINTERIA         :  4,230 (  9.2%)
+  • URBANIZACION        :  4,057 (  8.8%)
+  • REVESTIMIENTOS      :  1,268 (  2.7%)
+  • INSTALACIONES       :  1,204 (  2.6%)
+  • JARDINERIA          :  1,171 (  2.5%)
+  • AISLAMIENTO         :  1,031 (  2.2%)
+  • MAQUINARIA          :    873 (  1.9%)
+  • ESTRUCTURAS         :    683 (  1.5%)
+  • CUBIERTAS           :    543 (  1.2%)
+  • DEMOLICION          :    532 (  1.2%)
+  • CONTROL_CALIDAD     :    507 (  1.1%)
+  • EXCAVACION          :    460 (  1.0%)
+  • CIMENTACION         :    366 (  0.8%)
+  • TRANSPORTE          :    197 (  0.4%)
+  • MANO_OBRA           :    101 (  0.2%)
+
+TOTAL CATEGORIZADO: 46,141 partidas
+Sin categoría asignada: 21,179
