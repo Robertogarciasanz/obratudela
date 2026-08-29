@@ -41,17 +41,10 @@
 
   <!-- Herramientas de presupuestos -->
   <url>
-    <loc>https://www.obratudela.com/pages/calculadora-presupuestos.html</loc>
+    <loc>https://www.obratudela.com/pages/calculadora-profesional.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.obratudela.com/pages/calculadora-ia.html</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
