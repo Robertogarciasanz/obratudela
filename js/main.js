@@ -3,8 +3,8 @@
  * Coordina todos los módulos y gestiona el flujo de la aplicación
  */
 
-import { loadPrecios } from './precios-loader-optimized.js?v=2.0';
-import { buscarPartidas } from './search.js?v=2.0';
+import { loadPrecios } from './precios-loader.js?v=2.1';
+import { buscarPartidas } from './search.js?v=2.1';
 import {
   getPresupuesto,
   agregarPartida,
@@ -12,7 +12,7 @@ import {
   actualizarCantidad,
   eliminarPartida,
   exportarPresupuesto
-} from './presupuesto.js?v=2.0';
+} from './presupuesto.js?v=2.1';
 import {
   addMessage,
   renderPresupuesto,
@@ -22,7 +22,7 @@ import {
   setEnviarButtonEnabled,
   getUserInputAndClear,
   focusUserInput
-} from './ui.js?v=2.0';
+} from './ui.js?v=2.1';
 import {
   trackPreciosLoaded,
   trackSearch,
@@ -33,7 +33,7 @@ import {
   trackPresupuestoExportado,
   trackPartidaManual,
   trackSeleccionPartidas
-} from './analytics.js?v=2.0';
+} from './analytics.js?v=2.1';
 
 // Estado de la aplicación
 let preciosDB = [];
@@ -76,8 +76,9 @@ async function init() {
     }
   });
 
-  // Exponer funciones globales para agregar partida manual
+  // Exponer funciones globales usadas por atributos onclick del HTML
   window.agregarPartidaManual = agregarPartidaManual;
+  window.sendMessage = sendMessage;
 }
 
 /**

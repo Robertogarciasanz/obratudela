@@ -3,7 +3,7 @@
  * Maneja el rendering del chat, presupuesto y elementos interactivos
  */
 
-import { getPresupuesto, calcularTotales } from './presupuesto.js';
+import { getPresupuesto, calcularTotales } from './presupuesto.js?v=2.1';
 
 /**
  * Agrega un mensaje al chat
