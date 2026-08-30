@@ -1515,6 +1515,7 @@ function printPres() {
   }).join('');
 
   const w = window.open('','_blank');
+  if (!w) { toast('El navegador ha bloqueado la ventana de impresión. Permite las ventanas emergentes para este sitio.'); return; }
   w.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
   <title>${titulo}</title>
   <style>

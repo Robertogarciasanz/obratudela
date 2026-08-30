@@ -194,6 +194,11 @@ export function exportarPresupuesto() {
   const htmlContent = generarHTMLExportacion();
   const ventanaImpresion = window.open('', '_blank', 'width=800,height=600');
 
+  if (!ventanaImpresion) {
+    alert('El navegador ha bloqueado la ventana de impresión. Permite las ventanas emergentes para este sitio e inténtalo de nuevo.');
+    return;
+  }
+
   ventanaImpresion.document.write(htmlContent);
   ventanaImpresion.document.close();
 
