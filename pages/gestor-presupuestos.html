@@ -951,6 +951,7 @@
     </div>
     <div class="pres-actions">
       <button class="btn btn-primary" onclick="exportExcel()">⬇ Excel</button>
+      <button class="btn btn-secondary" onclick="exportBC3()" title="Exportar en formato FIEBDC-3 (.bc3) para Presto, Arquímedes, TCQ...">⬇ BC3</button>
       <button class="btn btn-secondary" onclick="printPres()">🖨️ Imprimir</button>
       <button class="btn btn-danger" onclick="clearPres()" title="Vaciar presupuesto">🗑</button>
     </div>
@@ -1028,7 +1029,7 @@ async function init() {
   let total = 0;
   for (const [sheet, rows] of Object.entries(raw)) {
     allData[sheet] = rows.map(r => ({
-      cod: r[0], uni: r[1], res: r[2], precio: r[3], descLong: r[4] || ''
+      cod: r[0], uni: r[1], res: r[2], precio: r[3], descLong: r[4] || '', cat: sheet
     }));
     total += rows.length;
   }
@@ -1489,6 +1490,94 @@ function exportExcel() {
   const filename = `${titulo.replace(/[^a-zA-Z0-9áéíóúñÁÉÍÓÚÑ ]/g,'_')}_${fecha}.xlsx`;
   XLSX.writeFile(wb, filename);
   toast('Excel exportado: ' + filename);
+}
+
+// ========================
+// EXPORTAR BC3 (FIEBDC-3)
+// ========================
+function exportBC3() {
+  if (presupuesto.length === 0) { toast('El presupuesto está vacío'); return; }
+
+  const titulo = document.getElementById('pres-titulo').value || 'Presupuesto';
+  const fecha = document.getElementById('pres-fecha').value || new Date().toISOString().slice(0, 10);
+  const base = presupuesto.reduce((s, i) => s + i.qty * i.precio, 0);
+
+  const esc = s => String(s || '').replace(/[|\\]/g, ' ').replace(/[\r\n]+/g, ' ').trim();
+  const num = n => (Math.round(n * 100) / 100).toFixed(2).replace('.', ',');
+  const codeSafe = s => String(s || 'GENERAL').replace(/[^A-Za-z0-9]/g, '_').slice(0, 18);
+
+  const [yy, mm, dd] = /^\d{4}-\d{2}-\d{2}$/.test(fecha)
+    ? fecha.split('-')
+    : [new Date().getFullYear(), '01', '01'];
+  const fechaBC3 = `${dd}${mm}${yy}`; // formato oficial FIEBDC-3: DDMMAAAA sin separadores
+
+  // Agrupamos las partidas del presupuesto por capítulo (categoría del sidebar)
+  const capitulos = new Map(); // catKey -> { code, label, items }
+  for (const item of presupuesto) {
+    const catKey = item.cat || 'GENERAL';
+    if (!capitulos.has(catKey)) {
+      capitulos.set(catKey, {
+        code: codeSafe(catKey) + '#',
+        label: CAT_LABELS[catKey] || catKey,
+        items: []
+      });
+    }
+    capitulos.get(catKey).items.push(item);
+  }
+
+  const lineas = [];
+
+  // ~V: Registro tipo Propiedad y Version (FIEBDC-3/2016, TIPO INFORMACIÓN=2 Presupuesto)
+  lineas.push(
+    `~V|Excavaciones y Servicios Arturo S.L.|FIEBDC-3/2016\\${fechaBC3}|` +
+    `Gestor de Presupuestos ObraTudela||ANSI|${esc(titulo)}|2||||`
+  );
+
+  const rootCode = 'PRESUP##';
+  lineas.push(`~C|${rootCode}|pa|${esc(titulo)}|${num(base)}||`);
+
+  // El capítulo raíz se descompone en capítulos (factor y rendimiento siempre 1 en líneas de capítulo)
+  const hijosCapitulos = Array.from(capitulos.values())
+    .map(cap => `${cap.code}\\1\\1\\`).join('');
+  lineas.push(`~D|${rootCode}|${hijosCapitulos}|`);
+
+  for (const cap of capitulos.values()) {
+    const totalCap = cap.items.reduce((s, i) => s + i.qty * i.precio, 0);
+    lineas.push(`~C|${cap.code}|pa|${esc(cap.label)}|${num(totalCap)}||`);
+
+    // Descomposición del capítulo: cada partida con FACTOR=1 y RENDIMIENTO=la medición real
+    const hijosPartidas = cap.items.map(item => `${esc(item.cod)}\\1\\${num(item.qty)}\\`).join('');
+    lineas.push(`~D|${cap.code}|${hijosPartidas}|`);
+
+    for (const item of cap.items) {
+      lineas.push(`~C|${esc(item.cod)}|${esc(item.uni)}|${esc(item.res)}|${num(item.precio)}||`);
+      const desc = item.descLong || '';
+      if (desc) lineas.push(`~T|${esc(item.cod)}|${esc(desc)}|`);
+    }
+  }
+
+  const texto = lineas.join('\r\n') + '\r\n';
+
+  // FIEBDC-3 se codifica tradicionalmente en Windows-1252/ISO-8859-1, no en UTF-8,
+  // para máxima compatibilidad con Presto/Arquímedes/TCQ.
+  const bytes = new Uint8Array(texto.length);
+  for (let i = 0; i < texto.length; i++) {
+    const c = texto.charCodeAt(i);
+    bytes[i] = c <= 0xFF ? c : 0x3F;
+  }
+
+  const blob = new Blob([bytes], { type: 'application/octet-stream' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const filename = `${titulo.replace(/[^a-zA-Z0-9áéíóúñÁÉÍÓÚÑ ]/g, '_')}_${fecha}.bc3`;
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  toast('BC3 exportado: ' + filename);
 }
 
 // ========================
