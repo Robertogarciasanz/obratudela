@@ -45,7 +45,8 @@
       color: #000;
       padding: 8px 20px;
       border-radius: 3px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
       font-size: 1rem;
       letter-spacing: 1px;
       transition: background 0.2s, transform 0.15s;
@@ -89,7 +90,8 @@
     }
     .hero-logo { width: 150px; height: auto; border: 2px solid var(--orange); border-radius: 10px; margin-bottom: 24px; }
     .hero-title {
-      font-family: 'Bebas Neue', cursive;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
       font-size: clamp(3.5rem, 10vw, 7rem);
       color: var(--orange);
       line-height: 0.95;
@@ -135,7 +137,8 @@
       letter-spacing: 2px; color: var(--orange); margin-bottom: 8px;
     }
     .section-title {
-      font-family: 'Bebas Neue', cursive;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
       font-size: clamp(2.4rem, 5vw, 3.5rem);
       color: var(--text);
       line-height: 1;
@@ -165,7 +168,8 @@
     a.servicio-card { text-decoration: none; color: inherit; display: block; cursor: pointer; }
     .servicio-icon { font-size: 2.2rem; margin-bottom: 16px; }
     .servicio-card h3 {
-      font-family: 'Bebas Neue', cursive;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
       font-size: 1.5rem;
       color: var(--orange);
       letter-spacing: 1px;
@@ -224,7 +228,8 @@
     }
     .footer-left img { height: 32px; width: auto; border-radius: 3px; opacity: 0.8; }
     .footer-left span {
-      font-family: 'Bebas Neue', cursive;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
       font-size: 1.2rem; color: var(--muted); letter-spacing: 2px;
     }
     .footer-copy { font-size: 0.78rem; color: var(--muted); }

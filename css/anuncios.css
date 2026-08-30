@@ -38,7 +38,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-anuncios h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
   font-size: clamp(32px, 6vw, 54px);
   letter-spacing: 1px;
   line-height: 1.1;
@@ -506,7 +507,8 @@ a { color: inherit; text-decoration: none; }
 .modal-info { padding: 20px; }
 
 .modal-titulo {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
   font-size: 26px;
   letter-spacing: 0.5px;
   color: var(--text);
@@ -592,7 +594,8 @@ footer {
 }
 
 footer .footer-logo {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
   font-size: 20px;
   letter-spacing: 1px;
   color: var(--text);

@@ -10,7 +10,8 @@
     color: var(--orange); text-transform: uppercase; margin-bottom: 12px;
   }
   .page-hero h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
     font-size: clamp(2.8rem, 7vw, 5rem);
     letter-spacing: 3px; line-height: 1;
     margin-bottom: 16px;
@@ -50,7 +51,8 @@
   }
   .obras-item-icon { font-size: 1.4rem; margin-bottom: 10px; }
   .obras-item h3 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
     font-size: 1.1rem; letter-spacing: 1px; color: var(--orange);
     margin-bottom: 6px;
   }
