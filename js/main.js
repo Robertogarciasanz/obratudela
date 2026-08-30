@@ -4,7 +4,7 @@
  */
 
 import { loadPrecios } from './precios-loader.js?v=2.3';
-import { buscarPartidas } from './search.js?v=2.1';
+import { buscarPartidas } from './search.js?v=2.2';
 import {
   getPresupuesto,
   agregarPartida,
