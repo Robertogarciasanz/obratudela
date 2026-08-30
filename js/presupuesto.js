@@ -125,7 +125,7 @@ export function generarHTMLExportacion() {
 <body>
   <div class="header">
     <div class="logo">
-      <img src="img/logo.jpg" alt="Logo ObraTudela">
+      <img src="../img/logo.jpg" alt="Logo ObraTudela">
       <div class="logo-text">
         <h1>EXCAVACIONES Y SERVICIOS ARTURO S.L.</h1>
         <p>Movimiento de tierras y construcción</p>
