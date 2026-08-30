@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artículos en Venta — ObraTudela</title>
+<meta name="description" content="Artículos en venta de Excavaciones y Servicios Arturo S.L. Maquinaria, herramientas y materiales de construcción en Castilla y León. Contacta directamente por teléfono.">
+<meta name="keywords" content="maquinaria segunda mano, herramientas obra, venta maquinaria construcción, Castilla y León, Valladolid, Tudela de Duero">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.obratudela.com/anuncios.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.obratudela.com/anuncios.html",
+  "url": "https://www.obratudela.com/anuncios.html",
+  "name": "Artículos en Venta — ObraTudela",
+  "description": "Maquinaria, herramientas y materiales de construcción en venta. Excavaciones y Servicios Arturo S.L., Tudela de Duero.",
+  "inLanguage": "es",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.obratudela.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Artículos en Venta", "item": "https://www.obratudela.com/anuncios.html"}
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Excavaciones y Servicios Arturo S.L.",
+    "url": "https://www.obratudela.com",
+    "telephone": "+34607444903"
+  }
+}
+</script>
+<meta property="og:title" content="Artículos en Venta — ObraTudela">
+<meta property="og:description" content="Artículos en venta de Excavaciones y Servicios Arturo S.L. Maquinaria, herramientas y materiales de construcción en Castilla y León.">
+<meta property="og:url" content="https://www.obratudela.com/anuncios.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/logo.jpg" type="image/jpeg">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/anuncios.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="img/logo.jpg" alt="ObraTudela" onerror="this.style.display='none'">
+      Obra<span>Tudela</span>
+    </a>
+    <nav>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="alquileres.html">Alquileres</a>
+      <a href="topografia.html">Topografía</a>
+      <a href="anuncios.html" class="activo">Anuncios</a>
+      <a href="presupuesto_v2.html">Presupuestos</a>
+      <a href="tel:+34607444903" class="nav-tel">📞 607 444 903</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-anuncios">
+  <p class="subtitulo">Tudela de Duero · Castilla y León</p>
+  <h1>ARTÍCULOS EN <span>VENTA</span></h1>
+  <p>Maquinaria, herramientas y material de obra. ¿Te interesa algo? Llámanos directamente al <strong style="color:var(--primary);">607 444 903</strong>.</p>
+  <div class="buscador-wrap">
+    <input type="text" id="buscador" placeholder="Buscar excavadora, hormigonera, andamio...">
+    <button class="btn-buscar">🔍 Buscar</button>
+  </div>
+</section>
+
+<!-- CATEGORÍAS -->
+<div class="cats-bar">
+  <div class="cats-inner">
+    <button class="cat-btn activa">🏗️ Todos</button>
+    <button class="cat-btn">🚜 Maquinaria</button>
+    <button class="cat-btn">🔧 Herramientas</button>
+    <button class="cat-btn">🧱 Materiales</button>
+    <button class="cat-btn">🚛 Vehículos</button>
+    <button class="cat-btn">💻 Electrónica</button>
+    <button class="cat-btn">📦 Otros</button>
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="contenido">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-cerrar" id="sidebarCerrarBtn">✕ Cerrar filtros</button>
+    <div class="filtro-card">
+      <h3>Precio</h3>
+      <div class="rango-precio">
+        <div>
+          <label>Mín (€)</label>
+          <input type="number" id="precioMin" placeholder="0" min="0">
+        </div>
+        <div>
+          <label>Máx (€)</label>
+          <input type="number" id="precioMax" placeholder="∞" min="0">
+        </div>
+      </div>
+      <button class="btn-filtrar">Aplicar</button>
+      <button class="btn-limpiar">✕ Limpiar filtros</button>
+    </div>
+
+    <div class="filtro-card">
+      <h3>Provincia</h3>
+      <select id="filtroProvincia">
+        <option value="">Todas</option>
+        <option>Ávila</option><option>Burgos</option><option>León</option>
+        <option>Palencia</option><option>Salamanca</option><option>Segovia</option>
+        <option>Soria</option><option>Valladolid</option><option>Zamora</option>
+      </select>
+    </div>
+
+    <div class="filtro-card">
+      <h3>Ordenar</h3>
+      <select id="ordenar">
+        <option value="reciente">Más reciente</option>
+        <option value="precio-asc">Precio ↑</option>
+        <option value="precio-desc">Precio ↓</option>
+      </select>
+    </div>
+  </aside>
+
+  <!-- ANUNCIOS -->
+  <main class="zona-anuncios">
+    <div class="barra-resultado">
+      <span><strong id="contadorAnuncios">0</strong> anuncios en <strong>Castilla y León</strong></span>
+      <button class="btn-filtros-movil">⚙ Filtros</button>
+      <select class="ordenar-select" id="ordenarMovil">
+        <option value="reciente">Más reciente</option>
+        <option value="precio-asc">Menor precio</option>
+        <option value="precio-desc">Mayor precio</option>
+      </select>
+    </div>
+    <div class="grid-anuncios" id="gridAnuncios"></div>
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Obra<span>Tudela</span></div>
+  <p>Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Tudela de Duero, Valladolid</p>
+  <p style="margin-top:12px;">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="tel:+34607444903">607 444 903</a>
+    <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>
+  </p>
+  <p style="margin-top:12px; font-size:11px;">© 2026 ObraTudela.com · Tudela de Duero, Valladolid</p>
+</footer>
+
+<!-- MODAL DETALLE -->
+<div class="modal-overlay" id="modalDetalle">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" id="modalCerrar">✕</button>
+    <div class="galeria-principal">
+      <div class="galeria-placeholder" id="galeriaPlaceholder">🏗️</div>
+      <img class="galeria-img-grande" id="galeriaImgGrande" src="" alt="" style="display:none">
+      <button class="galeria-nav prev" id="galeriaAnterior" style="display:none">‹</button>
+      <button class="galeria-nav next" id="galeriaSiguiente" style="display:none">›</button>
+      <span class="galeria-contador" id="galeriaContador" style="display:none"></span>
+    </div>
+    <div class="galeria-thumbs" id="galeriaThumbs" style="display:none"></div>
+    <div class="modal-info">
+      <div class="modal-titulo" id="modalTitulo"></div>
+      <div class="modal-precio" id="modalPrecio"></div>
+      <div class="modal-tags" id="modalTags"></div>
+      <div class="modal-descripcion" id="modalDescripcion"></div>
+      <div class="modal-contacto">
+        <div>
+          <p>Vendedor · <span id="modalProvincia"></span></p>
+          <strong id="modalTelefono"></strong>
+        </div>
+        <a class="btn-llamar" id="modalBtnLlamar" href="#">📞 Llamar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="js/global.js" defer></script>
+<script src="js/anuncios.js" defer></script>
+</body>
+</html>
