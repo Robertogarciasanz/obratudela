@@ -3,7 +3,7 @@
  * Coordina todos los módulos y gestiona el flujo de la aplicación
  */
 
-import { loadPrecios } from './precios-loader.js?v=2.1';
+import { loadPrecios } from './precios-loader.js?v=2.3';
 import { buscarPartidas } from './search.js?v=2.1';
 import {
   getPresupuesto,

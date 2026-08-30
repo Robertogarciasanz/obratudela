@@ -53,7 +53,7 @@ export const PARTIDAS_FALLBACK = [
 ];
 
 // Configuración de caché
-const CACHE_VERSION = '2026.1';  // Actualizar al cambiar base-precios.json
+const CACHE_VERSION = '2026.2';  // Actualizar al cambiar base-precios.json
 const CACHE_KEY = 'precios_cache_v2';
 const CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;  // 7 días
 
@@ -122,9 +122,9 @@ export async function loadPrecios(onMessage) {
 
     // Lista de URLs a intentar en orden de preferencia (más ligera primero)
     const urls = [
-      '/data/base-precios.json.gz',      // 1.9 MB (comprimido) - ÓPTIMO
-      '/data/base-precios.json.br',      // 1.3 MB (Brotli) - MÁS ÓPTIMO si soportado
-      '/data/base-precios.json'          // 21 MB (sin comprimir) - último recurso
+      `/data/base-precios.json.gz?v=${CACHE_VERSION}`,      // 1.9 MB (comprimido) - ÓPTIMO
+      `/data/base-precios.json.br?v=${CACHE_VERSION}`,      // 1.3 MB (Brotli) - MÁS ÓPTIMO si soportado
+      `/data/base-precios.json?v=${CACHE_VERSION}`          // 21 MB (sin comprimir) - último recurso
     ];
 
     let response = null;
@@ -149,7 +149,7 @@ export async function loadPrecios(onMessage) {
 
     // Detectar si es archivo .gz y descomprimir con pako
     let data;
-    if (urlUsada.endsWith('.gz')) {
+    if (urlUsada.includes('.gz')) {
       const arrayBuffer = await response.arrayBuffer();
       const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
       data = JSON.parse(decompressed);

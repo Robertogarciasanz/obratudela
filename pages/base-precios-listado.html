@@ -248,7 +248,7 @@
 
         async function cargarPrecios() {
             try {
-                const response = await fetch('../data/base-precios.json');
+                const response = await fetch('../data/base-precios.json?v=2026.2');
                 precios = await response.json();
 
                 document.getElementById('loading').style.display = 'none';
