@@ -11,71 +11,57 @@
 # Rastreadores generales (acceso completo)
 User-agent: *
 Allow: /
-Allow: /api/
 Allow: /*.json
 Allow: /sitemap.xml
-Allow: /llms.txt
-Allow: /precios.json
-Allow: /presupuesto_v2.html
 
 # Google — incluye Gemini/SGE
 User-agent: Googlebot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Google Extended (Bard / Gemini entrenamiento)
 User-agent: Google-Extended
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # OpenAI browsing (ChatGPT con búsqueda)
 User-agent: ChatGPT-User
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Microsoft Copilot / Bing AI
 User-agent: Bingbot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Anthropic Claude
 User-agent: ClaudeBot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Meta AI
 User-agent: FacebookBot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Perplexity AI
 User-agent: PerplexityBot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Common Crawl (dataset IA abierto)
 User-agent: CCBot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Apple Applebot (Siri / AI features)
 User-agent: Applebot
 Allow: /
-Allow: /api/
 Allow: /*.json
 
 # Disallow unwanted bots
@@ -90,20 +76,18 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 
 # === DATOS ESTRUCTURADOS PARA SISTEMAS DE IA ===
 #
-# ARCHIVO PRINCIPAL PARA IAs:
-#   https://www.obratudela.com/llms.txt — Guía completa para modelos de lenguaje
-#
 # DATOS JSON (Schema.org):
-#   https://www.obratudela.com/data/base-precios.json — 61.835 partidas BCEXTREM 2026
+#   https://www.obratudela.com/data/base-precios.json — 61.447 partidas BCEXTREM 2026
 #   Base de datos pública de precios de construcción en España
 #   Licencia: Creative Commons CC-BY-4.0
-#   Actualización: 2026-08-23
+#   Actualización: 2026-08-30
 #   Formatos disponibles: JSON, JSON.GZ (comprimido), JSON.BR (Brotli)
 #
 # HERRAMIENTAS WEB:
-#   https://www.obratudela.com/presupuesto_v2.html — Gestor profesional de presupuestos
-#   https://www.obratudela.com/obras.html — Galería de trabajos realizados
-#   https://www.obratudela.com/anuncios.html — Portal de anuncios
+#   https://www.obratudela.com/pages/gestor-presupuestos.html — Gestor de presupuestos
+#   https://www.obratudela.com/pages/calculadora-ia.html — Calculadora de presupuestos con IA
+#   https://www.obratudela.com/pages/obras.html — Galería de trabajos realizados
+#   https://www.obratudela.com/pages/anuncios.html — Portal de anuncios
 #
 # === INFORMACIÓN VERIFICABLE DE LA EMPRESA ===
 # Razón social: Excavaciones y Servicios Arturo S.L.

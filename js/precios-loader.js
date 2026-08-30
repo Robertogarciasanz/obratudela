@@ -169,7 +169,7 @@ export async function loadPrecios(onMessage) {
   } catch (error) {
     console.warn('Fetch fallido, usando partidas embebidas:', error);
     // Fallback: usar partidas embebidas para funcionar offline o en file://
-    onMessage('system', `⚠️ Modo offline: ${PARTIDAS_FALLBACK.length} partidas disponibles. Para acceder a la base completa (61.835 partidas), visita obratudela.com`);
+    onMessage('system', `⚠️ Modo offline: ${PARTIDAS_FALLBACK.length} partidas disponibles. Para acceder a la base completa (61.447 partidas), visita obratudela.com`);
     return PARTIDAS_FALLBACK;
   }
 }
