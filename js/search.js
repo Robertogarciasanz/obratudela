@@ -15,6 +15,12 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
   // Palabras a ignorar (stopwords en español)
   const stopwords = ['de', 'del', 'la', 'el', 'los', 'las', 'a', 'en', 'con', 'para', 'por', 'y', 'o', 'un', 'una', 'unos', 'unas'];
 
+  // Si el usuario NO pide quitar/demoler algo, penalizamos las partidas de
+  // demolición/desmontaje aunque coincidan por palabra (p.ej. "poner una
+  // ventana" no debe devolver "desmontado de ventana").
+  const palabrasIntencionRetirada = ['quitar', 'demoler', 'demolicion', 'desmontar', 'retirar', 'levantar', 'eliminar', 'tirar', 'derribar', 'derribo'];
+  const terminosRetiradaEnPartida = ['demolicion', 'desmontado', 'desmontaje', 'levantado', 'retirada', 'derribo', 'desmolicion'];
+
   // Diccionario ampliado de sinónimos y términos relacionados
   const sinonimos = {
     // Demolición y retirada
@@ -43,7 +49,7 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
     'pladur': ['pladur', 'carton', 'yeso', 'placa'],
 
     // Piscinas
-    'piscina': ['piscina', 'pisci', 'vaso', 'estanque', 'natacion'],
+    'piscina': ['piscina', 'pisci', 'estanque', 'natacion'],
 
     // Cimentación
     'zapata': ['zapata', 'cimentacion', 'fundacion'],
@@ -69,8 +75,8 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
 
     // Acabados
     'enfoscado': ['enfoscado', 'mortero', 'revoco', 'revestimiento'],
-    'pintura': ['pintura', 'pintado', 'revestimiento'],
-    'alicatado': ['alicatado', 'azulejo', 'revestimiento', 'ceramica']
+    'pintura': ['pintura', 'pintar', 'pintado', 'revestimiento'],
+    'alicatado': ['alicatado', 'alicatar', 'azulejo', 'revestimiento', 'ceramica']
   };
 
   // Normalizar texto: eliminar acentos y convertir a minúsculas
@@ -131,6 +137,9 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
 
   console.log('📋 Keywords normalizadas:', keywords);
 
+  // ¿La petición del usuario pide expresamente quitar/demoler algo?
+  const queryPideRetirada = keywordsRaw.some(k => palabrasIntencionRetirada.includes(k));
+
   // Si no hay keywords válidas, buscar por la descripción completa
   if (keywords.length === 0) {
     console.warn('⚠️ No hay keywords válidas después de filtrar');
@@ -148,15 +157,13 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
   const resultados = [];
   const startTime = performance.now();
 
-  // Procesar solo hasta encontrar suficientes buenos candidatos
-  const candidatosNecesarios = maxResults * 5; // 5x el máximo para tener margen
-
+  // Recorremos SIEMPRE toda la base antes de puntuar y ordenar.
+  // (Antes se paraba en cuanto encontraba 50 candidatos con CUALQUIER
+  // coincidencia, y como la base está ordenada por código, muchas veces
+  // esos 50 huecos se llenaban con coincidencias débiles de los primeros
+  // códigos alfabéticos, dejando fuera partidas mucho mejores que
+  // aparecían más adelante en la lista.)
   for (const partida of preciosDB) {
-    // Early exit si ya tenemos suficientes candidatos de alta calidad
-    if (resultados.length >= candidatosNecesarios) {
-      break;
-    }
-
     const resNorm = normalizar(partida.res);
     const descNorm = normalizar(partida.desc || '');
     const codNorm = normalizar(partida.cod);
@@ -220,6 +227,13 @@ export function buscarPartidas(descripcion, preciosDB, maxResults = 10) {
 
       // Bonus proporcional
       score += Math.floor((keywordsEncontradas / keywordsRaw.length) * 20);
+
+      // Penalizar partidas de demolición/desmontaje cuando el usuario no
+      // ha pedido quitar/demoler nada (evita que "poner una ventana"
+      // devuelva "desmontado de ventana" por delante de la instalación real)
+      if (!queryPideRetirada && terminosRetiradaEnPartida.some(t => resNorm.includes(t))) {
+        score = Math.round(score * 0.25);
+      }
 
       resultados.push({ ...partida, score });
     }
