@@ -8,6 +8,13 @@ function escapeHtml(s) {
   }[c]));
 }
 
+// Las rutas de fotos en anuncios.json son relativas a la raíz del sitio (img/anuncios/...),
+// pero esta página vive en pages/, así que hay que anteponer '../'.
+function rutaFoto(f) {
+  if (!f || /^(https?:)?\/\//.test(f) || f.startsWith('../')) return f;
+  return '../' + f;
+}
+
 function inyectarSchemaProductos(items) {
   const el = document.getElementById('schema-productos');
   if (el) el.remove();
@@ -37,7 +44,7 @@ function inyectarSchemaProductos(items) {
   document.head.appendChild(script);
 }
 
-fetch('anuncios.json')
+fetch('../anuncios.json')
   .then(r => r.json())
   .then(data => {
     anuncios = data;
@@ -60,7 +67,7 @@ function renderTarjetas(lista) {
   }
 
   grid.innerHTML = lista.map((a, index) => {
-    const foto = a.fotos && a.fotos.length ? a.fotos[0] : null;
+    const foto = a.fotos && a.fotos.length ? rutaFoto(a.fotos[0]) : null;
     const n = a.fotos ? a.fotos.length : 0;
     const precio = a.precio > 0 ? `${a.precio.toLocaleString('es-ES')}€` : 'A convenir';
     const d = Math.floor((Date.now() - new Date(a.fecha)) / 86400000);
@@ -169,7 +176,7 @@ function abrirDetalle(id) {
   const bNext = document.getElementById('galeriaSiguiente');
 
   if (fotos.length) {
-    imgG.src = fotos[0]; imgG.style.display = 'block';
+    imgG.src = rutaFoto(fotos[0]); imgG.style.display = 'block';
     ph.style.display = 'none';
     if (fotos.length > 1) {
       bPrev.style.display = bNext.style.display = 'flex';
@@ -177,7 +184,7 @@ function abrirDetalle(id) {
       cnt.textContent = `Foto 1 de ${fotos.length}`;
       thumbs.style.display = 'flex';
       thumbs.innerHTML = fotos.map((f,i) =>
-        `<img src="${escapeHtml(f)}" class="thumb ${i===0?'activa':''}" data-index="${i}" alt="Foto ${i+1}">`
+        `<img src="${escapeHtml(rutaFoto(f))}" class="thumb ${i===0?'activa':''}" data-index="${i}" alt="Foto ${i+1}">`
       ).join('');
       // Add event listeners to thumbs
       thumbs.querySelectorAll('.thumb').forEach(t => {
@@ -207,7 +214,7 @@ function navegarGaleria(dir) {
 
 function irFoto(idx) {
   galeriaActual.indice = idx;
-  document.getElementById('galeriaImgGrande').src = galeriaActual.fotos[idx];
+  document.getElementById('galeriaImgGrande').src = rutaFoto(galeriaActual.fotos[idx]);
   document.getElementById('galeriaContador').textContent = `Foto ${idx+1} de ${galeriaActual.fotos.length}`;
   document.querySelectorAll('.thumb').forEach((t,i) => t.classList.toggle('activa', i===idx));
 }
