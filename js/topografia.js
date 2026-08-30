@@ -399,9 +399,15 @@
     function cerrarIntro() {
         document.getElementById('introOverlay').style.display = 'none';
         try { localStorage.setItem('topo_intro', '1'); } catch(_) {}
+        if (!seguirActivo) activarSeguir();
     }
 
-    try { if (localStorage.getItem('topo_intro')) document.getElementById('introOverlay').style.display = 'none'; } catch(_) {}
+    try {
+        if (localStorage.getItem('topo_intro')) {
+            document.getElementById('introOverlay').style.display = 'none';
+            activarSeguir();
+        }
+    } catch(_) {}
 
     async function borrarTodo() {
         if (await dlgConfirm("¿Borrar todos los puntos?")) {
