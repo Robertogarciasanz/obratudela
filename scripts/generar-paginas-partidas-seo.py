@@ -280,7 +280,65 @@ for palabra in PARTIDAS_POPULARES:
 
     print(f"  OK {palabra}: {len(partidas_relacionadas)} partidas -> {url_palabra}.html")
 
+# ─── Páginas por categoría (grupo) ──────────────────────────────────────────
+# Las páginas de arriba se generan buscando palabras clave sueltas, así que
+# siempre puede quedar alguna partida sin ninguna página que la contenga
+# (p.ej. "RÓTULO DENOMINADOR DE GRUPO Y CALLE" no lleva ninguna de esas
+# palabras). El campo "grupo" de data/base-precios.json, en cambio, clasifica
+# el 100% de las 61.447 partidas en 17 categorías sin excepción — generando
+# una página por cada una, TODA partida queda cubierta por alguna página
+# pública, sin huecos posibles.
+NOMBRES_GRUPO = {
+    'MATERIALES': 'Materiales de Construcción',
+    'INSTALACIONES': 'Instalaciones (Electricidad, Fontanería, Saneamiento)',
+    'CARPINTERIA': 'Carpintería (Puertas y Ventanas)',
+    'R0': 'Revestimientos y Acabados',
+    'U0': 'Urbanización',
+    'E1': 'Estructura y Albañilería',
+    'JARDINERIA': 'Jardinería',
+    'MAQUINARIA': 'Maquinaria y Medios Auxiliares',
+    'AISLAMIENTO': 'Aislamiento e Impermeabilización',
+    'DEMOLICION': 'Todas las Demoliciones',  # "demolicion.html" ya existe (página por palabra clave)
+    'N0': 'Fachadas y Cerramientos',
+    'C0': 'Control de Calidad',
+    'SEGURIDAD': 'Seguridad y Salud',
+    'MOVTIERRA': 'Movimiento de Tierras',
+    'A0': 'Auxiliares (Pastas, Morteros, Hormigones)',
+    'CARGA': 'Carga y Gestión de Residuos',
+    'MANO DE OBRA': 'Mano de Obra',
+}
+
+por_grupo = {}
+for p in db:
+    por_grupo.setdefault(p.get('grupo'), []).append(p)
+
+print(f"\nGenerando páginas por categoría (cobertura completa)...")
+
+for grupo, nombre in NOMBRES_GRUPO.items():
+    partidas_grupo = por_grupo.get(grupo, [])
+    if not partidas_grupo:
+        print(f"  SKIP {grupo}: sin partidas")
+        continue
+
+    html = generar_html_partida(partidas_grupo, nombre)
+    url_grupo = limpiar_para_url(nombre)
+    archivo = partidas_dir / f"{url_grupo}.html"
+
+    with open(archivo, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    paginas_generadas.append({
+        'palabra': nombre,
+        'url': url_grupo,
+        'partidas': len(partidas_grupo)
+    })
+
+    print(f"  OK {nombre}: {len(partidas_grupo)} partidas -> {url_grupo}.html")
+
+cubiertas = sum(1 for c in NOMBRES_GRUPO if por_grupo.get(c))
+total_en_categorias = sum(len(por_grupo.get(c, [])) for c in NOMBRES_GRUPO)
 print(f"\nOK {len(paginas_generadas)} paginas generadas en /partidas/")
+print(f"Cobertura por categoría: {total_en_categorias:,} / {len(db):,} partidas ({cubiertas}/{len(NOMBRES_GRUPO)} categorías)")
 print("\nPáginas creadas:")
 for pag in paginas_generadas:
     print(f"  • https://www.obratudela.com/partidas/{pag['url']}.html ({pag['partidas']} partidas)")
