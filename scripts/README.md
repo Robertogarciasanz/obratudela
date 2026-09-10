@@ -2,88 +2,56 @@
 
 ## Uso de los scripts
 
-**IMPORTANTE:** Los scripts ahora están en la carpeta `scripts/`.
-Para usarlos, ejecuta desde la raíz del proyecto:
+Ejecuta siempre desde la raíz del proyecto (donde está `index.html`):
 
 ```bash
-# Desde la raíz del proyecto (donde está index.html)
-python scripts/convert-bc3-to-json.py data/archivo.bc3 data/salida.json
+python scripts/nombre-del-script.py
 ```
 
-## Scripts disponibles
+## Base de precios (fuente de verdad: `data/base-precios.json`)
 
-### generar-indice-busqueda.py ⭐⭐
-Genera el índice invertido para búsqueda semántica inteligente
+Ver la sección "Herramientas de presupuestos" en `CLAUDE.md` para la
+arquitectura completa. Resumen de los scripts activos:
 
-**Uso:**
+### parsear_bc3.py
+Parser genérico del formato FIEBDC-3/BC3 (CYPE, Presto...). No se ejecuta
+directamente, lo importan los dos scripts siguientes.
+
+### enriquecer-base-precios.py ⭐
+Lee `data/BCEXTREM26.bc3` (banco de precios original, NO versionado — hay
+que colocarlo ahí antes de ejecutar) y `data/base-precios.json`, y añade:
+- `capitulo`/`subcapitulo`: jerarquía real de capítulos del banco de precios.
+- `desc`: rellena descripciones que faltaran, usando el texto del BC3.
+- `data/precios-con-desgloses.json` (NO versionado): desglose de recursos
+  (mano de obra, maquinaria, materiales) de las partidas compuestas.
+
 ```bash
-python scripts/generar-indice-busqueda.py
+python scripts/enriquecer-base-precios.py
 ```
 
-**Qué hace:**
-- Lee `data/base-precios.json` (61,835 partidas)
-- Crea índice invertido con 38,530 palabras
-- Expande términos con sinónimos (9 categorías semánticas)
-- Genera `data/indice-busqueda.json` (42 MB)
-- Permite búsquedas O(1) con relevancia calculada
+### unificar-bases-precios.py ⭐
+Regenera el bloque de datos incrustado en `pages/gestor-presupuestos.html`
+a partir de `data/base-precios.json` (agrupando por el campo `grupo`).
+Ejecútalo siempre que edites `data/base-precios.json` a mano y quieras que
+el gestor refleje el cambio — **no edites el `DATA_B64` del gestor a mano**.
 
-**Cuándo regenerar:**
-- Después de actualizar base-precios.json
-- Al agregar nuevas partidas desde BC3
-- Al modificar categorías semánticas
-
-### convert-bc3-to-json.py ⭐
-Convierte archivos BC3 (FIEBDC-3) a JSON
-
-**Uso:**
 ```bash
-python scripts/convert-bc3-to-json.py data/BASE_PRECIOS_UNIFICADA.bc3 data/output.json
+python scripts/unificar-bases-precios.py
 ```
 
-### combinar-bases-precios.py
-Combina múltiples archivos JSON de precios eliminando duplicados
+### generar-paginas-partidas-seo.py
+Genera páginas SEO individuales por partida a partir de la base de precios.
 
-**Uso:**
-```bash
-python scripts/combinar-bases-precios.py data/bcca.json data/cype.json
-```
+### compress-precios.js / compress-precios.cjs
+Generan las versiones comprimidas `.gz`/`.br` de `data/base-precios.json`
+(también las regeneran `enriquecer-base-precios.py` y
+`unificar-bases-precios.py` al tocar el JSON).
 
-### extraer-desc-pdf-bcca.py
-Extrae descripciones del PDF oficial de BCCA y actualiza base-precios.json
+## Después de regenerar `data/base-precios.json`
 
-**Uso:**
-```bash
-python scripts/extraer-desc-pdf-bcca.py
-```
-
-### generar-desc-bcca.py
-Genera descripciones para partidas del BCCA
-
-### generar-descripciones-ia.py
-Genera descripciones usando IA
-
-### extraer-textos-bc3.py
-Extrae textos de archivos BC3
-
-### inyectar-precios-gestor.py
-Inyecta precios en el gestor de presupuestos
-
-## Rutas de archivos
-
-Después de la reorganización:
-
-```
-obratudela/
-├── scripts/              ← Estás aquí
-│   ├── convert-bc3-to-json.py
-│   └── ...
-├── data/                 ← Los archivos de datos están aquí
-│   ├── base-precios.json
-│   └── BASE_PRECIOS_UNIFICADA.bc3
-└── ...
-```
-
-**Al ejecutar scripts, usa rutas relativas:**
-- ❌ `base-precios.json`
-- ✅ `../data/base-precios.json` (desde scripts/)
-- ✅ `data/base-precios.json` (desde raíz)
+1. Actualiza `CACHE_VERSION` en `js/precios-loader.js`.
+2. Sube en uno el parámetro `?v=` del import de `precios-loader.js` en
+   `js/main.js` (cache-busting del módulo).
+3. Si ha cambiado el número total de partidas, revisa los textos que lo
+   mencionan (`pages/gestor-presupuestos.html`, `pages/calculadora-ia.html`,
+   `CLAUDE.md`).

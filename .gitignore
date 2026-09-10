@@ -31,7 +31,7 @@ extraer-imagenes.js
 *.bc3
 *.bak
 *.tmp
-precios-con-desgloses.json
+precios-con-desgloses.json*
 
 # Archivos comprimidos generados
 compressed/

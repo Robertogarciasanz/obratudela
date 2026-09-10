@@ -31,23 +31,42 @@ tocar los archivos si hace falta.
 
 ## Herramientas de presupuestos
 
-Hay dos herramientas independientes, cada una con su propia copia de la base
-de precios — no comparten datos en tiempo real, así que una actualización
-hay que aplicarla a las dos por separado:
+Hay dos herramientas de presupuestos, pero **una sola fuente de verdad**:
+**`data/base-precios.json`** (61.447 partidas, array plano). El HTML del
+gestor se **genera a partir de ese JSON**, no se edita a mano:
 
+- **`data/base-precios.json`** — fuente de verdad única. Cada partida lleva
+  `cod`, `uni`, `res`, `precio`, `desc`, `grupo` (oficio, 17 categorías
+  curadas a mano para el gestor) y, cuando el código existe en el banco de
+  precios BC3 real (`data/BCEXTREM26.bc3`, no versionado, ver más abajo),
+  también `capitulo`/`subcapitulo` (jerarquía real del banco de precios,
+  24 capítulos). Versiones comprimidas `.json.gz`/`.json.br` junto al
+  original. La usan `pages/calculadora-ia.html` (vía `js/precios-loader.js`
+  + `js/search.js`) y `pages/base-precios-listado.html`.
 - **`pages/gestor-presupuestos.html`** — herramienta principal, la que usan
-  clientes reales. Lleva la base de precios (BCEXTREM 2026, 61.447 partidas)
-  **incrustada dentro del propio HTML** como un bloque comprimido
-  (zlib + base64, variable `DATA_B64`). Para actualizarla hay que
-  descomprimir ese bloque, modificarlo y volver a comprimirlo — ver
-  `scripts/actualizar-gestor-2026.py`, `scripts/reclasificar-oficios.py` y
-  `scripts/recuperar-descripciones-perdidas.py` (los tres últimos scripts de
-  la base de datos; los anteriores quedaron obsoletos y se eliminaron).
-- **`pages/calculadora-ia.html`** — asistente de presupuestos por chat con
-  búsqueda en lenguaje natural (`js/search.js`). Usa
-  **`data/base-precios.json`** (~19 MB, mismas 61.447 partidas, en array
-  plano) vía `js/precios-loader.js`, con versiones comprimidas
-  `.json.gz`/`.json.br`. También la usa `pages/base-precios-listado.html`.
+  clientes reales. Lleva las mismas partidas **incrustadas dentro del propio
+  HTML** como un bloque comprimido (zlib + base64, variable `DATA_B64`),
+  organizadas en las 17 hojas/oficios del campo `grupo`, para que cargue
+  rápido sin hacer `fetch`. Se regenera con
+  `python scripts/unificar-bases-precios.py` — **no la edites a mano**: ese
+  script lee `data/base-precios.json` y reescribe el `DATA_B64` del gestor
+  agrupando por `grupo`.
+- **`data/precios-con-desgloses.json`** (no versionado, ver `.gitignore`) —
+  para las partidas compuestas (~24.200 de 61.447), el desglose real de
+  recursos (mano de obra, maquinaria, materiales) que forman su precio:
+  `{cod_partida: [{cod, res, uni, precio, cantidad, importe}, ...]}`.
+  Generado, no consumido todavía por ninguna página — pensado para una
+  futura vista de "ver desglose" en el gestor o la calculadora.
+
+Scripts relevantes (en orden de uso si hay que regenerar todo desde cero):
+`scripts/parsear_bc3.py` (parser genérico del formato FIEBDC-3/BC3, no se
+ejecuta directo) → `scripts/enriquecer-base-precios.py` (lee
+`data/BCEXTREM26.bc3` + `data/base-precios.json`, añade capítulo real y
+desglose) → `scripts/unificar-bases-precios.py` (regenera el gestor desde
+`data/base-precios.json`). El `.bc3` original (~18 MB, formato FIEBDC-3 de
+CYPE/Presto) no está en git (`*.bc3` en `.gitignore`) — si hay que volver a
+ejecutar `enriquecer-base-precios.py`, colócalo en `data/BCEXTREM26.bc3`
+antes.
 
 `data/base-precios.json` **no lo leas entero** con Read — usa `Grep`/`head`/
 `jq` para consultar entradas concretas, o se desperdicia el contexto. Si lo
