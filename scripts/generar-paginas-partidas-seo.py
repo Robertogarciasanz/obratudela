@@ -8,7 +8,14 @@ Cada partida tendrá su propia página para posicionar en Google
 import json
 import os
 import re
+import unicodedata
 from pathlib import Path
+
+
+def sin_acentos(texto):
+    """Quita tildes/diéresis para comparar texto sin depender de acentos."""
+    nfkd = unicodedata.normalize('NFKD', texto)
+    return ''.join(c for c in nfkd if not unicodedata.combining(c))
 
 # Partidas más buscadas / populares para generar páginas SEO
 PARTIDAS_POPULARES = [
@@ -26,7 +33,12 @@ PARTIDAS_POPULARES = [
     "FONTANERIA",
     "ELECTRICIDAD",
     "VENTANA",
-    "PUERTA"
+    "PUERTA",
+    "IMBORNAL",
+    "SUMIDERO",
+    "ARQUETA",
+    "ALCANTARILLA",
+    "SANEAMIENTO",
 ]
 
 def limpiar_para_url(texto):
@@ -130,7 +142,7 @@ def generar_html_partida(partidas, palabra_clave):
 <body>
     <div class="breadcrumb">
         <a href="../index.html">Inicio</a> ›
-        <a href="../pages/calculadora-profesional.html">Calculadora</a> ›
+        <a href="../pages/calculadora-ia.html">Calculadora</a> ›
         <strong>"""
 
     html += palabra_clave.title()
@@ -168,7 +180,7 @@ def generar_html_partida(partidas, palabra_clave):
         </div>
     </div>
 
-    <a href="../pages/calculadora-profesional.html" class="cta">
+    <a href="../pages/calculadora-ia.html" class="cta">
         🧮 Crear Presupuesto Gratis
     </a>
 
@@ -203,14 +215,14 @@ def generar_html_partida(partidas, palabra_clave):
 
     <div style="margin: 40px 0; padding: 20px; background: #f4f4f4; border-radius: 8px;">
         <h3>💡 ¿Necesitas crear un presupuesto?</h3>
-        <p>Utiliza nuestra <a href="../pages/calculadora-profesional.html" style="color: #ff6b00; font-weight: bold;">calculadora gratuita</a> con acceso a 46,000+ partidas de construcción.</p>
+        <p>Utiliza nuestra <a href="../pages/calculadora-ia.html" style="color: #ff6b00; font-weight: bold;">calculadora gratuita</a> con acceso a 61.447 partidas de construcción.</p>
         <ul>
             <li>✅ Base de datos BCEXTREM 2026 actualizada</li>
             <li>✅ Exporta a Excel y BC3 (Presto/Arquímedes)</li>
             <li>✅ Gestión de proyectos</li>
             <li>✅ 100% Gratis, sin registro</li>
         </ul>
-        <a href="../pages/calculadora-profesional.html" class="cta">Crear Presupuesto Ahora</a>
+        <a href="../pages/calculadora-ia.html" class="cta">Crear Presupuesto Ahora</a>
     </div>
 
     <footer style="text-align: center; padding: 40px 0; color: #666; border-top: 1px solid #ddd; margin-top: 40px;">
@@ -226,13 +238,13 @@ def generar_html_partida(partidas, palabra_clave):
 
 # Cargar base de datos
 print("Cargando base de datos...")
-with open('../data/base-precios.json', 'r', encoding='utf-8') as f:
+with open('data/base-precios.json', 'r', encoding='utf-8') as f:
     db = json.load(f)
 
 print(f"Total partidas: {len(db)}")
 
 # Crear directorio de partidas
-partidas_dir = Path('../partidas')
+partidas_dir = Path('partidas')
 partidas_dir.mkdir(exist_ok=True)
 
 print(f"\nGenerando páginas HTML...")
@@ -243,7 +255,7 @@ for palabra in PARTIDAS_POPULARES:
     # Buscar partidas que contengan la palabra
     partidas_relacionadas = [
         p for p in db
-        if palabra.upper() in p['res'].upper()
+        if sin_acentos(palabra.upper()) in sin_acentos(p['res'].upper())
     ]
 
     if len(partidas_relacionadas) < 5:

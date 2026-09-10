@@ -40,7 +40,17 @@ python scripts/unificar-bases-precios.py
 ```
 
 ### generar-paginas-partidas-seo.py
-Genera páginas SEO individuales por partida a partir de la base de precios.
+Genera páginas HTML estáticas en `/partidas/` (una por categoría: demolición,
+imbornales, sumideros, arquetas...) con el listado completo de precios de esa
+categoría en el propio HTML (no vía JS), para que buscadores e IAs puedan
+leer los precios sin ejecutar nada. Añade categorías nuevas a la lista
+`PARTIDAS_POPULARES` del script. Si generas páginas nuevas, añádelas también
+a `sitemap.xml` y, si quieres que sean navegables, enlázalas desde
+`pages/base-precios-listado.html`.
+
+```bash
+python scripts/generar-paginas-partidas-seo.py
+```
 
 ### compress-precios.js / compress-precios.cjs
 Generan las versiones comprimidas `.gz`/`.br` de `data/base-precios.json`
