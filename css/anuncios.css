@@ -75,6 +75,19 @@ a { color: inherit; text-decoration: none; }
 
 .anuncia-requisitos li::before { content: '✓ '; color: var(--orange); font-weight: 700; }
 
+.anuncia-nota-tierra {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 auto 14px;
+  padding: 8px 14px;
+  background: rgba(139, 94, 60, 0.08);
+  border: 1px solid rgba(139, 94, 60, 0.25);
+  border-radius: var(--radio);
+}
+
+.anuncia-nota-tierra strong { color: var(--text); }
+
 .btn-whatsapp {
   display: inline-block;
   margin-top: 8px;
