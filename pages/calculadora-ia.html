@@ -13,6 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Presupuestos con IA | ObraTudela</title>
   <meta name="description" content="Genera presupuestos de construcción automáticamente con inteligencia artificial. Describe tu proyecto y obtén un presupuesto detallado al instante.">
+  <meta name="keywords" content="presupuesto obra con IA, calculadora de presupuestos, presupuesto excavación, presupuesto construcción, ObraTudela">
+  <meta property="og:title" content="Calculadora de Presupuestos con IA | ObraTudela">
+  <meta property="og:description" content="Genera presupuestos de construcción automáticamente con inteligencia artificial. Describe tu proyecto y obtén un presupuesto detallado al instante.">
+  <meta property="og:url" content="https://www.obratudela.com/pages/calculadora-ia.html">
+  <meta property="og:image" content="https://www.obratudela.com/img/gemini-800w.webp">
+  <meta property="og:type" content="website">
   <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js"></script>
@@ -532,6 +538,7 @@
         <textarea
           id="userInput"
           placeholder="Ej: Solera de hormigón"
+          aria-label="Describe el trabajo que necesitas"
           rows="2"
         ></textarea>
         <button class="btn" id="sendBtn" onclick="sendMessage()">Enviar</button>

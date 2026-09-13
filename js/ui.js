@@ -79,6 +79,7 @@ export function renderPresupuesto(onUpdateCantidad, onEliminarPartida, onExporta
             value="${p.cantidad}"
             min="0.01"
             step="0.01"
+            aria-label="Cantidad de ${p.res.replace(/"/g, '&quot;')}"
             onchange="window.updateCantidadHandler(${index}, this.value)"
           >
           <span>${p.uni} × ${p.precio.toFixed(2)}€ = <strong>${total.toFixed(2)}€</strong></span>
@@ -129,7 +130,7 @@ export function renderOpcionesPartidas(partidas, total, grupoId, onTogglePartida
   let opcionesHTML = `<div class="opciones-partidas" data-grupo-container="${grupoId}">`;
   partidas.slice(0, 5).forEach((p) => {
     opcionesHTML += `
-      <div class="opcion-partida" data-codigo="${p.cod}" data-grupo="${grupoId}" onclick="window.togglePartidaHandler(this, '${p.cod}', ${grupoId})">
+      <div class="opcion-partida" data-codigo="${p.cod}" data-grupo="${grupoId}" tabindex="0" role="button" aria-label="Añadir partida ${p.cod}" onclick="window.togglePartidaHandler(this, '${p.cod}', ${grupoId})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.togglePartidaHandler(this, '${p.cod}', ${grupoId})}">
         <div class="opcion-header">
           <span class="opcion-cod">${p.cod}</span>
           <span class="opcion-precio">${p.precio.toFixed(2)}€/${p.uni}</span>
