@@ -192,6 +192,13 @@
     .hamburger-menu {
         display: flex;
         /* Mostrar hamburguesa */
+        width: 44px;
+        height: 44px;
+        align-items: center;
+    }
+
+    .hamburger-menu span {
+        width: 28px;
     }
 
     .mobile-menu {

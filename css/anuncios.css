@@ -736,8 +736,11 @@ footer a:hover { color: var(--orange); }
     gap: 14px;
   }
   .sidebar.abierto { display: flex; }
-  .sidebar-cerrar { display: block; }
-  .btn-filtros-movil { display: flex; }
+  .sidebar-cerrar { display: block; padding: 12px; font-size: 14px; }
+  .btn-filtros-movil { display: flex; padding: 12px 16px; font-size: 14px; }
+  .btn-limpiar { padding: 12px; font-size: 13px; }
+  .filtro-card input,
+  .filtro-card select { padding: 12px 10px; font-size: 14px; }
   .grid-anuncios { grid-template-columns: repeat(2, 1fr); }
   .galeria-img-grande { height: 220px; }
   .galeria-placeholder { height: 220px; }

@@ -35,6 +35,7 @@
 <meta property="og:title" content="Artículos en Venta — ObraTudela">
 <meta property="og:description" content="Artículos en venta de Excavaciones y Servicios Arturo S.L. Maquinaria, herramientas y materiales de construcción en Castilla y León.">
 <meta property="og:url" content="https://www.obratudela.com/anuncios.html">
+<meta property="og:image" content="https://www.obratudela.com/img/excavadora-800w.webp">
 <meta property="og:type" content="website">
 <link rel="icon" href="img/logo.jpg" type="image/jpeg">
 <link rel="stylesheet" href="css/global.css">
@@ -80,7 +81,7 @@
       target="_blank" rel="noopener" class="btn-whatsapp">📲 Publica tu anuncio por WhatsApp</a>
   </div>
   <div class="buscador-wrap">
-    <input type="text" id="buscador" placeholder="Buscar excavadora, hormigonera, andamio...">
+    <input type="text" id="buscador" placeholder="Buscar excavadora, hormigonera, andamio..." aria-label="Buscar anuncios">
     <button class="btn-buscar">🔍 Buscar</button>
   </div>
 </section>
@@ -110,11 +111,11 @@
       <h3>Precio</h3>
       <div class="rango-precio">
         <div>
-          <label>Mín (€)</label>
+          <label for="precioMin">Mín (€)</label>
           <input type="number" id="precioMin" placeholder="0" min="0">
         </div>
         <div>
-          <label>Máx (€)</label>
+          <label for="precioMax">Máx (€)</label>
           <input type="number" id="precioMax" placeholder="∞" min="0">
         </div>
       </div>
@@ -124,7 +125,7 @@
 
     <div class="filtro-card">
       <h3>Provincia</h3>
-      <select id="filtroProvincia">
+      <select id="filtroProvincia" aria-label="Filtrar por provincia">
         <option value="">Todas</option>
         <option>Ávila</option><option>Burgos</option><option>León</option>
         <option>Palencia</option><option>Salamanca</option><option>Segovia</option>
@@ -134,7 +135,7 @@
 
     <div class="filtro-card">
       <h3>Ordenar</h3>
-      <select id="ordenar">
+      <select id="ordenar" aria-label="Ordenar anuncios">
         <option value="reciente">Más reciente</option>
         <option value="precio-asc">Precio ↑</option>
         <option value="precio-desc">Precio ↓</option>
@@ -147,7 +148,7 @@
     <div class="barra-resultado">
       <span><strong id="contadorAnuncios">0</strong> anuncios en <strong>Castilla y León</strong></span>
       <button class="btn-filtros-movil">⚙ Filtros</button>
-      <select class="ordenar-select" id="ordenarMovil">
+      <select class="ordenar-select" id="ordenarMovil" aria-label="Ordenar anuncios">
         <option value="reciente">Más reciente</option>
         <option value="precio-asc">Menor precio</option>
         <option value="precio-desc">Mayor precio</option>
@@ -162,7 +163,7 @@
   <div class="footer-logo">Obra<span>Tudela</span></div>
   <p>Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Tudela de Duero, Valladolid</p>
   <p style="margin-top:12px;">
-    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="pages/aviso-legal.html">Aviso legal</a>
     <a href="tel:+34607444903">607 444 903</a>
     <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>
   </p>

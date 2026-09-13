@@ -73,7 +73,7 @@ function renderTarjetas(lista) {
     const d = Math.floor((Date.now() - new Date(a.fecha)) / 86400000);
     const cuando = d === 0 ? 'Hoy' : d === 1 ? 'Ayer' : `Hace ${d} días`;
     return `
-      <div class="tarjeta" data-id="${a.id}">
+      <div class="tarjeta" data-id="${a.id}" tabindex="0" role="button" aria-label="Ver detalle de ${escapeHtml(a.titulo)}">
         <div class="tarjeta-foto">
           ${foto ? `<img src="${escapeHtml(foto)}" alt="${escapeHtml(a.titulo)}" width="360" height="240" loading="${index === 0 ? 'eager' : 'lazy'}">` : `<div class="placeholder-foto">${escapeHtml(a.emoji||'🏗️')}</div>`}
           ${a.destacado ? '<span class="badge-destacado">⭐ Destacado</span>' : ''}
@@ -94,6 +94,12 @@ function renderTarjetas(lista) {
   // Add event listeners to new cards
   document.querySelectorAll('.tarjeta').forEach(t => {
       t.addEventListener('click', () => abrirDetalle(t.dataset.id));
+      t.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          abrirDetalle(t.dataset.id);
+        }
+      });
   });
 }
 
@@ -184,11 +190,17 @@ function abrirDetalle(id) {
       cnt.textContent = `Foto 1 de ${fotos.length}`;
       thumbs.style.display = 'flex';
       thumbs.innerHTML = fotos.map((f,i) =>
-        `<img src="${escapeHtml(rutaFoto(f))}" class="thumb ${i===0?'activa':''}" data-index="${i}" alt="Foto ${i+1}">`
+        `<img src="${escapeHtml(rutaFoto(f))}" class="thumb ${i===0?'activa':''}" data-index="${i}" alt="Foto ${i+1}" tabindex="0" role="button" aria-label="Ver foto ${i+1}">`
       ).join('');
       // Add event listeners to thumbs
       thumbs.querySelectorAll('.thumb').forEach(t => {
           t.addEventListener('click', (e) => irFoto(parseInt(e.target.dataset.index)));
+          t.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              irFoto(parseInt(e.target.dataset.index));
+            }
+          });
       });
     } else {
       bPrev.style.display = bNext.style.display = 'none';

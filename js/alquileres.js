@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const open = cat.classList.toggle('open');
             this.setAttribute('aria-expanded', open);
         });
+        header.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
     });
 });
 
