@@ -13,6 +13,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestor de Presupuestos — BCEXTREM + BCCA (61.447 partidas)</title>
+<meta name="description" content="Gestor de presupuestos de construcción con 61.447 partidas del banco de precios BCEXTREM y BCCA. Busca, calcula y exporta presupuestos de obra civil, excavaciones y reformas.">
+<meta name="keywords" content="gestor de presupuestos, banco de precios, BCEXTREM, presupuesto obra, partidas de construcción, excavaciones arturo">
+<meta property="og:title" content="Gestor de Presupuestos — BCEXTREM + BCCA (61.447 partidas)">
+<meta property="og:description" content="Gestor de presupuestos de construcción con 61.447 partidas del banco de precios BCEXTREM y BCCA. Busca, calcula y exporta presupuestos de obra civil, excavaciones y reformas.">
+<meta property="og:url" content="https://www.obratudela.com/pages/gestor-presupuestos.html">
+<meta property="og:image" content="https://www.obratudela.com/img/excavadora-800w.webp">
+<meta property="og:type" content="website">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js"></script>
@@ -840,6 +847,61 @@
   ::-webkit-scrollbar-thumb:hover { background: #444; }
 
   .highlight { background: #ff6b0040; border-radius: 2px; }
+
+  /* ═══ RESPONSIVE MÓVIL ═══ */
+  @media (max-width: 900px) {
+    .layout { flex-direction: column; height: auto; overflow: visible; }
+    .layout-left { flex-direction: column; overflow: visible; }
+
+    .sidebar {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      max-height: 240px;
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+
+    #resizer-sidebar, #resizer { display: none; }
+
+    .main { flex: none; }
+    .table-wrap { max-height: 55vh; overflow: auto; }
+    table { min-width: 480px; }
+
+    .presupuesto {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      border-left: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* touch targets ~44px */
+    .search-bar { padding: 12px 16px; }
+    .search-bar input { padding: 12px 14px; font-size: 16px; }
+    thead th { padding: 13px 12px; }
+    td { padding: 13px 12px; }
+    .btn-add { width: 40px; height: 40px; font-size: 20px; }
+    .page-btn { padding: 11px 16px; }
+    .cat-group-header { padding: 12px 14px; }
+    .cat-item { padding: 12px 16px 12px 28px; }
+    .mini-btn,
+    .logo-actions .mini-btn,
+    .global-toggle .mini-btn { padding: 10px 12px; font-size: 12px; }
+    .btn { padding: 13px 14px; }
+    .btn-danger { padding: 13px 16px; }
+    .btn-load-bc3 { padding: 11px 14px; }
+    .line-controls input[type=number],
+    .line-controls input.qty-input { padding: 9px 10px; width: 64px; }
+    .iva-row input { padding: 8px 8px; }
+    .pres-meta input, .pres-meta textarea { padding: 10px 10px; font-size: 14px; }
+  }
+
+  @media (max-width: 600px) {
+    header { flex-wrap: wrap; height: auto; padding: 10px 16px; row-gap: 6px; }
+    header h1 { font-size: 20px; }
+    .pres-meta { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -879,17 +941,17 @@
     <!-- MAIN TABLE -->
     <div class="main">
       <div class="search-bar">
-        <input type="text" id="search" placeholder="Buscar por código, descripción..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="bc-search-_nofill" />
+        <input type="text" id="search" placeholder="Buscar por código, descripción..." aria-label="Buscar partida" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="bc-search-_nofill" />
       </div>
       <div class="results-info" id="results-info">—</div>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th onclick="sort('cod')" class="sorted" id="th-cod">CÓDIGO ↑</th>
+              <th onclick="sort('cod')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();sort('cod')}" tabindex="0" role="button" class="sorted" id="th-cod">CÓDIGO ↑</th>
               <th>DESCRIPCIÓN</th>
-              <th onclick="sort('uni')" id="th-uni">UD</th>
-              <th onclick="sort('precio')" id="th-precio">PRECIO (€)</th>
+              <th onclick="sort('uni')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();sort('uni')}" tabindex="0" role="button" id="th-uni">UD</th>
+              <th onclick="sort('precio')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();sort('precio')}" tabindex="0" role="button" id="th-precio">PRECIO (€)</th>
               <th></th>
             </tr>
           </thead>
@@ -942,7 +1004,7 @@
         <span class="value" id="total-base">0,00 €</span>
       </div>
       <div class="iva-row">
-        <label>IVA</label>
+        <label for="iva-pct">IVA</label>
         <input type="number" id="iva-pct" value="21" min="0" max="100" oninput="updateTotals()" autocomplete="off" name="bc-iva-_nofill" />
         <label>%</label>
         <span style="margin-left:auto;font-family:IBM Plex Mono,monospace;font-size:12px;color:var(--text)" id="total-iva">0,00 €</span>
@@ -1072,9 +1134,18 @@ function createCatItem(key, count) {
   const d = document.createElement('div');
   d.className = 'cat-item';
   d.setAttribute('data-cat-key', key);
+  d.setAttribute('tabindex', '0');
+  d.setAttribute('role', 'button');
   const label = (CAT_LABELS[key] || key).replace(/</g, '&lt;');
+  d.setAttribute('aria-label', label.replace(/&lt;/g, '<'));
   d.innerHTML = `<span class="cat-name">${label}</span><span class="cat-count">${count}</span>`;
   d.onclick = () => selectCat(key);
+  d.onkeydown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      selectCat(key);
+    }
+  };
   return d;
 }
 
@@ -1391,8 +1462,9 @@ function renderPres() {
         <button class="line-remove" onclick="removeItem(${item.id})">✕</button>
       </div>
       <div class="line-controls">
-        <label>CANT.</label>
+        <label for="qty-${item.id}">CANT.</label>
         <input type="text" inputmode="decimal" value="${item.qty}"
+          id="qty-${item.id}"
           class="qty-input"
           autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
           name="bc-qty-${item.id}"
