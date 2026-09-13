@@ -265,6 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (cat.includes('Materiales')) cat = 'Materiales';
             else if (cat.includes('Vehículos')) cat = 'Vehículos';
             else if (cat.includes('Electrónica')) cat = 'Electrónica';
+            else if (cat.includes('Tierra')) cat = 'Tierra';
             else if (cat.includes('Otros')) cat = 'Otros';
             filtrarCategoria(cat, this);
         });
