@@ -317,11 +317,15 @@
     }
 
     .totales {
+      width: min(100%, 360px);
+      margin: 16px 0 0 auto;
       background: var(--surface2);
       padding: 16px;
       border-radius: 6px;
-      margin-top: 16px;
       border: 2px solid var(--orange);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
 
     .total-row {
@@ -342,7 +346,7 @@
 
     .btn-export {
       width: 100%;
-      margin-top: 12px;
+      margin-top: 8px;
       background: var(--green);
     }
 
@@ -568,7 +572,7 @@
     </div>
   </div>
 
-  <script type="module" src="../js/main.js?v=2.5"></script>
+  <script type="module" src="../js/main.js?v=2.6"></script>
   <script type="module">
     import { initCookieConsent } from '../js/cookie-consent.js?v=2.1';
     initCookieConsent();
