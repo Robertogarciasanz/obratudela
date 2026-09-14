@@ -57,6 +57,27 @@ Generan las versiones comprimidas `.gz`/`.br` de `data/base-precios.json`
 (también las regeneran `enriquecer-base-precios.py` y
 `unificar-bases-precios.py` al tocar el JSON).
 
+### buscar-bc3-placsp.py
+Busca archivos BC3 en licitaciones de **obras** publicadas por la
+Administración Pública española en la Plataforma de Contratación del
+Sector Público (PLACSP), a partir de su feed Atom de sindicación de
+licitaciones. Descarga lo que encuentra en `data/bc3-placsp/` (no
+versionado) junto con un `resumen.csv` de lo revisado. Pensado para
+localizar bancos de precios/mediciones reales con los que ampliar
+`data/base-precios.json`, no para un contrato concreto.
+
+**No se ha podido probar contra el sitio real** (PLACSP no era accesible
+desde el entorno donde se escribió el script) — la estructura exacta de
+sus páginas puede no coincidir con lo que asume el script. Ejecútalo con
+`--verbose` la primera vez; si no encuentra nada, revisa
+`data/bc3-placsp/_debug/` (páginas guardadas tal cual) para ver qué está
+pasando.
+
+```bash
+python scripts/buscar-bc3-placsp.py --verbose
+python scripts/buscar-bc3-placsp.py --dias 15 --max-expedientes 50
+```
+
 ## Después de regenerar `data/base-precios.json`
 
 1. Actualiza `CACHE_VERSION` en `js/precios-loader.js`.

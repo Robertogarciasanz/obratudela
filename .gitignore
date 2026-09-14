@@ -35,3 +35,6 @@ precios-con-desgloses.json*
 
 # Archivos comprimidos generados
 compressed/
+
+# Descargas del buscador de BC3 en PLACSP (scripts/buscar-bc3-placsp.py)
+data/bc3-placsp/
