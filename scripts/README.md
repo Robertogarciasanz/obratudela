@@ -58,24 +58,23 @@ Generan las versiones comprimidas `.gz`/`.br` de `data/base-precios.json`
 `unificar-bases-precios.py` al tocar el JSON).
 
 ### buscar-bc3-placsp.py
-Busca archivos BC3 en licitaciones de **obras** publicadas por la
-Administración Pública española en la Plataforma de Contratación del
-Sector Público (PLACSP), a partir de su feed Atom de sindicación de
-licitaciones. Descarga lo que encuentra en `data/bc3-placsp/` (no
-versionado) junto con un `resumen.csv` de lo revisado. Pensado para
-localizar bancos de precios/mediciones reales con los que ampliar
-`data/base-precios.json`, no para un contrato concreto.
+Busca en el feed público de sindicación de la Plataforma de Contratación del
+Sector Público (PLACSP) licitaciones que lleven adjunto un banco de precios
+en formato BC3, y los descarga a `data/placsp-descargas/` (no versionado)
+junto con un `resumen.json` con expediente, órgano, importe y título de cada
+una. Es un descubrimiento pasivo (no hay API de búsqueda por palabra clave
+en PLACSP): recorre las licitaciones más recientes y se queda con las que
+tengan algún documento `.bc3`. Independiente de la base de precios del
+sitio — no toca nada de `data/base-precios.json`.
 
-**No se ha podido probar contra el sitio real** (PLACSP no era accesible
-desde el entorno donde se escribió el script) — la estructura exacta de
-sus páginas puede no coincidir con lo que asume el script. Ejecútalo con
-`--verbose` la primera vez; si no encuentra nada, revisa
-`data/bc3-placsp/_debug/` (páginas guardadas tal cual) para ver qué está
-pasando.
+Probado en vivo contra PLACSP (no es una versión teórica): encuentra y
+descarga bancos de precios BC3 reales de licitaciones de obra pública.
 
 ```bash
-python scripts/buscar-bc3-placsp.py --verbose
-python scripts/buscar-bc3-placsp.py --dias 15 --max-expedientes 50
+python scripts/buscar-bc3-placsp.py                                    # valores por defecto
+python scripts/buscar-bc3-placsp.py --verbose                          # con detalle
+python scripts/buscar-bc3-placsp.py --dias 15 --max-expedientes 50 --verbose
+python scripts/buscar-bc3-placsp.py --no-descargar                     # solo listar, sin bajar archivos
 ```
 
 ## Después de regenerar `data/base-precios.json`

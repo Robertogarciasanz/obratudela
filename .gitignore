@@ -32,9 +32,8 @@ extraer-imagenes.js
 *.bak
 *.tmp
 precios-con-desgloses.json*
+data/placsp-descargas/
+__pycache__/
 
 # Archivos comprimidos generados
 compressed/
-
-# Descargas del buscador de BC3 en PLACSP (scripts/buscar-bc3-placsp.py)
-data/bc3-placsp/

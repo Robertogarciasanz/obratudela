@@ -1,355 +1,249 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Busca archivos BC3 (mediciones/presupuesto de obra, formato FIEBDC-3) en
-licitaciones de OBRAS publicadas por la Administracion Publica espanola a
-traves de la Plataforma de Contratacion del Sector Publico (PLACSP).
+Busca licitaciones publicas en la Plataforma de Contratacion del Sector
+Publico (PLACSP) que lleven adjunto un banco de precios en formato BC3
+(FIEBDC-3) -- p.ej. el "cuadro de precios" o "presupuesto" de un proyecto
+de obra civil -- y los descarga.
 
-Recorre el feed Atom de sindicacion de licitaciones (formato CODICE),
-filtra las que parecen ser de obras (CPV division 45 y/o palabras clave en
-el titulo) y, para cada una, abre la pagina del expediente buscando
-enlaces que mencionen "BC3". Descarga lo que encuentra en data/bc3-placsp/
-y deja un resumen.csv con lo que se ha revisado.
-
-AVISO IMPORTANTE: este script se ha escrito sin poder probarlo contra el
-sitio real -- contrataciondelestado.es no era alcanzable desde el entorno
-donde se escribio (bloqueado por politica de red). Los nombres exactos de
-campos del feed y la estructura de las paginas de PLACSP pueden no
-coincidir exactamente. Ejecutalo con --verbose la primera vez; si no
-encuentra nada, revisa data/bc3-placsp/_debug/ (paginas guardadas tal
-cual se recibieron) para ver que esta pasando y ajustar los patrones de
-busqueda de este script.
+Fuente de datos: el feed ATOM oficial de sindicacion de PLACSP
+(licitacionesPerfilesContratanteCompleto v3), publico y sin necesidad de
+autenticacion. No es una API de busqueda por palabra clave: se recorren
+las licitaciones mas recientes pagina a pagina y se mira, licitacion a
+licitacion, si alguno de sus documentos adjuntos termina en ".bc3".
 
 Uso:
   python scripts/buscar-bc3-placsp.py
+  python scripts/buscar-bc3-placsp.py --verbose
   python scripts/buscar-bc3-placsp.py --dias 15 --max-expedientes 50 --verbose
-  python scripts/buscar-bc3-placsp.py --feed <url-atom-alternativa>
+
+Los BC3 encontrados se guardan en data/placsp-descargas/ (no versionado,
+igual que el resto de archivos .bc3 del proyecto) junto con un resumen
+en data/placsp-descargas/resumen.json.
 """
 
 import argparse
-import csv
-import datetime
-import http.cookiejar
+import json
 import os
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
-import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from html.parser import HTMLParser
+from datetime import datetime, timedelta, timezone
 
-FEED_URL_DEFAULT = (
-    'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/'
+FEED_ROOT = (
+    'https://contrataciondelestado.es/sindicacion/sindicacion_643/'
     'licitacionesPerfilesContratanteCompleto3.atom'
 )
-SALIDA_DEFAULT = 'data/bc3-placsp'
+OUT_DIR = os.path.join('data', 'placsp-descargas')
+MAX_PAGINAS = 400  # tope de seguridad para no recorrer el feed indefinidamente
 USER_AGENT = 'Mozilla/5.0 (compatible; ObraTudela-BuscadorBC3/1.0)'
-ATOM_NS = '{http://www.w3.org/2005/Atom}'
 
-CPV_OBRAS_RE = re.compile(r'\b45\d{6}\b')
-PALABRAS_OBRA = (
-    'obra', 'obras', 'construccion', 'urbanizacion', 'pavimentacion',
-    'movimiento de tierras', 'excavacion', 'demolicion', 'saneamiento',
-    'alcantarillado', 'reforma', 'rehabilitacion', 'edificacion',
-)
+NS = {
+    'atom': 'http://www.w3.org/2005/Atom',
+    'cbc': 'urn:dgpe:names:draft:codice:schema:xsd:CommonBasicComponents-2',
+    'cac': 'urn:dgpe:names:draft:codice:schema:xsd:CommonAggregateComponents-2',
+}
 
-COOKIE_JAR = http.cookiejar.CookieJar()
-OPENER = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(COOKIE_JAR))
-
-
-class ExtractorEnlaces(HTMLParser):
-    """Recoge pares (href, texto_visible) de todos los <a> de una pagina."""
-
-    def __init__(self):
-        super().__init__()
-        self.enlaces = []
-        self._href_actual = None
-        self._texto_actual = []
-
-    def handle_starttag(self, tag, attrs):
-        if tag == 'a':
-            self._href_actual = dict(attrs).get('href')
-            self._texto_actual = []
-
-    def handle_data(self, data):
-        if self._href_actual is not None:
-            self._texto_actual.append(data)
-
-    def handle_endtag(self, tag):
-        if tag == 'a' and self._href_actual is not None:
-            texto = ''.join(self._texto_actual).strip()
-            self.enlaces.append((self._href_actual, texto))
-            self._href_actual = None
-            self._texto_actual = []
+DOC_REF_TAGS = [
+    'AdditionalDocumentReference',
+    'TechnicalDocumentReference',
+    'LegalDocumentReference',
+]
 
 
-def log(msg, verbose=True):
-    if verbose:
+def log(msg, verbose, force=False):
+    if verbose or force:
         print(msg)
 
 
-def descargar(url, timeout=30):
+def fetch(url, timeout=30):
     req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-    with OPENER.open(req, timeout=timeout) as resp:
-        return resp.read(), resp.headers
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        return resp.read()
 
 
-def texto_hijo(entry, nombre_local):
-    el = entry.find(f'{ATOM_NS}{nombre_local}')
-    return el.text.strip() if el is not None and el.text else None
+def sanitizar(nombre, max_len=60):
+    nombre = unicodedata.normalize('NFKD', nombre)
+    nombre = nombre.encode('ascii', 'ignore').decode('ascii')
+    nombre = re.sub(r'[^a-zA-Z0-9._-]+', '_', nombre).strip('_')
+    return nombre[:max_len] or 'sin_nombre'
 
 
-def primer_link(entry):
-    links = entry.findall(f'{ATOM_NS}link')
-    for enlace in links:
-        if enlace.get('rel') in (None, 'alternate'):
-            return enlace.get('href')
-    return links[0].get('href') if links else None
-
-
-def parsear_fecha(texto):
-    try:
-        return datetime.datetime.fromisoformat(texto.replace('Z', '+00:00'))
-    except (ValueError, AttributeError):
-        return None
-
-
-def es_obra(entry_xml, titulo):
-    if CPV_OBRAS_RE.search(entry_xml):
-        return True
-    titulo_low = (titulo or '').lower()
-    return any(palabra in titulo_low for palabra in PALABRAS_OBRA)
-
-
-def enlaces_bc3(html_texto):
-    parser = ExtractorEnlaces()
-    try:
-        parser.feed(html_texto)
-    except Exception:
-        pass
-    return [
-        (href, texto) for href, texto in parser.enlaces
-        if href and 'bc3' in f'{href} {texto}'.lower()
-    ]
-
-
-def parece_bc3(contenido_bytes):
-    cabecera = contenido_bytes[:200].decode('latin-1', errors='ignore')
-    return cabecera.lstrip().startswith('~V') or '~C|' in cabecera
-
-
-def slug(texto):
-    texto = re.sub(r'[^\w.-]+', '_', (texto or '').strip())
-    return texto[:120] or 'expediente'
-
-
-def guardar_debug(debug_dir, nombre, contenido_bytes):
-    os.makedirs(debug_dir, exist_ok=True)
-    with open(os.path.join(debug_dir, nombre), 'wb') as f:
-        f.write(contenido_bytes)
-
-
-def cargar_resumen_previo(ruta):
-    filas, vistos = [], set()
-    if os.path.exists(ruta):
-        with open(ruta, newline='', encoding='utf-8') as f:
-            lector = csv.reader(f)
-            next(lector, None)
-            for fila in lector:
-                if fila:
-                    filas.append(fila)
-                    vistos.add(fila[0])
-    return filas, vistos
-
-
-def guardar_resumen(ruta, filas):
-    with open(ruta, 'w', newline='', encoding='utf-8') as f:
-        escritor = csv.writer(f)
-        escritor.writerow(['id', 'titulo', 'actualizado', 'url', 'estado', 'detalle'])
-        escritor.writerows(filas)
-
-
-def intentar_guardar_bc3(url, salida, eid, filas_resumen, titulo, actualizado, verbose):
-    try:
-        cuerpo, _ = descargar(url)
-    except (urllib.error.URLError, urllib.error.HTTPError) as e:
-        log(f'    no se pudo descargar {url}: {e}', verbose)
-        return False
-    if not parece_bc3(cuerpo):
-        return False
-    ruta = os.path.join(salida, f'{slug(eid)}.bc3')
-    with open(ruta, 'wb') as f:
-        f.write(cuerpo)
-    log(f'    guardado: {ruta}')
-    filas_resumen.append([eid, titulo, actualizado, url, 'descargado', ruta])
-    return True
-
-
-def procesar_expediente(eid, titulo, actualizado, href, args, debug_dir, filas_resumen):
-    try:
-        contenido, _ = descargar(href)
-    except (urllib.error.URLError, urllib.error.HTTPError) as e:
-        filas_resumen.append([eid, titulo, actualizado, href, 'error', str(e)])
-        return 0
-
-    texto = contenido.decode('utf-8', errors='ignore')
-    candidatos = enlaces_bc3(texto)
-
-    descargados = 0
-    vistos_url = set()
-
-    for href_candidato, _texto in candidatos:
-        url_abs = urllib.parse.urljoin(href, href_candidato)
-        if url_abs in vistos_url:
+def parsear_resumen(summary_text):
+    """El <summary> viene como 'Id licitacion: X; Organo de Contratacion:
+    Y; Importe: Z EUR; Estado: W'. Lo partimos en un dict best-effort."""
+    campos = {}
+    for parte in (summary_text or '').split(';'):
+        if ':' not in parte:
             continue
-        vistos_url.add(url_abs)
+        clave, _, valor = parte.partition(':')
+        campos[clave.strip()] = valor.strip()
+    return campos
 
-        if intentar_guardar_bc3(url_abs, args.salida, eid, filas_resumen, titulo, actualizado, args.verbose):
-            descargados += 1
-            continue
 
-        # puede ser una pagina intermedia (ej. contenedor de documentos del
-        # expediente) con mas enlaces dentro -- se prueba un nivel mas
+def procesar_entrada(entry, cutoff, encontrados, max_expedientes, verbose, downloads_ok):
+    ns = NS
+    updated_txt = entry.findtext('atom:updated', default='', namespaces=ns)
+    fecha = None
+    if updated_txt:
         try:
-            sub_contenido, _ = descargar(url_abs)
-        except (urllib.error.URLError, urllib.error.HTTPError):
-            continue
-        sub_texto = sub_contenido.decode('utf-8', errors='ignore')
-        for href2, _texto2 in enlaces_bc3(sub_texto):
-            url2 = urllib.parse.urljoin(url_abs, href2)
-            if url2 in vistos_url:
+            fecha = datetime.fromisoformat(updated_txt.replace('Z', '+00:00'))
+        except ValueError:
+            fecha = None
+
+    if fecha and fecha < cutoff:
+        return 'fuera_de_rango', fecha
+
+    titulo = entry.findtext('atom:title', default='(sin titulo)', namespaces=ns)
+    summary = entry.findtext('atom:summary', default='', namespaces=ns)
+    campos = parsear_resumen(summary)
+    expediente = campos.get('Id licitación') or campos.get('Id licitacion') or '(sin id)'
+    organo = campos.get('Órgano de Contratación') or campos.get('Organo de Contratacion') or ''
+    importe = campos.get('Importe', '')
+
+    bc3_docs = []
+    # Buscamos los DocumentReference en cualquier profundidad del entry,
+    # sea cual sea el contenedor (LegalDocumentReference, etc.), sin
+    # depender de la jerarquia exacta de ContractFolderStatus.
+    for tag in DOC_REF_TAGS:
+        for doc_ref in entry.iter('{%s}%s' % (ns['cac'], tag)):
+            doc_id = doc_ref.findtext('cbc:ID', default='', namespaces=ns)
+            if not doc_id.lower().endswith('.bc3'):
                 continue
-            vistos_url.add(url2)
-            if intentar_guardar_bc3(url2, args.salida, eid, filas_resumen, titulo, actualizado, args.verbose):
-                descargados += 1
+            uri = doc_ref.findtext(
+                'cac:Attachment/cac:ExternalReference/cbc:URI', default='', namespaces=ns
+            )
+            if uri:
+                bc3_docs.append({'nombre': doc_id, 'url': uri})
 
-    if descargados == 0:
-        guardar_debug(debug_dir, f'{slug(eid)}.html', contenido)
-        estado = 'no-encontrado' if candidatos else 'sin-mencion-bc3'
-        filas_resumen.append([eid, titulo, actualizado, href, estado, ''])
+    if not bc3_docs:
+        return 'sin_bc3', fecha
 
-    return descargados
+    if len(encontrados) >= max_expedientes:
+        return 'limite_alcanzado', fecha
 
+    log(f'  -> BC3 encontrado: {expediente} | {organo} | {titulo[:60]}', verbose, force=True)
 
-def parse_feed_pagina(xml_bytes):
-    root = ET.fromstring(xml_bytes)
-    entradas = root.findall(f'{ATOM_NS}entry')
-    siguiente = None
-    for enlace in root.findall(f'{ATOM_NS}link'):
-        if enlace.get('rel') == 'next':
-            siguiente = enlace.get('href')
-    return entradas, siguiente
+    archivos_guardados = []
+    if downloads_ok:
+        os.makedirs(OUT_DIR, exist_ok=True)
+        for doc in bc3_docs:
+            nombre_archivo = f'{sanitizar(expediente)}_{sanitizar(doc["nombre"])}'
+            if not nombre_archivo.lower().endswith('.bc3'):
+                nombre_archivo += '.bc3'
+            destino = os.path.join(OUT_DIR, nombre_archivo)
+            try:
+                data = fetch(doc['url'])
+                with open(destino, 'wb') as f:
+                    f.write(data)
+                archivos_guardados.append(destino)
+                log(f'     descargado: {destino} ({len(data)/1024:.0f} KB)', verbose, force=True)
+            except (urllib.error.URLError, TimeoutError) as err:
+                log(f'     ERROR descargando {doc["nombre"]}: {err}', verbose, force=True)
 
-
-def parse_args():
-    p = argparse.ArgumentParser(
-        description='Busca BC3 de licitaciones de obras publicas en PLACSP.')
-    p.add_argument('--feed', default=FEED_URL_DEFAULT,
-                    help='URL del feed Atom de licitaciones a recorrer')
-    p.add_argument('--salida', default=SALIDA_DEFAULT,
-                    help='carpeta donde guardar los .bc3 encontrados')
-    p.add_argument('--dias', type=int, default=30,
-                    help='solo licitaciones actualizadas en los ultimos N dias (0 = sin limite)')
-    p.add_argument('--max-paginas', type=int, default=40,
-                    help='limite de paginas del feed a recorrer')
-    p.add_argument('--max-expedientes', type=int, default=200,
-                    help='limite de expedientes de obra a procesar (0 = sin limite)')
-    p.add_argument('--pausa', type=float, default=1.0,
-                    help='segundos de espera entre peticiones a PLACSP')
-    p.add_argument('--verbose', action='store_true')
-    return p.parse_args()
+    encontrados.append({
+        'expediente': expediente,
+        'organo': organo,
+        'importe': importe,
+        'titulo': titulo,
+        'fecha': updated_txt,
+        'documentos_bc3': bc3_docs,
+        'archivos_guardados': archivos_guardados,
+    })
+    return 'encontrado', fecha
 
 
 def main():
-    args = parse_args()
-    os.makedirs(args.salida, exist_ok=True)
-    debug_dir = os.path.join(args.salida, '_debug')
-    resumen_path = os.path.join(args.salida, 'resumen.csv')
+    ap = argparse.ArgumentParser(
+        description='Busca y descarga bancos de precios BC3 adjuntos en licitaciones de PLACSP.'
+    )
+    ap.add_argument('--dias', type=int, default=30,
+                     help='Solo licitaciones actualizadas en los ultimos N dias (por defecto 30).')
+    ap.add_argument('--max-expedientes', type=int, default=20,
+                     help='Maximo de licitaciones con BC3 a recoger (por defecto 20).')
+    ap.add_argument('--verbose', action='store_true', help='Muestra el progreso pagina a pagina.')
+    ap.add_argument('--no-descargar', action='store_true',
+                     help='Solo lista lo encontrado, sin descargar los archivos .bc3.')
+    args = ap.parse_args()
 
-    limite_fecha = None
-    if args.dias:
-        limite_fecha = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=args.dias)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=args.dias)
+    print(f'Buscando licitaciones con BC3 desde hace {args.dias} dias '
+          f'(a partir de {cutoff.date()}), hasta {args.max_expedientes} expedientes...')
 
-    filas_resumen, vistos = cargar_resumen_previo(resumen_path)
+    encontrados = []
+    url = FEED_ROOT
+    pagina = 0
+    entradas_vistas = 0
 
-    url_pagina = args.feed
-    pagina_num = 0
-    expedientes_obra = 0
-    encontrados = 0
-
-    while url_pagina and pagina_num < args.max_paginas:
-        pagina_num += 1
-        log(f'[feed] pagina {pagina_num}: {url_pagina}', args.verbose)
+    while url and pagina < MAX_PAGINAS and len(encontrados) < args.max_expedientes:
+        pagina += 1
+        log(f'[pagina {pagina}] {url}', args.verbose)
         try:
-            contenido, _ = descargar(url_pagina)
-        except (urllib.error.URLError, urllib.error.HTTPError) as e:
-            log(f'ERROR descargando el feed: {e}')
+            raw = fetch(url)
+        except (urllib.error.URLError, TimeoutError) as err:
+            print(f'ERROR de red en la pagina {pagina}: {err}. Se detiene la busqueda aqui.')
             break
 
         try:
-            entradas, url_pagina = parse_feed_pagina(contenido)
-        except ET.ParseError as e:
-            guardar_debug(debug_dir, f'feed-pagina-{pagina_num}.xml', contenido)
-            log(f'ERROR: no se pudo interpretar el XML del feed ({e}).')
-            log(f'Pagina guardada en {debug_dir} para revisar la estructura real.')
+            root = ET.fromstring(raw)
+        except ET.ParseError as err:
+            print(f'ERROR: no se pudo parsear XML en la pagina {pagina}: {err}')
             break
 
-        if not entradas:
+        entries = root.findall('atom:entry', NS)
+        if not entries:
+            log('  (pagina sin entradas, fin del feed)', args.verbose)
             break
 
         parar = False
-        for entry in entradas:
-            eid = texto_hijo(entry, 'id')
-            titulo = texto_hijo(entry, 'title')
-            actualizado = texto_hijo(entry, 'updated')
-            href = primer_link(entry)
-
-            if limite_fecha and actualizado:
-                fecha = parsear_fecha(actualizado)
-                if fecha and fecha < limite_fecha:
-                    parar = True
-                    break
-
-            if not eid or eid in vistos:
-                continue
-            vistos.add(eid)
-
-            entry_xml = ET.tostring(entry, encoding='unicode')
-            if not es_obra(entry_xml, titulo):
-                continue
-
-            expedientes_obra += 1
-            log(f'[{expedientes_obra}] obra: {titulo!r}', args.verbose)
-
-            if not href:
-                filas_resumen.append([eid, titulo, actualizado, '', 'sin-enlace', ''])
-            else:
-                try:
-                    nuevos = procesar_expediente(eid, titulo, actualizado, href, args, debug_dir, filas_resumen)
-                    encontrados += nuevos
-                except Exception as e:
-                    log(f'  ERROR procesando {href}: {e}')
-                    filas_resumen.append([eid, titulo, actualizado, href, 'error', str(e)])
-                time.sleep(args.pausa)
-
-            if args.max_expedientes and expedientes_obra >= args.max_expedientes:
+        for entry in entries:
+            entradas_vistas += 1
+            estado, fecha = procesar_entrada(
+                entry, cutoff, encontrados, args.max_expedientes, args.verbose,
+                downloads_ok=not args.no_descargar,
+            )
+            if estado == 'fuera_de_rango':
+                parar = True
+                break
+            if estado == 'limite_alcanzado':
                 parar = True
                 break
 
-        guardar_resumen(resumen_path, filas_resumen)
         if parar:
             break
 
-    log('')
-    log(f'Expedientes de obra revisados: {expedientes_obra}')
-    log(f'Archivos BC3 descargados: {encontrados}')
-    log(f'Resumen: {resumen_path}')
-    if encontrados == 0:
-        log(f'No se encontro ningun BC3. Revisa {debug_dir} (si existe) y')
-        log('ajusta ExtractorEnlaces / es_obra / parece_bc3 segun lo que veas.')
+        next_link = None
+        for link in root.findall('atom:link', NS):
+            if link.get('rel') == 'next':
+                next_link = link.get('href')
+                break
+        url = next_link
+        time.sleep(0.2)  # cortesia con el servidor
+
+    print()
+    print(f'Paginas recorridas: {pagina} | Licitaciones vistas: {entradas_vistas} | '
+          f'Con BC3: {len(encontrados)}')
+
+    if encontrados:
+        os.makedirs(OUT_DIR, exist_ok=True)
+        resumen_path = os.path.join(OUT_DIR, 'resumen.json')
+        with open(resumen_path, 'w', encoding='utf-8') as f:
+            json.dump(encontrados, f, ensure_ascii=False, indent=2)
+        print(f'Resumen guardado en: {resumen_path}')
+        print()
+        print(f'{"Expediente":<20} {"Importe":>14}  Órgano / Título')
+        print('-' * 90)
+        for item in encontrados:
+            print(f'{item["expediente"]:<20} {item["importe"]:>14}  '
+                  f'{item["organo"][:35]} / {item["titulo"][:40]}')
+    else:
+        print('No se ha encontrado ninguna licitación con BC3 adjunto en ese rango. '
+              'Prueba a aumentar --dias.')
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
