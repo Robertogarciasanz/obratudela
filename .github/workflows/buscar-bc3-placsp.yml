@@ -1,0 +1,36 @@
+name: Buscar BC3 en licitaciones de obras (PLACSP)
+
+on:
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: 'Solo licitaciones actualizadas en los ultimos N dias'
+        default: '30'
+      max_expedientes:
+        description: 'Limite de expedientes de obra a revisar'
+        default: '20'
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ejecutar buscador
+        run: >
+          python scripts/buscar-bc3-placsp.py --verbose
+          --dias "${{ inputs.dias }}"
+          --max-expedientes "${{ inputs.max_expedientes }}"
+
+      - name: Subir resultados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bc3-placsp
+          path: data/bc3-placsp/
+          if-no-files-found: warn
