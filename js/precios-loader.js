@@ -53,9 +53,36 @@ export const PARTIDAS_FALLBACK = [
 ];
 
 // Configuración de caché
-const CACHE_VERSION = '2026.3';  // Actualizar al cambiar base-precios.json
+const CACHE_VERSION = '2026.4';  // Actualizar al cambiar base-precios.json o el decodificador
 const CACHE_KEY = 'precios_cache_v2';
 const CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;  // 7 días
+
+async function parseJsonResponse(response, url) {
+  const arrayBuffer = await response.arrayBuffer();
+  const lowerUrl = url.toLowerCase();
+
+  if (lowerUrl.endsWith('.gz')) {
+    const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+    return JSON.parse(decompressed);
+  }
+
+  if (lowerUrl.endsWith('.br')) {
+    if (typeof DecompressionStream === 'undefined') {
+      throw new Error('Brotli no soportado en este navegador');
+    }
+
+    try {
+      const stream = new Blob([arrayBuffer]).stream().pipeThrough(new DecompressionStream('br'));
+      const text = await new Response(stream).text();
+      return JSON.parse(text);
+    } catch (error) {
+      console.warn('Brotli no se pudo descomprimir en este navegador:', error);
+      throw error;
+    }
+  }
+
+  return JSON.parse(new TextDecoder().decode(arrayBuffer));
+}
 
 /**
  * Intenta cargar datos desde sessionStorage
@@ -127,36 +154,30 @@ export async function loadPrecios(onMessage) {
       `/data/base-precios.json?v=${CACHE_VERSION}`          // 21 MB (sin comprimir) - último recurso
     ];
 
-    let response = null;
+    let data = null;
     let urlUsada = null;
 
     // Intentar cada URL hasta encontrar una que funcione
     for (const url of urls) {
       try {
-        response = await fetch(url);
-        if (response.ok) {
-          urlUsada = url;
-          break;
+        const response = await fetch(url);
+        if (!response.ok) {
+          continue;
         }
+
+        data = await parseJsonResponse(response, url);
+        urlUsada = url;
+        break;
       } catch (e) {
-        console.warn(`No se pudo cargar ${url}, intentando siguiente...`);
+        console.warn(`No se pudo cargar ni decodificar ${url}, intentando siguiente...`, e);
       }
     }
 
-    if (!response || !response.ok) {
+    if (!data || !urlUsada) {
       throw new Error('No se pudo cargar ninguna versión de la base de precios');
     }
 
-    // Detectar si es archivo .gz y descomprimir con pako
-    let data;
-    if (urlUsada.includes('.gz')) {
-      const arrayBuffer = await response.arrayBuffer();
-      const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
-      data = JSON.parse(decompressed);
-      console.log(`🗜️ Archivo descomprimido: ${urlUsada}`);
-    } else {
-      data = await response.json();
-    }
+    console.log(`🗜️ Archivo cargado: ${urlUsada}`);
 
     // OPTIMIZACIÓN: Guardar en caché para próximas visitas
     saveToCache(data);
