@@ -54,30 +54,25 @@ export const PARTIDAS_FALLBACK = [
 
 // Configuración de caché
 const CACHE_VERSION = '2026.3';  // Actualizar al cambiar base-precios.json
-const CACHE_KEY = 'precios_cache_v2';
-const CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;  // 7 días
+// Caché del navegador (Cache API) donde se guarda la base ya descomprimida.
+// No caduca: se sustituye sola cuando cambia CACHE_VERSION.
+const CACHE_NAME = 'obratudela-precios';
+const CACHE_URL = `/data/base-precios-descomprimida.json?v=${CACHE_VERSION}`;
 
 /**
- * Intenta cargar datos desde sessionStorage
- * @returns {Array|null} Datos cacheados o null si no hay caché válido
+ * Intenta cargar la base de precios guardada en una visita anterior
+ * @returns {Promise<Array|null>} Datos cacheados o null si no hay caché válido
  */
-function loadFromCache() {
+async function loadFromCache() {
   try {
-    const cached = sessionStorage.getItem(CACHE_KEY);
-    if (!cached) return null;
-
-    const { version, data, timestamp } = JSON.parse(cached);
-    const age = Date.now() - timestamp;
-
-    // Invalidar si versión antigua o >7 días
-    if (version === CACHE_VERSION && age < CACHE_MAX_AGE_MS) {
-      console.log(`💾 Cargado desde caché (${(age / 1000 / 60 / 60).toFixed(1)}h antiguo)`);
-      return data;
-    } else {
-      console.log(`🔄 Caché invalidado (versión: ${version} vs ${CACHE_VERSION}, edad: ${(age / 1000 / 60 / 60).toFixed(1)}h)`);
-      sessionStorage.removeItem(CACHE_KEY);
-      return null;
-    }
+    if (typeof caches === 'undefined') return null;  // file:// o navegador antiguo
+    const cache = await caches.open(CACHE_NAME);
+    const response = await cache.match(CACHE_URL);
+    if (!response) return null;
+    const data = await response.json();
+    if (!Array.isArray(data)) return null;
+    console.log(`💾 Base de precios cargada desde caché (versión ${CACHE_VERSION})`);
+    return data;
   } catch (e) {
     console.warn('Error leyendo caché:', e);
     return null;
@@ -85,21 +80,22 @@ function loadFromCache() {
 }
 
 /**
- * Guarda datos en sessionStorage con versionado
- * @param {Array} data - Datos a guardar
+ * Guarda el texto de la base de precios para próximas visitas y borra las
+ * versiones anteriores
+ * @param {string} texto - JSON de la base de precios, ya descomprimido
  */
-function saveToCache(data) {
+async function saveToCache(texto) {
   try {
-    const cacheData = {
-      version: CACHE_VERSION,
-      data: data,
-      timestamp: Date.now()
-    };
-    sessionStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
-    console.log(`💾 Datos guardados en caché (${data.length} partidas)`);
+    if (typeof caches === 'undefined') return;
+    const cache = await caches.open(CACHE_NAME);
+    await cache.put(CACHE_URL, new Response(texto, { headers: { 'Content-Type': 'application/json' } }));
+    const claves = await cache.keys();
+    await Promise.all(claves
+      .filter((req) => !req.url.endsWith(CACHE_URL))
+      .map((req) => cache.delete(req)));
+    console.log('💾 Base de precios guardada en caché para próximas visitas');
   } catch (e) {
-    console.warn('Error guardando en caché (posiblemente lleno):', e);
-    // sessionStorage puede estar lleno (~5-10 MB), continuar sin caché
+    console.warn('No se pudo guardar la base en caché (continuando sin ella):', e);
   }
 }
 
@@ -129,7 +125,7 @@ async function descomprimirGzip(buffer) {
 export async function loadPrecios(onMessage) {
   try {
     // OPTIMIZACIÓN: Intentar cargar desde caché primero
-    const cachedData = loadFromCache();
+    const cachedData = await loadFromCache();
     if (cachedData) {
       onMessage('system', `✅ Base de datos cargada (caché): ${cachedData.length.toLocaleString()} partidas disponibles`);
       return cachedData;
@@ -146,6 +142,7 @@ export async function loadPrecios(onMessage) {
     ];
 
     let data = null;
+    let texto = null;
     let urlUsada = null;
 
     // Intentar cada URL hasta que una se descargue Y se pueda leer; si el .gz
@@ -154,15 +151,17 @@ export async function loadPrecios(onMessage) {
       try {
         const response = await fetch(url);
         if (!response.ok) continue;
-        data = url.includes('.gz')
-          ? JSON.parse(await descomprimirGzip(await response.arrayBuffer()))
-          : await response.json();
+        texto = url.includes('.gz')
+          ? await descomprimirGzip(await response.arrayBuffer())
+          : await response.text();
+        data = JSON.parse(texto);
         if (!Array.isArray(data)) throw new Error('Formato inesperado');
         urlUsada = url;
         break;
       } catch (e) {
         console.warn(`No se pudo leer ${url} (${e.message}), intentando siguiente...`);
         data = null;
+        texto = null;
       }
     }
 
@@ -170,8 +169,8 @@ export async function loadPrecios(onMessage) {
       throw new Error('No se pudo cargar ninguna versión de la base de precios');
     }
 
-    // OPTIMIZACIÓN: Guardar en caché para próximas visitas
-    saveToCache(data);
+    // OPTIMIZACIÓN: Guardar en caché para próximas visitas (sin esperar)
+    saveToCache(texto);
 
     onMessage('system', `✅ Base de datos cargada: ${data.length.toLocaleString()} partidas disponibles`);
     console.log(`✅ Base de datos cargada desde ${urlUsada}: ${data.length} partidas`);

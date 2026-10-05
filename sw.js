@@ -10,6 +10,8 @@
 //   ya tiene su propia caché con CACHE_VERSION.
 //
 // Si cambias la estrategia, sube CACHE_NAME para que se borre la caché vieja.
+// Solo se borran cachés 'obratudela-v*': 'obratudela-precios' es de
+// precios-loader.js y no debe tocarse aquí.
 
 const CACHE_NAME = 'obratudela-v1';
 
@@ -36,7 +38,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
       .then((keys) => Promise.all(
-        keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
+        keys.filter((k) => k.startsWith('obratudela-v') && k !== CACHE_NAME).map((k) => caches.delete(k))
       ))
       .then(() => self.clients.claim())
   );
