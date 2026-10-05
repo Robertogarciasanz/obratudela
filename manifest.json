@@ -1,77 +1,76 @@
 {
-  "name": "ObraTudela - Gestor de Presupuestos",
+  "name": "ObraTudela - Gestor de Presupuestos y Servicios",
   "short_name": "ObraTudela",
-  "description": "Aplicación web para calcular y gestionar presupuestos de excavaciones y servicios de construcción",
+  "description": "Aplicación web para calcular presupuestos de excavaciones, reformas y servicios de construcción. Herramienta de medición de parcelas con GPS.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#2c3e50",
+  "orientation": "portrait-primary",
+  "theme_color": "#ff6b00",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/img/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
+      "src": "/img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/img/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
+      "src": "/img/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/logo.jpg",
+      "sizes": "51x38",
+      "type": "image/jpeg",
       "purpose": "any"
-    },
-    {
-      "src": "/img/icon-maskable-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/img/icon-maskable-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/img/screenshot-540x720.png",
-      "sizes": "540x720",
-      "type": "image/png"
-    },
-    {
-      "src": "/img/screenshot-1080x1920.png",
-      "sizes": "1080x1920",
-      "type": "image/png"
-    }
-  ],
-  "categories": ["productivity", "business"],
+  "categories": ["productivity", "business", "utilities"],
   "shortcuts": [
     {
       "name": "Gestor de Presupuestos",
       "short_name": "Presupuestos",
-      "description": "Accede directamente al gestor de presupuestos",
+      "description": "Accede al gestor con 61.447 partidas BCEXTREM",
       "url": "/pages/gestor-presupuestos.html",
       "icons": [
         {
-          "src": "/img/icon-96x96.png",
-          "sizes": "96x96"
+          "src": "/img/icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
         }
       ]
     },
     {
       "name": "Calculadora IA",
       "short_name": "Calculadora",
-      "description": "Asistente de presupuestos con búsqueda por IA",
+      "description": "Asistente inteligente para generar presupuestos",
       "url": "/pages/calculadora-ia.html",
       "icons": [
         {
-          "src": "/img/icon-96x96.png",
-          "sizes": "96x96"
+          "src": "/img/icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Medidor de Parcelas",
+      "short_name": "Topografía",
+      "description": "Herramienta de medición GPS en tiempo real",
+      "url": "/pages/topografia.html",
+      "icons": [
+        {
+          "src": "/img/icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
         }
       ]
     }
   ],
-  "prefer_related_applications": false
+  "screenshots": [],
+  "prefer_related_applications": false,
+  "protocol_handlers": []
 }
