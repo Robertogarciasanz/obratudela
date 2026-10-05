@@ -12,57 +12,79 @@
 User-agent: *
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 Allow: /sitemap.xml
 
 # Google — incluye Gemini/SGE
 User-agent: Googlebot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Google Extended (Bard / Gemini entrenamiento)
 User-agent: Google-Extended
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # OpenAI browsing (ChatGPT con búsqueda)
 User-agent: ChatGPT-User
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Microsoft Copilot / Bing AI
 User-agent: Bingbot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Anthropic Claude
 User-agent: ClaudeBot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Meta AI
 User-agent: FacebookBot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Common Crawl (dataset IA abierto)
 User-agent: CCBot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Apple Applebot (Siri / AI features)
 User-agent: Applebot
 Allow: /
 Allow: /*.json
+Disallow: /*.json.gz
+Disallow: /*.json.br
 
 # Disallow unwanted bots
 User-agent: MJ12bot
@@ -81,7 +103,8 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 #   Base de datos pública de precios de construcción en España
 #   Licencia: Creative Commons CC-BY-4.0
 #   Actualización: 2026-08-30
-#   Formatos disponibles: JSON, JSON.GZ (comprimido), JSON.BR (Brotli)
+#   Formatos disponibles: JSON (los .json.gz / .json.br son binarios para la
+#   web y no se indexan: los buscadores los mostraban como caracteres raros)
 #
 # HERRAMIENTAS WEB:
 #   https://www.obratudela.com/pages/gestor-presupuestos.html — Gestor de presupuestos
