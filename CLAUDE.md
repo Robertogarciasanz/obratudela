@@ -98,3 +98,14 @@ Varias páginas dentro de `pages/` han tenido bugs por usar rutas como
 `pages/`, no a la raíz del sitio, y el recurso no se encuentra (404
 silencioso). Si algo no carga en una página dentro de `pages/`, es lo
 primero a comprobar.
+
+## App instalable (PWA)
+
+La web es instalable ("Instalar app" en Chrome/Edge, "Añadir a pantalla de
+inicio" en iPhone): `manifest.webmanifest` + `sw.js` en la raíz, iconos en
+`img/icons/`. Cada página lleva en el `<head>` un bloque
+`<!-- App instalable (PWA) -->` con el manifest y el registro del service
+worker — si creas una página nueva, cópialo (con `../` si está dentro de
+`pages/` o `partidas/`). El service worker sirve siempre primero la red, así
+que un despliegue nuevo se ve al momento; si cambias su estrategia, sube
+`CACHE_NAME` en `sw.js`.

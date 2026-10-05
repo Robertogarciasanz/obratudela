@@ -123,6 +123,14 @@
 <meta property="og:image" content="https://www.obratudela.com/img/bobcat-1200w.webp">
 <meta property="og:type" content="website">
 <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+<!-- App instalable (PWA) -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#ff6b00">
+<link rel="apple-touch-icon" href="../img/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ObraTudela">
+<script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); }); }</script>
 <link rel="preload" href="../fonts/barlow-condensed-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" fetchpriority="high"
