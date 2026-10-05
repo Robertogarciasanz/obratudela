@@ -102,8 +102,8 @@ primero a comprobar.
 ## App instalable (PWA)
 
 La web es instalable ("Instalar app" en Chrome/Edge, "Añadir a pantalla de
-inicio" en iPhone): `manifest.webmanifest` + `sw.js` en la raíz, iconos en
-`img/icons/`. Cada página lleva en el `<head>` un bloque
+inicio" en iPhone): `manifest.json` + `sw.js` en la raíz, iconos y capturas en
+`img/` (`icon-*.png`, `screenshot-*.png`). Cada página lleva en el `<head>` un bloque
 `<!-- App instalable (PWA) -->` con el manifest y el registro del service
 worker — si creas una página nueva, cópialo (con `../` si está dentro de
 `pages/` o `partidas/`). El service worker sirve siempre primero la red, así

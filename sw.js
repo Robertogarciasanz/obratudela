@@ -18,8 +18,8 @@ const PRECACHE = [
   './index.html',
   './css/global.css',
   './img/logo.jpg',
-  './img/icons/icon-192.png',
-  './manifest.webmanifest'
+  './img/icon-192x192.png',
+  './manifest.json'
 ];
 
 const CDN_HOSTS = ['cdnjs.cloudflare.com', 'unpkg.com'];
