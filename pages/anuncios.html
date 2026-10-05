@@ -51,6 +51,14 @@
   <meta property="og:image" content="https://www.obratudela.com/img/excavadora-800w.webp">
   <meta property="og:type" content="website">
   <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+  <!-- App instalable (PWA) -->
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#ff6b00">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ObraTudela">
+  <script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); }); }</script>
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/correcciones.css">

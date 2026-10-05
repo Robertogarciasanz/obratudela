@@ -14,11 +14,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Excavaciones y Movimiento de Tierras en Tudela de Duero | ObraTudela</title>
   <meta name="description"
-    content="✅ Empresa de excavaciones, movimiento de tierras, demoliciones y obra civil en Tudela de Duero, Valladolid. Maquinaria propia. Pide presupuesto sin compromiso.">
+    content="Empresa de excavaciones, movimiento de tierras, demoliciones y obra civil en Tudela de Duero, Valladolid. Maquinaria propia. Pide presupuesto sin compromiso.">
   <meta name="keywords"
     content="excavaciones tudela de duero, movimiento de tierras valladolid, demoliciones valladolid, alquiler maquinaria obra, obra civil tudela de duero, piscinas tudela de duero">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+  <!-- App instalable (PWA) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff6b00">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ObraTudela">
+  <script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); }); }</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

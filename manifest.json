@@ -22,10 +22,34 @@
       "purpose": "maskable"
     },
     {
-      "src": "/img/logo.jpg",
-      "sizes": "51x38",
-      "type": "image/jpeg",
+      "src": "/img/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "categories": ["productivity", "business", "utilities"],
@@ -40,6 +64,11 @@
           "src": "/img/icon.svg",
           "sizes": "any",
           "type": "image/svg+xml"
+        },
+        {
+          "src": "/img/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     },
@@ -53,6 +82,11 @@
           "src": "/img/icon.svg",
           "sizes": "any",
           "type": "image/svg+xml"
+        },
+        {
+          "src": "/img/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     },
@@ -66,11 +100,31 @@
           "src": "/img/icon.svg",
           "sizes": "any",
           "type": "image/svg+xml"
+        },
+        {
+          "src": "/img/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     }
   ],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "/img/screenshot-540x720.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Portada de ObraTudela"
+    },
+    {
+      "src": "/img/screenshot-1080x1920.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Portada de ObraTudela en móvil"
+    }
+  ],
   "prefer_related_applications": false,
   "protocol_handlers": []
 }

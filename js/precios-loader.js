@@ -104,6 +104,23 @@ function saveToCache(data) {
 }
 
 /**
+ * Descomprime un .gz y devuelve el texto. Usa la descompresión que ya trae
+ * el navegador (DecompressionStream) y, si no existe, la librería pako.
+ * @param {ArrayBuffer} buffer - Contenido del .gz
+ * @returns {Promise<string>} Texto descomprimido
+ */
+async function descomprimirGzip(buffer) {
+  if (typeof DecompressionStream !== 'undefined') {
+    const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'));
+    return await new Response(stream).text();
+  }
+  if (typeof pako !== 'undefined') {
+    return pako.ungzip(new Uint8Array(buffer), { to: 'string' });
+  }
+  throw new Error('El navegador no puede descomprimir gzip');
+}
+
+/**
  * Carga la base de datos de precios con fallback inteligente
  * Intenta cargar desde varias URLs en orden de preferencia (más ligera primero)
  * @param {Function} onMessage - Callback para mostrar mensajes (type, text)
@@ -120,42 +137,37 @@ export async function loadPrecios(onMessage) {
 
     onMessage('system', '⏳ Cargando base de precios unificada...');
 
-    // Lista de URLs a intentar en orden de preferencia (más ligera primero)
+    // Lista de URLs a intentar en orden de preferencia (más ligera primero).
+    // El .json.br no se usa aquí: GitHub Pages lo sirve como binario y los
+    // navegadores no saben descomprimir Brotli desde JavaScript.
     const urls = [
-      `/data/base-precios.json.gz?v=${CACHE_VERSION}`,      // 1.9 MB (comprimido) - ÓPTIMO
-      `/data/base-precios.json.br?v=${CACHE_VERSION}`,      // 1.3 MB (Brotli) - MÁS ÓPTIMO si soportado
-      `/data/base-precios.json?v=${CACHE_VERSION}`          // 21 MB (sin comprimir) - último recurso
+      `/data/base-precios.json.gz?v=${CACHE_VERSION}`,      // ~2 MB (gzip) - ÓPTIMO
+      `/data/base-precios.json?v=${CACHE_VERSION}`          // ~28 MB (sin comprimir) - último recurso
     ];
 
-    let response = null;
+    let data = null;
     let urlUsada = null;
 
-    // Intentar cada URL hasta encontrar una que funcione
+    // Intentar cada URL hasta que una se descargue Y se pueda leer; si el .gz
+    // falla al descomprimir, se pasa al JSON sin comprimir en vez de rendirse
     for (const url of urls) {
       try {
-        response = await fetch(url);
-        if (response.ok) {
-          urlUsada = url;
-          break;
-        }
+        const response = await fetch(url);
+        if (!response.ok) continue;
+        data = url.includes('.gz')
+          ? JSON.parse(await descomprimirGzip(await response.arrayBuffer()))
+          : await response.json();
+        if (!Array.isArray(data)) throw new Error('Formato inesperado');
+        urlUsada = url;
+        break;
       } catch (e) {
-        console.warn(`No se pudo cargar ${url}, intentando siguiente...`);
+        console.warn(`No se pudo leer ${url} (${e.message}), intentando siguiente...`);
+        data = null;
       }
     }
 
-    if (!response || !response.ok) {
+    if (!data) {
       throw new Error('No se pudo cargar ninguna versión de la base de precios');
-    }
-
-    // Detectar si es archivo .gz y descomprimir con pako
-    let data;
-    if (urlUsada.includes('.gz')) {
-      const arrayBuffer = await response.arrayBuffer();
-      const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
-      data = JSON.parse(decompressed);
-      console.log(`🗜️ Archivo descomprimido: ${urlUsada}`);
-    } else {
-      data = await response.json();
     }
 
     // OPTIMIZACIÓN: Guardar en caché para próximas visitas

@@ -72,7 +72,7 @@ def generar_html_partida(partidas, palabra_clave):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precio {palabra_clave.title()} | {total} Partidas | ObraTudela</title>
-    <meta name="description" content="✅ Precios de {palabra_clave.lower()} actualizados 2026. {total} partidas con precios desde {precio_min:.2f}€. Base de datos oficial BCEXTREM. Calculadora gratis.">
+    <meta name="description" content="Precios de {palabra_clave.lower()} actualizados 2026. {total} partidas con precios desde {precio_min:.2f}€. Base de datos oficial BCEXTREM. Calculadora gratis.">
     <meta name="keywords" content="precio {palabra_clave.lower()}, partida {palabra_clave.lower()}, presupuesto {palabra_clave.lower()}, {palabra_clave.lower()} precio m2, {palabra_clave.lower()} precio m3">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.obratudela.com/partidas/{url_palabra}.html">
