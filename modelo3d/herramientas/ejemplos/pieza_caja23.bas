@@ -69,12 +69,12 @@ Sub main()
     Dim pts() As Double, n As Integer
     Dim xL As Double, yH As Double, xC0 As Double, xC1 As Double, yC0 As Double, yC1 As Double
     Dim xA0 As Double, xA1 As Double, yA0 As Double, yA1 As Double, yS1 As Double, yS2 As Double
-    Dim xOr As Double, yOr As Double, i As Integer, sx As Double, sy As Double
+    Dim xTal As Double, yTal As Double, i As Integer, sx As Double, sy As Double
     xL = cL / 2: yH = cH / 2
     xC0 = -xL + cXC: xC1 = xC0 + cAC: yC1 = yH - cE: yC0 = yC1 - cHC
     xA1 = xL - cDA: xA0 = xA1 - cAA: yA0 = cYA0: yA1 = yA0 + cAA
     yS1 = yA1 + cDyS: yS2 = yA0 - cDyS
-    xOr = xL - cTalX: yOr = cTalDist / 2
+    xTal = xL - cTalX: yTal = cTalDist / 2
 
     ' ===================== SALIENTES =====================
     ' Paredes: anillo 120 x 80 con pared E, de Z=0 a Z=P
@@ -183,10 +183,10 @@ Sub main()
 
     ' Taladros de las orejetas (tornillos de la tapa)
     Begin plFront
-    CircleF -xOr, yOr, 0, cDTal / 2, False
-    CircleF xOr, yOr, 0, cDTal / 2, False
-    CircleF -xOr, -yOr, 0, cDTal / 2, False
-    CircleF xOr, -yOr, 0, cDTal / 2, False
+    CircleF -xTal, yTal, 0, cDTal / 2, False
+    CircleF xTal, yTal, 0, cDTal / 2, False
+    CircleF -xTal, -yTal, 0, cDTal / 2, False
+    CircleF xTal, -yTal, 0, cDTal / 2, False
     Set sk = EndSk("Sk_Taladros_orejetas")
     Link sk, "2.5=""DTal"";46.77=""L""/2-""TAL_X"";40.045=""TAL_DIST""/2"
     Set f = CutAx(sk, 2, cP - cPTal, cPTal, "Taladros_orejetas")

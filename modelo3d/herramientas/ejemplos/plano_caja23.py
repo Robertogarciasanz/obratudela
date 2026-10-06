@@ -42,7 +42,7 @@ h.notas(236, 100, [
     '3. Taladros Ø2,5 para tornillo M3 autorroscante.',
     '4. Rebarbar y romper aristas vivas.',
     '5. Volumen de la pieza: %.1f cm³.' % vol,
-    '6. Modelo paramétrico: macro caja23_v3_pegar.bas (SolidWorks).',
+    '6. Modelo paramétrico: macro caja23_v4_pegar.bas (SolidWorks).',
 ])
 h.cajetin('CAJA 23', 'Caja 120 x 80 x 40 con tapa atornillada', autor='Roberto García Sanz',
           fecha='06/10/2026', plano='caja23-ISO', volumen='%.1f cm³' % vol, archivo='caja23.step')

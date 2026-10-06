@@ -33,6 +33,12 @@ ARGUMENTOS = {
     'AddDimension2': 3,
 }
 
+# Palabras reservadas de VBA que rompen la compilacion si se usan como nombre de variable
+# (solo las seguras: VBA tolera otras como Error o Step)
+RESERVADAS = set('''and as byref byval call case const dim do each else elseif end eqv exit false for
+function goto if imp in is let like loop me mod new next not nothing or preserve private public redim rem
+select set static sub then to true typeof until wend while with xor'''.split())
+
 # Metodos que no existen y su sustituto
 NO_EXISTEN = {
     'InsertShell': 'no existe en la API: usa FeatureManager.InsertFeatureShell(espesor, haciaFuera) con la cara ya seleccionada',
@@ -204,6 +210,14 @@ def revisar(texto):
                 pila.append(('Select Case', n))
             elif re.match(r'^End\s+Select\b', st, re.I):
                 cerrar(pila, 'Select Case', n, av)
+
+        # ---- nombres que son palabras reservadas de VBA (VBA no distingue mayusculas)
+        dm = re.match(r'^(Dim|Private|Public|Static|Const)\s+(.*)$', cod, re.I)
+        if dm:
+            for nombre in re.findall(r'(?:^|,)\s*(\w+)\s*(?:\(|\s+As\b|=|,|$)', dm.group(2)):
+                if nombre.lower() in RESERVADAS:
+                    av('ERROR', n, f'"{nombre}" es una palabra reservada de VBA ({nombre.capitalize()}); '
+                       'VBA no distingue mayusculas, asi que no vale como nombre de variable. Cambiale el nombre.')
 
         # ---- errores de escritura
         # "x Is y" compara dos objetos y "TypeOf x Is Tipo" es valido: solo se marcan
