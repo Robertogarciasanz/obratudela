@@ -154,7 +154,7 @@ class Hoja:
         c.setLineWidth(0.35)
         c.line(x - an / 2, y - 1.2, x + an / 2, y - 1.2)
         c.setFont('Helvetica', 3.5)
-        c.drawCentredString(x, y - 5.5, 'ESCALA ' + escala)
+        c.drawCentredString(x, y - 5.5, ('ESCALA ' + escala) if escala[:1].isdigit() else escala.upper())
 
     def notas(self, x, y, lineas):
         c = self.c
@@ -197,7 +197,7 @@ class Hoja:
 
     def cajetin(self, titulo, subtitulo='', autor='', fecha='', plano='', escala='1:1', material='Sin definir',
                 peso='Según material', revision='A', volumen='', tolerancias='Según uso', archivo='',
-                vistas=('Isométrica sup.', 'Isométrica inf.')):
+                vistas=('Isométrica sup.', 'Isométrica inf.'), hoja='1 de 1'):
         c = self.c
         X0, X1, Y0, Y1 = 230, 410, 10, 58
         c.setLineWidth(0.7); c.rect(X0, Y0, X1 - X0, Y1 - Y0)
@@ -211,7 +211,7 @@ class Hoja:
         f(X0, 34, 'DIBUJADO', autor); f(300, 34, 'FECHA', fecha); f(330, 34, 'FIRMA', '')
         f(X0, 26, 'COMPROBADO', ''); f(300, 26, 'FECHA', ''); f(330, 26, 'MATERIAL', material)
         f(X0, 18, 'ESCALA', escala); f(255, 18, 'FORMATO', 'A3'); f(300, 18, 'UNIDADES', 'mm'); f(330, 18, 'PESO', peso)
-        f(X0, Y0, 'N.º DE PLANO', plano, negrita=True); f(300, Y0, 'REVISIÓN', revision); f(330, Y0, 'HOJA', '1 de 1')
+        f(X0, Y0, 'N.º DE PLANO', plano, negrita=True); f(300, Y0, 'REVISIÓN', revision); f(330, Y0, 'HOJA', hoja)
         f(370, 34, 'VOLUMEN', volumen); f(370, 26, 'PROYECCIÓN', 'Isométrica')
         f(370, 18, 'TOLERANCIAS', tolerancias); f(370, Y0, 'ARCHIVO', archivo)
         c.setFont('Helvetica', 2.2); c.setFillColorRGB(*GRIS_TXT)
@@ -224,6 +224,20 @@ class Hoja:
         c.setFont('Helvetica', 3.0)
         for i, t in enumerate(vistas[:2]):
             c.drawString(371, 48.5 - i * 4.5, t)
+
+    def nueva_hoja(self):
+        """Termina la hoja actual y empieza otra del mismo tamano."""
+        self.c.showPage()
+        self.c.scale(mm, mm)
+        self.c.setLineCap(1)
+        self.c.setLineJoin(1)
+
+    def imagen(self, img, x, y, ancho):
+        """Coloca una imagen PIL (p. ej. de render.py) con su esquina inferior izquierda en (x, y) mm."""
+        from reportlab.lib.utils import ImageReader
+        alto = ancho * img.height / img.width
+        self.c.drawImage(ImageReader(img), x, y, ancho, alto, mask='auto')
+        return alto
 
     def guardar(self):
         self.c.showPage()

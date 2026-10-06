@@ -11,8 +11,9 @@ SolidWorks 2020 en español.
 | `plantilla_pieza.bas` | Punto de partida para una pieza nueva. |
 | `SwBiblioteca.bas` / `SwBiblioteca_declaraciones.bas` | Funciones comunes: croquis acotados, salientes, cortes, redondeos, variables globales. |
 | `vista_previa/hlr.py` | Proyecta un sólido en isométrica quitando las líneas ocultas. |
-| `vista_previa/plano.py` | Monta el plano A3 en PDF: marco, vistas, cotas, notas y cajetín. |
-| `ejemplos/` | Tapa v1 (**probada en SolidWorks**: la referencia), caja 23 completa (pieza, modelo 3D y plano) y dos macros con errores para probar el revisor. |
+| `vista_previa/plano.py` | Monta el plano A3 en PDF: marco, vistas, cotas, notas, cajetín y varias hojas. |
+| `vista_previa/render.py` | Imagen sombreada de la pieza (aspecto real, como el sombreado con aristas de SolidWorks). |
+| `ejemplos/` | Tapa v1 (**probada en SolidWorks**), caja 23 v5 (**probada**) y tapa 23 (pieza, modelo 3D, prueba de montaje y plano), y dos macros con errores para probar el revisor. |
 
 ## 1. Revisar una macro
 

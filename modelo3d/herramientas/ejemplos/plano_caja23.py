@@ -45,6 +45,18 @@ h.notas(236, 100, [
     '6. Modelo paramétrico: macro caja23_v5_pegar.bas (SolidWorks).',
 ])
 h.cajetin('CAJA 23', 'Caja 120 x 80 x 40 con tapa atornillada', autor='Roberto García Sanz',
-          fecha='06/10/2026', plano='caja23-ISO', volumen='%.1f cm³' % vol, archivo='caja23.step')
+          fecha='06/10/2026', plano='caja23-ISO', volumen='%.1f cm³' % vol, archivo='caja23.step', hoja='1 de 2')
+
+# ---- hoja 2: imagen sombreada de la pieza (aspecto real)
+from render import render  # noqa: E402
+h.nueva_hoja()
+h.marco()
+alto = h.imagen(render(m, (1, -1, 1), ancho_px=1800), 30, 72, 205)
+h.rotulo(132, 64, 'VISTA SOMBREADA SUPERIOR', 'sin escala')
+h.imagen(render(m, (-1, 1, -1), ancho_px=1200), 245, 128, 150)
+h.rotulo(320, 120, 'VISTA SOMBREADA INFERIOR', 'sin escala')
+h.cajetin('CAJA 23', 'Caja 120 x 80 x 40 con tapa atornillada', autor='Roberto García Sanz',
+          fecha='06/10/2026', plano='caja23-ISO', volumen='%.1f cm³' % vol, archivo='caja23.step',
+          vistas=('Sombreada sup.', 'Sombreada inf.'), hoja='2 de 2', escala='S/E')
 h.guardar()
 print('PDF generado')

@@ -19,6 +19,8 @@ ejecutes la macro en SolidWorks y corrijas los errores hasta que salga bien.
 | Archivo | Qué es |
 |---|---|
 | `modelo3d/caja23_v5_pegar.bas` | **Macro actual de la caja, la que hay que probar.** |
+| `modelo3d/tapa23_v1_pegar.bas` | **Tapa de esta caja** (sin probar aún en SolidWorks). Encaja sin choques en la prueba de montaje. |
+| `modelo3d/tapa23_isometrico.pdf` | Plano de la tapa: isométricas acotadas + imagen sombreada y montada. |
 | `modelo3d/herramientas/ejemplos/pieza_tapa_v1.bas` | Tapa v1: **funciona en SolidWorks**. Es la referencia. |
 | `modelo3d/caja23_isometrico.pdf` | Plano isométrico A3 de la caja. |
 | `modelo3d/caja23.step` | Modelo 3D de comprobación (hecho con CadQuery, sin historial). |
@@ -26,6 +28,11 @@ ejecutes la macro en SolidWorks y corrijas los errores hasta que salga bien.
 | `solidworks-macro-modelado.zip` | Skill actualizada con todo lo aprendido (súbela a la cuenta si no está). |
 
 ## Estado ahora mismo
+
+- **caja23 v5 probada en SolidWorks: funcionó bastante bien.** Solo faltaba algún redondeo
+  (pendiente: ver el aviso final o el árbol para saber cuál y corregirlo en una v6).
+- **tapa23 v1**: hecha a partir de la tapa v1, con R10, orejetas y taladros como la caja y
+  pestaña de centrado para el rebaje. Falta probarla en SolidWorks.
 
 - La **v5** sale **sin errores en el revisor**, pero **todavía no se ha probado en SolidWorks**.
 - v5 = 19 operaciones (antes 21): tabiques del compartimento en un solo croquis (dos rectángulos)
