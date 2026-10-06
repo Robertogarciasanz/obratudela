@@ -33,7 +33,7 @@ def modelo():
     s=s.cut(cq.Workplane("YZ").circle(16).extrude(35).translate((-15,-12.5,24)))
     for a,b in((-10,3),(-25,-12)): s=s.cut(box(55,a,5,62,b,16))
     s=s.cut(box(-62,-6.5,5,-55,6.5,16))
-    for x,y in corners(60-13.23,80.09/2): s=s.cut(cyl(1.25,12,x,y,28))  # mismos ejes que la tapa v1
+    for x,y in corners(60-13.23,80.09/2): s=s.cut(cyl(1.25,32,x,y,8))  # mismos ejes que la tapa v1; mismo corte que los soportes (Z 8 a 40)
     for y in(7.5,-32.5): s=s.cut(cyl(1.25,12,0,y,8))
     s=s.cut(box(-58.5,-38.5,38,58.5,38.5,41))
     s=fil(s,10,vert_at(corners(60,40)))

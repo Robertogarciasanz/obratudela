@@ -105,11 +105,12 @@ Sub main()
     Set f = Boss(sk, cP, 1, "Orejetas")
     Link f, "40=""P"""
 
-    ' Compartimento de la pantalla: bloque que luego se vacia (tabiques TC)
+    ' Compartimento de la pantalla: tabiques TC en una sola operacion (anillo de dos rectangulos)
     Begin plFront
     r = RectF(xC0 - cTC, yC0 - cTC, xC1 + cTC, yC1 + 1, True, 0)
+    r = RectF(xC0, yC0, xC1, yC1, True, 0)
     Set sk = EndSk("Sk_Compartimento")
-    Link sk, "78=""AC""+2*""TC"";27.5=""HC""+""TC""+1;29.5=""L""/2-""XC""+""TC"";10.5=""H""/2-""E""-""HC""-""TC"""
+    Link sk, "78=""AC""+2*""TC"";27.5=""HC""+""TC""+1;29.5=""L""/2-""XC""+""TC"";10.5=""H""/2-""E""-""HC""-""TC"";75=""AC"";25=""HC"";28=""L""/2-""XC"";12=""H""/2-""E""-""HC"""
     Set f = Boss(sk, cHTab, 1, "Compartimento")
     Link f, "30=""HTab"""
 
@@ -131,19 +132,12 @@ Sub main()
     Link f, "20=""HAl"""
 
     ' ===================== CORTES =====================
-    ' Hueco del compartimento 75 x 25
-    Begin plFront
-    r = RectF(xC0, yC0, xC1, yC1, True, 0)
-    Set sk = EndSk("Sk_Hueco_compartimento")
-    Link sk, "75=""AC"";25=""HC"";28=""L""/2-""XC"";12=""H""/2-""E""-""HC"""
-    Set f = CutAx(sk, 2, cE, cP, "Hueco_compartimento")
-
     ' Escalon del marco de la ventana de la pantalla (cara interior del fondo)
     Begin plFront
     r = RectF(xC0 + cMV - cEsc, yC0 + cMV - cEsc, xC1 - cMV + cEsc, yC1 - cMV + cEsc, True, 0)
     Set sk = EndSk("Sk_Marco_ventana")
     Link sk, "72=""AC""-2*""MV""+2*""Esc"";22=""HC""-2*""MV""+2*""Esc"";26.5=""L""/2-""XC""-""MV""+""Esc"";13.5=""H""/2-""E""-""HC""+""MV""-""Esc"""
-    Set f = CutAx(sk, 2, cE - cEsc, cEsc, "Marco_ventana")
+    Set f = CutOff(sk, cE - cEsc, cEsc, "Marco_ventana")
 
     ' Ventana pasante de la pantalla (marco de 2,5)
     Begin plFront
@@ -157,7 +151,7 @@ Sub main()
     r = RectF(xA0, yA0, xA1, yA1, True, 0)
     Set sk = EndSk("Sk_Hueco_alojamiento")
     Link sk, "35=""AA"";15=""DA""+""AA""-""L""/2;30=-""YA0"""
-    Set f = CutAx(sk, 2, cZAl, cP, "Hueco_alojamiento")
+    Set f = CutOff(sk, cZAl, cP, "Hueco_alojamiento")
 
     ' Cuna cilindrica (eje X) en el suelo del alojamiento
     Begin plRight
@@ -181,23 +175,18 @@ Sub main()
     Link sk, "13=""HV"";11=""AV"";16=""ZV""+""AV"";5=""ZV"";6.5=""HV""/2"
     Set f = CutAx(sk, 0, -xL - 2, cE + 4, "Ventana_izquierda")
 
-    ' Taladros de las orejetas (tornillos de la tapa)
+    ' Taladros de las orejetas (tornillos de la tapa) y de los soportes, en un solo corte:
+    ' desde Z = HAl - PTal hasta arriba (en los soportes quedan de prof. PTal; en las orejetas, P - HAl + PTal)
     Begin plFront
     CircleF -xTal, yTal, 0, cDTal / 2, False
     CircleF xTal, yTal, 0, cDTal / 2, False
     CircleF -xTal, -yTal, 0, cDTal / 2, False
     CircleF xTal, -yTal, 0, cDTal / 2, False
-    Set sk = EndSk("Sk_Taladros_orejetas")
-    Link sk, "2.5=""DTal"";46.77=""L""/2-""TAL_X"";40.045=""TAL_DIST""/2"
-    Set f = CutAx(sk, 2, cP - cPTal, cPTal, "Taladros_orejetas")
-
-    ' Taladros de los soportes
-    Begin plFront
     CircleF 0, yS1, 0, cDTal / 2, False
     CircleF 0, yS2, 0, cDTal / 2, False
-    Set sk = EndSk("Sk_Taladros_soportes")
-    Link sk, "2.5=""DTal"";7.5=""YA0""+""AA""+""DyS"";32.5=-""YA0""+""DyS"""
-    Set f = CutAx(sk, 2, cHAl - cPTal, cPTal, "Taladros_soportes")
+    Set sk = EndSk("Sk_Taladros")
+    Link sk, "2.5=""DTal"";46.77=""L""/2-""TAL_X"";40.045=""TAL_DIST""/2;7.5=""YA0""+""AA""+""DyS"";32.5=-""YA0""+""DyS"""
+    Set f = CutOff(sk, cHAl - cPTal, cP - cHAl + cPTal, "Taladros")
 
     ' Rebaje del borde para encajar la tapa (el contorno interior cae en el hueco)
     Begin plFront
@@ -205,7 +194,7 @@ Sub main()
     r = RectF(-xL + cE + 1, -yH + cE + 1, xL - cE - 1, yH - cE - 1, True, 0)
     Set sk = EndSk("Sk_Rebaje_tapa")
     Link sk, "117=""L""-2*""E""+2*""WR"";77=""H""-2*""E""+2*""WR"";58.5=""L""/2-""E""+""WR"";38.5=""H""/2-""E""+""WR"""
-    Set f = CutAx(sk, 2, cP - cPR, cPR, "Rebaje_tapa")
+    Set f = CutOff(sk, cP - cPR, cPR, "Rebaje_tapa")
 
     ' ===================== REDONDEOS (AL FINAL) =====================
     ReDim pts(2, 3): n = 0

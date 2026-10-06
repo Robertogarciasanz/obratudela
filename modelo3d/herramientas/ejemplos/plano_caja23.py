@@ -22,7 +22,7 @@ h.cota(v1, (50, -40, 0), (50, 40, 0), (1, 0, 0), 26, '80')
 pc = (-50 - 10 * S2, -30 - 10 * S2)  # silueta de la esquina R10 en esta vista
 h.cota(v1, (pc[0], pc[1], 0), (pc[0], pc[1], 40), (-1, -1, 0), 14, '40')
 h.nota(v1.P((50 + 10 * S2, 30 + 10 * S2, 40)), 20, 8, ['R10 (4 esquinas ext.)', 'R7 interior'])
-h.nota(v1.P((-46.77, -40.045, 40)), -20, 34, ['4x \u00d82,5 prof. 12 (M3 tapa)', 'entre ejes 93,54 x 80,09'])
+h.nota(v1.P((-46.77, -40.045, 40)), -20, 34, ['4x \u00d82,5 prof. 32 (M3 tapa)', 'entre ejes 93,54 x 80,09'])
 h.nota(v1.P((-20, 38.5 - 0.75, 40)), 18, 32, ['Rebaje tapa 1,5 x 2'])
 h.nota(v1.P((10, 11.25, 30)), -46, 64, ['Compartimento 75 x 25', 'a 32 del borde izq.', 'tabiques 1,5 x h30'], izq=True)
 h.nota(v1.P((12, 5.75, 20)), 66, 38, ['Alojamiento 35 x 35', 'a 40 del borde dcho.', 'cuna R16 prof. 4'])
@@ -42,7 +42,7 @@ h.notas(236, 100, [
     '3. Taladros Ø2,5 para tornillo M3 autorroscante.',
     '4. Rebarbar y romper aristas vivas.',
     '5. Volumen de la pieza: %.1f cm³.' % vol,
-    '6. Modelo paramétrico: macro caja23_v4_pegar.bas (SolidWorks).',
+    '6. Modelo paramétrico: macro caja23_v5_pegar.bas (SolidWorks).',
 ])
 h.cajetin('CAJA 23', 'Caja 120 x 80 x 40 con tapa atornillada', autor='Roberto García Sanz',
           fecha='06/10/2026', plano='caja23-ISO', volumen='%.1f cm³' % vol, archivo='caja23.step')

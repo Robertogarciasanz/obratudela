@@ -18,7 +18,7 @@ ejecutes la macro en SolidWorks y corrijas los errores hasta que salga bien.
 
 | Archivo | Qué es |
 |---|---|
-| `modelo3d/caja23_v4_pegar.bas` | **Macro actual de la caja, la que hay que probar.** |
+| `modelo3d/caja23_v5_pegar.bas` | **Macro actual de la caja, la que hay que probar.** |
 | `modelo3d/herramientas/ejemplos/pieza_tapa_v1.bas` | Tapa v1: **funciona en SolidWorks**. Es la referencia. |
 | `modelo3d/caja23_isometrico.pdf` | Plano isométrico A3 de la caja. |
 | `modelo3d/caja23.step` | Modelo 3D de comprobación (hecho con CadQuery, sin historial). |
@@ -27,11 +27,13 @@ ejecutes la macro en SolidWorks y corrijas los errores hasta que salga bien.
 
 ## Estado ahora mismo
 
-- La **v4** sale **sin errores en el revisor**, pero **todavía no se ha probado en SolidWorks**.
+- La **v5** sale **sin errores en el revisor**, pero **todavía no se ha probado en SolidWorks**.
+- v5 = 19 operaciones (antes 21): tabiques del compartimento en un solo croquis (dos rectángulos)
+  y los 6 taladros en un solo corte. Los cortes en Z usan `CutOff`, que ya funcionó con la tapa.
 - La v3 fallaba al compilar por una variable llamada `xOr` (choca con el operador
-  `Xor` de VBA). En la v4 se llama `xTal`.
+  `Xor` de VBA). Desde la v4 se llama `xTal`.
 - Partes **nuevas, sin probar nunca en SolidWorks**: la función `CutAx` (cortes con
-  desfase en cualquier eje; la usa la caja para casi todos los cortes) y
+  desfase en eje X; en la v5 solo la usan la cuna y las ventanas laterales: 3 cortes) y
   `CaraPlana` / `Vaciado` (no las usa la caja).
 - Lo que ya funcionó hace dos días con la tapa: `Boss`, `CutThru`, `CutAvell`,
   `FilletEdges`, `FilletFace`, croquis acotados y ecuaciones.
@@ -39,7 +41,7 @@ ejecutes la macro en SolidWorks y corrijas los errores hasta que salga bien.
 ## Qué hacer primero
 
 1. Abrir SolidWorks. **Herramientas > Macro > Nueva**, guardar como `caja23.swp`.
-2. En el editor VBA: borrar todo, pegar `caja23_v4_pegar.bas` completo y pulsar **F5**.
+2. En el editor VBA: borrar todo, pegar `caja23_v5_pegar.bas` completo y pulsar **F5**.
 3. Si sale error de compilación: mirar la línea en amarillo, corregir y repetir.
    Si es un error en tiempo de ejecución: **Depurar > Ctrl+L** (pila de llamadas)
    para ver qué línea de `main` falla, y **Ejecutar > Restablecer** antes de reintentar.
@@ -53,7 +55,7 @@ ejecutes la macro en SolidWorks y corrijas los errores hasta que salga bien.
 - Exterior 120 × 80 × 40, pared y fondo **3 mm**, cara abierta la de 120 × 80.
 - Esquinas: R10 exterior, R7 interior, rebaje de la tapa 1,5 × 2 (R8,5).
 - 4 orejetas exteriores de 7 × 4 en X = ±46, R1.
-- **Taladros Ø2,5 (M3 autorroscante), profundidad 12, en X = ±46,77 e Y = ±40,045**
+- **Taladros Ø2,5 (M3 autorroscante) en X = ±46,77 e Y = ±40,045, de Z = 8 a 40 (prof. 32)**
   (`L/2 − 13,23` y `80,09/2`): **los mismos ejes que la tapa v1**, para que coincidan.
 - Compartimento de 75 × 25 a 32 del borde izquierdo, tabiques de 1,5 × 30 de alto,
   y una ventana de 70 × 20 en el fondo con marco de 2,5.
