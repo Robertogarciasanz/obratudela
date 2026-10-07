@@ -35,7 +35,7 @@ Const cYA0 As Double = -30    ' Y del lado inferior (10 desde el borde exterior)
 Const cHAl As Double = 20     ' altura del alojamiento y de los soportes
 Const cZAl As Double = 12     ' altura del suelo del alojamiento
 Const cDSop As Double = 6     ' diametro de los soportes de tornillo
-Const cDyS As Double = 2.5    ' separacion del soporte respecto al alojamiento
+Const cDyS As Double = 3      ' separacion del soporte respecto al alojamiento (con 2,5 tocaba en tangente el tabique del compartimento)
 Const cRCuna As Double = 16   ' radio de la cuna
 Const cPCuna As Double = 4    ' profundidad de la cuna
 ' Ventanas laterales (lado derecho 2, lado izquierdo 1)
@@ -127,7 +127,7 @@ Sub main()
     CircleF 0, yS1, 0, cDSop / 2, False
     CircleF 0, yS2, 0, cDSop / 2, False
     Set sk = EndSk("Sk_Soportes")
-    Link sk, "6=""DSop"";7.5=""YA0""+""AA""+""DyS"";32.5=-""YA0""+""DyS"""
+    Link sk, "6=""DSop"";8=""YA0""+""AA""+""DyS"";33=-""YA0""+""DyS"""
     Set f = Boss(sk, cHAl, 1, "Soportes")
     Link f, "20=""HAl"""
 
@@ -185,7 +185,7 @@ Sub main()
     CircleF 0, yS1, 0, cDTal / 2, False
     CircleF 0, yS2, 0, cDTal / 2, False
     Set sk = EndSk("Sk_Taladros")
-    Link sk, "2.5=""DTal"";46.77=""L""/2-""TAL_X"";40.045=""TAL_DIST""/2;7.5=""YA0""+""AA""+""DyS"";32.5=-""YA0""+""DyS"""
+    Link sk, "2.5=""DTal"";46.77=""L""/2-""TAL_X"";40.045=""TAL_DIST""/2;8=""YA0""+""AA""+""DyS"";33=-""YA0""+""DyS"""
     Set f = CutOff(sk, cHAl - cPTal, cP - cHAl + cPTal, "Taladros")
 
     ' Rebaje del borde para encajar la tapa (el contorno interior cae en el hueco)
@@ -197,26 +197,33 @@ Sub main()
     Set f = CutOff(sk, cP - cPR, cPR, "Rebaje_tapa")
 
     ' ===================== REDONDEOS (AL FINAL) =====================
-    ReDim pts(2, 3): n = 0
-    For i = 0 To 3
-        sx = IIf(i Mod 2 = 0, -1, 1): sy = IIf(i < 2, -1, 1)
-        AddPt pts, n, sx * xL, sy * yH, 0
-    Next
-    Set f = FilletEdges(pts, n, 3, cRExt, "Redondeo_exterior")
-
+    ' Orden: interior -> rebaje -> exterior (de dentro afuera), luego orejetas y ventanas
+    ' Esquinas interiores de la caja (R7)
     ReDim pts(2, 3): n = 0
     For i = 0 To 3
         sx = IIf(i Mod 2 = 0, -1, 1): sy = IIf(i < 2, -1, 1)
         AddPt pts, n, sx * (xL - cE), sy * (yH - cE), 0
     Next
     Set f = FilletEdges(pts, n, 3, cRInt, "Redondeo_interior")
+    Link f, "7=""RInt"""
 
+    ' Esquinas del rebaje de la tapa (R7 + 1,5 = R8,5, concentrico con el interior)
     ReDim pts(2, 3): n = 0
     For i = 0 To 3
         sx = IIf(i Mod 2 = 0, -1, 1): sy = IIf(i < 2, -1, 1)
         AddPt pts, n, sx * (xL - cE + cWR), sy * (yH - cE + cWR), 0
     Next
     Set f = FilletEdges(pts, n, 3, cRInt + cWR, "Redondeo_rebaje")
+    Link f, "8.5=""RInt""+""WR"""
+
+    ' Esquinas exteriores (R10)
+    ReDim pts(2, 3): n = 0
+    For i = 0 To 3
+        sx = IIf(i Mod 2 = 0, -1, 1): sy = IIf(i < 2, -1, 1)
+        AddPt pts, n, sx * xL, sy * yH, 0
+    Next
+    Set f = FilletEdges(pts, n, 3, cRExt, "Redondeo_exterior")
+    Link f, "10=""RExt"""
 
     ' Aristas exteriores de las 4 orejetas
     ReDim pts(2, 7): n = 0
@@ -226,6 +233,7 @@ Sub main()
         AddPt pts, n, sx * (cXOr + cAOr / 2), sy * (yH + cSOr), 0
     Next
     Set f = FilletEdges(pts, n, 3, cRaOr, "Redondeo_orejetas")
+    Link f, "1=""RaOr"""
 
     ' Esquinas de las ventanas laterales (aristas paralelas a X, a mitad de pared)
     ReDim pts(2, 11): n = 0
@@ -242,6 +250,7 @@ Sub main()
     AddPt pts, n, -xL + cE / 2, -cHV / 2, cZV
     AddPt pts, n, -xL + cE / 2, -cHV / 2, cZV + cAV
     Set f = FilletEdges(pts, n, 1, cRV, "Redondeo_ventanas")
+    Link f, "2=""RV"""
 
     ' ===================== FIN =====================
     Part.ClearSelection2 True

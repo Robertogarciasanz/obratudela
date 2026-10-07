@@ -101,14 +101,15 @@ Sub main()
     Set f = CutThru(sk, "Ranuras_Ventilacion")
 
     ' ===== REDONDEOS (siempre al final) =====
-    PtsRect pts, n, -vL / 2, -vH / 2, vL / 2, vH / 2
-    Set f = FilletEdges(pts, n, 3, vR_EXT, "Redondeo_Esquinas"): Link f, "10=""R_EXT"""
-    PtsRect pts, n, -pxo, -pyo, pxo, pyo
-    Set f = FilletEdges(pts, n, 3, vR_INT_CAJA + vWR_CAJA - vHOLG, "Redondeo_Pestana_Ext")
-    Link f, "8.35=""R_INT_CAJA""+""WR_CAJA""-""HOLG"""
+    ' Orden: interior -> pestana -> exterior (de dentro afuera), luego orejetas, ranuras y canto
     PtsRect pts, n, -pxi, -pyi, pxi, pyi
     Set f = FilletEdges(pts, n, 3, vR_INT_CAJA + vHOLG, "Redondeo_Pestana_Int")
     Link f, "7.15=""R_INT_CAJA""+""HOLG"""
+    PtsRect pts, n, -pxo, -pyo, pxo, pyo
+    Set f = FilletEdges(pts, n, 3, vR_INT_CAJA + vWR_CAJA - vHOLG, "Redondeo_Pestana_Ext")
+    Link f, "8.35=""R_INT_CAJA""+""WR_CAJA""-""HOLG"""
+    PtsRect pts, n, -vL / 2, -vH / 2, vL / 2, vH / 2
+    Set f = FilletEdges(pts, n, 3, vR_EXT, "Redondeo_Esquinas"): Link f, "10=""R_EXT"""
     n = 0: ReDim pts(2, 7)
     For sx = -1 To 1 Step 2
         For sy = -1 To 1 Step 2
