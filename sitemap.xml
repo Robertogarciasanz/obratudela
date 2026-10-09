@@ -331,20 +331,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Base de datos comprimida (gzip) -->
-  <url>
-    <loc>https://www.obratudela.com/data/base-precios.json.gz</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
-  <!-- Base de datos comprimida (brotli) -->
-  <url>
-    <loc>https://www.obratudela.com/data/base-precios.json.br</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
 </urlset>

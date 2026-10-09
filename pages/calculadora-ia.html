@@ -20,6 +20,14 @@
   <meta property="og:image" content="https://www.obratudela.com/img/gemini-800w.webp">
   <meta property="og:type" content="website">
   <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+  <!-- App instalable (PWA) -->
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#ff6b00">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ObraTudela">
+  <script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); }); }</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js"></script>
   <link rel="stylesheet" href="../css/cookie-consent.css">
