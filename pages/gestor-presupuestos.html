@@ -1633,9 +1633,15 @@ async function exportExcel() {
   presupuesto.forEach((item, i) => {
     fila++;
     const isLong = item.textMode === 'long' && item.descLong;
-    const txt = isLong ? (item.res + '\n' + item.descLong) : item.res;
+    // Texto corto en negrita y, si la partida está en modo LARGO, el detalle debajo
+    const txt = isLong
+      ? { richText: [{ font: { bold: true }, text: item.res }, { font: { size: 9, color: { argb: 'FF555555' } }, text: '\n' + item.descLong }] }
+      : item.res;
     const r = ws.getRow(fila);
     r.values = [i + 1, item.cod, txt, item.uni, item.qty, item.precio, { formula: `E${fila}*F${fila}`, result: item.qty * item.precio }];
+    // Excel no autoajusta la altura de la fila: se calcula según las líneas del texto (~60 caracteres por línea)
+    const lineas = (isLong ? item.res + '\n' + item.descLong : item.res).split('\n').reduce((n, l) => n + Math.max(1, Math.ceil(l.length / 60)), 0);
+    r.height = Math.max(18, lineas * 13 + 5);
     for (let n = 1; n <= 7; n++) {
       const c = r.getCell(n);
       c.border = bordes;
