@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://www.obratudela.com/img/excavadora-800w.webp">
 <meta property="og:type" content="website">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
 <script src="https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js"></script>
 <style>
   @font-face {
@@ -472,6 +472,14 @@
     transition: all 0.15s;
   }
   .logo-actions .mini-btn:hover { border-color: var(--orange); color: var(--orange); }
+  .empresa-datos {
+    flex: 1;
+    min-width: 0;
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .empresa-datos strong { display: block; font-size: 13px; color: var(--orange); }
 
   /* TOGGLE TEXTO CORTO/LARGO */
   .text-toggle {
@@ -973,6 +981,12 @@
         <button class="mini-btn" onclick="document.getElementById('logo-file').click()">📁 Cambiar logo</button>
         <button class="mini-btn" onclick="resetLogo()">↺ Por defecto</button>
         <input type="file" id="logo-file" accept="image/*" style="display:none" onchange="uploadLogo(event)" />
+      </div>
+      <div class="empresa-datos">
+        <strong>Excavaciones y Servicios Arturo S.L.</strong>
+        NIF B47489612<br>
+        C/ Manzano, 2 · 47320 Tudela de Duero (Valladolid)<br>
+        Tel. 607 444 903 · excavacionesart@gmail.com
       </div>
     </div>
     <div class="pres-header">
@@ -1499,8 +1513,30 @@ function clearPres() {
 // ========================
 // EXPORT EXCEL
 // ========================
-function exportExcel() {
+// Convierte el logo (puede ser SVG) a PNG para poder incrustarlo en el Excel
+function logoComoPNG() {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => {
+      try {
+        const w = 360, h = Math.round(360 * (img.naturalHeight || 240) / (img.naturalWidth || 400));
+        const c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        const ctx = c.getContext('2d');
+        ctx.fillStyle = '#fff';
+        ctx.fillRect(0, 0, w, h);
+        ctx.drawImage(img, 0, 0, w, h);
+        resolve({ base64: c.toDataURL('image/png'), w, h });
+      } catch (_) { resolve(null); }
+    };
+    img.onerror = () => resolve(null);
+    img.src = document.getElementById('company-logo').src;
+  });
+}
+
+async function exportExcel() {
   if (presupuesto.length === 0) { toast('El presupuesto está vacío'); return; }
+  if (typeof ExcelJS === 'undefined') { toast('No se pudo cargar el generador de Excel. Revisa tu conexión.'); return; }
 
   const titulo = document.getElementById('pres-titulo').value || 'Presupuesto';
   const cliente = document.getElementById('pres-cliente').value || '';
@@ -1508,62 +1544,145 @@ function exportExcel() {
   const obs = document.getElementById('pres-obs').value || '';
   const ivaPct = parseFloat(document.getElementById('iva-pct').value) || 21;
 
-  const wb = XLSX.utils.book_new();
+  const NARANJA = 'FFFF6B00', GRIS = 'FFF3F3F3', BORDE = { style: 'thin', color: { argb: 'FFCCCCCC' } };
+  const bordes = { top: BORDE, bottom: BORDE, left: BORDE, right: BORDE };
+  const EUR = '#,##0.00 "€"';
+  const relleno = argb => ({ type: 'pattern', pattern: 'solid', fgColor: { argb } });
 
-  // Data rows
-  const base = presupuesto.reduce((s,i)=>s+i.qty*i.precio,0);
-  const iva = base * ivaPct / 100;
-  const total = base + iva;
+  const wb = new ExcelJS.Workbook();
+  wb.creator = 'Excavaciones y Servicios Arturo S.L.';
+  const ws = wb.addWorksheet('Presupuesto', {
+    pageSetup: { paperSize: 9, orientation: 'portrait', fitToPage: true, fitToWidth: 1, fitToHeight: 0, margins: { left: 0.5, right: 0.5, top: 0.6, bottom: 0.6, header: 0.3, footer: 0.3 } }
+  });
+  ws.columns = [{ width: 5 }, { width: 14 }, { width: 55 }, { width: 8 }, { width: 11 }, { width: 14 }, { width: 15 }];
 
-  const rows = [
-    [titulo],
-    ['Cliente:', cliente, '', 'Fecha:', fecha],
-    obs ? ['Observaciones:', obs] : [],
-    [],
-    ['Nº', 'CÓDIGO', 'DESCRIPCIÓN', 'UNIDAD', 'CANTIDAD', 'PRECIO/UD (€)', 'IMPORTE (€)'],
-    ...presupuesto.map((item, i) => {
-      const isLong = item.textMode === 'long' && item.descLong;
-      const txt = isLong ? (item.res + '\n' + item.descLong) : item.res;
-      return [i+1, item.cod, txt, item.uni, item.qty, item.precio, item.qty * item.precio];
-    }),
-    [],
-    ['', '', '', '', '', 'SUBTOTAL', base],
-    ['', '', '', '', '', `IVA (${ivaPct}%)`, iva],
-    ['', '', '', '', '', 'TOTAL', total],
-  ].filter(r => r.length > 0);
-
-  const ws = XLSX.utils.aoa_to_sheet(rows);
-
-  // Column widths
-  ws['!cols'] = [
-    {wch:4},{wch:14},{wch:50},{wch:8},{wch:10},{wch:14},{wch:14}
+  // --- Cabecera: logo a la izquierda, datos de la empresa a la derecha ---
+  const empresa = [
+    ['Excavaciones y Servicios Arturo S.L.', true],
+    ['NIF B47489612', false],
+    ['C/ Manzano, 2 · 47320 Tudela de Duero (Valladolid)', false],
+    ['Tel. 607 444 903', false],
+    ['excavacionesart@gmail.com · www.obratudela.com', false]
   ];
+  empresa.forEach(([txt, negrita], i) => {
+    const r = i + 1;
+    ws.mergeCells(r, 4, r, 7);
+    const c = ws.getCell(r, 4);
+    c.value = txt;
+    c.font = { bold: negrita, size: negrita ? 12 : 10, color: { argb: negrita ? NARANJA : 'FF333333' } };
+    c.alignment = { horizontal: 'right', vertical: 'middle' };
+    ws.getRow(r).height = 20;
+  });
+  const logo = await logoComoPNG();
+  if (logo) {
+    const id = wb.addImage({ base64: logo.base64, extension: 'png' });
+    ws.addImage(id, { tl: { col: 0.1, row: 0.2 }, ext: { width: 170, height: Math.round(170 * logo.h / logo.w) } });
+  }
 
-  // Basic styling via cell formats
-  const headerRow = 4; // 0-indexed row 4 = row 5 in Excel (1-indexed)
-  const headers = ['A','B','C','D','E','F','G'];
-  headers.forEach(col => {
-    const cell = ws[col + (headerRow+1)];
-    if (cell) cell.s = { font: { bold: true }, fill: { fgColor: { rgb: 'FF6B00' } } };
+  // --- Título y datos del cliente ---
+  ws.mergeCells('A7:G7');
+  const t = ws.getCell('A7');
+  t.value = 'PRESUPUESTO: ' + titulo.toUpperCase();
+  t.font = { bold: true, size: 14, color: { argb: 'FFFFFFFF' } };
+  t.fill = relleno(NARANJA);
+  t.alignment = { vertical: 'middle', indent: 1 };
+  ws.getRow(7).height = 28;
+
+  ws.mergeCells('A8:C8');
+  ws.mergeCells('D8:G8');
+  ws.getCell('A8').value = 'Cliente: ' + (cliente || '—');
+  ws.getCell('D8').value = 'Fecha: ' + fecha;
+  ws.getCell('D8').alignment = { horizontal: 'right' };
+  ws.getCell('A8').font = { bold: true };
+  ws.getCell('D8').font = { bold: true };
+  let fila = 9;
+  if (obs) {
+    ws.mergeCells(fila, 1, fila, 7);
+    const o = ws.getCell(fila, 1);
+    o.value = 'Observaciones: ' + obs;
+    o.font = { italic: true, color: { argb: 'FF555555' } };
+    o.alignment = { wrapText: true, vertical: 'top' };
+    ws.getRow(fila).height = Math.max(18, 15 * Math.ceil(obs.length / 95));
+    fila++;
+  }
+  fila++; // fila en blanco
+
+  // --- Tabla de partidas ---
+  const filaCab = fila;
+  const cab = ws.getRow(filaCab);
+  ['Nº', 'CÓDIGO', 'DESCRIPCIÓN', 'UD', 'CANTIDAD', 'PRECIO/UD', 'IMPORTE'].forEach((h, i) => {
+    const c = cab.getCell(i + 1);
+    c.value = h;
+    c.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+    c.fill = relleno('FF2A2A2A');
+    c.alignment = { horizontal: i >= 4 ? 'right' : (i === 0 || i === 3 ? 'center' : 'left'), vertical: 'middle' };
+    c.border = bordes;
+  });
+  cab.height = 22;
+  ws.views = [{ showGridLines: false, state: 'frozen', ySplit: filaCab }];
+  ws.pageSetup.printTitlesRow = `${filaCab}:${filaCab}`;
+
+  presupuesto.forEach((item, i) => {
+    fila++;
+    const isLong = item.textMode === 'long' && item.descLong;
+    const txt = isLong ? (item.res + '\n' + item.descLong) : item.res;
+    const r = ws.getRow(fila);
+    r.values = [i + 1, item.cod, txt, item.uni, item.qty, item.precio, { formula: `E${fila}*F${fila}`, result: item.qty * item.precio }];
+    for (let n = 1; n <= 7; n++) {
+      const c = r.getCell(n);
+      c.border = bordes;
+      c.alignment = { vertical: 'top', wrapText: n === 3, horizontal: n === 1 || n === 4 ? 'center' : (n >= 5 ? 'right' : 'left') };
+      if (i % 2) c.fill = relleno(GRIS);
+    }
+    r.getCell(2).font = { name: 'Consolas', size: 9 };
+    r.getCell(5).numFmt = '#,##0.###';
+    r.getCell(6).numFmt = EUR;
+    r.getCell(7).numFmt = EUR;
+    r.getCell(7).font = { bold: true };
+  });
+  const primera = filaCab + 1, ultima = fila;
+
+  // --- Totales (con fórmulas: se recalculan si cambias cantidades o precios) ---
+  const base = presupuesto.reduce((s, i) => s + i.qty * i.precio, 0);
+  const filaBase = fila + 2;
+  [
+    ['SUBTOTAL', { formula: `SUM(G${primera}:G${ultima})`, result: base }],
+    [`IVA (${ivaPct}%)`, { formula: `G${filaBase}*${ivaPct}/100`, result: base * ivaPct / 100 }],
+    ['TOTAL', { formula: `G${filaBase}+G${filaBase + 1}`, result: base * (1 + ivaPct / 100) }]
+  ].forEach(([etiqueta, valor], i) => {
+    const f = filaBase + i;
+    const total = i === 2;
+    ws.mergeCells(f, 5, f, 6);
+    const e = ws.getCell(f, 5);
+    const v = ws.getCell(f, 7);
+    e.value = etiqueta;
+    e.alignment = { horizontal: 'right' };
+    v.value = valor;
+    v.numFmt = EUR;
+    [e, v].forEach(c => {
+      c.font = { bold: true, size: total ? 12 : 11, color: { argb: total ? 'FFFFFFFF' : 'FF000000' } };
+      if (total) c.fill = relleno(NARANJA);
+    });
   });
 
-  XLSX.utils.book_append_sheet(wb, ws, 'Presupuesto');
-
-  // Second sheet: full item list reference
-  const refRows = [
-    ['CÓDIGO', 'UNIDAD', 'DESCRIPCIÓN', 'PRECIO (€)'],
-    ...presupuesto.map(item => {
-      const isLong = item.textMode === 'long' && item.descLong;
-      const txt = isLong ? (item.res + '\n' + item.descLong) : item.res;
-      return [item.cod, item.uni, txt, item.precio];
-    })
-  ];
-  const ws2 = XLSX.utils.aoa_to_sheet(refRows);
-  ws2['!cols'] = [{wch:14},{wch:8},{wch:50},{wch:14}];
-  XLSX.utils.book_append_sheet(wb, ws2, 'Partidas');
+  // --- Pie ---
+  const filaPie = filaBase + 4;
+  ws.mergeCells(filaPie, 1, filaPie, 7);
+  const pie = ws.getCell(filaPie, 1);
+  pie.value = 'Excavaciones y Servicios Arturo S.L. · NIF B47489612 · C/ Manzano, 2, 47320 Tudela de Duero (Valladolid) · 607 444 903 · www.obratudela.com';
+  pie.font = { size: 9, color: { argb: 'FF666666' } };
+  pie.alignment = { horizontal: 'center' };
 
   const filename = `${titulo.replace(/[^a-zA-Z0-9áéíóúñÁÉÍÓÚÑ ]/g,'_')}_${fecha}.xlsx`;
-  XLSX.writeFile(wb, filename);
+  const buf = await wb.xlsx.writeBuffer();
+  const url = URL.createObjectURL(new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
   toast('Excel exportado: ' + filename);
 }
 
@@ -1712,6 +1831,13 @@ function printPres() {
       <h1 style="margin:0 0 4px">${titulo}</h1>
       <div class="meta">Cliente: <strong>${cliente}</strong> &nbsp;·&nbsp; Fecha: <strong>${fecha}</strong></div>
     </div>
+    <div style="text-align:right;font-size:11px;line-height:1.5;color:#333">
+      <strong style="font-size:12px">Excavaciones y Servicios Arturo S.L.</strong><br>
+      NIF: B47489612<br>
+      Calle Manzano, 2 · 47320 Tudela de Duero (Valladolid)<br>
+      Tel. 607 444 903<br>
+      excavacionesart@gmail.com
+    </div>
   </div>
   ${obs ? `<div class="obs">${obs}</div><br>` : ''}
   <table>
@@ -1723,6 +1849,9 @@ function printPres() {
     <tr><td>IVA (${ivaPct}%)</td><td style="text-align:right">${fmt(iva)}</td></tr>
     <tr class="grand"><td>TOTAL</td><td style="text-align:right">${fmt(total)}</td></tr>
   </table></div>
+  <div style="clear:both;border-top:1px solid #ccc;padding-top:8px;font-size:10px;color:#666;text-align:center">
+    Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Calle Manzano, 2, 47320 Tudela de Duero (Valladolid) · 607 444 903 · www.obratudela.com
+  </div>
   <script>window.onload=()=>window.print()<\/script>
   </body></html>`);
   w.document.close();
