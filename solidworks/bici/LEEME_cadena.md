@@ -39,3 +39,11 @@ placa interior/exterior 0,2 · longitud de eje 16,7.
    (C = distancia entre ejes, p = 12,7, Z1/Z2 = dientes de plato y piñón).
 
 Datos que faltan: dientes del plato y del piñón, y distancia entre ejes.
+
+## Regla de trabajo (de Roberto)
+
+En SolidWorks no hace falta rehacer el ensamblaje entero: se modifica **una sola
+pieza** (editarla en contexto o abrirla aparte) y se vuelve a meter, o se
+sustituye con *Reemplazar componentes*. Hacer solo la pieza que toque (cadena
+semilla, plato, piñón, pedales) y guardar una versión nueva en vez de
+sobrescribir la original.
