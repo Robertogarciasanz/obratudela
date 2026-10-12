@@ -42,8 +42,11 @@ Datos que faltan: dientes del plato y del piñón, y distancia entre ejes.
 
 ## Regla de trabajo (de Roberto)
 
-En SolidWorks no hace falta rehacer el ensamblaje entero: se modifica **una sola
-pieza** (editarla en contexto o abrirla aparte) y se vuelve a meter, o se
-sustituye con *Reemplazar componentes*. Hacer solo la pieza que toque (cadena
-semilla, plato, piñón, pedales) y guardar una versión nueva en vez de
-sobrescribir la original.
+En SolidWorks no hace falta rehacer el ensamblaje entero. Se modifica **una sola
+pieza**: al terminar, SolidWorks pide guardarla y, una vez guardada, el
+ensamblaje la muestra ya cambiada **en su sitio** (mismo archivo, mismas
+relaciones de posición). Es el flujo normal: editar la pieza, guardar y listo.
+
+- Hacer solo la pieza que toque (cadena semilla, plato, piñón, pedales).
+- Si la pieza original es valiosa, guardar antes una copia de seguridad.
+- *Reemplazar componentes* solo hace falta si se cambia por **otro archivo** distinto.
