@@ -1,0 +1,21 @@
+# ObraTudela
+
+> Web de servicios de obra y excavación. Incluye una calculadora de presupuestos de construcción que usa una base de precios pública.
+
+## Calculadora de presupuestos
+
+- Página: https://www.obratudela.com/pages/calculadora-ia.html
+- El chat busca partidas por descripción de la obra y las muestra con su precio. El usuario elige las partidas y confirma para añadirlas al presupuesto.
+
+## Base de precios (datos)
+
+- Fichero: https://www.obratudela.com/data/base-precios.json.gz (gzip, unos 2 MB; sin comprimir: https://www.obratudela.com/data/base-precios.json, unos 28 MB)
+- Formato: array JSON de partidas. Cada partida tiene:
+  - `cod`: código de la partida (texto)
+  - `uni`: unidad de medida (m2, m3, m, ud, kg, h, etc.)
+  - `res`: resumen de la partida (texto)
+  - `precio`: precio unitario en euros, sin IVA (número)
+  - `grupo`: grupo de la base (MATERIALES, INSTALACIONES, DEMOLICION, MOVTIERRA, etc.)
+  - `desc` y `capitulo`/`subcapitulo` en algunas partidas, con descripción larga y clasificación
+- Total: 61.447 partidas.
+- Licencia y uso: consultar con el titular de la web antes de redistribuir la base.

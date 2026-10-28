@@ -531,12 +531,12 @@
     <a href="index.html" class="btn-back">← Volver</a>
   </header>
 
-  <div class="container">
+  <main class="container">
     <!-- Panel de Chat -->
     <div class="panel">
-      <h2 class="panel-title">🤖 Asistente de Presupuestos</h2>
+      <h1 class="panel-title">🤖 Asistente de Presupuestos</h1>
 
-      <div class="chat-container" id="chatContainer">
+      <div class="chat-container" id="chatContainer" aria-live="polite" aria-relevant="additions">
         <div class="message system">
           👋 ¡Hola! Soy tu asistente de presupuestos. Describe el trabajo que necesitas y buscaré las partidas adecuadas en nuestra base de datos con 61.447 precios de construcción.
         </div>
@@ -574,7 +574,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <script type="module" src="../js/main.js?v=2.5"></script>
   <script type="module">
