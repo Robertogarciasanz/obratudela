@@ -368,16 +368,6 @@
         document.getElementById('dibujoOverlay').style.display = 'none';
     }
 
-    function descargarDibujo() {
-        if (!curvasInfo) return;
-        var blob = new Blob([construirDibujoSVG()], { type: 'image/svg+xml' });
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url; a.download = 'curvas_nivel_' + new Date().toISOString().slice(0, 10) + '.svg';
-        a.click();
-        setTimeout(function() { URL.revokeObjectURL(url); }, 10000);
-    }
-
     function toggleCurvas() {
         // Con las curvas ya calculadas, el botón solo vuelve a abrir el dibujo
         if (capaCurvas) { abrirDibujo(); return; }
@@ -851,12 +841,6 @@
         const btnCurvas = document.getElementById('btnCurvas');
         if (btnCurvas) btnCurvas.addEventListener('click', toggleCurvas);
         document.getElementById('btnDibujoCerrar').addEventListener('click', cerrarDibujo);
-        document.getElementById('btnDibujoDescargar').addEventListener('click', descargarDibujo);
-        document.getElementById('btnDibujoQuitar').addEventListener('click', function() {
-            limpiarCurvas();
-            cerrarDibujo();
-            document.getElementById('status').innerText = 'Curvas de nivel quitadas del mapa.';
-        });
         document.addEventListener('keydown', function(e) { if (e.key === 'Escape') cerrarDibujo(); });
 
         const btnGenerarPlano = document.querySelector('.btn-print');
