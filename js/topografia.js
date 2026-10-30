@@ -173,7 +173,7 @@
         var p =marcadores.map(function(m) { return m.getLatLng(); });
         var html = "";
         p.forEach(function(pt, i) {
-            html += '<tr><td>' + String.fromCharCode(65+i) + '</td><td>' + pt.lat.toFixed(6) + '</td><td>' + pt.lng.toFixed(6) + '</td><td>' + (marcadores[i]._fuente || '—') + '</td></tr>';
+            html += '<tr><td>' + String.fromCharCode(65+i) + '</td><td>' + pt.lat.toFixed(6) + '</td><td>' + pt.lng.toFixed(6) + '</td><td>' + (marcadores[i]._fuente || '—') + '</td><td class="cota">—</td></tr>';
         });
         document.getElementById('cuerpoTabla').innerHTML = html;
         if (poligono) map.removeLayer(poligono);
@@ -338,6 +338,8 @@
         p.forEach(function(q, i) {
             t.push('<circle cx="' + X(q.lng) + '" cy="' + Y(q.lat) + '" r="12" fill="#e74c3c" stroke="#fff" stroke-width="2.5"/>');
             t.push('<text x="' + X(q.lng) + '" y="' + Y(q.lat) + '" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="bold" fill="#fff">' + String.fromCharCode(65 + i) + '</text>');
+            var cv = curvasInfo.cotasVertices[i];
+            if (!isNaN(cv)) t.push('<text x="' + X(q.lng) + '" y="' + (parseFloat(Y(q.lat)) + 28) + '" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50" ' + halo + '>' + cv.toFixed(1) + ' m</text>');
         });
 
         // Pie: datos, norte y escala
@@ -517,6 +519,9 @@
             }).addTo(capaCurvas);
         });
         var b = document.getElementById('btnCurvas');
+        // Cota de cada punto en la tabla de coordenadas
+        var celdasCota = document.querySelectorAll('#cuerpoTabla td.cota');
+        cotasVertices.forEach(function(cv, i) { if (celdasCota[i]) celdasCota[i].innerText = isNaN(cv) ? '—' : cv.toFixed(1) + ' m'; });
         b.classList.add('activo'); b.innerText = '⛰️ VER CURVAS';
         document.getElementById('status').innerText = '⛰️ Curvas cada ' + eq + ' m · cotas de ' + zmin.toFixed(1) + ' a ' + zmax.toFixed(1) + ' m (MDT05 IGN, aproximado)';
         abrirDibujo();
@@ -702,15 +707,20 @@
                 ty += 2;
                 doc.setFillColor(44,62,80); doc.rect(tx0, ty, tablaW, 7, 'F');
                 doc.setTextColor(255,255,255); doc.setFontSize(8); doc.setFont('helvetica','bold');
-                var colX = [tx0+1, tx0+8, tx0+33, tx0+58];
-                ['Vért.','Latitud','Longitud','Fuente'].forEach(function(h,i){ doc.text(h, colX[i], ty+5); });
+                var conCota = !!curvasInfo;
+                var colX = conCota ? [tx0+1, tx0+7, tx0+27, tx0+47, tx0+62] : [tx0+1, tx0+8, tx0+33, tx0+58];
+                (conCota ? ['Vért.','Latitud','Longitud','Cota','Fuente'] : ['Vért.','Latitud','Longitud','Fuente']).forEach(function(h,i){ doc.text(h, colX[i], ty+5); });
                 ty += 7;
                 doc.setFont('helvetica','normal'); doc.setFontSize(8);
                 marcadores.forEach(function(m, i) {
                     var ll = m.getLatLng(), lbl = String.fromCharCode(65+i);
                     if (i%2===0) { doc.setFillColor(245,245,245); doc.rect(tx0, ty, tablaW, 6, 'F'); }
                     doc.setTextColor(50,50,50);
-                    [lbl, ll.lat.toFixed(6), ll.lng.toFixed(6), m._fuente||'—'].forEach(function(v,c){ doc.text(v, colX[c], ty+4.5); });
+                    var cotaV = conCota ? curvasInfo.cotasVertices[i] : NaN;
+                    var celdas = [lbl, ll.lat.toFixed(6), ll.lng.toFixed(6)];
+                    if (conCota) celdas.push(isNaN(cotaV) ? '—' : cotaV.toFixed(1) + ' m');
+                    celdas.push(m._fuente||'—');
+                    celdas.forEach(function(v,c){ doc.text(v, colX[c], ty+4.5); });
                     ty += 6;
                 });
                 doc.setFontSize(7); doc.setTextColor(150,150,150);
