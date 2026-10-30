@@ -309,7 +309,7 @@
         });
 
         // Perímetro
-        t.push('<polygon points="' + p.map(function(q) { return X(q.lng) + ',' + Y(q.lat); }).join(' ') + '" fill="rgba(192,57,43,0.05)" stroke="#c0392b" stroke-width="3" stroke-linejoin="round"/>');
+        t.push('<polygon points="' + p.map(function(q) { return X(q.lng) + ',' + Y(q.lat); }).join(' ') + '" fill="none" stroke="#c0392b" stroke-width="3" stroke-linejoin="round"/>');
 
         // Distancias de cada lado, giradas según el lado y hacia fuera de la parcela
         var cx = p.reduce(function(a, q) { return a + parseFloat(X(q.lng)); }, 0) / p.length;
