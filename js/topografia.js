@@ -371,8 +371,17 @@
             var f = {
                 clase: clase === 'UR' ? 'Urbano' : (clase === 'RU' ? 'Rústico' : clase),
                 direccion: tag('ldt'), uso: tag('luso'), sfc: parseFloat(tag('sfc')) || 0, anio: tag('ant'),
-                inmuebles: lista('rcdnp').length, construcciones: [], cultivos: []
+                inmuebles: lista('rcdnp').length, construcciones: [], cultivos: [], urlDirecta: ''
             };
+            // Con la referencia larga (20 caracteres) la Sede abre la ficha directamente, sin lista intermedia
+            var rc = xml.getElementsByTagName('bico')[0] ? tag('rc', xml.getElementsByTagName('bico')[0]) : '';
+            if (rc) {
+                var larga = tag('pc1') + tag('pc2') + tag('car') + tag('cc1') + tag('cc2');
+                if (larga.length === 20 && tag('cp') && tag('cmc')) {
+                    f.urlDirecta = 'https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCConCiud.aspx?del=' + encodeURIComponent(tag('cp')) +
+                        '&mun=' + encodeURIComponent(tag('cmc')) + '&UrbRus=&RefC=' + encodeURIComponent(larga) + '&ZV=NO';
+                }
+            }
             lista('cons').forEach(function(c) { f.construcciones.push({ uso: tag('lcd', c), sup: parseFloat(tag('stl', c)) || 0 }); });
             lista('spr').forEach(function(s) { f.cultivos.push({ cultivo: tag('dcc', s), sup: parseFloat(tag('ssp', s)) || 0 }); });
             return f;
@@ -416,7 +425,8 @@
             fila.appendChild(k); fila.appendChild(document.createTextNode(par[1])); f.appendChild(fila);
         });
         var a = document.createElement('a');
-        a.href = 'https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCListaBienes.aspx?rc1=' + encodeURIComponent(refCatastral.slice(0, 7)) + '&rc2=' + encodeURIComponent(refCatastral.slice(7, 14));
+        a.href = (fichaCat && fichaCat.urlDirecta) ||
+            'https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCListaBienes.aspx?rc1=' + encodeURIComponent(refCatastral.slice(0, 7)) + '&rc2=' + encodeURIComponent(refCatastral.slice(7, 14));
         a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Ver la ficha completa en la Sede del Catastro →';
         f.appendChild(a);
         f.style.display = 'block';
