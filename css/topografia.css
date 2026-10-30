@@ -69,6 +69,16 @@ th, td { border: 1px solid var(--border); padding: 4px; text-align: left; }
 .dialog-btn-cancel { background: var(--surface2); color: var(--muted); }
 .dialog-btn-cancel:hover { background: var(--border); }
 
+/* ── DIBUJO LIMPIO DE CURVAS DE NIVEL ── */
+.dibujo-overlay { display: none; position: fixed; inset: 0; z-index: 9000; background: #fff; flex-direction: column; }
+.dibujo-barra { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; padding: 8px 12px; background: #2c3e50; color: #fff; font-size: 14px; }
+.dibujo-botones { display: flex; gap: 6px; flex-wrap: wrap; }
+.dibujo-btn { border: none; border-radius: 6px; padding: 8px 12px; font-size: 13px; font-weight: bold; cursor: pointer; background: #ecf0f1; color: #2c3e50; }
+.dibujo-btn:hover { background: #fff; }
+.dibujo-btn-cerrar { background: var(--orange); color: #000; }
+.dibujo-lienzo { flex: 1; min-height: 0; padding: 8px; display: flex; align-items: center; justify-content: center; }
+.dibujo-lienzo svg { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+
 /* ── MÓVIL ── */
 @media (max-width: 600px) {
     .btn { font-size: 13px; min-height: 48px; padding: 10px 4px; }

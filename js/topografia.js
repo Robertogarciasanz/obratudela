@@ -277,12 +277,110 @@
         if (b) { b.classList.remove('activo'); b.innerText = '⛰️ CURVAS'; }
     }
 
-    function toggleCurvas() {
-        if (capaCurvas) {
-            limpiarCurvas();
-            document.getElementById('status').innerText = 'Curvas de nivel ocultas.';
-            return;
+    // Dibujo limpio (SVG) con perímetro, curvas, cotas, norte y escala. Sirve para la vista en pantalla y la descarga.
+    function construirDibujoSVG() {
+        var p = marcadores.map(function(m) { return m.getLatLng(); });
+        var latMed = p.reduce(function(a, q) { return a + q.lat; }, 0) / p.length;
+        var kx = Math.cos(latMed * Math.PI / 180), MD = 111320;
+        var lons = p.map(function(q) { return q.lng; }), lats = p.map(function(q) { return q.lat; });
+        var lon0 = Math.min.apply(null, lons), lat1 = Math.max.apply(null, lats);
+        var anchoM = (Math.max.apply(null, lons) - lon0) * kx * MD;
+        var altoM  = (lat1 - Math.min.apply(null, lats)) * MD;
+
+        var W = 1000, mg = 70, pie = 110;
+        var esc = Math.min((W - 2 * mg) / anchoM, 700 / altoM); // px por metro
+        var H = Math.round(altoM * esc + 2 * mg + pie);
+        function X(lng) { return (mg + (lng - lon0) * kx * MD * esc).toFixed(1); }
+        function Y(lat) { return (mg + (lat1 - lat) * MD * esc).toFixed(1); }
+        var halo = 'paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round"';
+        var t = [];
+        t.push('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + W + ' ' + H + '" width="' + W + '" height="' + H + '" font-family="Helvetica,Arial,sans-serif">');
+        t.push('<rect width="' + W + '" height="' + H + '" fill="#fff"/>');
+        t.push('<rect x="8" y="8" width="' + (W - 16) + '" height="' + (H - 16) + '" fill="none" stroke="#d0d0d0" stroke-width="1"/>');
+
+        // Curvas: finas las normales, gruesas las principales
+        curvasInfo.niveles.forEach(function(n) {
+            var d = n.segs.map(function(sg) { return 'M' + X(sg[1]) + ' ' + Y(sg[0]) + 'L' + X(sg[3]) + ' ' + Y(sg[2]); }).join('');
+            t.push('<path d="' + d + '" fill="none" stroke="' + (n.principal ? '#7a4a1c' : '#c19a6b') + '" stroke-width="' + (n.principal ? 2 : 1) + '" stroke-linecap="round"/>');
+        });
+        curvasInfo.niveles.forEach(function(n) {
+            if (!n.principal) return;
+            t.push('<text x="' + X(n.etiqueta[1]) + '" y="' + Y(n.etiqueta[0]) + '" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="bold" fill="#5a3410" ' + halo + '>' + n.z + ' m</text>');
+        });
+
+        // Perímetro
+        t.push('<polygon points="' + p.map(function(q) { return X(q.lng) + ',' + Y(q.lat); }).join(' ') + '" fill="rgba(192,57,43,0.05)" stroke="#c0392b" stroke-width="3" stroke-linejoin="round"/>');
+
+        // Distancias de cada lado, giradas según el lado y hacia fuera de la parcela
+        var cx = p.reduce(function(a, q) { return a + parseFloat(X(q.lng)); }, 0) / p.length;
+        var cy = p.reduce(function(a, q) { return a + parseFloat(Y(q.lat)); }, 0) / p.length;
+        for (var i = 0; i < p.length; i++) {
+            var j = (i + 1) % p.length;
+            var x1 = parseFloat(X(p[i].lng)), y1 = parseFloat(Y(p[i].lat)), x2 = parseFloat(X(p[j].lng)), y2 = parseFloat(Y(p[j].lat));
+            var dxm = (p[j].lng - p[i].lng) * kx * MD, dym = (p[j].lat - p[i].lat) * MD;
+            var mx = (x1 + x2) / 2, my = (y1 + y2) / 2, len = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1)) || 1;
+            var nx = -(y2 - y1) / len, ny = (x2 - x1) / len;
+            if ((mx - cx) * nx + (my - cy) * ny < 0) { nx = -nx; ny = -ny; }
+            var ang = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+            if (ang > 90 || ang < -90) ang += 180;
+            var tx = mx + nx * 14, ty = my + ny * 14;
+            t.push('<text transform="translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ') rotate(' + ang.toFixed(1) + ')" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#2c3e50" ' + halo + '>' + Math.sqrt(dxm*dxm + dym*dym).toFixed(1) + ' m</text>');
         }
+
+        // Punto más alto y más bajo de la parcela
+        [[curvasInfo.posMax, curvasInfo.zmax, 'Máx', '#c0392b', -1], [curvasInfo.posMin, curvasInfo.zmin, 'Mín', '#2471a3', 1]].forEach(function(e) {
+            var ex = X(e[0][1]), ey = Y(e[0][0]), s = e[4]; // s=-1: triángulo hacia arriba, 1: hacia abajo
+            t.push('<polygon points="' + ex + ',' + (parseFloat(ey) + s * 9) + ' ' + (parseFloat(ex) - 9) + ',' + (parseFloat(ey) - s * 7) + ' ' + (parseFloat(ex) + 9) + ',' + (parseFloat(ey) - s * 7) + '" fill="' + e[3] + '" stroke="#fff" stroke-width="2"/>');
+            t.push('<text x="' + ex + '" y="' + (parseFloat(ey) + (s < 0 ? -18 : 28)) + '" text-anchor="middle" font-size="15" font-weight="bold" fill="' + e[3] + '" ' + halo + '>' + e[2] + ' ' + e[1].toFixed(1) + ' m</text>');
+        });
+
+        // Vértices
+        p.forEach(function(q, i) {
+            t.push('<circle cx="' + X(q.lng) + '" cy="' + Y(q.lat) + '" r="12" fill="#e74c3c" stroke="#fff" stroke-width="2.5"/>');
+            t.push('<text x="' + X(q.lng) + '" y="' + Y(q.lat) + '" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="bold" fill="#fff">' + String.fromCharCode(65 + i) + '</text>');
+        });
+
+        // Pie: datos, norte y escala
+        var py = H - pie + 30;
+        t.push('<line x1="' + mg + '" y1="' + (H - pie + 8) + '" x2="' + (W - mg) + '" y2="' + (H - pie + 8) + '" stroke="#d0d0d0"/>');
+        t.push('<g font-size="15" fill="#2c3e50">');
+        t.push('<text x="' + mg + '" y="' + py + '" font-weight="bold">Superficie: ' + document.getElementById('areaDisplay').innerText.replace(/&/g, '&amp;') + '</text>');
+        t.push('<text x="' + mg + '" y="' + (py + 22) + '">Curvas cada ' + curvasInfo.eq + ' m · cotas de ' + curvasInfo.zmin.toFixed(1) + ' a ' + curvasInfo.zmax.toFixed(1) + ' m · desnivel ' + (curvasInfo.zmax - curvasInfo.zmin).toFixed(1) + ' m</text>');
+        t.push('</g><text x="' + mg + '" y="' + (py + 42) + '" font-size="11" fill="#888">Aproximado: MDT05 (rejilla de 5 m) del IGN-CNIG, CC BY 4.0. No sustituye a un levantamiento topográfico.</text>');
+        var largo = [5, 10, 20, 50, 100, 200, 500].filter(function(l) { return l * esc <= 200; }).pop() || 5;
+        var sx = W - mg - largo * esc - 60, sy = py + 12;
+        t.push('<g stroke="#2c3e50" stroke-width="2"><line x1="' + sx + '" y1="' + sy + '" x2="' + (sx + largo * esc) + '" y2="' + sy + '"/><line x1="' + sx + '" y1="' + (sy - 5) + '" x2="' + sx + '" y2="' + (sy + 5) + '"/><line x1="' + (sx + largo * esc) + '" y1="' + (sy - 5) + '" x2="' + (sx + largo * esc) + '" y2="' + (sy + 5) + '"/></g>');
+        t.push('<text x="' + sx + '" y="' + (sy + 22) + '" font-size="13" fill="#2c3e50">' + largo + ' m</text>');
+        var nxp = W - mg - 20;
+        t.push('<g fill="#2c3e50" stroke="#2c3e50"><line x1="' + nxp + '" y1="' + (py + 22) + '" x2="' + nxp + '" y2="' + (py - 12) + '" stroke-width="2.5"/><polygon points="' + nxp + ',' + (py - 20) + ' ' + (nxp - 7) + ',' + (py - 6) + ' ' + (nxp + 7) + ',' + (py - 6) + '" stroke="none"/></g>');
+        t.push('<text x="' + nxp + '" y="' + (py - 26) + '" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">N</text>');
+        t.push('</svg>');
+        return t.join('');
+    }
+
+    function abrirDibujo() {
+        if (!curvasInfo) return;
+        document.getElementById('dibujoSvg').innerHTML = construirDibujoSVG();
+        document.getElementById('dibujoOverlay').style.display = 'flex';
+    }
+
+    function cerrarDibujo() {
+        document.getElementById('dibujoOverlay').style.display = 'none';
+    }
+
+    function descargarDibujo() {
+        if (!curvasInfo) return;
+        var blob = new Blob([construirDibujoSVG()], { type: 'image/svg+xml' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url; a.download = 'curvas_nivel_' + new Date().toISOString().slice(0, 10) + '.svg';
+        a.click();
+        setTimeout(function() { URL.revokeObjectURL(url); }, 10000);
+    }
+
+    function toggleCurvas() {
+        // Con las curvas ya calculadas, el botón solo vuelve a abrir el dibujo
+        if (capaCurvas) { abrirDibujo(); return; }
         if (marcadores.length < 3) {
             dlgAlert("Marca al menos 3 puntos para delimitar la parcela y calcular sus curvas de nivel.");
             return;
@@ -308,14 +406,15 @@
 
     function dibujarCurvas(g, p) {
         // Cotas mínima y máxima dentro de la parcela
-        var zmin = Infinity, zmax = -Infinity;
+        var zmin = Infinity, zmax = -Infinity, posMin = null, posMax = null;
         for (var r = 0; r < g.nr; r++) {
             for (var c = 0; c < g.nc; c++) {
                 var z = g.z[r * g.nc + c];
                 if (isNaN(z)) continue;
-                if (!dentroPoligono(g.yll + (g.nr - r - 0.5) * g.dy, g.xll + (c + 0.5) * g.dx, p)) continue;
-                if (z < zmin) zmin = z;
-                if (z > zmax) zmax = z;
+                var latC = g.yll + (g.nr - r - 0.5) * g.dy, lonC = g.xll + (c + 0.5) * g.dx;
+                if (!dentroPoligono(latC, lonC, p)) continue;
+                if (z < zmin) { zmin = z; posMin = [latC, lonC]; }
+                if (z > zmax) { zmax = z; posMax = [latC, lonC]; }
             }
         }
         if (zmin === Infinity) {
@@ -358,10 +457,22 @@
             }
             niveles.push({ z: nivel, principal: principal, segs: segs, etiqueta: etiqueta });
         }
-        curvasInfo = { eq: eq, zmin: zmin, zmax: zmax, niveles: niveles };
+        curvasInfo = { eq: eq, zmin: zmin, zmax: zmax, posMin: posMin, posMax: posMax, niveles: niveles };
+        // Marcas en el mapa del punto más alto y del más bajo
+        [[posMax, zmax, '▲ Máx', '#c0392b'], [posMin, zmin, '▼ Mín', '#2471a3']].forEach(function(e) {
+            L.marker(e[0], {
+                interactive: false,
+                icon: L.divIcon({
+                    className: '',
+                    html: '<div style="transform:translate(-50%,-50%);white-space:nowrap;background:' + e[3] + ';color:#fff;font:bold 11px sans-serif;padding:2px 6px;border-radius:10px;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.5)">' + e[2] + ' ' + e[1].toFixed(1) + ' m</div>',
+                    iconSize: [0, 0]
+                })
+            }).addTo(capaCurvas);
+        });
         var b = document.getElementById('btnCurvas');
-        b.classList.add('activo'); b.innerText = '⛰️ OCULTAR';
+        b.classList.add('activo'); b.innerText = '⛰️ VER CURVAS';
         document.getElementById('status').innerText = '⛰️ Curvas cada ' + eq + ' m · cotas de ' + zmin.toFixed(1) + ' a ' + zmax.toFixed(1) + ' m (MDT05 IGN, aproximado)';
+        abrirDibujo();
     }
 
     function generarPlanoJPG() {
@@ -647,6 +758,15 @@
             if (n.principal) doc.text(String(n.z), X(n.etiqueta[1]), Y(n.etiqueta[0]), {align:'center'});
         });
 
+        // Punto más alto y más bajo
+        [[curvasInfo.posMax, curvasInfo.zmax, 'Máx', [192,57,43], -1], [curvasInfo.posMin, curvasInfo.zmin, 'Mín', [36,113,163], 1]].forEach(function(e) {
+            var ex = X(e[0][1]), ey = Y(e[0][0]), s = e[4];
+            doc.setFillColor(e[3][0], e[3][1], e[3][2]); doc.setDrawColor(255,255,255); doc.setLineWidth(0.3);
+            doc.triangle(ex, ey + s * 2.4, ex - 2.4, ey - s * 1.8, ex + 2.4, ey - s * 1.8, 'FD');
+            doc.setFontSize(8); doc.setFont('helvetica','bold'); doc.setTextColor(e[3][0], e[3][1], e[3][2]);
+            doc.text(e[2] + ' ' + e[1].toFixed(1) + ' m', ex, ey + (s < 0 ? -3.5 : 6), {align:'center'});
+        });
+
         // Perímetro, distancias y vértices
         doc.setDrawColor(200,30,30); doc.setLineWidth(0.7);
         for (var i = 0; i < p.length; i++) {
@@ -730,6 +850,14 @@
 
         const btnCurvas = document.getElementById('btnCurvas');
         if (btnCurvas) btnCurvas.addEventListener('click', toggleCurvas);
+        document.getElementById('btnDibujoCerrar').addEventListener('click', cerrarDibujo);
+        document.getElementById('btnDibujoDescargar').addEventListener('click', descargarDibujo);
+        document.getElementById('btnDibujoQuitar').addEventListener('click', function() {
+            limpiarCurvas();
+            cerrarDibujo();
+            document.getElementById('status').innerText = 'Curvas de nivel quitadas del mapa.';
+        });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') cerrarDibujo(); });
 
         const btnGenerarPlano = document.querySelector('.btn-print');
         if (btnGenerarPlano) btnGenerarPlano.addEventListener('click', generarPlanoJPG);

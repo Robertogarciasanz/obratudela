@@ -124,6 +124,19 @@
     </div>
 </div>
 
+<!-- DIBUJO LIMPIO DE CURVAS DE NIVEL (vista sobre el mapa) -->
+<div id="dibujoOverlay" class="dibujo-overlay" role="dialog" aria-label="Plano de curvas de nivel">
+    <div class="dibujo-barra">
+        <strong>⛰️ Curvas de nivel</strong>
+        <span class="dibujo-botones">
+            <button id="btnDibujoDescargar" class="dibujo-btn">💾 Descargar</button>
+            <button id="btnDibujoQuitar" class="dibujo-btn">🧹 Quitar del mapa</button>
+            <button id="btnDibujoCerrar" class="dibujo-btn dibujo-btn-cerrar">✕ Cerrar</button>
+        </span>
+    </div>
+    <div id="dibujoSvg" class="dibujo-lienzo"></div>
+</div>
+
 <div class="controles">
     <div class="autor">
         <span>📐 <strong>Topografía Pro</strong> &nbsp;·&nbsp; ObraTudela &nbsp;·&nbsp; v2.1</span>
