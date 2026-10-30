@@ -394,6 +394,61 @@
         });
     }
 
+    // Interpola y suaviza la rejilla de 5 m (bicúbica Catmull-Rom tras un suavizado leve) para
+    // que las curvas salgan limpias y sin escalones. Devuelve otra rejilla con celdas f veces menores.
+    function suavizarMDT(g) {
+        var f = Math.max(1, Math.min(4, Math.floor(Math.sqrt(1500000 / (g.nc * g.nr)))));
+        if (f === 1) return g;
+        var nc = g.nc, nr = g.nr, z = g.z, base = new Array(nc * nr);
+        // Suavizado 3x3 [1 2 1] solo donde todos los vecinos tienen dato
+        for (var r = 0; r < nr; r++) {
+            for (var c = 0; c < nc; c++) {
+                var s = 0, w = 0, ok = true;
+                for (var i = -1; i <= 1 && ok; i++) {
+                    for (var j = -1; j <= 1; j++) {
+                        var rr = Math.min(nr - 1, Math.max(0, r + i)), cc = Math.min(nc - 1, Math.max(0, c + j));
+                        var v = z[rr * nc + cc];
+                        if (isNaN(v)) { ok = false; break; }
+                        var k = (i === 0 ? 2 : 1) * (j === 0 ? 2 : 1);
+                        s += v * k; w += k;
+                    }
+                }
+                base[r * nc + c] = ok ? s / w : z[r * nc + c];
+            }
+        }
+        function cr(a, b, c, d, t) { // Catmull-Rom entre b y c
+            return b + 0.5 * t * (c - a + t * (2 * a - 5 * b + 4 * c - d + t * (3 * (b - c) + d - a)));
+        }
+        function val(r, c) { return base[Math.min(nr - 1, Math.max(0, r)) * nc + Math.min(nc - 1, Math.max(0, c))]; }
+        var nc2 = nc * f, nr2 = nr * f, z2 = new Array(nc2 * nr2);
+        for (var r2 = 0; r2 < nr2; r2++) {
+            var u = (r2 + 0.5) / f - 0.5, r0 = Math.floor(u), tv = u - r0;
+            for (var c2 = 0; c2 < nc2; c2++) {
+                var x = (c2 + 0.5) / f - 0.5, c0 = Math.floor(x), th = x - c0;
+                var centro = base[Math.min(nr - 1, Math.max(0, Math.round(u))) * nc + Math.min(nc - 1, Math.max(0, Math.round(x)))];
+                if (isNaN(centro)) { z2[r2 * nc2 + c2] = NaN; continue; }
+                var fila = [];
+                for (var i = -1; i <= 2; i++) {
+                    var q = [];
+                    for (var j = -1; j <= 2; j++) { var v = val(r0 + i, c0 + j); q.push(isNaN(v) ? centro : v); }
+                    fila.push(cr(q[0], q[1], q[2], q[3], th));
+                }
+                z2[r2 * nc2 + c2] = cr(fila[0], fila[1], fila[2], fila[3], tv);
+            }
+        }
+        return { nc: nc2, nr: nr2, dx: g.dx / f, dy: g.dy / f, xll: g.xll, yll: g.yll, z: z2 };
+    }
+
+    // Altura en un punto (interpolación bilineal de la rejilla original)
+    function cotaEn(g, lat, lon) {
+        var x = (lon - g.xll) / g.dx - 0.5, y = g.nr - (lat - g.yll) / g.dy - 0.5;
+        var c0 = Math.max(0, Math.min(g.nc - 2, Math.floor(x))), r0 = Math.max(0, Math.min(g.nr - 2, Math.floor(y)));
+        var tx = Math.min(1, Math.max(0, x - c0)), ty = Math.min(1, Math.max(0, y - r0));
+        var a = g.z[r0 * g.nc + c0], b = g.z[r0 * g.nc + c0 + 1], c = g.z[(r0 + 1) * g.nc + c0], d = g.z[(r0 + 1) * g.nc + c0 + 1];
+        if ([a, b, c, d].some(isNaN)) return NaN;
+        return (a * (1 - tx) + b * tx) * (1 - ty) + (c * (1 - tx) + d * tx) * ty;
+    }
+
     function dibujarCurvas(g, p) {
         // Cotas mínima y máxima dentro de la parcela
         var zmin = Infinity, zmax = -Infinity, posMin = null, posMax = null;
@@ -418,14 +473,15 @@
             dlgAlert("El terreno es prácticamente plano: desnivel de " + rango.toFixed(2) + " m según el modelo de 5 m.");
             return;
         }
-        // Equidistancia: la menor que deje como mucho ~20 curvas
-        var eq = [0.5, 1, 2, 5, 10, 20, 50].filter(function(s) { return rango / s <= 20; })[0] || 100;
+        // Equidistancia: la menor que deje como mucho ~40 curvas
+        var eq = [0.5, 1, 2, 5, 10, 20, 50].filter(function(s) { return rango / s <= 40; })[0] || 100;
+        var gs = suavizarMDT(g); // rejilla fina y suave solo para trazar las curvas
 
         capaCurvas = L.layerGroup().addTo(map);
         var niveles = [];
         for (var k = Math.ceil(zmin / eq); k * eq <= zmax; k++) {
             var nivel = k * eq;
-            var segs = segmentosNivel(g, nivel).filter(function(sg) {
+            var segs = segmentosNivel(gs, nivel).filter(function(sg) {
                 return dentroPoligono((sg[0] + sg[2]) / 2, (sg[1] + sg[3]) / 2, p);
             });
             if (!segs.length) continue;
@@ -447,7 +503,8 @@
             }
             niveles.push({ z: nivel, principal: principal, segs: segs, etiqueta: etiqueta });
         }
-        curvasInfo = { eq: eq, zmin: zmin, zmax: zmax, posMin: posMin, posMax: posMax, niveles: niveles };
+        var cotasVertices = p.map(function(q) { return cotaEn(g, q.lat, q.lng); });
+        curvasInfo = { eq: eq, zmin: zmin, zmax: zmax, posMin: posMin, posMax: posMax, niveles: niveles, cotasVertices: cotasVertices };
         // Marcas en el mapa del punto más alto y del más bajo
         [[posMax, zmax, '▲ Máx', '#c0392b'], [posMin, zmin, '▼ Mín', '#2471a3']].forEach(function(e) {
             L.marker(e[0], {
@@ -738,6 +795,7 @@
         doc.rect(M, 20, PW - M * 2 - 70, PH - 20 - M);
 
         // Curvas de nivel (marrón: finas las normales, gruesas las principales)
+        doc.setLineCap('round'); doc.setLineJoin('round');
         doc.setDrawColor(150,100,50);
         curvasInfo.niveles.forEach(function(n) {
             doc.setLineWidth(n.principal ? 0.35 : 0.15);
@@ -783,7 +841,22 @@
         doc.text('Equidistancia: ' + curvasInfo.eq + ' m', px, py); py += 5;
         doc.text('Cota mínima: ' + curvasInfo.zmin.toFixed(1) + ' m', px, py); py += 5;
         doc.text('Cota máxima: ' + curvasInfo.zmax.toFixed(1) + ' m', px, py); py += 5;
-        doc.text('Desnivel: ' + (curvasInfo.zmax - curvasInfo.zmin).toFixed(1) + ' m', px, py); py += 8;
+        doc.text('Desnivel: ' + (curvasInfo.zmax - curvasInfo.zmin).toFixed(1) + ' m', px, py); py += 7;
+
+        // Vértices con su cota
+        doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(44,62,80);
+        doc.text('Vért.   Latitud        Longitud        Cota', px, py); py += 1.5;
+        doc.setDrawColor(200,200,200); doc.setLineWidth(0.2); doc.line(px, py, px + 66, py); py += 3.5;
+        doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(50,50,50);
+        p.forEach(function(q, i) {
+            var cota = curvasInfo.cotasVertices[i];
+            doc.text(String.fromCharCode(65 + i), px + 1, py);
+            doc.text(q.lat.toFixed(6), px + 9, py);
+            doc.text(q.lng.toFixed(6), px + 29, py);
+            doc.text(isNaN(cota) ? '—' : cota.toFixed(1) + ' m', px + 66, py, {align:'right'});
+            py += 4;
+        });
+        py += 4;
         doc.setFontSize(7); doc.setTextColor(120,120,120);
         doc.text('Curvas aproximadas a partir del MDT05', px, py); py += 3.5;
         doc.text('(rejilla de 5 m) del IGN-CNIG, CC BY 4.0.', px, py); py += 3.5;
