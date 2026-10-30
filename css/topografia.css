@@ -4,6 +4,12 @@ body { display: flex; flex-direction: column; }
 #map { flex: 1; width: 100%; border-bottom: 2px solid var(--border); }
 #info { padding: 12px; background: var(--surface); z-index: 1000; max-height: 35%; overflow-y: auto; border-radius: 15px 15px 0 0; }
 
+/* Cabecera: título + enlaces de navegación */
+.autor { width: 100%; display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); }
+.autor span { flex: 1; min-width: 0; }
+.btn-volver { color: var(--text); text-decoration: none; font-size: 12px; font-weight: bold; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; background: var(--surface2); white-space: nowrap; }
+.btn-volver:hover { border-color: var(--orange); color: var(--orange2); }
+
 .btn { border: 1px solid transparent; padding: 12px 5px; border-radius: 6px; font-weight: bold; font-size: 12px; flex: 1; min-width: 80px; text-align: center; cursor: pointer; transition: background 0.2s, color 0.2s; }
 .btn-seguir  { background: #e6f7f4; color: #0f766e; border-color: #16a085; }
 .btn-seguir.activo { background: #16a085; color: #fff; box-shadow: 0 0 0 3px rgba(22,160,133,0.35); }

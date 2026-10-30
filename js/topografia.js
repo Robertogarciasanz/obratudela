@@ -140,7 +140,9 @@
         m.on('click', function(e) {
             L.DomEvent.stopPropagation(e);
             (async function() {
-                if (await dlgConfirm("¿Borrar punto " + label + "?")) {
+                // La letra puede haber cambiado si se borró un punto anterior
+                var letra = String.fromCharCode(65 + marcadores.indexOf(m));
+                if (await dlgConfirm("¿Borrar punto " + letra + "?")) {
                     map.removeLayer(m);
                     marcadores = marcadores.filter(function(i) { return i !== m; });
                     reconstruirIconos();
@@ -197,7 +199,10 @@
             var s = document.createElement('script');
             s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
             s.onload = function() { _generarPDF(); };
-            s.onerror = function() { dlgAlert('Error cargando jsPDF. Comprueba la conexión.'); };
+            s.onerror = function() {
+                document.getElementById('status').innerText = '⚠️ No se pudo cargar jsPDF.';
+                dlgAlert('Error cargando jsPDF. Comprueba la conexión.');
+            };
             document.head.appendChild(s);
         } else {
             _generarPDF();
