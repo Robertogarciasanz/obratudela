@@ -819,6 +819,12 @@
         if (!seguirActivo) activarSeguir();
     }
 
+    // Entrar sin GPS: se marcan los puntos tocando el mapa (no se recuerda la elección)
+    function cerrarIntroSinGPS() {
+        document.getElementById('introOverlay').style.display = 'none';
+        document.getElementById('status').innerText = 'Sin GPS · Acércate a tu parcela y toca el mapa para marcar cada vértice';
+    }
+
     try {
         if (localStorage.getItem('topo_intro')) {
             document.getElementById('introOverlay').style.display = 'none';
@@ -841,6 +847,9 @@
     document.addEventListener("DOMContentLoaded", () => {
         const btnCerrarIntro = document.getElementById('btnCerrarIntro');
         if (btnCerrarIntro) btnCerrarIntro.addEventListener('click', cerrarIntro);
+
+        const btnIntroSinGPS = document.getElementById('btnIntroSinGPS');
+        if (btnIntroSinGPS) btnIntroSinGPS.addEventListener('click', cerrarIntroSinGPS);
 
         const btnSeguir = document.getElementById('btnSeguir');
         if (btnSeguir) btnSeguir.addEventListener('click', toggleSeguir);
