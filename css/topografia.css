@@ -15,6 +15,8 @@ body { display: flex; flex-direction: column; }
 .btn-seguir.activo { background: #16a085; color: #fff; box-shadow: 0 0 0 3px rgba(22,160,133,0.35); }
 .btn-coord   { background: #fdf3e3; color: #b9770e; border-color: #f39c12; }
 .btn-add     { background: #e8f2fc; color: #1b6fa8; border-color: #3498db; }
+.btn-curvas  { background: #eaf6ea; color: #2e7d32; border-color: #4caf50; }
+.btn-curvas.activo { background: #4caf50; color: #fff; box-shadow: 0 0 0 3px rgba(76,175,80,0.35); }
 .btn-print   { background: #f3ebf7; color: #6c3483; border-color: #8e44ad; }
 .btn-borrar  { background: #fdecea; color: #c0392b; border-color: #e74c3c; }
 
