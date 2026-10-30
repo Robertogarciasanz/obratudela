@@ -36,11 +36,35 @@
     var map = L.map('map', { maxZoom: 22 }).setView([40, -3], 5);
     L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', { maxZoom: 22, maxNativeZoom: 20 }).addTo(map);
 
+    // Capa opcional del Catastro (límites de parcela y referencias) para superponer al satélite
+    var capaCatastro = L.tileLayer.wms('https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx', {
+        layers: 'Catastro', format: 'image/png', transparent: true, version: '1.1.1',
+        maxZoom: 22, attribution: '© Dirección General del Catastro'
+    });
+    L.control.layers(null, { '🗺️ Catastro (parcelas)': capaCatastro }, { collapsed: true, position: 'topright' }).addTo(map);
+
     var marcadores = [], poligono = null;
     var seguirActivo = false, watchId = null;
     var marcadorGPS = null, circuloGPS = null, gpsCongelado = false;
+    var modoCatastro = false, refCatastral = null, areaCatastral = null, fichaCat = null;
+
+    // Olvida la parcela catastral cargada (al mover/añadir/borrar puntos o reiniciar)
+    function olvidarCatastro() {
+        refCatastral = null; areaCatastral = null; fichaCat = null;
+        var f = document.getElementById('fichaCatastro');
+        if (f) { f.style.display = 'none'; f.innerHTML = ''; }
+    }
+
+    // Aviso grande sobre el mapa (vacío = ocultar)
+    function aviso(msg) {
+        var el = document.getElementById('avisoMapa');
+        el.innerText = msg || '';
+        el.style.display = msg ? 'block' : 'none';
+    }
 
     map.on('click', function(e) {
+        if (modoCatastro) { buscarCatastro(e.latlng); return; }
+        if (map.hasLayer(capaCatastro) && map.getZoom() >= 16) { consultarParcelaEnMapa(e.latlng); return; }
         nuevoMarcador(e.latlng.lat, e.latlng.lng, "Mapa");
     });
 
@@ -136,7 +160,9 @@
         };
         var m = L.marker([lat, lon], { draggable: true, icon: mkIcon(label), zIndexOffset: 2000 }).addTo(map);
         m._fuente = fuente;
-        m.on('dragend', calcularTodo);
+        // Si se añade o mueve un punto a mano, deja de ser la parcela catastral exacta
+        if (fuente !== 'Catastro') olvidarCatastro();
+        m.on('dragend', function() { olvidarCatastro(); calcularTodo(); });
         m.on('click', function(e) {
             L.DomEvent.stopPropagation(e);
             (async function() {
@@ -144,6 +170,7 @@
                 var letra = String.fromCharCode(65 + marcadores.indexOf(m));
                 if (await dlgConfirm("¿Borrar punto " + letra + "?")) {
                     map.removeLayer(m);
+                    olvidarCatastro();
                     marcadores = marcadores.filter(function(i) { return i !== m; });
                     reconstruirIconos();
                     calcularTodo();
@@ -189,6 +216,232 @@
         } else {
             document.getElementById('areaDisplay').innerText = '0.00 m²';
         }
+    }
+
+    // ── CATASTRO: carga la parcela catastral que se toque en el mapa (servicio INSPIRE de la Dirección General del Catastro) ──
+    var WFS_CATASTRO = 'https://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx';
+
+    function toggleCatastro() {
+        var b = document.getElementById('btnCatastro');
+        if (modoCatastro) {
+            modoCatastro = false; b.classList.remove('activo');
+            aviso('');
+            document.getElementById('status').innerText = 'Catastro cancelado.';
+            return;
+        }
+        modoCatastro = true; b.classList.add('activo');
+        aviso('📍 Ahora toca sobre tu parcela en el mapa');
+        document.getElementById('status').innerText = '📍 Toca sobre tu parcela en el mapa (acércate antes lo suficiente)';
+    }
+
+    function salirCatastro() {
+        modoCatastro = false;
+        aviso('');
+        document.getElementById('btnCatastro').classList.remove('activo');
+    }
+
+    // Simplifica el contorno (Douglas-Peucker, en metros) para no pasar de 26 vértices (A-Z)
+    function simplificarContorno(pts) {
+        var latMed = pts[0].lat, kx = Math.cos(latMed * Math.PI / 180), MD = 111320;
+        var xy = pts.map(function(q) { return [(q.lng - pts[0].lng) * kx * MD, (q.lat - pts[0].lat) * MD]; });
+        function dp(i, j, tol, keep) {
+            var ax = xy[i][0], ay = xy[i][1], bx = xy[j][0], by = xy[j][1], dx = bx - ax, dy = by - ay, l = Math.sqrt(dx*dx + dy*dy) || 1;
+            var maxd = 0, idx = -1;
+            for (var k = i + 1; k < j; k++) {
+                var d = Math.abs(dy * xy[k][0] - dx * xy[k][1] + bx * ay - by * ax) / l;
+                if (d > maxd) { maxd = d; idx = k; }
+            }
+            if (idx > -1 && maxd > tol) { dp(i, idx, tol, keep); keep[idx] = true; dp(idx, j, tol, keep); }
+        }
+        var tols = [0.1, 0.3, 0.6, 1, 2, 4, 8];
+        for (var t = 0; t < tols.length; t++) {
+            var keep = {}; keep[0] = true; keep[pts.length - 1] = true;
+            dp(0, pts.length - 1, tols[t], keep);
+            var res = pts.filter(function(q, i) { return keep[i]; });
+            if (res.length <= 26) return res;
+        }
+        return pts.slice(0, 26);
+    }
+
+    // Devuelve (promesa) la parcela catastral que contiene el punto, o null si no hay ninguna
+    function pedirParcelaCatastro(ll) {
+        var d = 0.0003;
+        var url = WFS_CATASTRO + '?service=wfs&version=2.0.0&request=GetFeature&typenames=CP.CadastralParcel&srsname=EPSG::4326' +
+            '&bbox=' + (ll.lat - d) + ',' + (ll.lng - d) + ',' + (ll.lat + d) + ',' + (ll.lng + d) + ',urn:ogc:def:crs:EPSG::4326';
+        var ctl = new AbortController();
+        var t = setTimeout(function() { ctl.abort(); }, 20000);
+        return fetch(url, { signal: ctl.signal }).then(function(r) {
+            clearTimeout(t);
+            if (!r.ok) throw new Error('El Catastro respondió ' + r.status);
+            return r.text();
+        }).then(function(txt) {
+            var xml = new DOMParser().parseFromString(txt, 'text/xml');
+            var parcelas = Array.prototype.slice.call(xml.getElementsByTagName('cp:CadastralParcel'));
+            var elegida = null;
+            parcelas.forEach(function(pc) {
+                var pl = pc.getElementsByTagName('gml:posList')[0];
+                if (!pl || elegida) return;
+                var v = pl.textContent.trim().split(/\s+/).map(parseFloat), pts = [];
+                for (var i = 0; i + 1 < v.length; i += 2) pts.push({ lat: v[i], lng: v[i + 1] });
+                if (dentroPoligono(ll.lat, ll.lng, pts)) {
+                    var ref = pc.getElementsByTagName('cp:nationalCadastralReference')[0], ar = pc.getElementsByTagName('cp:areaValue')[0];
+                    elegida = { pts: pts.slice(0, -1), ref: ref ? ref.textContent : '', area: ar ? parseFloat(ar.textContent) : null };
+                }
+            });
+            return elegida;
+        });
+    }
+
+    // Con la capa del Catastro activa, al tocar una parcela sale una ventana con su ficha
+    var contornoConsulta = null;
+    function consultarParcelaEnMapa(ll) {
+        var cont = document.createElement('div');
+        cont.style.cssText = 'min-width:200px;max-width:260px;font-size:13px;line-height:1.5';
+        cont.textContent = '⏳ Consultando el Catastro…';
+        var popup = L.popup({ maxWidth: 280 }).setLatLng(ll).setContent(cont).openOn(map);
+        function quitarContorno() { if (contornoConsulta) { map.removeLayer(contornoConsulta); contornoConsulta = null; } }
+        quitarContorno();
+        popup.on('remove', quitarContorno);
+        pedirParcelaCatastro(ll).then(function(pc) {
+            cont.textContent = '';
+            if (!pc) { cont.textContent = 'No hay parcela catastral en ese punto.'; return; }
+            contornoConsulta = L.polygon(pc.pts.map(function(q) { return [q.lat, q.lng]; }), { color: '#e69138', weight: 4, fillOpacity: 0.12, interactive: false }).addTo(map);
+            var tit = document.createElement('strong'); tit.textContent = '📍 ' + pc.ref; cont.appendChild(tit);
+            var datos = document.createElement('div'); datos.textContent = (pc.area ? pc.area.toLocaleString('es-ES') + ' m² · ' : '') + 'cargando ficha…'; cont.appendChild(datos);
+            var btn = document.createElement('button');
+            btn.textContent = '📐 Usar esta parcela';
+            btn.style.cssText = 'margin-top:6px;width:100%;padding:8px;border:none;border-radius:6px;background:#ff6b00;color:#000;font-weight:bold;cursor:pointer';
+            btn.addEventListener('click', function() { map.closePopup(); cargarParcelaCatastro(pc); });
+            cont.appendChild(btn);
+            consultarFicha(pc.ref).then(function(f) {
+                var l = [];
+                if (pc.area) l.push(pc.area.toLocaleString('es-ES') + ' m²');
+                if (f) {
+                    if (f.clase) l.push(f.clase + (f.uso ? ' · ' + f.uso : ''));
+                    if (f.direccion) l.push(f.direccion);
+                    if (f.sfc) l.push('Construido: ' + f.sfc.toLocaleString('es-ES') + ' m²' + (f.anio ? ' (' + f.anio + ')' : ''));
+                }
+                datos.innerHTML = '';
+                l.forEach(function(x) { var r = document.createElement('div'); r.textContent = x; datos.appendChild(r); });
+            }).catch(function() { datos.textContent = pc.area ? pc.area.toLocaleString('es-ES') + ' m²' : ''; });
+        }).catch(function(err) {
+            cont.textContent = '⚠️ No se pudo consultar el Catastro. Inténtalo de nuevo.';
+        });
+    }
+
+    function buscarCatastro(ll) {
+        if (map.getZoom() < 16) {
+            dlgAlert("Acércate más al mapa y toca otra vez dentro de tu parcela.");
+            return;
+        }
+        aviso('⏳ Consultando el Catastro…');
+        document.getElementById('status').innerText = '⏳ Consultando el Catastro…';
+        pedirParcelaCatastro(ll).then(function(elegida) {
+            if (!elegida) {
+                aviso('');
+                document.getElementById('status').innerText = '⚠️ No hay parcela catastral en ese punto.';
+                dlgAlert("No hay ninguna parcela del Catastro en ese punto. Toca dentro de la parcela, no en la calle.\n(El Catastro estatal no incluye Navarra ni el País Vasco.)");
+                return;
+            }
+            cargarParcelaCatastro(elegida);
+        }).catch(function(err) {
+            aviso('');
+            var msg = err.name === 'AbortError' ? 'El Catastro tarda demasiado en responder.' : err.message;
+            document.getElementById('status').innerText = '⚠️ No se pudo consultar el Catastro.';
+            dlgAlert(msg + '\nInténtalo de nuevo en unos minutos.');
+        });
+    }
+
+    // Datos públicos de la ficha catastral (no incluye titulares, que no son públicos)
+    var WS_CATASTRO_DNP = 'https://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx/Consulta_DNPRC';
+
+    function consultarFicha(ref) {
+        var ctl = new AbortController();
+        var t = setTimeout(function() { ctl.abort(); }, 15000);
+        return fetch(WS_CATASTRO_DNP + '?Provincia=&Municipio=&RC=' + encodeURIComponent(ref), { signal: ctl.signal }).then(function(r) {
+            clearTimeout(t);
+            if (!r.ok) throw new Error('El Catastro respondió ' + r.status);
+            return r.text();
+        }).then(function(txt) {
+            var xml = new DOMParser().parseFromString(txt, 'text/xml');
+            function tag(nombre, ctx) { var e = (ctx || xml).getElementsByTagName(nombre)[0]; return e ? e.textContent.trim() : ''; }
+            function lista(nombre) { return Array.prototype.slice.call(xml.getElementsByTagName(nombre)); }
+            if (xml.getElementsByTagName('lerr')[0] || (!xml.getElementsByTagName('bico')[0] && !xml.getElementsByTagName('lrcdnp')[0])) return null;
+            var clase = tag('cn');
+            var f = {
+                clase: clase === 'UR' ? 'Urbano' : (clase === 'RU' ? 'Rústico' : clase),
+                direccion: tag('ldt'), uso: tag('luso'), sfc: parseFloat(tag('sfc')) || 0, anio: tag('ant'),
+                inmuebles: lista('rcdnp').length, construcciones: [], cultivos: []
+            };
+            lista('cons').forEach(function(c) { f.construcciones.push({ uso: tag('lcd', c), sup: parseFloat(tag('stl', c)) || 0 }); });
+            lista('spr').forEach(function(s) { f.cultivos.push({ cultivo: tag('dcc', s), sup: parseFloat(tag('ssp', s)) || 0 }); });
+            return f;
+        });
+    }
+
+    function capitalizar(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1).toLowerCase() : s; }
+
+    // Pares [clave, valor] de la ficha, usados en pantalla y en el PDF
+    function datosFicha() {
+        var d = [];
+        if (areaCatastral) d.push(['Superficie de la parcela', areaCatastral.toLocaleString('es-ES') + ' m²']);
+        if (fichaCat) {
+            if (fichaCat.direccion) d.push(['Dirección', fichaCat.direccion]);
+            if (fichaCat.clase) d.push(['Clase', fichaCat.clase + (fichaCat.uso ? ' · ' + fichaCat.uso : '')]);
+            if (fichaCat.inmuebles > 1) d.push(['Inmuebles en la parcela', String(fichaCat.inmuebles)]);
+            if (fichaCat.sfc) d.push(['Superficie construida', fichaCat.sfc.toLocaleString('es-ES') + ' m²']);
+            if (fichaCat.anio) d.push(['Año de construcción', fichaCat.anio]);
+            if (fichaCat.construcciones.length) {
+                var cs = fichaCat.construcciones.slice(0, 6).map(function(c) { return capitalizar(c.uso) + ' ' + c.sup.toLocaleString('es-ES') + ' m²'; });
+                if (fichaCat.construcciones.length > 6) cs.push('y ' + (fichaCat.construcciones.length - 6) + ' más');
+                d.push(['Construcciones', cs.join(', ')]);
+            }
+            if (fichaCat.cultivos.length) {
+                d.push(['Cultivos', fichaCat.cultivos.map(function(c) { return capitalizar(c.cultivo) + ' ' + c.sup.toLocaleString('es-ES') + ' m²'; }).join(', ')]);
+            }
+        }
+        return d;
+    }
+
+    function pintarFicha() {
+        var f = document.getElementById('fichaCatastro');
+        if (!refCatastral) { f.style.display = 'none'; f.innerHTML = ''; return; }
+        f.innerHTML = '';
+        var tit = document.createElement('div');
+        var s = document.createElement('strong'); s.textContent = '📍 Ficha catastral · ' + refCatastral;
+        tit.appendChild(s); f.appendChild(tit);
+        datosFicha().forEach(function(par) {
+            var fila = document.createElement('div'); fila.className = 'ficha-fila';
+            var k = document.createElement('span'); k.textContent = par[0] + ': ';
+            fila.appendChild(k); fila.appendChild(document.createTextNode(par[1])); f.appendChild(fila);
+        });
+        var a = document.createElement('a');
+        a.href = 'https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCListaBienes.aspx?rc1=' + encodeURIComponent(refCatastral.slice(0, 7)) + '&rc2=' + encodeURIComponent(refCatastral.slice(7, 14));
+        a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Ver la ficha completa en la Sede del Catastro →';
+        f.appendChild(a);
+        f.style.display = 'block';
+    }
+
+    async function cargarParcelaCatastro(pc) {
+        if (marcadores.length && !(await dlgConfirm("Se borrarán los puntos actuales y se cargará la parcela del Catastro. ¿Continuar?"))) {
+            salirCatastro();
+            return;
+        }
+        salirCatastro();
+        if (seguirActivo) desactivarSeguir();
+        marcadores.forEach(function(m) { map.removeLayer(m); });
+        marcadores = [];
+        var pts = simplificarContorno(pc.pts);
+        pts.forEach(function(q) { nuevoMarcador(q.lat, q.lng, 'Catastro'); });
+        refCatastral = pc.ref; areaCatastral = pc.area; fichaCat = null;
+        pintarFicha();
+        // La ficha completa llega después; si mientras tanto cambian la parcela, se descarta
+        consultarFicha(pc.ref).then(function(f) {
+            if (refCatastral !== pc.ref) return;
+            fichaCat = f; pintarFicha();
+        }).catch(function() {});
+        map.fitBounds(L.featureGroup(marcadores).getBounds().pad(0.2), { animate: false });
+        document.getElementById('status').innerText = '📍 Parcela catastral ' + pc.ref + (pc.area ? ' · ' + pc.area.toLocaleString('es-ES') + ' m² según el Catastro' : '') + ' · ' + marcadores.length + ' vértices';
     }
 
     // ── CURVAS DE NIVEL (MDT05 del IGN-CNIG, servicio WCS abierto) ──
@@ -386,10 +639,12 @@
             dlgAlert("La parcela es demasiado grande para calcular las curvas de nivel (máximo unos 2 km).");
             return;
         }
+        aviso('⏳ Descargando alturas del IGN…');
         document.getElementById('status').innerText = '⏳ Descargando alturas del IGN…';
         pedirMDT(sur, oeste, norte, este).then(function(g) {
             dibujarCurvas(g, p);
         }).catch(function(err) {
+            aviso('');
             var msg = err.name === 'AbortError' ? 'El servidor del IGN tarda demasiado en responder.' : err.message;
             document.getElementById('status').innerText = '⚠️ No se pudieron calcular las curvas.';
             dlgAlert(msg + '\nInténtalo de nuevo en unos minutos.');
@@ -452,6 +707,7 @@
     }
 
     function dibujarCurvas(g, p) {
+        aviso('');
         // Cotas mínima y máxima dentro de la parcela
         var zmin = Infinity, zmax = -Infinity, posMin = null, posMax = null;
         for (var r = 0; r < g.nr; r++) {
@@ -697,6 +953,17 @@
                 doc.setFontSize(10); doc.setFont('helvetica','bold'); doc.setTextColor(44,62,80);
                 doc.text('Superficie:', tx0, ty+5); ty += 7;
                 doc.setFontSize(9); doc.setTextColor(39,174,96); doc.text(areaText, tx0, ty+4); ty += 7;
+                if (refCatastral) {
+                    doc.setFontSize(8); doc.setFont('helvetica','normal'); doc.setTextColor(60,60,60);
+                    doc.setFont('helvetica','bold'); doc.text('Ref. catastral: ' + refCatastral, tx0, ty+3); ty += 4;
+                    doc.setFont('helvetica','normal'); doc.setFontSize(7.5);
+                    datosFicha().forEach(function(par) {
+                        doc.splitTextToSize(par[0] + ': ' + par[1], tablaW).forEach(function(l) { doc.text(l, tx0, ty+3); ty += 3.4; });
+                    });
+                    ty += 1;
+                    doc.setFontSize(6.5); doc.setTextColor(120,120,120);
+                    doc.text('Fuente: Dirección General del Catastro', tx0, ty+3); ty += 5;
+                }
                 if (curvasInfo) {
                     doc.setFontSize(8); doc.setFont('helvetica','normal'); doc.setTextColor(60,60,60);
                     doc.text('Curvas de nivel cada ' + curvasInfo.eq + ' m', tx0, ty+3); ty += 4;
@@ -903,6 +1170,7 @@
         if (await dlgConfirm("¿Borrar todos los puntos?")) {
             marcadores.forEach(function(m) { map.removeLayer(m); });
             marcadores = [];
+            olvidarCatastro(); salirCatastro();
             if (poligono) { map.removeLayer(poligono); poligono = null; }
             if (seguirActivo) desactivarSeguir();
             calcularTodo();
@@ -920,6 +1188,9 @@
 
         const btnManualPunto = document.querySelector('.btn-add');
         if (btnManualPunto) btnManualPunto.addEventListener('click', manualPunto);
+
+        const btnCatastro = document.getElementById('btnCatastro');
+        if (btnCatastro) btnCatastro.addEventListener('click', toggleCatastro);
 
         const btnCurvas = document.getElementById('btnCurvas');
         if (btnCurvas) btnCurvas.addEventListener('click', toggleCurvas);

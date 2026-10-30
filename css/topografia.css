@@ -15,6 +15,8 @@ body { display: flex; flex-direction: column; }
 .btn-seguir.activo { background: #16a085; color: #fff; box-shadow: 0 0 0 3px rgba(22,160,133,0.35); }
 .btn-coord   { background: #fdf3e3; color: #b9770e; border-color: #f39c12; }
 .btn-add     { background: #e8f2fc; color: #1b6fa8; border-color: #3498db; }
+.btn-catastro { background: #fff4e0; color: #b45f06; border-color: #e69138; }
+.btn-catastro.activo { background: #e69138; color: #fff; box-shadow: 0 0 0 3px rgba(230,145,56,0.35); }
 .btn-curvas  { background: #eaf6ea; color: #2e7d32; border-color: #4caf50; }
 .btn-curvas.activo { background: #4caf50; color: #fff; box-shadow: 0 0 0 3px rgba(76,175,80,0.35); }
 .btn-print   { background: #f3ebf7; color: #6c3483; border-color: #8e44ad; }
@@ -68,6 +70,15 @@ th, td { border: 1px solid var(--border); padding: 4px; text-align: left; }
 .dialog-btn-ok:hover { background: var(--orange2); }
 .dialog-btn-cancel { background: var(--surface2); color: var(--muted); }
 .dialog-btn-cancel:hover { background: var(--border); }
+
+/* ── FICHA CATASTRAL ── */
+.ficha-catastro { display: none; margin: 8px 0; padding: 10px 12px; background: #fff8ec; border: 1px solid #f0c98a; border-radius: 8px; font-size: 13px; line-height: 1.6; color: var(--text); }
+.ficha-catastro strong { color: #b45f06; }
+.ficha-catastro .ficha-fila span { color: var(--muted); }
+.ficha-catastro a { color: #b45f06; font-weight: bold; }
+
+/* ── AVISO GRANDE SOBRE EL MAPA (instrucciones y "cargando") ── */
+.aviso-mapa { display: none; position: fixed; left: 50%; top: 42%; transform: translate(-50%, -50%); z-index: 1500; max-width: 86vw; padding: 14px 20px; border-radius: 12px; background: rgba(20,30,45,0.92); color: #fff; font-size: 16px; font-weight: bold; text-align: center; line-height: 1.4; box-shadow: 0 6px 24px rgba(0,0,0,0.35); pointer-events: none; }
 
 /* ── DIBUJO LIMPIO DE CURVAS DE NIVEL ── */
 .dibujo-overlay { display: none; position: fixed; inset: 0; z-index: 9000; background: #fff; flex-direction: column; }

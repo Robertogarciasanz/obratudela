@@ -83,7 +83,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/topografia.css?v=20261030">
+    <link rel="stylesheet" href="../css/topografia.css?v=20261036">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -144,22 +144,25 @@
     </div>
     <button class="btn btn-seguir" id="btnSeguir">🎯 POSICIÓN</button>
     <button class="btn btn-add">➕ PUNTO</button>
+    <button class="btn btn-catastro" id="btnCatastro">📍 CATASTRO</button>
     <button class="btn btn-curvas" id="btnCurvas">⛰️ CURVAS</button>
     <button class="btn btn-print">💾 PLANO</button>
     <button class="btn btn-borrar">🗑️ RESET</button>
 </div>
 
+<div id="avisoMapa" class="aviso-mapa" role="status"></div>
 <div id="map"></div>
 
 <div id="info">
     <span id="status">Esperando datos...</span>
     <span id="areaDisplay">0.00 m²</span>
+    <div id="fichaCatastro" class="ficha-catastro"></div>
     <table id="tablaCoord">
         <thead><tr><th>Nº</th><th>Latitud</th><th>Longitud</th><th>Fuente</th><th>Cota</th></tr></thead>
         <tbody id="cuerpoTabla"></tbody>
     </table>
 </div>
 
-<script src="../js/topografia.js?v=20261030" defer></script>
+<script src="../js/topografia.js?v=20261036" defer></script>
 </body>
 </html>
