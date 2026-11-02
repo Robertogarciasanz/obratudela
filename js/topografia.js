@@ -613,12 +613,17 @@
         t.push('<text x="' + mg + '" y="' + (py + 22) + '">Curvas cada ' + curvasInfo.eq + ' m · cotas de ' + curvasInfo.zmin.toFixed(1) + ' a ' + curvasInfo.zmax.toFixed(1) + ' m · desnivel ' + (curvasInfo.zmax - curvasInfo.zmin).toFixed(1) + ' m</text>');
         t.push('</g><text x="' + mg + '" y="' + (py + 42) + '" font-size="11" fill="#888">Aproximado: MDT05 (rejilla de 5 m) del IGN-CNIG, CC BY 4.0. No sustituye a un levantamiento topográfico.</text>');
         var largo = [5, 10, 20, 50, 100, 200, 500].filter(function(l) { return l * esc <= 200; }).pop() || 5;
-        var sx = W - mg - largo * esc - 60, sy = py + 12;
+        var sx = W - mg - largo * esc - 130, sy = py + 12;
         t.push('<g stroke="#2c3e50" stroke-width="2"><line x1="' + sx + '" y1="' + sy + '" x2="' + (sx + largo * esc) + '" y2="' + sy + '"/><line x1="' + sx + '" y1="' + (sy - 5) + '" x2="' + sx + '" y2="' + (sy + 5) + '"/><line x1="' + (sx + largo * esc) + '" y1="' + (sy - 5) + '" x2="' + (sx + largo * esc) + '" y2="' + (sy + 5) + '"/></g>');
         t.push('<text x="' + sx + '" y="' + (sy + 22) + '" font-size="13" fill="#2c3e50">' + largo + ' m</text>');
-        var nxp = W - mg - 20;
-        t.push('<g fill="#2c3e50" stroke="#2c3e50"><line x1="' + nxp + '" y1="' + (py + 22) + '" x2="' + nxp + '" y2="' + (py - 12) + '" stroke-width="2.5"/><polygon points="' + nxp + ',' + (py - 20) + ' ' + (nxp - 7) + ',' + (py - 6) + ' ' + (nxp + 7) + ',' + (py - 6) + '" stroke="none"/></g>');
-        t.push('<text x="' + nxp + '" y="' + (py - 26) + '" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">N</text>');
+        // Rosa de los vientos: el norte (N) arriba, destacado; S abajo, E a la derecha y O a la izquierda
+        var rx = W - mg - 34, ry = py + 26, R = 24;
+        t.push('<g stroke="#2c3e50" stroke-width="1.5" fill="none"><line x1="' + rx + '" y1="' + (ry - R) + '" x2="' + rx + '" y2="' + (ry + R) + '"/><line x1="' + (rx - R) + '" y1="' + ry + '" x2="' + (rx + R) + '" y2="' + ry + '"/>' +
+            '<polygon points="' + rx + ',' + (ry + R) + ' ' + (rx - 6) + ',' + ry + ' ' + (rx + 6) + ',' + ry + '"/>' +
+            '<polygon points="' + (rx + R) + ',' + ry + ' ' + rx + ',' + (ry - 6) + ' ' + rx + ',' + (ry + 6) + '"/>' +
+            '<polygon points="' + (rx - R) + ',' + ry + ' ' + rx + ',' + (ry - 6) + ' ' + rx + ',' + (ry + 6) + '"/></g>');
+        t.push('<polygon points="' + rx + ',' + (ry - R) + ' ' + (rx - 6) + ',' + ry + ' ' + (rx + 6) + ',' + ry + '" fill="#2c3e50"/>');
+        t.push('<g font-size="13" fill="#2c3e50" text-anchor="middle" font-weight="bold"><text x="' + rx + '" y="' + (ry - R - 6) + '" font-size="16">N</text><text x="' + rx + '" y="' + (ry + R + 16) + '">S</text><text x="' + (rx + R + 12) + '" y="' + (ry + 5) + '">E</text><text x="' + (rx - R - 12) + '" y="' + (ry + 5) + '">O</text></g>');
         t.push('</svg>');
         return t.join('');
     }
@@ -1179,9 +1184,21 @@
         doc.text('No sustituye a un levantamiento topográfico.', px, py); py += 12;
 
         doc.setDrawColor(44,62,80); doc.setFillColor(44,62,80); doc.setLineWidth(0.5);
-        doc.line(px + 6, py + 14, px + 6, py); doc.triangle(px + 6, py - 2, px + 3.5, py + 3, px + 8.5, py + 3, 'F');
-        doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.text('N', px + 6, py - 4, {align:'center'});
-        py += 24;
+        // Rosa de los vientos: norte (N) arriba, destacado; S abajo, E a la derecha y O a la izquierda
+        var rcx = px + 18, rcy = py + 12, rr = 10;
+        doc.line(rcx, rcy - rr, rcx, rcy + rr); doc.line(rcx - rr, rcy, rcx + rr, rcy);
+        doc.setLineWidth(0.3);
+        doc.triangle(rcx, rcy + rr, rcx - 2.5, rcy, rcx + 2.5, rcy, 'S');
+        doc.triangle(rcx + rr, rcy, rcx, rcy - 2.5, rcx, rcy + 2.5, 'S');
+        doc.triangle(rcx - rr, rcy, rcx, rcy - 2.5, rcx, rcy + 2.5, 'S');
+        doc.triangle(rcx, rcy - rr, rcx - 2.5, rcy, rcx + 2.5, rcy, 'F');
+        doc.setTextColor(44,62,80); doc.setFont('helvetica','bold');
+        doc.setFontSize(11); doc.text('N', rcx, rcy - rr - 1.5, {align:'center'});
+        doc.setFontSize(9);
+        doc.text('S', rcx, rcy + rr + 4, {align:'center'});
+        doc.text('E', rcx + rr + 3, rcy + 1.2, {align:'center'});
+        doc.text('O', rcx - rr - 3, rcy + 1.2, {align:'center'});
+        py += 32;
         var largo = [5, 10, 20, 50, 100, 200, 500].filter(function(l) { return l * esc <= 50; }).pop() || 5;
         doc.setLineWidth(0.8); doc.line(px, py, px + largo * esc, py);
         doc.setLineWidth(0.3); doc.line(px, py - 1.5, px, py + 1.5); doc.line(px + largo * esc, py - 1.5, px + largo * esc, py + 1.5);
