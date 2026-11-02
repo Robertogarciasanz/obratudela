@@ -1170,17 +1170,32 @@
 
         // Vértices con su cota
         doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(44,62,80);
-        doc.text('Vért.   Latitud        Longitud        Cota', px, py); py += 1.5;
-        doc.setDrawColor(200,200,200); doc.setLineWidth(0.2); doc.line(px, py, px + 66, py); py += 3.5;
-        doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(50,50,50);
-        p.forEach(function(q, i) {
-            var cota = curvasInfo.cotasVertices[i];
-            doc.text(String.fromCharCode(65 + i), px + 1, py);
-            doc.text(q.lat.toFixed(6), px + 9, py);
-            doc.text(q.lng.toFixed(6), px + 29, py);
-            doc.text(isNaN(cota) ? '—' : cota.toFixed(1) + ' m', px + 66, py, {align:'right'});
-            py += 4;
-        });
+        if (p.length <= 10) {
+            doc.text('Vért.   Latitud        Longitud        Cota', px, py); py += 1.5;
+            doc.setDrawColor(200,200,200); doc.setLineWidth(0.2); doc.line(px, py, px + 66, py); py += 3.5;
+            doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(50,50,50);
+            p.forEach(function(q, i) {
+                var cota = curvasInfo.cotasVertices[i];
+                doc.text(String.fromCharCode(65 + i), px + 1, py);
+                doc.text(q.lat.toFixed(6), px + 9, py);
+                doc.text(q.lng.toFixed(6), px + 29, py);
+                doc.text(isNaN(cota) ? '—' : cota.toFixed(1) + ' m', px + 66, py, {align:'right'});
+                py += 4;
+            });
+        } else {
+            // Muchos vértices: tabla compacta de 3 columnas (vértice y cota), para que quepa en la hoja.
+            // Las coordenadas completas están en la tabla de la página 1 del plano.
+            doc.text('Vértice · cota', px, py); py += 1.5;
+            doc.setDrawColor(200,200,200); doc.setLineWidth(0.2); doc.line(px, py, px + 66, py); py += 3.5;
+            doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(50,50,50);
+            var filas = Math.ceil(p.length / 3);
+            p.forEach(function(q, i) {
+                var cota = curvasInfo.cotasVertices[i];
+                var col = Math.floor(i / filas), fila = i % filas;
+                doc.text(String.fromCharCode(65 + i) + '  ' + (isNaN(cota) ? '—' : cota.toFixed(1) + ' m'), px + 1 + col * 22, py + fila * 3.6);
+            });
+            py += filas * 3.6;
+        }
         py += 4;
         doc.setFontSize(7); doc.setTextColor(120,120,120);
         doc.text('Curvas aproximadas a partir del MDT05', px, py); py += 3.5;
