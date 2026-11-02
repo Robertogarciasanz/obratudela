@@ -1095,7 +1095,11 @@
         var altoM  = (lat1 - Math.min.apply(null, lats)) * MD;
 
         var areaX = M + 8, areaY = 28, areaW = PW - M * 2 - 70 - 16, areaH = PH - areaY - M - 8;
-        var esc = Math.min(areaW / anchoM, areaH / altoM); // mm por metro
+        // Escala estándar (la mayor que cabe en la hoja): impreso al 100 %, 1 mm de la hoja = N mm del terreno
+        var escalasStd = [100, 200, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000, 25000, 50000];
+        var minN = Math.max(anchoM * 1000 / areaW, altoM * 1000 / areaH);
+        var escalaN = escalasStd.filter(function(n) { return n >= minN; })[0] || Math.ceil(minN / 1000) * 1000;
+        var esc = 1000 / escalaN; // mm de hoja por metro de terreno
         var ox = areaX + (areaW - anchoM * esc) / 2, oy = areaY + (areaH - altoM * esc) / 2;
         function X(lng) { return ox + (lng - lon0) * kx * MD * esc; }
         function Y(lat) { return oy + (lat1 - lat) * MD * esc; }
@@ -1199,11 +1203,26 @@
         doc.text('E', rcx + rr + 3, rcy + 1.2, {align:'center'});
         doc.text('O', rcx - rr - 3, rcy + 1.2, {align:'center'});
         py += 32;
-        var largo = [5, 10, 20, 50, 100, 200, 500].filter(function(l) { return l * esc <= 50; }).pop() || 5;
-        doc.setLineWidth(0.8); doc.line(px, py, px + largo * esc, py);
-        doc.setLineWidth(0.3); doc.line(px, py - 1.5, px, py + 1.5); doc.line(px + largo * esc, py - 1.5, px + largo * esc, py + 1.5);
-        doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(60,60,60);
-        doc.text(largo + ' m', px, py + 5);
+        // Escala numérica y regla graduada (para medir con regla o compás)
+        doc.setFont('helvetica','bold'); doc.setFontSize(11); doc.setTextColor(44,62,80);
+        doc.text('Escala 1:' + escalaN.toLocaleString('es-ES'), px, py); py += 4;
+        doc.setFont('helvetica','normal'); doc.setFontSize(7); doc.setTextColor(120,120,120);
+        doc.text('Imprimir al 100 % (tamaño real, sin ajustar a la página)', px, py); py += 6;
+        var largo = [5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 5000].filter(function(l) { return l * esc <= 60; }).pop() || 5;
+        var tramos = 5, wT = largo * esc / tramos;
+        doc.setDrawColor(44,62,80); doc.setLineWidth(0.25);
+        for (var k = 0; k < tramos; k++) {
+            if (k % 2 === 0) doc.setFillColor(44,62,80); else doc.setFillColor(255,255,255);
+            doc.rect(px + k * wT, py, wT, 2, 'FD');
+        }
+        doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(60,60,60);
+        for (var k2 = 0; k2 <= tramos; k2++) {
+            var v = largo * k2 / tramos;
+            doc.text(String(Math.round(v * 10) / 10) + (k2 === tramos ? ' m' : ''), px + k2 * wT, py + 5.5, {align:'center'});
+        }
+        py += 9;
+        doc.setFontSize(7); doc.setTextColor(120,120,120);
+        doc.text('1 cm en la hoja = ' + (escalaN / 100).toLocaleString('es-ES') + ' m en el terreno', px, py);
 
         doc.setFontSize(7); doc.setTextColor(150,150,150);
         doc.text('ObraTudela · www.obratudela.com · 607 444 903', PW/2, PH-3, {align:'center'});
