@@ -633,6 +633,23 @@
         document.getElementById('dibujoOverlay').style.display = 'none';
     }
 
+    // PDF de una sola hoja A4 (apaisada) con el dibujo limpio, en vectorial para imprimir con nitidez
+    function descargarDibujoPDF() {
+        if (!curvasInfo) return;
+        function crear() {
+            var doc = new window.jspdf.jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
+            _paginaTopografica(doc, 297, 210, 8);
+            doc.deletePage(1); // _paginaTopografica añade su propia hoja; se quita la primera, vacía
+            doc.save('curvas_nivel_' + new Date().toISOString().slice(0, 10) + '.pdf');
+        }
+        if (typeof window.jspdf !== 'undefined') { crear(); return; }
+        var s = document.createElement('script');
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+        s.onload = crear;
+        s.onerror = function() { dlgAlert('Error cargando jsPDF. Comprueba la conexión.'); };
+        document.head.appendChild(s);
+    }
+
     function toggleCurvas() {
         // Con las curvas ya calculadas, el botón solo vuelve a abrir el dibujo
         if (capaCurvas) { abrirDibujo(); return; }
@@ -1109,7 +1126,19 @@
             doc.line(X(p[i].lng), Y(p[i].lat), X(p[j].lng), Y(p[j].lat));
             var dx = (p[j].lng - p[i].lng) * kx * MD, dy = (p[j].lat - p[i].lat) * MD;
             doc.setFontSize(7.5); doc.setFont('helvetica','normal'); doc.setTextColor(40,40,40);
-            doc.text(Math.sqrt(dx*dx + dy*dy).toFixed(1) + ' m', (X(p[i].lng) + X(p[j].lng)) / 2, (Y(p[i].lat) + Y(p[j].lat)) / 2 - 1.5, {align:'center'});
+            // Distancia fuera de la parcela y girada a lo largo del lado, para que la línea no la tape
+            var sx1 = X(p[i].lng), sy1 = Y(p[i].lat), sx2 = X(p[j].lng), sy2 = Y(p[j].lat);
+            var lado = Math.sqrt((sx2-sx1)*(sx2-sx1) + (sy2-sy1)*(sy2-sy1)) || 1;
+            var nx = -(sy2 - sy1) / lado, ny = (sx2 - sx1) / lado;
+            var cxm = p.reduce(function(a, q) { return a + X(q.lng); }, 0) / p.length, cym = p.reduce(function(a, q) { return a + Y(q.lat); }, 0) / p.length;
+            var mxm = (sx1 + sx2) / 2, mym = (sy1 + sy2) / 2;
+            if ((mxm - cxm) * nx + (mym - cym) * ny < 0) { nx = -nx; ny = -ny; }
+            var ang = Math.atan2(sy2 - sy1, sx2 - sx1) * 180 / Math.PI;
+            if (ang > 90 || ang < -90) ang += 180;
+            var off = 3, dist = Math.sqrt(dx*dx + dy*dy).toFixed(1) + ' m';
+            // el texto se alinea por su base: se recoloca para que quede centrado sobre el punto
+            var rad = ang * Math.PI / 180, mitad = doc.getTextWidth(dist) / 2;
+            doc.text(dist, mxm + nx * off - Math.cos(rad) * mitad, mym + ny * off - Math.sin(rad) * mitad + 1, {angle: -ang});
         }
         p.forEach(function(q, i) {
             doc.setFillColor(231,76,60); doc.setDrawColor(255,255,255); doc.setLineWidth(0.4);
@@ -1205,6 +1234,7 @@
         const btnCurvas = document.getElementById('btnCurvas');
         if (btnCurvas) btnCurvas.addEventListener('click', toggleCurvas);
         document.getElementById('btnDibujoCerrar').addEventListener('click', cerrarDibujo);
+        document.getElementById('btnDibujoPDF').addEventListener('click', descargarDibujoPDF);
         document.addEventListener('keydown', function(e) { if (e.key === 'Escape') cerrarDibujo(); });
 
         const btnGenerarPlano = document.querySelector('.btn-print');
