@@ -168,7 +168,12 @@ def main():
     ap.add_argument('--verbose', action='store_true', help='Muestra el progreso pagina a pagina.')
     ap.add_argument('--no-descargar', action='store_true',
                      help='Solo lista lo encontrado, sin descargar los archivos .bc3.')
+    ap.add_argument('--salida', default=r'F:\presupuestos\placsp-descargas',
+                     help='Carpeta donde se guardan los BC3 y resumen.json (por defecto F:\\presupuestos\\placsp-descargas).')
     args = ap.parse_args()
+    global OUT_DIR
+    OUT_DIR = args.salida
+    print(f'Las licitaciones se guardan en: {os.path.abspath(OUT_DIR)}')
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=args.dias)
     print(f'Buscando licitaciones con BC3 desde hace {args.dias} dias '
