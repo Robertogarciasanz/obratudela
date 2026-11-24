@@ -11,7 +11,7 @@
 //
 // Si cambias la estrategia, sube CACHE_NAME para que se borre la caché vieja.
 
-const CACHE_NAME = 'obratudela-v2';
+const CACHE_NAME = 'obratudela-v3';
 
 const PRECACHE = [
   './',

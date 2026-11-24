@@ -42,7 +42,7 @@
   <!-- Herramientas de presupuestos -->
   <url>
     <loc>https://www.obratudela.com/pages/gestor-presupuestos.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -64,133 +64,133 @@
   <!-- Páginas de precios por unidad de obra (SEO / lectura directa por IAs) -->
   <url>
     <loc>https://www.obratudela.com/partidas/demolicion.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/excavacion.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/muro.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/ladrillo.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/bordillo.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/acera.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/pavimento.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/hormigon.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/jardin.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/cesped.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/riego.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/fontaneria.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/electricidad.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/ventana.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/puerta.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/imbornal.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/sumidero.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/arqueta.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/saneamiento.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -198,119 +198,119 @@
   <!-- Páginas de precios por categoría completa (cobertura 100% de las 61.447 partidas) -->
   <url>
     <loc>https://www.obratudela.com/partidas/materiales-de-construccion.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/instalaciones-electricidad-fontaneria-saneamiento.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/carpinteria-puertas-y-ventanas.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/revestimientos-y-acabados.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/urbanizacion.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/estructura-y-albanileria.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/jardineria.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/maquinaria-y-medios-auxiliares.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/aislamiento-e-impermeabilizacion.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/todas-las-demoliciones.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/fachadas-y-cerramientos.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/control-de-calidad.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/seguridad-y-salud.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/movimiento-de-tierras.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/auxiliares-pastas-morteros-hormigones.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/carga-y-gestion-de-residuos.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://www.obratudela.com/partidas/mano-de-obra.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -333,4 +333,11 @@
 
 
 
+
+  <url>
+    <loc>https://www.obratudela.com/partidas/alcantarilla.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
