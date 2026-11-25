@@ -32,7 +32,7 @@ tocar los archivos si hace falta.
 ## Herramientas de presupuestos
 
 Hay dos herramientas de presupuestos, pero **una sola fuente de verdad**:
-**`data/base-precios.json`** (61.447 partidas, array plano). El HTML del
+**`data/base-precios.json`** (63.447 partidas, array plano). El HTML del
 gestor se **genera a partir de ese JSON**, no se edita a mano:
 
 - **`data/base-precios.json`** — fuente de verdad única. Cada partida lleva
@@ -79,6 +79,21 @@ no existe actualmente en el repo — `js/anuncios.js` hace `fetch('anuncios.json
 y la página de anuncios no carga listados. Ya se intentó arreglar una vez
 (commit "Corregir página de anuncios") y se revirtió; antes de tocarlo,
 pregunta al dueño del negocio por qué se revirtió.
+
+## API para agentes de IA (`api-agentes/`) — EN PRUEBAS (dinero ficticio)
+
+Cloudflare Worker sin dependencias que vende consultas a la base de precios
+por céntimos con el protocolo x402 v2 (USDC). Desplegado aparte con
+`npx wrangler deploy` (no con GitHub Pages) en
+`obratudela-api-agentes.excavacionesart.workers.dev`, **solo en la red de
+pruebas** Base Sepolia. No pasarlo a la red real sin que el dueño lo pida: lo
+cobraría como particular y antes tiene que resolver el papeleo con su gestor.
+La dirección de cobro va en `api-agentes/.dev.vars` y en los secretos de
+Cloudflare, nunca en `wrangler.toml`. Pasos y estado en `api-agentes/LEEME.md`. Lee
+`data/base-precios-ligero.json`: si cambias `base-precios.json`, regenérala con
+`python scripts/generar-base-ligera.py`. La carpeta se publica en GitHub Pages
+como el resto del repo: nunca pongas claves en `wrangler.toml` (usa
+`wrangler secret put`).
 
 ## Despliegue
 

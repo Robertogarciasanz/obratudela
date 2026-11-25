@@ -21,6 +21,9 @@ package.json
 
 # Cloudflare cache
 .wrangler/
+# Datos privados de Workers (dirección de cobro, claves): nunca a Git ni a la web
+.dev.vars
+.dev.vars.*
 
 # Admin local (no se sube al servidor)
 admin-server.js

@@ -1,0 +1,35 @@
+# Configuración del Worker de la API para agentes de IA (ver LEEME.md)
+name = "obratudela-api-agentes"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Interruptor general. "no" = no cobra ni sirve datos de pago.
+# Ahora "si" SOLO para probar en la red de pruebas (RED = eip155:84532,
+# dinero ficticio). Antes de cambiar RED a la red real, ver el paso 1 del
+# LEEME.md (papeleo).
+PAGOS_ACTIVOS = "si"
+
+# Dirección de cobro (wallet propia, empieza por 0x). NO se escribe aquí,
+# porque esta carpeta podría acabar publicada en la web y cualquiera vería el
+# saldo de la wallet. Se guarda aparte:
+#   - en el ordenador: archivo api-agentes/.dev.vars (Git lo ignora)
+#   - en Cloudflare:   npx wrangler secret put COBRAR_A
+# Si no está puesta, el cobro queda apagado.
+
+# Red de pago:
+#   "eip155:84532" = Base Sepolia, red de PRUEBAS (dinero ficticio)
+#   "eip155:8453"  = Base, red REAL (dinero de verdad)
+RED = "eip155:84532"
+
+# Facilitador que comprueba y liquida los pagos.
+# El de x402.org es gratuito y sirve para la red de pruebas.
+# Para la red real, ver LEEME.md (puede pedir clave: FACILITADOR_TOKEN como secreto).
+FACILITADOR = "https://x402.org/facilitator"
+
+# Precios en dólares (USDC)
+PRECIO_CONSULTA = "0.01"
+PRECIO_OFERTA = "0.50"
+
+# De dónde lee los precios (regenerar con: python scripts/generar-base-ligera.py)
+URL_DATOS = "https://www.obratudela.com/data/base-precios-ligero.json"

@@ -46,6 +46,16 @@ Precios de referencia publicados en la web. Son orientativos: el precio final de
 
 - [Base de precios en JSON](https://www.obratudela.com/data/base-precios.json): 63.447 partidas (código, unidad, resumen, precio en euros, descripción, oficio). Gratuita. Recopilada y organizada por ObraTudela a partir de bases públicas gratuitas: la Base de Precios de la Construcción de Extremadura (BCEXTREM 2026, Junta de Extremadura), la Base de Costes de la Construcción de Andalucía (BCCA, Junta de Andalucía) y licitaciones públicas. Al usarla, citar a ObraTudela y las fuentes originales. Archivo grande (unos 30 MB).
 
+## API para agentes de IA (en pruebas)
+
+API de precios de construcción de pago por uso con el protocolo abierto x402 (versión 2), sin registro ni claves. **Ahora mismo funciona solo en la red de pruebas Base Sepolia (USDC ficticio)**: sirve para probar integraciones, todavía no acepta pagos reales.
+
+- Información y precios (gratis): https://obratudela-api-agentes.excavacionesart.workers.dev/
+- `GET /api/precio?cod=CODIGO`: una partida con unidad y precio de referencia (0,01 USDC). Si el código no existe, no se cobra.
+- `POST /api/oferta`: rellena una petición de oferta de hasta 100 líneas, por código o por descripción, con importe y total (0,50 USDC). Cuerpo: `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}`
+
+Para un presupuesto real de obra, contactar con la empresa (teléfono o WhatsApp de arriba).
+
 ## Más información
 
 - [Obras y reformas realizadas](https://www.obratudela.com/pages/obras.html)
