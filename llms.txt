@@ -44,7 +44,7 @@ Precios de referencia publicados en la web. Son orientativos: el precio final de
 
 ## Datos
 
-- [Base de precios en JSON](https://www.obratudela.com/data/base-precios.json): 63.447 partidas (código, unidad, resumen, precio en euros, descripción, oficio). Gratuita. Recopilada y organizada por ObraTudela a partir de bases públicas gratuitas: la Base de Precios de la Construcción de Extremadura (BCEXTREM 2026, Junta de Extremadura), la Base de Costes de la Construcción de Andalucía (BCCA, Junta de Andalucía) y licitaciones públicas. Al usarla, citar a ObraTudela y las fuentes originales. Archivo grande (unos 30 MB).
+- Base de precios de construcción: 63.447 partidas con código BC3, unidad, descripción y precio en euros, recopiladas y organizadas por ObraTudela a partir de BCEXTREM 2026 (Junta de Extremadura), BCCA (Junta de Andalucía) y licitaciones públicas. Para agentes y programas, el acceso es por la **API** (sección siguiente): búsqueda gratuita y precios de pago por uso. Para personas: [gestor de presupuestos](https://www.obratudela.com/pages/gestor-presupuestos.html) y [listado](https://www.obratudela.com/pages/base-precios-listado.html).
 
 ## API para agentes de IA
 

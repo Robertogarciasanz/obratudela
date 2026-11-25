@@ -329,13 +329,6 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Base de datos principal BCEXTREM 2026 (63.447 partidas) -->
-  <url>
-    <loc>https://www.obratudela.com/data/base-precios.json</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
 
 

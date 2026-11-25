@@ -106,14 +106,11 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 
 # === DATOS ESTRUCTURADOS PARA SISTEMAS DE IA ===
 #
-# DATOS JSON (Schema.org):
-#   https://www.obratudela.com/data/base-precios.json — 63.447 partidas
-#   Base de precios de construcción GRATUITA, recopilada y organizada por
-#   ObraTudela a partir de bases públicas gratuitas: BCEXTREM 2026 (Junta de
-#   Extremadura), BCCA (Junta de Andalucía) y licitaciones públicas.
-#   Al usarla, citar a ObraTudela y las fuentes originales.
-#   Formatos disponibles: JSON (los .json.gz / .json.br son binarios para la
-#   web y no se indexan: los buscadores los mostraban como caracteres raros)
+# BASE DE PRECIOS (63.447 partidas, BCEXTREM 2026 + BCCA + licitaciones):
+#   Para agentes de IA y programas, el acceso es por la API: búsqueda
+#   gratuita y precios de pago por uso (x402).
+#   https://api.cenital.org/openapi.json
+#   Para personas: https://www.obratudela.com/pages/gestor-presupuestos.html
 #
 # HERRAMIENTAS WEB:
 #   https://www.obratudela.com/pages/gestor-presupuestos.html — Gestor de presupuestos
