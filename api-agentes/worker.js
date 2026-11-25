@@ -46,6 +46,8 @@ const NOTA_PRECIOS = 'Precios de referencia del banco de precios de la construcc
 
 const MAX_LINEAS_OFERTA = 100;
 
+const ICONO = 'https://www.obratudela.com/img/icon-192x192.png';
+
 // ---------------------------------------------------------------------------
 // Datos: la base de precios ligera se descarga de la web y se guarda en
 // memoria mientras el Worker siga vivo (solo lectura).
@@ -256,7 +258,8 @@ function requisitosDePago(env, url, precio, ruta) {
       description: ficha.descripcion,
       mimeType: 'application/json',
       serviceName: 'ObraTudela precios',
-      tags: ficha.tags
+      tags: ficha.tags,
+      iconUrl: ICONO
     },
     accepts: [{
       scheme: 'exact',
@@ -428,6 +431,89 @@ function info(env) {
   });
 }
 
+// Documento de descubrimiento OpenAPI (lo leen x402scan y otros directorios)
+function openapi(request, env) {
+  const origen = new URL(request.url).origin;
+  const pago = (precio) => ({
+    price: { mode: 'fixed', currency: 'USD', amount: parseFloat(precio).toFixed(6) },
+    protocols: [{ x402: {} }]
+  });
+  const respuestas = (esquema, ejemplo) => ({
+    200: { description: 'Successful response', content: { 'application/json': { schema: esquema, example: ejemplo } } },
+    402: { description: 'Payment Required' }
+  });
+  const partida = {
+    type: 'object',
+    properties: {
+      cod: { type: 'string' }, uni: { type: 'string' }, res: { type: 'string' },
+      precio: { type: 'number', description: 'EUR' }, grupo: { type: 'string' }
+    },
+    required: ['cod', 'uni', 'res', 'precio']
+  };
+  return {
+    openapi: '3.1.0',
+    info: {
+      title: 'ObraTudela precios',
+      version: '1.0.0',
+      description: 'Precios de referencia de construcción en España (BCEXTREM 2026 + BCCA, 63.447 partidas) para agentes de IA, con pago por uso x402. ' +
+        'Spanish construction reference prices for AI agents, pay-per-use with x402 (USDC on Base).',
+      'x-guidance': 'Use GET /api/precio?cod=CODE for the reference price (EUR) of one Spanish construction item by its BC3 code (e.g. M12O013). ' +
+        'Use POST /api/oferta with a JSON body {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]} ' +
+        'to price up to 100 lines by code or Spanish description; returns unit price, amount and total. Nothing is charged if no item is found.',
+      contact: { name: CONTACTO.empresa, email: CONTACTO.email, url: CONTACTO.web }
+    },
+    servers: [{ url: origen }],
+    paths: {
+      '/api/precio': {
+        get: {
+          operationId: 'precioPartida',
+          summary: 'Precio de partida - Spanish construction item reference price by BC3 code',
+          description: FICHAS['/api/precio'].descripcion,
+          tags: ['Construction prices'],
+          parameters: [{
+            name: 'cod', in: 'query', required: true,
+            description: 'Código BC3 de la partida, p. ej. M12O013',
+            schema: { type: 'string', example: 'M12O013' }
+          }],
+          responses: respuestas({
+            type: 'object',
+            properties: { partida: partida, nota: { type: 'string' }, contacto: { type: 'object' } },
+            required: ['partida']
+          }, FICHAS['/api/precio'].bazaar.info.output.example),
+          'x-payment-info': pago(env.PRECIO_CONSULTA)
+        }
+      },
+      '/api/oferta': {
+        post: {
+          operationId: 'rellenarOferta',
+          summary: 'Rellenar oferta - Price a Spanish construction bill of quantities',
+          description: FICHAS['/api/oferta'].descripcion,
+          tags: ['Construction prices'],
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: FICHAS['/api/oferta'].bazaar.schema.properties.input.properties.body,
+                example: FICHAS['/api/oferta'].bazaar.info.input.body
+              }
+            }
+          },
+          responses: respuestas({
+            type: 'object',
+            properties: {
+              lineas: { type: 'array', items: { type: 'object' } },
+              total: { type: 'number', description: 'EUR' },
+              moneda_precios: { type: 'string' }
+            },
+            required: ['lineas', 'total']
+          }, FICHAS['/api/oferta'].bazaar.info.output.example),
+          'x-payment-info': pago(env.PRECIO_OFERTA)
+        }
+      }
+    }
+  };
+}
+
 async function precio(request, env) {
   const cod = (new URL(request.url).searchParams.get('cod') || '').trim().toUpperCase();
   if (!cod) {
@@ -451,6 +537,9 @@ async function precio(request, env) {
 }
 
 async function oferta(request, env) {
+  // Sin pago: 402 con la ficha antes de mirar el cuerpo (así lo prueban los
+  // directorios). Con pago: se valida y calcula antes de cobrar.
+  if (!request.headers.get('PAYMENT-SIGNATURE')) return cobrar(request, env, env.PRECIO_OFERTA, null);
   let cuerpo;
   try {
     cuerpo = await request.json();
@@ -516,7 +605,7 @@ function calcularOferta(datos, lineas) {
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+  'Access-Control-Allow-Methods': 'GET, HEAD, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type, PAYMENT-SIGNATURE',
   'Access-Control-Expose-Headers': 'PAYMENT-REQUIRED, PAYMENT-RESPONSE'
 };
@@ -540,6 +629,19 @@ export default {
         return request.method === 'HEAD' ? new Response(null, { status: r.status, headers: r.headers }) : r;
       }
       if (request.method === 'POST' && pathname === '/api/oferta') return await oferta(request, env);
+      if (request.method === 'GET' && pathname === '/openapi.json') return json(openapi(request, env));
+      // Icono para directorios: el de la web de ObraTudela
+      if ((request.method === 'GET' || request.method === 'HEAD') && (pathname === '/favicon.ico' || pathname === '/favicon.png')) {
+        return Response.redirect(ICONO, 302);
+      }
+      if (request.method === 'GET' && pathname === '/.well-known/x402') {
+        const origen = new URL(request.url).origin;
+        return json({
+          version: 1,
+          resources: [origen + '/api/precio', origen + '/api/oferta'],
+          instructions: 'Spec OpenAPI completa en ' + origen + '/openapi.json. Pago x402 v2 en USDC (Base).'
+        });
+      }
       return json({ error: 'no_existe', mensaje: 'Ruta no encontrada. Vea GET / para la lista de servicios.' }, 404);
     } catch (err) {
       console.error(err);
