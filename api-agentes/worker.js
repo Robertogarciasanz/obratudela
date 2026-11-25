@@ -563,6 +563,11 @@ function info(env) {
       moneda: 'USDC',
       red: REDES[env.RED] ? env.RED + ' — ' + REDES[env.RED].nombre : env.RED
     },
+    mcp: {
+      url: 'https://api.cenital.org/mcp',
+      transporte: 'streamable-http',
+      descripcion: 'Conector MCP con las mismas herramientas, para Claude, ChatGPT y otros asistentes.'
+    },
     servicios: [
       {
         ruta: 'GET /api/piezas?q=TEXTO',
@@ -1042,6 +1047,11 @@ function llmsTxt(request, env) {
     '',
     'Los servicios de pago responden 402 con la cabecera PAYMENT-REQUIRED (x402 v2); se repite la petición con la cabecera PAYMENT-SIGNATURE. Si no existe el código o no se encuentra ninguna partida, no se cobra.',
     '',
+    '## Conector MCP (para Claude, ChatGPT y otros asistentes)',
+    '',
+    '- Servidor MCP remoto (HTTP "streamable", sin registro): `' + o + '/mcp`',
+    '- Herramientas: buscar_partidas y buscar_piezas_3d (gratis); precio_partida, oferta_obra, parcela_catastro, ficha_pieza_3d y calcular_impresion_3d (de pago). Sin pago, las de pago devuelven el precio y los requisitos x402; con el pago firmado en el argumento `pago_x402` (o en `_meta["x402/payment"]`) devuelven los datos.',
+    '',
     '## Documentos',
     '',
     '- [OpenAPI](' + o + '/openapi.json)',
@@ -1083,7 +1093,8 @@ function openapi(request, env) {
       version: '1.0.0',
       description: 'Precios de referencia de construcción en España (BCEXTREM 2026 + BCCA, 63.447 partidas) para agentes de IA, con pago por uso x402. ' +
         'Spanish construction reference prices for AI agents, pay-per-use with x402 (USDC on Base).',
-      'x-guidance': 'If you do not know the BC3 code, first use the FREE GET /api/buscar?q=TEXT (Spanish text, e.g. "contenedor escombros 8 m3") to find it. ' +
+      'x-guidance': 'The same tools are also available as a remote MCP server (streamable HTTP) at ' + origen + '/mcp. ' +
+        'If you do not know the BC3 code, first use the FREE GET /api/buscar?q=TEXT (Spanish text, e.g. "contenedor escombros 8 m3") to find it. ' +
         'Use GET /api/precio?cod=CODE for the reference price (EUR) of one Spanish construction item by its BC3 code (e.g. M12O013). ' +
         'Use POST /api/oferta with a JSON body {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]} ' +
         'to price up to 100 lines by code or Spanish description; returns unit price, amount and total. Nothing is charged if no item is found. ' +
@@ -1332,13 +1343,268 @@ function calcularOferta(datos, lineas) {
 }
 
 // ---------------------------------------------------------------------------
+// Conector MCP (Model Context Protocol), en POST /mcp, transporte HTTP
+// "streamable" sin sesiones y con respuestas JSON. Para asistentes como
+// Claude o ChatGPT. Cada herramienta llama por dentro a la misma ruta de la
+// API de arriba, así que valida y cobra igual:
+// - las gratuitas devuelven los datos;
+// - las de pago, sin pago, dicen cuánto cuestan y cómo pagar con x402
+//   (no regalan el dato); con el pago firmado (argumento "pago_x402" o
+//   _meta["x402/payment"]) devuelven los datos y el justificante.
+// ---------------------------------------------------------------------------
+
+const VERSIONES_MCP = ['2025-11-25', '2025-06-18', '2025-03-26', '2024-11-05'];
+
+const ARG_PAGO = {
+  type: 'string',
+  description: 'Opcional. Pago x402 v2 firmado: el valor que iría en la cabecera PAYMENT-SIGNATURE (base64). ' +
+    'Sin él, la herramienta responde cuánto cuesta y los requisitos de pago.'
+};
+
+const SOLO_LECTURA = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
+
+function herramientasMcp(env) {
+  const pago = (precio) => ' De pago: ' + precio + ' USD por llamada (x402, USDC en Base). No se cobra si no existe.';
+  return [
+    {
+      name: 'buscar_partidas',
+      title: 'Buscar partidas de obra (gratis)',
+      description: 'Busca partidas de construcción y obra civil en España (banco de precios BCEXTREM 2026 + BCCA, 63.447 partidas) ' +
+        'por texto en español, p. ej. "excavación zanja", "contenedor escombros 8 m3", "retroexcavadora". Devuelve código BC3, unidad ' +
+        'y descripción, sin precio. Gratis. Úsala primero para encontrar el código y luego precio_partida u oferta_obra.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          texto: { type: 'string', description: 'Qué se busca, en español' },
+          limite: { type: 'integer', minimum: 1, maximum: MAX_RESULTADOS, description: 'Máximo de resultados (10 por defecto)' }
+        },
+        required: ['texto']
+      },
+      annotations: SOLO_LECTURA
+    },
+    {
+      name: 'precio_partida',
+      title: 'Precio de una partida de obra',
+      description: 'Precio de referencia en EUR, unidad y descripción de una partida de obra por su código BC3 (búscalo antes con ' +
+        'buscar_partidas). Para presupuestos de excavación, movimiento de tierras, demolición, alquiler de maquinaria, etc.' +
+        pago(env.PRECIO_CONSULTA),
+      inputSchema: {
+        type: 'object',
+        properties: { codigo: { type: 'string', description: 'Código BC3 de la partida, p. ej. M12O013' }, pago_x402: ARG_PAGO },
+        required: ['codigo']
+      },
+      annotations: SOLO_LECTURA
+    },
+    {
+      name: 'oferta_obra',
+      title: 'Presupuesto de varias partidas',
+      description: 'Rellena una petición de oferta o presupuesto: hasta ' + MAX_LINEAS_OFERTA + ' líneas, cada una por código BC3 o ' +
+        'por descripción, con cantidad. Devuelve precio, importe por línea y total en EUR.' + pago(env.PRECIO_OFERTA),
+      inputSchema: {
+        type: 'object',
+        properties: {
+          lineas: {
+            type: 'array',
+            minItems: 1,
+            maxItems: MAX_LINEAS_OFERTA,
+            items: {
+              type: 'object',
+              properties: {
+                cod: { type: 'string', description: 'Código BC3 (si se conoce)' },
+                texto: { type: 'string', description: 'Descripción, si no hay código' },
+                cantidad: { type: 'number', description: 'Cantidad en la unidad de la partida' }
+              }
+            }
+          },
+          pago_x402: ARG_PAGO
+        },
+        required: ['lineas']
+      },
+      annotations: SOLO_LECTURA
+    },
+    {
+      name: 'parcela_catastro',
+      title: 'Parcela del Catastro',
+      description: 'Datos de una parcela del Catastro de España por referencia catastral (14 o 20 caracteres) o por coordenadas: ' +
+        'superficie oficial en m², perímetro, centro, contorno, municipio, dirección, clase, inmuebles y, si es un inmueble, uso, ' +
+        'metros construidos y año. Sin titulares. No incluye Navarra ni el País Vasco.' + pago(env.PRECIO_PARCELA),
+      inputSchema: {
+        type: 'object',
+        properties: {
+          referencia: { type: 'string', description: 'Referencia catastral, p. ej. 8451004UM6085S' },
+          lat: { type: 'number', description: 'Latitud (si no hay referencia)' },
+          lon: { type: 'number', description: 'Longitud (si no hay referencia)' },
+          pago_x402: ARG_PAGO
+        }
+      },
+      annotations: { ...SOLO_LECTURA, openWorldHint: true }
+    },
+    {
+      name: 'buscar_piezas_3d',
+      title: 'Catálogo de piezas 3D de la bicicleta (gratis)',
+      description: 'Catálogo de las 113 piezas de la bicicleta de carretera en 3D de cenital.org (SolidWorks, licencia libre): ' +
+        'id, nombre, conjunto y medidas. Gratis. Texto vacío = todas.',
+      inputSchema: { type: 'object', properties: { texto: { type: 'string', description: 'Filtro, p. ej. buje, cuadro, tornillo' } } },
+      annotations: SOLO_LECTURA
+    },
+    {
+      name: 'ficha_pieza_3d',
+      title: 'Ficha técnica de una pieza 3D',
+      description: 'Ficha de una pieza de la bici de cenital.org: medidas, volumen, superficie, peso en acero, aluminio, titanio, ' +
+        'carbono y PLA, si cabe en una impresora de 256 mm y enlaces a STL, plano PDF y SolidWorks.' + pago(env.PRECIO_PIEZA),
+      inputSchema: {
+        type: 'object',
+        properties: { id: { type: 'string', description: 'Id de la pieza (ver buscar_piezas_3d)' }, pago_x402: ARG_PAGO },
+        required: ['id']
+      },
+      annotations: SOLO_LECTURA
+    },
+    {
+      name: 'calcular_impresion_3d',
+      title: 'Cálculo de impresión 3D de una pieza',
+      description: 'Gramos y metros de filamento, horas y coste aproximados de imprimir una pieza de la bici de cenital.org.' +
+        pago(env.PRECIO_IMPRESION),
+      inputSchema: {
+        type: 'object',
+        properties: {
+          id: { type: 'string', description: 'Id de la pieza (ver buscar_piezas_3d)' },
+          material: { type: 'string', enum: Object.keys(FILAMENTOS), description: 'Filamento (PLA por defecto)' },
+          relleno: { type: 'number', minimum: 0, maximum: 100, description: 'Relleno en % (20 por defecto)' },
+          pago_x402: ARG_PAGO
+        },
+        required: ['id']
+      },
+      annotations: SOLO_LECTURA
+    }
+  ];
+}
+
+// Herramienta → ruta de la API y sus parámetros
+const RUTAS_MCP = {
+  buscar_partidas: (a) => ({ ruta: '/api/buscar', params: { q: a.texto, limite: a.limite } }),
+  precio_partida: (a) => ({ ruta: '/api/precio', params: { cod: a.codigo } }),
+  oferta_obra: (a) => ({ ruta: '/api/oferta', cuerpo: { lineas: a.lineas } }),
+  parcela_catastro: (a) => ({ ruta: '/api/parcela', params: { rc: a.referencia, lat: a.lat, lon: a.lon } }),
+  buscar_piezas_3d: (a) => ({ ruta: '/api/piezas', params: { q: a.texto } }),
+  ficha_pieza_3d: (a) => ({ ruta: '/api/pieza', params: { id: a.id } }),
+  calcular_impresion_3d: (a) => ({ ruta: '/api/imprimir', params: { id: a.id, material: a.material, relleno: a.relleno } })
+};
+
+const textoMcp = (objeto) => [{ type: 'text', text: JSON.stringify(objeto, null, 2) }];
+
+async function llamarHerramienta(request, env, nombre, args, meta) {
+  const destino = RUTAS_MCP[nombre];
+  if (!destino) return null;
+  const { ruta, params, cuerpo } = destino(args || {});
+  const url = new URL(ruta, new URL(request.url).origin);
+  for (const [k, v] of Object.entries(params || {})) {
+    if (v !== undefined && v !== null && v !== '') url.searchParams.set(k, String(v));
+  }
+
+  // El pago puede llegar como argumento (base64) o en _meta["x402/payment"] (objeto)
+  let firma = args && typeof args.pago_x402 === 'string' ? args.pago_x402.trim() : '';
+  if (!firma && meta && meta['x402/payment']) firma = aBase64(meta['x402/payment']);
+
+  const cabeceras = { 'Content-Type': 'application/json' };
+  if (firma) cabeceras['PAYMENT-SIGNATURE'] = firma;
+  const interna = new Request(url, {
+    method: cuerpo ? 'POST' : 'GET',
+    headers: cabeceras,
+    body: cuerpo ? JSON.stringify(cuerpo) : undefined
+  });
+  const r = await api.fetch(interna, env);
+  const datos = await r.json().catch(() => ({}));
+
+  if (r.status === 200) {
+    const resultado = { content: textoMcp(datos), structuredContent: datos };
+    const recibo = r.headers.get('PAYMENT-RESPONSE');
+    if (recibo) {
+      try { resultado._meta = { 'x402/payment-response': deBase64(recibo) }; } catch { /* sin justificante legible */ }
+    }
+    return resultado;
+  }
+
+  if (r.status === 402) {
+    const precioUsd = datos.accepts && datos.accepts[0] ? (Number(datos.accepts[0].amount) / 1e6).toFixed(2) : '?';
+    const aviso = {
+      pago_requerido: true,
+      precio_usd: precioUsd,
+      mensaje: 'Este dato es de pago: ' + precioUsd + ' USD (x402 v2, USDC en ' +
+        (REDES[env.RED] ? REDES[env.RED].nombre : env.RED) + '). Para obtenerlo, firme el pago con estos requisitos y ' +
+        'vuelva a llamar a la herramienta con el argumento pago_x402 (base64), o pida directamente ' + url.href +
+        ' con la cabecera PAYMENT-SIGNATURE.',
+      ...(datos.error && datos.error !== 'Hace falta la cabecera PAYMENT-SIGNATURE con el pago' ? { error_pago: datos.error } : {}),
+      x402: { x402Version: datos.x402Version, accepts: datos.accepts, resource: datos.resource },
+      contacto: CONTACTO
+    };
+    return { content: textoMcp(aviso), structuredContent: aviso, isError: true };
+  }
+
+  // 400, 404, 503...: error explicado, sin cobro
+  return { content: textoMcp(datos), structuredContent: datos, isError: true };
+}
+
+async function atenderMcp(request, env, mensaje) {
+  const { id, method, params } = mensaje || {};
+  const esNotificacion = id === undefined || id === null;
+  const ok = (result) => ({ jsonrpc: '2.0', id, result });
+  const fallo = (code, message) => ({ jsonrpc: '2.0', id: esNotificacion ? null : id, error: { code, message } });
+
+  if (!mensaje || mensaje.jsonrpc !== '2.0' || typeof method !== 'string') return fallo(-32600, 'Petición JSON-RPC no válida');
+  if (esNotificacion) return null; // notifications/initialized y demás: nada que responder
+
+  if (method === 'initialize') {
+    const pedida = params && params.protocolVersion;
+    return ok({
+      protocolVersion: VERSIONES_MCP.includes(pedida) ? pedida : VERSIONES_MCP[0],
+      capabilities: { tools: { listChanged: false } },
+      serverInfo: {
+        name: 'obratudela-precios',
+        title: 'ObraTudela: precios de obra, Catastro y piezas 3D',
+        version: '1.0.0',
+        websiteUrl: 'https://www.obratudela.com/pages/api-agentes.html',
+        icons: [{ src: ICONO, mimeType: 'image/png', sizes: ['192x192'] }]
+      },
+      instructions: 'Precios de referencia de construcción en España (BC3), parcelas del Catastro y piezas 3D de cenital.org. ' +
+        'Para un presupuesto: buscar_partidas (gratis) → precio_partida u oferta_obra (de pago, x402). ' +
+        'Las herramientas de pago, sin pago, devuelven el precio y los requisitos x402.'
+    });
+  }
+  if (method === 'ping') return ok({});
+  if (method === 'tools/list') return ok({ tools: herramientasMcp(env) });
+  if (method === 'tools/call') {
+    const resultado = await llamarHerramienta(request, env, params && params.name, params && params.arguments, params && params._meta);
+    if (!resultado) return fallo(-32602, 'Herramienta desconocida: ' + (params && params.name));
+    return ok(resultado);
+  }
+  if (method === 'resources/list') return ok({ resources: [] });
+  if (method === 'prompts/list') return ok({ prompts: [] });
+  return fallo(-32601, 'Método no disponible: ' + method);
+}
+
+async function mcp(request, env) {
+  let cuerpo;
+  try {
+    cuerpo = await request.json();
+  } catch {
+    return json({ jsonrpc: '2.0', id: null, error: { code: -32700, message: 'JSON no válido' } }, 400);
+  }
+  if (Array.isArray(cuerpo)) {
+    const respuestas = (await Promise.all(cuerpo.map((m) => atenderMcp(request, env, m)))).filter(Boolean);
+    return respuestas.length ? json(respuestas) : new Response(null, { status: 202, headers: CORS });
+  }
+  const respuesta = await atenderMcp(request, env, cuerpo);
+  return respuesta ? json(respuesta) : new Response(null, { status: 202, headers: CORS });
+}
+
+// ---------------------------------------------------------------------------
 // Entrada
 // ---------------------------------------------------------------------------
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, HEAD, POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type, PAYMENT-SIGNATURE',
+  'Access-Control-Allow-Headers': 'Content-Type, PAYMENT-SIGNATURE, Accept, Authorization, Mcp-Session-Id, MCP-Protocol-Version',
   'Access-Control-Expose-Headers': 'PAYMENT-REQUIRED, PAYMENT-RESPONSE'
 };
 
@@ -1349,11 +1615,16 @@ function json(cuerpo, estado = 200, cabeceras = {}) {
   });
 }
 
-export default {
+const api = {
   async fetch(request, env) {
     const { pathname } = new URL(request.url);
     try {
       if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
+      // Conector MCP: solo POST (sin canal SSE; GET responde 405 como pide el protocolo)
+      if (pathname === '/mcp') {
+        if (request.method === 'POST') return await mcp(request, env);
+        return json({ error: 'solo_post', mensaje: 'Conector MCP: envíe JSON-RPC por POST a esta dirección.' }, 405, { Allow: 'POST, OPTIONS' });
+      }
       if (request.method === 'GET' && (pathname === '/' || pathname === '/api' || pathname === '/api/')) return info(env);
       // HEAD como GET: el robot de los directorios prueba primero con HEAD
       if ((request.method === 'GET' || request.method === 'HEAD') && pathname === '/api/precio') {
@@ -1392,3 +1663,5 @@ export default {
     }
   }
 };
+
+export default api;

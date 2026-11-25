@@ -38,6 +38,21 @@ Ejemplo de cuerpo para `/api/oferta`:
 ] }
 ```
 
+## Conector MCP (`POST /mcp`, desde el 25/11/2026)
+
+Servidor MCP remoto (HTTP "streamable", sin sesiones, respuestas JSON) para
+Claude, ChatGPT y otros asistentes: `https://api.cenital.org/mcp`. Siete
+herramientas que llaman por dentro a las rutas de arriba (validan y cobran
+igual): `buscar_partidas` y `buscar_piezas_3d` gratis; `precio_partida`,
+`oferta_obra`, `parcela_catastro`, `ficha_pieza_3d` y `calcular_impresion_3d`
+de pago. Sin pago devuelven `isError` con el precio y los requisitos x402; con
+el pago en el argumento `pago_x402` (base64) o en `_meta["x402/payment"]`
+devuelven los datos y el justificante en `_meta["x402/payment-response"]`.
+
+Probar en local: `wrangler dev` necesita `--compatibility-date 2026-08-08` si el
+wrangler instalado es antiguo; añadir `--var RED:eip155:84532` para no tocar
+dinero real.
+
 ## Archivos
 
 - `worker.js` — todo el programa, sin librerías. Comentado en español.

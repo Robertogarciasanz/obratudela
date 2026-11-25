@@ -227,6 +227,15 @@ PAYMENT-REQUIRED: eyJ4NDAyVmVyc2lvbiI6Mi...
     cabecera <code>PAYMENT-RESPONSE</code> (justificante del cobro). Si el código no existe, responde
     <code>404</code> y no cobra.</p>
 
+    <h2>Conector MCP (Claude, ChatGPT y otros asistentes)</h2>
+    <p>Las mismas herramientas como servidor MCP remoto (HTTP "streamable", sin registro ni claves):</p>
+    <pre>https://api.cenital.org/mcp</pre>
+    <p>En Claude: Ajustes → Conectores → Añadir conector personalizado, y pegar esa dirección. Herramientas:
+    <code>buscar_partidas</code> y <code>buscar_piezas_3d</code> (gratis); <code>precio_partida</code>,
+    <code>oferta_obra</code>, <code>parcela_catastro</code>, <code>ficha_pieza_3d</code> y
+    <code>calcular_impresion_3d</code> (de pago). Sin pago, las de pago devuelven el precio y los requisitos x402;
+    con el pago firmado en el argumento <code>pago_x402</code> (o en <code>_meta["x402/payment"]</code>) devuelven los datos.</p>
+
     <h2>Documentación para máquinas</h2>
     <ul>
       <li><a href="https://api.cenital.org/openapi.json">OpenAPI (openapi.json)</a></li>
