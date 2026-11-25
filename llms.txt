@@ -50,7 +50,7 @@ Precios de referencia publicados en la web. Son orientativos: el precio final de
 
 API de precios de construcción de pago por uso con el protocolo abierto x402 (versión 2), sin registro ni claves. Cobra en **USDC en la red Base** (eip155:8453).
 
-- Documentación: https://www.obratudela.com/pages/api-agentes.html · [OpenAPI](https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json) · [llms.txt de la API](https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt)
+- Documentación: https://www.obratudela.com/pages/api-agentes.html · [OpenAPI](https://api.cenital.org/openapi.json) · [llms.txt de la API](https://api.cenital.org/llms.txt)
 - `GET /api/buscar?q=TEXTO`: **gratis**. Busca partidas por texto en español y devuelve su código BC3, unidad y descripción. Úsalo primero si no conoces el código.
 - `GET /api/precio?cod=CODIGO`: una partida con unidad y precio de referencia (0,01 USDC). Si el código no existe, no se cobra.
 - `POST /api/oferta`: rellena una petición de oferta de hasta 100 líneas, por código o por descripción, con importe y total (0,50 USDC). Cuerpo: `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}`

@@ -15,8 +15,8 @@
 <meta name="description" content="API de precios de referencia de construcción en España (63.447 partidas BC3, BCEXTREM 2026 + BCCA) para agentes de IA: búsqueda gratuita y precios de pago por uso con x402, sin registro.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.obratudela.com/pages/api-agentes.html">
-<link rel="alternate" type="application/json" href="https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json" title="OpenAPI">
-<link rel="alternate" type="text/plain" href="https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt" title="llms.txt de la API">
+<link rel="alternate" type="application/json" href="https://api.cenital.org/openapi.json" title="OpenAPI">
+<link rel="alternate" type="text/plain" href="https://api.cenital.org/llms.txt" title="llms.txt de la API">
 <link rel="icon" href="../img/logo.jpg" type="image/jpeg">
 <script type="application/ld+json">
 {
@@ -25,14 +25,14 @@
   "@id": "https://www.obratudela.com/pages/api-agentes.html#api",
   "name": "ObraTudela precios — API para agentes de IA",
   "description": "Precios de referencia de construcción en España (BCEXTREM 2026 + BCCA, 63.447 partidas con código BC3). Búsqueda gratuita de partidas; precio de una partida (0,01 USD) y relleno de peticiones de oferta (0,50 USD) con pago por uso x402 en USDC (red Base), sin registro ni claves.",
-  "url": "https://obratudela-api-agentes.excavacionesart.workers.dev/",
+  "url": "https://api.cenital.org/",
   "documentation": "https://www.obratudela.com/pages/api-agentes.html",
   "termsOfService": "https://www.obratudela.com/pages/aviso-legal.html",
   "inLanguage": "es",
   "keywords": "API, precios construcción, BC3, BCEXTREM, BCCA, presupuestos de obra, x402, agentes de IA",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://obratudela-api-agentes.excavacionesart.workers.dev/api/buscar?q={consulta}",
+    "target": "https://api.cenital.org/api/buscar?q={consulta}",
     "query-input": "required name=consulta"
   },
   "provider": {
@@ -162,20 +162,20 @@ footer {
     <h2>Cómo se usa</h2>
     <ol>
       <li>Buscar el código (gratis):
-        <pre>GET https://obratudela-api-agentes.excavacionesart.workers.dev/api/buscar?q=contenedor escombros 8 m3</pre></li>
+        <pre>GET https://api.cenital.org/api/buscar?q=contenedor escombros 8 m3</pre></li>
       <li>Pedir el precio. La API responde <code>402 Payment Required</code> con la cabecera
         <code>PAYMENT-REQUIRED</code>; el agente firma el pago y repite la petición con <code>PAYMENT-SIGNATURE</code>:
-        <pre>GET https://obratudela-api-agentes.excavacionesart.workers.dev/api/precio?cod=M12O013</pre></li>
+        <pre>GET https://api.cenital.org/api/precio?cod=M12O013</pre></li>
       <li>O rellenar una oferta completa:
-        <pre>POST https://obratudela-api-agentes.excavacionesart.workers.dev/api/oferta
+        <pre>POST https://api.cenital.org/api/oferta
 {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}</pre></li>
     </ol>
 
     <h2>Documentación para máquinas</h2>
     <ul>
-      <li><a href="https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json">OpenAPI (openapi.json)</a></li>
-      <li><a href="https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt">llms.txt de la API</a></li>
-      <li><a href="https://obratudela-api-agentes.excavacionesart.workers.dev/.well-known/x402">Descubrimiento x402</a></li>
+      <li><a href="https://api.cenital.org/openapi.json">OpenAPI (openapi.json)</a></li>
+      <li><a href="https://api.cenital.org/llms.txt">llms.txt de la API</a></li>
+      <li><a href="https://api.cenital.org/.well-known/x402">Descubrimiento x402</a></li>
       <li><a href="../llms.txt">llms.txt de ObraTudela</a></li>
     </ul>
 

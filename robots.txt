@@ -101,8 +101,8 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 #
 # API de precios para agentes de IA (búsqueda gratuita + pago por uso x402):
 #   Documentación: https://www.obratudela.com/pages/api-agentes.html
-#   OpenAPI:       https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json
-#   llms.txt:      https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt
+#   OpenAPI:       https://api.cenital.org/openapi.json
+#   llms.txt:      https://api.cenital.org/llms.txt
 
 # === DATOS ESTRUCTURADOS PARA SISTEMAS DE IA ===
 #

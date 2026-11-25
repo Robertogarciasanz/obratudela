@@ -7,10 +7,13 @@ compatibility_date = "2026-11-01"
 # (tiene que quedarse en true aunque se añada una dirección propia)
 workers_dev = true
 
-# Dirección propia api.obratudela.com: PENDIENTE. El dominio obratudela.com
-# está en otra cuenta de Cloudflare (no en la de excavacionesart@gmail.com).
-# Cuando se pueda, añadir:
-# routes = [ { pattern = "api.obratudela.com", custom_domain = true } ]
+# Dirección propia: api.cenital.org (cenital.org está en esta misma cuenta).
+# api.obratudela.com queda PENDIENTE: obratudela.com está en otra cuenta de
+# Cloudflare. Cuando se mueva a esta, añadir aquí:
+#   { pattern = "api.obratudela.com", custom_domain = true }
+routes = [
+  { pattern = "api.cenital.org", custom_domain = true }
+]
 
 [vars]
 # Interruptor general. "no" = no cobra ni sirve datos de pago.
