@@ -557,6 +557,7 @@ function openapi(request, env) {
           summary: 'Buscar partidas (gratis) - Find Spanish construction items and their BC3 codes by text',
           description: 'Free search, no payment. Returns BC3 codes, units and descriptions (no prices) to use with /api/precio or /api/oferta. Búsqueda gratuita de partidas por texto en español.',
           tags: ['Construction prices'],
+          security: [],
           parameters: [
             { name: 'q', in: 'query', required: true, description: 'Texto a buscar en español, p. ej. "contenedor escombros 8 m3"', schema: { type: 'string', example: 'zanja' } },
             { name: 'limite', in: 'query', required: false, description: 'Número de resultados (1-' + MAX_RESULTADOS + ', por defecto 10)', schema: { type: 'integer', minimum: 1, maximum: MAX_RESULTADOS } }
