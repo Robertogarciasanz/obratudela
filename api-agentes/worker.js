@@ -143,16 +143,120 @@ function pagosActivos(env) {
   return env.PAGOS_ACTIVOS === 'si' && /^0x[0-9a-fA-F]{40}$/.test(env.COBRAR_A || '') && REDES[env.RED];
 }
 
-function requisitosDePago(env, url, precio, descripcion) {
+// Ficha de cada servicio para los directorios de APIs x402 ("Bazaar" de
+// PayAI y Coinbase): qué hace, qué recibe y qué devuelve. Va en la
+// respuesta 402, en extensions.bazaar (especificación x402 v2).
+const ESQUEMA_JSON = 'https://json-schema.org/draft/2020-12/schema';
+
+const FICHAS = {
+  '/api/precio': {
+    descripcion: 'Spanish construction unit price lookup (BCEXTREM 2026 + BCCA, 63,447 items). ' +
+      'Use when you need the reference price in EUR, unit and description of a Spanish building or ' +
+      'civil-works item by its BC3 code, e.g. excavation, demolition, machinery hire. ' +
+      'Precio de referencia de una partida de obra por su código BC3.',
+    tags: ['construction', 'prices', 'spain', 'bc3', 'civil-works'],
+    bazaar: {
+      info: {
+        input: { type: 'http', method: 'GET', queryParams: { cod: 'M12O013' } },
+        output: {
+          type: 'json',
+          example: { partida: { cod: 'M12O013', uni: 'ud', res: 'Contenedor para escombros 8 m3', precio: 215, grupo: 'MAQUINARIA' } }
+        }
+      },
+      schema: {
+        $schema: ESQUEMA_JSON,
+        type: 'object',
+        properties: {
+          input: {
+            type: 'object',
+            properties: {
+              type: { type: 'string', const: 'http' },
+              method: { type: 'string', enum: ['GET', 'HEAD', 'DELETE'] },
+              queryParams: {
+                type: 'object',
+                properties: { cod: { type: 'string', description: 'Código BC3 de la partida, p. ej. M12O013' } },
+                required: ['cod']
+              }
+            },
+            required: ['type', 'method'],
+            additionalProperties: false
+          },
+          output: { type: 'object', properties: { type: { type: 'string' }, example: { type: 'object' } }, required: ['type'] }
+        },
+        required: ['input']
+      }
+    }
+  },
+  '/api/oferta': {
+    descripcion: 'Prices a Spanish construction bill of quantities: up to 100 lines by BC3 code or free-text ' +
+      'description (Spanish) with quantity; returns unit price, amount and total in EUR from BCEXTREM 2026 + BCCA. ' +
+      'Rellena una petición de oferta de obra con precios de referencia.',
+    tags: ['construction', 'quote', 'spain', 'bill-of-quantities', 'prices'],
+    bazaar: {
+      info: {
+        input: {
+          type: 'http',
+          method: 'POST',
+          bodyType: 'json',
+          body: { lineas: [{ cod: 'M05RN060', cantidad: 8 }, { texto: 'contenedor escombros 8 m3', cantidad: 2 }] }
+        },
+        output: {
+          type: 'json',
+          example: { lineas: [{ cod: 'M05RN060', res: 'Mini retroexcavadora', precio: 31.9, cantidad: 8, importe: 255.2 }], total: 685.2, moneda_precios: 'EUR' }
+        }
+      },
+      schema: {
+        $schema: ESQUEMA_JSON,
+        type: 'object',
+        properties: {
+          input: {
+            type: 'object',
+            properties: {
+              type: { type: 'string', const: 'http' },
+              method: { type: 'string', enum: ['POST', 'PUT', 'PATCH'] },
+              bodyType: { type: 'string', enum: ['json'] },
+              body: {
+                type: 'object',
+                properties: {
+                  lineas: {
+                    type: 'array',
+                    maxItems: 100,
+                    items: {
+                      type: 'object',
+                      properties: {
+                        cod: { type: 'string', description: 'Código BC3 (opcional si hay texto)' },
+                        texto: { type: 'string', description: 'Descripción en español (si no hay código)' },
+                        cantidad: { type: 'number' }
+                      }
+                    }
+                  }
+                },
+                required: ['lineas']
+              }
+            },
+            required: ['type', 'method', 'bodyType', 'body'],
+            additionalProperties: false
+          },
+          output: { type: 'object', properties: { type: { type: 'string' }, example: { type: 'object' } }, required: ['type'] }
+        },
+        required: ['input']
+      }
+    }
+  }
+};
+
+function requisitosDePago(env, url, precio, ruta) {
   const red = REDES[env.RED];
+  const ficha = FICHAS[ruta];
   return {
     x402Version: 2,
     error: 'Hace falta la cabecera PAYMENT-SIGNATURE con el pago',
     resource: {
       url,
-      description: descripcion,
+      description: ficha.descripcion,
       mimeType: 'application/json',
-      serviceName: 'ObraTudela precios'
+      serviceName: 'ObraTudela precios',
+      tags: ficha.tags
     },
     accepts: [{
       scheme: 'exact',
@@ -162,7 +266,8 @@ function requisitosDePago(env, url, precio, descripcion) {
       payTo: env.COBRAR_A,
       maxTimeoutSeconds: 60,
       extra: red.extra
-    }]
+    }],
+    extensions: { bazaar: ficha.bazaar }
   };
 }
 
@@ -248,7 +353,7 @@ async function llamarFacilitador(env, ruta, cuerpo) {
  * Envuelve un servicio de pago. "servir" solo se ejecuta si el pago es
  * válido, y el cobro solo se liquida si "servir" ha funcionado.
  */
-async function cobrar(request, env, precio, descripcion, servir) {
+async function cobrar(request, env, precio, servir) {
   if (!pagosActivos(env)) {
     return json({
       error: 'servicio_no_activo',
@@ -258,7 +363,7 @@ async function cobrar(request, env, precio, descripcion, servir) {
   }
 
   const url = new URL(request.url);
-  const requisitos = requisitosDePago(env, url.origin + url.pathname, precio, descripcion);
+  const requisitos = requisitosDePago(env, url.origin + url.pathname, precio, url.pathname);
   const firma = request.headers.get('PAYMENT-SIGNATURE');
 
   if (!firma) {
@@ -325,14 +430,20 @@ function info(env) {
 
 async function precio(request, env) {
   const cod = (new URL(request.url).searchParams.get('cod') || '').trim().toUpperCase();
-  if (!cod) return json({ error: 'falta_codigo', mensaje: 'Indique ?cod=CODIGO' }, 400);
+  if (!cod) {
+    // Sin código y sin pago: se responde el 402 con la ficha, para que los
+    // directorios y agentes vean el precio y cómo usarlo. Con pago y sin
+    // código: error, para no cobrar por nada.
+    if (!request.headers.get('PAYMENT-SIGNATURE')) return cobrar(request, env, env.PRECIO_CONSULTA, null);
+    return json({ error: 'falta_codigo', mensaje: 'Indique ?cod=CODIGO' }, 400);
+  }
 
   // Comprobar antes de cobrar: si no existe, no se cobra
   const { porCodigo } = await cargarDatos(env);
   const partida = porCodigo.get(cod);
   if (!partida) return json({ error: 'no_encontrada', mensaje: 'No existe la partida ' + cod }, 404);
 
-  return cobrar(request, env, env.PRECIO_CONSULTA, 'Precio de la partida ' + cod, async () => ({
+  return cobrar(request, env, env.PRECIO_CONSULTA, async () => ({
     partida: publica(partida),
     nota: NOTA_PRECIOS,
     contacto: CONTACTO
@@ -362,7 +473,7 @@ async function oferta(request, env) {
     return json({ error: 'nada_encontrado', mensaje: 'No se ha encontrado ninguna de las partidas pedidas; no se cobra.' }, 404);
   }
 
-  return cobrar(request, env, env.PRECIO_OFERTA, 'Oferta de ' + lineas.length + ' líneas', async () => calculada);
+  return cobrar(request, env, env.PRECIO_OFERTA, async () => calculada);
 }
 
 function calcularOferta(datos, lineas) {
@@ -423,7 +534,11 @@ export default {
     try {
       if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
       if (request.method === 'GET' && (pathname === '/' || pathname === '/api' || pathname === '/api/')) return info(env);
-      if (request.method === 'GET' && pathname === '/api/precio') return await precio(request, env);
+      // HEAD como GET: el robot de los directorios prueba primero con HEAD
+      if ((request.method === 'GET' || request.method === 'HEAD') && pathname === '/api/precio') {
+        const r = await precio(request, env);
+        return request.method === 'HEAD' ? new Response(null, { status: r.status, headers: r.headers }) : r;
+      }
       if (request.method === 'POST' && pathname === '/api/oferta') return await oferta(request, env);
       return json({ error: 'no_existe', mensaje: 'Ruta no encontrada. Vea GET / para la lista de servicios.' }, 404);
     } catch (err) {
