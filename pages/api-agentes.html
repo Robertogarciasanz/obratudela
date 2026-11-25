@@ -46,7 +46,11 @@
   "offers": [
     { "@type": "Offer", "name": "Buscar partidas", "price": "0", "priceCurrency": "USD" },
     { "@type": "Offer", "name": "Precio de una partida", "price": "0.01", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Rellenar una petición de oferta", "price": "0.50", "priceCurrency": "USD" }
+    { "@type": "Offer", "name": "Rellenar una petición de oferta", "price": "0.50", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Datos de una parcela del Catastro", "price": "0.05", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Catálogo de piezas 3D de la bici", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Ficha técnica de una pieza 3D", "price": "0.01", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Cálculo de impresión 3D de una pieza", "price": "0.05", "priceCurrency": "USD" }
   ]
 }
 </script>
@@ -158,6 +162,16 @@ footer {
       <tr><td><code>POST /api/oferta</code></td><td>0,50 $</td><td>Una petición de oferta de hasta 100 líneas con precio, importe y total.</td></tr>
     </table>
     <p>Si el código no existe o no se encuentra ninguna partida, <strong>no se cobra</strong>.</p>
+
+    <h2>Parcelas del Catastro</h2>
+    <p>Datos de cualquier parcela catastral de España (salvo Navarra y País Vasco), sacados de los servicios
+    públicos de la Dirección General del Catastro y ya ordenados. <strong>Sin titulares</strong>, que no son públicos.</p>
+    <table>
+      <tr><th>Servicio</th><th>Precio</th><th>Qué devuelve</th></tr>
+      <tr><td><code>GET /api/parcela?rc=REFERENCIA</code><br>o <code>?lat=…&amp;lon=…</code></td><td>0,05 $</td><td>Superficie oficial, perímetro, centro, contorno, municipio, dirección, clase (urbano o rústico), inmuebles y, si es un inmueble, uso, metros construidos, año y cultivos.</td></tr>
+    </table>
+    <p>Si la parcela no existe o el Catastro no responde, <strong>no se cobra</strong>. Para una medición
+    topográfica sobre el terreno, usa nuestra <a href="topografia.html">herramienta de medición de parcelas</a>.</p>
 
     <h2>Modelos 3D: bicicleta de cenital.org</h2>
     <p>La misma API da acceso a la <a href="https://cenital.org/bici/">bicicleta de carretera en 3D de cenital.org</a>:

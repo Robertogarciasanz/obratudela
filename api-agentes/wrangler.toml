@@ -48,6 +48,8 @@ PRECIO_OFERTA = "0.50"
 PRECIO_PIEZA = "0.01"
 PRECIO_IMPRESION = "0.05"
 URL_BICI = "https://cenital.org/bici/datos.json"
+# Parcelas del Catastro
+PRECIO_PARCELA = "0.05"
 
 # De dónde lee los precios (regenerar con: python scripts/generar-base-ligera.py)
 URL_DATOS = "https://www.obratudela.com/data/base-precios-ligero.json"

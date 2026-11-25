@@ -356,6 +356,47 @@ Object.assign(FICHAS, {
   }
 });
 
+FICHAS['/api/parcela'] = {
+  descripcion: 'Spanish land parcel lookup from the official Cadastre (Catastro): by cadastral reference (14 or 20 chars) or by WGS84 ' +
+    'lat/lon. Returns official area in m², perimeter, centre, boundary polygon, municipality, address, class (urban/rustic), ' +
+    'properties in it and, for one property, use, built area, year and crops. No owner data. Medición de parcela catastral.',
+  tags: ['cadastre', 'land-parcel', 'spain', 'gis', 'real-estate'],
+  bazaar: {
+    info: {
+      input: { type: 'http', method: 'GET', queryParams: { rc: '8451004UM6085S' } },
+      output: {
+        type: 'json',
+        example: { parcela: { referencia_catastral: '8451004UM6085S', superficie_m2: 1137, perimetro_m: 152.3, centro: { lat: 41.58, lon: -4.58 }, municipio: 'TUDELA DE DUERO', inmuebles: 4 } }
+      }
+    },
+    schema: {
+      $schema: ESQUEMA_JSON,
+      type: 'object',
+      properties: {
+        input: {
+          type: 'object',
+          properties: {
+            type: { type: 'string', const: 'http' },
+            method: { type: 'string', enum: ['GET', 'HEAD', 'DELETE'] },
+            queryParams: {
+              type: 'object',
+              properties: {
+                rc: { type: 'string', description: 'Referencia catastral de 14 o 20 caracteres' },
+                lat: { type: 'string', description: 'Latitud WGS84 (si no hay referencia)' },
+                lon: { type: 'string', description: 'Longitud WGS84 (si no hay referencia)' }
+              }
+            }
+          },
+          required: ['type', 'method'],
+          additionalProperties: false
+        },
+        output: { type: 'object', properties: { type: { type: 'string' }, example: { type: 'object' } }, required: ['type'] }
+      },
+      required: ['input']
+    }
+  }
+};
+
 function requisitosDePago(env, url, precio, ruta) {
   const red = REDES[env.RED];
   const ficha = FICHAS[ruta];
@@ -537,6 +578,11 @@ function info(env) {
         ruta: 'GET /api/imprimir?id=ID&material=PLA&relleno=20',
         precio_usd: env.PRECIO_IMPRESION,
         descripcion: 'Cálculo de impresión 3D de una pieza: gramos y metros de filamento, horas y coste aproximados (PLA, PETG, ABS o TPU).'
+      },
+      {
+        ruta: 'GET /api/parcela?rc=REFERENCIA',
+        precio_usd: env.PRECIO_PARCELA,
+        descripcion: 'Parcela del Catastro por referencia catastral o por ?lat=&lon=: superficie oficial, perímetro, centro, contorno, municipio, dirección, inmuebles y, si es un inmueble, uso, metros construidos y año. Sin titulares. No cobra si no existe.'
       },
       {
         ruta: 'GET /api/buscar?q=TEXTO',
@@ -738,6 +784,215 @@ async function imprimir(request, env) {
   return cobrar(request, env, env.PRECIO_IMPRESION, async () => ({ impresion: calculoImpresion(p, material, relleno) }));
 }
 
+// ---------------------------------------------------------------------------
+// Parcelas del Catastro (los mismos servicios públicos que usa la
+// herramienta de topografía de obratudela.com). Sin titulares: no son públicos.
+// ---------------------------------------------------------------------------
+
+const WFS_CATASTRO = 'https://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx';
+const DNP_CATASTRO = 'https://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx/Consulta_DNPRC';
+const REF_CATASTRAL = /^[0-9A-Z]{14}([0-9A-Z]{6})?$/;
+
+class CatastroNoResponde extends Error {}
+
+async function textoCatastro(url) {
+  let res;
+  try {
+    res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+  } catch (err) {
+    throw new CatastroNoResponde(String(err));
+  }
+  if (!res.ok) throw new CatastroNoResponde('HTTP ' + res.status);
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  const inicio = new TextDecoder('ascii').decode(bytes.slice(0, 120));
+  return new TextDecoder(/ISO-8859-1/i.test(inicio) ? 'iso-8859-1' : 'utf-8').decode(bytes);
+}
+
+function etiqueta(xml, nombre) {
+  const m = xml.match(new RegExp('<' + nombre + '(?:\\s[^>]*)?>([^<]*)</' + nombre + '>'));
+  return m ? m[1].trim() : '';
+}
+
+function bloques(xml, nombre) {
+  return [...xml.matchAll(new RegExp('<' + nombre + '(?:\\s[^>]*)?>([\\s\\S]*?)</' + nombre + '>', 'g'))].map((m) => m[1]);
+}
+
+// Lee las parcelas de una respuesta WFS (EPSG:4326: pares latitud longitud)
+function parcelasWfs(xml) {
+  return bloques(xml, 'cp:CadastralParcel').map((b) => {
+    const lista = etiqueta(b, 'gml:posList').split(/\s+/).map(Number);
+    const puntos = [];
+    for (let i = 0; i + 1 < lista.length; i += 2) puntos.push([lista[i], lista[i + 1]]);
+    if (puntos.length > 1 && puntos[0][0] === puntos[puntos.length - 1][0] && puntos[0][1] === puntos[puntos.length - 1][1]) puntos.pop();
+    return { ref: etiqueta(b, 'cp:nationalCadastralReference'), area: Number(etiqueta(b, 'cp:areaValue')) || null, puntos };
+  }).filter((p) => p.ref && p.puntos.length >= 3);
+}
+
+function dentroDePoligono(lat, lon, puntos) {
+  let dentro = false;
+  for (let i = 0, j = puntos.length - 1; i < puntos.length; j = i++) {
+    const [yi, xi] = puntos[i];
+    const [yj, xj] = puntos[j];
+    if ((yi > lat) !== (yj > lat) && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) dentro = !dentro;
+  }
+  return dentro;
+}
+
+// Perímetro (m) y centro de la parcela, en un plano local (precisión de sobra a escala de parcela)
+function medidasParcela(puntos) {
+  const lat0 = puntos[0][0] * Math.PI / 180;
+  const M = 6371008.8 * Math.PI / 180;
+  const xy = puntos.map(([la, lo]) => [lo * M * Math.cos(lat0), la * M]);
+  let perimetro = 0;
+  let a = 0;
+  let cx = 0;
+  let cy = 0;
+  for (let i = 0; i < xy.length; i++) {
+    const [x1, y1] = xy[i];
+    const [x2, y2] = xy[(i + 1) % xy.length];
+    perimetro += Math.hypot(x2 - x1, y2 - y1);
+    const f = x1 * y2 - x2 * y1;
+    a += f;
+    cx += (x1 + x2) * f;
+    cy += (y1 + y2) * f;
+  }
+  const centro = a ? [cy / (3 * a) / M, cx / (3 * a) / (M * Math.cos(lat0))] : puntos[0];
+  return {
+    perimetro_m: redondear(perimetro, 1),
+    superficie_calculada_m2: redondear(Math.abs(a) / 2, 0),
+    centro: { lat: redondear(centro[0], 6), lon: redondear(centro[1], 6) }
+  };
+}
+
+async function parcelaPorReferencia(rc14) {
+  const xml = await textoCatastro(WFS_CATASTRO + '?service=wfs&version=2.0.0&request=GetFeature&STOREDQUERY_ID=GetParcel&refcat=' +
+    rc14 + '&srsname=EPSG::4326');
+  return parcelasWfs(xml)[0] || null;
+}
+
+async function parcelaEnPunto(lat, lon) {
+  const d = 0.0003;
+  const xml = await textoCatastro(WFS_CATASTRO + '?service=wfs&version=2.0.0&request=GetFeature&typenames=CP.CadastralParcel&srsname=EPSG::4326' +
+    '&bbox=' + (lat - d) + ',' + (lon - d) + ',' + (lat + d) + ',' + (lon + d) + ',urn:ogc:def:crs:EPSG::4326');
+  return parcelasWfs(xml).find((p) => dentroDePoligono(lat, lon, p.puntos)) || null;
+}
+
+function direccionCatastro(b) {
+  const tv = etiqueta(b, 'tv');
+  const nv = etiqueta(b, 'nv');
+  const pnp = etiqueta(b, 'pnp');
+  const calle = [tv, nv].filter(Boolean).join(' ') + (pnp && pnp !== '0' ? ' ' + pnp : '');
+  const paraje = etiqueta(b, 'npa');
+  const pol = etiqueta(b, 'cpo');
+  const par = etiqueta(b, 'cpa');
+  if (calle.trim()) return calle.trim();
+  if (pol || par) return 'Polígono ' + pol + ', parcela ' + par + (paraje ? ' (' + paraje + ')' : '');
+  return null;
+}
+
+async function fichaCatastro(rc) {
+  const xml = await textoCatastro(DNP_CATASTRO + '?Provincia=&Municipio=&RC=' + rc);
+  if (/<lerr>/.test(xml)) return null;
+  const ficha = { provincia: etiqueta(xml, 'np') || null, municipio: etiqueta(xml, 'nm') || null };
+  const bico = bloques(xml, 'bico')[0];
+  if (bico) {
+    const clase = etiqueta(bico, 'cn');
+    const larga = etiqueta(bico, 'pc1') + etiqueta(bico, 'pc2') + etiqueta(bico, 'car') + etiqueta(bico, 'cc1') + etiqueta(bico, 'cc2');
+    Object.assign(ficha, {
+      clase: clase === 'UR' ? 'Urbano' : clase === 'RU' ? 'Rústico' : clase || null,
+      direccion: etiqueta(bico, 'ldt') || direccionCatastro(bico),
+      inmuebles: 1,
+      inmueble: {
+        referencia: larga.length === 20 ? larga : null,
+        uso: etiqueta(bico, 'luso') || null,
+        superficie_construida_m2: Number(etiqueta(bico, 'sfc')) || null,
+        anio_construccion: Number(etiqueta(bico, 'ant')) || null,
+        construcciones: bloques(bico, 'cons').map((c) => ({ uso: etiqueta(c, 'lcd') || null, superficie_m2: Number(etiqueta(c, 'stl')) || null })),
+        cultivos: bloques(bico, 'spr').map((s) => ({ cultivo: etiqueta(s, 'dcc') || null, superficie_m2: Number(etiqueta(s, 'ssp')) || null }))
+      }
+    });
+    return ficha;
+  }
+  const lista = bloques(xml, 'rcdnp');
+  ficha.direccion = lista[0] ? direccionCatastro(lista[0]) : null;
+  ficha.inmuebles = lista.length;
+  ficha.lista_inmuebles = lista.slice(0, 100).map((b) => {
+    const ref = etiqueta(b, 'pc1') + etiqueta(b, 'pc2') + etiqueta(b, 'car') + etiqueta(b, 'cc1') + etiqueta(b, 'cc2');
+    const planta = etiqueta(b, 'pt');
+    const puerta = etiqueta(b, 'pu');
+    const escalera = etiqueta(b, 'es');
+    return {
+      referencia: ref,
+      ubicacion: [escalera && 'escalera ' + escalera, planta && 'planta ' + planta, puerta && 'puerta ' + puerta].filter(Boolean).join(', ') || null
+    };
+  });
+  return ficha;
+}
+
+async function parcela(request, env) {
+  const url = new URL(request.url);
+  const rc = (url.searchParams.get('rc') || '').replace(/[\s-]/g, '').toUpperCase();
+  const lat = Number(url.searchParams.get('lat'));
+  const lon = Number(url.searchParams.get('lon'));
+  const hayPunto = url.searchParams.has('lat') && url.searchParams.has('lon');
+  if (!rc && !hayPunto) {
+    // Sin datos y sin pago: 402 con la ficha (directorios y agentes)
+    if (!request.headers.get('PAYMENT-SIGNATURE')) return cobrar(request, env, env.PRECIO_PARCELA, null);
+    return json({ error: 'faltan_datos', mensaje: 'Indique ?rc=REFERENCIA_CATASTRAL o ?lat=..&lon=..' }, 400);
+  }
+  if (rc && !REF_CATASTRAL.test(rc)) {
+    return json({ error: 'referencia_no_valida', mensaje: 'La referencia catastral tiene 14 o 20 caracteres (letras y números), p. ej. 8451004UM6085S' }, 400);
+  }
+  if (!rc && (!Number.isFinite(lat) || !Number.isFinite(lon) || lat < 27 || lat > 44.5 || lon < -19 || lon > 5)) {
+    return json({ error: 'coordenadas_no_validas', mensaje: 'Coordenadas WGS84 en España: lat entre 27 y 44,5; lon entre -19 y 5' }, 400);
+  }
+
+  // Se busca la parcela ANTES de cobrar: si no existe o el Catastro falla, no se cobra
+  let geo;
+  try {
+    geo = rc ? await parcelaPorReferencia(rc.slice(0, 14)) : await parcelaEnPunto(lat, lon);
+  } catch (err) {
+    if (err instanceof CatastroNoResponde) {
+      return json({ error: 'catastro_no_responde', mensaje: 'El Catastro no responde ahora; inténtelo más tarde. No se ha cobrado nada.' }, 503);
+    }
+    throw err;
+  }
+  if (!geo) {
+    return json({
+      error: 'parcela_no_encontrada',
+      mensaje: rc ? 'No existe la parcela ' + rc + ' en el Catastro.' : 'No hay parcela catastral en ese punto.',
+      nota: 'El Catastro estatal no incluye Navarra ni el País Vasco. No se ha cobrado nada.'
+    }, 404);
+  }
+
+  return cobrar(request, env, env.PRECIO_PARCELA, async () => {
+    let ficha = null;
+    try {
+      ficha = await fichaCatastro(rc.length === 20 ? rc : geo.ref);
+    } catch (err) {
+      ficha = null; // la geometría ya vale; la ficha es un extra
+    }
+    const medidas = medidasParcela(geo.puntos);
+    const contorno = geo.puntos.length > 500 ? geo.puntos.filter((_, i) => i % Math.ceil(geo.puntos.length / 500) === 0) : geo.puntos;
+    return {
+      parcela: {
+        referencia_catastral: geo.ref,
+        superficie_m2: geo.area,
+        superficie_calculada_m2: medidas.superficie_calculada_m2,
+        perimetro_m: medidas.perimetro_m,
+        centro: medidas.centro,
+        vertices: geo.puntos.length,
+        contorno_lat_lon: contorno.map(([la, lo]) => [redondear(la, 7), redondear(lo, 7)]),
+        ...(ficha || {}),
+        sede_catastro: 'https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCListaBienes.aspx?rc1=' + geo.ref.slice(0, 7) + '&rc2=' + geo.ref.slice(7, 14),
+        fuente: 'Dirección General del Catastro (servicios públicos INSPIRE y Consulta_DNPRC). No incluye titulares.'
+      },
+      nota: 'Superficie oficial del Catastro; el perímetro y el centro se calculan del contorno. Para una medición topográfica real o una obra en la zona de Valladolid, contacte con la empresa.',
+      contacto: CONTACTO
+    };
+  });
+}
+
 // Buscador GRATUITO: encuentra códigos BC3 por texto, sin precios. Los
 // agentes no suelen conocer los códigos; con esto los encuentran y luego
 // piden el precio (/api/precio) o la oferta completa (/api/oferta).
@@ -780,6 +1035,10 @@ function llmsTxt(request, env) {
     '1. Catálogo (gratis): `GET ' + o + '/api/piezas?q=buje` → id, nombre, conjunto y medidas de cada pieza.',
     '2. Ficha de una pieza (' + env.PRECIO_PIEZA + ' USD): `GET ' + o + '/api/pieza?id=Buje_cuerpo_1` → medidas, volumen, superficie, peso en acero, aluminio, titanio, carbono y PLA, si cabe en una impresora de 256 mm, y enlaces a STL, plano PDF y SolidWorks.',
     '3. Cálculo de impresión 3D (' + env.PRECIO_IMPRESION + ' USD): `GET ' + o + '/api/imprimir?id=Buje_cuerpo_1&material=PLA&relleno=20` → gramos, metros de filamento, horas y coste aproximados.',
+    '',
+    '## Parcelas del Catastro (España)',
+    '',
+    '- Parcela (' + env.PRECIO_PARCELA + ' USD): `GET ' + o + '/api/parcela?rc=8451004UM6085S` o `GET ' + o + '/api/parcela?lat=41.5845&lon=-4.58` → superficie oficial en m², perímetro, centro, contorno, municipio, dirección, clase (urbano o rústico), inmuebles y, si es un inmueble, uso, metros construidos y año. Sin titulares. No se cobra si la parcela no existe o el Catastro no responde. No incluye Navarra ni el País Vasco.',
     '',
     'Los servicios de pago responden 402 con la cabecera PAYMENT-REQUIRED (x402 v2); se repite la petición con la cabecera PAYMENT-SIGNATURE. Si no existe el código o no se encuentra ninguna partida, no se cobra.',
     '',
@@ -829,7 +1088,8 @@ function openapi(request, env) {
         'Use POST /api/oferta with a JSON body {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]} ' +
         'to price up to 100 lines by code or Spanish description; returns unit price, amount and total. Nothing is charged if no item is found. ' +
         '3D MODELS: GET /api/piezas (FREE) lists the 113 parts of an open-licence 3D road bicycle; GET /api/pieza?id=ID returns its data sheet ' +
-        '(size, volume, weight by material, STL/PDF/SolidWorks links); GET /api/imprimir?id=ID&material=PLA&relleno=20 estimates 3D printing grams, time and cost.',
+        '(size, volume, weight by material, STL/PDF/SolidWorks links); GET /api/imprimir?id=ID&material=PLA&relleno=20 estimates 3D printing grams, time and cost. ' +
+        'LAND PARCELS (Spain): GET /api/parcela?rc=CADASTRAL_REFERENCE or ?lat=..&lon=.. returns official area, perimeter, boundary and cadastral data.',
       contact: { name: CONTACTO.empresa, email: CONTACTO.email, url: CONTACTO.web }
     },
     servers: [{ url: origen }],
@@ -919,6 +1179,21 @@ function openapi(request, env) {
           ],
           responses: respuestas({ type: 'object', properties: { impresion: { type: 'object' } }, required: ['impresion'] }, FICHAS['/api/imprimir'].bazaar.info.output.example),
           'x-payment-info': pago(env.PRECIO_IMPRESION)
+        }
+      },
+      '/api/parcela': {
+        get: {
+          operationId: 'parcelaCatastro',
+          summary: 'Parcela catastral - Spanish cadastral parcel: area, perimeter, boundary and data, by reference or coordinates',
+          description: FICHAS['/api/parcela'].descripcion + ' Nothing is charged if the parcel does not exist or the Cadastre does not respond.',
+          tags: ['Cadastre'],
+          parameters: [
+            { name: 'rc', in: 'query', required: false, description: 'Referencia catastral (14 o 20 caracteres), p. ej. 8451004UM6085S', schema: { type: 'string', example: '8451004UM6085S' } },
+            { name: 'lat', in: 'query', required: false, description: 'Latitud WGS84, si no se da rc', schema: { type: 'number', example: 41.5845 } },
+            { name: 'lon', in: 'query', required: false, description: 'Longitud WGS84, si no se da rc', schema: { type: 'number', example: -4.58 } }
+          ],
+          responses: respuestas({ type: 'object', properties: { parcela: { type: 'object' } }, required: ['parcela'] }, FICHAS['/api/parcela'].bazaar.info.output.example),
+          'x-payment-info': pago(env.PRECIO_PARCELA)
         }
       },
       '/api/precio': {
@@ -1088,6 +1363,10 @@ export default {
       if (request.method === 'POST' && pathname === '/api/oferta') return await oferta(request, env);
       if (request.method === 'GET' && pathname === '/api/buscar') return await buscar(request, env);
       if (request.method === 'GET' && pathname === '/api/piezas') return await catalogoBici(request, env);
+      if ((request.method === 'GET' || request.method === 'HEAD') && pathname === '/api/parcela') {
+        const r = await parcela(request, env);
+        return request.method === 'HEAD' ? new Response(null, { status: r.status, headers: r.headers }) : r;
+      }
       if ((request.method === 'GET' || request.method === 'HEAD') && (pathname === '/api/pieza' || pathname === '/api/imprimir')) {
         const r = pathname === '/api/pieza' ? await pieza(request, env) : await imprimir(request, env);
         return request.method === 'HEAD' ? new Response(null, { status: r.status, headers: r.headers }) : r;

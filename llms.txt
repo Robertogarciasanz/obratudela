@@ -55,6 +55,10 @@ API de precios de construcción de pago por uso con el protocolo abierto x402 (v
 - `GET /api/precio?cod=CODIGO`: una partida con unidad y precio de referencia (0,01 USDC). Si el código no existe, no se cobra.
 - `POST /api/oferta`: rellena una petición de oferta de hasta 100 líneas, por código o por descripción, con importe y total (0,50 USDC). Cuerpo: `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}`
 
+Parcelas del Catastro (España, salvo Navarra y País Vasco; sin titulares):
+
+- `GET /api/parcela?rc=REFERENCIA_CATASTRAL` o `?lat=..&lon=..`: superficie oficial, perímetro, centro, contorno, municipio, dirección, clase, inmuebles y, para un inmueble, uso, metros construidos, año y cultivos (0,05 USDC). No se cobra si la parcela no existe.
+
 Modelos 3D (bicicleta de carretera de cenital.org, 113 piezas con STL, plano PDF y SolidWorks, licencia libre):
 
 - `GET /api/piezas?q=TEXTO`: **gratis**. Catálogo de piezas con id, nombre, conjunto y medidas.
