@@ -123,9 +123,14 @@
       {
         "@type": "WebAPI",
         "name": "ObraTudela precios — API para agentes de IA",
-        "description": "Búsqueda gratuita de partidas de obra por texto y precios de referencia de construcción (0,01 USD por partida, 0,50 USD por oferta) con pago por uso x402.",
+        "description": "Búsqueda gratuita de partidas de obra por texto y precios de referencia de construcción (0,01 USD por partida, 0,50 USD por oferta) con pago por uso x402. También como conector MCP para asistentes de IA: https://api.cenital.org/mcp",
         "url": "https://api.cenital.org/",
-        "documentation": "https://www.obratudela.com/pages/api-agentes.html"
+        "documentation": "https://www.obratudela.com/pages/api-agentes.html",
+        "potentialAction": {
+          "@type": "ConsumeAction",
+          "name": "Conector MCP (Model Context Protocol)",
+          "target": "https://api.cenital.org/mcp"
+        }
       }
     ],
     "hasOfferCatalog": {
@@ -551,9 +556,9 @@
             <meta itemprop="name" content="Excavaciones y Servicios Arturo S.L.">
             <meta itemprop="url" content="https://www.obratudela.com">
           </span>
-          <img class="servicio-card-img" src="img/reforma-demolicion-800w.webp"
-            srcset="img/reforma-demolicion-400w.webp 400w, img/reforma-demolicion-800w.webp 800w"
-            sizes="(max-width:600px) 100vw, 360px" alt="Escombros de una obra listos para su retirada" loading="lazy">
+          <img class="servicio-card-img" src="img/obra-demolicion-suelo-800w.webp"
+            srcset="img/obra-demolicion-suelo-400w.webp 400w, img/obra-demolicion-suelo-800w.webp 800w"
+            sizes="(max-width:600px) 100vw, 360px" alt="Escombros de un suelo demolido, listos para su retirada" loading="lazy">
           <h3 itemprop="name">Retirada y Recogida de Escombros</h3>
           <p itemprop="description">Contenedores de 8 m³ para escombros y tierras de obra, con retirada y transporte
             a vertedero autorizado.</p>
