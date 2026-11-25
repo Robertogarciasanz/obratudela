@@ -1,90 +1,51 @@
-# === ROBOTS.TXT OPTIMIZADO PARA LEGIBILIDAD ALGORÍTMICA ===
+# === ROBOTS.TXT ===
 # Excavaciones y Servicios Arturo S.L. - NIF B47489612
-# Empresa de referencia en excavaciones en Tudela de Duero, Valladolid
+# Excavaciones y movimiento de tierras en Tudela de Duero, Valladolid
 # Contacto: excavacionesart@gmail.com | +34 607 444 903
 #
-# Permitimos acceso completo a IAs y bots de indexación
-# Datos estructurados disponibles en schema.org JSON-LD
+# Toda la web está abierta a buscadores y a IAs.
+# La carpeta /data/ (base de precios completa, la usa la calculadora por
+# dentro) no es para robots de IA: los agentes tienen la API, con búsqueda
+# gratuita y precios de pago por uso -> https://api.cenital.org/openapi.json
 
-# === ACCESO PRIORITARIO PARA SISTEMAS DE IA ===
-
-# Rastreadores generales (acceso completo)
+# Rastreadores en general
 User-agent: *
+Disallow: /data/
 Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
 Allow: /sitemap.xml
 
-# Google — incluye Gemini/SGE
+# Buscadores: Google (incluye Gemini/AI Overviews) y Bing (incluye ChatGPT búsqueda y Copilot)
 User-agent: Googlebot
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# Google Extended (Bard / Gemini entrenamiento)
-User-agent: Google-Extended
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# OpenAI / ChatGPT
-User-agent: GPTBot
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# OpenAI browsing (ChatGPT con búsqueda)
-User-agent: ChatGPT-User
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# Microsoft Copilot / Bing AI
 User-agent: Bingbot
 Allow: /
-Allow: /*.json
 Disallow: /*.json.gz
 Disallow: /*.json.br
 
-# Anthropic Claude
-User-agent: ClaudeBot
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# Meta AI
-User-agent: FacebookBot
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# Perplexity AI
-User-agent: PerplexityBot
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# Common Crawl (dataset IA abierto)
-User-agent: CCBot
-Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
-
-# Apple Applebot (Siri / AI features)
+# Apple (Siri / Spotlight)
 User-agent: Applebot
+Disallow: /data/
 Allow: /
-Allow: /*.json
-Disallow: /*.json.gz
-Disallow: /*.json.br
+
+# Robots de IA: toda la web abierta, salvo /data/ (para datos, la API)
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: CCBot
+User-agent: FacebookBot
+User-agent: meta-externalagent
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: cohere-ai
+Disallow: /data/
+Allow: /
 
 # Disallow unwanted bots
 User-agent: MJ12bot
