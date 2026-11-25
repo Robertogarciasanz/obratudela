@@ -166,15 +166,72 @@ function requisitosDePago(env, url, precio, descripcion) {
   };
 }
 
+// --- Firma para el facilitador de Coinbase (CDP) -------------------------
+// Coinbase pide en cada llamada un JWT firmado con la clave secreta de API
+// (tipo Ed25519, la que da por defecto). Los secretos CDP_API_KEY_ID y
+// CDP_API_KEY_SECRET se guardan en Cloudflare con "npx wrangler secret put".
+
+function aBase64Url(bytes) {
+  let binario = '';
+  for (const b of bytes) binario += String.fromCharCode(b);
+  return btoa(binario).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+const jsonABase64Url = (objeto) => aBase64Url(new TextEncoder().encode(JSON.stringify(objeto)));
+
+let clavePromesa = null;
+
+function claveCoinbase(env) {
+  if (!clavePromesa) {
+    // La clave secreta Ed25519 de Coinbase son 64 bytes en base64: los 32
+    // primeros son la semilla privada. WebCrypto la importa en formato PKCS#8.
+    const bytes = Uint8Array.from(atob(env.CDP_API_KEY_SECRET.trim()), (c) => c.charCodeAt(0));
+    if (bytes.length !== 64) {
+      throw new Error('CDP_API_KEY_SECRET no parece una clave Ed25519 de Coinbase (64 bytes en base64)');
+    }
+    const cabeceraPkcs8 = [0x30, 0x2e, 0x02, 0x01, 0x00, 0x30, 0x05, 0x06, 0x03, 0x2b, 0x65, 0x70, 0x04, 0x22, 0x04, 0x20];
+    const pkcs8 = new Uint8Array([...cabeceraPkcs8, ...bytes.slice(0, 32)]);
+    clavePromesa = crypto.subtle.importKey('pkcs8', pkcs8, { name: 'Ed25519' }, false, ['sign'])
+      .catch((err) => {
+        clavePromesa = null;
+        throw err;
+      });
+  }
+  return clavePromesa;
+}
+
+async function jwtCoinbase(env, metodo, url) {
+  const { host, pathname } = new URL(url);
+  const ahora = Math.floor(Date.now() / 1000);
+  const nonce = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join('');
+  const cabecera = { alg: 'EdDSA', typ: 'JWT', kid: env.CDP_API_KEY_ID, nonce };
+  const datos = {
+    sub: env.CDP_API_KEY_ID,
+    iss: 'cdp',
+    aud: ['cdp_service'],
+    nbf: ahora,
+    exp: ahora + 120,
+    uri: metodo + ' ' + host + pathname
+  };
+  const entrada = jsonABase64Url(cabecera) + '.' + jsonABase64Url(datos);
+  const firma = await crypto.subtle.sign({ name: 'Ed25519' }, await claveCoinbase(env), new TextEncoder().encode(entrada));
+  return entrada + '.' + aBase64Url(new Uint8Array(firma));
+}
+
 async function llamarFacilitador(env, ruta, cuerpo) {
+  const url = env.FACILITADOR.replace(/\/$/, '') + ruta;
   const cabeceras = { 'Content-Type': 'application/json' };
-  if (env.FACILITADOR_TOKEN) cabeceras.Authorization = 'Bearer ' + env.FACILITADOR_TOKEN;
-  const res = await fetch(env.FACILITADOR.replace(/\/$/, '') + ruta, {
-    method: 'POST',
-    headers: cabeceras,
-    body: JSON.stringify(cuerpo)
-  });
-  if (!res.ok) throw new Error('Facilitador ' + ruta + ' respondió ' + res.status);
+  if (env.CDP_API_KEY_ID && env.CDP_API_KEY_SECRET && new URL(url).host === 'api.cdp.coinbase.com') {
+    cabeceras.Authorization = 'Bearer ' + await jwtCoinbase(env, 'POST', url);
+  } else if (env.FACILITADOR_TOKEN) {
+    cabeceras.Authorization = 'Bearer ' + env.FACILITADOR_TOKEN;
+  }
+  const res = await fetch(url, { method: 'POST', headers: cabeceras, body: JSON.stringify(cuerpo) });
+  if (!res.ok) {
+    // El detalle va solo al registro de Cloudflare, no al cliente
+    console.error('Facilitador', ruta, res.status, (await res.text()).slice(0, 500));
+    throw new Error('Facilitador ' + ruta + ' respondió ' + res.status);
+  }
   return res.json();
 }
 

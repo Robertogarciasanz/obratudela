@@ -23,8 +23,11 @@ PAGOS_ACTIVOS = "si"
 RED = "eip155:84532"
 
 # Facilitador que comprueba y liquida los pagos.
-# El de x402.org es gratuito y sirve para la red de pruebas.
-# Para la red real, ver LEEME.md (puede pedir clave: FACILITADOR_TOKEN como secreto).
+# Coinbase (CDP): sirve para la red de pruebas y la real; gratis hasta 1.000
+# cobros al mes. Firma cada llamada con los secretos CDP_API_KEY_ID y
+# CDP_API_KEY_SECRET (guardados en Cloudflare, nunca aquí).
+# Alternativa solo para pruebas, sin clave: "https://x402.org/facilitator"
+# (en uso mientras Coinbase no acepte la clave: devolvía 401)
 FACILITADOR = "https://x402.org/facilitator"
 
 # Precios en dólares (USDC)
