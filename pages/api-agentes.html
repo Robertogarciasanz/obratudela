@@ -196,6 +196,37 @@ footer {
 {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}</pre></li>
     </ol>
 
+    <h2>Ejemplo de respuesta 402 Payment Required</h2>
+    <p>Respuesta real de <code>GET https://api.cenital.org/api/precio?cod=M12O013</code> sin pago
+    (la cabecera <code>PAYMENT-REQUIRED</code> va en base64; aquí, ya decodificada):</p>
+    <pre>HTTP/1.1 402 Payment Required
+Content-Type: application/json
+PAYMENT-REQUIRED: eyJ4NDAyVmVyc2lvbiI6Mi...
+
+{
+  "x402Version": 2,
+  "error": "Hace falta la cabecera PAYMENT-SIGNATURE con el pago",
+  "resource": {
+    "url": "https://api.cenital.org/api/precio",
+    "mimeType": "application/json",
+    "serviceName": "ObraTudela precios"
+  },
+  "accepts": [{
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "amount": "10000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "payTo": "0x7a8e…b8d9",
+    "maxTimeoutSeconds": 60,
+    "extra": { "name": "USD Coin", "version": "2" }
+  }]
+}</pre>
+    <p><code>amount</code> va en unidades de USDC con 6 decimales: <code>10000</code> = 0,01 USD.
+    Red Base (<code>eip155:8453</code>), USDC nativo. El agente firma una autorización EIP-3009, repite la
+    petición con la cabecera <code>PAYMENT-SIGNATURE</code> y recibe <code>200 OK</code> con los datos y la
+    cabecera <code>PAYMENT-RESPONSE</code> (justificante del cobro). Si el código no existe, responde
+    <code>404</code> y no cobra.</p>
+
     <h2>Documentación para máquinas</h2>
     <ul>
       <li><a href="https://api.cenital.org/openapi.json">OpenAPI (openapi.json)</a></li>
