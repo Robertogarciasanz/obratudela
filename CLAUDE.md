@@ -80,14 +80,15 @@ y la página de anuncios no carga listados. Ya se intentó arreglar una vez
 (commit "Corregir página de anuncios") y se revirtió; antes de tocarlo,
 pregunta al dueño del negocio por qué se revirtió.
 
-## API para agentes de IA (`api-agentes/`) — EN PRUEBAS (dinero ficticio)
+## API para agentes de IA (`api-agentes/`) — ACTIVA CON DINERO REAL
 
 Cloudflare Worker sin dependencias que vende consultas a la base de precios
 por céntimos con el protocolo x402 v2 (USDC). Desplegado aparte con
 `npx wrangler deploy` (no con GitHub Pages) en
-`obratudela-api-agentes.excavacionesart.workers.dev`, **solo en la red de
-pruebas** Base Sepolia. No pasarlo a la red real sin que el dueño lo pida: lo
-cobraría como particular y antes tiene que resolver el papeleo con su gestor.
+`obratudela-api-agentes.excavacionesart.workers.dev`, en la **red real** Base
+desde el 25/11/2026 (el dueño lo consultó con su gestor) y con el facilitador
+de PayAI. Los cambios en `worker.js` o `wrangler.toml` afectan a cobros
+reales: pruébalos antes en local o con `RED = "eip155:84532"`.
 La dirección de cobro va en `api-agentes/.dev.vars` y en los secretos de
 Cloudflare, nunca en `wrangler.toml`. Pasos y estado en `api-agentes/LEEME.md`. Lee
 `data/base-precios-ligero.json`: si cambias `base-precios.json`, regenérala con

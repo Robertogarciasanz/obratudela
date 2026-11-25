@@ -5,12 +5,13 @@ pagando céntimos, sin registrarse ni pedir claves. Usa el protocolo abierto
 **x402 (versión 2)**: el pago va dentro de la propia petición web, en USDC
 (una moneda digital que vale siempre 1 dólar).
 
-> **Estado: EN PRUEBAS (dinero ficticio).** Desplegado en
-> https://obratudela-api-agentes.excavacionesart.workers.dev con la red de
-> pruebas Base Sepolia (`RED = "eip155:84532"`). Pide pagos de USDC ficticio:
-> no se cobra dinero real. Para dinero real, ver el paso 1 (papeleo) y el
-> paso 4. Probado de principio a fin el 25/11/2026: un agente de prueba pagó
-> 0,01 USDC ficticio y llegó a la wallet de cobro.
+> **Estado: ACTIVO CON DINERO REAL** desde el 25/11/2026. Desplegado en
+> https://obratudela-api-agentes.excavacionesart.workers.dev, en la red real
+> Base (`RED = "eip155:8453"`), con el facilitador de PayAI (sin clave,
+> gratis hasta 10.000 cobros al mes). Antes se probó de principio a fin en la
+> red de pruebas con tres facilitadores: los pagos de USDC ficticio llegaron a
+> la wallet de cobro. Para volver a pruebas: `RED = "eip155:84532"` y
+> `npx wrangler deploy`. Para apagarlo: `PAGOS_ACTIVOS = "no"`.
 >
 > Esta carpeta se publica en GitHub y en obratudela.com como el resto del
 > repositorio: **la dirección de cobro y cualquier clave van solo en

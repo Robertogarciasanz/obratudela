@@ -227,12 +227,21 @@ async function llamarFacilitador(env, ruta, cuerpo) {
     cabeceras.Authorization = 'Bearer ' + env.FACILITADOR_TOKEN;
   }
   const res = await fetch(url, { method: 'POST', headers: cabeceras, body: JSON.stringify(cuerpo) });
-  if (!res.ok) {
-    // El detalle va solo al registro de Cloudflare, no al cliente
-    console.error('Facilitador', ruta, res.status, (await res.text()).slice(0, 500));
-    throw new Error('Facilitador ' + ruta + ' respondió ' + res.status);
+  const texto = await res.text();
+  let datos = null;
+  try { datos = JSON.parse(texto); } catch { /* respuesta que no es JSON */ }
+  if (res.ok && datos) return datos;
+  // Algunos facilitadores responden a un pago inválido con un error HTTP
+  // (400) en vez de {isValid:false}: se trata como pago rechazado.
+  if (res.status >= 400 && res.status < 500 && datos && (datos.isValid === false || datos.success === false || datos.invalidReason || datos.errorReason)) {
+    return { isValid: false, success: false, invalidReason: datos.invalidReason || datos.errorReason || 'pago_no_valido', errorReason: datos.errorReason || datos.invalidReason || 'pago_no_valido' };
   }
-  return res.json();
+  if (res.status === 400) {
+    return { isValid: false, success: false, invalidReason: 'pago_no_valido', errorReason: 'pago_no_valido' };
+  }
+  // El detalle va solo al registro de Cloudflare, no al cliente
+  console.error('Facilitador', ruta, res.status, texto.slice(0, 500));
+  throw new Error('Facilitador ' + ruta + ' respondió ' + res.status);
 }
 
 /**

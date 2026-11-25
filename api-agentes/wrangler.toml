@@ -5,9 +5,6 @@ compatibility_date = "2026-11-01"
 
 [vars]
 # Interruptor general. "no" = no cobra ni sirve datos de pago.
-# Ahora "si" SOLO para probar en la red de pruebas (RED = eip155:84532,
-# dinero ficticio). Antes de cambiar RED a la red real, ver el paso 1 del
-# LEEME.md (papeleo).
 PAGOS_ACTIVOS = "si"
 
 # Dirección de cobro (wallet propia, empieza por 0x). NO se escribe aquí,
@@ -20,15 +17,17 @@ PAGOS_ACTIVOS = "si"
 # Red de pago:
 #   "eip155:84532" = Base Sepolia, red de PRUEBAS (dinero ficticio)
 #   "eip155:8453"  = Base, red REAL (dinero de verdad)
-RED = "eip155:84532"
+# En uso: red REAL desde el 25/11/2026 (el dueño lo consultó con su gestor).
+RED = "eip155:8453"
 
-# Facilitador que comprueba y liquida los pagos.
-# Coinbase (CDP): sirve para la red de pruebas y la real; gratis hasta 1.000
-# cobros al mes. Firma cada llamada con los secretos CDP_API_KEY_ID y
-# CDP_API_KEY_SECRET (guardados en Cloudflare, nunca aquí).
-# Alternativa solo para pruebas, sin clave: "https://x402.org/facilitator"
-# (en uso mientras Coinbase no acepte la clave: devolvía 401)
-FACILITADOR = "https://x402.org/facilitator"
+# Facilitador que comprueba y liquida los pagos. No puede quedarse con el
+# dinero: el agente firma un pago exacto a COBRAR_A y él solo lo ejecuta.
+#   - PayAI (en uso): red de pruebas y real, sin clave, gratis hasta 10.000
+#     cobros al mes (docs.payai.network/x402/facilitators/pricing).
+#   - Coinbase (CDP): "https://api.cdp.coinbase.com/platform/v2/x402", con los
+#     secretos CDP_API_KEY_ID y CDP_API_KEY_SECRET. Su clave devolvía 401.
+#   - Solo pruebas, sin clave: "https://x402.org/facilitator"
+FACILITADOR = "https://facilitator.payai.network"
 
 # Precios en dólares (USDC)
 PRECIO_CONSULTA = "0.01"
