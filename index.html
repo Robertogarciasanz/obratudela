@@ -112,8 +112,20 @@
           "Base de Costes de la Construcción de Andalucía (BCCA)"
         ],
         "creditText": "Base gratuita recopilada y organizada por ObraTudela a partir de BCEXTREM 2026 (Junta de Extremadura), BCCA (Junta de Andalucía) y licitaciones públicas.",
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://www.obratudela.com/data/base-precios.json"
+        },
         "temporalCoverage": "2026",
         "spatialCoverage": "España"
+      },
+      {
+        "@type": "WebAPI",
+        "name": "ObraTudela precios — API para agentes de IA",
+        "description": "Búsqueda gratuita de partidas de obra por texto y precios de referencia de construcción (0,01 USD por partida, 0,50 USD por oferta) con pago por uso x402.",
+        "url": "https://obratudela-api-agentes.excavacionesart.workers.dev/",
+        "documentation": "https://www.obratudela.com/pages/api-agentes.html"
       }
     ],
     "hasOfferCatalog": {
@@ -650,6 +662,7 @@
     <p class="footer-copy">© 2026 Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Tudela de Duero, Valladolid</p>
     <div class="footer-links">
       <a href="pages/aviso-legal.html">Aviso legal</a>
+      <a href="pages/api-agentes.html">API para agentes de IA</a>
       <a href="tel:+34607444903">607 444 903</a>
     </div>
   </footer>

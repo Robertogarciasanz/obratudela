@@ -3,6 +3,15 @@ name = "obratudela-api-agentes"
 main = "worker.js"
 compatibility_date = "2026-11-01"
 
+# Dirección actual de la API: obratudela-api-agentes.excavacionesart.workers.dev
+# (tiene que quedarse en true aunque se añada una dirección propia)
+workers_dev = true
+
+# Dirección propia api.obratudela.com: PENDIENTE. El dominio obratudela.com
+# está en otra cuenta de Cloudflare (no en la de excavacionesart@gmail.com).
+# Cuando se pueda, añadir:
+# routes = [ { pattern = "api.obratudela.com", custom_domain = true } ]
+
 [vars]
 # Interruptor general. "no" = no cobra ni sirve datos de pago.
 PAGOS_ACTIVOS = "si"

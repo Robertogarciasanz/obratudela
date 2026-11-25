@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T26SL49M');</script>
+  <!-- End Google Tag Manager -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API de precios de construcción para agentes de IA — ObraTudela</title>
+<meta name="description" content="API de precios de referencia de construcción en España (63.447 partidas BC3, BCEXTREM 2026 + BCCA) para agentes de IA: búsqueda gratuita y precios de pago por uso con x402, sin registro.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.obratudela.com/pages/api-agentes.html">
+<link rel="alternate" type="application/json" href="https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json" title="OpenAPI">
+<link rel="alternate" type="text/plain" href="https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt" title="llms.txt de la API">
+<link rel="icon" href="../img/logo.jpg" type="image/jpeg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "@id": "https://www.obratudela.com/pages/api-agentes.html#api",
+  "name": "ObraTudela precios — API para agentes de IA",
+  "description": "Precios de referencia de construcción en España (BCEXTREM 2026 + BCCA, 63.447 partidas con código BC3). Búsqueda gratuita de partidas; precio de una partida (0,01 USD) y relleno de peticiones de oferta (0,50 USD) con pago por uso x402 en USDC (red Base), sin registro ni claves.",
+  "url": "https://obratudela-api-agentes.excavacionesart.workers.dev/",
+  "documentation": "https://www.obratudela.com/pages/api-agentes.html",
+  "termsOfService": "https://www.obratudela.com/pages/aviso-legal.html",
+  "inLanguage": "es",
+  "keywords": "API, precios construcción, BC3, BCEXTREM, BCCA, presupuestos de obra, x402, agentes de IA",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://obratudela-api-agentes.excavacionesart.workers.dev/api/buscar?q={consulta}",
+    "query-input": "required name=consulta"
+  },
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Excavaciones y Servicios Arturo S.L.",
+    "alternateName": "ObraTudela",
+    "url": "https://www.obratudela.com",
+    "telephone": "+34607444903",
+    "email": "excavacionesart@gmail.com"
+  },
+  "offers": [
+    { "@type": "Offer", "name": "Buscar partidas", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Precio de una partida", "price": "0.01", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Rellenar una petición de oferta", "price": "0.50", "priceCurrency": "USD" }
+  ]
+}
+</script>
+<style>
+@font-face { font-family:'Barlow Condensed'; src:url('../fonts/barlow-condensed-800-latin.woff2') format('woff2'); font-weight:800; font-display:swap; }
+@font-face { font-family:'Open Sans'; src:url('../fonts/ibm-plex-sans-400-latin.woff2') format('woff2'); font-weight:400; font-display:swap; }
+@font-face { font-family:'Open Sans'; src:url('../fonts/ibm-plex-sans-600-latin.woff2') format('woff2'); font-weight:600; font-display:swap; }
+:root { --orange:#ff6b00; --bg:#0f0f0f; --surface:#1a1a1a; --border:#2e2e2e; --text:#e8e8e8; --muted:#888; }
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Open Sans',sans-serif; background:var(--bg); color:var(--text); }
+a { text-decoration:none; color:var(--orange); }
+a:hover { text-decoration:underline; }
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  background:rgba(15,15,15,0.95); backdrop-filter:blur(8px);
+  border-bottom:2px solid var(--orange);
+  padding:0 40px; height:64px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.nav-logo { display:flex; align-items:center; gap:12px; }
+.nav-logo img { height:38px; border-radius:4px; }
+.nav-logo span { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.6rem; color:var(--orange); letter-spacing:2px; }
+.back-link { font-size:.82rem; font-weight:600; text-transform:uppercase; letter-spacing:1.2px; color:var(--muted); }
+.back-link:hover { color:var(--orange); }
+.page-wrap { max-width:860px; margin:100px auto 60px; padding:0 24px; }
+.page-card { background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:48px 52px; }
+.page-card h1 {
+  font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:2.2rem; color:var(--text);
+  margin-bottom:6px; border-left:4px solid var(--orange); padding-left:14px; letter-spacing:1px;
+}
+.page-card .subtitle { font-size:.9rem; color:var(--muted); margin-bottom:32px; padding-left:18px; }
+.page-card h2 {
+  font-size:1rem; font-weight:600; color:var(--orange); text-transform:uppercase; letter-spacing:1px; margin:32px 0 10px;
+}
+.page-card p, .page-card li { font-size:.95rem; line-height:1.8; color:#bbb; }
+.page-card p { margin-bottom:14px; }
+.page-card ul, .page-card ol { margin:0 0 14px 22px; }
+.page-card li { margin-bottom:6px; }
+.page-card strong { color:var(--text); }
+code, pre { font-family:Consolas,'Courier New',monospace; font-size:.86rem; }
+code { background:#262626; padding:1px 6px; border-radius:3px; color:#ffb27a; }
+pre { background:#111; border:1px solid var(--border); border-radius:4px; padding:14px 16px; overflow-x:auto; margin:0 0 16px; color:#ddd; line-height:1.6; }
+table { width:100%; border-collapse:collapse; margin:0 0 18px; font-size:.92rem; }
+th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); color:#bbb; vertical-align:top; }
+th { color:var(--text); font-weight:600; }
+.info-box { background:#1f1208; border:1px solid #3d2008; border-radius:4px; padding:18px 22px; margin-bottom:28px; font-size:.9rem; color:#d4956a; line-height:1.8; }
+.info-box strong { color:var(--orange); }
+footer {
+  background:#0a0a0a; border-top:1px solid var(--border); padding:32px 40px;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;
+}
+.footer-left { display:flex; align-items:center; gap:12px; }
+.footer-left img { height:32px; border-radius:3px; opacity:.8; }
+.footer-left span { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.2rem; color:var(--muted); letter-spacing:2px; }
+.footer-copy { font-size:.78rem; color:var(--muted); }
+.footer-links { display:flex; gap:20px; flex-wrap:wrap; }
+.footer-links a { font-size:.78rem; color:var(--muted); }
+@media(max-width:600px){
+  .page-card { padding:28px 18px; }
+  nav { padding:0 20px; }
+  footer { padding:24px 20px; flex-direction:column; align-items:flex-start; }
+}
+</style>
+  <!-- App instalable (PWA) -->
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#ff6b00">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ObraTudela">
+  <script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); }); }</script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T26SL49M"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<nav>
+  <a href="../index.html" class="nav-logo">
+    <img src="../img/logo.jpg" alt="ObraTudela">
+    <span>ObraTudela</span>
+  </a>
+  <a href="../index.html" class="back-link">← Volver al inicio</a>
+</nav>
+
+<main class="page-wrap">
+  <div class="page-card">
+
+    <h1>API de precios para agentes de IA</h1>
+    <p class="subtitle">Precios de referencia de construcción en España, para programas y asistentes de inteligencia artificial.</p>
+
+    <div class="info-box">
+      <strong>¿Eres una persona?</strong> Esta página es para programas. Para calcular un presupuesto usa el
+      <a href="gestor-presupuestos.html">gestor de presupuestos</a> o la <a href="calculadora-ia.html">calculadora con IA</a>,
+      que son gratuitos, o pídenos presupuesto en el <a href="tel:+34607444903">607 444 903</a>.
+    </div>
+
+    <h2>Qué ofrece</h2>
+    <p>Acceso a <strong>63.447 partidas de obra con código BC3</strong> (BCEXTREM 2026 de la Junta de Extremadura,
+    BCCA de la Junta de Andalucía y licitaciones públicas), recopiladas por ObraTudela. Sin registro ni claves:
+    la búsqueda es gratuita y los precios se pagan por uso con el protocolo abierto <strong>x402</strong>
+    (USDC en la red Base).</p>
+
+    <table>
+      <tr><th>Servicio</th><th>Precio</th><th>Qué devuelve</th></tr>
+      <tr><td><code>GET /api/buscar?q=texto</code></td><td><strong>Gratis</strong></td><td>Partidas que encajan con el texto: código BC3, unidad y descripción.</td></tr>
+      <tr><td><code>GET /api/precio?cod=CODIGO</code></td><td>0,01 $</td><td>Precio de referencia en euros de una partida.</td></tr>
+      <tr><td><code>POST /api/oferta</code></td><td>0,50 $</td><td>Una petición de oferta de hasta 100 líneas con precio, importe y total.</td></tr>
+    </table>
+    <p>Si el código no existe o no se encuentra ninguna partida, <strong>no se cobra</strong>.</p>
+
+    <h2>Cómo se usa</h2>
+    <ol>
+      <li>Buscar el código (gratis):
+        <pre>GET https://obratudela-api-agentes.excavacionesart.workers.dev/api/buscar?q=contenedor escombros 8 m3</pre></li>
+      <li>Pedir el precio. La API responde <code>402 Payment Required</code> con la cabecera
+        <code>PAYMENT-REQUIRED</code>; el agente firma el pago y repite la petición con <code>PAYMENT-SIGNATURE</code>:
+        <pre>GET https://obratudela-api-agentes.excavacionesart.workers.dev/api/precio?cod=M12O013</pre></li>
+      <li>O rellenar una oferta completa:
+        <pre>POST https://obratudela-api-agentes.excavacionesart.workers.dev/api/oferta
+{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}</pre></li>
+    </ol>
+
+    <h2>Documentación para máquinas</h2>
+    <ul>
+      <li><a href="https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json">OpenAPI (openapi.json)</a></li>
+      <li><a href="https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt">llms.txt de la API</a></li>
+      <li><a href="https://obratudela-api-agentes.excavacionesart.workers.dev/.well-known/x402">Descubrimiento x402</a></li>
+      <li><a href="../llms.txt">llms.txt de ObraTudela</a></li>
+    </ul>
+
+    <h2>Aviso</h2>
+    <p>Son precios de referencia de bancos de precios públicos y orientativos. Para un presupuesto real de
+    excavación, movimiento de tierras o demolición en la zona de Valladolid, contacta con
+    Excavaciones y Servicios Arturo S.L.: <a href="tel:+34607444903">607 444 903</a>,
+    <a href="https://wa.me/34607444903">WhatsApp</a> o <a href="mailto:excavacionesart@gmail.com">excavacionesart@gmail.com</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-left">
+    <img src="../img/logo.jpg" alt="ObraTudela">
+    <span>ObraTudela</span>
+  </div>
+  <p class="footer-copy">© 2026 Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Tudela de Duero, Valladolid</p>
+  <div class="footer-links">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="tel:+34607444903">607 444 903</a>
+  </div>
+</footer>
+
+</body>
+</html>

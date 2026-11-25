@@ -98,6 +98,11 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 
 # Resumen de la empresa para asistentes y agentes de IA (formato llms.txt)
 # https://www.obratudela.com/llms.txt
+#
+# API de precios para agentes de IA (búsqueda gratuita + pago por uso x402):
+#   Documentación: https://www.obratudela.com/pages/api-agentes.html
+#   OpenAPI:       https://obratudela-api-agentes.excavacionesart.workers.dev/openapi.json
+#   llms.txt:      https://obratudela-api-agentes.excavacionesart.workers.dev/llms.txt
 
 # === DATOS ESTRUCTURADOS PARA SISTEMAS DE IA ===
 #

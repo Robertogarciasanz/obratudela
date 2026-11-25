@@ -115,6 +115,33 @@ function buscarPorTexto(lista, texto) {
   return { partida: mejor, confianza: Math.round(Math.max(0, mejorPuntos) * 100) / 100 };
 }
 
+// Las N partidas que mejor encajan con el texto (para el buscador gratuito)
+function buscarVarias(lista, texto, cuantas) {
+  const buscadas = [...new Set(palabras(texto))];
+  if (buscadas.length === 0) return [];
+  const mejores = [];
+  for (const partida of lista) {
+    let aciertos = 0;
+    for (const p of buscadas) {
+      if (partida.palabras.includes(p)) aciertos++;
+    }
+    if (aciertos === 0) continue;
+    const puntos = aciertos / buscadas.length - partida.palabras.length * 0.001;
+    if (mejores.length < cuantas || puntos > mejores[mejores.length - 1].puntos) {
+      mejores.push({ partida, puntos });
+      mejores.sort((a, b) => b.puntos - a.puntos);
+      if (mejores.length > cuantas) mejores.pop();
+    }
+  }
+  return mejores.map(({ partida, puntos }) => ({
+    cod: partida.cod,
+    uni: partida.uni,
+    res: partida.res,
+    grupo: partida.grupo,
+    coincidencia: Math.round(Math.max(0, puntos) * 100) / 100
+  }));
+}
+
 function publica(partida) {
   return { cod: partida.cod, uni: partida.uni, res: partida.res, precio: partida.precio, grupo: partida.grupo };
 }
@@ -415,6 +442,11 @@ function info(env) {
     },
     servicios: [
       {
+        ruta: 'GET /api/buscar?q=TEXTO',
+        precio_usd: '0',
+        descripcion: 'Gratis. Busca partidas por texto en español y devuelve sus códigos BC3, unidad y descripción (sin precio).'
+      },
+      {
         ruta: 'GET /api/precio?cod=CODIGO',
         precio_usd: env.PRECIO_CONSULTA,
         descripcion: 'Una partida de obra con unidad y precio de referencia. Si el código no existe, no se cobra.'
@@ -429,6 +461,60 @@ function info(env) {
     nota: NOTA_PRECIOS,
     contacto: CONTACTO
   });
+}
+
+// Buscador GRATUITO: encuentra códigos BC3 por texto, sin precios. Los
+// agentes no suelen conocer los códigos; con esto los encuentran y luego
+// piden el precio (/api/precio) o la oferta completa (/api/oferta).
+const MAX_RESULTADOS = 20;
+
+async function buscar(request, env) {
+  const url = new URL(request.url);
+  const q = (url.searchParams.get('q') || '').trim().slice(0, 200);
+  const limite = Math.min(MAX_RESULTADOS, Math.max(1, parseInt(url.searchParams.get('limite'), 10) || 10));
+  if (!q) {
+    return json({ error: 'falta_texto', mensaje: 'Indique ?q=texto, p. ej. ?q=contenedor escombros 8 m3', ejemplo: url.origin + '/api/buscar?q=zanja' }, 400);
+  }
+  const { lista } = await cargarDatos(env);
+  return json({
+    consulta: q,
+    resultados: buscarVarias(lista, q, limite),
+    siguiente_paso: 'Precio de una partida: GET ' + url.origin + '/api/precio?cod=CODIGO (' + env.PRECIO_CONSULTA +
+      ' USD). Varias líneas con cantidades: POST ' + url.origin + '/api/oferta (' + env.PRECIO_OFERTA + ' USD). Pago x402.',
+    contacto: CONTACTO
+  });
+}
+
+// llms.txt de la propia API, para agentes que llegan directamente aquí
+function llmsTxt(request, env) {
+  const o = new URL(request.url).origin;
+  const red = REDES[env.RED] ? REDES[env.RED].nombre : env.RED;
+  const texto = [
+    '# ObraTudela precios — API para agentes de IA',
+    '',
+    '> Precios de referencia de construcción en España (BCEXTREM 2026 + BCCA, 63.447 partidas con código BC3), de Excavaciones y Servicios Arturo S.L. (Tudela de Duero, Valladolid). Búsqueda gratuita; precios de pago por uso con x402 v2, en USDC (' + red + '), sin registro ni claves.',
+    '',
+    '## Cómo usarla',
+    '',
+    '1. Buscar códigos (gratis): `GET ' + o + '/api/buscar?q=contenedor escombros 8 m3` → lista de partidas con código, unidad y descripción.',
+    '2. Precio de una partida (' + env.PRECIO_CONSULTA + ' USD): `GET ' + o + '/api/precio?cod=M12O013`.',
+    '3. Oferta completa (' + env.PRECIO_OFERTA + ' USD): `POST ' + o + '/api/oferta` con `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}` (hasta ' + MAX_LINEAS_OFERTA + ' líneas, por código o descripción). Devuelve precio, importe y total en EUR.',
+    '',
+    'Los servicios de pago responden 402 con la cabecera PAYMENT-REQUIRED (x402 v2); se repite la petición con la cabecera PAYMENT-SIGNATURE. Si no existe el código o no se encuentra ninguna partida, no se cobra.',
+    '',
+    '## Documentos',
+    '',
+    '- [OpenAPI](' + o + '/openapi.json)',
+    '- [Descubrimiento x402](' + o + '/.well-known/x402)',
+    '- [Información y precios (JSON)](' + o + '/)',
+    '- [Web de la empresa](https://www.obratudela.com) y su [llms.txt](https://www.obratudela.com/llms.txt)',
+    '',
+    '## Contacto',
+    '',
+    'Para un presupuesto real de excavación, movimiento de tierras o demolición en la zona de Valladolid: ' + CONTACTO.telefono + ', WhatsApp ' + CONTACTO.whatsapp + ', ' + CONTACTO.email + '.',
+    ''
+  ].join('\n');
+  return new Response(texto, { headers: { 'Content-Type': 'text/plain; charset=utf-8', ...CORS } });
 }
 
 // Documento de descubrimiento OpenAPI (lo leen x402scan y otros directorios)
@@ -457,13 +543,47 @@ function openapi(request, env) {
       version: '1.0.0',
       description: 'Precios de referencia de construcción en España (BCEXTREM 2026 + BCCA, 63.447 partidas) para agentes de IA, con pago por uso x402. ' +
         'Spanish construction reference prices for AI agents, pay-per-use with x402 (USDC on Base).',
-      'x-guidance': 'Use GET /api/precio?cod=CODE for the reference price (EUR) of one Spanish construction item by its BC3 code (e.g. M12O013). ' +
+      'x-guidance': 'If you do not know the BC3 code, first use the FREE GET /api/buscar?q=TEXT (Spanish text, e.g. "contenedor escombros 8 m3") to find it. ' +
+        'Use GET /api/precio?cod=CODE for the reference price (EUR) of one Spanish construction item by its BC3 code (e.g. M12O013). ' +
         'Use POST /api/oferta with a JSON body {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]} ' +
         'to price up to 100 lines by code or Spanish description; returns unit price, amount and total. Nothing is charged if no item is found.',
       contact: { name: CONTACTO.empresa, email: CONTACTO.email, url: CONTACTO.web }
     },
     servers: [{ url: origen }],
     paths: {
+      '/api/buscar': {
+        get: {
+          operationId: 'buscarPartidas',
+          summary: 'Buscar partidas (gratis) - Find Spanish construction items and their BC3 codes by text',
+          description: 'Free search, no payment. Returns BC3 codes, units and descriptions (no prices) to use with /api/precio or /api/oferta. Búsqueda gratuita de partidas por texto en español.',
+          tags: ['Construction prices'],
+          parameters: [
+            { name: 'q', in: 'query', required: true, description: 'Texto a buscar en español, p. ej. "contenedor escombros 8 m3"', schema: { type: 'string', example: 'zanja' } },
+            { name: 'limite', in: 'query', required: false, description: 'Número de resultados (1-' + MAX_RESULTADOS + ', por defecto 10)', schema: { type: 'integer', minimum: 1, maximum: MAX_RESULTADOS } }
+          ],
+          responses: {
+            200: {
+              description: 'Successful response',
+              content: {
+                'application/json': {
+                  schema: {
+                    type: 'object',
+                    properties: {
+                      consulta: { type: 'string' },
+                      resultados: {
+                        type: 'array',
+                        items: { type: 'object', properties: { cod: { type: 'string' }, uni: { type: 'string' }, res: { type: 'string' }, grupo: { type: 'string' }, coincidencia: { type: 'number' } }, required: ['cod', 'res'] }
+                      }
+                    },
+                    required: ['resultados']
+                  }
+                }
+              }
+            },
+            400: { description: 'Missing q parameter' }
+          }
+        }
+      },
       '/api/precio': {
         get: {
           operationId: 'precioPartida',
@@ -629,6 +749,8 @@ export default {
         return request.method === 'HEAD' ? new Response(null, { status: r.status, headers: r.headers }) : r;
       }
       if (request.method === 'POST' && pathname === '/api/oferta') return await oferta(request, env);
+      if (request.method === 'GET' && pathname === '/api/buscar') return await buscar(request, env);
+      if (request.method === 'GET' && pathname === '/llms.txt') return llmsTxt(request, env);
       if (request.method === 'GET' && pathname === '/openapi.json') return json(openapi(request, env));
       // Icono para directorios: el de la web de ObraTudela
       if ((request.method === 'GET' || request.method === 'HEAD') && (pathname === '/favicon.ico' || pathname === '/favicon.png')) {
