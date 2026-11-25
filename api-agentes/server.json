@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Robertogarciasanz/obratudela-precios",
+  "title": "ObraTudela: precios de obra, Catastro y 3D",
+  "description": "Precios de obra en España (BC3), parcelas del Catastro y piezas 3D. Búsqueda gratis, pago x402.",
+  "repository": {
+    "url": "https://github.com/Robertogarciasanz/obratudela",
+    "source": "github",
+    "subfolder": "api-agentes"
+  },
+  "websiteUrl": "https://www.obratudela.com/pages/api-agentes.html",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.cenital.org/mcp"
+    }
+  ]
+}
