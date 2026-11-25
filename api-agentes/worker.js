@@ -17,6 +17,8 @@
  *   POST /api/oferta            Rellena una petición de oferta completa (de pago)
  */
 
+import SUPERFICIES_BICI from './bici-superficies.js';
+
 // USDC en cada red admitida. "extra" es el dominio EIP-712 del contrato:
 // tiene que coincidir exactamente con el del token o el pago no valida.
 const REDES = {
@@ -274,6 +276,86 @@ const FICHAS = {
   }
 };
 
+// Fichas de los servicios de la bici en 3D (cenital.org)
+const ESQUEMA_ID_PIEZA = { type: 'string', description: 'Id de la pieza (ver /api/piezas), p. ej. Buje_cuerpo_1' };
+
+Object.assign(FICHAS, {
+  '/api/pieza': {
+    descripcion: 'Technical data sheet of one part of an open-licence 3D road bicycle (113 parts, SolidWorks 2020, cenital.org): ' +
+      'size in mm, volume, surface, weight in steel/aluminium/titanium/carbon/PLA, whether it fits a 256 mm 3D printer, and links to its STL, ' +
+      'dimensioned PDF drawing and SolidWorks file. Ficha técnica de una pieza de la bici en 3D.',
+    tags: ['3d-models', 'stl', 'cad', 'bicycle', 'solidworks'],
+    bazaar: {
+      info: {
+        input: { type: 'http', method: 'GET', queryParams: { id: 'Buje_cuerpo_1' } },
+        output: {
+          type: 'json',
+          example: { pieza: { id: 'Buje_cuerpo_1', nombre: 'Buje cuerpo', medidas_mm: { x: 50, y: 50, z: 75.5 }, volumen_cm3: 51.17, peso_g_segun_material: { aluminio: 138.2, PLA: 63.5 } } }
+        }
+      },
+      schema: {
+        $schema: ESQUEMA_JSON,
+        type: 'object',
+        properties: {
+          input: {
+            type: 'object',
+            properties: {
+              type: { type: 'string', const: 'http' },
+              method: { type: 'string', enum: ['GET', 'HEAD', 'DELETE'] },
+              queryParams: { type: 'object', properties: { id: ESQUEMA_ID_PIEZA }, required: ['id'] }
+            },
+            required: ['type', 'method'],
+            additionalProperties: false
+          },
+          output: { type: 'object', properties: { type: { type: 'string' }, example: { type: 'object' } }, required: ['type'] }
+        },
+        required: ['input']
+      }
+    }
+  },
+  '/api/imprimir': {
+    descripcion: '3D printing estimate for one part of an open-licence 3D road bicycle (cenital.org): filament grams, metres, ' +
+      'approximate print time and cost for PLA, PETG, ABS or TPU at a given infill, and whether it fits a 256 mm printer (Elegoo Centuri Carbon). ' +
+      'Cálculo de impresión 3D de una pieza.',
+    tags: ['3d-printing', 'stl', 'filament', 'estimate', 'bicycle'],
+    bazaar: {
+      info: {
+        input: { type: 'http', method: 'GET', queryParams: { id: 'Buje_cuerpo_1', material: 'PLA', relleno: '20' } },
+        output: {
+          type: 'json',
+          example: { impresion: { pieza: 'Buje_cuerpo_1', material: 'PLA', relleno_pct: 20, gramos: 30.1, metros_filamento: 10.1, horas_aprox: 0.5, coste_eur_aprox: 0.6, cabe_en_impresora: true } }
+        }
+      },
+      schema: {
+        $schema: ESQUEMA_JSON,
+        type: 'object',
+        properties: {
+          input: {
+            type: 'object',
+            properties: {
+              type: { type: 'string', const: 'http' },
+              method: { type: 'string', enum: ['GET', 'HEAD', 'DELETE'] },
+              queryParams: {
+                type: 'object',
+                properties: {
+                  id: ESQUEMA_ID_PIEZA,
+                  material: { type: 'string', enum: ['PLA', 'PETG', 'ABS', 'TPU'], description: 'Filamento (por defecto PLA)' },
+                  relleno: { type: 'string', description: 'Relleno en % de 0 a 100 (por defecto 20)' }
+                },
+                required: ['id']
+              }
+            },
+            required: ['type', 'method'],
+            additionalProperties: false
+          },
+          output: { type: 'object', properties: { type: { type: 'string' }, example: { type: 'object' } }, required: ['type'] }
+        },
+        required: ['input']
+      }
+    }
+  }
+});
+
 function requisitosDePago(env, url, precio, ruta) {
   const red = REDES[env.RED];
   const ficha = FICHAS[ruta];
@@ -442,6 +524,21 @@ function info(env) {
     },
     servicios: [
       {
+        ruta: 'GET /api/piezas?q=TEXTO',
+        precio_usd: '0',
+        descripcion: 'Gratis. Catálogo de las 113 piezas de la bici en 3D de cenital.org (licencia libre): id, nombre, conjunto y medidas.'
+      },
+      {
+        ruta: 'GET /api/pieza?id=ID',
+        precio_usd: env.PRECIO_PIEZA,
+        descripcion: 'Ficha técnica de una pieza: medidas, volumen, superficie, peso en 5 materiales, si cabe en una impresora de 256 mm y enlaces a STL, plano PDF y SolidWorks.'
+      },
+      {
+        ruta: 'GET /api/imprimir?id=ID&material=PLA&relleno=20',
+        precio_usd: env.PRECIO_IMPRESION,
+        descripcion: 'Cálculo de impresión 3D de una pieza: gramos y metros de filamento, horas y coste aproximados (PLA, PETG, ABS o TPU).'
+      },
+      {
         ruta: 'GET /api/buscar?q=TEXTO',
         precio_usd: '0',
         descripcion: 'Gratis. Busca partidas por texto en español y devuelve sus códigos BC3, unidad y descripción (sin precio).'
@@ -461,6 +558,184 @@ function info(env) {
     nota: NOTA_PRECIOS,
     contacto: CONTACTO
   });
+}
+
+// ---------------------------------------------------------------------------
+// Bici en 3D de cenital.org: 113 piezas con STL, plano PDF y SolidWorks.
+// Los datos salen de cenital.org/bici/datos.json (público, licencia libre);
+// la superficie de cada pieza, de bici-superficies.js.
+// ---------------------------------------------------------------------------
+
+// Densidades en g/cm³ (las mismas que el visor de cenital.org)
+const MATERIALES_PESO = { acero: 7.85, aluminio: 2.70, titanio: 4.51, fibra_carbono: 1.60, PLA: 1.24 };
+
+// Filamentos para el cálculo de impresión: densidad g/cm³ y precio orientativo €/kg
+const FILAMENTOS = {
+  PLA: { densidad: 1.24, eur_kg: 20 },
+  PETG: { densidad: 1.27, eur_kg: 22 },
+  ABS: { densidad: 1.04, eur_kg: 22 },
+  TPU: { densidad: 1.21, eur_kg: 30 }
+};
+
+// Impresora de referencia: Elegoo Centuri Carbon (volumen 256 × 256 × 256 mm)
+const IMPRESORA = { nombre: 'Elegoo Centuri Carbon', volumen_mm: [256, 256, 256], caudal_mm3_s: 15 };
+const PARED_MM = 1.2; // paredes: 3 perímetros de 0,4 mm más capas superior e inferior
+const DIAMETRO_FILAMENTO_MM = 1.75;
+
+let biciPromesa = null;
+
+function cargarBici(env) {
+  if (!biciPromesa) {
+    biciPromesa = fetch(env.URL_BICI, { cf: { cacheTtl: 3600 } })
+      .then((res) => {
+        if (!res.ok) throw new Error('No se pudo descargar datos.json de la bici: ' + res.status);
+        return res.json();
+      })
+      .then((datos) => ({
+        base: new URL('./', env.URL_BICI).href,
+        licencia: datos.licencia,
+        autor: datos.autor,
+        web: datos.web,
+        piezas: datos.piezas,
+        porId: new Map(datos.piezas.map((p) => [p.id.toLowerCase(), p]))
+      }))
+      .catch((err) => {
+        biciPromesa = null;
+        throw err;
+      });
+  }
+  return biciPromesa;
+}
+
+const redondear = (n, d = 1) => Math.round(n * 10 ** d) / 10 ** d;
+
+function cabeEnImpresora(caja) {
+  const pieza = [...caja].sort((a, b) => a - b);
+  const vol = [...IMPRESORA.volumen_mm].sort((a, b) => a - b);
+  return pieza.every((m, i) => m <= vol[i]);
+}
+
+function archivosPieza(bici, p) {
+  return {
+    stl: bici.base + p.stl,
+    plano_pdf: p.pdf ? bici.base + p.pdf : null,
+    solidworks: p.sw ? bici.base + p.sw : null,
+    visor: 'https://cenital.org/bici/'
+  };
+}
+
+// Catálogo GRATUITO de piezas (para encontrarlas); la ficha completa es de pago
+async function catalogoBici(request, env) {
+  const url = new URL(request.url);
+  const q = normalizar(url.searchParams.get('q') || '');
+  const bici = await cargarBici(env);
+  const piezas = bici.piezas
+    .filter((p) => !q || normalizar(p.nombre + ' ' + p.conjunto + ' ' + p.id + ' ' + (p.codigo || '')).includes(q))
+    .map((p) => ({ id: p.id, nombre: p.nombre, conjunto: p.conjunto, codigo: p.codigo || null, medidas_mm: p.caja }));
+  return json({
+    modelo: 'Bicicleta de carretera completa en 3D (SolidWorks 2020), cenital.org',
+    licencia: bici.licencia,
+    autor: bici.autor,
+    total: piezas.length,
+    piezas,
+    siguiente_paso: 'Ficha completa (volumen, superficie, peso en 5 materiales, archivos): GET ' + url.origin + '/api/pieza?id=ID (' +
+      env.PRECIO_PIEZA + ' USD). Cálculo de impresión 3D: GET ' + url.origin + '/api/imprimir?id=ID&material=PLA&relleno=20 (' +
+      env.PRECIO_IMPRESION + ' USD). Pago x402.',
+    descargas_gratis: 'https://cenital.org/bici/'
+  });
+}
+
+function fichaPieza(bici, p) {
+  const area = SUPERFICIES_BICI[p.id] || null;
+  const pesos = {};
+  for (const [m, d] of Object.entries(MATERIALES_PESO)) pesos[m] = redondear(p.vol * d, 1);
+  return {
+    id: p.id,
+    nombre: p.nombre,
+    conjunto: p.conjunto,
+    subconjunto: p.subconjunto || null,
+    codigo: p.codigo || null,
+    clasificacion: p.clasificacion || null,
+    norma: p.norma || null,
+    designacion: p.designacion || null,
+    material_diseno: p.material || null,
+    masa_diseno_g: p.masa_g,
+    medidas_mm: { x: p.caja[0], y: p.caja[1], z: p.caja[2] },
+    volumen_cm3: p.vol,
+    superficie_cm2: area ? redondear(area / 100, 1) : null,
+    triangulos: p.triangulos,
+    peso_g_segun_material: pesos,
+    densidades_g_cm3: MATERIALES_PESO,
+    cabe_en_impresora: { impresora: IMPRESORA.nombre, volumen_mm: IMPRESORA.volumen_mm, cabe: cabeEnImpresora(p.caja) },
+    archivos: archivosPieza(bici, p),
+    licencia: bici.licencia,
+    autor: bici.autor
+  };
+}
+
+async function pieza(request, env) {
+  const id = (new URL(request.url).searchParams.get('id') || '').trim();
+  if (!id) {
+    // Sin id y sin pago: 402 con la ficha (para directorios y agentes)
+    if (!request.headers.get('PAYMENT-SIGNATURE')) return cobrar(request, env, env.PRECIO_PIEZA, null);
+    return json({ error: 'falta_id', mensaje: 'Indique ?id=ID (ver /api/piezas)' }, 400);
+  }
+  const bici = await cargarBici(env);
+  const p = bici.porId.get(id.toLowerCase());
+  if (!p) return json({ error: 'no_encontrada', mensaje: 'No existe la pieza ' + id + '. Lista gratis en /api/piezas' }, 404);
+  return cobrar(request, env, env.PRECIO_PIEZA, async () => ({ pieza: fichaPieza(bici, p) }));
+}
+
+function calculoImpresion(p, material, relleno) {
+  const f = FILAMENTOS[material];
+  const volumen = p.vol * 1000; // mm³
+  const area = SUPERFICIES_BICI[p.id] || 0; // mm²
+  const paredes = Math.min(volumen, area * PARED_MM);
+  const interior = Math.max(0, volumen - paredes) * (relleno / 100);
+  const plastico = paredes + interior; // mm³
+  const gramos = plastico / 1000 * f.densidad;
+  const seccion = Math.PI * (DIAMETRO_FILAMENTO_MM / 2) ** 2;
+  const horas = plastico / IMPRESORA.caudal_mm3_s / 3600;
+  const cabe = cabeEnImpresora(p.caja);
+  return {
+    pieza: p.id,
+    nombre: p.nombre,
+    material,
+    relleno_pct: relleno,
+    gramos: redondear(gramos, 1),
+    metros_filamento: redondear(plastico / seccion / 1000, 2),
+    horas_aprox: redondear(horas, 1),
+    coste_eur_aprox: redondear(gramos / 1000 * f.eur_kg, 2),
+    precio_filamento_eur_kg: f.eur_kg,
+    impresora: IMPRESORA.nombre,
+    cabe_en_impresora: cabe,
+    aviso: cabe ? null : 'La pieza (' + p.caja.join(' × ') + ' mm) no cabe entera en ' + IMPRESORA.volumen_mm.join(' × ') +
+      ' mm: hay que dividirla o escalarla.',
+    supuestos: 'Estimación orientativa: paredes de ' + PARED_MM + ' mm, relleno ' + relleno + ' %, filamento de ' +
+      DIAMETRO_FILAMENTO_MM + ' mm, caudal medio de ' + IMPRESORA.caudal_mm3_s + ' mm³/s, sin soportes.',
+    stl: 'https://cenital.org/bici/' + p.stl
+  };
+}
+
+async function imprimir(request, env) {
+  const url = new URL(request.url);
+  const id = (url.searchParams.get('id') || '').trim();
+  if (!id) {
+    if (!request.headers.get('PAYMENT-SIGNATURE')) return cobrar(request, env, env.PRECIO_IMPRESION, null);
+    return json({ error: 'falta_id', mensaje: 'Indique ?id=ID (ver /api/piezas)' }, 400);
+  }
+  const material = (url.searchParams.get('material') || 'PLA').toUpperCase();
+  if (!FILAMENTOS[material]) {
+    return json({ error: 'material_no_valido', mensaje: 'Materiales: ' + Object.keys(FILAMENTOS).join(', ') }, 400);
+  }
+  const relleno = url.searchParams.has('relleno') ? Number(url.searchParams.get('relleno')) : 20;
+  if (!Number.isFinite(relleno) || relleno < 0 || relleno > 100) {
+    return json({ error: 'relleno_no_valido', mensaje: 'El relleno va de 0 a 100 (%)' }, 400);
+  }
+  const bici = await cargarBici(env);
+  const p = bici.porId.get(id.toLowerCase());
+  if (!p) return json({ error: 'no_encontrada', mensaje: 'No existe la pieza ' + id + '. Lista gratis en /api/piezas' }, 404);
+  return cobrar(request, env, env.PRECIO_IMPRESION, async () => ({ impresion: calculoImpresion(p, material, relleno) }));
 }
 
 // Buscador GRATUITO: encuentra códigos BC3 por texto, sin precios. Los
@@ -499,6 +774,12 @@ function llmsTxt(request, env) {
     '1. Buscar códigos (gratis): `GET ' + o + '/api/buscar?q=contenedor escombros 8 m3` → lista de partidas con código, unidad y descripción.',
     '2. Precio de una partida (' + env.PRECIO_CONSULTA + ' USD): `GET ' + o + '/api/precio?cod=M12O013`.',
     '3. Oferta completa (' + env.PRECIO_OFERTA + ' USD): `POST ' + o + '/api/oferta` con `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}` (hasta ' + MAX_LINEAS_OFERTA + ' líneas, por código o descripción). Devuelve precio, importe y total en EUR.',
+    '',
+    '## Modelos 3D: bicicleta de carretera de cenital.org (113 piezas, licencia libre)',
+    '',
+    '1. Catálogo (gratis): `GET ' + o + '/api/piezas?q=buje` → id, nombre, conjunto y medidas de cada pieza.',
+    '2. Ficha de una pieza (' + env.PRECIO_PIEZA + ' USD): `GET ' + o + '/api/pieza?id=Buje_cuerpo_1` → medidas, volumen, superficie, peso en acero, aluminio, titanio, carbono y PLA, si cabe en una impresora de 256 mm, y enlaces a STL, plano PDF y SolidWorks.',
+    '3. Cálculo de impresión 3D (' + env.PRECIO_IMPRESION + ' USD): `GET ' + o + '/api/imprimir?id=Buje_cuerpo_1&material=PLA&relleno=20` → gramos, metros de filamento, horas y coste aproximados.',
     '',
     'Los servicios de pago responden 402 con la cabecera PAYMENT-REQUIRED (x402 v2); se repite la petición con la cabecera PAYMENT-SIGNATURE. Si no existe el código o no se encuentra ninguna partida, no se cobra.',
     '',
@@ -546,7 +827,9 @@ function openapi(request, env) {
       'x-guidance': 'If you do not know the BC3 code, first use the FREE GET /api/buscar?q=TEXT (Spanish text, e.g. "contenedor escombros 8 m3") to find it. ' +
         'Use GET /api/precio?cod=CODE for the reference price (EUR) of one Spanish construction item by its BC3 code (e.g. M12O013). ' +
         'Use POST /api/oferta with a JSON body {"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]} ' +
-        'to price up to 100 lines by code or Spanish description; returns unit price, amount and total. Nothing is charged if no item is found.',
+        'to price up to 100 lines by code or Spanish description; returns unit price, amount and total. Nothing is charged if no item is found. ' +
+        '3D MODELS: GET /api/piezas (FREE) lists the 113 parts of an open-licence 3D road bicycle; GET /api/pieza?id=ID returns its data sheet ' +
+        '(size, volume, weight by material, STL/PDF/SolidWorks links); GET /api/imprimir?id=ID&material=PLA&relleno=20 estimates 3D printing grams, time and cost.',
       contact: { name: CONTACTO.empresa, email: CONTACTO.email, url: CONTACTO.web }
     },
     servers: [{ url: origen }],
@@ -583,6 +866,59 @@ function openapi(request, env) {
             },
             400: { description: 'Missing q parameter' }
           }
+        }
+      },
+      '/api/piezas': {
+        get: {
+          operationId: 'catalogoPiezasBici',
+          summary: 'Catálogo de piezas (gratis) - List the 113 parts of an open-licence 3D road bicycle',
+          description: 'Free, no payment. Parts of a complete road bicycle modelled in SolidWorks 2020 (cenital.org): id, name, assembly, code and size in mm. Optional text filter q.',
+          tags: ['3D models'],
+          security: [],
+          parameters: [{ name: 'q', in: 'query', required: false, description: 'Filtro de texto, p. ej. "buje" o "pedal"', schema: { type: 'string' } }],
+          responses: {
+            200: {
+              description: 'Successful response',
+              content: {
+                'application/json': {
+                  schema: {
+                    type: 'object',
+                    properties: {
+                      total: { type: 'integer' },
+                      piezas: { type: 'array', items: { type: 'object', properties: { id: { type: 'string' }, nombre: { type: 'string' }, conjunto: { type: 'string' }, medidas_mm: { type: 'array', items: { type: 'number' } } }, required: ['id', 'nombre'] } }
+                    },
+                    required: ['piezas']
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      '/api/pieza': {
+        get: {
+          operationId: 'fichaPiezaBici',
+          summary: 'Ficha de pieza - Technical data sheet of one 3D bicycle part (size, volume, weight by material, STL/PDF/SolidWorks links)',
+          description: FICHAS['/api/pieza'].descripcion,
+          tags: ['3D models'],
+          parameters: [{ name: 'id', in: 'query', required: true, description: ESQUEMA_ID_PIEZA.description, schema: { type: 'string', example: 'Buje_cuerpo_1' } }],
+          responses: respuestas({ type: 'object', properties: { pieza: { type: 'object' } }, required: ['pieza'] }, FICHAS['/api/pieza'].bazaar.info.output.example),
+          'x-payment-info': pago(env.PRECIO_PIEZA)
+        }
+      },
+      '/api/imprimir': {
+        get: {
+          operationId: 'impresionPiezaBici',
+          summary: 'Cálculo de impresión - 3D printing estimate (grams, metres, hours, cost) for one bicycle part',
+          description: FICHAS['/api/imprimir'].descripcion,
+          tags: ['3D models'],
+          parameters: [
+            { name: 'id', in: 'query', required: true, description: ESQUEMA_ID_PIEZA.description, schema: { type: 'string', example: 'Buje_cuerpo_1' } },
+            { name: 'material', in: 'query', required: false, description: 'Filamento: PLA (por defecto), PETG, ABS o TPU', schema: { type: 'string', enum: Object.keys(FILAMENTOS) } },
+            { name: 'relleno', in: 'query', required: false, description: 'Relleno en % (0-100, por defecto 20)', schema: { type: 'number', minimum: 0, maximum: 100 } }
+          ],
+          responses: respuestas({ type: 'object', properties: { impresion: { type: 'object' } }, required: ['impresion'] }, FICHAS['/api/imprimir'].bazaar.info.output.example),
+          'x-payment-info': pago(env.PRECIO_IMPRESION)
         }
       },
       '/api/precio': {
@@ -751,6 +1087,11 @@ export default {
       }
       if (request.method === 'POST' && pathname === '/api/oferta') return await oferta(request, env);
       if (request.method === 'GET' && pathname === '/api/buscar') return await buscar(request, env);
+      if (request.method === 'GET' && pathname === '/api/piezas') return await catalogoBici(request, env);
+      if ((request.method === 'GET' || request.method === 'HEAD') && (pathname === '/api/pieza' || pathname === '/api/imprimir')) {
+        const r = pathname === '/api/pieza' ? await pieza(request, env) : await imprimir(request, env);
+        return request.method === 'HEAD' ? new Response(null, { status: r.status, headers: r.headers }) : r;
+      }
       if (request.method === 'GET' && pathname === '/llms.txt') return llmsTxt(request, env);
       if (request.method === 'GET' && pathname === '/openapi.json') return json(openapi(request, env));
       // Icono para directorios: el de la web de ObraTudela

@@ -55,6 +55,12 @@ API de precios de construcción de pago por uso con el protocolo abierto x402 (v
 - `GET /api/precio?cod=CODIGO`: una partida con unidad y precio de referencia (0,01 USDC). Si el código no existe, no se cobra.
 - `POST /api/oferta`: rellena una petición de oferta de hasta 100 líneas, por código o por descripción, con importe y total (0,50 USDC). Cuerpo: `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}`
 
+Modelos 3D (bicicleta de carretera de cenital.org, 113 piezas con STL, plano PDF y SolidWorks, licencia libre):
+
+- `GET /api/piezas?q=TEXTO`: **gratis**. Catálogo de piezas con id, nombre, conjunto y medidas.
+- `GET /api/pieza?id=ID`: ficha técnica (medidas, volumen, superficie, peso en 5 materiales, si cabe en una impresora de 256 mm, enlaces a STL, PDF y SolidWorks) (0,01 USDC).
+- `GET /api/imprimir?id=ID&material=PLA&relleno=20`: cálculo de impresión 3D (gramos, metros, horas y coste aproximados) (0,05 USDC).
+
 Para un presupuesto real de obra, contactar con la empresa (teléfono o WhatsApp de arriba).
 
 ## Más información

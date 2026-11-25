@@ -44,6 +44,10 @@ FACILITADOR = "https://facilitator.payai.network"
 # Precios en dólares (USDC)
 PRECIO_CONSULTA = "0.01"
 PRECIO_OFERTA = "0.50"
+# Bici en 3D de cenital.org
+PRECIO_PIEZA = "0.01"
+PRECIO_IMPRESION = "0.05"
+URL_BICI = "https://cenital.org/bici/datos.json"
 
 # De dónde lee los precios (regenerar con: python scripts/generar-base-ligera.py)
 URL_DATOS = "https://www.obratudela.com/data/base-precios-ligero.json"
