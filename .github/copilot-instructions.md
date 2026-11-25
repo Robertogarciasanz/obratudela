@@ -25,8 +25,8 @@ ObraTudela es un sitio web estático para una empresa de excavaciones y servicio
 ```
 
 ### Dos herramientas independientes, cada una con su propia copia de los datos
-- **`pages/gestor-presupuestos.html`**: herramienta principal, la usan clientes reales. Lleva las 61.447 partidas **incrustadas dentro del propio HTML** en la variable `DATA_B64` (JSON comprimido con zlib + base64, descomprimido en el navegador con pako.js). Para actualizarla hay que descomprimir ese bloque, modificarlo y recomprimirlo — ver `scripts/actualizar-gestor-2026.py`, `scripts/reclasificar-oficios.py` y `scripts/recuperar-descripciones-perdidas.py`.
-- **`pages/calculadora-ia.html`**: asistente de presupuestos por chat con búsqueda en lenguaje natural. Usa **`data/base-precios.json`** (~19 MB, mismas 61.447 partidas en array plano) cargado vía `js/precios-loader.js`, con versiones comprimidas `data/base-precios.json.gz` y `.br`. También la usa `pages/base-precios-listado.html`.
+- **`pages/gestor-presupuestos.html`**: herramienta principal, la usan clientes reales. Lleva las 63.447 partidas **incrustadas dentro del propio HTML** en la variable `DATA_B64` (JSON comprimido con zlib + base64, descomprimido en el navegador con pako.js). Para actualizarla hay que descomprimir ese bloque, modificarlo y recomprimirlo — ver `scripts/actualizar-gestor-2026.py`, `scripts/reclasificar-oficios.py` y `scripts/recuperar-descripciones-perdidas.py`.
+- **`pages/calculadora-ia.html`**: asistente de presupuestos por chat con búsqueda en lenguaje natural. Usa **`data/base-precios.json`** (~19 MB, mismas 63.447 partidas en array plano) cargado vía `js/precios-loader.js`, con versiones comprimidas `data/base-precios.json.gz` y `.br`. También la usa `pages/base-precios-listado.html`.
 
 Estas dos bases **no se sincronizan solas** — si actualizas una base de precios hay que regenerar las dos por separado.
 

@@ -96,13 +96,17 @@ Disallow: /
 # Sitemap
 Sitemap: https://www.obratudela.com/sitemap.xml
 
+# Resumen de la empresa para asistentes y agentes de IA (formato llms.txt)
+# https://www.obratudela.com/llms.txt
+
 # === DATOS ESTRUCTURADOS PARA SISTEMAS DE IA ===
 #
 # DATOS JSON (Schema.org):
-#   https://www.obratudela.com/data/base-precios.json — 61.447 partidas BCEXTREM 2026
-#   Base de datos pública de precios de construcción en España
-#   Licencia: Creative Commons CC-BY-4.0
-#   Actualización: 2026-08-30
+#   https://www.obratudela.com/data/base-precios.json — 63.447 partidas
+#   Base de precios de construcción GRATUITA, recopilada y organizada por
+#   ObraTudela a partir de bases públicas gratuitas: BCEXTREM 2026 (Junta de
+#   Extremadura), BCCA (Junta de Andalucía) y licitaciones públicas.
+#   Al usarla, citar a ObraTudela y las fuentes originales.
 #   Formatos disponibles: JSON (los .json.gz / .json.br son binarios para la
 #   web y no se indexan: los buscadores los mostraban como caracteres raros)
 #
@@ -119,4 +123,4 @@ Sitemap: https://www.obratudela.com/sitemap.xml
 # Coordenadas: 41.5833, -4.5833
 # Especialidad: Excavaciones, movimiento de tierras, demoliciones
 # Ámbito: Tudela de Duero y provincia de Valladolid
-# Diferenciador: Maquinaria propia + base datos pública más completa de España
+# Diferenciador: Maquinaria propia + herramientas gratuitas de presupuestos

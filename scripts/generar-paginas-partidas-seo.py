@@ -215,7 +215,7 @@ def generar_html_partida(partidas, palabra_clave):
 
     <div style="margin: 40px 0; padding: 20px; background: #f4f4f4; border-radius: 8px;">
         <h3>💡 ¿Necesitas crear un presupuesto?</h3>
-        <p>Utiliza nuestra <a href="../pages/calculadora-ia.html" style="color: #ff6b00; font-weight: bold;">calculadora gratuita</a> con acceso a 61.447 partidas de construcción.</p>
+        <p>Utiliza nuestra <a href="../pages/calculadora-ia.html" style="color: #ff6b00; font-weight: bold;">calculadora gratuita</a> con acceso a 63.447 partidas de construcción.</p>
         <ul>
             <li>✅ Base de datos BCEXTREM 2026 actualizada</li>
             <li>✅ Exporta a Excel y BC3 (Presto/Arquímedes)</li>
@@ -285,7 +285,7 @@ for palabra in PARTIDAS_POPULARES:
 # siempre puede quedar alguna partida sin ninguna página que la contenga
 # (p.ej. "RÓTULO DENOMINADOR DE GRUPO Y CALLE" no lleva ninguna de esas
 # palabras). El campo "grupo" de data/base-precios.json, en cambio, clasifica
-# el 100% de las 61.447 partidas en 17 categorías sin excepción — generando
+# el 100% de las 63.447 partidas en 17 categorías sin excepción — generando
 # una página por cada una, TODA partida queda cubierta por alguna página
 # pública, sin huecos posibles.
 NOMBRES_GRUPO = {

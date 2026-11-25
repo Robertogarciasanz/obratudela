@@ -195,7 +195,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Páginas de precios por categoría completa (cobertura 100% de las 61.447 partidas) -->
+  <!-- Páginas de precios por categoría completa (cobertura 100% de las 63.447 partidas) -->
   <url>
     <loc>https://www.obratudela.com/partidas/materiales-de-construccion.html</loc>
     <lastmod>2026-11-24</lastmod>
@@ -323,7 +323,7 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Base de datos principal BCEXTREM 2026 (61.447 partidas) -->
+  <!-- Base de datos principal BCEXTREM 2026 (63.447 partidas) -->
   <url>
     <loc>https://www.obratudela.com/data/base-precios.json</loc>
     <lastmod>2026-08-30</lastmod>

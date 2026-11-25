@@ -12,11 +12,11 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gestor de Presupuestos — BCEXTREM + BCCA (61.447 partidas)</title>
-<meta name="description" content="Gestor de presupuestos de construcción con 61.447 partidas del banco de precios BCEXTREM y BCCA. Busca, calcula y exporta presupuestos de obra civil, excavaciones y reformas.">
+<title>Gestor de Presupuestos — BCEXTREM + BCCA (63.447 partidas)</title>
+<meta name="description" content="Gestor de presupuestos de construcción con 63.447 partidas del banco de precios BCEXTREM y BCCA. Busca, calcula y exporta presupuestos de obra civil, excavaciones y reformas.">
 <meta name="keywords" content="gestor de presupuestos, banco de precios, BCEXTREM, presupuesto obra, partidas de construcción, excavaciones arturo">
-<meta property="og:title" content="Gestor de Presupuestos — BCEXTREM + BCCA (61.447 partidas)">
-<meta property="og:description" content="Gestor de presupuestos de construcción con 61.447 partidas del banco de precios BCEXTREM y BCCA. Busca, calcula y exporta presupuestos de obra civil, excavaciones y reformas.">
+<meta property="og:title" content="Gestor de Presupuestos — BCEXTREM + BCCA (63.447 partidas)">
+<meta property="og:description" content="Gestor de presupuestos de construcción con 63.447 partidas del banco de precios BCEXTREM y BCCA. Busca, calcula y exporta presupuestos de obra civil, excavaciones y reformas.">
 <meta property="og:url" content="https://www.obratudela.com/pages/gestor-presupuestos.html">
 <meta property="og:image" content="https://www.obratudela.com/img/excavadora-800w.webp">
 <meta property="og:type" content="website">
@@ -926,7 +926,29 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-
+  <!-- Aviso móvil: el gestor necesita pantalla grande. Sale en móviles y
+       tablets en vertical (táctiles y estrechos), no en un ordenador aunque
+       la ventana sea pequeña. Una vez cerrado no vuelve a salir en esa visita. -->
+  <div id="avisoMovil" role="dialog" aria-modal="true" aria-labelledby="avisoMovilTitulo" style="display:none;position:fixed;inset:0;z-index:9999;background:#0d0d0d;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;font-family:'Segoe UI',system-ui,sans-serif;color:#eee;">
+    <div style="font-size:56px;margin-bottom:20px;" aria-hidden="true">🖥️</div>
+    <h2 id="avisoMovilTitulo" style="font-size:22px;font-weight:800;color:#ff6b00;margin-bottom:12px;">Mejor desde el ordenador</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.6);max-width:320px;line-height:1.6;margin-bottom:28px;">La herramienta de presupuestos es compleja y necesita pantalla grande para usarse bien.</p>
+    <button type="button" id="avisoMovilCerrar" style="background:none;border:1px solid #444;color:rgba(255,255,255,0.6);padding:10px 20px;border-radius:8px;font-size:13px;cursor:pointer;">Continuar de todas formas</button>
+  </div>
+  <script>
+    (function () {
+      var aviso = document.getElementById('avisoMovil');
+      var soloTactil = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+      var estrecho = window.innerWidth < 900;
+      var visto = false;
+      try { visto = sessionStorage.getItem('avisoMovilVisto') === '1'; } catch (e) {}
+      if (estrecho && soloTactil && !visto) aviso.style.display = 'flex';
+      document.getElementById('avisoMovilCerrar').addEventListener('click', function () {
+        aviso.style.display = 'none';
+        try { sessionStorage.setItem('avisoMovilVisto', '1'); } catch (e) {}
+      });
+    })();
+  </script>
 
 <div id="loading">
   <h2>CARGANDO BASE DE PRECIOS</h2>

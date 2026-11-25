@@ -9,7 +9,7 @@ formato FIEBDC-3/BC3. Es la **única fuente de verdad** del proyecto — ver
 
 ## Especificaciones
 
-- **Total partidas**: 61.447
+- **Total partidas**: 63.447
 - **Formato**: JSON (array plano) + versiones comprimidas `.gz` / `.br`
 - **Códigos**: BC3 estándar (compatibles con Presto, Arquímedes, TCQ, etc.)
 

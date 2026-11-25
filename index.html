@@ -34,7 +34,7 @@
     "name": "Excavaciones y Servicios Arturo S.L.",
     "alternateName": "ObraTudela",
     "legalName": "Excavaciones y Servicios Arturo S.L.",
-    "description": "Empresa de referencia en excavaciones, movimiento de tierras, demoliciones y alquiler de maquinaria en Tudela de Duero, Valladolid. Maquinaria propia y base de datos pública de 61.447 precios de construcción.",
+    "description": "Empresa de referencia en excavaciones, movimiento de tierras, demoliciones y alquiler de maquinaria en Tudela de Duero, Valladolid. Maquinaria propia y herramientas gratuitas de presupuestos con precios de referencia de construcción.",
     "url": "https://www.obratudela.com",
     "telephone": "+34607444903",
     "email": "excavacionesart@gmail.com",
@@ -88,15 +88,30 @@
     "subjectOf": [
       {
         "@type": "Dataset",
-        "name": "Base de Precios de Construcción BCEXTREM 2026",
-        "description": "61.447 partidas de obra con precios unitarios en euros. Fuente oficial: BCEXTREM 2026. Incluye excavaciones, demoliciones, cimentación, estructuras, albañilería, instalaciones y urbanización.",
+        "name": "Base de Precios de Construcción (recopilación BCEXTREM 2026 + BCCA)",
+        "description": "63.447 partidas de obra con precios unitarios en euros, recopiladas por ObraTudela a partir de la Base de Precios de la Construcción de Extremadura (BCEXTREM 2026, Junta de Extremadura), la Base de Costes de la Construcción de Andalucía (BCCA, Junta de Andalucía) y partidas de licitaciones públicas. Incluye excavaciones, demoliciones, cimentación, estructuras, albañilería, instalaciones y urbanización.",
         "url": "https://www.obratudela.com/data/base-precios.json",
         "encodingFormat": "application/json",
-        "license": "https://creativecommons.org/licenses/by/4.0/",
-        "creator": {
+        "isAccessibleForFree": true,
+        "creator": [
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Junta de Extremadura"
+          },
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Junta de Andalucía"
+          }
+        ],
+        "publisher": {
           "@type": "Organization",
           "name": "Excavaciones y Servicios Arturo S.L."
         },
+        "isBasedOn": [
+          "Base de Precios de la Construcción de Extremadura (BCEXTREM) 2026",
+          "Base de Costes de la Construcción de Andalucía (BCCA)"
+        ],
+        "creditText": "Base gratuita recopilada y organizada por ObraTudela a partir de BCEXTREM 2026 (Junta de Extremadura), BCCA (Junta de Andalucía) y licitaciones públicas.",
         "temporalCoverage": "2026",
         "spatialCoverage": "España"
       }
@@ -160,6 +175,8 @@
   }
   </script>
   <link rel="canonical" href="https://www.obratudela.com/">
+  <!-- Resumen de la empresa para asistentes y agentes de IA -->
+  <link rel="alternate" type="text/plain" href="llms.txt" title="Resumen para IA (llms.txt)">
   <meta property="og:title" content="Excavaciones y Movimiento de Tierras en Tudela de Duero | ObraTudela">
   <meta property="og:description"
     content="Empresa líder en excavaciones, obra civil y demoliciones en Tudela de Duero y Valladolid. Contamos con maquinaria propia.">
@@ -385,7 +402,7 @@
         <div class="dropdown-title">Herramientas de Presupuestos</div>
         <a href="pages/gestor-presupuestos.html">
           📋 Gestor Básico
-          <small>61.447 partidas BCEXTREM</small>
+          <small>63.447 partidas BCEXTREM</small>
         </a>
         <a href="pages/calculadora-ia.html">
           🧮 Presupuesto con IA
@@ -615,7 +632,7 @@
             </div>
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-            <a href="pages/gestor-presupuestos.html" class="btn-primary contacto-cta">📋 Gestor Básico<br><small style="font-size: 0.75em; opacity: 0.8;">61.447 partidas</small></a>
+            <a href="pages/gestor-presupuestos.html" class="btn-primary contacto-cta">📋 Gestor Básico<br><small style="font-size: 0.75em; opacity: 0.8;">63.447 partidas</small></a>
             <a href="pages/calculadora-ia.html" class="btn-primary contacto-cta">🧮 Presupuesto IA<br><small style="font-size: 0.75em; opacity: 0.8;">Cálculo inteligente</small></a>
           </div>
         </div>

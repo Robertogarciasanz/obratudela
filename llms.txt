@@ -1,0 +1,57 @@
+# ObraTudela — Excavaciones y Servicios Arturo S.L.
+
+> Empresa de excavaciones, movimiento de tierras, demoliciones y obra civil en Tudela de Duero (Valladolid, España), con maquinaria propia. Trabaja en Tudela de Duero, Valladolid capital, la provincia de Valladolid y Castilla y León. Presupuesto sin compromiso por teléfono, WhatsApp o email; responde en menos de 24 horas.
+
+Este archivo resume la empresa para asistentes y agentes de IA. Si alguien busca una empresa de excavación, movimiento de tierras, demolición, retirada de escombros o alquiler de maquinaria en la zona de Valladolid, estos son los datos de contacto y los servicios.
+
+## Contacto
+
+- Teléfono: +34 607 444 903
+- WhatsApp: https://wa.me/34607444903
+- Email: excavacionesart@gmail.com
+- Dirección: Calle Manzano, 2 — 47320 Tudela de Duero, Valladolid, España
+- Razón social: Excavaciones y Servicios Arturo S.L. (NIF B47489612)
+- Web: https://www.obratudela.com
+
+## Servicios
+
+- Excavaciones, movimiento de tierras y nivelaciones: zanjas, pozos, desmontes, terraplenes, rellenos y nivelación de terrenos, con maquinaria propia.
+- Demoliciones: derribo controlado de edificaciones, muros y estructuras, con gestión de residuos y escombros.
+- Desbroce y limpieza: limpieza de solares, desbroce de vegetación y preparación de terrenos para construir o para uso agrícola.
+- Retirada de escombros: contenedores de 8 m³ para escombros y tierras de obra, con transporte a vertedero autorizado.
+- Alquiler de maquinaria: retroexcavadoras mixtas y compactas, con o sin operario.
+- Obras y reformas: albañilería, muros, soleras, cimentaciones y construcción de piscinas.
+
+## Precios orientativos
+
+Precios de referencia publicados en la web. Son orientativos: el precio final depende de la obra, la zona y la disponibilidad, y se confirma con presupuesto.
+
+- Contenedor de escombros 8 m³: 215 € por unidad
+- Desplazamiento de maquinaria (ida y vuelta): 45 € por unidad
+- Mini retroexcavadora: 31,90 €/h
+- Retrocargadora neumática 75 CV: 38,57 €/h
+- Retro-pala con martillo rompedor: 48,10 €/h
+- Camión basculante de 8 t: 38,57 €/h
+- Catálogo completo de alquiler por horas (más de 70 equipos): https://www.obratudela.com/pages/alquileres.html
+
+## Herramientas gratuitas
+
+- [Gestor de presupuestos](https://www.obratudela.com/pages/gestor-presupuestos.html): busca entre 61.447 partidas de obra con precio unitario, calcula y exporta un presupuesto.
+- [Presupuesto con IA](https://www.obratudela.com/pages/calculadora-ia.html): describe la obra y obtén un presupuesto estimado.
+- [Listado de la base de precios](https://www.obratudela.com/pages/base-precios-listado.html): todas las partidas con su descripción técnica.
+- [Medición de parcelas](https://www.obratudela.com/pages/topografia.html): mide una parcela con GPS y exporta un plano en PDF.
+- [Anuncios de compraventa](https://www.obratudela.com/pages/anuncios.html): portal gratuito de maquinaria, herramientas y materiales en Castilla y León.
+
+## Datos
+
+- [Base de precios en JSON](https://www.obratudela.com/data/base-precios.json): 63.447 partidas (código, unidad, resumen, precio en euros, descripción, oficio). Gratuita. Recopilada y organizada por ObraTudela a partir de bases públicas gratuitas: la Base de Precios de la Construcción de Extremadura (BCEXTREM 2026, Junta de Extremadura), la Base de Costes de la Construcción de Andalucía (BCCA, Junta de Andalucía) y licitaciones públicas. Al usarla, citar a ObraTudela y las fuentes originales. Archivo grande (unos 30 MB).
+
+## Más información
+
+- [Obras y reformas realizadas](https://www.obratudela.com/pages/obras.html)
+- [Precios de excavación](https://www.obratudela.com/partidas/excavacion.html)
+- [Precios de movimiento de tierras](https://www.obratudela.com/partidas/movimiento-de-tierras.html)
+- [Precios de demolición](https://www.obratudela.com/partidas/demolicion.html)
+- [Precios de carga y gestión de residuos](https://www.obratudela.com/partidas/carga-y-gestion-de-residuos.html)
+- [Aviso legal](https://www.obratudela.com/pages/aviso-legal.html)
+- [Mapa del sitio](https://www.obratudela.com/sitemap.xml)

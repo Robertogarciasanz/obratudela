@@ -49,7 +49,7 @@
     {
       "name": "Gestor de Presupuestos",
       "short_name": "Presupuestos",
-      "description": "Accede al gestor con 61.447 partidas BCEXTREM",
+      "description": "Accede al gestor con 63.447 partidas BCEXTREM",
       "url": "/pages/gestor-presupuestos.html",
       "icons": [
         {
