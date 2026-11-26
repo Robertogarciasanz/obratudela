@@ -1,0 +1,176 @@
+{
+ "expediente": "EXP009/2026/30",
+ "organismo": "Rectorado de la Universidad de Cádiz",
+ "titulo": "Obras de reparaciones puntuales de pavimentos, a desarrollar en el Campus Universitario de Puerto Real de la Universidad de Cádiz.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "75590.3 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=pMObz5Kgw1At71yQatc/l%2BGngTN5lRZTeSSfDAJ9LLC8WFoZmJSWCsfO6uQaWfuUpmiIxmYo9AB7VJE%2BOjCR2dBRZvXJMHCJ3b4q%2BNAsCa%2BHAj0WEJrB5sP7amrh2jBD",
+ "archivo_origen": "EXP009_2026_30_26_11_UCA_Reparaciones_v2.bc3",
+ "total_bc3": 63521.26,
+ "suma_partidas": 63521.26,
+ "costes_indirectos_pct": 13.0,
+ "capitulos": [
+  {
+   "codigo": "c1",
+   "resumen": "Demoliciones y trabajos previos",
+   "importe": 21505.01
+  },
+  {
+   "codigo": "c2",
+   "resumen": "Reparaciones",
+   "importe": 37685.51
+  },
+  {
+   "codigo": "c3",
+   "resumen": "Gestión de residuos",
+   "importe": 2010.99
+  },
+  {
+   "codigo": "c4",
+   "resumen": "Seguridad y salud",
+   "importe": 2319.75
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Demoliciones y trabajos previos",
+   "codigo": "01UPB00010np",
+   "unidad": "m",
+   "resumen": "Demolición de bordillo",
+   "cantidad": 127.0,
+   "precio": 6.86,
+   "importe": 871.22,
+   "descripcion": "Demolición de bordillo de hormigón con martillo neumático y carga manual sobre camión o contenedor. Medido el metro lienal demolido."
+  },
+  {
+   "capitulo": "Demoliciones y trabajos previos",
+   "codigo": "01UPP00010np",
+   "unidad": "m2",
+   "resumen": "Demolición de pavimentos de adoquines",
+   "cantidad": 375.8,
+   "precio": 25.29,
+   "importe": 9503.98,
+   "descripcion": "Demolición de pavimento exterior de adoquines y capa de arena con martillo neumático y carga manual sobre camión o contenedor. Medida la superficie demolida."
+  },
+  {
+   "capitulo": "Demoliciones y trabajos previos",
+   "codigo": "21SWW00050np",
+   "unidad": "m",
+   "resumen": "LIMPIEZA DE CANAL DE DESAGÜE",
+   "cantidad": 22.4,
+   "precio": 14.08,
+   "importe": 315.39,
+   "descripcion": "Limpieza de canal de desagüe con rejilla metálica, con medios manuales y carga manual de escombros sobre camión o contenedor.medido metro ejecutado"
+  },
+  {
+   "capitulo": "Demoliciones y trabajos previos",
+   "codigo": "E01EPS030",
+   "unidad": "m2",
+   "resumen": "DEMOL.SOLERAS H.A.<15cm.C/COMP.",
+   "cantidad": 294.35,
+   "precio": 36.74,
+   "importe": 10814.42,
+   "descripcion": "Demolición de soleras de hormigón armado, hasta 15 cm. de espesor, con compresor, incluso limpieza y retirada de escombros a pie de carga, sin transporte a vertedero y con p.p. de medios auxiliares."
+  },
+  {
+   "capitulo": "Reparaciones",
+   "codigo": "15JAW90002np",
+   "unidad": "u",
+   "resumen": "PODA DE RAÍCES ARBOL",
+   "cantidad": 13.0,
+   "precio": 270.05,
+   "importe": 3510.65,
+   "descripcion": "Poda y saneado de raíces de árbol en alcorque, incluso excavación con medios manuales hasta sistema de raíces, posterior relleno y acopio de los restos a pie de carga y medios auxiliares necesarios. Medida la cantidad ejecutada."
+  },
+  {
+   "capitulo": "Reparaciones",
+   "codigo": "F04O010",
+   "unidad": "ud",
+   "resumen": "APLICACIÓN DE PASTA CICATRIZANTE",
+   "cantidad": 13.0,
+   "precio": 28.35,
+   "importe": 368.55,
+   "descripcion": "Aplicación de pasta cicatrizante con pincel en cicatrices de poda de raices con diámetros superiores a 15 cm, incluye limpiado de zona de aplicación medido por unidad de arbol ejecutado"
+  },
+  {
+   "capitulo": "Reparaciones",
+   "codigo": "U04ABQ440np",
+   "unidad": "m2",
+   "resumen": "CUBRICIÓN ALCORQUE GRÁNULOS CAUCHO",
+   "cantidad": 13.0,
+   "precio": 150.38,
+   "importe": 1954.94,
+   "descripcion": "Relleno interior de alcorque, ubicado en área de uso peatonal, de 60 mm de espesor, realizado con una capa base de 50 mm de espesor de gránulos de caucho reciclado SBR en granulometrías 4/16mm ligados con resina de poliuretano y una capa de acabado de 10 mm de espesor de gránulos de caucho EPDM color en granulometrías 1/4mm ligados con resina alifática con filtro UV; dispuesto sobre una capa previa de 30 mm de material granular compactada y nivelada. medida superficie ejcutada"
+  },
+  {
+   "capitulo": "Reparaciones",
+   "codigo": "15PPP00102",
+   "unidad": "m2",
+   "resumen": "PAVIMENTO DE ADOQUINES HORM. VIBRADO FORMA IRREGULAR",
+   "cantidad": 283.3,
+   "precio": 49.51,
+   "importe": 14026.18,
+   "descripcion": "Pavimento de adoquines de hormigón vibrado de forma geometrica irregular, medidas exterior de 23,5x17 cm y 8 cm de espesor color similar a los exitentes colocados sobre base de arena gruesa de 4 cm de espesor medio, extendida, nivelada, homogenizada y confinada, incluso nivelado y compactado del pavimento con vibrador de placa, sellado de la juntas con arena fina y vibrado final. Medida la superficie ejecutada."
+  },
+  {
+   "capitulo": "Reparaciones",
+   "codigo": "10SWW00001",
+   "unidad": "m",
+   "resumen": "BORDILLO PREFABRICADO DE HORMIGÓN HM-40 ACHAFLANADO",
+   "cantidad": 127.0,
+   "precio": 35.85,
+   "importe": 4552.95,
+   "descripcion": "Bordillo prefabricado de hormigón HM-40 achaflanado de 17x28 cm de sección, asentado sobre mortero de cemento M10 (1:4), incluso p.p. de enlechado de juntas con mortero (1:1); construido según CTE. Medida la longitud ejecutada."
+  },
+  {
+   "capitulo": "Reparaciones",
+   "codigo": "10SSS90001NP",
+   "unidad": "m2",
+   "resumen": "SOLERA HORMIGÓN HA-25 #150x150x6 mm 15 cm ESP.",
+   "cantidad": 294.35,
+   "precio": 45.09,
+   "importe": 13272.24,
+   "descripcion": "Solera de hormigón HA-25 formada por: compactado de base, capa de arena de 10 cm de espesor, lámina de polietileno, solera de 15 cm de espesor, mallazo galvanizado 150*150*6 mm, y p.p. de junta de contorno. Medida la superficie deduciendo huecos mayores de 0,50 m2."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "17RRR00210",
+   "unidad": "m3",
+   "resumen": "RETIRADA DE RESIDUOS MIXTOS N.P. A PLANTA DE VALORIZ. 10 km",
+   "cantidad": 67.87,
+   "precio": 29.63,
+   "importe": 2010.99,
+   "descripcion": "Retirada de residuos mixtos en obra de nueva planta a planta de valorización situada a una distancia máxima de 10 km, formada por: transporte interior, carga, transporte a planta, descarga y canon de gestión. Medido el volumen esponjado."
+  },
+  {
+   "capitulo": "Seguridad y salud",
+   "codigo": "19LPA90015",
+   "unidad": "u",
+   "resumen": "CASETA PREF. MOD. 15 m2 ASEOS DURACIÓN MENOR A 6 MESES",
+   "cantidad": 1.0,
+   "precio": 1295.3,
+   "importe": 1295.3,
+   "descripcion": "Caseta prefabricada modulada de 15 m2 para aseos en obras de duración no mayor de 6 meses, formada por: estructura de perfiles laminados en frio, cerramientos y cubierta de panel sandwich en chapa prelacada por ambas caras, aislamiento con espuma de poliuretano rígido: carpinteria de aluminio anodizado en su color, rejas de protección y suelo con soporte de perfileria, tablero fenólico y pavimento, incluso preparación del terreno, cimentación, soportes de hormigón HA-25, armado con acero B 400 S, placas de asiento, transportes, colocación, desmontado y mantenimiento, según R.D. 1627/97 y guía técnica del INSHT. Medida la cantidad ejecutada."
+  },
+  {
+   "capitulo": "Seguridad y salud",
+   "codigo": "19SSA00100",
+   "unidad": "m2",
+   "resumen": "CERRAMIENTO PROV. OBRA, PANEL MALLA GALV. SOPORT. PREFABR.",
+   "cantidad": 59.08,
+   "precio": 12.55,
+   "importe": 741.45,
+   "descripcion": "Cerramiento provisional de obra, realizado con postes cada 3 m de perfiles tubulares galvanizados de 50 mm de diám. interior, panel rígido de malla galvanizada y p.p. de piezas prefabricadas de hormigón moldeado para apoyo y alojamiento de postes y ayudas de albañilería. Medida la superficie ejecutada."
+  },
+  {
+   "capitulo": "Seguridad y salud",
+   "codigo": "4.11",
+   "unidad": "ud",
+   "resumen": "Seguridad y salud durante la ejecucion de la obra",
+   "cantidad": 1.0,
+   "precio": 283.0,
+   "importe": 283.0,
+   "descripcion": "Seguridad y salud durante la ejecucion de la obra"
+  }
+ ]
+}

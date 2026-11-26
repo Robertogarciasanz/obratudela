@@ -1,0 +1,418 @@
+~V|CYPE INGENIEROS, S.A.|FIEBDC-3/2016|ARQUIMEDES||ANSI|Presupuesto|2|
+~K|-9\2\2\3\2\2\2\2\EUR\|3\13\6\\7|2\2\\3\2\\2\2\2\-9\2\2\2\2\EUR\||
+~X||ce\Coste energético\MJ\eCO2\Emisión de CO2\kg\ler\Código LER\\m\Masa del elemento\kg\v\Volumen\m3\|
+~C|FIRGAS_2026_V2##||Mejora Efi. Energ. Alumbrado e Inst. Públicas Norte de GC. Separata Firgas.|106333.37|220306|0|
+~T|FIRGAS_2026_V2##|Mejora de Alumbrado Publico y Ahorro Energético en el Norte de Gran Canaria. Separata Firgas.|
+~D|FIRGAS_2026_V2##
+|APSANANTON#\\1
+\APLOMOOBRERO#\\1
+\APLOMOQ#\\1
+\APPELLAS#\\1
+\APG20SS#\\1
+\APG20GR#\\1
+\|
+~C|APSANANTON#||A.P. Lomo San Antón|25701.43|090606|0|
+~D|APSANANTON#
+|Z01BBF0040\\6
+\Z01ACD0010\\1
+\Z01ABA0020\\1
+\CIESZ\\34
+\Z01ACEBBRA\\7
+\APG02\\34
+\IEP021c\\1
+\Z01ACEB0020\\1
+\Z01ACEBARRI\\1
+\D02A0011\\10
+\Z01ACEBM9\\1
+\PAAG\\1
+\|
+~C|Z01BBF0040|m|Derivación individual 5(1x25) mm²|61.07|090726|0|
+~T|Z01BBF0040|Derivación individual 3(1x25) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados H07Z1-K (AS), 750 V, norma UNE 211002, CPR Cca-s1b,d1,a1 de 25 mm², bajo tubo flexible corrugado de D 50 mm (s/norma UNE-EN 61386-22), incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02.|
+~D|Z01BBF0040
+|V01CAC0450\\1
+\V01ICA0080\\5
+\K01A0070\\1
+\H01A0030\\0.285
+\H01A0040\\0.285
+\|
+~C|V01CAC0450|m|Tubo de PVC flexible, corrugado, reforzado D50 mm categ 2321|3.71|260220|3|
+~T|V01CAC0450|Tubo curvable de PVC, transversalmente elástico, corrugado, forrado, de color negro, de 50 mm de diámetro nominal, para canalización empotrada en obra de fábrica (paredes y techos). Resistencia a la compresión 320 N, resistencia al impacto 2 julios, temperatura de trabajo -5°C hasta 60°C, con grado de protección IP547 según UNE 20324, propiedades eléctricas: aislante, no propagador de la llama. Según UNE-EN 61386-1 y UNE-EN 61386-22.|
+~C|V01ICA0080|m|Conductor cobre H07Z1-K(AS),750 V, CPR Cca-s1b,d1,a1 unipolar 25 mm²|7.9|270120|3|
+~T|V01ICA0080|Cable eléctrico unipolar, de alta deslizabilidad, tipo H07Z1-K (AS), tensión nominal 450/750 V, de alta seguridad en caso de incendio (AS), reacción al fuego clase Cca-s1b,d1,a1, con conductor de cobre recocido, flexible (clase 5), de 1x25 mm² de sección, aislamiento material termoplástico libre de halógenos tipo TI-7. Norma diseño UNE 211002; UNE-EN 50525-3-31|
+~C|K01A0070|m|Apertura y sellado de rozas en fábricas de bloques de hormigón|5.23|090726|0|
+~T|K01A0070|Apertura de rozas en fábricas de bloques de hormigón, con rozadora eléctrica, incluso limpieza y acopio de escombros a pié de carga, sellado con mortero 1:5 de cemento y arena y p.p. de pequeño material.|
+~D|K01A0070
+|F01A0070\\0.06
+\H01A0020\\0.191
+\K01A0010\\0.005
+\|
+~C|F01A0070|h|Rozadora eléctrica 220 V|5.54|270120|2|
+~T|F01A0070|Rozadora eléctrica 220 V|
+~C|H01A0020|h|Peón|21.57|140420|1|
+~T|H01A0020|Peón|
+~C|K01A0010|m³|Mortero 1:5 de cemento|156.29|090726|0|
+~T|K01A0010|Mortero 1:5 de cemento y arena, M-7,5, confeccionado con hormigonera, s/RC-08
+.|
+~D|K01A0010
+|E01BA0040\\0.3
+\E01CA0020\\1.1
+\E01E0010\\0.25
+\F01A0040\\0.5
+\H01A0020\\2.726
+\|
+~C|E01BA0040|t|Cemento portland, CEM II/B-P 32,5 R, granel|184.33|030712|3|
+~T|E01BA0040|Cemento portland, CEM II/B-P 32,5 R, UNE-EN 197-1, tipo II/B, con puzolana natural (P), clase de resistencia 32,5 N/mm² y alta resistencia inicial, a granel, con marcado CE.|
+~C|E01CA0020|m³|Arena seca|34.91||3|
+~T|E01CA0020|Arena seca|
+~C|E01E0010|m³|Agua|3.08||3|
+~T|E01E0010|Agua|
+~C|F01A0040|h|Hormigonera portátil 250 l|6.04|140420|2|
+~T|F01A0040|Hormigonera portátil 250 l|
+~C|H01A0030|h|Oficial primera electricista|22.75|110326|1|
+~T|H01A0030|Oficial primera electricista|
+~C|H01A0040|h|Peón electricista|21.57|110326|1|
+~T|H01A0040|Peón electricista|
+~C|Z01ACD0010|ud|Cuadro de A.P. de poliéster con 4 salidas|4636.47|090726|0|
+~T|Z01ACD0010|Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02.
+
+Incluye: Cableado interno D.I. según D.F.
+Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados
+Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC.
+Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA.
+Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada.|
+~D|Z01ACD0010
+|V02BF0010\\1
+\H01A0030\\1.415
+\H01A0040\\1.413
+\|
+~C|V02BF0010|ud|Cuadro de A.P. de poliéster con 4 salidas|4573.8|160911|3|
+~T|V02BF0010|Cuadro de alumbrado público de poliéster con 4 salidas, completo.|
+~C|Z01ABA0020|m|Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.|11.09|090726|0|
+~T|Z01ABA0020|Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. 
+Incluye conductor  de  protección  identificado  con  marcado  mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ.
+Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02.
+Incluye retirada cableado existente y gestión del mismo. 
+Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo.|
+~D|Z01ABA0020
+|V01IAA0010\\1
+\F01A0030\\0.029
+\H01A0030\\0.033
+\H01A0040\\0.033
+\|
+~C|V01IAA0010|m|Cable trenzado 4x25 mm² Al/54,6 mm² Alm, aisl. XLPE CPR Fca, 0,6/1 kV|8.67|070911|3|
+~T|V01IAA0010|Cable trenzado 4x25 mm² Al/54,6 mm² Alm, formado por conductor de aluminio aislado con polietileno reticulado (XLPE) CPR Fca, 0,6/1 kV, con neutro fiador de aleación de Aluminio-Magnesio-Silicio, para instalaciones de cables tensados, s/UNE 21030.|
+~C|F01A0030|h|Camión grúa 20 t|33.24|251120|2|
+~T|F01A0030|Camión grúa de 20 t, pluma de 23 m|
+~C|CIESZ|Ud|Suministro e instalación de Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.|466.33|090726|0|
+~T|CIESZ|Ud. de retirada de luminaria antigua existente e instalación de  Luminaria vial CIES Serie Z 24LED 70W, clase II, 3000K o similar.
+Luminaria IP66, con Flujo lumínico 9660 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 42 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. 
+Garantía: 10 años.
+100.000 horas de vida útil L90B10
+Grado de protección IP66 según norma IEC 60529
+Incluye sensor Zhaga
+Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F.
+Incluye: cascillo de 70mm si fuese necesario.
+Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02.
+
+Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015.|
+~D|CIESZ
+|CIESZ3\\1
+\SENZHAGA\\1
+\M01B0070\\0.341
+\M01B0080\\0.341
+\mq07ple010bg\\0.3
+\|
+~C|CIESZ3|u|Ud. de luminaria Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.|425|251120|3|
+~T|CIESZ3|Ud. de Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.
+código: 6019020030 
+- Potencia 70w
+- Polímero técnico.
+- Flujo lumínico 9660 lms
+- Temperatura de color 3000k
+- Óptica Wide
+- STD 10kV SPD+Fusible
+- Clase II
+_ Incluye sensor Zhaga|
+~C|SENZHAGA|u|Ud. de sensor Zhaga para luminaria|20|251120|3|
+~T|SENZHAGA|Sensor Zhaga|
+~C|M01B0070|h|Oficial electricista|22.75||1|
+~T|M01B0070|Oficial electricista|
+~C|M01B0080|h|Ayudante electricista|21.51||1|
+~T|M01B0080|Ayudante electricista|
+~C|mq07ple010bg|h|Alquiler cesta elevadora de brazo articulado, motor diesel, de 16 m de altura máxima de trabajo, incluso mantenimiento y seguro de responsabilidad civil.|20.79|251120|2|
+~C|Z01ACEBBRA|ud|Suministro y sustirución de Brazo de Luminaria.|39.99|090726|0|
+~T|Z01ACEBBRA|Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado.
+Totalmente instalado.|
+~D|Z01ACEBBRA
+|Brazoycom\\1
+\H01A0030\\0.113
+\H01A0040\\0.112
+\|
+~C|Brazoycom|Ud|Brazo y complementos|35|251120|3|
+~T|Brazoycom|Brazo y complementos|
+~C|APG02|Ud|Suministro e instalación de Conexión y protección de luminaria.|47.48|090726|0|
+~T|APG02|Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02.
+
+Racores:
+Red Aérea P-6
+Red Subterranea RS-11
+
+Incluido:
+1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos.
+2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 
+3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV;
+4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV;
+5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV;
+
+NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente.
+Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato.|
+~D|APG02
+|H01A0030\\0.114
+\H01A0040\\0.114
+\E22IB0300\\1
+\E224OLK5Q\\1
+\E22HD0010\\1
+\E22HC0020\\1
+\E22IB0040\\2
+\E22IB0050\\1
+\E22NILED\\3
+\|
+~C|E22IB0300|m|Cable manguera de cobre 3x2,5 mm²,RV-K 0,6/1 kV, CPR Eca|1.26|020420|3|
+~T|E22IB0300|Cable manguera de cobre 3x2,5 mm², aislamiento de polietileno reticulado XLPE, cubierta de PVC, CPR Eca, 0,6/1 kV|
+~C|E224OLK5Q|ud|Caja estanca IP55|11.01|251120|3|
+~C|E22HD0010|ud|Interrupt automát magnet 1P+N x 10 A, 6kA.|3.57||3|
+~T|E22HD0010|Interruptor automático magnetotérmico 1P+N x 10 A.|
+~C|E22HC0020|ud|Interruptor diferencial 2Px40A sensib 30 mA, clase A.|15.19||3|
+~T|E22HC0020|Interruptor diferencial 2Px40A sensibilidad 30 mA, clase A.|
+~C|E22IB0040|m|Cable Cu 0,6/1kV de 1x6 mm², Rz 0,6/1 kV, CPR Eca|1.56||3|
+~T|E22IB0040|Cable Cu 0,6/1kV de 1x6 mm², aislamiento de polietileno reticulado XLPE, 0,6/1 kV|
+~C|E22IB0050|m|Cable Cu 0,6/1kV de 1x25 mm², Rz 0,6/1 kV, CPR Eca|2.31||3|
+~T|E22IB0050|Cable Cu 0,6/1kV de 1x25 mm², aislamiento de polietileno reticulado XLPE, 0,6/1 kV|
+~C|E22NILED|Ud|Conector niled o similar|1.99|251120|3|
+~T|E22NILED|Conector niled o similar|
+~C|IEP021c|Ud|Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.|155.72|090726|0|
+~T|IEP021c|Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno.
+Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo.
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.|
+~D|IEP021c
+|mt35tte010b\\1
+\mt35ttc010b\\2.75
+\E22CAD0320\\2.5
+\mt35tta040\\1
+\mt35tta010\\1
+\mt35tta030\\1
+\mt35tta060\\0.333
+\mt35www020\\1
+\M01B0070\\0.015
+\M01B0080\\0.016
+\|
+~C|mt35tte010b|Ud|Electrodo para red de toma de tierra cobreado con 300 µm, fabricado en acero, de 15 mm de diámetro y 2 m de longitud.|17.64|251120|3|
+~C|mt35ttc010b|m|Conductor de cobre desnudo, de 35 mm².|2.64|251120|3|
+~C|E22CAD0320|m|Tubo PVC flexible gris M25, DIFLEX|3.44|130114|3|
+~T|E22CAD0320|Tubo de PVC flexible gris M25 mm, DIFLEX de Gewiss|
+~C|mt35tta040|Ud|Grapa abarcón para conexión de pica.|0.52|251120|3|
+~C|mt35tta010|Ud|Arqueta para toma de tierra, de 300x300 mm, con tapa de registro.|73.96|251120|3|
+~C|mt35tta030|Ud|Puente para comprobación de puesta a tierra de la instalación eléctrica.|45.73|251120|3|
+~C|mt35tta060|Ud|Saco de 5 kg de sales minerales para la mejora de la conductividad de puestas a tierra.|1.92|251120|3|
+~C|mt35www020|Ud|Material auxiliar para instalaciones de toma de tierra.|0.69|251120|3|
+~C|Z01ACEB0020|ud|Postelete h=6 m en acero galvanizado 2 1/2", instalado en pared, incluso colocación de esparragos, izado y nivelado.|208.47|090726|0|
+~T|Z01ACEB0020|Postelete h=6 m en acero galvanizado 2 1/2", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado.|
+~D|Z01ACEB0020
+|V02BEA0070b\\1
+\F01A0030\\0.4
+\H01A0030\\0.188
+\H01A0040\\0.446
+\|
+~C|V02BEA0070b|ud|Postelete acero galvanizado, h=6 m|181.27|221120|3|
+~T|V02BEA0070b|Postelete acero galvanizado, h=6 m, de sección circular, fabricada en un solo tramo, en acero al carbono, acabado galvanizado, s/UNE-EN 40-5.|
+~C|Z01ACEBARRI|ud|Arriostramiento a pared|25.41|090726|0|
+~T|Z01ACEBARRI|Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1" PVC rígido pintado (rojo-blanco). Totalmente instalado.|
+~D|Z01ACEBARRI
+|E19BCCD0030\\1
+\H01A0030\\0.188
+\H01A0040\\0.447
+\|
+~C|E19BCCD0030|ud|Tensor de vientos 100 mm|11.49||3|
+~T|E19BCCD0030|Tensor de vientos 100 mm. Modelo TNS 106. Ref. 82427. Fagor.|
+~C|D02A0011|h|Poda o tala de material vegetal.|54.76|090726|0|
+~T|D02A0011|Poda o tala de material vegetal en el entorno de luminaria o Cuadro de mando con medios mecánicos, con carga sobre camión, con transporte a vertedero.
+
+Según necesidades de la obra.|
+~D|D02A0011
+|M01A0030\\0.989
+\F01A0010\\1
+\|
+~C|M01A0030|h|Peón|21.57||1|
+~T|M01A0030|Peón|
+~C|F01A0010|h|Camión cesta|33.43|251120|2|
+~T|F01A0010|Camión cesta|
+~C|Z01ACEBM9|Ud|Poste de madera cobra III, h=9 m|281.51|090726|0|
+~T|Z01ACEBM9|Poste de madera cobra III, de 9 m. de altura, según norma UNE 21-003-82, con excavación en todo tipo de terreno de hasta 1 m3 (profund. 1,5 m), de acuerdo con normas de UNELCO, fijación mediante el hincado con piedras y tierra compactada en la cimentación. Incluso pintado de franjas de 0,5 m de ancho en rojo-blanco-rojo.|
+~D|Z01ACEBM9
+|V02BEACOBRA9\\1
+\F01A0030\\0.25
+\H01A0030\\0.353
+\H01A0040\\0.58
+\|
+~C|V02BEACOBRA9|ud|Poste de madera cobra III, h=9 m|252.66|251120|3|
+~T|V02BEACOBRA9|Poste de madera cobra III, h=9 m|
+~C|PAAG|PA|Partida Alzada Saneamiento e imprevistos.|970.87|210522|0|
+~T|PAAG|Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo.|
+~C|APLOMOOBRERO#||A.P. Lomo Obrero|45436.66|090606|0|
+~D|APLOMOOBRERO#
+|Z01BBF0040\\6
+\Z01ACD0010\\1
+\Z01ABA0020\\200
+\CIESZ\\67
+\Z01ACEBBRA\\14
+\APG02\\67
+\IEP021g\\1
+\Z01ACEB0020\\1
+\Z01ACEBARRI\\1
+\D02A0011\\10
+\PAAG\\1
+\|
+~C|IEP021g|Ud|Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.|155.74|090726|0|
+~T|IEP021g|Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno.
+Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo.
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.|
+~D|IEP021g
+|mt35tte010b\\1
+\mt35ttc010b\\2.75
+\E22CAD0320\\2.5
+\mt35tta040\\1
+\mt35tta010\\1
+\mt35tta030\\1
+\mt35tta060\\0.333
+\mt35www020\\1
+\M01B0070\\0.016
+\M01B0080\\0.016
+\|
+~C|APLOMOQ#||A.P. Lomo Quintanilla|15349.45|220306|0|
+~D|APLOMOQ#
+|Z01ABA0020\\1
+\CIESZ\\25
+\Z01ACEBBRA\\5
+\APG02\\25
+\IEP021d\\1
+\Z01ACEB0020\\1
+\Z01ACEBARRI\\1
+\PAJ\\1
+\|
+~C|IEP021d|Ud|Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.|156.01|090726|0|
+~T|IEP021d|Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno.
+Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo.
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.|
+~D|IEP021d
+|mt35tte010b\\1
+\mt35ttc010b\\2.75
+\E22CAD0320\\2.5
+\mt35tta040\\1
+\mt35tta010\\1
+\mt35tta030\\1
+\mt35tta060\\0.333
+\mt35www020\\1
+\M01B0070\\0.022
+\M01B0080\\0.022
+\|
+~C|PAJ|PA|Partida Alzada Saneamiento e imprevistos.|1456.31|210522|0|
+~T|PAJ|Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo.|
+~C|APPELLAS#||A.P. Las Pellas|17059.55|220306|0|
+~D|APPELLAS#
+|Z01ABA0020\\1
+\CIESZ\\30
+\Z01ACEBBRA\\5
+\APG02\\30
+\IEP021\\1
+\Z01ACEB0020\\1
+\Z01ACEBARRI\\1
+\D02A0011\\10
+\|
+~C|IEP021|Ud|Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.|156.01|090726|0|
+~T|IEP021|Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno.
+Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo.
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.|
+~D|IEP021
+|mt35tte010b\\1
+\mt35ttc010b\\2.75
+\E22CAD0320\\2.5
+\mt35tta040\\1
+\mt35tta010\\1
+\mt35tta030\\1
+\mt35tta060\\0.333
+\mt35www020\\1
+\M01B0070\\0.022
+\M01B0080\\0.022
+\|
+~C|APG20SS#||Seguridad y Salud.|1391.69|130218|0|
+~T|APG20SS#|Seguridad y Salud|
+~D|APG20SS#
+|YSX010d\\1
+\YMM010b\\5
+\D32AE0010\\5
+\D32CA0010\\5
+\|
+~C|YSX010d|Ud|Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.|413.44|210522|0|
+~T|YSX010d|Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~C|YMM010b|Ud|Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.|101.42|010720|0|
+~T|YMM010b|Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.
+Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~D|YMM010b
+|mt50eca010\\1
+\|
+~C|mt50eca010|Ud|Botiquín de urgencia provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, con tornillos y tacos para fijar al paramento.|101.42|251120|3|
+~C|D32AE0010|ud|Arnés anticaídas top 3, Würth|74.37|231111|0|
+~T|D32AE0010|Arnés anticaídas top 3, Würth o equivalente, con marcado CE.|
+~D|D32AE0010
+|E38AE0100\\1
+\|
+~C|E38AE0100|ud|Arnés anticaídas top 3, Würth|74.37|161111|3|
+~T|E38AE0100|Arnés anticaídas top 3, con marcado CE, Würth|
+~C|D32CA0010|ud|Señal de cartel obras, PVC, sin soporte metálico|11.76|090726|0|
+~T|D32CA0010|Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje.|
+~D|D32CA0010
+|M01A0030\\0.244
+\E38CA0030\\1
+\|
+~C|E38CA0030|ud|Señal cartel obras, PVC, 45x30 cm|6.5||3|
+~T|E38CA0030|Señal de cartel de obras, PVC, 45x30 cm|
+~C|APG20GR#||Gestión de Residuos.|1394.59|130218|0|
+~T|APG20GR#|Gestión de Residuos.|
+~D|APG20GR#
+|RAELVIAL\\156
+\D37B0060\\0.11
+\D37CC0070\\0.03
+\D37CC0080\\0.08
+\|
+~C|RAELVIAL|Ud|Gestión de residuo RAEE de luminaria vial|8.35|010626|0|
+~T|RAELVIAL|Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE.|
+~D|RAELVIAL
+|RAEE\\1
+\|
+~C|RAEE|Ud|Gestión de residuo RAEE de luminaria vial|8.35|010626|3|
+~T|RAEE|Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE.|
+~C|D37B0060|m³|Transporte residuos a instalac. autorizada 20 km.|13.12||0|
+~T|D37B0060|Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km.|
+~D|D37B0060
+|QAB0030\\0.33
+\|
+~C|QAB0030|h|Camión basculante 15 t|39.76||2|
+~T|QAB0030|Camión basculante 15 t|
+~C|D37CC0070|t|Coste entrega residuos de plástico a instalación de valorización|200|181113|0|
+~T|D37CC0070|Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CC0070
+|E41CA0140\\1
+\|
+~C|E41CA0140|t|Tasa gestor aut. valorización residuos plástico, LER 170203|200|181113|3|
+~T|E41CA0140|Tasa de gestor autorizado valoración en residuos de plástico, LER 170203. (Densidad aproximada entre 0,60 y 0,80 t/m³)|
+~C|D37CC0080|t|Coste entrega residuos de papel y cartón a instalación de valorización|550|181113|0|
+~T|D37CC0080|Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CC0080
+|E41CA0150\\1
+\|
+~C|E41CA0150|t|Tasa gestor aut. valorización residuos papel y cartón, LER 200101|550|181113|3|
+~T|E41CA0150|Tasa de gestor autorizado valoración en residuos de papel y cartón, LER 200101. (Densidad aproximada entre 0,60 y 0,80 t/m³)|

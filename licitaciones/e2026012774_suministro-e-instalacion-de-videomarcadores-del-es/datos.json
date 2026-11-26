@@ -1,0 +1,191 @@
+{
+ "expediente": "E2026012774",
+ "organismo": "Consejo de Gobierno Insular del Cabildo Insular de Tenerife",
+ "titulo": "Suministro e instalación de videomarcadores del Estadio HRL",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "684166.58 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Cf/fz5YUX7OgMRHQNyGelPwiqC2%2BbvFiqJ22WIzvtLyiXMZFcq14SYKoYJU2m2b%2B%2B1G3TWLcuAy/FS2OzPd1Deu4G/i2nNHpixtXhPmt4JN7QB3HKyQaFUExmUVQCerk",
+ "archivo_origen": "E2026012774_Video_marcador_y_publicidad_Desmontaje_y_Montaje.bc3",
+ "total_bc3": 616917.79,
+ "suma_partidas": 616917.79,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "01",
+   "resumen": "METALISTERIA",
+   "importe": 83102.0
+  },
+  {
+   "codigo": "02",
+   "resumen": "PINTURA",
+   "importe": 27160.0
+  },
+  {
+   "codigo": "03",
+   "resumen": "MONTAJE",
+   "importe": 53246.7
+  },
+  {
+   "codigo": "04",
+   "resumen": "DESMONTAJE",
+   "importe": 2952.0
+  },
+  {
+   "codigo": "05",
+   "resumen": "REFUERZO ESTRUCTURAL HORMIGON HA 25",
+   "importe": 3192.72
+  },
+  {
+   "codigo": "06",
+   "resumen": "PANTALLAS LED VIDEOMARCADOR",
+   "importe": 429351.6
+  },
+  {
+   "codigo": "07",
+   "resumen": "SEGURIDAD Y SALUD",
+   "importe": 17912.77
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "METALISTERIA",
+   "codigo": "E01",
+   "unidad": "kg",
+   "resumen": "Estructura metalica videomarcador",
+   "cantidad": 22460.0,
+   "precio": 3.7,
+   "importe": 83102.0,
+   "descripcion": "Estructura soporte videomarcador · Estructura tridimensional tipo pórticocelosía con: o Vigas principales longitudinales y transversales. o Subestructura densa para anclaje de módulos LED. o Montantes verticales con placas base y anclaje a estructura existente. Materiales estructurales · Perfiles laminados: IPE 200 / IPE 220 / IPE 400 (según plano y cálculo). · Perfiles huecos: Tubo estructural cuadrado (SHS) en rigidización y bastidores secundarios. · Acero estructural: S355JR conforme EN 10025. · Chapas de unión, cartelas y placas base cortadas y mecanizadas. · Soldadura en taller conforme EN ISO 5817 (nivel C o superior). Materiales Acero laminado UNE-EN 10025 S275JR, en perfiles laminados en caliente, piezas simples, para aplicaciones estructurales, de las series IPN, IPE, HEB, HEA, HEM o UPN, acabado con imprimación antioxidante. Trabajado y montado en taller, para colocar con uniones soldadas en obra. 2.14 Mano de obra taller Oficial 1ª montador de estructura metálica. 0.88 € Ayudante montador de estructura metálica. 0.68 €"
+  },
+  {
+   "capitulo": "METALISTERIA",
+   "codigo": "E02",
+   "unidad": "",
+   "resumen": "",
+   "cantidad": 0.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": ""
+  },
+  {
+   "capitulo": "PINTURA",
+   "codigo": "E03",
+   "unidad": "",
+   "resumen": "Protección anticorrosiva mediante sistema de pintura para ambien",
+   "cantidad": 28000.0,
+   "precio": 0.97,
+   "importe": 27160.0,
+   "descripcion": "Protecciòn anticorrosiva, ambiente marino Dado el entorno costero del estadio, se especifica ISO 12944 categoría C5-M (marino). Sistema DÚPLEX: galvanizado + pintura marina Tratamiento: 1. Galvanizado en caliente conforme ISO 1461 o Espesor medio 85 ìm. o Con taladros de drenaje y venteo en perfiles cerrados. 2. Sistema de pintura sobre galvanizado: o Sweep blasting ligero. o Imprimación epoxi compatible. o Capa intermedia epoxi alto espesor. o Acabado poliuretano alifático (alta resistencia UV). o Espesor total del sistema 300 ìm. Vida útil estimada: Muy alta (2025 años con mantenimiento mínimo). Código Descripción Ud Cantidad Precio Importe MAT01 Sistema de pintura (imprimación + acabado anticorrosivo) kg 1,00 0,52 0,52 MAT02 Disolventes, limpieza y consumibles kg 1,00 0,08 0,08 MAT03 Parte proporcional de preparación superficial kg 1,00 0,07 0,07 MO01 Oficial pintor h 0,010 22,50 0,23 MO02 Ayudante pintor h 0,006 18,50 0,11 MA01 Medios auxiliares (equipos, EPIs, etc.) % 5,00% s/MO 0,06 TOTAL PRECIO UNITARIO = 0,97 €/kg"
+  },
+  {
+   "capitulo": "MONTAJE",
+   "codigo": "E04",
+   "unidad": "ud",
+   "resumen": "Montaje Subestructuras video marcador",
+   "cantidad": 2.0,
+   "precio": 13105.0,
+   "importe": 26210.0,
+   "descripcion": "Izado y montaje de subestructura metálica de medidas 22.5x 7.6 mts (video marcador) + 8.80x6.60 mts (publicidad) y montaje de 90 módulos de pantalla LED en subestructura video marcador, incluyendo medios de elevación (autogrúa 40 t, PEMP 20 m y polipasto), mano de obra de montaje y conexionado eléctrico, ejecución de alimentación eléctrica desde cuarto de control a videomarcadores , suministro e instalación de canalización y cableado, cuadro de protecciones IP65 y puesta en servicio.Todo instalado y funcionando. Desglose Medios auxiliares Izado de subestrucura. 1 dia autogrùa 40 Tn: 1450 € Plataforma articulada 20 mts 2 dias : 1.200 € Polipasto Izado pantallas; 2 dias. 425 € Alquiler vallas para sectorizar zona de izado: 250 € Montaje Montaje subestructura (MO + gastos): 9.780 €"
+  },
+  {
+   "capitulo": "MONTAJE",
+   "codigo": "E05",
+   "unidad": "ml",
+   "resumen": "Linea alimentacion 4x70 mm",
+   "cantidad": 290.0,
+   "precio": 78.65,
+   "importe": 22808.5,
+   "descripcion": "Código Descripción Ud Cantidad Precio Importe MAT01 Cable RV-K / RZ1-K (AS) Cu 0,6/1 kV 4x70 mm² + PE, libre de halógenos m 1,00 63,08 63,08 MAT02 Terminales, punteras, identificación, pequeño material y consumibles m 1,00 2,35 2,35 MAT03 Elementos de guiado, fijación y adaptación a canalización existente m 1,00 1,75 1,75 MAT04 Parte proporcional de pruebas, verificaciones y puesta en servicio m 1,00 1,20 1,20 MO01 Oficial 1ª electricista h 0,22 24,50 5,39 MO02 Ayudante electricista h 0,22 20,80 4,58 MA01 Medios auxiliares y herramientas % 3,00% s/MO 0,30 TOTAL PRECIO UNITARIO = 78,65 €/m"
+  },
+  {
+   "capitulo": "MONTAJE",
+   "codigo": "E08",
+   "unidad": "ml",
+   "resumen": "Subcuadro V01 – 9 líneas de 3(1x6 mm²)",
+   "cantidad": 270.0,
+   "precio": 15.66,
+   "importe": 4228.2,
+   "descripcion": "Código Descripción Ud Cantidad Precio Importe MAT01 Cable RZ1-K (AS) 0,6/1 kV Cu 1x6 mm² (3 conductores) ml 3,00 2,85 8,55 MAT02 Terminales, punteras, identificación y pequeño material ml 1,00 1,20 1,20 MAT03 Elementos de guiado y adaptación a canalización existente ml 1,00 0,95 0,95 MAT04 Parte proporcional de ensayos y verificaciones ml 1,00 0,60 0,60 MO01 Oficial 1ª electricista h 0,11 24,50 2,70 MO02 Ayudante electricista h 0,11 20,80 2,29 MA01 Medios auxiliares y herramientas % 3,00% s/MO 0,37 TOTAL PRECIO UNITARIO = 15,66 €/ml"
+  },
+  {
+   "capitulo": "DESMONTAJE",
+   "codigo": "E07",
+   "unidad": "ud",
+   "resumen": "Desmontaje de Estructura existente",
+   "cantidad": 1.0,
+   "precio": 2952.0,
+   "importe": 2952.0,
+   "descripcion": "Desmontaje controlado del videomarcador y elementos publicitarios existentes, incluyendo trabajos previos de seguridad, utilización de autogrúa de 40 Tn y plataforma elevadora, desmontaje manual de los elementos mediante personal especializado, bajada controlada de materiales, carga, retirada y transporte a vertedero autorizado, así como gestión y reciclaje de residuos, dejando la zona de trabajo limpia y en condiciones de seguridad. Desmontaje controlado del videomarcador y elementos publicitarios existentes, incluyendo trabajos previos de seguridad, utilización de autogrúa de 40 Tn y plataforma elevadora, desmontaje manual de los elementos mediante personal especializado, bajada controlada de materiales, carga, retirada y transporte a vertedero autorizado, así como gestión y reciclaje de residuos, dejando la zona de trabajo limpia y en condiciones de seguridad. Desglose Medios auxiliares Autogrúa 40 Tn : 692 € Plataforma elevadora : 310 € Mano de obra desmontaje y bajado estructura existente Equipo: 4 personas T : 1.500 € Carga de la estructura metálica desmontada y transporte a vertedero o gestor autorizado.450 €"
+  },
+  {
+   "capitulo": "REFUERZO ESTRUCTURAL HORMIGON HA 25",
+   "codigo": "E09",
+   "unidad": "ud",
+   "resumen": "Dado de hormigon 500x500 cm",
+   "cantidad": 6.0,
+   "precio": 532.12,
+   "importe": 3192.72,
+   "descripcion": "Ejecución de dado de hormigón armado de dimensiones 500x500 mm en planta, sobre graderío existente, destinado al apoyo de pilar de estructura metálica, incluyendo preparación de la superficie de apoyo, limpieza, replanteo y nivelación. El dado se ejecutará mediante hormigón estructural fabricado in situ con hormigonera, con resistencia característica adecuada según proyecto (mínimo HA-25), vertido manual, vibrado y compactación, asegurando la correcta homogeneidad y ausencia de coqueras. Incluye armadura interior de acero corrugado B500S, dispuesta según criterios estructurales habituales o indicaciones de proyecto, así como colocación de placa de anclaje metálica con pernos de anclaje embebidos, perfectamente nivelada y alineada, garantizando su correcta posición para la posterior colocación del pilar. Se incluyen en la unidad: encofrado perimetral si fuera necesario, medios auxiliares, fabricación del hormigón, transporte interior, vertido, vibrado, curado, desencofrado, ajuste de cotas, limpieza final y cualquier operación necesaria para dejar la unidad totalmente terminada. Código Descripción Ud Cantidad Precio Importe MAT01 Hormigón HA-25 fabricado in situ (˜0,125 m³) m³ 0,125 145,00 18,13 MAT02 Acero corrugado B500S (armadura dado) kg 18,00 1,65 29,70 MAT03 Placa de anclaje metálica con pernos ud 1,00 185,00 185,00 MAT04 Madera/encofrado y pequeño material auxiliar ud 1,00 22,00 22,00 MAT05 Consumibles, separadores, alambre, etc. ud 1,00 8,50 8,50 MO01 Oficial 1ª albañil h 6,50 23,50 152,75 MO02 Peón especializado h 5,50 19,50 107,25 MA01 Medios auxiliares (herramientas, vibrador, hormigonera) % 3,50% s/MO 9,79 TOTAL PRECIO UNITARIO = 532,12 €/ud"
+  },
+  {
+   "capitulo": "PANTALLAS LED VIDEOMARCADOR",
+   "codigo": "E10",
+   "unidad": "ud",
+   "resumen": "PANTALLAS",
+   "cantidad": 180.0,
+   "precio": 2295.0,
+   "importe": 413100.0,
+   "descripcion": "ud PANEL LED ALFALITE ODSX V2025 (10960 x 960) EL PANEL LED PARA INSTALACIONES EXTERIORES FIJAS EXIGENTES. Velocidad de refresco 3.840 Hz. Luminosidad 10.000 cd/m2. Alto contraste 8.000:1 con escala de grises de 16 bits. Temperatura de color 3.200 – 9.000 ajustable. Duración estimada: 100.000 horas. Certificación CE - EMC, RoHs."
+  },
+  {
+   "capitulo": "PANTALLAS LED VIDEOMARCADOR",
+   "codigo": "E11",
+   "unidad": "ud",
+   "resumen": "PROCESADOR LED NOVASTAR VX400 PRO ALL IN ONE",
+   "cantidad": 2.0,
+   "precio": 2295.0,
+   "importe": 4590.0,
+   "descripcion": "l VX400 controlador todo en uno de NovaStar que integra procesamiento y control de video en una sola caja. Cuenta con 4 puertos Ethernet y admite controladores de video, convertidor de fibra y modos de trabajo Bypass. Una unidad VX400 puede controlar hasta 2,6 millones de píxeles, con un ancho y una altura de salida máximos de hasta 10 240 píxeles y 8192 píxeles respectivamente. Conectores de entrada: - 1x HDMI 1.3 (IN & LOOP) - 1x HDMI 1.3 - 1x DVI (IN & LOOP) - 1x 3G-SDI (IN & LOOP) - 1x optical fiber port (OPT1) Conectores de salida: - 4x Gigabit Ethernet ports - 1x HDMI 1.3"
+  },
+  {
+   "capitulo": "PANTALLAS LED VIDEOMARCADOR",
+   "codigo": "E12",
+   "unidad": "ud",
+   "resumen": "CONVERSOR FIBRA OPTICA 10 CANALES SINGLE MODE",
+   "cantidad": 2.0,
+   "precio": 1836.0,
+   "importe": 3672.0,
+   "descripcion": "El convertidor de fibra CVT10 ofrece una forma rentable de convertir señales ópticas en señales eléctricas, o señales eléctricas en señales ópticas, para conectar la tarjeta de envío (SENDING CARD) a la pantalla LED. Este convertidor, que ofrece una transmisión de datos full-duplex, eficiente y estable con la que no se interfiere fácilmente, es ideal para la transmisión a larga distancia. El diseño de hardware CVT10 se centra en la practicidad y conveniencia de la instalación en el sitio. Se puede montar de forma horizontal, suspendida o en rack, lo que es fácil, seguro y fiable. Para el montaje en bastidor, se pueden combinar dos dispositivos CVT10 o un dispositivo CVT10 y una pieza de conexión en un conjunto de 1U de ancho. Se suministra con SPF. El modelo S es para fibra Single Mode ( mono modo) El modelo M es para fibra Multimodo 2x puertos ópticos con módulos ópticos intercambiables en caliente instalados de fábrica, ancho de banda de cada uno de hasta 10 Gbit / s10 puertos Gigabit Ethernet, ancho de banda de cada uno de hasta 1 Gbit / s. Entrada de fibra y salida Ethernet: 8 puertos Ethernet disponibles (puertos 1 a 8), los puertos 9 a 10 no están disponibles actualmente (estarán disponibles en la actualización futura). Entrada y salida de Ethernet: 10 puertos Ethernet disponibles2 tipos de conectores de alimentación, incluida una toma de corriente de 3 pines y una toma PowerCON1x puerto de control"
+  },
+  {
+   "capitulo": "PANTALLAS LED VIDEOMARCADOR",
+   "codigo": "E13",
+   "unidad": "ud",
+   "resumen": "TRANSCEPTOR OPTICO MULTIMODO 300 METROS 10G",
+   "cantidad": 2.0,
+   "precio": 244.8,
+   "importe": 489.6,
+   "descripcion": "Módulo Transceptor SFP+ 10GBASE-SR Fibra Óptica - LC Dúplex, 10 Gigabit Ethernet, Multimodo, 300metros, 850 nm."
+  },
+  {
+   "capitulo": "PANTALLAS LED VIDEOMARCADOR",
+   "codigo": "E14",
+   "unidad": "ud",
+   "resumen": "TRASPORTE",
+   "cantidad": 1.0,
+   "precio": 7500.0,
+   "importe": 7500.0,
+   "descripcion": "Transporte de 90 pantallas LED del videomarcador desde almacén/fabricante hasta el Estadio Heliodoro Rodríguez López, incluyendo: carga en origen, embalaje y protección para evitar daños en módulos y electrónica, medios auxiliares de estiba y amarre, transporte por carretera, descarga en obra, acopio provisional en zona habilitada, seguros, peajes y costes indirectos asociados al transporte."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "E15",
+   "unidad": "u",
+   "resumen": "Seguridad y Salud",
+   "cantidad": 1.0,
+   "precio": 17912.77,
+   "importe": 17912.77,
+   "descripcion": "Implantación, mantenimiento y retirada de las medidas de seguridad y salud necesarias para la ejecución de los trabajos de montaje de subestructura metálica y colocación de pantallas LED de videomarcador, incluyendo: protecciones colectivas (barandillas, redes, líneas de vida), protecciones individuales (EPI: arnés, casco, líneas anticaídas), señalización y balizamiento de obra, medios auxiliares seguros (andamios, plataformas elevadoras), medidas para trabajos en altura y montaje estructural, prevención de riesgos eléctricos en instalación de pantallas, formación e información a trabajadores, coordinación de seguridad y salud, mantenimiento durante toda la obra, retirada final de medios."
+  }
+ ]
+}

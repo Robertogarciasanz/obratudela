@@ -1,0 +1,946 @@
+{
+ "expediente": "252/2026",
+ "organismo": "Presidencia de la Mancomunidad de Ayuntamientos del Norte de Gran Canaria",
+ "titulo": "Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria, incluido en el Plan de Cooperación del Cabildo de Gran Canaria.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1136492.96 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=sT3%2BXGslCWCJUfIv1zIaBd1QOTIBwD6vZMLgc6EPZGqpxJYs1vklf2jC8J8gypu9OgCygX2tkbBLeB3voGRw57bHTwppGIzruXKMF1ZrLE/3GVhXrFFqN7yFncy7YfRK",
+ "archivo_origen": "252_2026_Galdar.bc3",
+ "total_bc3": 275894.43,
+ "suma_partidas": 275894.43,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "APCMG1_3",
+   "resumen": "A.P. Barranco del Juncal",
+   "importe": 18670.81
+  },
+  {
+   "codigo": "APCMG1_3bbb",
+   "resumen": "A.P. Cueva del Juncal",
+   "importe": 28387.66
+  },
+  {
+   "codigo": "APBH",
+   "resumen": "A.P. Barranco Hondo / La Lajita",
+   "importe": 42202.88
+  },
+  {
+   "codigo": "APTABLAO",
+   "resumen": "A.P. El tablado",
+   "importe": 10605.0
+  },
+  {
+   "codigo": "APFG",
+   "resumen": "A.P. Fagajesto",
+   "importe": 36817.51
+  },
+  {
+   "codigo": "APLM",
+   "resumen": "A.P. Las Mesas",
+   "importe": 8821.78
+  },
+  {
+   "codigo": "APPCD",
+   "resumen": "A.P. Parking Calle Delgado",
+   "importe": 11920.93
+  },
+  {
+   "codigo": "APSB_1_3",
+   "resumen": "A.P. FV Gil Chinea Bocabarranco.",
+   "importe": 76539.6
+  },
+  {
+   "codigo": "APLLCU",
+   "resumen": "A.P. Las Cumbrecillas",
+   "importe": 14666.35
+  },
+  {
+   "codigo": "TRENZADO",
+   "resumen": "A.P. Sardina",
+   "importe": 21496.07
+  },
+  {
+   "codigo": "APG20SS",
+   "resumen": "Seguridad y Salud.",
+   "importe": 3311.06
+  },
+  {
+   "codigo": "APG20GR",
+   "resumen": "Gestión de Residuos.",
+   "importe": 2454.78
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01BAA0020",
+   "unidad": "m",
+   "resumen": "Acometida aérea de B.T. 4x25 mm² Al, aisl. XLPE CPR Fca, 0,6/1kV",
+   "cantidad": 10.0,
+   "precio": 6.86,
+   "importe": 68.6,
+   "descripcion": "Acometida aérea de baja tensión, posada sobre fachada, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al, grapada a fachada, instalada, s/UNE 21030-1 y RBT-02."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01BBF0040",
+   "unidad": "m",
+   "resumen": "Derivación individual 5(1x25) mm²",
+   "cantidad": 6.0,
+   "precio": 63.54,
+   "importe": 381.24,
+   "descripcion": "Derivación individual 3(1x25) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados H07Z1-K (AS), 750 V, norma UNE 211002, CPR Cca-s1b,d1,a1 de 25 mm², bajo tubo flexible corrugado de D 50 mm (s/norma UNE-EN 61386-22), incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01ACD0010",
+   "unidad": "ud",
+   "resumen": "Cuadro de A.P. de poliéster con 4 salidas",
+   "cantidad": 1.0,
+   "precio": 4777.48,
+   "importe": 4777.48,
+   "descripcion": "Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02. Incluye: Cableado interno D.I. según D.F. Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC. Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA. Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 200.0,
+   "precio": 11.46,
+   "importe": 2292.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01ABDA0010",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea subterránea de B.T. para alumbrado público 5x(1x25)Al, XZ1(S) CPR Eca, 0,6/1 kV.",
+   "cantidad": 1.0,
+   "precio": 7.65,
+   "importe": 7.65,
+   "descripcion": "Línea subterránea de baja tensión, formada por conductores unipolares de aluminio, aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, de 5x(1x25) mm² Al, instalada, s/UNE 21123 y s/REBT-02. Incluye: pp.de terminales, enhebrado en canalización, conexionado y pequeñomaterial. Incluye: retirada cableado existente y red trenzada a sustituir. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "CREEENERGYUNO",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar.",
+   "cantidad": 17.0,
+   "precio": 421.16,
+   "importe": 7159.72,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 8600 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 140.000 horas de vida útil L90B10 @ Ta=25°C Grado de protección IP66 según norma IEC 60529 Testada 5.000 horas en niebla salina según norma ASTM Standard B 117 Código: TRSA-2-150-8L-308-^-A-SV-VM-S-UF-00+FXA10HA0-00001 Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 17.0,
+   "precio": 41.25,
+   "importe": 701.25,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 17.0,
+   "precio": 49.0,
+   "importe": 833.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "IEP021c",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 3.0,
+   "precio": 160.97,
+   "importe": 482.91,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 4.0,
+   "precio": 215.15,
+   "importe": 860.6,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 4.0,
+   "precio": 26.59,
+   "importe": 106.36,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Barranco del Juncal",
+   "codigo": "PAAG",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01BAA0020",
+   "unidad": "m",
+   "resumen": "Acometida aérea de B.T. 4x25 mm² Al, aisl. XLPE CPR Fca, 0,6/1kV",
+   "cantidad": 10.0,
+   "precio": 6.86,
+   "importe": 68.6,
+   "descripcion": "Acometida aérea de baja tensión, posada sobre fachada, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al, grapada a fachada, instalada, s/UNE 21030-1 y RBT-02."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01BBF0040",
+   "unidad": "m",
+   "resumen": "Derivación individual 5(1x25) mm²",
+   "cantidad": 6.0,
+   "precio": 63.54,
+   "importe": 381.24,
+   "descripcion": "Derivación individual 3(1x25) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados H07Z1-K (AS), 750 V, norma UNE 211002, CPR Cca-s1b,d1,a1 de 25 mm², bajo tubo flexible corrugado de D 50 mm (s/norma UNE-EN 61386-22), incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01ACD0010",
+   "unidad": "ud",
+   "resumen": "Cuadro de A.P. de poliéster con 4 salidas",
+   "cantidad": 1.0,
+   "precio": 4777.48,
+   "importe": 4777.48,
+   "descripcion": "Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02. Incluye: Cableado interno D.I. según D.F. Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC. Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA. Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 200.0,
+   "precio": 11.46,
+   "importe": 2292.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01ABDA0010",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea subterránea de B.T. para alumbrado público 5x(1x25)Al, XZ1(S) CPR Eca, 0,6/1 kV.",
+   "cantidad": 1.0,
+   "precio": 7.65,
+   "importe": 7.65,
+   "descripcion": "Línea subterránea de baja tensión, formada por conductores unipolares de aluminio, aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, de 5x(1x25) mm² Al, instalada, s/UNE 21123 y s/REBT-02. Incluye: pp.de terminales, enhebrado en canalización, conexionado y pequeñomaterial. Incluye: retirada cableado existente y red trenzada a sustituir. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "CREEENERGYUNO",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar.",
+   "cantidad": 36.0,
+   "precio": 421.16,
+   "importe": 15161.76,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 8600 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 140.000 horas de vida útil L90B10 @ Ta=25°C Grado de protección IP66 según norma IEC 60529 Testada 5.000 horas en niebla salina según norma ASTM Standard B 117 Código: TRSA-2-150-8L-308-^-A-SV-VM-S-UF-00+FXA10HA0-00001 Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 36.0,
+   "precio": 41.25,
+   "importe": 1485.0,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 36.0,
+   "precio": 49.0,
+   "importe": 1764.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "IEP021g",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 3.0,
+   "precio": 160.99,
+   "importe": 482.97,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 4.0,
+   "precio": 215.15,
+   "importe": 860.6,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 4.0,
+   "precio": 26.59,
+   "importe": 106.36,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Cueva del Juncal",
+   "codigo": "PAAG",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "D18G0010",
+   "unidad": "m",
+   "resumen": "Derivación individual 4(1x10) mm²",
+   "cantidad": 6.0,
+   "precio": 46.21,
+   "importe": 277.26,
+   "descripcion": "Derivación individual 4(1x10) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados RZ1-K (AS) 0,6/1kV CPR Cca-s1b,d1,a1 de 6 mm², bajo tubo flexible corrugado de D 40 mm, incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "Z01ACD0010",
+   "unidad": "ud",
+   "resumen": "Cuadro de A.P. de poliéster con 4 salidas",
+   "cantidad": 1.0,
+   "precio": 4777.48,
+   "importe": 4777.48,
+   "descripcion": "Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02. Incluye: Cableado interno D.I. según D.F. Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC. Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA. Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "VialAmbar",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Vial Led, clase II, PC Ambar 1800K.",
+   "cantidad": 54.0,
+   "precio": 440.0,
+   "importe": 23760.0,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial, clase II, PC Ambar 1800K. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 400.0,
+   "precio": 11.46,
+   "importe": 4584.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 54.0,
+   "precio": 49.0,
+   "importe": 2646.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 54.0,
+   "precio": 41.25,
+   "importe": 2227.5,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "IEP021d",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 10.0,
+   "precio": 160.92,
+   "importe": 1609.2,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "06.03",
+   "unidad": "ud",
+   "resumen": "Arqueta p/conexionado electr. ext., de fábrica bloques, tipo A-1",
+   "cantidad": 2.0,
+   "precio": 177.24,
+   "importe": 354.48,
+   "descripcion": "Arqueta para conexionado alumbrado público, realizada con bloque hueco de hormigón vibrado de 9x25x50 cm, enfoscada y bruñida interiormente, con tapa y marco de fundición dúctil de 500x500 mm y fondo de arena. Totalmente acabada."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 4.0,
+   "precio": 215.15,
+   "importe": 860.6,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 4.0,
+   "precio": 26.59,
+   "importe": 106.36,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Barranco Hondo / La Lajita",
+   "codigo": "PAJ",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. El tablado",
+   "codigo": "VialAmbar",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Vial Led, clase II, PC Ambar 1800K.",
+   "cantidad": 20.0,
+   "precio": 440.0,
+   "importe": 8800.0,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial, clase II, PC Ambar 1800K. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. El tablado",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 20.0,
+   "precio": 49.0,
+   "importe": 980.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. El tablado",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 20.0,
+   "precio": 41.25,
+   "importe": 825.0,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "Z01ABDA0010",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea subterránea de B.T. para alumbrado público 5x(1x25)Al, XZ1(S) CPR Eca, 0,6/1 kV.",
+   "cantidad": 1.0,
+   "precio": 7.65,
+   "importe": 7.65,
+   "descripcion": "Línea subterránea de baja tensión, formada por conductores unipolares de aluminio, aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, de 5x(1x25) mm² Al, instalada, s/UNE 21123 y s/REBT-02. Incluye: pp.de terminales, enhebrado en canalización, conexionado y pequeñomaterial. Incluye: retirada cableado existente y red trenzada a sustituir. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 500.0,
+   "precio": 11.46,
+   "importe": 5730.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "VialAmbar",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Vial Led, clase II, PC Ambar 1800K.",
+   "cantidad": 50.0,
+   "precio": 440.0,
+   "importe": 22000.0,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial, clase II, PC Ambar 1800K. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "VillaPCAmbar",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Villa Led, clase II, PC Ambar 1800K.",
+   "cantidad": 4.0,
+   "precio": 523.98,
+   "importe": 2095.92,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de luminaria led modelo Villa hasta 60W para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo vertical superior. Temperatura de color: PC Ambar 1800K. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "ProyPCAmbar",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Proyector Led, clase II, PC Ambar 1800K.",
+   "cantidad": 1.0,
+   "precio": 658.81,
+   "importe": 658.81,
+   "descripcion": "Ud. de retirada de proyector antiguo existente e instalación de proyector led modelo para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo vertical superior. Temperatura de color: 1800 K. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "Conexion",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 55.0,
+   "precio": 50.69,
+   "importe": 2787.95,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "SustBrazo",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 50.0,
+   "precio": 45.36,
+   "importe": 2268.0,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste o pared, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "TomaTierra",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 161.63,
+   "importe": 161.63,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "PINTADO",
+   "unidad": "Ud",
+   "resumen": "Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa",
+   "cantidad": 5.0,
+   "precio": 21.51,
+   "importe": 107.55,
+   "descripcion": "Ud. de sustitución de brazo para luminaria Badilla."
+  },
+  {
+   "capitulo": "A.P. Fagajesto",
+   "codigo": "PABDV",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "Z01ABDA0010",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea subterránea de B.T. para alumbrado público 5x(1x25)Al, XZ1(S) CPR Eca, 0,6/1 kV.",
+   "cantidad": 1.0,
+   "precio": 7.65,
+   "importe": 7.65,
+   "descripcion": "Línea subterránea de baja tensión, formada por conductores unipolares de aluminio, aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, de 5x(1x25) mm² Al, instalada, s/UNE 21123 y s/REBT-02. Incluye: pp.de terminales, enhebrado en canalización, conexionado y pequeñomaterial. Incluye: retirada cableado existente y red trenzada a sustituir. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 200.0,
+   "precio": 11.46,
+   "importe": 2292.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "VialAmbar",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Vial Led, clase II, PC Ambar 1800K.",
+   "cantidad": 10.0,
+   "precio": 440.0,
+   "importe": 4400.0,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial, clase II, PC Ambar 1800K. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "Conexion",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 10.0,
+   "precio": 50.69,
+   "importe": 506.9,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "SustBrazo",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 10.0,
+   "precio": 45.36,
+   "importe": 453.6,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste o pared, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "TomaTierra",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 161.63,
+   "importe": 161.63,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Las Mesas",
+   "codigo": "PABDV",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "D18G0010",
+   "unidad": "m",
+   "resumen": "Derivación individual 4(1x10) mm²",
+   "cantidad": 6.0,
+   "precio": 46.21,
+   "importe": 277.26,
+   "descripcion": "Derivación individual 4(1x10) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados RZ1-K (AS) 0,6/1kV CPR Cca-s1b,d1,a1 de 6 mm², bajo tubo flexible corrugado de D 40 mm, incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "Z01ACD0010",
+   "unidad": "ud",
+   "resumen": "Cuadro de A.P. de poliéster con 4 salidas",
+   "cantidad": 1.0,
+   "precio": 4777.48,
+   "importe": 4777.48,
+   "descripcion": "Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02. Incluye: Cableado interno D.I. según D.F. Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC. Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA. Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 200.0,
+   "precio": 11.46,
+   "importe": 2292.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "CREEENERGYUNO",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar.",
+   "cantidad": 8.0,
+   "precio": 421.16,
+   "importe": 3369.28,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 8600 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 140.000 horas de vida útil L90B10 @ Ta=25°C Grado de protección IP66 según norma IEC 60529 Testada 5.000 horas en niebla salina según norma ASTM Standard B 117 Código: TRSA-2-150-8L-308-^-A-SV-VM-S-UF-00+FXA10HA0-00001 Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 8.0,
+   "precio": 41.25,
+   "importe": 330.0,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 8.0,
+   "precio": 49.0,
+   "importe": 392.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Parking Calle Delgado",
+   "codigo": "IEP021b",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 3.0,
+   "precio": 160.97,
+   "importe": 482.91,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. FV Gil Chinea Bocabarranco.",
+   "codigo": "SAT80",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar con columna.",
+   "cantidad": 15.0,
+   "precio": 1891.02,
+   "importe": 28365.3,
+   "descripcion": "Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar con columna. Modelo: COMPACT 80 Potencia máxima: 60 W Flujo luminoso: 6.400 lm Panel solar: Fotovoltaico de 82 Wp Batería: LifePO4 de 460 Wh Luminaria certificada con IAC – Certificado en base a Ley 31/1988. Certificación fotobiológica nivel RG0 - IEC 62471:2009 Incluye: Columnas reforzada de P.R.F.V. marca Adhorna modelo SE-800-PLA o simila de 8 metros. Características: Algoritmo de ajuste automático basado en captación solar y previsión meteorológica, orientación independiente del panel solar, eficiencia certificada de 174 lm/W. Temperatura de color 3000K, segun DF."
+  },
+  {
+   "capitulo": "A.P. FV Gil Chinea Bocabarranco.",
+   "codigo": "SAT80b",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar con brazo mural.",
+   "cantidad": 35.0,
+   "precio": 1066.93,
+   "importe": 37342.55,
+   "descripcion": "Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar con brazo mural. Modelo: COMPACT 80 Potencia máxima: 60 W Flujo luminoso: 6.400 lm Panel solar: Fotovoltaico de 82 Wp Batería: LifePO4 de 460 Wh Luminaria certificada con IAC – Certificado en base a Ley 31/1988. Certificación fotobiológica nivel RG0 - IEC 62471:2009 Incluye: brazo mural de P.R.F.V. marca Adhorna o similar. Características: Algoritmo de ajuste automático basado en captación solar y previsión meteorológica, orientación independiente del panel solar, eficiencia certificada de 174 lm/W. Temperatura de color 3000K, segun DF."
+  },
+  {
+   "capitulo": "A.P. FV Gil Chinea Bocabarranco.",
+   "codigo": "Z01ACEA0030",
+   "unidad": "ud",
+   "resumen": "Base hormigón p/cimentación de báculo o columna de 5<=h<8 m",
+   "cantidad": 20.0,
+   "precio": 268.75,
+   "importe": 5375.0,
+   "descripcion": "Base para cimentación de báculo o columna de 5<=h<8 m de altura, de 0,70x0,70x1,00 m, realizada con hormigón en masa de fck=17,5 N/mm², incluso encofrado, excavación precisa, recibido de pernos de anclaje y tubo doble pared DN 63 mm colocado."
+  },
+  {
+   "capitulo": "A.P. FV Gil Chinea Bocabarranco.",
+   "codigo": "UIV010",
+   "unidad": "Ud",
+   "resumen": "Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada.",
+   "cantidad": 50.0,
+   "precio": 80.99,
+   "importe": 4049.5,
+   "descripcion": "Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada. Incluye: Replanteo. Fijación de la columna. Montaje, conexionado y comprobación de su correcto funcionamiento. Incluye: Tornillería embellecedora. Incluye: la colocación completa de la luminaria fotovoltaica, su conexionado y comprobación."
+  },
+  {
+   "capitulo": "A.P. FV Gil Chinea Bocabarranco.",
+   "codigo": "D01A0070",
+   "unidad": "m³",
+   "resumen": "Demolición elementos cimentac. horm armado.",
+   "cantidad": 3.0,
+   "precio": 135.75,
+   "importe": 407.25,
+   "descripcion": "Demolición de elementos de cimentación de hormigón armado con medios mecánicos, incluso p.p. de compresor, carga y transporte de escombros a vertedero autorizado, medido el volumen inicial a demoler."
+  },
+  {
+   "capitulo": "A.P. FV Gil Chinea Bocabarranco.",
+   "codigo": "PAMAP_08",
+   "unidad": "Ud",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento e imprevistos debido a la complejidad del alumbrado a renovar y el estado actual del mismo al discurrir por centro histórico."
+  },
+  {
+   "capitulo": "A.P. Las Cumbrecillas",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 150.0,
+   "precio": 11.46,
+   "importe": 1719.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Las Cumbrecillas",
+   "codigo": "CREEENERGYUNO",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar.",
+   "cantidad": 25.0,
+   "precio": 421.16,
+   "importe": 10529.0,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial Cree Energy One 54w, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 8600 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 140.000 horas de vida útil L90B10 @ Ta=25°C Grado de protección IP66 según norma IEC 60529 Testada 5.000 horas en niebla salina según norma ASTM Standard B 117 Código: TRSA-2-150-8L-308-^-A-SV-VM-S-UF-00+FXA10HA0-00001 Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Las Cumbrecillas",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 25.0,
+   "precio": 41.25,
+   "importe": 1031.25,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Las Cumbrecillas",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 25.0,
+   "precio": 49.0,
+   "importe": 1225.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Las Cumbrecillas",
+   "codigo": "IEP021f",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 162.1,
+   "importe": 162.1,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Sardina",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 1500.0,
+   "precio": 11.46,
+   "importe": 17190.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Sardina",
+   "codigo": "00003",
+   "unidad": "u",
+   "resumen": "Suministro e instalación de luminaria Villa Salvi modelo Ochocentista Top Led o similar.",
+   "cantidad": 2.0,
+   "precio": 556.81,
+   "importe": 1113.62,
+   "descripcion": "Ud. de retirada e instalación de luminaria Villa Salvi modelo Ochocentista Top Led o similar, PCB 32T hasta 90w para sustituir las Fernandinas existentes incluso balastro/drive, con p.p. de herraje de montaje, 3 cables unipolar de enganche de 0,6/1 kv en 4 mm ² RV-K con marcado CPR (Eca), racores de derivación P-6, incluso instalado en estructura de hasta 10 m de altura con plataforma y conexionado totalmente. Opticas: Calles optica para vias anchas con acera F3T4 Temperatura de color: 3000/4000K. Tipo: clase II. Garantía : Clase II - 10 años para las luminarias / 10 años Vida útil: L80B10>80.000 h. Sistema de control incluido: reprogramable en obra/selectro interno de potencias. Garantía limitada 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía. Acabado superficial con imprimación epoxy y poliuretano alifático bicomponente Color Negro texturado N1 Incluye: brazo y/o tornillería nuevos para colocación de luminaria y saneamiento columnas existentes o sustitución en caso de la plaza. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Entrega de las luminiarias retiradas al Ayto si así lo solicita en dependencias Municipales. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Sardina",
+   "codigo": "MODERN",
+   "unidad": "u",
+   "resumen": "Suministro e instalación de luminaria urban tipo led Modern - LED Lantern",
+   "cantidad": 5.0,
+   "precio": 602.39,
+   "importe": 3011.95,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de luminaria led Modern - LED Lantern, incluso balastro/drive, con p.p. de herraje de montaje, 3 cables unipolar de enganche de 0,6/1 kv en 4 mm ² RV-K con marcado CPR (Eca), racores de derivación P-6, incluso instalado en estructura de hasta 10 m de altura con plataforma y conexionado totalmente. Temperatura de color: 3000K. Garantía: Clase II - 10 años para las luminarias / 10 años Vida útil: L80B10>80.000 h. Sistema de control incluido: reprogramable en obra/selectro interno de potencias. Garantía limitada 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía. Acabado superficial con imprimación epoxy y poliuretano alifático bicomponente Color Negro texturado N1 Incluye: brazo y tornillería nuevos para colocación de luminaria. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Entrega de las luminiarias retiradas al Ayto si así lo solicita en dependencias Municipales. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Sardina",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 2.0,
+   "precio": 41.25,
+   "importe": 82.5,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Sardina",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 2.0,
+   "precio": 49.0,
+   "importe": 98.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YSX010d",
+   "unidad": "Ud",
+   "resumen": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.",
+   "cantidad": 1.0,
+   "precio": 425.84,
+   "importe": 425.84,
+   "descripcion": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YMM010b",
+   "unidad": "Ud",
+   "resumen": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.",
+   "cantidad": 5.0,
+   "precio": 104.46,
+   "importe": 522.3,
+   "descripcion": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos. Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YSV020",
+   "unidad": "Ud",
+   "resumen": "Suministro, colocación y desmontaje de par de semáforos portátiles de obra, telescópicos, con mando a distancia, y cajones de polietileno de alta densidad equipados con ruedas, amortizable en 5 usos, y alimentación con 2 baterías de plomo y ácido 12V - 220Ah. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera.",
+   "cantidad": 1.0,
+   "precio": 1920.02,
+   "importe": 1920.02,
+   "descripcion": "Suministro, colocación y desmontaje de par de semáforos portátiles de obra, telescópicos, con mando a distancia, y cajones de polietileno de alta densidad equipados con ruedas, amortizable en 5 usos, y alimentación con 2 baterías de plomo y ácido 12V - 220Ah. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera. Incluye: Montaje. Desmontaje posterior. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32AE0010",
+   "unidad": "ud",
+   "resumen": "Arnés anticaídas top 3, Würth",
+   "cantidad": 5.0,
+   "precio": 76.6,
+   "importe": 383.0,
+   "descripcion": "Arnés anticaídas top 3, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32CA0010",
+   "unidad": "ud",
+   "resumen": "Señal de cartel obras, PVC, sin soporte metálico",
+   "cantidad": 5.0,
+   "precio": 11.98,
+   "importe": 59.9,
+   "descripcion": "Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "RAELVIAL",
+   "unidad": "Ud",
+   "resumen": "Gestión de residuo RAEE de luminaria vial",
+   "cantidad": 277.0,
+   "precio": 8.6,
+   "importe": 2382.2,
+   "descripcion": "Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37B0060",
+   "unidad": "m³",
+   "resumen": "Transporte residuos a instalac. autorizada 20 km.",
+   "cantidad": 1.56,
+   "precio": 13.51,
+   "importe": 21.08,
+   "descripcion": "Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0070",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de plástico a instalación de valorización",
+   "cantidad": 0.03,
+   "precio": 206.0,
+   "importe": 6.18,
+   "descripcion": "Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0080",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de papel y cartón a instalación de valorización",
+   "cantidad": 0.08,
+   "precio": 566.5,
+   "importe": 45.32,
+   "descripcion": "Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  }
+ ]
+}

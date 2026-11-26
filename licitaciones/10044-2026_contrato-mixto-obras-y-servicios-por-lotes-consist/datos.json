@@ -1,0 +1,121 @@
+{
+ "expediente": "10044/2026",
+ "organismo": "Concejal del Área de Ciudad Sostenible, Agenda Urbana, Participación Ciudadana e Igualdad del Ayuntamiento de Puerto de la Cruz",
+ "titulo": "Contrato mixto, Obras y Servicios, por Lotes, consistente en la ejecución de las contenidas en el Proyecto de Demolición de la antigua estación de guaguas de Puerto de la Cruz, y el servicio consistente en la Dirección Facultativa, que incluye la Coordinación de Seguridad y Salud durante la ejecución de las Obras.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "535698794 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=fza%2BANc6WpxPRuo9Ms6speVu%2BxWfT717BSH9HNIh2QpWZk8OAhvc8WllkRCKzgP9Mapx9aACHs5VwOyzWmucdW2wDOfj01mzEW1RpPy4jynfdyQgZAdTm3EfcUAC7CJ6",
+ "archivo_origen": "10044_2026_Valoracion_memorias.bc3",
+ "total_bc3": 145735.92,
+ "suma_partidas": 145735.92,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "01",
+   "resumen": "ACONDICIONAMIENTO DEL TERRENO",
+   "importe": 77114.31
+  },
+  {
+   "codigo": "03",
+   "resumen": "PAVIMENTACION",
+   "importe": 31332.06
+  },
+  {
+   "codigo": "04",
+   "resumen": "VALLADO",
+   "importe": 37289.55
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "ACONDICIONAMIENTO DEL TERRENO",
+   "codigo": "D02D0100",
+   "unidad": "m²",
+   "resumen": "Compactado superficial tierras apisonadora mecánica",
+   "cantidad": 8915.81,
+   "precio": 6.64,
+   "importe": 59200.98,
+   "descripcion": "Compactado superficial de tierras con apisonadora mecánica manual para posterior ejecución de la solera."
+  },
+  {
+   "capitulo": "ACONDICIONAMIENTO DEL TERRENO",
+   "codigo": "D02.01",
+   "unidad": "m²",
+   "resumen": "Suministro y colocación de Geotextil tejido no-tejido punzonados",
+   "cantidad": 3286.85,
+   "precio": 5.45,
+   "importe": 17913.33,
+   "descripcion": "Suministro y colocación de Geotextil tejido no-tejido punzonados, 100% polipropileno de alta tenacidad, de color blanco, gramaje 200 g/m², como capa separadora, filtrante, drenante y refuerzo, capa soporte y vía o aglomerado asfáltico, con marcado CE, ref.-000103468, GEOLAND HT 200, SOPREMA, incluso p.p grapas de sujeción al terreno."
+  },
+  {
+   "capitulo": "PAVIMENTACION",
+   "codigo": "D02D0040",
+   "unidad": "m³",
+   "resumen": "Relleno medios mecánicos con grava",
+   "cantidad": 713.27,
+   "precio": 43.13,
+   "importe": 30763.34,
+   "descripcion": "Relleno de grava, con medios mecánicos, compactado por capas de 30 cm, al 95% del Proctor modificado, incluso capa separadora de protección formada por geotextil tejido no-tejido punzonados, 100% polipropileno de alta tenacidad, de color blanco, gramaje 200 g/m², p.p de grapas de fijación, regado y refino de taludes."
+  },
+  {
+   "capitulo": "PAVIMENTACION",
+   "codigo": "D29AB0020",
+   "unidad": "m³",
+   "resumen": "Terraplén con materiales de préstamo",
+   "cantidad": 86.3,
+   "precio": 6.59,
+   "importe": 568.72,
+   "descripcion": "Terraplén realizado con medios mecánicos, con materiales de préstamo, en tongadas de 30 cm de espesor, incluso extendido, humectación y compactación, hasta el 95% del Proctor Modificado, perfilado y refino de taludes."
+  },
+  {
+   "capitulo": "VALLADO",
+   "codigo": "1.1",
+   "unidad": "m",
+   "resumen": "Vallado metálico tipo hércules",
+   "cantidad": 240.0,
+   "precio": 75.53,
+   "importe": 18127.2,
+   "descripcion": "Vallado metálico tipo hércules en color verde RAL 6005, de 2,00 m de altura, con resistencia a la corrosión de 1000 horas de niebla salina probada según norma UNE-EN-10245-1, incluso p.p. de accesorios, recibido y colocación."
+  },
+  {
+   "capitulo": "VALLADO",
+   "codigo": "1.7",
+   "unidad": "ud",
+   "resumen": "Unidad de tornapunta rigidizador de acero de 38mm y 120cm",
+   "cantidad": 100.0,
+   "precio": 20.32,
+   "importe": 2032.0,
+   "descripcion": "Unidad de tornapunta rigidizador de acero de 38mm y 120cm."
+  },
+  {
+   "capitulo": "VALLADO",
+   "codigo": "1.6",
+   "unidad": "ud",
+   "resumen": "Dado de hormigón HM-25/B/20/XO",
+   "cantidad": 100.0,
+   "precio": 143.03,
+   "importe": 14303.0,
+   "descripcion": "Dado de hormigón sin armar, HA-25/B/20/X0, incluso elaboración, vertido, vibrado y curado, s/Código Estructural y C.T.E. DB SE y DB SE-C."
+  },
+  {
+   "capitulo": "VALLADO",
+   "codigo": "1.4",
+   "unidad": "ud",
+   "resumen": "Puerta metálica de 2 hojas abatibles, de 1,90x1,95 m,",
+   "cantidad": 1.0,
+   "precio": 1642.11,
+   "importe": 1642.11,
+   "descripcion": "Puerta metálica de 2 hojas abatibles, de 1,90x1,95 m, FORTINET de BETAFENCE o equivalente, formada por marco exterior de sección cuadrada de 40x40 mm, malla hércules, soldada al marco en cara interior, ondulación en cada malla de alambre horizontal, y postes empotrados de sección cuadrada, capa de cinc y plastificado en poliéster, en color verde RAL 6005, con resistencia a la corrosión de 1000 horas de niebla salina probada según norma UNE-EN-10245-1, incluso cerradura, sistema de cierre y manilla incorporados, bisagras ajustables, p.p. de accesorios, recibido y colocación."
+  },
+  {
+   "capitulo": "VALLADO",
+   "codigo": "1.3",
+   "unidad": "ud",
+   "resumen": "Puerta metálica de 1 hoja abatible, de 1,00x1,95 m,",
+   "cantidad": 1.0,
+   "precio": 1185.24,
+   "importe": 1185.24,
+   "descripcion": "Puerta metálica de 1 hoja abatible, de 1,00x1,95 m, formada por marco exterior de sección cuadrada de 40x40 mm, malla hércules, soldada al marco en cara interior, ondulación en cada malla de alambre horizontal, y postes empotrados de sección circular, capa de cinc y plastificado en poliéster, en color verde RAL 6005, con resistencia a la corrosión de 1000 horas de niebla salina probada según norma UNE-EN-10245-1, incluso cerradura, sistema de cierre y manilla incorporados, bisagras ajustables, p.p. de accesorios, recibido y colocación."
+  }
+ ]
+}

@@ -1,0 +1,468 @@
+~V|CYPE INGENIEROS, S.A.|FIEBDC-3/2016|ARQUIMEDES||ANSI|Presupuesto|2|
+~K|-9\2\2\3\2\2\2\2\EUR\|3\13\6\\7|2\2\\3\2\\2\2\2\-9\2\2\2\2\EUR\||
+~X||ce\Coste energético\MJ\eCO2\Emisión de CO2\kg\ler\Código LER\\m\Masa del elemento\kg\v\Volumen\m3\|
+~C|MOYA_2026_V2##||Mejora Efi. Energ. Alumbrado e Inst. Públicas Norte de GC. Separata Moya.|78560.82|220306|0|
+~T|MOYA_2026_V2##|Mejora de Alumbrado Publico y Ahorro Energético en el Norte de Gran Canaria. Separata Moya.|
+~D|MOYA_2026_V2##
+|APTEROR26#\\1
+\APSB_1_3#\\1
+\APG20SS#\\1
+\APG20GR#\\1
+\|
+~C|APTEROR26#||Alumbrado Led Moya|57612.22|090606|0|
+~D|APTEROR26#
+|D02A0011\\10
+\Z01ABA0020\\1300
+\TECEO24S\\32
+\PRFV_EMP_89\\13
+\Z01ACEBBRA\\100
+\APG02\\32
+\IEP021c\\1
+\Z01ACEB0020\\5
+\Z01ACEBARRI\\10
+\Z01ACEBM9\\1
+\PAAG\\1
+\|
+~C|D02A0011|h|Poda o tala de material vegetal.|57.56|090726|0|
+~T|D02A0011|Poda o tala de material vegetal en el entorno de luminaria o Cuadro de mando con medios mecánicos, con carga sobre camión, con transporte a vertedero.
+
+Según necesidades de la obra.|
+~D|D02A0011
+|M01A0030\\0.953
+\F01A0010\\1
+\|
+~C|M01A0030|h|Peón|21.57||1|
+~T|M01A0030|Peón|
+~C|F01A0010|h|Camión cesta|37|251120|2|
+~T|F01A0010|Camión cesta|
+~C|Z01ABA0020|m|Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.|11.21|090726|0|
+~T|Z01ABA0020|Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. 
+Incluye conductor  de  protección  identificado  con  marcado  mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ.
+Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02.
+Incluye retirada cableado existente y gestión del mismo. 
+Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo.|
+~D|Z01ABA0020
+|V01IAA0010\\1
+\F01A0030\\0.029
+\H01A0030\\0.032
+\H01A0040\\0.032
+\|
+~C|V01IAA0010|m|Cable trenzado 4x25 mm² Al/54,6 mm² Alm, aisl. XLPE CPR Fca, 0,6/1 kV|8.67|070911|3|
+~T|V01IAA0010|Cable trenzado 4x25 mm² Al/54,6 mm² Alm, formado por conductor de aluminio aislado con polietileno reticulado (XLPE) CPR Fca, 0,6/1 kV, con neutro fiador de aleación de Aluminio-Magnesio-Silicio, para instalaciones de cables tensados, s/UNE 21030.|
+~C|F01A0030|h|Camión grúa 20 t|38.45|251120|2|
+~T|F01A0030|Camión grúa de 20 t, pluma de 23 m|
+~C|H01A0030|h|Oficial primera electricista|22.75|110326|1|
+~T|H01A0030|Oficial primera electricista|
+~C|H01A0040|h|Peón electricista|21.57|110326|1|
+~T|H01A0040|Peón electricista|
+~C|TECEO24S|Ud|Suministro e instalacion de luminaria vial Schréder TECEO S 583092, o similar|496|090726|0|
+~T|TECEO24S|Ud. de instalacion de luminaria LED vial para vias urbanas, marca Schréder, modelo TECEO S 5428 Flat glass 24 5050 LED@333mA Driver@1000mA WW 730 230V 00-70-386, codigo/nº de articulo 583092, o similar estrictamente equivalente.
+
+Caracteristicas minimas: flujo de luminaria no inferior a 6.798 lm, potencia del conjunto no superior a 51 W, eficacia del conjunto equivalente al 84,92 % respecto al flujo de lampara indicado en estudio luminico, temperatura de color WW 730 / 3000 K, optica 5428 Flat glass, cierre de vidrio plano, FHSinst / ULOR 0,00 %, clase fotometrica G*4 o superior, indice de deslumbramiento D.6 o superior, intensidades maximas no superiores a las del estudio luminico en angulos criticos: >=70º 363 cd/klm, >=80º 52,6 cd/klm y >=90º 0,00 cd/klm, grado de proteccion IP66 o superior, resistencia al impacto IK08 o superior, cuerpo de aluminio inyectado o material tecnico equivalente de alta resistencia, montaje lateral o en punta sobre espiga/brazo compatible y orientable para dejar la luminaria instalada a 0º respecto a la via.
+
+La luminaria ofertada como similar debera aportar fichero fotometrico LDT/IES, ficha tecnica, certificado CE/UE, declaracion RoHS/RAEE cuando proceda, datos de vida util y curva de depreciacion, y debera justificar documentalmente que reproduce los resultados luminicos del estudio de referencia para clase M4 conforme UNE-EN 13201:2015, con factor de mantenimiento 0,80: Lm >= 0,75 cd/m2, Uo >= 0,40, Ul >= 0,60, TI <= 15 % y REI >= 0,30. No se admitira como similar una luminaria que, aun teniendo potencia o flujo parecido, no reproduzca la fotometria, el control de deslumbramiento, el FHSinst 0 % y los resultados luminicos calculados.
+
+Incluye: instalada en superficie con medios manuales o mecanicos y recuperacion, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecucion del proceso inverso al de su instalacion, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camion o contenedor, clasificacion y etiquetado. Acopio de los materiales a reutilizar. Reposicion y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camion o contenedor. Montaje, conexionado y comprobacion de su correcto funcionamiento segun REBT-02.
+
+Incluye: Tasa ECORAEE segun Real Decreto RAEE 110/2015.|
+~D|TECEO24S
+|MATTECEO583092\\1
+\M01B0070\\0.477
+\M01B0080\\0.477
+\mq07ple010bg\\0.3
+\|
+~C|MATTECEO583092|u|Luminaria Schréder TECEO S 583092, 24 LED, 51 W, 3000 K, o similar|468.65|251120|3|
+~T|MATTECEO583092|Luminaria vial Schréder TECEO S 5428 Flat glass 24 5050 LED@333mA Driver@1000mA WW 730 230V 00-70-386, codigo 583092, o similar estrictamente equivalente segun estudio luminico de Moya. Potencia 51 W, flujo de luminaria 6798 lm, flujo lampara 8006 lm, rendimiento 84,92 %, FHSinst/ULOR 0,00 %, clase G*4, clase de deslumbramiento D.6.|
+~C|M01B0070|h|Oficial electricista|22.75||1|
+~T|M01B0070|Oficial electricista|
+~C|M01B0080|h|Ayudante electricista|21.51||1|
+~T|M01B0080|Ayudante electricista|
+~C|mq07ple010bg|h|Alquiler cesta elevadora de brazo articulado, motor diesel, de 16 m de altura máxima de trabajo, incluso mantenimiento y seguro de responsabilidad civil.|20.79|251120|2|
+~C|PRFV_EMP_89|ud|Poste PRFV 8-9 m empotrado/hincado para canalizacion aerea RZ de alumbrado|1285.52|090726|0|
+~T|PRFV_EMP_89|Suministro e instalacion de poste/columna troncoconica de PRFV, marca Adhorna o equivalente, de 8 a 9 m de altura util, para soporte de canalizacion aerea con cable trenzado RZ, clase II, con puerta de registro, herraje de amarre/soporte para cable trenzado, apertura de pozo, empotramiento, aplomado, relleno y compactacion, pequeno recibido con hormigon si procede, medios de izado, camion cesta para trabajos en altura, pequeno material, conexionado interior y puesta en servicio. Medida la unidad totalmente terminada, sin incluir luminaria ni tendido del cable RZ. Dimensiones definitivas segun calculo, terreno y prescripciones del fabricante.|
+~D|PRFV_EMP_89
+|MAT_PRFV_EMP_89\\1
+\A06B0020\\0.9
+\A06C0030\\0.7
+\A03A0060\\0.18
+\A06D0020\\0.25
+\QAC0010\\1
+\QAC0060\\0.5
+\M01B0070\\2.449
+\M01B0080\\2.449
+\M01A0030\\1.469
+\AUX_EMP_PRFV\\1
+\|
+~C|MAT_PRFV_EMP_89|ud|Poste PRFV Adhorna o equiv. 8-9 m EMP, clase II, con herraje RZ|920||3|
+~T|MAT_PRFV_EMP_89|Poste/columna troncoconica de PRFV, marca Adhorna o equivalente, altura util 8-9 m, ejecucion para empotramiento, clase II, con puerta de registro, acabado pigmentado en masa y herraje de amarre/soporte para cable trenzado RZ. Precio orientativo de suministro en Canarias, sin IGIC.|
+~C|A06B0020|m³|Excavación manual en pozos.|90.47|090726|0|
+~T|A06B0020|Excavación manual en pozos en cualquier clase de terreno con acopio de escombros resultantes al borde.|
+~D|A06B0020
+|M01A0030\\2.938
+\QBB0010\\2
+\|
+~C|QBB0010|h|Compresor caudal 2,5 m³/min 2 martillos.|13.55||2|
+~T|QBB0010|Compresor caudal 2,5 m³/min 2 martillos.|
+~C|A06C0030|m³|Relleno localizado con material de excavación.|11.07|090726|0|
+~T|A06C0030|Relleno localizado con material procedente de la excavación, compactado por capas de 30 cm, al proctor modificado del 95 %, incluso riego.|
+~D|A06C0030
+|M01A0030\\0.369
+\QAA0020\\0.05
+\QBD0020\\0.08
+\E01E0010\\0.2
+\|
+~C|QAA0020|h|Retroexcavadora 72 kW|38.5||2|
+~T|QAA0020|Retroexcavadora sobre ruedas, 72 kW, peso en orden de trabajo 8140 kg|
+~C|QBD0020|h|Compactador manual, tipo pequeño de rodillo vibrante de 0,60 t|6.96||2|
+~T|QBD0020|Compactador manual, tipo pequeño de rodillo vibrante de 0,60 t|
+~C|E01E0010|m³|Agua|3.08||3|
+~T|E01E0010|Agua|
+~C|A03A0060|m³|Hormigón en masa HM-20/P/16/X0|150.41|090726|0|
+~T|A03A0060|Hormigón en masa HM-20/P/16/X0, confeccionado con hormigonera.|
+~D|A03A0060
+|M01A0030\\1.961
+\E01BA0040\\0.35
+\E01CA0010\\0.65
+\E01CB0070\\1.3
+\E01E0010\\0.2
+\QAD0010\\0.5
+\|
+~C|E01BA0040|t|Cemento puzolánico, CEM VI/B (P) 32,5 R, granel|184.33|030712|3|
+~T|E01BA0040|Cemento puzolánico, CEM VI/B (P) 32,5 R, UNE-EN 197-1, tipo VI/B, con puzolana natural (P), clase de resistencia 32,5 N/mm² y alta resistencia inicial, a granel, con marcado CE.|
+~C|E01CA0010|t|Arena seca|23.27||3|
+~T|E01CA0010|Arena seca|
+~C|E01CB0070|t|Arido machaqueo 4-16 mm|19||3|
+~T|E01CB0070|Arido machaqueo 4-16 mm|
+~C|QAD0010|h|Hormigonera portátil 250 l|6.28||2|
+~T|QAD0010|Hormigonera portátil 250 l|
+~C|A06D0020|m³|Carga mecánica, transporte tierras vertedero, camión, máx. 10 km|5.45||0|
+~T|A06D0020|Carga mecánica y transporte de tierras a vertedero, con camión de 18 Tn, con un recorrido máximo de 10 Km.|
+~D|A06D0020
+|QAA0070\\0.015
+\QAB0030\\0.12
+\|
+~C|QAA0070|h|Pala cargadora sobre neumáticos, 96 kW|45.46||2|
+~C|QAB0030|h|Camión basculante 15 t|39.76||2|
+~T|QAB0030|Camión basculante 15 t|
+~C|QAC0010|h|Camión grúa 20 t|39.08||2|
+~T|QAC0010|Camión grúa de 20 t, pluma de 23 m|
+~C|QAC0060|h|Camión cesta|37.63|140420|2|
+~T|QAC0060|Camión cesta|
+~C|AUX_EMP_PRFV|ud|Pequeño material y costes directos complementarios poste empotrado|49.94||3|
+~T|AUX_EMP_PRFV|Pequeño material, accesorios, tornillería y costes directos complementarios para instalación de poste PRFV empotrado/hincado.|
+~C|Z01ACEBBRA|ud|Suministro y sustirución de Brazo de Luminaria.|39.77|090726|0|
+~T|Z01ACEBBRA|Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado.
+Totalmente instalado.|
+~D|Z01ACEBBRA
+|Brazoycom\\1
+\H01A0030\\0.108
+\H01A0040\\0.107
+\|
+~C|Brazoycom|Ud|Brazo y complementos|35|251120|3|
+~T|Brazoycom|Brazo y complementos|
+~C|APG02|Ud|Suministro e instalación de Conexión y protección de luminaria.|47.3|090726|0|
+~T|APG02|Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, Clase A, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02.
+
+Racores:
+Red Aérea P-6
+Red Subterranea RS-11
+
+Incluido:
+1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos.
+2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 
+3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV;
+4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV;
+5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV;
+
+NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente.
+Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato.|
+~D|APG02
+|H01A0030\\0.11
+\H01A0040\\0.11
+\E22IB0300\\1
+\E224OLK5Q\\1
+\E22HD0010\\1
+\E22HC0020\\1
+\E22IB0040\\2
+\E22IB0050\\1
+\E22NILED\\3
+\|
+~C|E22IB0300|m|Cable manguera de cobre 3x2,5 mm²,RV-K 0,6/1 kV, CPR Eca|1.26|020420|3|
+~T|E22IB0300|Cable manguera de cobre 3x2,5 mm², aislamiento de polietileno reticulado XLPE, cubierta de PVC, CPR Eca, 0,6/1 kV|
+~C|E224OLK5Q|ud|Caja estanca IP55|11.01|251120|3|
+~C|E22HD0010|ud|Interrupt automát magnet 1P+N x 10 A, 6kA.|3.57||3|
+~T|E22HD0010|Interruptor automático magnetotérmico 1P+N x 10 A.|
+~C|E22HC0020|ud|Interruptor diferencial 2Px40A sensib 30 mA, clase A.|15.19||3|
+~T|E22HC0020|Interruptor diferencial 2Px40A sensibilidad 30 mA, clase A.|
+~C|E22IB0040|m|Cable Cu 0,6/1kV de 1x6 mm², Rz 0,6/1 kV, CPR Eca|1.56||3|
+~T|E22IB0040|Cable Cu 0,6/1kV de 1x6 mm², aislamiento de polietileno reticulado XLPE, 0,6/1 kV|
+~C|E22IB0050|m|Cable Cu 0,6/1kV de 1x25 mm², Rz 0,6/1 kV, CPR Eca|2.31||3|
+~T|E22IB0050|Cable Cu 0,6/1kV de 1x25 mm², aislamiento de polietileno reticulado XLPE, 0,6/1 kV|
+~C|E22NILED|Ud|Conector niled o similar|1.99|251120|3|
+~T|E22NILED|Conector niled o similar|
+~C|IEP021c|Ud|Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.|155.86|090726|0|
+~T|IEP021c|Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno.
+Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo.
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.|
+~D|IEP021c
+|mt35tte010b\\1
+\mt35ttc010b\\2.75
+\E22CAD0320\\2.5
+\mt35tta040\\1
+\mt35tta010\\1
+\mt35tta030\\1
+\mt35tta060\\0.333
+\mt35www020\\1
+\M01B0070\\0.018
+\M01B0080\\0.019
+\|
+~C|mt35tte010b|Ud|Electrodo para red de toma de tierra cobreado con 300 µm, fabricado en acero, de 15 mm de diámetro y 2 m de longitud.|17.64|251120|3|
+~C|mt35ttc010b|m|Conductor de cobre desnudo, de 35 mm².|2.64|251120|3|
+~C|E22CAD0320|m|Tubo PVC flexible gris M25, DIFLEX|3.44|130114|3|
+~T|E22CAD0320|Tubo de PVC flexible gris M25 mm, DIFLEX de Gewiss|
+~C|mt35tta040|Ud|Grapa abarcón para conexión de pica.|0.52|251120|3|
+~C|mt35tta010|Ud|Arqueta para toma de tierra, de 300x300 mm, con tapa de registro.|73.96|251120|3|
+~C|mt35tta030|Ud|Puente para comprobación de puesta a tierra de la instalación eléctrica.|45.73|251120|3|
+~C|mt35tta060|Ud|Saco de 5 kg de sales minerales para la mejora de la conductividad de puestas a tierra.|1.92|251120|3|
+~C|mt35www020|Ud|Material auxiliar para instalaciones de toma de tierra.|0.69|251120|3|
+~C|Z01ACEB0020|ud|Postelete h=6 m en acero galvanizado 2 1/2", instalado en pared, incluso colocación de esparragos, izado y nivelado.|210.09|090726|0|
+~T|Z01ACEB0020|Postelete h=6 m en acero galvanizado 2 1/2", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado.|
+~D|Z01ACEB0020
+|V02BEA0070b\\1
+\F01A0030\\0.4
+\H01A0030\\0.183
+\H01A0040\\0.43
+\|
+~C|V02BEA0070b|ud|Postelete acero galvanizado, h=6 m|181.27|221120|3|
+~T|V02BEA0070b|Postelete acero galvanizado, h=6 m, de sección circular, fabricada en un solo tramo, en acero al carbono, acabado galvanizado, s/UNE-EN 40-5.|
+~C|Z01ACEBARRI|ud|Arriostramiento a pared y venteo de columnas|24.84|090726|0|
+~T|Z01ACEBARRI|Arriostramiento a pared y venteo de columnas, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1" PVC rígido pintado (rojo-blanco). Totalmente instalado.|
+~D|Z01ACEBARRI
+|E19BCCD0030\\1
+\H01A0030\\0.181
+\H01A0040\\0.428
+\|
+~C|E19BCCD0030|ud|Tensor de vientos 100 mm|11.49||3|
+~T|E19BCCD0030|Tensor de vientos 100 mm. Modelo TNS 106. Ref. 82427. Fagor.|
+~C|Z01ACEBM9|Ud|Poste de madera cobra III, h=9 m|281.13|090726|0|
+~T|Z01ACEBM9|Poste de madera cobra III, de 9 m. de altura, según norma UNE 21-003-82, con excavación en todo tipo de terreno de hasta 1 m3 (profund. 1,5 m), de acuerdo con normas de UNELCO, fijación mediante el hincado con piedras y tierra compactada en la cimentación. Incluso pintado de franjas de 0,5 m de ancho en rojo-blanco-rojo.|
+~D|Z01ACEBM9
+|V02BEACOBRA9\\1
+\F01A0030\\0.25
+\H01A0030\\0.321
+\H01A0040\\0.536
+\|
+~C|V02BEACOBRA9|ud|Poste de madera cobra III, h=9 m|252.66|251120|3|
+~T|V02BEACOBRA9|Poste de madera cobra III, h=9 m|
+~C|PAAG|PA|Partida Alzada Saneamiento, imprevistos.|970.87|210522|0|
+~T|PAAG|Partida Alzada Saneamiento, imprevistos, legalización y desatasco cem. debido a la complejidad del alumbrado a renovar y el estado actual del mismo.|
+~C|APSB_1_3#||Fotovoltaicas|19505.84|090606|0|
+~D|APSB_1_3#
+|Z01ACFS01\\5
+\Z01ACFS01b\\1
+\Z01ACEA0030\\7
+\UIV010\\7
+\D01A0070\\2
+\PAMAP_08\\1
+\|
+~C|Z01ACFS01|Ud|Suministro e instalación de luminaria solar de la marca microplus germany SL-NATUR2 o similar con sensor de movimiento.|3019.23|090726|0|
+~T|Z01ACFS01|Suministro e instalación de luminaria solar de la marca microplus germany  SL-NATUR2 o similar con sensor de movimiento.
+
+CONJUNTO DE ALUMBRADO SOLAR CON BÁCULO. (SL-NATUR2-50W). Conjunto de alumbrado Solar MICROPLUS GERMANY o similar compuesto por: Columna en chapa de acero galvanizado de 6 metros de altura; Box/Módulo Microplus Germany o similar fabricado en poliéster reforzado (colores según DF) modelo S-MODULUS-AC con cilindro de entronque a columna y soporte metálico para Panel fotovoltaico incluido éste de 270WP con *funcionalidad crepuscular interna *(enciende la luminaria en él ocaso y la apaga al amanecer); integra en su interior 2 baterías de litio BAT-LI 36-25,6 (LIFePO4) 12,8v/24Ah con más de 3.500 ciclos (80% descarga) y 10.000 ciclos (30% descarga) y controlador/driver IP68 MPPT **preprogramado a demanda: tres horas iniciales al 80% y resto 8 horas al 40%; incorpora luminaria tipo VIAL IP66-IK08 de 10 años/50.000H de garantía(lo que antes suceda), con sensor de movimiento, fabricada en inyección de aluminio acabada con pintura en polvo/poliéster gris sable bicolor 2150-2900 y secado en horno >200º; tecnología Microled Plus tono 3.000ºK de50w de potencia y 7.500 lúmenes de rendimiento total efectivo al 100% de funcionamiento, así como conjunto óptico de vidrio con distribución luminosa tipo VIAL Asimétrica/Divergente/Extensiva serie(A). Modelo: SL-NATUR2/PP/050/3.0/A/6 o similar.|
+~D|Z01ACFS01
+|V02CDSS01\\1
+\H01A0030\\0.669
+\H01A0040\\0.668
+\|
+~C|V02CDSS01|Ud|luminaria solar de la marca microplus germany SL-NATUR2 o similar|2989.6|140620|3|
+~T|V02CDSS01|SL-NATUR2/PP/050/3.0/A/6
+PP(preprogramada de fábrica)programación: Tres horas iniciales al 80% y resto 8 horas al 40%.
+50W de potencia
+3000k
+lente tipo Asimétrica
+altura baculo 6 metros galvanizado
+2 baterías litio dos baterías de litio 36-25.6
+controlador de carga 15A-12/24V
+panel 270wp
+sensor de movimiento|
+~C|Z01ACFS01b|Ud|Suministro de programador y visualiazdor de datos de la marca microplus germany o similar|133.12|140518|0|
+~D|Z01ACFS01b
+|V02CDSS01b\\1
+\|
+~C|V02CDSS01b|Ud|Suministro de programador y visualiazdor de datos de la marca microplus germany o similar|133.12|140620|3|
+~T|V02CDSS01b|SL-NATUR2/PP/050/3.0/A/6
+PP(preprogramada de fábrica)programación: Tres horas iniciales al 80% y resto 8 horas al 40%.
+50W de potencia
+3000k
+lente tipo Asimétrica
+altura baculo 6 metros galvanizado
+2 baterías litio dos baterías de litio 36-25.6
+controlador de carga 15A-12/24V
+panel 270wp
+sensor de movimiento|
+~C|Z01ACEA0030|ud|Base hormigón p/cimentación de báculo o columna de 5<=h<8 m|331.86|090726|0|
+~T|Z01ACEA0030|Base para cimentación de báculo o columna de 5<=h<8 m de altura, de 0,80x0,80x1,00 m, realizada con hormigón en masa de fck=17,5 N/mm², incluso encofrado, excavación precisa, recibido de pernos de anclaje.|
+~D|Z01ACEA0030
+|V01CAE0010\\2
+\V01CAB0030\\1
+\K01A0030\\0.64
+\K01A0060\\0.704
+\K01A0040\\2.8
+\H01A0015\\0.818
+\H01A0020\\0.818
+\|
+~C|V01CAE0010|m|Alambre guía 2 mm galvanizado|0.26|110722|3|
+~T|V01CAE0010|Alambre guía 2 mm galvanizado|
+~C|V01CAB0030|m|Tubería PE (rojo) doble pared DN 63 mm, p/canal. eléctr.|4.62|110722|3|
+~T|V01CAB0030|Tubo corrugado de doble pared, lisa interior y corrugado exterior, de polietileno de alta densidad, D=63 mm, para conducción de cables en instalaciones eléctricas enterradas, resistencia a la compresión Tipo 450N, resistencia al impacto Normal, s/UNE-EN 61386-24.|
+~C|K01A0030|m³|Hormigón en masa de fck= 17.5 N/mm²|155.49|090726|0|
+~T|K01A0030|Hormigón en masa de fck= 17,5 N/mm², árido machaqueo 16 mm máx., confeccionado con hormigonera.|
+~D|K01A0030
+|E01BA0040\\0.31
+\E01CA0010\\0.64
+\E01CB0070\\1.28
+\E01E0010\\0.2
+\F01A0040\\0.5
+\H01A0020\\2.558
+\|
+~C|F01A0040|h|Hormigonera portátil 250 l|6.68|110722|2|
+~T|F01A0040|Hormigonera portátil 250 l|
+~C|H01A0020|h|Peón|21.57|110326|1|
+~T|H01A0020|Peón|
+~C|K01A0060|m³|Excavación manual en pozos.|111.51|090726|0|
+~T|K01A0060|Excavación manual en pozos en cualquier clase de terreno con acopio de escombros resultantes al borde.|
+~D|K01A0060
+|H01A0020\\3.855
+\F01A0050\\2
+\|
+~C|F01A0050|h|Compresor caudal 2,5 m³/min 2 martillos.|14.18|110722|2|
+~T|F01A0050|Compresor caudal 2,5 m³/min 2 martillos.|
+~C|K01A0040|m²|Encofrado y desencofrado de zapatas.|40.08|090726|0|
+~T|K01A0040|Encofrado y desencofrado de zapatas. (8 puestas).|
+~D|K01A0040
+|H01A0015\\0.865
+\H01A0020\\0.865
+\E01IB0110\\0.003
+\E01IA0110\\0.001
+\E01MA0020\\0.02
+\|
+~C|H01A0015|h|Oficial primera|23.04|110326|1|
+~T|H01A0015|Oficial primera|
+~C|E01IB0110|m³|Madera pino gallego en tablas 25 mm|354.79|110722|3|
+~T|E01IB0110|Madera pino gallego en tablas 25 mm|
+~C|E01IA0110|m³|Madera pino gallego|375||3|
+~T|E01IA0110|Madera pino gallego|
+~C|E01MA0020|kg|Clavos 2"|2.5||3|
+~T|E01MA0020|Clavos 2"|
+~C|UIV010|Ud|Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada, conexionada a cables de tierra.|91.65|090726|0|
+~T|UIV010|Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada.
+Incluye: Replanteo. Fijación de la columna. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Incluye: Electrodo para red de toma de tierra cobreado con 300 µm, fabricado en acero, de 14 mm de diámetro y 2 m de longitud y su conexión.
+Incluye: Conductor de cobre desnudo, de 35 mm² y conductor aislado de cobre para 0,6/1 kV de 1x2,5 mm² para conexionado de tierra.
+Incluye: la colocación completa de la luminaria fotovoltaica, su conexionado y comprobación.|
+~D|UIV010
+|mt34www020\\1
+\mt34www020b\\1
+\mt34www050\\1
+\mt35ttc010b\\2
+\mt35tte010a\\1
+\F01A0030\\1
+\H01A0040\\0.673
+\H01A0030\\0.673
+\|
+~C|mt34www020|Ud|Anclajes con pernos según fabricante, plantilla, instalada y nivelada.|1.2|140620|3|
+~C|mt34www020b|Ud|Armadura, 6 redondos de diametro 12, según fabricante.|1.2|140620|3|
+~C|mt34www050|m|Conductor aislado de cobre para 0,6/1 kV de 1x2,5 mm².|0.4|140620|3|
+~C|mt35tte010a|Ud|Electrodo para red de toma de tierra cobreado con 300 µm, fabricado en acero, de 14 mm de diámetro y 2 m de longitud.|15.29|140620|3|
+~C|D01A0070|m³|Demolición elementos cimentac. horm armado.|129.19|090726|0|
+~T|D01A0070|Demolición de elementos de cimentación de hormigón armado con medios mecánicos, incluso p.p. de compresor, carga y transporte de escombros a vertedero autorizado, medido el volumen inicial a demoler.|
+~D|D01A0070
+|M01A0030\\3.233
+\QBB0010\\2.6
+\QAB0030\\0.6
+\QAA0070\\0.008
+\|
+~C|PAMAP_08|Pa|Partida Alzada Saneamiento e imprevistos.|485.44|210522|0|
+~T|PAMAP_08|Partida Alzada Saneamiento e imprevistos debido a la complejidad del alumbrado a renovar y el estado actual del mismo al discurrir por centro histórico.|
+~C|APG20SS#||Seguridad y Salud.|1389.77|130218|0|
+~T|APG20SS#|Seguridad y Salud|
+~D|APG20SS#
+|YSX010d\\1
+\YMM010b\\5
+\D32AE0010\\5
+\D32CA0010\\5
+\|
+~C|YSX010d|Ud|Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.|413.71|210522|0|
+~T|YSX010d|Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~C|YMM010b|Ud|Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.|101.42|010720|0|
+~T|YMM010b|Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.
+Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~D|YMM010b
+|mt50eca010\\1
+\|
+~C|mt50eca010|Ud|Botiquín de urgencia provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, con tornillos y tacos para fijar al paramento.|101.42|251120|3|
+~C|D32AE0010|ud|Arnés anticaídas top 3, Würth|74.37|231111|0|
+~T|D32AE0010|Arnés anticaídas top 3, Würth o equivalente, con marcado CE.|
+~D|D32AE0010
+|E38AE0100\\1
+\|
+~C|E38AE0100|ud|Arnés anticaídas top 3, Würth|74.37|161111|3|
+~T|E38AE0100|Arnés anticaídas top 3, con marcado CE, Würth|
+~C|D32CA0010|ud|Señal de cartel obras, PVC, sin soporte metálico|11.33|090726|0|
+~T|D32CA0010|Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje.|
+~D|D32CA0010
+|M01A0030\\0.224
+\E38CA0030\\1
+\|
+~C|E38CA0030|ud|Señal cartel obras, PVC, 45x30 cm|6.5||3|
+~T|E38CA0030|Señal de cartel de obras, PVC, 45x30 cm|
+~C|APG20GR#||Gestión de Residuos.|52.99|130218|0|
+~T|APG20GR#|Gestión de Residuos.|
+~D|APG20GR#
+|D37B0060\\0.11
+\D37CC0070\\0.03
+\D37CC0080\\0.08
+\|
+~C|D37B0060|m³|Transporte residuos a instalac. autorizada 20 km.|13.12||0|
+~T|D37B0060|Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km.|
+~D|D37B0060
+|QAB0030\\0.33
+\|
+~C|D37CC0070|t|Coste entrega residuos de plástico a instalación de valorización|200|181113|0|
+~T|D37CC0070|Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CC0070
+|E41CA0140\\1
+\|
+~C|E41CA0140|t|Tasa gestor aut. valorización residuos plástico, LER 170203|200|181113|3|
+~T|E41CA0140|Tasa de gestor autorizado valoración en residuos de plástico, LER 170203. (Densidad aproximada entre 0,60 y 0,80 t/m³)|
+~C|D37CC0080|t|Coste entrega residuos de papel y cartón a instalación de valorización|550|181113|0|
+~T|D37CC0080|Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CC0080
+|E41CA0150\\1
+\|
+~C|E41CA0150|t|Tasa gestor aut. valorización residuos papel y cartón, LER 200101|550|181113|3|
+~T|E41CA0150|Tasa de gestor autorizado valoración en residuos de papel y cartón, LER 200101. (Densidad aproximada entre 0,60 y 0,80 t/m³)|
+~M|APTEROR26#\TECEO24S|1\3\|32|
+\Plaza del Frontón\1\\\\
+\Camino la Cañada\4\\\\
+\Camino la Cordillera\2\\\\
+\Carretera a Cabo Verde\1\\\\
+\c/ Alcalde Pedro Moreno\2\\\\
+\c/ Practicante Manuel González\1\\\\
+\c/ Hoyas del Cavadero\2\\\\
+\Camino el Tablero 70\1\\\\
+\Avenida del Cabildo Insular\1\\\\
+\Camino el Brecito\3\\\\
+\Camino el Morro\7\\\\
+\Camino Lomo el Marco\4\\\\
+\Camino el Tablero 15 / 13\3\\\\|
+~M|APSB_1_3#\Z01ACFS01|2\1\|5|
+\Punto Fotovoltaico 1\1\\\\
+\Punto Fotovoltaico 2\1\\\\
+\Punto Fotovoltaico 3\1\\\\
+\Punto Fotovoltaico 4\1\\\\
+\Punto Fotovoltaico 5\1\\\\|

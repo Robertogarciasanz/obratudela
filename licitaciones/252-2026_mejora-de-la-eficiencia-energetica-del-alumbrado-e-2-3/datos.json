@@ -1,0 +1,516 @@
+{
+ "expediente": "252/2026",
+ "organismo": "Presidencia de la Mancomunidad de Ayuntamientos del Norte de Gran Canaria",
+ "titulo": "Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria, incluido en el Plan de Cooperación del Cabildo de Gran Canaria.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1136492.96 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=oFv%2B9U0jWvN4X4%2BaJK0VV%2BkUjIggbm8z0hyZ2JVffi/LZZbS%2BgbvdPGEYZoD5mhKMp1ci3kPY231ZQGmc6GH72a4a%2BRTgu65faGMdPLB0B3fdyQgZAdTm3EfcUAC7CJ6",
+ "archivo_origen": "252_2026_Firgas.bc3",
+ "total_bc3": 106333.37,
+ "suma_partidas": 106333.37,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "APSANANTON",
+   "resumen": "A.P. Lomo San Antón",
+   "importe": 25701.43
+  },
+  {
+   "codigo": "APLOMOOBRERO",
+   "resumen": "A.P. Lomo Obrero",
+   "importe": 45436.66
+  },
+  {
+   "codigo": "APLOMOQ",
+   "resumen": "A.P. Lomo Quintanilla",
+   "importe": 15349.45
+  },
+  {
+   "codigo": "APPELLAS",
+   "resumen": "A.P. Las Pellas",
+   "importe": 17059.55
+  },
+  {
+   "codigo": "APG20SS",
+   "resumen": "Seguridad y Salud.",
+   "importe": 1391.69
+  },
+  {
+   "codigo": "APG20GR",
+   "resumen": "Gestión de Residuos.",
+   "importe": 1394.59
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01BBF0040",
+   "unidad": "m",
+   "resumen": "Derivación individual 5(1x25) mm²",
+   "cantidad": 6.0,
+   "precio": 62.9,
+   "importe": 377.4,
+   "descripcion": "Derivación individual 3(1x25) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados H07Z1-K (AS), 750 V, norma UNE 211002, CPR Cca-s1b,d1,a1 de 25 mm², bajo tubo flexible corrugado de D 50 mm (s/norma UNE-EN 61386-22), incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01ACD0010",
+   "unidad": "ud",
+   "resumen": "Cuadro de A.P. de poliéster con 4 salidas",
+   "cantidad": 1.0,
+   "precio": 4775.56,
+   "importe": 4775.56,
+   "descripcion": "Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02. Incluye: Cableado interno D.I. según D.F. Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC. Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA. Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 1.0,
+   "precio": 11.42,
+   "importe": 11.42,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "CIESZ",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.",
+   "cantidad": 34.0,
+   "precio": 480.32,
+   "importe": 16330.88,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial CIES Serie Z 24LED 70W, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 9660 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 42 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 100.000 horas de vida útil L90B10 Grado de protección IP66 según norma IEC 60529 Incluye sensor Zhaga Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 7.0,
+   "precio": 41.19,
+   "importe": 288.33,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 34.0,
+   "precio": 48.9,
+   "importe": 1662.6,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "IEP021c",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 160.39,
+   "importe": 160.39,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 1.0,
+   "precio": 214.72,
+   "importe": 214.72,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 1.0,
+   "precio": 26.17,
+   "importe": 26.17,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "D02A0011",
+   "unidad": "h",
+   "resumen": "Poda o tala de material vegetal.",
+   "cantidad": 10.0,
+   "precio": 56.4,
+   "importe": 564.0,
+   "descripcion": "Poda o tala de material vegetal en el entorno de luminaria o Cuadro de mando con medios mecánicos, con carga sobre camión, con transporte a vertedero. Según necesidades de la obra."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "Z01ACEBM9",
+   "unidad": "Ud",
+   "resumen": "Poste de madera cobra III, h=9 m",
+   "cantidad": 1.0,
+   "precio": 289.96,
+   "importe": 289.96,
+   "descripcion": "Poste de madera cobra III, de 9 m. de altura, según norma UNE 21-003-82, con excavación en todo tipo de terreno de hasta 1 m3 (profund. 1,5 m), de acuerdo con normas de UNELCO, fijación mediante el hincado con piedras y tierra compactada en la cimentación. Incluso pintado de franjas de 0,5 m de ancho en rojo-blanco-rojo."
+  },
+  {
+   "capitulo": "A.P. Lomo San Antón",
+   "codigo": "PAAG",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "Z01BBF0040",
+   "unidad": "m",
+   "resumen": "Derivación individual 5(1x25) mm²",
+   "cantidad": 6.0,
+   "precio": 62.9,
+   "importe": 377.4,
+   "descripcion": "Derivación individual 3(1x25) mm² (enlazando la centralización de contadores con el cuadro general de distribución), formada por conductores de cobre aislados H07Z1-K (AS), 750 V, norma UNE 211002, CPR Cca-s1b,d1,a1 de 25 mm², bajo tubo flexible corrugado de D 50 mm (s/norma UNE-EN 61386-22), incluso apertura y sellado de rozas y ayudas de albañilería. Instalada, s/RBT-02."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "Z01ACD0010",
+   "unidad": "ud",
+   "resumen": "Cuadro de A.P. de poliéster con 4 salidas",
+   "cantidad": 1.0,
+   "precio": 4775.56,
+   "importe": 4775.56,
+   "descripcion": "Cuadro de alumbrado público con 4 salidas, con grado mínimo de protección IP55 e IK 10 s/UNE 20324 y UNE-EN 50102, respectivamente, formado por un conjunto de 2 armarios HIMEL PL-107P o similares, de dimensioes 500x750x300 y 1000x750x300, unidos en fábrica, en polyéster reforzado con fibra de vidrio, prensado en caliente, equipo de perfilería portaequipos, puerta con cerradura universal, interruptor horario, relés para protección de líneas de mando, interruptores magnetotérmicos y demás elementos de regulación y control ejecutado según esquemas eléctricos en planos, incluso conexiones, pequeño material y ayudas de albañilería. Instalado, s/REBT-02. Incluye: Cableado interno D.I. según D.F. Incluido: cierre del compartimento superior con llave triangular de 8 mm de lado, con bloqueo único para ambas puertas mediante 2 candados Inlcuido: cierre de compartimento inferior mediante maneta aislante giratoria y bloqueable por cerradura tipo FAC. Incluido: base portafusibles de 100A, cartucho fusible cilíndricos de 22,2x58 mm, de poder de corte 100kA. Incluido: Reloj astronómico astro nova city de orbis con llave Bluetooht smart incorporada."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 200.0,
+   "precio": 11.42,
+   "importe": 2284.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "CIESZ",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.",
+   "cantidad": 67.0,
+   "precio": 480.32,
+   "importe": 32181.44,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial CIES Serie Z 24LED 70W, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 9660 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 42 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 100.000 horas de vida útil L90B10 Grado de protección IP66 según norma IEC 60529 Incluye sensor Zhaga Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 14.0,
+   "precio": 41.19,
+   "importe": 576.66,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 67.0,
+   "precio": 48.9,
+   "importe": 3276.3,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "IEP021g",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 160.41,
+   "importe": 160.41,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 1.0,
+   "precio": 214.72,
+   "importe": 214.72,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 1.0,
+   "precio": 26.17,
+   "importe": 26.17,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "D02A0011",
+   "unidad": "h",
+   "resumen": "Poda o tala de material vegetal.",
+   "cantidad": 10.0,
+   "precio": 56.4,
+   "importe": 564.0,
+   "descripcion": "Poda o tala de material vegetal en el entorno de luminaria o Cuadro de mando con medios mecánicos, con carga sobre camión, con transporte a vertedero. Según necesidades de la obra."
+  },
+  {
+   "capitulo": "A.P. Lomo Obrero",
+   "codigo": "PAAG",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 1.0,
+   "precio": 11.42,
+   "importe": 11.42,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "CIESZ",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.",
+   "cantidad": 25.0,
+   "precio": 480.32,
+   "importe": 12008.0,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial CIES Serie Z 24LED 70W, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 9660 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 42 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 100.000 horas de vida útil L90B10 Grado de protección IP66 según norma IEC 60529 Incluye sensor Zhaga Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 5.0,
+   "precio": 41.19,
+   "importe": 205.95,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 25.0,
+   "precio": 48.9,
+   "importe": 1222.5,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "IEP021d",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 160.69,
+   "importe": 160.69,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 1.0,
+   "precio": 214.72,
+   "importe": 214.72,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 1.0,
+   "precio": 26.17,
+   "importe": 26.17,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Lomo Quintanilla",
+   "codigo": "PAJ",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1500.0,
+   "importe": 1500.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 1.0,
+   "precio": 11.42,
+   "importe": 11.42,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "CIESZ",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria CIES Serie Z 24LED 70W, clase II, 3000K o similar.",
+   "cantidad": 30.0,
+   "precio": 480.32,
+   "importe": 14409.6,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial CIES Serie Z 24LED 70W, clase II, 3000K o similar. Luminaria IP66, con Flujo lumínico 9660 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 42 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 100.000 horas de vida útil L90B10 Grado de protección IP66 según norma IEC 60529 Incluye sensor Zhaga Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 5.0,
+   "precio": 41.19,
+   "importe": 205.95,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 30.0,
+   "precio": 48.9,
+   "importe": 1467.0,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "IEP021",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 160.69,
+   "importe": 160.69,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 1.0,
+   "precio": 214.72,
+   "importe": 214.72,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared",
+   "cantidad": 1.0,
+   "precio": 26.17,
+   "importe": 26.17,
+   "descripcion": "Arriostramiento a pared, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "A.P. Las Pellas",
+   "codigo": "D02A0011",
+   "unidad": "h",
+   "resumen": "Poda o tala de material vegetal.",
+   "cantidad": 10.0,
+   "precio": 56.4,
+   "importe": 564.0,
+   "descripcion": "Poda o tala de material vegetal en el entorno de luminaria o Cuadro de mando con medios mecánicos, con carga sobre camión, con transporte a vertedero. Según necesidades de la obra."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YSX010d",
+   "unidad": "Ud",
+   "resumen": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.",
+   "cantidad": 1.0,
+   "precio": 425.84,
+   "importe": 425.84,
+   "descripcion": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YMM010b",
+   "unidad": "Ud",
+   "resumen": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.",
+   "cantidad": 5.0,
+   "precio": 104.46,
+   "importe": 522.3,
+   "descripcion": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos. Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32AE0010",
+   "unidad": "ud",
+   "resumen": "Arnés anticaídas top 3, Würth",
+   "cantidad": 5.0,
+   "precio": 76.6,
+   "importe": 383.0,
+   "descripcion": "Arnés anticaídas top 3, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32CA0010",
+   "unidad": "ud",
+   "resumen": "Señal de cartel obras, PVC, sin soporte metálico",
+   "cantidad": 5.0,
+   "precio": 12.11,
+   "importe": 60.55,
+   "descripcion": "Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "RAELVIAL",
+   "unidad": "Ud",
+   "resumen": "Gestión de residuo RAEE de luminaria vial",
+   "cantidad": 156.0,
+   "precio": 8.6,
+   "importe": 1341.6,
+   "descripcion": "Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37B0060",
+   "unidad": "m³",
+   "resumen": "Transporte residuos a instalac. autorizada 20 km.",
+   "cantidad": 0.11,
+   "precio": 13.51,
+   "importe": 1.49,
+   "descripcion": "Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0070",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de plástico a instalación de valorización",
+   "cantidad": 0.03,
+   "precio": 206.0,
+   "importe": 6.18,
+   "descripcion": "Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0080",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de papel y cartón a instalación de valorización",
+   "cantidad": 0.08,
+   "precio": 566.5,
+   "importe": 45.32,
+   "descripcion": "Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  }
+ ]
+}

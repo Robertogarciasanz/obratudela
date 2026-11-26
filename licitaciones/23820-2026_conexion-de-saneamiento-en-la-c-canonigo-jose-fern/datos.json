@@ -1,0 +1,616 @@
+{
+ "expediente": "23820/2026",
+ "organismo": "Alcaldia del Ayuntamiento de Arucas",
+ "titulo": "Conexión de saneamiento en la C/. Canónigo José Fernández Abad",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "76197.35 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=EwbpG1RTDw0te5rg3d3VdqitguHzhneC45O6SvIwnZ56dosbA730YMNVykYHKgehOAhNyG/o4Ho00a2h7xirMLqmVNj6s0yJ8WkmOW9hYAd7QB3HKyQaFUExmUVQCerk",
+ "archivo_origen": "23820_2026_23820_2026__PROYECTO_EJECUCION__V2__precios_actualizados_en_.bc3",
+ "total_bc3": 64031.39,
+ "suma_partidas": 64031.39,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "L1.1",
+   "resumen": "DEMOLICIONES",
+   "importe": 3776.87
+  },
+  {
+   "codigo": "L1.2",
+   "resumen": "MOVIMIENTO DE TIERRAS",
+   "importe": 17843.55
+  },
+  {
+   "codigo": "L1.3",
+   "resumen": "SANEAMIENTO",
+   "importe": 15121.9
+  },
+  {
+   "codigo": "L1.4",
+   "resumen": "ABASTECIMIENTO",
+   "importe": 2479.86
+  },
+  {
+   "codigo": "L1.5",
+   "resumen": "REPOSICIONES",
+   "importe": 12283.52
+  },
+  {
+   "codigo": "L1.6",
+   "resumen": "CALIDAD",
+   "importe": 0.0
+  },
+  {
+   "codigo": "L1.7",
+   "resumen": "GESTIÓN DE RESIDUOS",
+   "importe": 2424.43
+  },
+  {
+   "codigo": "L1.8",
+   "resumen": "SEGURIDAD Y SALUD",
+   "importe": 10101.26
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "DEMOLICIONES",
+   "codigo": "DA001",
+   "unidad": "m²",
+   "resumen": "Corte de borde de calzada",
+   "cantidad": 24.75,
+   "precio": 102.04,
+   "importe": 2525.49,
+   "descripcion": "Corte del pavimento de calzada con máquina cortadora, longitud del corte por profundidad, totalmente terminado."
+  },
+  {
+   "capitulo": "DEMOLICIONES",
+   "codigo": "DA002",
+   "unidad": "m²",
+   "resumen": "Demolición con compresor todo tipo de pavimento",
+   "cantidad": 136.4,
+   "precio": 8.42,
+   "importe": 1148.49,
+   "descripcion": "Demolición de firmes o pavimentos de cualquier tipo, hasta 10 cm. de espesor, incluso carga manual o mecánica, transporte de los productos resultantes a vertedero autorizado, incluido limpieza y regulación del fondo totalmente terminado."
+  },
+  {
+   "capitulo": "DEMOLICIONES",
+   "codigo": "DA008",
+   "unidad": "m²",
+   "resumen": "Levantado piedra de Arucas en acera con recuperación",
+   "cantidad": 7.2,
+   "precio": 14.29,
+   "importe": 102.89,
+   "descripcion": "Levantado de piedra natural en acera, con martillo eléctrico manual, incluso retirada de atezado, incluso carga manual, transporte de los elementos de cantería a punto autorizado por la Dirección Facultativa, incluido limpieza y regulación del fondo totalmente terminado."
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS",
+   "codigo": "MT001-B",
+   "unidad": "m³",
+   "resumen": "Excav. en zanjas, pozos cualquier terreno, medios mecánicos",
+   "cantidad": 144.44,
+   "precio": 20.42,
+   "importe": 2949.46,
+   "descripcion": "m³. Excavación en zanjas, pozos o cimientos, en todo tipo de terreno, con medios mecánicos, refino y compactación del fondo de la excavación, incluso carga y transporte de material sobrante a gestor de residuos autorizado, totalmente terminada."
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS",
+   "codigo": "MT002-B",
+   "unidad": "m³",
+   "resumen": "Relleno de zanjas material seleccionado de la excavación",
+   "cantidad": 8.86,
+   "precio": 12.45,
+   "importe": 110.31,
+   "descripcion": "m³ Relleno de zanjas con materiales seleccionados de préstamos o procedentes de la excavación, incluso extendido, regado y compactado por capas de 30 cm, al Proctor Modificado del 95 %"
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS",
+   "codigo": "MT003-B",
+   "unidad": "m³",
+   "resumen": "Relleno de zanjas material seleccionado procedente de préstamos",
+   "cantidad": 37.19,
+   "precio": 16.64,
+   "importe": 618.84,
+   "descripcion": "m³. Relleno de zanjas con materiales seleccionados de préstamos, incluso extendido, regado y compactado por capas de 30 cm, al proctor modificado del 95%"
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS",
+   "codigo": "DR001-B",
+   "unidad": "m³",
+   "resumen": "Hormigón HM-20 en rellenos diversos",
+   "cantidad": 89.38,
+   "precio": 158.48,
+   "importe": 14164.94,
+   "descripcion": "m³ Hormigón HM-20 en rellenos diversos en ejecuciones a elegir por la DF: protección de tubos, cimentaciones, zanjas y pozo de cimentación, i/p.p. de pequeños encofrados, vibrado, alambre de sujeción de tubos, hormigonado en dos fases. Completamente terminado."
+  },
+  {
+   "capitulo": "SANEAMIENTO",
+   "codigo": "RAP006",
+   "unidad": "Ud",
+   "resumen": "Pozo registro circular D=1,20 m horm., parte fija (sup e inf) i/tapa fund",
+   "cantidad": 2.0,
+   "precio": 1733.3,
+   "importe": 3466.6,
+   "descripcion": "Ud. Pozo de registro circular (parte fija), prefabricado de hormigón armado, de diámetro interior 1,20 m, con marcado CE s/UNE-EN 1917 y UNE 127917, formado por pieza inferior constituída por base de pozo de 1200x1000 mm (Dxh) y pieza superior constituída por cono de 1200/625x1000 mm (D inf/sup x h), incluso pates montados en fábrica, registro reforzado D 400, s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de D=600 mm, juntas de estanqueidad o material de sellado, conexión a conducciones, incluso excavación precisa, relleno de trasdós con carga y transporte de tierras sobrantes a vertedero, totalmente terminado, según ordenanzas municipales."
+  },
+  {
+   "capitulo": "SANEAMIENTO",
+   "codigo": "RAP007",
+   "unidad": "m",
+   "resumen": "Pozo registro circular D=1,20 m horm., parte intermedia",
+   "cantidad": 1.2,
+   "precio": 357.38,
+   "importe": 428.86,
+   "descripcion": "m. Pozo de registro circular (parte intermedia), prefabricado de hormigón armado, de diámetro interior 1,20 m, con marcado CE s/UNE-EN 1917 y UNE 127917, formado realizado con aros prefabricadas (3 ud/m) de hormigón, incluso pates montados en fábrica, juntas de estanqueidad o material de sellado, conexión a conducciones, incluso excavación precisa, relleno de trasdós con carga y transporte de tierras sobrantes a vertedero, totalmente terminado, según ordenanzas municipales."
+  },
+  {
+   "capitulo": "SANEAMIENTO",
+   "codigo": "RAP010",
+   "unidad": "Ud",
+   "resumen": "Arqueta registro 600x600 mm interior, i/tapa fundición dúctil",
+   "cantidad": 7.0,
+   "precio": 861.35,
+   "importe": 6029.45,
+   "descripcion": "Arqueta de registro y de paso del colector, formado por arqueta de hormigón en masa HM-20/P/16/I de 10 cms de espesor de paredes y losa de fondo, de dimensiones interiores totales 600x600 mm y altura variable comprendida entre los 0,85 y 1,25 metros, incluso registro peatonal C-250 s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, incluso excavación, relleno de trasdós con carga y transporte de tierras sobrantes a vertedero, encofrado y desencofrado, acometida y remate de tubos, según C.T.E. DB HS-5."
+  },
+  {
+   "capitulo": "SANEAMIENTO",
+   "codigo": "RAP011",
+   "unidad": "Ud",
+   "resumen": "Acometida domiciliaria saneam. a red terciaria alcantarillado",
+   "cantidad": 2.0,
+   "precio": 358.98,
+   "importe": 717.96,
+   "descripcion": "Acometida domiciliaria de saneamiento a red terciaria de alcantarillado, con registro peatonal (tapa y cerco) B 125, s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de 400x400 mm incluso tubería de PE SN8 Ø 200 mm de doble pared corrugado exterior e interior liso, i/p.p. de piezas especiales, excavación precisa, carga y transporte de tierras a vertedero, terminada según ordenanzas municipales y según C.T.E. DB HS-5."
+  },
+  {
+   "capitulo": "SANEAMIENTO",
+   "codigo": "RAP012",
+   "unidad": "Ud",
+   "resumen": "Conexión con red existente",
+   "cantidad": 1.0,
+   "precio": 226.32,
+   "importe": 226.32,
+   "descripcion": "Ud Conexión de las nuevas redes de saneamiento o de pluviales con redes existentes totalmente acabada. Se incluirán todos los medios de seguridad y salud necesarios para la correcta ejecución de la unidad de obra, así como la gestión de los residuos originados."
+  },
+  {
+   "capitulo": "SANEAMIENTO",
+   "codigo": "RAP013",
+   "unidad": "m",
+   "resumen": "Tub. saneam. enterrado PE SN 8, Ø 315 mm dos capas",
+   "cantidad": 115.5,
+   "precio": 36.82,
+   "importe": 4252.71,
+   "descripcion": "m. Tubería de saneamiento de polietileno de alta densidad, SN-8 (rigidez anular nominal 8 kN/m²), según UNE-EN 13476, Condusan (T.P.P. Tuberías y perfiles plásticos) o equivalente, de Ø 315 mm, compuesta de dos capas: una exterior en color negro y corrugada y una interior lisa y en color blanco, con junta elástica, enterrada en zanja, con p.p. de pequeño material, incluso solera de arena de 10 cm de espesor, nivelación del tubo, sin incluir excavación ni relleno de la zanja. Totalmente instalada y probada"
+  },
+  {
+   "capitulo": "ABASTECIMIENTO",
+   "codigo": "REAB001",
+   "unidad": "m",
+   "resumen": "Tub. abast. PVC, DN-63 mm, PN-16, junta elástica, T.P.P.",
+   "cantidad": 75.0,
+   "precio": 16.1,
+   "importe": 1207.5,
+   "descripcion": "Tubería de PVC, UNE-EN ISO 1452, PN-16, T.P.P. o equivalente, de D=63 mm, e=3,0 mm, junta elástica, en red de abastecimiento, colocada en fondo de zanja, incluso solera de arena de 15 cm de espesor, p.p. de pequeño material, piezas especiales, nivelación del tubo, sin incluir excavación ni relleno de la zanja, colocada s/ UNE-ENV 1452-6. Instalada y probada"
+  },
+  {
+   "capitulo": "ABASTECIMIENTO",
+   "codigo": "REAB002",
+   "unidad": "Ud",
+   "resumen": "Acometida a red terciaria abast. con tub. PE AD, DN-40 mm, 16 atm",
+   "cantidad": 7.0,
+   "precio": 97.11,
+   "importe": 679.77,
+   "descripcion": "Acometida a la red terciaria municipal de agua potable (sin incluir arqueta y válvula) con tubería de polietileno de alta densidad de 40 mm (1 1/2\") de diámetro y 16 atm. de presión, con collarín de toma y piezas especiales de latón, excavación, relleno, carga y transporte de tierras sobrantes a vertedero, totalmente terminada y probada, según C.T.E. DB HS-4."
+  },
+  {
+   "capitulo": "ABASTECIMIENTO",
+   "codigo": "REAB003",
+   "unidad": "Ud",
+   "resumen": "Arqueta acometida abast. y válv. paso 1\", c/tapa y cerco fund. d",
+   "cantidad": 7.0,
+   "precio": 61.83,
+   "importe": 432.81,
+   "descripcion": "Arqueta de acometida y válvula de paso \"macho\" esférica de 1 1/4\", constituída por paredes y solera de hormigón de fck=15 N/mm² y registro peatonal B-125 s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de 250X250 mm, incluso p.p. de piezas especiales, excavación, relleno, encofrado, carga y transporte de tierras sobrantes a vertedero, totalmente terminada s/ ordenanzas."
+  },
+  {
+   "capitulo": "ABASTECIMIENTO",
+   "codigo": "REAB004",
+   "unidad": "Ud",
+   "resumen": "Arqueta p/válv. compuerta 1 1/4\" hasta 4\" c/tapa y cerco fund. d",
+   "cantidad": 2.0,
+   "precio": 79.89,
+   "importe": 159.78,
+   "descripcion": "Arqueta en acera para alojamiento de válvula de compuerta de 1 1/4\" hasta 4\" (válvulas incluida), en red terciaria de abastecimiento y acometida, constituída por paredes y solera de hormigón de fck=15 N/mm² y registro peatonal B-125 s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de 250x250 mm, incluso p.p. de excavación, relleno, encofrado, carga y transporte de tierras sobrantes a vertedero."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "PAV002",
+   "unidad": "t",
+   "resumen": "Riego de adherencia termohaderente C60B3 TER",
+   "cantidad": 0.01,
+   "precio": 1234.47,
+   "importe": 12.34,
+   "descripcion": "Tn. Emulsión catiónica de rotura rápida termoadherente C60B3 TER, en riego de adherencia, con dotación mínima de 0.60 Kg/m2, totalmente colocada."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "PAV007",
+   "unidad": "t",
+   "resumen": "MBC AC 16 surf 60/70 D (D-12) i/ filler i/betún reposición en zanjas",
+   "cantidad": 7.08,
+   "precio": 103.12,
+   "importe": 730.09,
+   "descripcion": "Tn. Mezcla bituminosa en caliente tipo hormigón bituminoso AC16 surf 60/70 D (D-12) para reposición de zanjas en capas de rodadura, extendida, compactada con maquinaria pequeña y totalmente terminada. Incluso p.p de formación de vados o accesos a garajes, incluye filler de aportación (6%) y el ligante (5,5%) incluso transporte y pesaje en báscula oficial autorizada por la Dirección Facultativa. Densidad media = 2,3 t/m³"
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "REP070",
+   "unidad": "m²",
+   "resumen": "Remate de fachadas por actividades en acera",
+   "cantidad": 35.5,
+   "precio": 41.5,
+   "importe": 1473.25,
+   "descripcion": "Remate de fachadas hasta una altura de 1 metro desde encuentro de la misma con acera, por posibles daños ocasionados en las mismas a causa de las ejecuciones llevadas a cabo en aceras. La partida incluye los trabajos de reposición de materiales dañados. enfoscado y pintura, aplacados en piedra natural o artificial, cerámica, fachadas ventiladas etc.. de tal modo que la fachada o continuidad de la misma quede igual a su estado posterior a los comienzos de la obra."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "REP071",
+   "unidad": "Ud",
+   "resumen": "Reparaciones en instalaciones varias",
+   "cantidad": 9.0,
+   "precio": 307.53,
+   "importe": 2767.77,
+   "descripcion": "Reparaciones eventuales en acometidas de abastecimiento, saneamiento, electricidad y cualquier otra afectada, incluso pequeño material de fontanería y obras necesarias, conforme se especifica en planos y documentos del proyecto"
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "RAAC02",
+   "unidad": "m²",
+   "resumen": "Pavimento de loseta hidráulica antideslizante 25x25x3 cm",
+   "cantidad": 42.6,
+   "precio": 52.61,
+   "importe": 2241.19,
+   "descripcion": "Pavimento de loseta antideslizante de cemento hidráulica medio de 25x25x3 cm de 4 pastillas tipo Santo Domingo o equivalente conforme UNE-EN-1339, color a elegir por la Dirección Facultativa, colocadas con mortero 1:6 de cemento y arena, incluso solera de hormigón de fck=20 N/mm² de 10 cm de espesor medio, cortes, formación de juntas de dilatación, rejuntado y limpieza. Perfectamente colocado en planta y alzado, según rasantes actuales de la calle y salvando en todo momento las distintas entradas a las viviendas o huecos existentes, por lo que es imprescindible el replanteo y marcaje en el terreno de la solución prevista en el proyecto. Incluso recrecido de arquetas a cota definitiva, colocación y remate de tapas de arquetas. Totalmente terminado."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "RAAC01",
+   "unidad": "m",
+   "resumen": "Bordillo recto o curvo prefabricado de hormigón 50x20x30 cm",
+   "cantidad": 71.0,
+   "precio": 51.93,
+   "importe": 3687.03,
+   "descripcion": "Bordillo recto o curvo para acera prefabricado de hormigón vibrado, de 50x20x30 cm, tipo Cardón o equivalente, con base y refuerzo de hormigón en masa HM-20, rejuntado y nivelado sobre capa de mortero de arena y cemento 1:5. Perfectamente colocado en planta y alzado, según rasantes actuales de la calle y salvando en todo momento las distintas entradas a las viviendas, por lo que es imprescindible el replanteo y marcaje en el terreno de la solución prevista en el proyecto, incluso la realización de cortes e ingletes con cortadora eléctrica en los encuentros entre alineaciones diferentes, así como cortes longitudinales en aglomerado asfáltico u hormigón para la ejecución de solera y colocación del bordillo."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "SAV001",
+   "unidad": "m",
+   "resumen": "Marca cont. ó disc. de 0,10 m",
+   "cantidad": 5.0,
+   "precio": 1.85,
+   "importe": 9.25,
+   "descripcion": "Ml. de Marca vial continua o discontinua de 10 cm. de ancho, realmente pintada con pintura acrílica aplicada por pulverización, cualquier color, con microesferas de vidrio y gránulos antideslizantes conforme al artículo 700 del PG-3, aplicadas por pulverización, incluso limpieza del firme y premarcado, completamente terminada, así como la gestión de los residuos originados. Se abonarán por metros realmente aplicados."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "SAV002",
+   "unidad": "m",
+   "resumen": "Marca cont. ó disc. de 0,15 m",
+   "cantidad": 50.0,
+   "precio": 1.96,
+   "importe": 98.0,
+   "descripcion": "Ml. de Marca vial continua o discontinua de 15 cm. de ancho, realmente pintada con pintura acrílica aplicada por pulverización, cualquier color, con microesferas de vidrio y gránulos antideslizantes conforme al artículo 700 del PG-3, aplicadas por pulverización, incluso limpieza del firme y premarcado, completamente terminada, así como la gestión de los residuos originados. Se abonarán por metros realmente aplicados."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "SAER04",
+   "unidad": "Ud",
+   "resumen": "Captafaro retrorreflectante para señalización vial horizontal",
+   "cantidad": 10.0,
+   "precio": 26.46,
+   "importe": 264.6,
+   "descripcion": "Suministro y colocación sobre la calzada decaptafaro reflectante a dos caras, de clase PRP1 y NCR1 según UNE 1463-1. Incluso p/p de elementos de fijación al pavimento, mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera. Totalmente terminado."
+  },
+  {
+   "capitulo": "REPOSICIONES",
+   "codigo": "SSAA2110_023",
+   "unidad": "Ud",
+   "resumen": "PAJ Servicios afectados e imprevistos",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Ud. Partida alzada a justificar en la reposición de servicios urbanos afectados generales, no especificados en proyecto, durante la ejecución de las obras (abastecimiento, , saneamiento, inst. eléctricas, telefonía, etc), incluso asegurar salidas de pluviales edificios, así como reposición de rejillas y suministros de drenaje en calzada, además de cualquier otro imprevisto."
+  },
+  {
+   "capitulo": "CALIDAD",
+   "codigo": "0801",
+   "unidad": "ud",
+   "resumen": "Ensayo Próctor Modificado",
+   "cantidad": 0.0,
+   "precio": 103.33,
+   "importe": 0.0,
+   "descripcion": "Determinación de la densidad máxima y humedad óptima de compactación por método de Próctor Modificado, según norma UNE 103501."
+  },
+  {
+   "capitulo": "CALIDAD",
+   "codigo": "0802",
+   "unidad": "ud",
+   "resumen": "Determinación densidad in-situ",
+   "cantidad": 0.0,
+   "precio": 31.95,
+   "importe": 0.0,
+   "descripcion": "Determinación de la densidad \"in situ\" de un terreno por el método de isótopos radioactivos, según ASTM D3017"
+  },
+  {
+   "capitulo": "CALIDAD",
+   "codigo": "0805",
+   "unidad": "ud",
+   "resumen": "Ensayo para hormigón fresco, fabric. en obra, transp. y rotura de 4 probetas",
+   "cantidad": 0.0,
+   "precio": 79.2,
+   "importe": 0.0,
+   "descripcion": "Ensayo para hormigón fresco, comprendiendo: fabricación en obra, transporte y rotura de una serie de 4 probetas de hormigón, incluyendo curado y refrentado de caras, determinación de la consistencia y resistencia a compresión, según UNE-EN 12350-1 y 2 y UNE-EN 12390-2 y 3."
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS",
+   "codigo": "170101",
+   "unidad": "t",
+   "resumen": "Residuos de hormigón",
+   "cantidad": 22.44,
+   "precio": 10.56,
+   "importe": 236.97,
+   "descripcion": "Canon de vertido controlado en planta de gestor autorizado de residuos de hormigón limpio sin armadura de código 170101, según el Catálogo Europeo de Residuos (ORDEN MAM/304/2002)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS",
+   "codigo": "170107",
+   "unidad": "t",
+   "resumen": "Residuos mezclados de demolición",
+   "cantidad": 36.66,
+   "precio": 10.56,
+   "importe": 387.13,
+   "descripcion": "Canon de vertido controlado en centro de gestor autorizado, de residuos de demolición no peligrosos (no especiales), procedentes de construcción o demolición sin clasificar o separar, con código 170107 según el Catalogo Europeo de Residuos (ORDEN MAM/304/2002)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS",
+   "codigo": "170302b",
+   "unidad": "t",
+   "resumen": "Residuos de asfalto (demolición)",
+   "cantidad": 9.21,
+   "precio": 18.48,
+   "importe": 170.2,
+   "descripcion": "Canon de vertido controlado en centro de gestor autorizado, de residuos de asfalto no peligrosos (no especiales), procedentes de la demolición de firmes, con código 170302 según el Catálogo Europeo de Residuos (ORDEN MAM/304/2002)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS",
+   "codigo": "170504",
+   "unidad": "t",
+   "resumen": "Residuos de material de excavación",
+   "cantidad": 246.99,
+   "precio": 6.6,
+   "importe": 1630.13,
+   "descripcion": "Canon de vertido controlado en planta de gestor autorizado, de residuos de tierra inertes, procedentes de excavación, con código 170504 según el Catalogo Europeo de Residuos (ORDEN MAM/304/2002)"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS001",
+   "unidad": "ud",
+   "resumen": "Gafa antisalpicaduras, de acetato, con ventilación indirecta",
+   "cantidad": 4.0,
+   "precio": 11.94,
+   "importe": 47.76,
+   "descripcion": "Gafa antisalpicaduras, de acetato, con ventilación indirecta, homologada CE, s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS002",
+   "unidad": "ud",
+   "resumen": "Casco de seguridad",
+   "cantidad": 4.0,
+   "precio": 4.88,
+   "importe": 19.52,
+   "descripcion": "Casco de seguridad CE, homologado, CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS004",
+   "unidad": "ud",
+   "resumen": "Tapones protectores auditivos tipo aural",
+   "cantidad": 4.0,
+   "precio": 1.05,
+   "importe": 4.2,
+   "descripcion": "Tapones protectores auditivos tipo aural, (par) homologados CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS005",
+   "unidad": "ud",
+   "resumen": "Mascarilla con filtro contra polvo",
+   "cantidad": 4.0,
+   "precio": 27.62,
+   "importe": 110.48,
+   "descripcion": "Mascarilla con filtro contra polvo, homologada CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS006",
+   "unidad": "ud",
+   "resumen": "Guantes de látex, amarillo, anticorte",
+   "cantidad": 4.0,
+   "precio": 9.22,
+   "importe": 36.88,
+   "descripcion": "Guantes de látex, amarillo, anticorte (par). CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS008",
+   "unidad": "ud",
+   "resumen": "Bota lona y serraje, con puntera y plantilla metálica",
+   "cantidad": 4.0,
+   "precio": 23.07,
+   "importe": 92.28,
+   "descripcion": "Bota lona y serraje, con puntera y plantilla metálicas incorporada, (par) homologada CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SSC05",
+   "unidad": "ud",
+   "resumen": "Mascarilla desechable FFP2 o similar",
+   "cantidad": 12.0,
+   "precio": 0.57,
+   "importe": 6.84,
+   "descripcion": "Mascarilla desechable FFP2 o similar"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS016",
+   "unidad": "ud",
+   "resumen": "Chaleco reflectante",
+   "cantidad": 4.0,
+   "precio": 8.15,
+   "importe": 32.6,
+   "descripcion": "Chaleco reflectante CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones individuales",
+   "codigo": "SS024",
+   "unidad": "ud",
+   "resumen": "Arnés anticaídas",
+   "cantidad": 2.0,
+   "precio": 41.2,
+   "importe": 82.4,
+   "descripcion": "Arnés anticaída de dos puntos de anclaje, con anillas en D dorsal y anillas de sujeción frontal , tirantes ajustables en el pecho y muslo. Con correa de asiento y con Capacidad hasta 140KG .Fabricado en poliéster."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones colectivas",
+   "codigo": "SS012",
+   "unidad": "ud",
+   "resumen": "Valla metálica modular, tipo Ayuntamiento, de 2,50x1,10 m",
+   "cantidad": 6.0,
+   "precio": 8.14,
+   "importe": 48.84,
+   "descripcion": "Valla metálica modular, tipo Ayuntamiento, de 2,50 de largo y 1,10 m de altura, (amortización = 10 %), incluso colocación y posterior retirada."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones colectivas",
+   "codigo": "SS015",
+   "unidad": "m",
+   "resumen": "Cinta de balizamiento bicolor",
+   "cantidad": 150.0,
+   "precio": 0.25,
+   "importe": 37.5,
+   "descripcion": "Cinta de balizamiento, bicolor (rojo y blanco), (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones colectivas",
+   "codigo": "SS013",
+   "unidad": "m",
+   "resumen": "Valla p/cerramiento de obras acero galv h=2m",
+   "cantidad": 50.0,
+   "precio": 16.5,
+   "importe": 825.0,
+   "descripcion": "Valla para cerramiento de obras de h=2 m y 3,5m de largo, realizada con mallazo de acero galvanizado colocado horizontalmente y postes cilíndricos del mismo material colocados c/3,5 m, y bases prefabricadas de hormigón, i/accesorios y taladro de fijación en pavimentación actual o bases de hormigón prefabricado, totalmente montada (amortización en obra para varias puestas y traslados de las mismas) incluso acceso para entrada de trabajadores y paso de camiones o cualquier vehículo de obra. Malla de ocultación de polietileno de alta densidad, color verde, colocada sobre las vallas."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones colectivas",
+   "codigo": "SS029",
+   "unidad": "ud",
+   "resumen": "Tapa de madera",
+   "cantidad": 12.0,
+   "precio": 5.98,
+   "importe": 71.76,
+   "descripcion": "Protección de hueco horizontal para hueco de 100x100 cm de sección, durante su proceso de construcción hasta que se coloque su tapa definitiva o relleno de hueco, realizada mediante tabloncillos de madera de pino de 15x5,2 cm, colocados uno junto a otro hasta cubrir la totalidad del hueco, reforzados en su parte inferior por tres tabloncillos en sentido contrario, fijados con clavos de acero, con rebaje en su refuerzo para alojarla en el hueco de la planta de la arqueta de modo que impida su movimiento horizontal, preparada para soportar una carga puntual de 3 kN. Amortizable en 6 usos."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Protecciones colectivas",
+   "codigo": "SS030",
+   "unidad": "m²",
+   "resumen": "Plataforma protección paso vehículos sobre zanjas",
+   "cantidad": 50.0,
+   "precio": 7.27,
+   "importe": 363.5,
+   "descripcion": "Protección de paso de vehículos sobre zanjas abiertas en calzada, mediante plataforma de chapa de acero de 10 mm de espesor, amortizable en 150 usos. Incluso cemento rápido para evitar la vibración de la chapa al paso de los vehículos."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Señalización",
+   "codigo": "SEÑOB2110_023",
+   "unidad": "P.A.",
+   "resumen": "Señalización de obras y desvíos",
+   "cantidad": 1.0,
+   "precio": 5552.29,
+   "importe": 5552.29,
+   "descripcion": "Partida alzada de señalización, balizamiento y vallado de la obra, incluyendo pareja de semáforos, señalización vertical según esquema de desvío (Señalización de obras fijas, fig.A6/4), conos de balizamiento, balizamiento nocturno, paneles direccionales de desvíos, paneles direccionales y vallado de la obra. Esta unidad contempla su conservación, mantenimiento y reposición de estas actuaciones a lo largo de todo el periodo de la obra, asi como su retirada una vez finalizada la obra."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS017",
+   "unidad": "ud",
+   "resumen": "Botiquín tipo bolso con correa, con contenido sanitario",
+   "cantidad": 1.0,
+   "precio": 57.12,
+   "importe": 57.12,
+   "descripcion": "Botiquín tipo bolso con correa, con contenido sanitario completo según ordenanzas."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS018",
+   "unidad": "ud",
+   "resumen": "Extintor portátil",
+   "cantidad": 1.0,
+   "precio": 105.97,
+   "importe": 105.97,
+   "descripcion": "Extintor de polvo químico ABC polivalente antibrasa de eficacia 43A/233B, de 12k. de agente extintor, tipo Parsi modelo PI-12 U o similar, con soporte, manómetro comprobable y manguera con difusor, según norma UNE 23110.Medida la unidad instalada"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS034",
+   "unidad": "h",
+   "resumen": "Cuadrilla p/conservación y mantenimiento protecciones",
+   "cantidad": 50.0,
+   "precio": 21.45,
+   "importe": 1072.5,
+   "descripcion": "Hora de cuadrilla de seguridad formada por un oficial de 1ª, para conservación y mantenimiento de protecciones"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS032",
+   "unidad": "mes",
+   "resumen": "Alquiler de aseo portátil de PE de 1,20x1.20x2.35, con inodoro químico",
+   "cantidad": 1.5,
+   "precio": 236.39,
+   "importe": 354.59,
+   "descripcion": "Mes de alquiler de aseo portátil de polietileno, de 1,20x1,20x2,35 m, color gris, sin conexiones, con inodoro químico anaerobio con sistema de descarga de bomba de pie, espejo, puerta con cerradura y techo translúcido para entrada de luz exterior. El precio incluye transporte a obra, descarga y recogida del aseo portatil, además de la limpieza y el mantenimiento del aseo durante el periodo de alquiler."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS033",
+   "unidad": "mes",
+   "resumen": "Alquiler de caseta para almacenamiento, peq. maquinaria y herramientas",
+   "cantidad": 1.5,
+   "precio": 173.35,
+   "importe": 260.03,
+   "descripcion": "Mes de alquiler de caseta prefabricada para almacenamiento en obra de materiales, pequeña maquinaria y herramientas, de 2,20x2,44x2,05 m (5,40 m²) con ventana. El precio incluye transporte a obra, descarga y recogida de la caseta, además de la limpieza y el mantenimiento durante el periodo de alquiler."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS040",
+   "unidad": "h",
+   "resumen": "Hora peón señalista",
+   "cantidad": 36.0,
+   "precio": 20.2,
+   "importe": 727.2,
+   "descripcion": "Hora de señalista de seguridad formada por un peón (persona con placa de STOP/PASEN), para permitir cortar tráfico y dar paso"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > Varios",
+   "codigo": "SS041",
+   "unidad": "mes",
+   "resumen": "Costo mensual formación seguridad y salud",
+   "cantidad": 1.5,
+   "precio": 128.0,
+   "importe": 192.0,
+   "descripcion": "Costo mensual de formación de seguridad y salud en el trabajo, considerando una hora a la semana y realizada por un encargado."
+  }
+ ]
+}

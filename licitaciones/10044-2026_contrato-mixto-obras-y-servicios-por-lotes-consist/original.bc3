@@ -1,0 +1,71 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.8||ANSI|
+~K|\3\2\3\2\2\2\2\EUR\|3|
+~C|01#||ACONDICIONAMIENTO DEL TERRENO|77114.31|261110|0|
+~D|01#|D02D0100\1\8915.81\D02.01\1\3286.85\|
+~C|03#||PAVIMENTACION|31332.06|261110|0|
+~D|03#|D02D0040\1\713.27\D29AB0020\1\86.3\|
+~C|04#||VALLADO|37289.55|100826|0|
+~D|04#|1.1\1\240\1.7\1\100\1.6\1\100\1.4\1\1\1.3\1\1\|
+~C|1.1|m|Vallado metálico tipo hércules|73.33|100826|0|
+~C|1.3|ud|Puerta metálica de 1 hoja abatible, de 1,00x1,95 m,|1150.72|100826|0|
+~C|1.4|ud|Puerta metálica de 2 hojas abatibles, de 1,90x1,95 m,|1594.28|100826|0|
+~C|1.6|ud|Dado de hormigón HM-25/B/20/XO|138.86|100826|0|
+~C|1.7|ud|Unidad de tornapunta rigidizador de acero de 38mm y 120cm|19.73|100826|0|
+~C|D02.01|m²|Suministro y colocación de Geotextil tejido no-tejido punzonados|5.29|281221|0|
+~D|D02.01|M01A0010\1\0.075\M01A0030\1\0.03\E18HB0510\1\1.2\E001.1\1\1\|
+~C|D02D0040|m³|Relleno medios mecánicos con grava|41.87|261110|0|
+~D|D02D0040|M01A0030\1\0.015\QAA0070\1\0.03\E18HB0510\1\1.2\QAA0160\1\0.04\E01CB0040\1\1\QAF0010\1\0.01\E001.1\1\1\|
+~C|D02D0100|m²|Compactado superficial tierras apisonadora mecánica|6.45|261110|0|
+~D|D02D0100|M01A0030\1\0.25\QAA0160\1\0.02\E01E0010\1\0.06\|
+~C|D29AB0020|m³|Terraplén con materiales de préstamo|6.4|261110|0|
+~D|D29AB0020|M01A0030\1\0.003\QAA0140\1\0.011\QAA0150\1\0.003\QAA0160\1\0.011\QAF0010\1\0.004\QAA0110\1\0.011\QAB0030\1\0.025\E01CH0010\1\1\|
+~C|DEMOLICION_ES##||DEMOLICION ESTACION DE GUAGUAS T.M PUERTO DE LA CRUZ|145735.92|261110|0|
+~D|DEMOLICION_ES##|01\1\1\03\1\1\04\1\1\|
+~C|E001.1|m²|Grapa fijación Geotextil|0.8|281026|3|
+~C|E01CB0040|m³|Arido machaqueo 4-8 mm|35|281026|3|
+~C|E01CH0010|m³|Productos de préstamos para rellenos.|2.97|270326|3|
+~C|E01E0010|m³|Agua|3.08|271026|3|
+~C|E18HB0510|m²|Geotextil de fibras polipropileno 200 g/m², GEOLAND HT 200, SOPR|1.76|281221|3|
+~C|M01A0010|h|Oficial primera|23.04|270326|1|
+~C|M01A0030|h|Peón|21.57|240522|1|
+~C|QAA0070|h|Pala cargadora sobre neumáticos, 96 kW|45.46|271026|2|
+~C|QAA0110|h|Excavadora sobre cadenas, 114 kW|67.6|261110|2|
+~C|QAA0140|h|Tractor sobre cadenas, 154 kW|69.42|261110|2|
+~C|QAA0150|h|Motoniveladora 108 kW|62.14|261110|2|
+~C|QAA0160|h|Compactador de suelo 65 kW|43.76|261110|2|
+~C|QAB0030|h|Camión basculante 15 t|39.76|270326|2|
+~C|QAF0010|h|Camión caja fija con cisterna/agua de 10 t|53.38|271026|3|
+~T|1.1|Vallado metálico tipo hércules en color verde RAL 6005, de 2,00 m de altura, con resistencia a la corrosión de 1000 horas de niebla salina probada según norma UNE-EN-10245-1, incluso p.p. de accesorios, recibido y colocación.|
+~T|1.3|Puerta metálica de 1 hoja abatible, de 1,00x1,95 m, formada por marco exterior de sección cuadrada de 40x40 mm, malla hércules, soldada al marco en cara interior, ondulación en cada malla de alambre horizontal, y postes empotrados de sección circular, capa de cinc y plastificado en poliéster, en color verde RAL 6005, con resistencia a la corrosión de 1000 horas de niebla salina probada según norma UNE-EN-10245-1, incluso cerradura, sistema de cierre y manilla incorporados, bisagras ajustables, p.p. de accesorios, recibido y colocación.|
+~T|1.4|Puerta metálica de 2 hojas abatibles, de 1,90x1,95 m, FORTINET de BETAFENCE o equivalente, formada por marco exterior de sección cuadrada de 40x40 mm, malla hércules, soldada al marco en cara interior, ondulación en cada malla de alambre horizontal, y postes empotrados de sección cuadrada, capa de cinc y plastificado en poliéster, en color verde RAL 6005, con resistencia a la corrosión de 1000 horas de niebla salina probada según norma UNE-EN-10245-1, incluso cerradura, sistema de cierre y manilla incorporados, bisagras ajustables, p.p. de accesorios, recibido y colocación.|
+~T|1.6|Dado de hormigón sin armar, HA-25/B/20/X0, incluso elaboración, vertido, vibrado y curado, s/Código Estructural y C.T.E. DB SE y DB SE-C.
+|
+~T|1.7|Unidad de tornapunta rigidizador de acero de 38mm y 120cm.|
+~T|D02.01|Suministro y colocación de Geotextil tejido no-tejido punzonados, 100% polipropileno de alta tenacidad, de color blanco, gramaje 200 g/m², como capa separadora, filtrante, drenante y refuerzo, capa soporte y vía o aglomerado asfáltico, con marcado CE, ref.-000103468, GEOLAND HT 200, SOPREMA, incluso p.p grapas de sujeción al terreno.
+
+|
+~T|D02D0040|Relleno de grava, con medios mecánicos, compactado por capas de 30 cm, al 95% del Proctor modificado, incluso capa separadora de protección formada por geotextil tejido no-tejido punzonados, 100% polipropileno de alta tenacidad, de color blanco, gramaje 200 g/m², p.p de grapas de fijación, regado y refino de taludes.|
+~T|D02D0100|Compactado superficial de tierras con apisonadora mecánica manual para posterior ejecución de la solera.|
+~T|D29AB0020|Terraplén realizado con medios mecánicos, con materiales de préstamo, en tongadas de 30 cm de espesor, incluso extendido, humectación y compactación, hasta el 95% del Proctor Modificado, perfilado y refino de taludes.|
+~T|E01CB0040|Arido machaqueo 4-8 mm|
+~T|E01CH0010|Productos de préstamos para rellenos.|
+~T|E01E0010|Agua|
+~T|E18HB0510|Geotextil tejido no-tejido punzonados, 100% polipropileno de alta tenacidad, de color blanco, gramaje 200 g/m², como capa separadora, filtrante, drenante y refuerzo, capa soporte y vía o aglomerado asfáltico, con marcado CE, ref.-000103468, GEOLAND HT 200, SOPREMA.|
+~T|M01A0010|Oficial primera|
+~T|M01A0030|Peón|
+~T|QAA0070|Pala cargadora sobre neumáticos, 96 kW, peso en orden de trabajo 10968 kg|
+~T|QAA0110|Excavadoras sobre cadenas, 114 kW, peso en orden de trabajo 23280 kg|
+~T|QAA0140|Tractor sobre cadenas, 154 kW, peso en orden de trabajo 20985 kg|
+~T|QAA0150|Motoniveladora 108 kW, peso en orden de trabajo 18095 kg|
+~T|QAA0160|Compactador de suelo 65 kW, peso en orden de trabajo 7210 kg|
+~T|QAB0030|Camión basculante 15 t|
+~T|QAF0010|Camión de caja fija con cisterna para agua con carga máxima autorizada de 10 t|
+~M|01#\D02D0100|1\1\|8915.81|\Explanada\1\8915.81\\\|
+~M|01#\D02.01|1\2\|3286.85|\Talud 1\1\2462.63\\\\Talud 2\1\401.26\\\\Talud 3\1\420.96\\\\\1\\\\\\1\\\\|
+~M|03#\D02D0040|2\1\|713.27|\\1\8915.81\\0.08\|
+~M|03#\D29AB0020|2\2\|86.3|\Rampa derecha\1\9.38\4\2.3\|
+~M|04#\1.1|3\1\|240|\\1\240\\\|
+~M|04#\1.7|3\2\|100|\\100\\\\|
+~M|04#\1.6|3\3\|100|\\100\\\\|
+~M|04#\1.4|3\4\|1|\\1\\\\|
+~M|04#\1.3|3\5\|1|\\1\\\\|

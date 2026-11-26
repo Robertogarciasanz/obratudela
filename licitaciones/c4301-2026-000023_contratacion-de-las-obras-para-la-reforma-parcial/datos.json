@@ -1,0 +1,1806 @@
+{
+ "expediente": "C4301/2026/000023",
+ "organismo": "Consejo Ejecutivo del Consell Insular de Menorca (CIM)",
+ "titulo": "Contratación de las obras para la reforma parcial de la sede del Consell Insular de Menorca, proyecto integrado de obras y actividades para uso administrativo y centro de interpretación de la Menorca Talayótica, ubicado en la plaza de la Catedral núm. 3-5, Ciutadella.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1992259.15 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=rgljYGEmlLJy6bzI6dclqAmbu7TQQNdm/3pLB2XpiyzEy/yfv3gq2q%2BsJy06KOZ4XnalOM740iSX5NWNX1ClPLCPgeg9uARP8HEvSAGbsjvVTD3T98KC0nSgQFM0q%2B5s",
+ "archivo_origen": "C4301_2026_000023_PRESSUPOST_EDITABLE_BC3_DE_LA_BT.bc3",
+ "total_bc3": 240086.51,
+ "suma_partidas": 240086.51,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "IETTCIMT",
+   "resumen": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMT",
+   "importe": 1034.46
+  },
+  {
+   "codigo": "IECIMT",
+   "resumen": "Cap. B Instalaciones Eléctricas CIMT",
+   "importe": 84374.52
+  },
+  {
+   "codigo": "IETTCIMe",
+   "resumen": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMe",
+   "importe": 1939.07
+  },
+  {
+   "codigo": "IECIMe",
+   "resumen": "Cap. B Instalaciones Eléctricas CIMe",
+   "importe": 152738.46
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMT",
+   "codigo": "D27TT001T",
+   "unidad": "Ud",
+   "resumen": "Tasas Expediente Instalaciones Dirección General Industria",
+   "cantidad": 1.0,
+   "precio": 60.87,
+   "importe": 60.87,
+   "descripcion": "Ud. Aproximación Tasas de los expedientes de autorizaciones sectoriales ante la Dirección General de Indústria de la Comunidad Autónoma, registro telemático de expediente nueva instalación: eléctrica de obligado cumplimiento, para la obtención de la autorización de la puesta en servicio de la isntalación tramitada o autorización sectorial."
+  },
+  {
+   "capitulo": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMT",
+   "codigo": "D27TT002TCIMT",
+   "unidad": "Ud",
+   "resumen": "Tasas Derechos Extensión, Acceso y Enganche (si procede)",
+   "cantidad": 1.0,
+   "precio": 524.38,
+   "importe": 524.38,
+   "descripcion": "Ud. Aproximación Tasas por kW de potencia solicitada/ampliada y contratada con la Compañía Distribuidora Endesa e-Distribución y Comercializadora para el suministro al edificio desde sus redes de distribución, incluido derechos de extensión a 17,37€/kW sin IVA, derechos de acceso 19,70€/kW sin IVA y derechos de enganche y verificación si procede cuota fija 9,04476€ para la contratación final de la potencia aconsejada 27,712kW. Dado que existe contrato vigente existente referenciado al Núm. de CUPS ES0031500008659001MZ0F con una potencia contratada actual de 15,1kW, se aplica la relación diferencial de 27,712kW versus 15,10kW resultando un diferencial de 12,612kW en concepto general de derecho de acometida que consiste en el sumatorio de la cuota de derechos de extensión más los derechos de acceso."
+  },
+  {
+   "capitulo": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMT",
+   "codigo": "D27TT003T",
+   "unidad": "kW",
+   "resumen": "Inspección E.C.A. Local Pública Concurrencia",
+   "cantidad": 27.712,
+   "precio": 16.21,
+   "importe": 449.21,
+   "descripcion": "Ud. Gastos Inspección inicial por E.C.A. (Entidad de Control Autorizada) para instalación de BT de local publica concurrencia, incluido certificado de entidad inspectora."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Reforma Instalaciones Enlace Existentes CIMT",
+   "codigo": "IECPM010CIMT",
+   "unidad": "Ud",
+   "resumen": "CS + CPM-1 TM16, Bases BUC-00 en Armario Obra 760x1950x260mm NRZ",
+   "cantidad": 1.0,
+   "precio": 2657.17,
+   "importe": 2657.17,
+   "descripcion": "Suministro e instalación de CPM Caja de Protección y Medida conformada por equipo de protección y medida CPM-1TM16 1 trifásico BUC-00 Cahors o equiv. Ref. 0276229-03, incluido p.p. 3ud fusibles NH-000 GL/Gg 80A/690V, para alojar 1ud contador trifásico formada por envolventes aislante de clase térmica A según UNE-EN 60085, comportamiento al fuego según UNE-EN60695-2-11 clasificada con 650º y grado de protección IP43 según UNE 20324 ee IK09 según UNE-EN 501002 y precintables, el modelo UNINTER o equivalente de dimensiones de 630x270x178mm cumple las nomas Endesa e-Distribución. En atención al pto. 8.2.1 de la guia NRZ103, se incluye la previsión pendiente de confirmar con la compañía distribuidora Endesa e Distribución de CS Caja Seccionadora homologada, \"el cjto. de medida al ser único deberá ser colocado en una CPM y dentro de un nicho según criterios para la especificación técnica de las CGP en redes subterráneas con independencia que la acometida sea aérea o subterranea. No podrá ser instalado sobre la vertical de un acceso o hueco en la fachada del edifico y tampoco en zonas de tránsito rodado sin que exista una distancia frontal libre de obstáculos de 1mx1m\", se podran admitir otras soluciones en casos excepcionales por cualquier legislación urbanística aplicable a entornos histórico artísticos o patrimonio cultural por rehabilitación de edificios existentes y en consecuencia se deberá contar con el acuerdo previo de EDE\" (la compañía distribuidora). Conforme a lo transcrito de las normas actuales de la guia NRZ103, dadas las reducidas dimensiones de la calle Sant Jeroni con tráfico rodado sin poderse garantizar el espacio de seguridad frontal de 1mx1m, dado que justo en el tramo de fachada retranqueado en la entrada al Centro de Interpretación \"supuestamente\" existe una Caja de Distribución, dado que la ubicación planteada se propone en un tramo considerado a efectos urbanísticos como calle de dominio público (entrada exterior al centro, dado que a futuro corto-medio plazo se pretende el soterramiento de las líneeas de distribución que actualmente discurren por fachada en la calle Sant Jeroni, acorde las disposiciones del punto 7.1 de la guía NRZ103 se prevé la instalación de una CS Caja Seccionadora cuya necesidad o no (Fig. 11 de la guía NRZ103) deberá ser acordada con EDE por la proximidad de una \"supuesta\" Caja de Distribución a una distancia inferior a 3m. La medición incluye p.p. 2 tramos de 3ml de tubo rojo 450N D160mm, p.p. 2ml tubo rojo D75mm empotrado en vertical para acometida aérea, p.p. puerta con marco y bisagras de acero inox con garras anclaje para forrar en piedra u otro acabado en su cara exterior de medidas 710x1650mm incluida cerradura núm. 4 de Endesa Distribuidora y p.p. partida alzada trabajos de formación de nicho/armario de obra medidas libres 760x1950x260mm acorde actualización de Marzo de 2024 de la NRZ103 y conforme NRZ102. Elementos descritos Totalmente montados e instalados y conectados."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Reforma Instalaciones Enlace Existentes CIMT",
+   "codigo": "U20216908",
+   "unidad": "Ml",
+   "resumen": "Acometida General Alimentación 3x25mm2AL+1x54,6mm2Alm 0,6/1kV",
+   "cantidad": 9.0,
+   "precio": 25.12,
+   "importe": 226.08,
+   "descripcion": "Suministro e instalación de Acometida General de Alimentación Aérea, aislada Rz1-K 0,6/1 Kv de 3x25mm2Al+1x54,6mm2Alm de conductor de aluminio Imàx 90A, grapeada en pared hasta CGP aérea existente ubicada entre 3m y 3,5m mediante abrazaderas plastificadas y tacos PVC de D=8mm, p.p. terminales correspondientes 25mm2, incluido p.p. medios auxiliares. Previa desconexión y retirada de fusibles actualmente existenttes en CGP: Totalmente conectada, montada e instalada."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Reforma Instalaciones Enlace Existentes CIMT",
+   "codigo": "IETT010CIMT",
+   "unidad": "Ml",
+   "resumen": "Red de toma de tierra 35mm2 Ra<80Ohms CIMT",
+   "cantidad": 6.0,
+   "precio": 65.27,
+   "importe": 391.62,
+   "descripcion": "Suministro e instalación y mejora de la Red de toma de tierra en zona entrada exterior con objeto de obtener un valor inferior a 80 Ohms, previsión iniicial y ejecución con 8ml de conductor de cobre desnudo de 35mm2, p.p. 3ud electrodos/picas, p.p. caja seccionadora y p.p. pequeño material abrazadera y 1ud caja seccionadora de TT PNZ-CST-50 o equivalente. Incluido p.p. medios auxiliares y p.p. alquiler maquinaria perforadora. Nota 1: Finalizada su ejecución y antes de pavimentar se medirá su valor y se comunicará a la dirección facultativa, de ser acorde al objetivo se procederá a pavimentar y hormigonar las zanjas levantadas previamente, en caso contrario se adoptarán soluciones alternativas a pie de obra con el fin de obtener el valor objetivo. Totalmente conectada, montada e instalada."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Reforma Instalaciones Enlace Existentes CIMT",
+   "codigo": "UEND00001",
+   "unidad": "Ud",
+   "resumen": "Cajetin Endesa Custodia Llave Acceso",
+   "cantidad": 1.0,
+   "precio": 169.88,
+   "importe": 169.88,
+   "descripcion": "Suministro e Instalación de bombín/cajetín homologado por la compañia distribuidora para la custodia de llaves con cerradura de seguridad y medidas 100xD50mm, p.p. de instalación encastada en zona fachada exterior del acceso del edificio por parte de la empresa constructora previamente suministrado por la empresa instaladora. Nota 1: Antes de colocar el bombin/cajetín cuya llave únicamente está en manos de distribuidora debe disponerse dentro del mismo una copia de la llave definitiva de la cancela o puerta de acceso exterior, se rcomienda su instalación posterior a la instalación de la cancela o puerta exterior definitiva con copia de llave definitiva antes del encastado. Totalmente montado e instalado con la llave exterior de acceso en el interior del cajetín."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Derivacion Individual CIMT",
+   "codigo": "UGC19924114VD",
+   "unidad": "Ud",
+   "resumen": "Derivación Individual RZ1-K 0,6/1kV 4x16mm2",
+   "cantidad": 37.0,
+   "precio": 38.08,
+   "importe": 1408.96,
+   "descripcion": "Suministro e instalación de circuito eléctrico de Derivación Individual según RD842/2002 en canalización enterrada tubo 450N D75mm, realizado con conductores de cobre unipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 1x16mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos 3 activos + neutro, ejecutada canalización tipo Tubo ULTRA-TP o equivalente diámetro 63mm rojo, incluido p.p. cajas de registros intermedias desde CPM a Cuadro General y p.p. de Toma de Tierra de 1x16mm2 H07Z1-K tomada desde caja seccionadora de tierra p.p. medios auxiliares. Totalmente conectada, montada e instalada."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Cuadros Eléctricos CIMT",
+   "codigo": "UQGCIMT",
+   "unidad": "Ud",
+   "resumen": "Cuadro General 43,647kW",
+   "cantidad": 1.0,
+   "precio": 14793.68,
+   "importe": 14793.68,
+   "descripcion": "Suministro e instalación de Cuadro General 43,647kW, conformado por armario metálico suministrado con zócalo de 150mm de suelo Hager serie Quadro 5 o equivalente de medidas 1860x700x260mm con capacidad efectiva de 216 polos distribuido en 9 filas para aparamenta modular distribuida en bastidores de carril din 150x600mm de 24 polos/fila y 2ud tapa ciega de 150mm (para posible ampliación futura 24 polos libres) y 2ud módulo carril din regulable de 150x500mm para niveles de bornero inferior, p.p. bornas viking o equivalente 6mm2 y p.p. bornans viking o equivalente 16mm2 includo tapas de separación, p.p. canales pasacables con tapa verticales laterales de 60x80mm, p.p. soportes de canal y placa toma de tierra 500mm en la parte inferior, puerta ciega 1860x700mm con cerradura por llave, p.p. pequeño material puntera hueca preaislada y p.p. cableado interior 16mm2-10mm2-6mm2-4mm2-2,5mm2-1,5mm2, p.p. distribuidor 4 polos Hager o equivalente Ref. KJ100A y aparamenta de protecciones contra sobretensiones permanentes y transitorias, protecciones magnetotérmicas, protecciones diferenciales, conmutadores de bypass SAI y Estabilizador integrados, interruptores test emergencias y pulsador de cuadro ejecutado según esquemas unifilares de proyecto marca Hager o equivalente en cuanto a aparamenta general y marca Cirprotec o equivalente en cuanto a protecciones contra sobretensiones permanentes y transitorias. Incluido p.p. medios auxiliares. 3 años de garantía según fabricante Hager o equivalente y 2 años de garantía según fabricante Cirprotec o equivalente. Nota 1: Se prestará especial atención a los calibres de magnetotérmicos reducidos en amperes versus capacidad máxima de sección de cable asociado, ello se debe a la combinación de 2 o 3 o 4 circuitos en una misma canalización. No se admitirán calibres de magnetotérmicos superiores a los dispuestos en proyecto. Nota 2: Se prestará especial atención a los puentes interiores de cuadro, la sección de cable siempre será acorde a la protección o calibre de protección magnetotérmica aguas abajo de la misma. Por ejemplo, No se admitirán secciones de cable de 1,5mm2-2,5mm2-4mm2-6mm2 que salgan del distribuidor principal idem para el resto de casos en cascada de arriba abajo en el contexto de niveles de proteción a sociados a cada sección. Nota 3: La dirección facultativa deberá revisar la recepción del cuadro general acorde esquemas unifilares y acorde las notaciones prescritas ejecutado según planos de proyecto, totalmente cableado, conexionado y rotulado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Cuadros Eléctricos CIMT",
+   "codigo": "UQOCIMT",
+   "unidad": "Ud",
+   "resumen": "Cuadro Obra 22,17kW",
+   "cantidad": 1.0,
+   "precio": 2210.07,
+   "importe": 2210.07,
+   "descripcion": "Suministro e instalación de cuadro de obras trifásico con una potencia máxima admisible de 22,17kW, conformado por protección magnetotérmica general 32A IV acoplada a bobina de mínima tensión 230V maniobrada por paro de emergencia incluida seta de emergencia homologada, incluido 1ud protección combinada magnetotérmica y diferencial 4P 16A 6kA 30mA para 1ud Toma Trifásica IV 16A/400V con enclavamiento y bloqueo de seguridad y 3ud protección magnetotérmica 2P 16A 6kA más 3ud protección diferencial 40A/30mA para 3ud Tomas Monofásicas II 16A/230V con enclavamiento y bloqueo de seguridad. Incluido mano de obra referente a trabajos desmontar CPM interior existente y desplazamiento CPM a otro punto previamnente acordado con la dirección facultativa. Incluido p.p. medios auxiliares, totalmente montado, conectado e instalado. 3 años de garantía según fabricante protecciones Hager o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "UGEWDX25720",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 20mm 4321",
+   "cantidad": 3.0,
+   "precio": 15.43,
+   "importe": 46.29,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 20mm categoria 4321, incluido p.p. racord tubo-caja D20mm y p.p. manguito unión tubo rígido a tubo empotrado D20mm, p.p. curva IP67 D20mm, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "UGEWDX25725",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 25mm 4321",
+   "cantidad": 5.6,
+   "precio": 20.31,
+   "importe": 113.74,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 25mm categoria 4321, incluido p.p. racord tubo-caja D25mm y p.p. manguito unión tubo rígido a tubo empotrado D25mm, p.p. curva ejecutada a medida con secador industrial, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "UGEWDX25732",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 32mm 4321",
+   "cantidad": 3.0,
+   "precio": 20.4,
+   "importe": 61.2,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 32mm categoria 4321, incluido p.p. racord tubo-caja D32mm y p.p. manguito unión tubo rígido a tubo empotrado D32mm, p.p. curva IP67 D32mm, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "U94559",
+   "unidad": "Ml",
+   "resumen": "Bandeja portacables OMEGA o equivalente - 300x100mm",
+   "cantidad": 3.0,
+   "precio": 37.23,
+   "importe": 111.69,
+   "descripcion": "Suministro e instalación de Bandeja portacables y Tapa final OMEGA - 300x100 - Lisa - Gris RAL7030, p.p. pequeño material y pp medios auxiliares. Totalmente racorizado, montado e instalado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "USOL815",
+   "unidad": "Ud",
+   "resumen": "Caja Estanca 100x100x55mm",
+   "cantidad": 4.0,
+   "precio": 12.33,
+   "importe": 49.32,
+   "descripcion": "Suministro e instalación de caja conexiones estanca con paredes lisas IP65 IK07 precintables y libre de halógenos. Normativa aplicable: UNE EN 60 670, tipo Solera o equivalente de medidas 100x100x55mm, incluido p.p. racord pensa estopa D20mm para salida de cables o racord tubo caja D32mm para interconexión y p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "USOL816",
+   "unidad": "Ud",
+   "resumen": "Caja Estanca 153x110x65mm",
+   "cantidad": 2.0,
+   "precio": 14.21,
+   "importe": 28.42,
+   "descripcion": "Suministro e instalación de caja conexiones estanca con paredes lisas IP65 IK07 precintables y libre de halógenos. Normativa aplicable: UNE EN 60 670, tipo Solera o equivalente de medidas 153x110x65mm, incluido p.p. racord pensa estopa D20mm para entrada/salida de cables y p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "USOL686",
+   "unidad": "Ud",
+   "resumen": "Caja Estanca con conos 220x170x80mm",
+   "cantidad": 1.0,
+   "precio": 20.94,
+   "importe": 20.94,
+   "descripcion": "Suministro e instalación de caja conexiones estanca con conos IP55 IK07 y libre de halógenos, 12 conos para tubo D32mm y 2 conos para tubo D40mm, tipo Solera o equivalente de medidas 220x170x80mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Superficie y Cajas Conexiones CIMT",
+   "codigo": "UBFIV37973796",
+   "unidad": "Ml",
+   "resumen": "Carril Trifásico IV Suspendido 0,65m Beneito Faure o equiv.",
+   "cantidad": 79.0,
+   "precio": 46.48,
+   "importe": 3671.92,
+   "descripcion": "Suministro e instalación de carril trifásico electrificado 230/400V corriente màxima 16A por fase, Beneito Faure o equivalente, para acoplar focos de iluminación local/general, en cuerpo de aluminio anonizado color blanco mate, incluido p.p. tramos de longitud de 2ml y 3ml, pp. piezas especiales como uniones, conector alimentación , colgantes de suspensión de cable de acero hasta 0,65ml cada 1,25ml de carril, tapas terminales finales, p.p. pequeño material y pp medios auxiliares. Totalmente, montado e instalado. 3 años de Garantía según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "UAISCAN16CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D16mm",
+   "cantidad": 658.4,
+   "precio": 3.61,
+   "importe": 2376.82,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 16mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "UAISCAN20CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D20mm",
+   "cantidad": 209.7,
+   "precio": 3.67,
+   "importe": 769.6,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 20mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "UAISCAN25CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D25mm",
+   "cantidad": 716.7,
+   "precio": 3.87,
+   "importe": 2773.63,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 25mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "UAISCAN32CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D32mm",
+   "cantidad": 267.8,
+   "precio": 4.38,
+   "importe": 1172.96,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 32mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "UAISCAN40CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D40mm",
+   "cantidad": 179.5,
+   "precio": 4.96,
+   "importe": 890.32,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 40mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "USOL5520",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar 200x160x70mm",
+   "cantidad": 3.0,
+   "precio": 12.21,
+   "importe": 36.63,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 200x160x70mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "USOL5530GW",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar T. Cartonyeso 300x150x75mm",
+   "cantidad": 2.0,
+   "precio": 29.61,
+   "importe": 59.22,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar con sistema fijación mediante garras, tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 300x150x70mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "USOL5540GW",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar T. Cartonyeso 390x150x60mm",
+   "cantidad": 8.0,
+   "precio": 36.06,
+   "importe": 288.48,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar con sistema fijación mediante garras, tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 390x150x60mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "USOL5502",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar Comunicaciones 300x200x60mm",
+   "cantidad": 8.0,
+   "precio": 14.17,
+   "importe": 113.36,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar para cableado de comunicaciones de datos tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 300x200x60mm, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Canalizaciones Empotradas y Cajas Conexiones CIMT",
+   "codigo": "USOL5503",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar Comunicaciones 300x500x85mm",
+   "cantidad": 1.0,
+   "precio": 38.8,
+   "importe": 38.8,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar para cableado de comunicaciones de datos tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 300x500x85mm, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1656106C2G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 2x1,5mm2 (750V)",
+   "cantidad": 220.7,
+   "precio": 4.02,
+   "importe": 887.21,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI o equivalente H07Z1-K 2x1,5 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos para maniobra (2 activo), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1656106C3G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 3x1,5mm2 (750V)",
+   "cantidad": 1005.3,
+   "precio": 4.55,
+   "importe": 4574.12,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI o equivalente H07Z1-K 3x1,5 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1656107C3G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 3x2,5mm2 (750V)",
+   "cantidad": 905.2,
+   "precio": 5.71,
+   "importe": 5168.69,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI o equivalente H07Z1-K 3x2,5 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1992306VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 3x1,5mm2",
+   "cantidad": 3.6,
+   "precio": 3.79,
+   "importe": 13.64,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 3x1,5 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección)incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1992406VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 4x1,5mm2",
+   "cantidad": 4.5,
+   "precio": 4.29,
+   "importe": 19.31,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 4x1,5 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico en 2 circuitos (2 activo,1 neutro,1 protección) y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1997309VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 3x6mm2",
+   "cantidad": 5.4,
+   "precio": 7.24,
+   "importe": 39.1,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 3x6 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1992310VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 3x10mm2",
+   "cantidad": 5.4,
+   "precio": 10.34,
+   "importe": 55.84,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 3x10 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UGC1997508VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 5x4mm2",
+   "cantidad": 41.2,
+   "precio": 8.06,
+   "importe": 332.07,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 5x4mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "ULEG032756",
+   "unidad": "Ml",
+   "resumen": "Cable Red Datos 4p Cat 6A apantallado U/FTP",
+   "cantidad": 1930.8,
+   "precio": 2.03,
+   "importe": 3919.52,
+   "descripcion": "Suministro e instalación de cable de comunicación de red de datos, formado por cable de cobre de 4 pares trenzados apantallados (U/FTP), de categoría 6A, de la marca Legrand o equivalente, con conductor de cobre 24AWG, diámetro nominal de 0’52 mm, aislamiento de polietileno sólido con diámetro nominal de 1’05 mm. Protección de aluminio y hoja aislante de polietileno helicoidal, conductor de continuidad. Con funda de LSZH Libre de halógenos y baja emisión de humos, de diámetro externo 7mm. Totalmente montado y conexionado a puntos terminales de conexión incluido parte proporcional de conector RJ45 y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Líneas y Circuitos Eléctricos CIMT",
+   "codigo": "UCPDATEIBKNX",
+   "unidad": "Ml",
+   "resumen": "Cable Bus EIB-KNX o equivalente 1x2x0,8mm LH",
+   "cantidad": 177.5,
+   "precio": 1.07,
+   "importe": 189.93,
+   "descripcion": "Suministro e instalación de cable bus para señal/control apantallado tipo 1x2x0,8mm LH (DCA), libre de halógenos, marca GESCABLE o equivalente, para su utilización como cable de gestión del sistema de climatización del edificio u otras aplicaciones de gestión de datos, incluido p.p. medios auxiliares. Totalmente conectado y en funcionamiento."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "UGEWGW70433P",
+   "unidad": "Ud",
+   "resumen": "Seccionador Rotativo IP66 4P/16A/230-400V M. Ext. A.A.",
+   "cantidad": 1.0,
+   "precio": 67.18,
+   "importe": 67.18,
+   "descripcion": "Suministro e instalación de seccionador / interruptor industrial HP serie 37F GEWISS o equivalente para montaje en superficie exterior IP66, color maneta roja y candado en brida amarilla, de intensidad nominal 16A, número de polos 4polos y tensión nominal 230V/400V y medidas 114x114x71,5mm Ref GW70433P, p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIM2715065",
+   "unidad": "Ud",
+   "resumen": "Pulsador Timbre con Piloto Luminoso 10A/250V",
+   "cantidad": 1.0,
+   "precio": 24.2,
+   "importe": 24.2,
+   "descripcion": "Suministro e instalación de pulsador timbre con indicador luminoso Serie Simon 27 Play o equivalente conformado por: 1ud Pulsador timbre y luminoso blanco Simon 27 Play, 1ud Marco 1 elemento blanco Simon 27 Play totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIM2710165",
+   "unidad": "Ud",
+   "resumen": "Interruptor Unipolar 10A/250V",
+   "cantidad": 1.0,
+   "precio": 23.18,
+   "importe": 23.18,
+   "descripcion": "Suministro e instalación de interruptor unipolar con indicador luminoso Serie Simon 27 Play o equivalente conformado por: 1ud Interruptor Unipolar con luminoso, emborn. rápido blanco Simon 27 Play, 1ud Marco 1 elemento blanco Simon 27 Play totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIM440009203",
+   "unidad": "Ud",
+   "resumen": "Base enchufe estanca Simon 44 IP55 16A/250V I+N+TT",
+   "cantidad": 2.0,
+   "precio": 28.67,
+   "importe": 57.34,
+   "descripcion": "Suministro e instalación de base enchufe estanca IP55 Serie Simon 44 o equivalente conformada por: 1ud Base enchufe Schuko con seguridad embor. rápido, blanco Simon 27, 1ud Marco con tapa articulada blanco Aqua, 1ud Marco 1 elemento para empotrar IP55 blanco, totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODA00",
+   "unidad": "Ud",
+   "resumen": "Cjo. Modular Empotrado Tipo A.0.0 (Aviso Audiovisual)",
+   "cantidad": 2.0,
+   "precio": 67.49,
+   "importe": 134.98,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.0.0 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Adaptador doble para S27 blanco Simon 500 CIMA, 1ud Señalizador luminoso, estrecho, blanco con tapa roja Simon 27, 1ud Zumbador 125-220V Tono Regulable Simon 27. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODA01",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.0.1 (1ud Salida Cable)",
+   "cantidad": 17.0,
+   "precio": 35.82,
+   "importe": 608.94,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.0.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud adaptador para mecanismos K45 blanco, 1ud Salida cables K45 + anillas para embridar blanco Simon 500 CIMA, 1ud Placa ciega individual, blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODA02",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.0.2 (2ud Salida Cable)",
+   "cantidad": 11.0,
+   "precio": 38.27,
+   "importe": 420.97,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.0.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 2ud adaptadores para mecanismos K45 blanco, 2ud Salida cables K45 + anillas para embridar, blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODA1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.1 (2Schuko)",
+   "cantidad": 12.0,
+   "precio": 44.09,
+   "importe": 529.08,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Base doble Schuko a tornillo con led blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODA2",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.2 (2Schuko+2DT)",
+   "cantidad": 9.0,
+   "precio": 100.36,
+   "importe": 903.24,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Base doble Schuko a tornillo con led blanco Simon 500 CIMA, 2ud Placa V&D inclinada CG 1 conector cat. 6A FTP blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODB",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo B.1 (2Schuko+1SAI+PIA-II/6A/Curva-B",
+   "cantidad": 4.0,
+   "precio": 335.46,
+   "importe": 1341.84,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo B.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Cajetín de empotrar 4 módulos Simon 500 CIMA, 1ud marco para pared de empotrar y bastidores para 4 elementos dobles blanco Simon 500 Cima, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 1ud Cargador USB tipo \"A+C\" 3,1A con Quickcharge, 2ud adaptadores para mecanismos K45 blanco, 1ud Base de enchufe schuko doble 16 A 250V con dispositivo seguridad, led y embornamiento a tornillo blanco Simon 500 Cima, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo rojo Simon K45, 2ud Placa de voz y datos inclinada con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODC1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo C.1 (1Schuko+1SAI+PIA-II/6A/Curva-B",
+   "cantidad": 3.0,
+   "precio": 253.02,
+   "importe": 759.06,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo C.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: Cajetín de empotrar 3 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar y bastidores para 3 elementos dobles blanco Simon 500 Cima, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo blanco Simon K45, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo rojo Simon K45, 2ud adaptadores para mecanismos K45 blanco, 2ud Placa de voz y datos plana con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODC2",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Superficie Tipo C.2 (1Schuko+1SAI+PIA-II/6A/Curva-",
+   "cantidad": 4.0,
+   "precio": 249.76,
+   "importe": 999.04,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo C.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja de pared de superficie para 3 elementos dobles blanco Simon 500 Cima, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo blanco Simon K45, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo rojo Simon K45, 2ud adaptadores para mecanismos K45 blanco, 2ud Placa de voz y datos plana con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODD",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Columna Vert. Tipo D (2Schuko+1SAI+PIA-II/6A/Curva",
+   "cantidad": 5.0,
+   "precio": 457.08,
+   "importe": 2285.4,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo D según leyenda proyecto BT, en formato minicolumna vertical Simon o equivalente serie 500 Cima, conformado por: 1ud Minicolumna aluminio de 2 caras para 4 elementos por cara blanco Simon 500 Cima, 4ud Bastidor y marco embellecedor para columnas y minicolumnas blanco Simon 500 Cima, 8ud Cajetín para utilización de mecanismos con bastidor universal Simon 500 CIMA, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 1ud Cargador USB tipo \"A+C\" 3,1A con Quickcharge, 1ud Base de enchufe schuko doble 16 A 250V con dispositivo seguridad, led y embornamiento a tornillo blanco Simon 500 Cima, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo rojo Simon K45, 2ud adaptadores para mecanismos K45 blanco, 2ud Placa de voz y datos plana con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODE",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Torreta Vert. Tipo E (2Schuko+1SAI+PIA-II/6A/Curva",
+   "cantidad": 6.0,
+   "precio": 358.04,
+   "importe": 2148.24,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo E según leyenda proyecto BT, en formato mini torreta vertical Simon o equivalente serie 500 Cima, conformado por: 1ud Torreta de plástico de 2 caras para 4 elementos por cara blanco Simon 500 Cima, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 1ud Cargador USB tipo \"A+C\" 3,1A con Quickcharge, 1ud Base de enchufe schuko doble 16 A 250V con dispositivo seguridad, led y embornamiento a tornillo blanco Simon 500 Cima, 1ud Base de enchufe schuko 16 A 250V con dispositivo de seguridad, indicador luminoso y emb. a tornillo rojo Simon K45, 2ud adaptadores para mecanismos K45 blanco, 2ud Placa de voz y datos plana con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODF1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo F.1 (8SAI)",
+   "cantidad": 1.0,
+   "precio": 165.15,
+   "importe": 165.15,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo F.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: Cajetín de empotrar 3 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar y bastidores para 4 elementos dobles blanco Simon 500 Cima, 4ud Base doble Schuko a tornillo con led, rojo Simon 500 CIMA, 3ud accesorio enlazador para 2 bases eléctricas Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODG",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo G (Mural Conexión Rápida 1SAI+PIA-I",
+   "cantidad": 1.0,
+   "precio": 243.7,
+   "importe": 243.7,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo G según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Cajetín de empotrar 2 módulos Simon 500 CIMA, 1ud Marco y bastidores empotrar 2 módulos blanco Simon 500 CIMA, 1ud adaptadores para mecanismos K45 blanco, 1ud Placa K45 para 2 conexión rápida M/H 3P blanco Simon K45, 2ud Placa K45 con 1ud conexión rápida H 3P blanco Simon K45, 1ud Placa V&D plana CG 2 cat. 6A FTP blanco Simon 500 CIMA, 1ud Placa para magnetotérmico Simon 500 CIMA, 1ud Int. aut. magnetotérmico serie M, 2P, 6A, curva B 6KA (Hager o equiv. Ref. MBA206). Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODH",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo H Bajo Mesa (3Schuko+3SAI+1USB)",
+   "cantidad": 1.0,
+   "precio": 301.08,
+   "importe": 301.08,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo G según leyenda proyecto BT, en formato Bajo Mesa marca Simon o equivalente serie K45, conformado por: 1ud Soporte Ofiblock fijación individual o bajo mesa Simon, Perfil Ofiblock Plus para 8 mecanismos útiles Simon K45, 1ud Placa K45 2 conexión rápida macho 3P grafito-rojo Simon 45, 3ud Schuko Rojo embornamiento a tornillo con obturador de seguridad y piloto luminoso Simon 45, 3ud Schuko Rojo embornamiento a tornillo con obturador de seguridad y piloto luminoso Simon 45, 1ud Cargador USB tipo A+C 3,1A con Quickcharge 2 elementos K45 blanco, 1ud Latiguillo Rojo conexión M-H 3P L=4m RZ1/0,6-1KV libre halógenos 3x2,5mm2 Simon, 1ud Latiguillo Blanco conexión M-H 3P L=4m RZ1/0,6-1KV libre halógenos 3x2,5mm2 Simon, 4ud Bloque de conexión para multibases Simon 45. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODM1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo M.1: 3 Pulsadores + 3 Interruptores con tapa",
+   "cantidad": 1.0,
+   "precio": 200.23,
+   "importe": 200.23,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo M.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, de maniobra de 6 puntos de iluminación general ubicado en Salida Escalera Núm. 2 Museo PS, integrado y conformado por: 1ud Cajetín de empotrar 3 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar con tapa abatible y bastidores para 3 elementos dobles blanco Simon 500 CIMA, 1ud Bombín y llave tapa caja, 6ud adaptadores para mecanismos K45 blanco, 6ud Tecla K45 para 1 mecanismo con visor transparente blanco Simon K45, 3ud Pulsador unipolar K45 16A con piloto luminoso Simon K45, 3ud Conmutador (interruptor) K45 unipolar 16A con piloto de estado Simon K45. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODM2",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo M.2: 6 Interruptores + Data Astro con tapa y",
+   "cantidad": 1.0,
+   "precio": 532.43,
+   "importe": 532.43,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo M.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, de maniobra de 6 puntos de iluminación general ubicado en Recepción PB, integrado y conformado por: 1ud Cajetín de empotrar 4 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar con tapa abatible y bastidores para 4 elementos dobles blanco Simon 500 Cima, 1ud Bombín y llave tapa caja, 6ud adaptadores para mecanismos K45 blanco, 6ud Tecla K45 para 1 mecanismo con visor transparente blanco Simon K45, 6ud Conmutador (interruptor) K45 unipolar 16A con piloto de estado Simon K45, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Programador multifunción 2 vía con Bluetooth Hager o equiv. Ref. EGN200, se pretende controlar 2 puntos de encendido exterior y carteles iluminados exteriores mediante un data astro de 2 canales y alternativamente se prevé el control de ambos encendidos de forma manual directa. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Mecanismos CIMT",
+   "codigo": "USIMMODM3",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo M.3: 16 Interruptores Ilum. Carril y Pozo con",
+   "cantidad": 1.0,
+   "precio": 384.6,
+   "importe": 384.6,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo M.3 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, de maniobra de 16 puntos de iluminación Carril Electrificado 3 grupos x (2+1+2) y iluminación pozo (1), Cjto. ubicado en Salida Interior Museo PS, integrado y conformado por: 1ud Cajetín de empotrar 4 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar con tapa abatible y bastidores para 4 elementos dobles blanco Simon 500 Cima, 1ud Bombín y llave tapa caja, 4ud Placa adaptadora doble para elementos Simon 27 acabado blanco y 16ud Interruptor con piloto luminoso, estrecho de embornamiento rápido, blanco Simon 27 Play. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UBF4957",
+   "unidad": "Ud",
+   "resumen": "Aplique BLIS ROUND blanco o equivalente 15W/230V/3000K-1470lum",
+   "cantidad": 2.0,
+   "precio": 49.76,
+   "importe": 99.52,
+   "descripcion": "Suministro e instalación de foco Beneito Faure o equivalente al modelo BLIS ROUND SWITCH blanco ref. 4957, uso interior/exterior en formato redondo, proyección de haz de luz 250º descendente y lateral según orientación de 15W de potencia, alimentación Vac 220-240V / 50Hz, ángulo de apertura de iluminación 250º, índice de reproducción cromática CRI>80%, potencia lumínica 1470lum, temperatura de color ajustable 2700k-3000k-4000k (ajustada a 3000k). Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 25.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UBF449V2",
+   "unidad": "Ud",
+   "resumen": "Foco Carril Electrico LENA blanco o equiv. 35W/230V/3000k-4200lu",
+   "cantidad": 12.0,
+   "precio": 134.19,
+   "importe": 1610.28,
+   "descripcion": "Suministro e instalación de foco Beneito Faure o equivalente al modelo LENA SWITCH blanco ref. 4449-V2, proyector direccionable led de interior para carril trifásico de 35W de potencia, alimentación Vac 220-240V / 50Hz, ángulo de apertura de iluminación 60º, índice de reproducción cromática CRI>90%, potencia lumínica 4200lum, temperatura de color ajustable 2700k-3000k-4000k (ajustada a 3000k), diseño que permite una amplia capacidad de rotación a 180º y un giro de 350º, así como el libre movimiento del foco al largo del carril trifásico. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 30.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UBF4241N",
+   "unidad": "Ud",
+   "resumen": "Foco orientable int. NOX blanco o equiv. 30W/230V/3000K-2460lum",
+   "cantidad": 8.0,
+   "precio": 134.49,
+   "importe": 1075.92,
+   "descripcion": "Suministro e instalación de foco Beneito Faure o equivalente al modelo NOX SWITCH blanco ref. 4241-N, proyector direccionable led de interior para iluminación indirecta de 30W de potencia, alimentación Vac 220-240V / 50Hz, ángulo de apertura de iluminación 40º, índice de reproducción cromática CRI>94%, potencia lumínica 2460lum, temperatura de color ajustable 2700k-3000k-4000k (ajustada a 3000k), diseño que permite una amplia capacidad de rotación a 90º y un giro orientable de 355º, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 30.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UM2126X16V",
+   "unidad": "Ud",
+   "resumen": "Bañador Vertical Techo/Suelo Sa Piràmide e equiv- 16x26cm 6W/230",
+   "cantidad": 12.0,
+   "precio": 99.54,
+   "importe": 1194.48,
+   "descripcion": "Suministro e instalación de bañador vertical techo/suelo para encastar en muro Sa Piràmide o equivalente modelo M21 con hueco de abertura lumínica 26x16cm, con troquelado interior para alojar una lámpara Beneito Faure o equivalente tipo Hook GU10 bombilla LED dicroica para casquillo GU10 con 6W de potencia y una tensión nominal de 220-240V, proporciona un haz lumínico de 60º y temperatura de color de 3.000K (594 lm), con un CRI>80, acabado en blanco insertada en Aro blanco downlight circular basculante para bombilla LED GU10 Corte Ø 72 mm e incluido p.p. Kit de conexión para luminaria empotrada con casquillo gu10, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. Lámpara LED 3 años de Garantía y Lifetime: 25.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UNEX21131C",
+   "unidad": "Ud",
+   "resumen": "Luminaria Lineal Lavabo 1,5ml 7,2W/24V/3000K-605lum",
+   "cantidad": 1.0,
+   "precio": 70.53,
+   "importe": 70.53,
+   "descripcion": "Suministro e instalación de luminaria lineal para espejos de lavabo de 1,5ml de largo, conformada por tira led Nexia o equivalente Modelo 21131-C de 70 leds/ml tipo 2835 y grado de protección IP66,con una potencia lumínica neta de 575 lum/m, temperatura de color 3000 K y una potencia de consumo de 4,8W/ml seccionable cada 10cm alojada en perfil acabado blanco lineal de aluminio AL6063-T5 Nexia o equivalente tipo Basic ref 15979-0150 de 150cm de largo y de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W, incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-150 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, inlcuido p.p. de soldadura con estaño del cable de conexionado dos polos 2x1,5mm2 H07Z1-K e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil y alimentación con driver led en caja conexiones tipo LEDADVANCE o equivalente de 24V/30W Ref DR-V-30W/220-240/24, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UNEX21411CM",
+   "unidad": "Ml",
+   "resumen": "Luminaria Lineal Pasamanos Escalera 7W/ml/230V/3000K-466lum/ml",
+   "cantidad": 5.3,
+   "precio": 66.73,
+   "importe": 353.67,
+   "descripcion": "Suministro e instalación de luminaria lineal en pasamanos de escaleras, conformada por tira led Nexia o equivalente Modelo 21411-C/M de 60 leds/ml tipo 2835 y grado de protección IP65, con una potencia lumínica neta de 665 lum/ml, temperatura de color 3000 K y una potencia de consumo de 7W/ml seccionable cada 10cm, alojada en perfil acabado blanco lineal de cuerpo de aluminio AL6063-T5 Nexia o equivalente tipo Basic ref 15979-0200 de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W/ml,incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-200 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, alimentación directa a 230V F+N y conexión T.T. al perfil base. Incluido p.p. trabajos de fijación y mecanizado consistentes en corte a 45º del perfil y difusor para la formación de ángulos de 90º, inlcuido p.p. de soldadura con estaño de cable dos polos 2x1,5mm2 H07Z1-K entre tramos de tiras a 90º e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil en cambios de dirección de 90º entre tramos de tiras led cuyo largo deberá ser modulado en tramos múltiples de 10cm ajustándose al màximo a la longitud total de cada tramo de pasamanos de escalera, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 4 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UNEX21412CM",
+   "unidad": "Ml",
+   "resumen": "Luminaria Lineal Iluminación Indirecta 15W/ml/230V/3000K-998lum/",
+   "cantidad": 67.6,
+   "precio": 64.53,
+   "importe": 4362.23,
+   "descripcion": "Suministro e instalación de luminaria lineal iluminación indirecta, conformada por tira led Nexia o equivalente Modelo 21412-C/M de 120 leds/ml tipo 2835 y grado de protección IP65, con una potencia lumínica neta de 1425 lum/ml, temperatura de color 3000 K y una potencia de consumo de 15W/ml seccionable cada 10cm, alojada en perfil acabado blanco lineal de cuerpo de aluminio AL6063-T5 Nexia o equivalente tipo Gris ref 15979-8200 de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W/ml,incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-200 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, alimentación directa a 230V F+N y conexión T.T. al perfil base. Incluido p.p. trabajos de fijación, inlcuido p.p. de soldadura con estaño del cable de conexionado dos polos 2x1,5mm2 H07Z1-K e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil, los tramos de tiras led deberán ser modulados en tramos múltiples de 10cm ajustándose al màximo a la longitud total de cada tramo, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 4 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UFN168037E10",
+   "unidad": "Ud",
+   "resumen": "Lampara FOSCARINI GREGG Midi ON/OFF 12W/230V/2700K-1352lum",
+   "cantidad": 2.0,
+   "precio": 340.03,
+   "importe": 680.06,
+   "descripcion": "Suministro e instalación de lámpara colgante decorativa interior marca FOSCARINI modelo GREGG Midi ON/OFF Ref. FN168037E10 o equivalente, de cristal soplado satinado color Blanco medidas 16x17x16cm, grado de protección IP20, casquillo E14 incluida bombilla LED retrofit E14 de potencia 12W/230V, temperatura de color 2700K y potencia luminosa 1352lum índice de reproducción cromàtica CRI>80. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de Garantía según fabricante Foscarini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UPRISIR3EM",
+   "unidad": "Ud",
+   "resumen": "Detector de Movimiento IR Priled-Pritec o equiv. SIR3EM",
+   "cantidad": 4.0,
+   "precio": 27.86,
+   "importe": 111.44,
+   "descripcion": "Suministro e instalación de detector de movimiento 360º por infrarojos IR de movimiento 360º para empotrar PRILED/PRITEC o equivalente Ref: SIR3EM, Distancia de detección 3m-12m, màxima altura de instalación: 4m, rango de detección 360º, regulación activación según luz ambiental <3 - 2000 lux, tiempo en marcha tras detección: 10s a 15min. El sensor activa la lámpara a partir de un mínimo de luz establecida por el usuario durante el tiempo programado. Incluido p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UDINREEL5LE3",
+   "unidad": "Ud",
+   "resumen": "Sistema Control Iluminación Escalera PS-PB",
+   "cantidad": 1.0,
+   "precio": 544.27,
+   "importe": 544.27,
+   "descripcion": "Suministro e instalación de sistema de control de encendido de iluminación del tramo de escalera PS-PB, el sistema se integra en su totalidad en el cuadro general conformado por los siguientes elementos: 1ud Regulador para Tira LED IGBT a final de fase DINUY o equivalente modelo RE EL5 LE3, 1ud Reloj Horario Hager o equivalente EHN011, 1ud Pulsador Hager o equivalente SVN311 y 1ud Relé Hager o equivalente ESC126 1NC+1NA. Descripción principio funcionamiento, el contacto NC del Relé se conecta a la entrada antipánico del Regulador, el Relé está controlado por el Sensor IR y en paralelo con la salida libre de potencial de la Alarma Contra Incendios. El Regulador tiene fijado un valor mínimo de iluminación entorno al 20-25%, mantiene ese nivel mientras el Sensor IR no detecte presencia en su entorno. En el momento que se detecta presencia de personas el contacto NC del Relé se abre y el Regulador conmuta la iluminación al 100%. El Interruptor Horario define el tramo horario del día donde las luces de escalera pueden quedar apagadas al 0% ( p.e. noche de 23:00h-6:00), finalmente el pulsador se utiliza para programar las funciones de operatividad y regulación del Regulador. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de garantía según fabricante productos Hager o equivalente y 2 años de garantía según fabricante productos regulación Dinuy o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación General y Acento CIMT",
+   "codigo": "UDINREEL1LE3",
+   "unidad": "Ud",
+   "resumen": "Sistema Control Regulación Iluminación General",
+   "cantidad": 1.0,
+   "precio": 555.77,
+   "importe": 555.77,
+   "descripcion": "Suministro e instalación de sistema de control regulación de iluminación indirecta propuesta sobre las estructuras de hierro existentes entre pilares, el sistema se integra en su totalidad en el cuadro general conformado por los siguientes elementos: 3ud Regulador para Tira LED IGBT a final de fase 300W DINUY o equivalente modelo RE EL1 LE3, accionado por pulsador externo ubicado en las proximidades de la salida de planta de la zona para su programación y ajuste del nivel de regulación deseado. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de garantía según fabricante Dinuy o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación Auxiliar de Emergencia CIMT",
+   "codigo": "UNUXVSE",
+   "unidad": "Ud",
+   "resumen": "Emergencia Normalux VIA R VSE o equiv. 205lum h<3,5m",
+   "cantidad": 16.0,
+   "precio": 73.73,
+   "importe": 1179.68,
+   "descripcion": "Suministro e instalación de alumbrado de emergencia VÍA R ref. VSE Normalux o equivalente. Flujo: 205lm. Autonomía: 1h. Batería: Ni-Cd 3,6V/750mAh. Modo de funcionamiento: No permanente. Versión: Estándar. Temperatura de color: 5700K. Alimentación: 230V 50/60Hz. Potencia: 1W. Factor de potencia: 0,09. Clase: II. Modo de instalación: Empotrable. IP: 40. IK: 04. Hilo incandescente: 850ºC. Cuerpo: PC+ABS Autoextinguible. Óptica: Policarbonato. Reflector: ABS Autoextinguible. Grapas: Acero Inoxidable. Acabado: Blanco. Dimensiones: 50x50x33mm, diámetro: 50mm. Fabricado según la norma: UNE 60598-2-22. Instalado incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Normagrup-Normalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación Auxiliar de Emergencia CIMT",
+   "codigo": "UNUXVMSE",
+   "unidad": "Ud",
+   "resumen": "Emergencia Normalux VIA S VMSE o equiv. 195lum h<3,5m",
+   "cantidad": 1.0,
+   "precio": 73.74,
+   "importe": 73.74,
+   "descripcion": "Suministro e instalación de alumbrado de emergencia VÍA S ref. VMSE, fabricado por Normalux. o equivalente Flujo: 195lm. Autonomía: 1h. Batería: Ni-Cd 3,6V/750mAh. Modo de funcionamiento: No permanente. Versión: Estándar. Temperatura de color: 5700K. Alimentación: 230V 50/60Hz. Potencia: 1W. Factor de potencia: 0,09. Clase: II. Modo de instalación: Adosada a techo. IP: 40. IK: 04. Hilo incandescente: 850ºC. Descripción de materiales: Cuerpo: ABS Autoextinguible. Óptica: Policarbonato. Reflector: ABS Autoextinguible. Acabado: Blanco. Dimensiones: 142x142x39mm. Peso: 0,46kg. Temperatura de trabajo: de 5ºC a 35ºC. Fabricado según la norma: UNE 60598-2-22. Instalado incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Normagrup-Normalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación Auxiliar de Emergencia CIMT",
+   "codigo": "UNUXDE300L",
+   "unidad": "Ud",
+   "resumen": "Emergencia Normalux DE-300L o equiv. 330lum h<3,5m",
+   "cantidad": 1.0,
+   "precio": 72.32,
+   "importe": 72.32,
+   "descripcion": "Suministro e instalación de alumbrado de emergencia HERMETIC ref. DE-300L Normalux o equivalente. Flujo: 330lm. Autonomía: 1h. Batería: Ni-Cd 4,8V/750mAh. Modo de funcionamiento: No permanente. Compatible con telemando S-TE. Versión: Estándar. Temperatura de color: 5700K. Alimentación: 230V 50/60Hz. Potencia: 2,2W. Factor de potencia: 0,11. Clase: II. Modo de instalación: Superficie. IP: 65. IK: 10. Hilo incandescente: 850ºC. Descripción de materiales: Base: ABS Autoextinguible. Tapabornas: Policarbonato. Difusor: Policarbonato. Óptica: Policarbonato. Junta: Caucho EPDM. Grapas: Acero Inoxidable. Acabado: Blanco. Dimensiones: 361x131x69mm. Fabricado según la norma: UNE 60598-2-22. Instalado incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Normagrup-Normalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Iluminación Auxiliar de Emergencia CIMT",
+   "codigo": "UDAIALZIRARC",
+   "unidad": "Ud",
+   "resumen": "Baliza Autónoma Alzir/A RC 230V/BT/BM/WW Daisalix o equiv. 30lum",
+   "cantidad": 39.0,
+   "precio": 66.76,
+   "importe": 2603.64,
+   "descripcion": "Suministro e instalación de alumbrado de balizamiento y señalización ref. ALZIR/A RC BT WW fabricante DAISALUX o equivalente. Flujo 30lum, Autonomia: 1h. Batería: Ni-MH 3,6V/80mAh. Modo de funcionamiento: Permanente. Tensión Alimentación 230V. Versión: Bañador de suelo color difusor bañador suelos Blanco/Vidrio Trasparente (BT) color embellecedor blanco mate (BM). Temperatura de color: 3000K en modo permanente con tensión de red Blanco Cálido (WW) y 5000K sin tensión de red. Expectativa de vida: 72.000h L70B10. Alimentación: 230V 50/60Hz. Potencia: 0,2W. Clase: II. Modo de instalación: Empotrable. IP: 65. IK: 07. Dimensiones: 65x65x63mm, diámetro: 65mm. Fabricado según la norma: EN 60598-1. Incluido caja de empotrar redonda IP66 IK07 KE Alzir R. Instalada incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Daisalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Extractción, Ventilación y Renovación Aire CIMT",
+   "codigo": "USYP521040150",
+   "unidad": "Ud",
+   "resumen": "Extractor SILENT-100-CRZ o equiv. 95m3/h 8W 2100rpm Clase II/IP4",
+   "cantidad": 1.0,
+   "precio": 125.5,
+   "importe": 125.5,
+   "descripcion": "Suministro e instalación de extractor helicoidal extraplano S&P Modelo SILENT-100-CRZ o equivalente con temporizador incorporado 1-30min, con caudal aproximado de 95 m3/h, motor 8W 230V-50Hz 2100rpm, IP44 (1), Clase II/IP45, con protector térmico, para trabajar a temperaturas de hasta 40°C p.p. medios de fijación y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Sist. Alimentación Ininterrumpida y Estabilizador Tensión CIMT",
+   "codigo": "U6B5AB000001",
+   "unidad": "Ud",
+   "resumen": "Sistema de Alimentación Ininterrumpida SAI 4kVA/4kW-230V I+N",
+   "cantidad": 1.0,
+   "precio": 3261.98,
+   "importe": 3261.98,
+   "descripcion": "Suministro e instalación de sistema de alimentación ininterrumpida SAI marca SALICRU o equivalente modelo SLC-4000-TWIN PRO3 de tecnología On-Line doble conversion sin transformador, formato torre de medidas FxAnxAl mm 589x225x452mm, compuesto por rectificador con corrector de factor de potencia (PFC), cargador de baterías, ondulador/inversor con tecnología PWM, bypass automático e interface de comunicación USB / RS232 / Ethernet RJ45. Entrada monofásica de red F+N 230V y Salida monofásica a euipos F+N 230V, sección cableado entrada 3G10mm2 RZ1-K 0,6/1kV y salida 3G6mm2 RZ1-K 0,61kV según tablas de fabricante, factor de potencia de salida 0,9, factor de potencia de entrada superior a 0,99, distorsión armónica de corriente de entrada THDi<5% y distorsión armónica en tensión THDv<5%, eficiencia a plena carga 95%<e<98% y autonomía al 75% de la carga de 18min. Incluido conmutador de by-pass manual integrado. Incluido p.p. medios auxiliares e incluido p.p. para 1/3 equipos Salicrú de la puesta en marcha en coordinación con el SAT del fabricante LABELSAT con asistencia exclusiva y gastos de desplazamiento incluidos. Totalmente conectado y en funcionamiento. 3 años de Garantía según fabricante Salicrú o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMT > Sist. Alimentación Ininterrumpida y Estabilizador Tensión CIMT",
+   "codigo": "U606IA050390",
+   "unidad": "Ud",
+   "resumen": "Sistema Estabilizador Tensión IV 9kkVA/9kW-230/400V III+N",
+   "cantidad": 1.0,
+   "precio": 4589.38,
+   "importe": 4589.38,
+   "descripcion": "Sumimistro e instalación de sistema de estabilización de tensión electrónico sin transformador, foramto torre medidas 630x390x520mm, marca SALICRU o equivalente modelo RET 9-4 trifásico estandar entrada 3x400V+N +/-15% / salida 3x400V + N, con regulación independiente por fase, p.p. integración de protección por máxima y mínima tensión con rearme manual o automático (desconexión de salida para tensión fuera de márgenes), protección de sobrecarga integrada máx. admisible 200% durante 1 min, rendmiento superior al 97%, regulación ultrarápida con velocidad de respuesta inferior a 100ms, THDv 0% no introduce armónicos ni altera el factor de potencia de la instalación, inmune a armónicos de tensión de línea, estabilización en base al verdadero valor eficaz rms, incluido p.p. para 1/3 equipos Salicrú de la puesta en marcha en coordinación con el SAT del fabricante LABELSAT con asistencia exclusiva y gastos de desplazamiento incluidos. Totalmente conectado y en funcionamiento. 1 año de Garantía según fabricante Salicrú o equivalente."
+  },
+  {
+   "capitulo": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMe",
+   "codigo": "D27TT001T",
+   "unidad": "Ud",
+   "resumen": "Tasas Expediente Instalaciones Dirección General Industria",
+   "cantidad": 1.0,
+   "precio": 60.87,
+   "importe": 60.87,
+   "descripcion": "Ud. Aproximación Tasas de los expedientes de autorizaciones sectoriales ante la Dirección General de Indústria de la Comunidad Autónoma, registro telemático de expediente nueva instalación: eléctrica de obligado cumplimiento, para la obtención de la autorización de la puesta en servicio de la isntalación tramitada o autorización sectorial."
+  },
+  {
+   "capitulo": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMe",
+   "codigo": "D27TT002TCIMe",
+   "unidad": "Ud",
+   "resumen": "Tasas Derechos Extensión, Acceso y Enganche (si procede)",
+   "cantidad": 1.0,
+   "precio": 1170.68,
+   "importe": 1170.68,
+   "descripcion": "Ud. Aproximación Tasas por kW de potencia solicitada/ampliada y contratada con la Compañía Distribuidora Endesa e-Distribución y Comercializadora para el suministro al edificio desde sus redes de distribución, incluido derechos de extensión a 17,37€/kW sin IVA, derechos de acceso 19,70€/kW sin IVA y derechos de enganche y verificación si procede cuota fija 9,04476€ para la contratación final de la potencia aconsejada 43,647kW. Dado que existe contrato vigente existente referenciado al Núm. de CUPS ES0031500008659002MS0F con una potencia contratada actual de 15,1kW, se aplica la relación diferencial de 43,647kW versus 15,10kW resultando un diferencial de 28,547kW en concepto general de derecho de acometida que consiste en el sumatorio de la cuota de derechos de extensión más los derechos de acceso."
+  },
+  {
+   "capitulo": "Cap. A Tramitaciones y Tasas Exp. Instalaciones CIMe",
+   "codigo": "D27TT003T",
+   "unidad": "kW",
+   "resumen": "Inspección E.C.A. Local Pública Concurrencia",
+   "cantidad": 43.647,
+   "precio": 16.21,
+   "importe": 707.52,
+   "descripcion": "Ud. Gastos Inspección inicial por E.C.A. (Entidad de Control Autorizada) para instalación de BT de local publica concurrencia, incluido certificado de entidad inspectora."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Reforma Instalaciones Enlace Existentes CIMe",
+   "codigo": "IECPM020CIMe",
+   "unidad": "Ud",
+   "resumen": "CPM Módulo Lectura Indirecta Trafos de Corriente 100/5A",
+   "cantidad": 1.0,
+   "precio": 1535.3,
+   "importe": 1535.3,
+   "descripcion": "Suministro e instalación de CPM Caja de Protección y Medida conformada por equipo de protección y medida de lectura indirecta con transformadores incluidos 100/5A para suministro trifásico, incluido seccionador en carga de 160A bloqueable con candado para evitar sabotaje, incluido regletas de verificación, portafusibles BUC-00 Cahors o equiv. Ref. 0276229-03, incluido p.p. 6ud fusibles NH-00 125A/690V, 3ud para CGP y 3ud CPM, p.p. de embarrados de cobre para los trafos de lectura de corriente y p.p. módulo módem con aparamenta exigida según normas de compañía distribuidora, conjunto ejecutado de forma modular formado por envolventes aislante de clase térmica A según UNE-EN 60085, comportamiento al fuego según UNE-EN60695-2-11 clasificada con 650º y grado de protección IP43 según UNE 20324 ee IK09 según UNE-EN 501002 y precintables, medidas 670x1440mm instalada a 250mm respecto del suelo ejecutada según figura 16 de la NRZ103 (edición 6.1 de 03-2024) de la copañía distribuidora. Elementos descritos Totalmente montados e instalados y conectados."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Reforma Instalaciones Enlace Existentes CIMe",
+   "codigo": "U20216909",
+   "unidad": "Ml",
+   "resumen": "Acometida General Alimentación 3x50mm2AL+1x54,6mm2Alm RZ 0,6/1kV",
+   "cantidad": 7.0,
+   "precio": 58.03,
+   "importe": 406.21,
+   "descripcion": "Suministro e instalación de Acometida General de Alimentación Aérea, aislada RZ 0,6/1 KV de 3x50mm2Al+1x54,6mm2Alm de conductor de aluminio Imàx 150A, canalizada en tubo D75mm y cajeada en obra EI30 o canal equivalente 150x60mm en pared vertical desde CGP existente hasta conexión aérea en fachada ubicada entre 3m y 3,5m, p.p. terminales correspondientes 50mm2, incluido p.p. medios auxiliares. Previa desconexión y retirada de fusibles actualmente existenttes en CGP: Totalmente conectada, montada e instalada."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Reforma Instalaciones Enlace Existentes CIMe",
+   "codigo": "IETT020CIMe",
+   "unidad": "Ml",
+   "resumen": "Red de toma de tierra 35mm2 Ra<80Ohms CIMe",
+   "cantidad": 15.0,
+   "precio": 45.45,
+   "importe": 681.75,
+   "descripcion": "Suministro e instalación y mejora de la Red de toma de tierra en zona entrada exterior con objeto de mejorar el valor existente actual a un valor inferior a 80 Ohms, conexión a la actualmente existente con previsión inicial y ejecución con 5ml de conductor de cobre desnudo de 35mm2, p.p. 3ud electrodos/picas, p.p. caja seccionadora y p.p. pequeño material abrazadera y 1ud caja seccionadora de TT PNZ-CST-50 o equivalente. Incluido p.p. medios auxiliares y p.p. alquiler maquinaria perforadora. Nota 1: Finalizada su ejecución y antes de pavimentar se medirá su valor y se comunicará a la dirección facultativa, de ser acorde al objetivo se procederá a pavimentar y hormigonar las zanjas levantadas previamente, en caso contrario se adoptarán soluciones alternativas a pie de obra con el fin de obtener el valor objetivo. Totalmente conectada, montada e instalada."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Reforma Instalaciones Enlace Existentes CIMe",
+   "codigo": "UEND00001",
+   "unidad": "Ud",
+   "resumen": "Cajetin Endesa Custodia Llave Acceso",
+   "cantidad": 1.0,
+   "precio": 169.88,
+   "importe": 169.88,
+   "descripcion": "Suministro e Instalación de bombín/cajetín homologado por la compañia distribuidora para la custodia de llaves con cerradura de seguridad y medidas 100xD50mm, p.p. de instalación encastada en zona fachada exterior del acceso del edificio por parte de la empresa constructora previamente suministrado por la empresa instaladora. Nota 1: Antes de colocar el bombin/cajetín cuya llave únicamente está en manos de distribuidora debe disponerse dentro del mismo una copia de la llave definitiva de la cancela o puerta de acceso exterior, se rcomienda su instalación posterior a la instalación de la cancela o puerta exterior definitiva con copia de llave definitiva antes del encastado. Totalmente montado e instalado con la llave exterior de acceso en el interior del cajetín."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Derivacion Individual CIMe",
+   "codigo": "UGC20302971",
+   "unidad": "Ud",
+   "resumen": "Derivación Individual SZ1-K (AS+)0,6/1kV 4x50mm2",
+   "cantidad": 4.5,
+   "precio": 103.11,
+   "importe": 464.0,
+   "descripcion": "Suministro e instalación de circuito eléctrico de Derivación Individual según RD842/2002 en canalización superficial D75mm y cajeada en obra EI30 o canal equivalente, realizado con conductores de cobre unipolares aislados 0,6/1kV tipo Segur Foc SZ1-K de seguridad aumentada AS+ 1x50mm2, color naranja de aislamiento de compuesto termoestable o cinta de Mica + Polietileno reticulado (XLPE) y cubierta de poliolefina, temperatura máxima del conductor 90ºC, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos 3 activos + neutro, incluido p.p. terminales de conexión bimetálicos para tramo LGA CGP-CPM 50mm2 M12 y CPM a Cuadro General con terminales de pala ancha de 50mm2 incluido p.p. medios auxiliares. Totalmente conectada, montada e instalada."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Cuadros Eléctricos CIMe",
+   "codigo": "UQGCIMe",
+   "unidad": "Ud",
+   "resumen": "Cuadro Gereral QG 86,602kW",
+   "cantidad": 1.0,
+   "precio": 8092.24,
+   "importe": 8092.24,
+   "descripcion": "Suministro e instalación de Cuadro General 86,602kW, conformado por armario mural metálico Hager serie Quadro 5 o equivalente de medidas 1100x700x260mm con capacidad efectiva de 120 polos distribuido en 1 fila para aparamenta de caja moldeada con bastidores 300x600mm de 24 polos/fila y 4 filas para aparamenta modular distribuida en bastidores de carril din 150x600mm de 24 polos/fila y 2ud tapas ciega de 150mm y 50mm respectivamente y 1ud módulo carril din regulable de 150x500mm para niveles de bornero inferior, p.p. bornas viking o equivalente 6mm2/35mm2/50mm2 includo tapas de separación, p.p. canales pasacables con tapa verticales laterales de 60x80mm, p.p. soportes de canal y placa toma de tierra 500mm en la parte inferior, puerta ciega 1110x700mm con cerradura por llave, p.p. pequeño material puntera hueca preaislada y p.p. cableado interior 25mm2-16mm2-10mm2-4mm2-2,5mm2-1,5mm2, p.p. distribuidor 4 polos Hager o equivalente Ref. KJ125B de 125A y aparamenta de protecciones contra sobretensiones permanentes y transitorias, protecciones magnetotérmicas, protecciones diferenciales, interruptores test emergencias ejecutado según esquemas unifilares de proyecto marca Hager o equivalente en cuanto a aparamenta general y marca Cirprotec o equivalente en cuanto a protecciones contra sobretensiones permanentes y transitorias. Incluido p.p. medios auxiliares. 3 años de garantía según fabricante Hager o equivalente y 2 años de garantía según fabricante Cirprotec o equivalente. Nota 1: Se prestará especial atención a los calibres de magnetotérmicos reducidos en amperes versus capacidad máxima de sección de cable asociado, ello se debe a la combinación de 2 o 3 o 4 circuitos en una misma canalización. No se admitirán calibres de magnetotérmicos superiores a los dispuestos en proyecto. Nota 2: Se prestará especial atención a los puentes interiores de cuadro, la sección de cable siempre será acorde a la protección o calibre de protección magnetotérmica aguas abajo de la misma. Por ejemplo, No se admitirán secciones de cable de 1,5mm2-2,5mm2-4mm2-6mm2-10mm2-16mm2 que salgan del distribuidor principal idem para el resto de casos en cascada de arriba abajo en el contexto de niveles de proteción a sociados a cada sección. Nota 3: La dirección facultativa deberá revisar la recepción del cuadro general acorde esquemas unifilares y acorde las notaciones prescritas ejecutado según planos de proyecto, totalmente cableado, conexionado y rotulado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Cuadros Eléctricos CIMe",
+   "codigo": "USQEVENT",
+   "unidad": "Ud",
+   "resumen": "Subcuadro Eventos SQEV 22,17kW",
+   "cantidad": 1.0,
+   "precio": 1841.03,
+   "importe": 1841.03,
+   "descripcion": "Suministro e instalación de subcuadro para eventos ubicado en nicho de obra en fachada hueco 600x400x200mm, en volvente de cuadro mural serie Dominio IP66 mecanizado para 6 tomas 16 polos de medidas 328x550x140mm marca SCAME o equivalente Modelo Ref. 672.5616, estructura circuital en formato trifásico con una potencia máxima admisible de 22,17kW, conformado por aparamenta Hager o equivalente suministrado con: protección automática magnetotérmica y diferencial general 32A 4P curva C 6kA y sensibilidad diferencial 30mA, acoplado a bobina de mínima tensión 230V maniobrada por paro de emergencia incluida seta de emergencia homologada, incluido p.p. protecciones magnetotérmicas: 1ud de 16A Curva C 6kA IV , 1ud de 16A Curva C 6kA III y 3ud estrecho 16A 6kA I+N, conexionadas respectivamente a 1ud Toma Trifásica III+N+TT 16A/400V, 1ud Toma Trifásica III+TT 16A/400V y 3ud Tomas Monofásicas II 16A/230V. Incluido p.p. puerta con marco y bisagras de acero inox con garras anclaje para forrar en piedra según acabado actual fachada en su cara exterior de medidas 400x600 incluida cerradura núm. 4 de Endesa Distribuidora y p.p. partida alzada trabajos de formación de nicho de obra medidas libres 600x400x200mm Incluido p.p. medios auxiliares, totalmente montado, conectado e instalado. 3 años de garantía según fabricante protecciones Hager o equivalente. Nota 1: No se admitirán calibres de magnetotérmicos superiores a los dispuestos en proyecto. Nota 2: Se prestará especial atención a los puentes interiores de cuadro, la sección de cable siempre será acorde a la protección o calibre de protección magnetotérmica aguas abajo de la misma. Nota 3: La dirección facultativa deberá revisar la recepción del cuadro general acorde esquemas unifilares y acorde las notaciones prescritas ejecutado según planos de proyecto, totalmente cableado, conexionado y rotulado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Cuadros Eléctricos CIMe",
+   "codigo": "USQPB",
+   "unidad": "Ud",
+   "resumen": "Subcuadro Planta Baja SQPB 69,282kW",
+   "cantidad": 1.0,
+   "precio": 10215.56,
+   "importe": 10215.56,
+   "descripcion": "Suministro e instalación de Subcuadro Planta Baja en Patinillo Instalaciones de 69,282kW, conformado por armario mural metálico Hager serie Quadro 5 o equivalente de medidas 1410x700x260mm con capacidad efectiva de 168 polos distribuido en 1 fila para aparamenta de caja moldeada con bastidores 300x600mm de 24 polos/fila y 6 filas para aparamenta modular distribuida en bastidores de carril din 150x600mm de 24 polos/fila y 2ud tapas ciega de 150mm y 50mm respectivamente y 1ud módulo carril din regulable de 150x500mm para niveles de bornero inferior, p.p. bornas viking o equivalente 6mm2/35mm2 includo tapas de separación, p.p. canales pasacables con tapa verticales laterales de 60x80mm, p.p. soportes de canal y placa toma de tierra 500mm en la parte inferior, puerta ciega 1410x700mm con cerradura por llave, p.p. pequeño material puntera hueca preaislada y p.p. cableado interior 25mm2-16mm2-10mm2-4mm2-2,5mm2-1,5mm2, p.p. distribuidor 4 polos Hager o equivalente Ref. KJ100A de 100A y aparamenta de protecciones contra sobretensiones permanentes y transitorias, protecciones magnetotérmicas, protecciones diferenciales, interruptores test emergencias ejecutado según esquemas unifilares de proyecto marca Hager o equivalente en cuanto a aparamenta general y marca Cirprotec o equivalente en cuanto a protecciones contra sobretensiones permanentes y transitorias. Incluido p.p. medios auxiliares. 3 años de garantía según fabricante Hager o equivalente y 2 años de garantía según fabricante Cirprotec o equivalente. Nota 1: Se prestará especial atención a los calibres de magnetotérmicos reducidos en amperes versus capacidad máxima de sección de cable asociado, ello se debe a la combinación de 2 o 3 o 4 circuitos en una misma canalización. No se admitirán calibres de magnetotérmicos superiores a los dispuestos en proyecto. Nota 2: Se prestará especial atención a los puentes interiores de cuadro, la sección de cable siempre será acorde a la protección o calibre de protección magnetotérmica aguas abajo de la misma. Por ejemplo, No se admitirán secciones de cable de 1,5mm2-2,5mm2-4mm2-6mm2-10mm2 que salgan del distribuidor principal idem para el resto de casos en cascada de arriba abajo en el contexto de niveles de proteción a sociados a cada sección. Nota 3: La dirección facultativa deberá revisar la recepción del cuadro general acorde esquemas unifilares y acorde las notaciones prescritas ejecutado según planos de proyecto, totalmente cableado, conexionado y rotulado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Cuadros Eléctricos CIMe",
+   "codigo": "USQSAI",
+   "unidad": "Ud",
+   "resumen": "Subcuadro SAI Planta Baja SQSAI 55,425kW",
+   "cantidad": 1.0,
+   "precio": 8369.56,
+   "importe": 8369.56,
+   "descripcion": "Suministro e instalación de Cuadro SAI 55,425kW, conformado por armario mural metálico Hager serie Quadro 5 o equivalente de medidas 1100x700x260mm con capacidad efectiva de 120 polos distribuido en 1 fila para aparamenta de caja moldeada con bastidores 300x600mm de 24 polos/fila y 4 filas para aparamenta modular distribuida en bastidores de carril din 150x600mm de 24 polos/fila y 2ud tapas ciega de 150mm y 50mm respectivamente y 1ud módulo carril din regulable de 150x500mm para niveles de bornero inferior, p.p. bornas viking o equivalente 6mm2/35mm2/50mm2 includo tapas de separación, p.p. canales pasacables con tapa verticales laterales de 60x80mm, p.p. soportes de canal y placa toma de tierra 500mm en la parte inferior, puerta ciega 1110x700mm con cerradura por llave, p.p. pequeño material puntera hueca preaislada y p.p. cableado interior 25mm2-16mm2-10mm2-4mm2-2,5mm2-1,5mm2, conmutador maniobra 80A SAI-RED integrado, p.p. distribuidor 4 polos Hager o equivalente Ref. KJ100A y aparamenta de protecciones contra sobretensiones permanentes y transitorias, protecciones magnetotérmicas, protecciones diferenciales, interruptores test emergencias ejecutado según esquemas unifilares de proyecto marca Hager o equivalente en cuanto a aparamenta general y marca Cirprotec o equivalente en cuanto a protecciones contra sobretensiones permanentes y transitorias. Incluido p.p. medios auxiliares. 3 años de garantía según fabricante Hager o equivalente y 2 años de garantía según fabricante Cirprotec o equivalente. Nota 1: Se prestará especial atención a los calibres de magnetotérmicos reducidos en amperes versus capacidad máxima de sección de cable asociado, ello se debe a la combinación de 2 o 3 o 4 circuitos en una misma canalización. No se admitirán calibres de magnetotérmicos superiores a los dispuestos en proyecto. Nota 2: Se prestará especial atención a los puentes interiores de cuadro, la sección de cable siempre será acorde a la protección o calibre de protección magnetotérmica aguas abajo de la misma. Por ejemplo, No se admitirán secciones de cable de 1,5mm2-2,5mm2-4mm2-6mm2-10mm2 que salgan del distribuidor principal idem para el resto de casos en cascada de arriba abajo en el contexto de niveles de proteción a sociados a cada sección. Nota 3: La dirección facultativa deberá revisar la recepción del cuadro general acorde esquemas unifilares y acorde las notaciones prescritas ejecutado según planos de proyecto, totalmente cableado, conexionado y rotulado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Cuadros Eléctricos CIMe",
+   "codigo": "USQPS",
+   "unidad": "Ud",
+   "resumen": "Subcuadro Planta Sótano SQPS 11,085kW",
+   "cantidad": 1.0,
+   "precio": 1015.67,
+   "importe": 1015.67,
+   "descripcion": "Suministro e instalación de Subcuadro Planta Sotano en cuarto técnico 11,085kW, conformado cuadro de superfície serie Vector Hager o equivalente medidas 427x310x151mm con capacidad efectiva 24 polos distribuido en 2 filas de 12 polos, p.p. bornas viking o equivalente 6mm2 includo tapas de separación, p.p. pequeño material puntera hueca preaislada y p.p. cableado interior 2,5mm2-1,5mm2, p.p. aparamenta de protecciones magnetotérmicas, protecciones diferenciales, interruptores test emergencias ejecutado según esquemas unifilares de proyecto marca Hager o equivalente en cuanto a aparamenta general y marca Cirprotec o equivalente en cuanto a protecciones contra sobretensiones permanentes y transitorias. Incluido p.p. medios auxiliares. 3 años de garantía según fabricante Hager o equivalente. Nota 1: No se admitirán calibres de magnetotérmicos superiores a los dispuestos en proyecto. Nota 2: Se prestará especial atención a los puentes interiores de cuadro, la sección de cable siempre será acorde a la protección o calibre de protección magnetotérmica aguas abajo de la misma. Nota 3: La dirección facultativa deberá revisar la recepción del cuadro general acorde esquemas unifilares y acorde las notaciones prescritas ejecutado según planos de proyecto, totalmente cableado, conexionado y rotulado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Superficie y Cajas Conexiones CIMe",
+   "codigo": "UGEWDX25720",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 20mm 4321",
+   "cantidad": 38.0,
+   "precio": 15.43,
+   "importe": 586.34,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 20mm categoria 4321, incluido p.p. racord tubo-caja D20mm y p.p. manguito unión tubo rígido a tubo empotrado D20mm, p.p. curva IP67 D20mm, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Superficie y Cajas Conexiones CIMe",
+   "codigo": "UGEWDX25725",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 25mm 4321",
+   "cantidad": 5.0,
+   "precio": 20.31,
+   "importe": 101.55,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 25mm categoria 4321, incluido p.p. racord tubo-caja D25mm y p.p. manguito unión tubo rígido a tubo empotrado D25mm, p.p. curva ejecutada a medida con secador industrial, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Superficie y Cajas Conexiones CIMe",
+   "codigo": "UGEWDX25725",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 25mm 4321",
+   "cantidad": 1.0,
+   "precio": 20.31,
+   "importe": 20.31,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 25mm categoria 4321, incluido p.p. racord tubo-caja D25mm y p.p. manguito unión tubo rígido a tubo empotrado D25mm, p.p. curva ejecutada a medida con secador industrial, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Superficie y Cajas Conexiones CIMe",
+   "codigo": "UGEWDX25732",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo PVC rígido Gewiss o equiv. 32mm 4321",
+   "cantidad": 10.015,
+   "precio": 20.4,
+   "importe": 204.31,
+   "descripcion": "Suministro e instalación de tubo rígido para ejecución superficial realizado con tubo Gewiss o equivalente diámetro 32mm categoria 4321, incluido p.p. racord tubo-caja D32mm y p.p. manguito unión tubo rígido a tubo empotrado D32mm, p.p. curva IP67 D32mm, p.p. pequeño material y p.p. medios auxiliares. Totalmente racorizado, montado e instalado. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Superficie y Cajas Conexiones CIMe",
+   "codigo": "U94559",
+   "unidad": "Ml",
+   "resumen": "Bandeja portacables OMEGA o equivalente - 300x100mm",
+   "cantidad": 12.0,
+   "precio": 37.23,
+   "importe": 446.76,
+   "descripcion": "Suministro e instalación de Bandeja portacables y Tapa final OMEGA - 300x100 - Lisa - Gris RAL7030, p.p. pequeño material y pp medios auxiliares. Totalmente racorizado, montado e instalado."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Superficie y Cajas Conexiones CIMe",
+   "codigo": "USOL815",
+   "unidad": "Ud",
+   "resumen": "Caja Estanca 100x100x55mm",
+   "cantidad": 7.0,
+   "precio": 12.33,
+   "importe": 86.31,
+   "descripcion": "Suministro e instalación de caja conexiones estanca con paredes lisas IP65 IK07 precintables y libre de halógenos. Normativa aplicable: UNE EN 60 670, tipo Solera o equivalente de medidas 100x100x55mm, incluido p.p. racord pensa estopa D20mm para salida de cables o racord tubo caja D32mm para interconexión y p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "UAISCAN16CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D16mm",
+   "cantidad": 542.9,
+   "precio": 3.61,
+   "importe": 1959.87,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 16mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "UAISCAN20CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D20mm",
+   "cantidad": 1182.7,
+   "precio": 3.67,
+   "importe": 4340.51,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 20mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "UAISCAN25CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D25mm",
+   "cantidad": 711.24,
+   "precio": 3.87,
+   "importe": 2752.5,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 25mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "UAISCAN32CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D32mm",
+   "cantidad": 305.7,
+   "precio": 4.38,
+   "importe": 1338.97,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 32mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "UAISCAN40CR",
+   "unidad": "Ml",
+   "resumen": "Canalización Tubo AISCAN-CR o Equivalente D40mm",
+   "cantidad": 245.8,
+   "precio": 4.96,
+   "importe": 1219.17,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo AISCAN-CR o equivalente, clase 2221 según EN 50086-1 y características dimensionales según UNE-EN 61386-22, de color negro y diámetro 40mm, no propagador de llama, totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "U126100050",
+   "unidad": "Ml",
+   "resumen": "Canalización ULTRA-TP o Equivalente D50mm",
+   "cantidad": 20.0,
+   "precio": 6.75,
+   "importe": 135.0,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo Ultra-TP o equivalente, clase ligero 250N, fabricado en Polietileno (libre de halógenos) no propagador de llama, diámetro D50mm Cumple las normas UNE-EN 61386-1 y UNE-EN 61386-24. Totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "U126100063",
+   "unidad": "Ml",
+   "resumen": "Canalización ULTRA-TP o Equivalente D63mm",
+   "cantidad": 30.0,
+   "precio": 7.62,
+   "importe": 228.6,
+   "descripcion": "Suministro e instalación de tubo para ejecución empotrada corrugado doble capa de PVC para canalizaciones empotradas ordinarias tipo Ultra-TP o equivalente, clase ligero 250N, fabricado en Polietileno (libre de halógenos) no propagador de llama, diámetro D63mm Cumple las normas UNE-EN 61386-1 y UNE-EN 61386-24. Totalmente montado e instalado incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "UHAGUK190282C",
+   "unidad": "Ml",
+   "resumen": "Canal bajo Suelo Acero cincado Hager 190x28mm o equiv.",
+   "cantidad": 34.0,
+   "precio": 60.56,
+   "importe": 2059.04,
+   "descripcion": "Suministro e instalación de canal y tapa de acero cincado DIN EN 10327 de espesor del material tapa 1,25mm y zócalo 1mm para ejecución de canalización empotrada en pavimento incluido p.p. de abrazaderas de unión, p.p. bridas de fijación cada 80cm y p.p. (2ud) de angulo vertical para terminación en caja de conexiones empotrada, este sistema de canalización es compatible el elemento de encofrado de las cajas de suelo de solución compacta. Las partes metálicas en todo su recorrido deberan quedar conectadas a toma tierra de los circuitos de uso general asociados a las cajas de suelo compactas. Incluido p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 3 años de Garantía según fabricante Hager o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "USOL5520",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar 200x160x70mm",
+   "cantidad": 37.0,
+   "precio": 12.21,
+   "importe": 451.77,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 200x160x70mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "USOL362",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar 100x100x45mm",
+   "cantidad": 32.0,
+   "precio": 7.22,
+   "importe": 231.04,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 100x100x45mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "USOL5530GW",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar T. Cartonyeso 300x150x75mm",
+   "cantidad": 14.0,
+   "precio": 29.61,
+   "importe": 414.54,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar con sistema fijación mediante garras, tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 300x150x70mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "USOL5540GW",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar T. Cartonyeso 390x150x60mm",
+   "cantidad": 4.0,
+   "precio": 36.06,
+   "importe": 144.24,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar con sistema fijación mediante garras, tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 390x150x60mm, p.p. bornas conexión, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "USOL5502",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar Comunicaciones 300x200x60mm",
+   "cantidad": 8.0,
+   "precio": 14.17,
+   "importe": 113.36,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar para cableado de comunicaciones de datos tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 300x200x60mm, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Canalizaciones Empotradas y Cajas Conexiones CIMe",
+   "codigo": "USOL5503",
+   "unidad": "Ud",
+   "resumen": "Caja Interior Empotrar Comunicaciones 300x500x85mm",
+   "cantidad": 1.0,
+   "precio": 38.8,
+   "importe": 38.8,
+   "descripcion": "Suministro e instalación de caja conexiones interior para empotrar para cableado de comunicaciones de datos tapa ciega blanca con tornillos y libre de halógenos, tipo Solera o equivalente de medidas 300x500x85mm, p.p. pequeño material y p.p. medios auxiliares, totalmente montada e instalada. 2 años de Garantía según fabricante Grupo Solera o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1656106C2G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 2x1,5mm2 (750V)",
+   "cantidad": 693.15,
+   "precio": 4.02,
+   "importe": 2786.46,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI o equivalente H07Z1-K 2x1,5 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos para maniobra (2 activo), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1656106C3G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 3x1,5mm2 (750V)",
+   "cantidad": 1745.4,
+   "precio": 4.55,
+   "importe": 7941.57,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI o equivalente H07Z1-K 3x1,5 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1656107C3G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 3x2,5mm2 (750V)",
+   "cantidad": 487.9,
+   "precio": 5.71,
+   "importe": 2785.91,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI o equivalente H07Z1-K 3x2,5 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1656108C3G",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico H07Z1-K 3x4mm2 (750V)",
+   "cantidad": 95.0,
+   "precio": 6.8,
+   "importe": 646.0,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor del edificio, realizado con conductores de cobre unipolares aislados 750V tipo Exzhellent XXI H07Z1-K 3x4 mm2, no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1992206VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 2x1,5mm2",
+   "cantidad": 78.9,
+   "precio": 3.23,
+   "importe": 254.85,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 2x1,5 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro)incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1992306VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 3x1,5mm2",
+   "cantidad": 56.0,
+   "precio": 3.79,
+   "importe": 212.24,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 3x1,5 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección)incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1992307VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 3x2,5mm2",
+   "cantidad": 144.8,
+   "precio": 5.56,
+   "importe": 805.09,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI RZ1-K 3x2,5 mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema monofásico (1 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1997508VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 5x4mm2",
+   "cantidad": 56.0,
+   "precio": 8.06,
+   "importe": 451.36,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 5x4mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1992509VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 5x6mm2",
+   "cantidad": 24.0,
+   "precio": 9.2,
+   "importe": 220.8,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI RZ1-K 5x6mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC1992111VDP",
+   "unidad": "Ml",
+   "resumen": "Circuito Eléctrico RZ1-K 0,6/1kV 1x16mm2",
+   "cantidad": 16.0,
+   "precio": 6.45,
+   "importe": 103.2,
+   "descripcion": "Suministro e instalación de circuito eléctrico para el interíor/exterior del edificio, realizado con conductores de cobre unipolares aislados 0,6/1kV tipo Exzhellent XXI RZ1-K 1x16mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos para interconexiones unipolares de potencia al aire subcuadro y receptor (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "ULSQPS5X2K5",
+   "unidad": "Ml",
+   "resumen": "Línea Subcuadro SQPS RZ1-K 0,6/1kV 5x2,5mm2",
+   "cantidad": 28.0,
+   "precio": 5.63,
+   "importe": 157.64,
+   "descripcion": "Suministro e instalación de línea principal de subcuadro SQPS ejecutada con conductor de cobre multipolar aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 5G2,5mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UGC20331998",
+   "unidad": "Ml",
+   "resumen": "Línea Subcuadro SQCI (AS+) SZ1-K (AS+) 0,6/1kV 5x1,5mm2",
+   "cantidad": 34.0,
+   "precio": 6.53,
+   "importe": 222.02,
+   "descripcion": "Suministro e instalación de línea de seguridad para subcuadro SQCI, realizado con conductores de cobre multipolares aislados 0,6/1kV tipo CPRO SEGURFOC-331 SZ1-K (AS+) 5G1,5mm2 1KV o equivalente, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifásico (3 activo,1 neutro,1 protección) y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "ULSQPB4X35",
+   "unidad": "Ml",
+   "resumen": "Línea Subcuadro SQPB 4x35mm2+1x25mm2 RZ1-K 0,6/1kV",
+   "cantidad": 40.0,
+   "precio": 46.67,
+   "importe": 1866.8,
+   "descripcion": "Suministro e instalación de línea principal de subcuadro SQPB ejecutada con conductores de cobre unipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 4x35mm2 incluido p.p. 1x25mm2 de toma tierra, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "ULSQSAI5X25",
+   "unidad": "Ml",
+   "resumen": "Línea Subcuadro SQSAI 5x25mm2 RZ1-K 0,6/1kV",
+   "cantidad": 20.0,
+   "precio": 40.27,
+   "importe": 805.4,
+   "descripcion": "Suministro e instalación de línea principal de subcuadro SQSAI ejecutada con conductores de cobre unipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 4x25mm2 incluido p.p. 1x25mm2 de toma tierra, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "ULSQEV5X10",
+   "unidad": "Ml",
+   "resumen": "Línea Subcuadro SQEV 5x6mm2 RZ1-K 0,6/1kV",
+   "cantidad": 4.015,
+   "precio": 9.2,
+   "importe": 36.94,
+   "descripcion": "Suministro e instalaciónde línea principal de subcuadro SQEV, (con ubicación pendiente de decidir entre ayuntamiento y consell), se incluye la previsión ejecutada con conductores de cobre multipolares aislados 0,6/1kV tipo Exzhellent XXI o equivalente RZ1-K 5x6mm2, aislamiento de polietileno reticulado (XLPE), no propagador de incendio, no propagador de llama, baja emisión de humos y libre de halógenos en sistema trifàsico (3 activo,1 neutro,1 protección), incluido p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "ULEG032756",
+   "unidad": "Ml",
+   "resumen": "Cable Red Datos 4p Cat 6A apantallado U/FTP",
+   "cantidad": 1719.06,
+   "precio": 2.03,
+   "importe": 3489.69,
+   "descripcion": "Suministro e instalación de cable de comunicación de red de datos, formado por cable de cobre de 4 pares trenzados apantallados (U/FTP), de categoría 6A, de la marca Legrand o equivalente, con conductor de cobre 24AWG, diámetro nominal de 0’52 mm, aislamiento de polietileno sólido con diámetro nominal de 1’05 mm. Protección de aluminio y hoja aislante de polietileno helicoidal, conductor de continuidad. Con funda de LSZH Libre de halógenos y baja emisión de humos, de diámetro externo 7mm. Totalmente montado y conexionado a puntos terminales de conexión incluido parte proporcional de conector RJ45 y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Líneas y Circuitos Eléctricos CIMe",
+   "codigo": "UCPDATEIBKNX",
+   "unidad": "Ml",
+   "resumen": "Cable Bus EIB-KNX o equivalente 1x2x0,8mm LH",
+   "cantidad": 252.1,
+   "precio": 1.07,
+   "importe": 269.75,
+   "descripcion": "Suministro e instalación de cable bus para señal/control apantallado tipo 1x2x0,8mm LH (DCA), libre de halógenos, marca GESCABLE o equivalente, para su utilización como cable de gestión del sistema de climatización del edificio u otras aplicaciones de gestión de datos, incluido p.p. medios auxiliares. Totalmente conectado y en funcionamiento."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "UGEWGW70436P",
+   "unidad": "Ud",
+   "resumen": "Seccionador Rotativo IP66 4P/32A/230-400V M. Ext. A.A.",
+   "cantidad": 1.0,
+   "precio": 74.56,
+   "importe": 74.56,
+   "descripcion": "Suministro e instalación de seccionador / interruptor industrial HP serie 37F GEWISS o equivalente para montaje en superficie exterior IP66, color maneta roja y candado en brida amarilla, de intensidad nominal 32A, número de polos 4P (4polos) y tensión nominal 230V/400V y medidas 114x114x71,5mm Ref GW70436P, p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 2 años de Garantía según fabricante Gewiss Iberica SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIM2715065IP",
+   "unidad": "Ud",
+   "resumen": "Pulsador Timbre con Piloto Luminoso 10A/250V",
+   "cantidad": 4.0,
+   "precio": 24.93,
+   "importe": 99.72,
+   "descripcion": "Suministro e instalación de pulsador timbre con indicador luminoso Serie Simon 27 Play o equivalente conformado por: 1ud Pulsador timbre y luminoso blanco Simon 27 Play, 1ud Marco 1 elemento blanco Simon 27 Play o 1ud Marco con tecla individual gris Simon Aqua IP44 o equivalente según sea en exteior o interior. Totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIM2710165",
+   "unidad": "Ud",
+   "resumen": "Interruptor Unipolar 10A/250V",
+   "cantidad": 10.0,
+   "precio": 23.18,
+   "importe": 231.8,
+   "descripcion": "Suministro e instalación de interruptor unipolar con indicador luminoso Serie Simon 27 Play o equivalente conformado por: 1ud Interruptor Unipolar con luminoso, emborn. rápido blanco Simon 27 Play, 1ud Marco 1 elemento blanco Simon 27 Play totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIM2780635",
+   "unidad": "Ud",
+   "resumen": "Aviso Acústico Timbre",
+   "cantidad": 1.0,
+   "precio": 34.45,
+   "importe": 34.45,
+   "descripcion": "Suministro e instalación de timbre/aviso acústico marca Simón o euquivalente, Marco 1 elemento, blanco Simon 27 Play o equiv. Ref. 2700610-030, 1ud Zumbador 125-220V Tono Regulable Simon 27 y p.p. caja universal de empotrar. Totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIM440009203",
+   "unidad": "Ud",
+   "resumen": "Base enchufe estanca Simon 44 IP55 16A/250V I+N+TT",
+   "cantidad": 7.0,
+   "precio": 28.67,
+   "importe": 200.69,
+   "descripcion": "Suministro e instalación de base enchufe estanca IP55 Serie Simon 44 o equivalente conformada por: 1ud Base enchufe Schuko con seguridad embor. rápido, blanco Simon 27, 1ud Marco con tapa articulada blanco Aqua, 1ud Marco 1 elemento para empotrar IP55 blanco, totalmente montado e instalado en caja empotrar universal incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODA00",
+   "unidad": "Ud",
+   "resumen": "Cjo. Modular Empotrado Tipo A.0.0 (Aviso Audiovisual)",
+   "cantidad": 3.0,
+   "precio": 67.49,
+   "importe": 202.47,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.0.0 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Adaptador doble para S27 blanco Simon 500 CIMA, 1ud Señalizador luminoso, estrecho, blanco con tapa roja Simon 27, 1ud Zumbador 125-220V Tono Regulable Simon 27. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODA01",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.0.1 (1ud Salida Cable)",
+   "cantidad": 16.0,
+   "precio": 35.82,
+   "importe": 573.12,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.0.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud adaptador para mecanismos K45 blanco, 1ud Salida cables K45 + anillas para embridar blanco Simon 500 CIMA, 1ud Placa ciega individual, blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODA02",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.0.2 (2ud Salida Cable)",
+   "cantidad": 17.0,
+   "precio": 38.27,
+   "importe": 650.59,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.0.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 2ud adaptadores para mecanismos K45 blanco, 2ud Salida cables K45 + anillas para embridar, blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODA1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.1 (2Schuko)",
+   "cantidad": 21.0,
+   "precio": 44.09,
+   "importe": 925.89,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Base doble Schuko a tornillo con led blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODA2",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo A.2 (2Schuko+2DT)",
+   "cantidad": 10.0,
+   "precio": 100.36,
+   "importe": 1003.6,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo A.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Caja empotrar de 1 módulo Simon 500 CIMA, 1ud Marco y bastidores empotrar 1 módulo blanco Simon 500 CIMA, 1ud Base doble Schuko a tornillo con led blanco Simon 500 CIMA, 2ud Placa V&D inclinada CG 1 conector cat. 6A FTP blanco Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODB2",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo B.2 (2Schuko+2SAI+PIA-II/6A/Curva-B",
+   "cantidad": 5.0,
+   "precio": 300.08,
+   "importe": 1500.4,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo B.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Cajetín de empotrar 4 módulos Simon 500 CIMA, 1ud marco para pared de empotrar y bastidores para 4 elementos dobles blanco Simon 500 Cima, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 1ud Base de enchufe schuko doble 16 A 250V con dispositivo seguridad, led y embornamiento a tornillo blanco Simon 500 Cima, 1ud Base doble Schuko a tornillo con led rojo Simon 500 CIMA , 2ud Placa de voz y datos inclinada con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODB3",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Superfície Tipo B.3 (4SAI+PIA-II/6A/Curva-B+ 2DT)",
+   "cantidad": 1.0,
+   "precio": 269.21,
+   "importe": 269.21,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo B.2 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: 1ud Cajetín de empotrar 4 módulos Simon 500 CIMA, 1ud marco para pared de empotrar y bastidores para 4 elementos dobles blanco Simon 500 Cima, 1ud Placa embellecedora para magnetotérmico de 2 elementos blanco Simon 500 Cima, 1ud Interruptor Magnetotérmico 6A/6kA-230V Hager o equivalente Ref. MBA206, Curva B, 2ud Base doble Schuko a tornillo con led rojo Simon 500 CIMA , 2ud Placa de voz y datos inclinada con guardapolvo de 1 elemento con 1 RJ45 categoría 6A FTP blanco Simon 500 Cima. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODF1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Empotrado Tipo F.1 (8SAI)",
+   "cantidad": 1.0,
+   "precio": 165.15,
+   "importe": 165.15,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo F.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, conformado por: Cajetín de empotrar 3 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar y bastidores para 4 elementos dobles blanco Simon 500 Cima, 4ud Base doble Schuko a tornillo con led, rojo Simon 500 CIMA, 3ud accesorio enlazador para 2 bases eléctricas Simon 500 CIMA. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODI",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo I Bajo Mesa (3SAI+PIA-II/6A/Curva-B)",
+   "cantidad": 16.0,
+   "precio": 277.96,
+   "importe": 4447.36,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo I según leyenda proyecto BT, en formato Bajo Mesa marca Simon o equivalente serie K45, conformado por: 1ud Soporte Ofiblock fijación individual o bajo mesa Simon Ref. KSF1, Perfil Ofiblock Plus para 6 mecanismos útiles Simon K45, 1ud Paca conector de conexión macho IEC320 placa 1 elemeto grafito Simon K45 Ref. K305A-14, 3ud Schuko Rojo embornamiento a tornillo con obturador de seguridad y piloto luminoso Simon 45, 2ud Bloque de conexión para multibases Simon 45, 1ud Placa para magnetotérmico 3 elementos grafito Simon K45 Ref. KF03-14, 1ud Int. aut. magnetotérmico serie M, 2P, 6A, curva B 6KA (Hager o equiv. Ref. MBA206) y 1ud Latiguillo de 2m conexión hembra IEC320-clavija macho Schuko Simon Ref. KTL8-14. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODJ",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo J Bajo Mesa (4Schuko+1USB+2DT)",
+   "cantidad": 16.0,
+   "precio": 238.07,
+   "importe": 3809.12,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo J según leyenda proyecto BT, en formato Bajo Mesa marca Simon o equivalente serie K45, conformado por: 1ud Soporte Ofiblock fijación individual o bajo mesa Simon Ref. KSF1, Perfil Ofiblock Plus para 6 mecanismos útiles Simon K45, 1ud Paca conector de conexión macho IEC320 placa 1 elemeto grafito Simon K45 Ref. K305A-14, 4ud Schuko Blanco emborn. tornillo, obturador de seg., piloto ind. Simon 45, 1ud Cargador USB tipo A+C 3,1A con Quickcharge 2 elementos K45 blanco, 3ud Bloque de conexión para multibases Simon 45, 1ud Placa K45 V&D plana c/guardap. con 2 conectores cat. 6 FTP, blanco, 4ml (2+2) Cable Red Datos sólido Cat6A apantallado U/FTP LSZH incluido p.p. 2ud Conector RJ45 Cat6, 1ud Latiguillo de 2m conexión hembra IEC320-clavija macho Schuko Simon Ref. KTL8-14. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODM1",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo M.1: 3 Pulsadores + 3 Interruptores con tapa",
+   "cantidad": 1.0,
+   "precio": 200.23,
+   "importe": 200.23,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo M.1 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, de maniobra de 6 puntos de iluminación general ubicado en Salida Escalera Núm. 2 Museo PS, integrado y conformado por: 1ud Cajetín de empotrar 3 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar con tapa abatible y bastidores para 3 elementos dobles blanco Simon 500 CIMA, 1ud Bombín y llave tapa caja, 6ud adaptadores para mecanismos K45 blanco, 6ud Tecla K45 para 1 mecanismo con visor transparente blanco Simon K45, 3ud Pulsador unipolar K45 16A con piloto luminoso Simon K45, 3ud Conmutador (interruptor) K45 unipolar 16A con piloto de estado Simon K45. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODM4",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo M.4: 6 Interruptores",
+   "cantidad": 1.0,
+   "precio": 177.72,
+   "importe": 177.72,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo M.4 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, de maniobra de 6 puntos de iluminación general ubicado en Oficinas PA, integrado y conformado por: 1ud Cajetín de empotrar 3 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar con tapa abatible y bastidores para 3 elementos dobles blanco Simon 500 Cima, 6ud adaptadores para mecanismos K45 blanco, 6ud Tecla K45 para 1 mecanismo con visor transparente blanco Simon K45, 6ud Conmutador (interruptor) K45 unipolar 16A con piloto de estado Simon K45. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "USIMMODM5",
+   "unidad": "Ud",
+   "resumen": "Cjto. Modular Tipo M.5: 8 Interruptores con tapa y llave",
+   "cantidad": 1.0,
+   "precio": 259.99,
+   "importe": 259.99,
+   "descripcion": "Suministro e instalación de conjunto modular Tipo M.5 según leyenda proyecto BT, en formato empotrado marca Simon o equivalente serie 500 Cima, de maniobra de 8 puntos de iluminación general ubicado en puesto Control Oficinas PB, integrado y conformado por: 1ud Cajetín de empotrar 4 módulos Simon 500 CIMA, 1ud Marco para pared de empotrar con tapa abatible y bastidores para 4 elementos dobles blanco Simon 500 Cima, 1ud Bombín y llave tapa caja, 8ud adaptadores para mecanismos K45 blanco, 8ud Tecla K45 para 1 mecanismo con visor transparente blanco Simon K45, 8ud Conmutador (interruptor) K45 unipolar 16A con piloto de estado Simon K45. Conjunto fabricado en materiales termoplásticos, autoextinguibles y libres de halógenos que garantizan la no propagación de la llama por incendio, así como la baja toxicidad en el caso de emisión de humos. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Simon SA o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Mecanismos CIMe",
+   "codigo": "UHAGBSR02MTS",
+   "unidad": "Ud",
+   "resumen": "Caja Suelo Compacta Hager o equiv. Prof. 85mm D150mm",
+   "cantidad": 16.0,
+   "precio": 254.02,
+   "importe": 4064.32,
+   "descripcion": "Suministro e instalación de caja de empotrar en suelo Hager o equivalente para una profundidad mínima de 86mm y diàmetro exterior D150mm para puesto de trabajo, compuesta por: 1ud Tapa metàlica con tubo Hager Ref BSR02MTS, 1ud Caja de instalación Hager Rer. BSR02D, 1ud Elemento de encofrado R02 h=155mm Hager Ref. SER02, 1ud placa de soporte para 2ud conectores RJ45 Keyston Cat6A FTP Hager Ref. BSM012, 2ud Conectores RJ45 Jack Keystone Cat6A, 1ud Toma shucko 45mm conexion rápida 230V/16A+TT color blanco Hager Ref WXF160B y 1ud Toma shucko 45mm conexion rápida 230V/16A+TT color rojo Hager Ref WXF160R. Incluido p.p. pequeño material, totalmente montado e instalado incluido p.p. medios auxiliares. 3 años de Garantía según fabricante Hager o equivalente. Nota: Cada punto de llegada de canalización metálica (1ud, 2ud o 3ud) debera ser sera conectada a toma tierra, con terminal redondo 2,5x6mm2 M8 y cable mínimo 6mm2 H07-K, unida a la TT del Circuito Uso General asociado a cada caja."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UBF4957",
+   "unidad": "Ud",
+   "resumen": "Aplique BLIS ROUND blanco o equivalente 15W/230V/3000K-1470lum",
+   "cantidad": 17.0,
+   "precio": 49.76,
+   "importe": 845.92,
+   "descripcion": "Suministro e instalación de foco Beneito Faure o equivalente al modelo BLIS ROUND SWITCH blanco ref. 4957, uso interior/exterior en formato redondo, proyección de haz de luz 250º descendente y lateral según orientación de 15W de potencia, alimentación Vac 220-240V / 50Hz, ángulo de apertura de iluminación 250º, índice de reproducción cromática CRI>80%, potencia lumínica 1470lum, temperatura de color ajustable 2700k-3000k-4000k (ajustada a 3000k). Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 25.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UBF4241N",
+   "unidad": "Ud",
+   "resumen": "Foco orientable int. NOX blanco o equiv. 30W/230V/3000K-2460lum",
+   "cantidad": 21.0,
+   "precio": 134.49,
+   "importe": 2824.29,
+   "descripcion": "Suministro e instalación de foco Beneito Faure o equivalente al modelo NOX SWITCH blanco ref. 4241-N, proyector direccionable led de interior para iluminación indirecta de 30W de potencia, alimentación Vac 220-240V / 50Hz, ángulo de apertura de iluminación 40º, índice de reproducción cromática CRI>94%, potencia lumínica 2460lum, temperatura de color ajustable 2700k-3000k-4000k (ajustada a 3000k), diseño que permite una amplia capacidad de rotación a 90º y un giro orientable de 355º, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 30.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UM2126X16V",
+   "unidad": "Ud",
+   "resumen": "Bañador Vertical Techo/Suelo Sa Piràmide e equiv- 16x26cm 6W/230",
+   "cantidad": 46.0,
+   "precio": 99.54,
+   "importe": 4578.84,
+   "descripcion": "Suministro e instalación de bañador vertical techo/suelo para encastar en muro Sa Piràmide o equivalente modelo M21 con hueco de abertura lumínica 26x16cm, con troquelado interior para alojar una lámpara Beneito Faure o equivalente tipo Hook GU10 bombilla LED dicroica para casquillo GU10 con 6W de potencia y una tensión nominal de 220-240V, proporciona un haz lumínico de 60º y temperatura de color de 3.000K (594 lm), con un CRI>80, acabado en blanco insertada en Aro blanco downlight circular basculante para bombilla LED GU10 Corte Ø 72 mm e incluido p.p. Kit de conexión para luminaria empotrada con casquillo gu10, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. Lámpara LED 3 años de Garantía y Lifetime: 25.000hr según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UNEX21131C1M5",
+   "unidad": "Ud",
+   "resumen": "Luminaria Lineal Lavabo 1,5ml 7,2W/24V/3000K-605lum",
+   "cantidad": 3.0,
+   "precio": 70.53,
+   "importe": 211.59,
+   "descripcion": "Suministro e instalación de luminaria lineal para espejos de lavabo de 1,5ml de largo, conformada por tira led Nexia o equivalente Modelo 21131-C de 70 leds/ml tipo 2835 y grado de protección IP66,con una potencia lumínica neta de 575 lum/m, temperatura de color 3000 K y una potencia de consumo de 4,8W/ml seccionable cada 10cm alojada en perfil acabado blanco lineal de aluminio AL6063-T5 Nexia o equivalente tipo Basic ref 15979-0150 de 150cm de largo y de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W, incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-150 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, inlcuido p.p. de soldadura con estaño del cable de conexionado dos polos 2x1,5mm2 H07Z1-K e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil y alimentación con driver led en caja conexiones tipo LEDADVANCE o equivalente de 24V/30W Ref DR-V-30W/220-240/24, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UNEX2131C0M8",
+   "unidad": "Ud",
+   "resumen": "Luminaria Lineal Lavabo 0,8ml 3,8W/24V/3000K-323lum",
+   "cantidad": 3.0,
+   "precio": 51.86,
+   "importe": 155.58,
+   "descripcion": "Suministro e instalación de luminaria lineal para espejos de lavabo de 0,8ml de largo, conformada por tira led Nexia o equivalente Modelo 21131-C de 70 leds/ml tipo 2835 y grado de protección IP66,con una potencia lumínica neta de 575 lum/m, temperatura de color 3000 K y una potencia de consumo de 4,8W/ml seccionable cada 10cm alojada en perfil acabado blanco lineal de aluminio AL6063-T5 Nexia o equivalente tipo Basic ref 15979-0150 de 100cm de largo y de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W, incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-100 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, inlcuido p.p. de soldadura con estaño del cable de conexionado dos polos 2x1,5mm2 H07Z1-K e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil y alimentación con driver led en caja conexiones tipo LEDADVANCE o equivalente de 24V/30W Ref DR-V-30W/220-240/24, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UNEX21411CM",
+   "unidad": "Ml",
+   "resumen": "Luminaria Lineal Pasamanos Escalera 7W/ml/230V/3000K-466lum/ml",
+   "cantidad": 27.88,
+   "precio": 66.73,
+   "importe": 1860.43,
+   "descripcion": "Suministro e instalación de luminaria lineal en pasamanos de escaleras, conformada por tira led Nexia o equivalente Modelo 21411-C/M de 60 leds/ml tipo 2835 y grado de protección IP65, con una potencia lumínica neta de 665 lum/ml, temperatura de color 3000 K y una potencia de consumo de 7W/ml seccionable cada 10cm, alojada en perfil acabado blanco lineal de cuerpo de aluminio AL6063-T5 Nexia o equivalente tipo Basic ref 15979-0200 de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W/ml,incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-200 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, alimentación directa a 230V F+N y conexión T.T. al perfil base. Incluido p.p. trabajos de fijación y mecanizado consistentes en corte a 45º del perfil y difusor para la formación de ángulos de 90º, inlcuido p.p. de soldadura con estaño de cable dos polos 2x1,5mm2 H07Z1-K entre tramos de tiras a 90º e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil en cambios de dirección de 90º entre tramos de tiras led cuyo largo deberá ser modulado en tramos múltiples de 10cm ajustándose al màximo a la longitud total de cada tramo de pasamanos de escalera, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 4 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UNEX21412CM",
+   "unidad": "Ml",
+   "resumen": "Luminaria Lineal Iluminación Indirecta 15W/ml/230V/3000K-998lum/",
+   "cantidad": 71.2,
+   "precio": 64.53,
+   "importe": 4594.54,
+   "descripcion": "Suministro e instalación de luminaria lineal iluminación indirecta, conformada por tira led Nexia o equivalente Modelo 21412-C/M de 120 leds/ml tipo 2835 y grado de protección IP65, con una potencia lumínica neta de 1425 lum/ml, temperatura de color 3000 K y una potencia de consumo de 15W/ml seccionable cada 10cm, alojada en perfil acabado blanco lineal de cuerpo de aluminio AL6063-T5 Nexia o equivalente tipo Gris ref 15979-8200 de dimensión interior 12,2mm y exterior 15mm, máxima potencia de disipación 20W/ml,incluido p.p. difusor opal blanco Nexia o equivalente ref. 15975-200 pérdida de luminosidad 30%, incluido p.p. tapon inicial blanco de conexión 15980-0 y tapon final blanco 15981-0, alimentación directa a 230V F+N y conexión T.T. al perfil base. Incluido p.p. trabajos de fijación, inlcuido p.p. de soldadura con estaño del cable de conexionado dos polos 2x1,5mm2 H07Z1-K e interconexión Toma Tierra 1x1,5mm2 H07Z1-K al perfil, los tramos de tiras led deberán ser modulados en tramos múltiples de 10cm ajustándose al màximo a la longitud total de cada tramo, incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 4 años de Garantía y Lifetime: 40.000hr según fabricante Nexia o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UBF567311",
+   "unidad": "Ud",
+   "resumen": "Luminaria Lineal Dual Opal Colgante 46/52W/230V/3000k-8068lum",
+   "cantidad": 2.0,
+   "precio": 660.82,
+   "importe": 1321.64,
+   "descripcion": "Suministro e instalación de luminaria lineal colgante Beneito Faure o equivalente modelo DUAL OPAL acabado en blanco Ref. 567311, doble led de interior (IP40) suspendida con iluminación superior e inferior. Longitud 2530mm potencia 46-52W/230V potencia total 98W temperatura de color 3000k con una potencia lumínica 8068lum, con un UGR<19 evita los deslumbramientos CRI>95 que reproduce fielmente los colores, proyección de luz superior e inferior. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 5 años de Garantía y Lifetime: 50.000hr y 5 años de garantía según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UBF563311",
+   "unidad": "Ud",
+   "resumen": "Luminaria Lineal Dual Opal Colgante 18/24W/230V/3000k-3458lum",
+   "cantidad": 3.0,
+   "precio": 354.8,
+   "importe": 1064.4,
+   "descripcion": "Suministro e instalación de luminaria lineal colgante Beneito Faure o equivalente modelo DUAL OPAL acabado en blanco Ref. 563311, doble led de interior (IP40) suspendida con iluminación superior e inferior. Longitud 1130mm potencia 18-24W/230V potencia total 42W temperatura de color 3000k con una potencia lumínica 3458lum, con un UGR<19 evita los deslumbramientos CRI>95 que reproduce fielmente los colores, proyección de luz superior e inferior. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 5 años de Garantía y Lifetime: 50.000hr y 5 años de garantía según fabricante Beneito Faure o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UROBLEDPANEL3",
+   "unidad": "Ud",
+   "resumen": "Downlight LEDLEDPANEL 30C 30W/230V/3000K-2300lm",
+   "cantidad": 17.0,
+   "precio": 23.53,
+   "importe": 400.01,
+   "descripcion": "Suministro e instalación de downlight LED circular marca ROBLAN Modelo LEDPANEL 30C o equivalente, de empotrar plano 30W/230V 3000K Blanco, potencia lumínica 2300lum, temperatura de color 3.000K, ángulo iluminación 120º, diámetro 300x12mm, alimentación 100-240VAc, Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de Garantía y Lifetime: 12.500hr según fabricante Roblan o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UFN1680071E10",
+   "unidad": "Ud",
+   "resumen": "Làmpara FOSCARINI GREGG Grande ON/OFF 24W/230V/2700K-2851lum",
+   "cantidad": 6.0,
+   "precio": 568.1,
+   "importe": 3408.6,
+   "descripcion": "Suministro e instalación de lámpara colgante decorativa interior marca FOSCARINI modelo GREGG Grande ON/OFF Ref. FN1680071E10 o equivalente, de cristal soplado satinado color Blanco medidas 40x47x40cm, grado de protección IP20, casquillo E27 incluida bombilla LED retrofit E27 de potencia 24W/230V, temperatura de color 2700K y potencia luminosa 2581lum índice de reproducción cromàtica CRI>80. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de Garantía según fabricante Foscarini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UFN168007E10",
+   "unidad": "Ud",
+   "resumen": "Làmpara FOSCARINI GREGG Media ON/OFF 24W/230V/2700K-2851lum",
+   "cantidad": 10.0,
+   "precio": 397.41,
+   "importe": 3974.1,
+   "descripcion": "Suministro e instalación de lámpara colgante decorativa interior marca FOSCARINI modelo GREGG Media ON/OFF Ref. FN168007E10 o equivalente, de cristal soplado satinado color Blanco medidas 26x31x26cm, grado de protección IP20, casquillo E27 incluida bombilla LED retrofit E27 de potencia 24W/230V, temperatura de color 2700K y potencia luminosa 2581lum índice de reproducción cromàtica CRI>80. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de Garantía según fabricante Foscarini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UFN168037E10",
+   "unidad": "Ud",
+   "resumen": "Lampara FOSCARINI GREGG Midi ON/OFF 12W/230V/2700K-1352lum",
+   "cantidad": 12.0,
+   "precio": 340.03,
+   "importe": 4080.36,
+   "descripcion": "Suministro e instalación de lámpara colgante decorativa interior marca FOSCARINI modelo GREGG Midi ON/OFF Ref. FN168037E10 o equivalente, de cristal soplado satinado color Blanco medidas 16x17x16cm, grado de protección IP20, casquillo E14 incluida bombilla LED retrofit E14 de potencia 12W/230V, temperatura de color 2700K y potencia luminosa 1352lum índice de reproducción cromàtica CRI>80. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de Garantía según fabricante Foscarini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UPRISIR3EM",
+   "unidad": "Ud",
+   "resumen": "Detector de Movimiento IR Priled-Pritec o equiv. SIR3EM",
+   "cantidad": 20.0,
+   "precio": 27.86,
+   "importe": 557.2,
+   "descripcion": "Suministro e instalación de detector de movimiento 360º por infrarojos IR de movimiento 360º para empotrar PRILED/PRITEC o equivalente Ref: SIR3EM, Distancia de detección 3m-12m, màxima altura de instalación: 4m, rango de detección 360º, regulación activación según luz ambiental <3 - 2000 lux, tiempo en marcha tras detección: 10s a 15min. El sensor activa la lámpara a partir de un mínimo de luz establecida por el usuario durante el tiempo programado. Incluido p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UDINREEL5LE3",
+   "unidad": "Ud",
+   "resumen": "Sistema Control Iluminación Escalera PS-PB",
+   "cantidad": 1.0,
+   "precio": 544.27,
+   "importe": 544.27,
+   "descripcion": "Suministro e instalación de sistema de control de encendido de iluminación del tramo de escalera PS-PB, el sistema se integra en su totalidad en el cuadro general conformado por los siguientes elementos: 1ud Regulador para Tira LED IGBT a final de fase DINUY o equivalente modelo RE EL5 LE3, 1ud Reloj Horario Hager o equivalente EHN011, 1ud Pulsador Hager o equivalente SVN311 y 1ud Relé Hager o equivalente ESC126 1NC+1NA. Descripción principio funcionamiento, el contacto NC del Relé se conecta a la entrada antipánico del Regulador, el Relé está controlado por el Sensor IR y en paralelo con la salida libre de potencial de la Alarma Contra Incendios. El Regulador tiene fijado un valor mínimo de iluminación entorno al 20-25%, mantiene ese nivel mientras el Sensor IR no detecte presencia en su entorno. En el momento que se detecta presencia de personas el contacto NC del Relé se abre y el Regulador conmuta la iluminación al 100%. El Interruptor Horario define el tramo horario del día donde las luces de escalera pueden quedar apagadas al 0% ( p.e. noche de 23:00h-6:00), finalmente el pulsador se utiliza para programar las funciones de operatividad y regulación del Regulador. Totalmente montado, instalado, conectado y en funcionamiento. 3 años de garantía según fabricante productos Hager o equivalente y 2 años de garantía según fabricante productos regulación Dinuy o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "UDINREEL1LE3",
+   "unidad": "Ud",
+   "resumen": "Sistema Control Regulación Iluminación General",
+   "cantidad": 1.0,
+   "precio": 555.77,
+   "importe": 555.77,
+   "descripcion": "Suministro e instalación de sistema de control regulación de iluminación indirecta propuesta sobre las estructuras de hierro existentes entre pilares, el sistema se integra en su totalidad en el cuadro general conformado por los siguientes elementos: 3ud Regulador para Tira LED IGBT a final de fase 300W DINUY o equivalente modelo RE EL1 LE3, accionado por pulsador externo ubicado en las proximidades de la salida de planta de la zona para su programación y ajuste del nivel de regulación deseado. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de garantía según fabricante Dinuy o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación General y Acento CIMe",
+   "codigo": "URSWU19",
+   "unidad": "Ud",
+   "resumen": "Relé Interruptor en Caja Empotrar Escalera",
+   "cantidad": 7.0,
+   "precio": 29.05,
+   "importe": 203.35,
+   "descripcion": "Suministro e instalación de Relé de instalación para maniobra encendido al 100% iluminación escalera, Tensión 230Vac RSW U1 (230V AC) – Schalk o equivalente – RSWU19 – 4046929601221, intensidad nominal de contacto NO y NC 13A / 230Vac, para empotrar en cja de instalaciones, medidas 43mmx43xxx18,5mm. Totalmente montado, instalado, conectado y en funcionamiento. 2 años de garantía según fabricante Schalk o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Auxiliar de Emergencia CIMe",
+   "codigo": "UNUXVSE",
+   "unidad": "Ud",
+   "resumen": "Emergencia Normalux VIA R VSE o equiv. 205lum h<3,5m",
+   "cantidad": 42.0,
+   "precio": 73.73,
+   "importe": 3096.66,
+   "descripcion": "Suministro e instalación de alumbrado de emergencia VÍA R ref. VSE Normalux o equivalente. Flujo: 205lm. Autonomía: 1h. Batería: Ni-Cd 3,6V/750mAh. Modo de funcionamiento: No permanente. Versión: Estándar. Temperatura de color: 5700K. Alimentación: 230V 50/60Hz. Potencia: 1W. Factor de potencia: 0,09. Clase: II. Modo de instalación: Empotrable. IP: 40. IK: 04. Hilo incandescente: 850ºC. Cuerpo: PC+ABS Autoextinguible. Óptica: Policarbonato. Reflector: ABS Autoextinguible. Grapas: Acero Inoxidable. Acabado: Blanco. Dimensiones: 50x50x33mm, diámetro: 50mm. Fabricado según la norma: UNE 60598-2-22. Instalado incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Normagrup-Normalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Auxiliar de Emergencia CIMe",
+   "codigo": "UNUXVMSE",
+   "unidad": "Ud",
+   "resumen": "Emergencia Normalux VIA S VMSE o equiv. 195lum h<3,5m",
+   "cantidad": 9.0,
+   "precio": 73.74,
+   "importe": 663.66,
+   "descripcion": "Suministro e instalación de alumbrado de emergencia VÍA S ref. VMSE, fabricado por Normalux. o equivalente Flujo: 195lm. Autonomía: 1h. Batería: Ni-Cd 3,6V/750mAh. Modo de funcionamiento: No permanente. Versión: Estándar. Temperatura de color: 5700K. Alimentación: 230V 50/60Hz. Potencia: 1W. Factor de potencia: 0,09. Clase: II. Modo de instalación: Adosada a techo. IP: 40. IK: 04. Hilo incandescente: 850ºC. Descripción de materiales: Cuerpo: ABS Autoextinguible. Óptica: Policarbonato. Reflector: ABS Autoextinguible. Acabado: Blanco. Dimensiones: 142x142x39mm. Peso: 0,46kg. Temperatura de trabajo: de 5ºC a 35ºC. Fabricado según la norma: UNE 60598-2-22. Instalado incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Normagrup-Normalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Auxiliar de Emergencia CIMe",
+   "codigo": "UDAIALZIRARC",
+   "unidad": "Ud",
+   "resumen": "Baliza Autónoma Alzir/A RC 230V/BT/BM/WW Daisalix o equiv. 30lum",
+   "cantidad": 72.0,
+   "precio": 66.76,
+   "importe": 4806.72,
+   "descripcion": "Suministro e instalación de alumbrado de balizamiento y señalización ref. ALZIR/A RC BT WW fabricante DAISALUX o equivalente. Flujo 30lum, Autonomia: 1h. Batería: Ni-MH 3,6V/80mAh. Modo de funcionamiento: Permanente. Tensión Alimentación 230V. Versión: Bañador de suelo color difusor bañador suelos Blanco/Vidrio Trasparente (BT) color embellecedor blanco mate (BM). Temperatura de color: 3000K en modo permanente con tensión de red Blanco Cálido (WW) y 5000K sin tensión de red. Expectativa de vida: 72.000h L70B10. Alimentación: 230V 50/60Hz. Potencia: 0,2W. Clase: II. Modo de instalación: Empotrable. IP: 65. IK: 07. Dimensiones: 65x65x63mm, diámetro: 65mm. Fabricado según la norma: EN 60598-1. Incluido caja de empotrar redonda IP66 IK07 KE Alzir R. Instalada incluyendo replanteo, accesorios de anclaje y conexionado y p.p. medios auxiliares. 3 años de Garantía según fabricante Daisalux o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Exterior Fachada PB CIMe",
+   "codigo": "UIGUS987",
+   "unidad": "Ud",
+   "resumen": "Luminaria Linaluce 27 19,1W/48Vdc/3000k-944lum",
+   "cantidad": 8.0,
+   "precio": 506.73,
+   "importe": 4053.84,
+   "descripcion": "Suministro e instalación de luminaria lineal para iluminación directa Iguzzini Modelo Lenaluce 27 o equivalente de longitud L=1511mm destinada al uso de lámparas led monocromáticas, instalada en soportes de brazo orientables L=41mm, de eficiencia lumínica 86,7lm/W y potencia 19,1W a 48Vdc, temperatura de color 3000k, ángulo de abertura 22º/60º y CRI:80, construida en cuerpo de aluminio extruido y extremos en aluminio fundido a presión con juntas de silicona, sometido a un pretratamiento multi fase de desengrasado, flúor-zirconio (capa de protección superficial) y sellado (capa nanoestructurada de silanos). Pintura acrílica líquida y cocción a 150°C para proporcionar alta resistencia a los agentes atmosféricos y a los rayos UV. Cuerpo óptico cerrado por la parte superior con apantallamiento de cristal transparente de 5 mm de espesor sellado con silicona. Incluye conector con virola roscada IP68 incoporado, la luminaria incorpora un cárter de cierre (protegido contra los rayos UV) para cubrir los cables y protegerlos de la suciedad y los rayos UV. Incluye sistema óptico Opti Beam Lens con óptica Eliptica. Tornilleria externa de de acero inoxidable A2. Incluido p.p. (1ud/2-3udluminarias) 3ud fuente alimentación regulable DALI 60W Vin 30-305Vac Vout=48Vdc, incluida p.p. cable de conexión L=5m y p.p. kit de tapones para conectores macho IP68. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. Lifetime: 100.000hr y 3 años de Garantía según fabricante Iguzzini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Exterior Fachada PB CIMe",
+   "codigo": "UIGUTRICK",
+   "unidad": "Ud",
+   "resumen": "Luminaria Trick 3,7W/230Vac/3000k-128lum",
+   "cantidad": 8.0,
+   "precio": 108.21,
+   "importe": 865.68,
+   "descripcion": "Suministro e instalación de luminaria de pared/techo Iguzzini modelo Trick o equivalente ø110mm con transformador electrónico - Warm White - Efecto hoja de luz 180º 3.7W 128lm - 3000K - Color: Gris CRI:80, destinada al uso de fuentes luminosas de LED, con óptica efecto hoja de luz 180° patentada. El producto incorpora base de soporte y apantallamiento. Base de aleación de aluminio y testeada a fosfocromatación, con doble mano de fondo y pasivación a 120 °C, esmaltado con pintura acrílica líquida a 150 °C, para garantizar una alta resistencia a los agentes atmosféricos y a los rayos UV. Óptica de material termoplástico fijada al cuerpo con un cárter de zamak. Tornilleria externa de de acero inoxidable A2. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. Lifetime: 100.000hr y 3 años de Garantía según fabricante Iguzzini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Exterior Fachada PB CIMe",
+   "codigo": "UIGUIPRO",
+   "unidad": "Ud",
+   "resumen": "Apique iPro 7,7W/230Vac/3000k-64lum",
+   "cantidad": 16.0,
+   "precio": 150.8,
+   "importe": 2412.8,
+   "descripcion": "Suministro e instalación de aplique exterior Iguzzini modelo iPro o equivalente - Led Warm - con alimentador electrónico integrado Vin = 100 - 240 Vca, óptica Lama di Luce, de potencia 7.7W, 64lum y temperatura de color 3000K, CRI mínimo: 80, cuerpo de color: Negro. Instalación en retranqueo de ventanales en planta piso primera. Construido por cuerpo óptico y tapa trasera con soporte orientable de aluminio fundido a presión esmaltado con pintura acrílica líquida acabado de alta resistencia a los agentes atmosféricos y a los rayos UV; óptica lama di luce con lente de material acrílico bicomponente y policarbonato, fijada al cuerpo óptico con silicona. Soporte de fijación orientable de aluminio pintado; incluye prensacable doble PG11 de latón niquelado, adecuado para cables de alimentación ø 6,5 - 11 mm. Tornilleria externa de de acero inoxidable A2. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. Lifetime: 100.000hr y 3 años de Garantía según fabricante Iguzzini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Iluminación Exterior Fachada PB CIMe",
+   "codigo": "UIGUPALCO",
+   "unidad": "Ud",
+   "resumen": "Palco In Out 10,9W/230Vac/3000k-703lum",
+   "cantidad": 1.0,
+   "precio": 182.73,
+   "importe": 182.73,
+   "descripcion": "Suministro e instalación de proyector exterior Iguzzini modelo Palco InOut o equivalente - Led Warm White - con alimentador electrónico integrado Vin = 100 - 240 Vca, óptica Médium, de potencia 10,9W, 703lum y temperatura de color 3000K, CRI mínimo: 80. Instalación en retranqueo de ventanales en planta piso primera palco principal. Construido por cuerpo óptico y base de aleación de aluminio EN1706AC 46100F con soporte orientable sometidos a un pretratamiento multi fase de desengrasado, flúor zircónio y sellado con capa de nanoestructura de silanos. Pintura acrílica líquida y cocción a 150ºC para proporcionar alta resistencia a agentes atmosféricos y a los rayos UV. Con cierre de cristal sódico-cálcico de 5mm de espesor y difusor cilíndrico a 45º; incluye prensacable doble PG13,5, adecuado para cables de alimentación ø 6,5 - 11 mm. Tornilleria externa de de acero inoxidable A2. Incluido tasa reciclaje RD208/2005 sobre RAEE (BOE de 26/02/2005), incluido p.p. pequeño material y p.p. medios auxiliares. Totalmente montado, instalado, conectado y en funcionamiento. Lifetime: 68.000hr y 3 años de Garantía según fabricante Iguzzini o equivalente."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "USYP521040150",
+   "unidad": "Ud",
+   "resumen": "Extractor SILENT-100-CRZ o equiv. 95m3/h 8W 2100rpm Clase II/IP4",
+   "cantidad": 5.0,
+   "precio": 125.5,
+   "importe": 627.5,
+   "descripcion": "Suministro e instalación de extractor helicoidal extraplano S&P Modelo SILENT-100-CRZ o equivalente con temporizador incorporado 1-30min, con caudal aproximado de 95 m3/h, motor 8W 230V-50Hz 2100rpm, IP44 (1), Clase II/IP45, con protector térmico, para trabajar a temperaturas de hasta 40°C p.p. medios de fijación y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "URCOVE890315",
+   "unidad": "Ud",
+   "resumen": "Extractor Mod. Inline315mm o equiv. 330W/230V -10ºC +60ºC",
+   "cantidad": 1.0,
+   "precio": 881.1,
+   "importe": 881.1,
+   "descripcion": "Suministro e instalación de extractor en línea Mod. Inline 315mm o equivalente de 330W/230V y caudal a descarga libre de 1920m3/h, punto trabajo 750m3/h y 405Pa, fabricado en carcasa de acero recubierto de polímero rellena internamente de capa aislada térmica y acústica de lana mineral de 50mm, con rodete de flujo mixto fabricado en plástico de alta calidad, grado de protección IPX4, incluido interruptor térmico incorporado, inlcuido soporte para fijar en pared o techo, preparado para trabajar a temperaturas de hasta 60°C p.p. medios de fijación y p.p. medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "UNOV50315250",
+   "unidad": "Ud",
+   "resumen": "Reducción concéntrica de D315-D250mm",
+   "cantidad": 2.0,
+   "precio": 19.22,
+   "importe": 38.44,
+   "descripcion": "Reducción concéntrica de D315-D250mm para conducto circular de acero galvanizado incluido p.p. cinta americana sellado juntas y p.p. tornilleria autoroscante. Totalmente montada y conexionada. Incluido: Colocación y fijación de las piezas especiales prefabricadas a la red de conductos."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "UNOV31190D250",
+   "unidad": "Ud",
+   "resumen": "Codo 90° conducto circular de acero galvanizado D250mm.",
+   "cantidad": 6.0,
+   "precio": 21.88,
+   "importe": 131.28,
+   "descripcion": "Suministro e instalación de Codo 90° para conducto circular de acero galvanizado, de 250mm de diámetro incluido p.p. cinta americana sellado juntas y p.p. tornilleria autoroscante. Totalmente montado y conexionado. Incluido: Colocación y fijación de las piezas especiales prefabricadas a la red de conductos."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "UNOV4250",
+   "unidad": "Ud",
+   "resumen": "Rejilla Circular Aluminio con Tela Metálica D250mm",
+   "cantidad": 2.0,
+   "precio": 60.43,
+   "importe": 120.86,
+   "descripcion": "Suministro e instalación de Rejilla Circular de aluminio con tela metàlica Novatub o equivalente D250mm, incluido p.p. cinta americana sellado juntas y p.p. tornilleria autoroscante. Totalmente montado y conexionado. Incluido: Colocación y fijación de las piezas especiales prefabricadas a la red de conductos."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "UNOV1105D250",
+   "unidad": "Ml",
+   "resumen": "Conducto circular helicoidal galvanizado D250mm e=0,5mm",
+   "cantidad": 30.0,
+   "precio": 31.44,
+   "importe": 943.2,
+   "descripcion": "Suministro e instalación de Conducto circular de pared simple helicoidal de acero galvanizado, de 250mm de diámetro y 0,5 mm de espesor, suministrado en tramos de 3 ó 5 m, para instalaciones de ventilación y extracción. Incluso accesorios de montaje y elementos de fijación, incluido p.p. cinta americana sellado juntas y p.p. tornilleria autoroscante. Totalmente montado, conexionado y probado. Incluido: Replanteo del recorrido de los conductos. Marcado y posterior anclaje de los soportes de los conductos mediante Bridas Isofónicas. Incluido Montaje y fijación de conductos y Realización de pruebas de servicio."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Extractción, Ventilación y Renovación Aire CIMe",
+   "codigo": "UDKWL3280145",
+   "unidad": "Ml",
+   "resumen": "Chimenea Modular DW-KL 32 D80/145mm",
+   "cantidad": 24.0,
+   "precio": 226.21,
+   "importe": 5429.04,
+   "descripcion": "Suministro e instalación de chimenea modular metálica sistema DW-KL32 o equivalente de diámetro interior 80mm y exterior 145mm, para evacuación de humos y gases de los productos de la combustión según Norma UNE EN 13384-1, clasificación de estabilidad e integridad al fuego EI-180 ve T600 y EI180 ho T600. Construida en doble pared fabricada en acero inoxidable interior y exterior AISI304, acabado exterior acero galvanizado / zincado: -15%, con aislamiento de Lana de roca rígida de alta densidad (120kg/m3) espesor 32mm, conexión cónica macho-hembra con abrazadera de unión 2.0, temperatura màxima de gases 600º y presión màxima 5kPa, incluido p.p. abrazaderas de fijación a pared D145mm regulables 50-80mm y p.p. abrazaderas de amarre por tornillo D145mm, p.p. de módulos rectos 22ud D80mm de 1m de longitud, p.p. módulos rectos 1ud D80mm de 0,5m de longitud, p.p. módulo recto cortable 2ud D80mm de 200-1000mm, p.p. módulo recto cortable 1ud D80mm de 200-500mm, 1ud D80mm compensador dilatación, p.p. 2ud D80mm codos a 45º, p.p. 5ud D80mm codos a 90º, p.p. terminal horizontal con rejill D80mm, p.p. adaptador conexión embridada a salida tubo de escape D80mm, p.p. 2ud D80mm placa tope, p.p. 1ud D80mm soporte de carga regulable. Incluido p.p. pequeño material y medios auxiliares."
+  },
+  {
+   "capitulo": "Cap. B Instalaciones Eléctricas CIMe > Sistema Alimentación Ininterrumpida SAI CIMe",
+   "codigo": "U699CC000003",
+   "unidad": "Ud",
+   "resumen": "SAI 15kVA/13,5kW In IV 230/400V Out I+N 230V",
+   "cantidad": 1.0,
+   "precio": 5693.76,
+   "importe": 5693.76,
+   "descripcion": "Suministro e instalación de sistema de alimentación ininterrumpida SAI marca SALICRU o equivalente modelo SLC-15000-TWIN PRO2 de tecnología On-Line doble conversion sin transformador, formato torre de medidas FxAnxAl mm 650x350x890mm, compuesto por rectificador con corrector de factor de potencia (PFC), cargador de baterías, ondulador/inversor con tecnología PWM, bypass automático e interface de comunicación USB / RS232 y USB. Entrada trifàsica de red F+F+F+N 230/400V y Salida monofásica a euipos F+N 230V, sección cableado entrada 5x16mm2 RZ1-K 0,6/1kV y salida 3x16mm2 RZ1-K 0,61kV según tablas de fabricante, factor de potencia de salida 0,9, factor de potencia de entrada superior a 0,99, distorsión armónica de corriente de entrada THDi<5% y distorsión armónica en tensión THDv<5%, eficiencia a plena carga e>93% y autonomía al 75% de la carga de 13min. Incluido conmutador de by-pass manual integrado. Incluido p.p. medios auxiliares e incluido p.p. para 1/3 equipos Salicrú de la puesta en marcha en coordinación con el SAT del fabricante LABELSAT con asistencia exclusiva y gastos de desplazamiento incluidos. Totalmente conectado y en funcionamiento. 2 años de Garantía según fabricante Salicrú o equivalente."
+  }
+ ]
+}

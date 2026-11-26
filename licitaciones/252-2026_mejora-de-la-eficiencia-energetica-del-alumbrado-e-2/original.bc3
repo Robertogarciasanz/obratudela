@@ -1,0 +1,434 @@
+~V|CYPE INGENIEROS, S.A.|FIEBDC-3/2016|ARQUIMEDES||ANSI|Presupuesto|2|
+~K|-9\2\2\3\2\2\2\2\EUR\|3\13\6\\7|2\2\\3\2\\2\2\2\-9\2\2\2\2\EUR\||
+~X||ce\Coste energético\MJ\eCO2\Emisión de CO2\kg\ler\Código LER\\m\Masa del elemento\kg\v\Volumen\m3\|
+~C|ARUCAS_2026_V3##||Mejora Efi. Energ. Alumbrado e Inst. Públicas Norte de GC. Separata Arucas.|206836.16|090626|0|
+~T|ARUCAS_2026_V3##|Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria. Separata Arucas.|
+~D|ARUCAS_2026_V3##
+|CAP01#\\1
+\CAP02#\\1
+\CAP03#\\1
+\CAP04#\\1
+\CAP05#\\1
+\CAP06#\\1
+\CAP07#\\1
+\CAP08#\\1
+\|
+~C|CAP01#||Trabajos previos y desmontajes|9263.68|090626|0|
+~T|CAP01#|Trabajos previos, desmontajes y retirada de los elementos existentes afectados por la actuación.
+
+Incluye el desmontaje de proyectores y columnas metálicas existentes, desconexión previa, medios de elevación, señalización de la zona de trabajo, carga, transporte interior, acopio temporal y traslado a gestor autorizado o punto indicado por la Dirección Facultativa, dejando la zona preparada para la ejecución de las nuevas instalaciones.|
+~D|CAP01#
+|T0101\\16
+\T0102\\4
+\|
+~C|T0101|ud|Desmontaje y retirada de proyector existente|106.33|090726|0|
+~T|T0101|Desmontaje y retirada de proyector existente instalado en columna o estructura de alumbrado deportivo.
+
+La partida incluye desconexión eléctrica previa, identificación de circuitos, desmontaje mecánico del proyector y de sus elementos de fijación, empleo de camión cesta o medio auxiliar equivalente, pequeño material, medios de seguridad, carga, transporte interior, acopio provisional y retirada del equipo desmontado para su gestión posterior. Incluso comprobación de ausencia de tensión, limpieza de la zona de trabajo y parte proporcional de medios auxiliares. Totalmente ejecutado.|
+~D|T0101
+|M01B0070\\1.098
+\M01B0080\\1.098
+\QAC0060\\0.4
+\MAT0001\\1
+\|
+~C|M01B0070|h|Oficial electricista|22.75||1|
+~C|M01B0080|h|Ayudante electricista|21.51||1|
+~C|QAC0060|h|Camión cesta|37.63|140420|2|
+~C|MAT0001|ud|Pequeño material, medios auxiliares y gestion interna de retirada de proyector|42.68|090626|3|
+~C|T0102|ud|Desmontaje de columna metalica existente de 20 m|1823.15|090726|0|
+~T|T0102|Desmontaje de columna metálica existente de 20 m de altura.
+
+Incluye preparación de la zona de trabajo, señalización y balizamiento, desconexión de elementos existentes, retirada de proyectores o accesorios remanentes, eslingado, utilización de grúa autopropulsada, camión cesta y medios de elevación necesarios, corte o liberación de anclajes, izado controlado, apeo sobre transporte, carga, retirada a zona de acopio o gestor autorizado, limpieza del emplazamiento y pequeño material. Incluso medios auxiliares, herramientas, comprobaciones previas y coordinación de seguridad. Totalmente ejecutado.|
+~D|T0102
+|M01A0010\\5.498
+\M01A0030\\5.497
+\M01B0040\\5.496
+\QAC0050\\6
+\QAC0060\\4
+\QAB0030\\2
+\MAT0002\\1
+\|
+~C|M01A0010|h|Oficial primera|23.04||1|
+~C|M01A0030|h|Peón|21.57||1|
+~C|M01B0040|h|Oficial gruísta|23.04||1|
+~C|QAC0050|h|Grúa autopropulsada de 55 t|96.12|210319|2|
+~C|QAB0030|h|Camión basculante 15 t|39.76||2|
+~C|MAT0002|ud|Medios auxiliares, corte, eslingas, senalizacion, transporte y retirada de columna|644.52|090626|3|
+~C|CAP02#||Cimentaciones existentes y anclajes|21082.34|090626|0|
+~T|CAP02#|Actuaciones sobre cimentaciones existentes y sistema de anclaje de las nuevas columnas.
+
+Comprende los trabajos de descubrimiento, limpieza, comprobación, regularización, reparación localizada, ejecución de anclajes químicos estructurales y ensayos de control, con el objeto de permitir el montaje de las nuevas columnas sobre las cimentaciones existentes, siempre condicionado a la comprobación técnica y a la aceptación por la Dirección Facultativa.|
+~D|CAP02#
+|T0201\\4
+\T0202\\1
+\T0203\\32
+\T0204\\4
+\T0205\\4
+\T0206\\4
+\T0207\\1
+\|
+~C|T0201|ud|Descubrimiento, limpieza y replanteo de cimentacion existente|490.78|090726|0|
+~T|T0201|Descubrimiento, limpieza y replanteo de cimentación existente.
+
+Incluye excavación o retirada localizada de material alrededor del dado existente cuando sea necesario, limpieza superficial, eliminación de restos sueltos, comprobación geométrica, replanteo de la nueva placa base, marcado de ejes y puntos de anclaje, medios mecánicos y manuales, pequeño material, carga de residuos y limpieza final. Incluso protección provisional de la zona de trabajo. Totalmente ejecutado.|
+~D|T0201
+|M01A0010\\1.376
+\M01A0030\\2.749
+\QAA0020\\0.5
+\MAT0004\\1
+\|
+~C|QAA0020|h|Retroexcavadora 72 kW|38.5||2|
+~C|MAT0004|ud|Pequeño material, limpieza, herramientas y medios auxiliares|380.53|090626|3|
+~C|T0202|ud|Informe y verificacion estructural de cimentaciones existentes|2513.11|090726|0|
+~T|T0202|Informe y verificación estructural de cimentaciones existentes.
+
+La partida comprende toma de datos en obra, inspección visual, comprobación dimensional, revisión de compatibilidad entre cimentación existente, placa base, anclajes y nueva columna, valoración técnica de la reutilización de la cimentación y emisión de informe o certificado de comprobación. Incluso desplazamiento, medios de medición, documentación gráfica, coordinación con la Dirección Facultativa y recomendaciones de reparación o refuerzo si proceden. Totalmente realizado.|
+~D|T0202
+|M01A0010\\10.996
+\MAT0005\\1
+\|
+~C|MAT0005|ud|Trabajos tecnicos, toma de datos, comprobacion de compatibilidad y emision de informe|2259.76|090626|3|
+~C|T0203|ud|Anclaje quimico estructural M33 o equivalente|300.34|090726|0|
+~T|T0203|Ejecución de anclaje químico estructural M33 o equivalente para fijación de columna.
+
+Incluye replanteo, perforación sobre cimentación existente con diámetro y profundidad adecuados, limpieza del taladro mediante cepillado y soplado, suministro y colocación de varilla o perno M33 o equivalente, resina química estructural, arandelas, tuercas, consumibles, control de profundidad, tiempo de curado, protección hasta el montaje y comprobación final. Incluso pequeño material, útiles, medios auxiliares y limpieza. Totalmente ejecutado conforme a prescripciones del fabricante y de la Dirección Facultativa.|
+~D|T0203
+|M01A0010\\1.028
+\M01A0030\\1.028
+\MAT0006\\1
+\|
+~C|MAT0006|ud|Varilla/perno M33, resina estructural, limpieza de taladro, utiles y consumibles|254.48|090626|3|
+~C|T0204|ud|Regularizacion con grout sin retraccion bajo placa base|383.81|090726|0|
+~T|T0204|Regularización con mortero grout sin retracción bajo placa base de columna.
+
+Incluye preparación del soporte, limpieza, humectación o imprimación si procede, encofrado perimetral, suministro y vertido de mortero grout sin retracción o equivalente, relleno bajo placa, vibrado o compactación según producto, curado, retirada de encofrado, limpieza y comprobación de apoyo uniforme. Incluso pequeño material y medios auxiliares. Totalmente ejecutado.|
+~D|T0204
+|M01A0010\\1.373
+\M01A0030\\2.061
+\MAT0007\\1
+\|
+~C|MAT0007|ud|Mortero grout sin retraccion, encofrado perimetral, curado y limpieza|307.72|090626|3|
+~C|T0205|ud|Ensayo y control de traccion de anclajes|414.13|090726|0|
+~T|T0205|Ensayo y control de tracción de anclajes.
+
+Incluye desplazamiento de equipo, preparación de puntos de ensayo, montaje de dispositivo de tracción, aplicación de carga de prueba, registro de resultados, interpretación, emisión de informe o acta de ensayo y comunicación a la Dirección Facultativa. Incluso medios auxiliares, pequeño material y reposición de la zona ensayada si procede. Totalmente realizado.|
+~D|T0205
+|M01A0010\\1.374
+\MAT0008\\1
+\|
+~C|MAT0008|ud|Equipo de ensayo, emision de resultados y certificacion de control|382.47|090626|3|
+~C|T0206|ud|Reparacion localizada de dado existente|554.65|090726|0|
+~T|T0206|Reparación localizada de dado de cimentación existente.
+
+Incluye saneado de zonas deterioradas, eliminación de material suelto, limpieza, pasivado de armaduras si aparecen, imprimación o puente de unión, reconstrucción con mortero de reparación estructural o equivalente, regularización superficial, curado y limpieza final. Incluso medios manuales, pequeño material, herramientas y gestión de residuos generados. Totalmente ejecutado.|
+~D|T0206
+|M01A0010\\2.746
+\M01A0030\\2.747
+\QAA0020\\0.3
+\MAT0009\\1
+\|
+~C|MAT0009|ud|Morteros de reparacion, pasivador, imprimacion y medios auxiliares|420.58|090626|3|
+~C|T0207|PA|Partida Alzada por posibles problemas derivados de la cimentación existente.|970.87|210522|0|
+~T|T0207|Partida alzada a justificar por posibles problemas derivados de la cimentación existente.
+
+Se destina a resolver incidencias no previsibles durante la reutilización de las cimentaciones, tales como pequeñas reparaciones adicionales, adaptaciones de apoyo, ajustes de nivelación, reposiciones puntuales o trabajos complementarios expresamente autorizados por la Dirección Facultativa. Su abono requerirá justificación documental, medición real y aprobación previa.|
+~C|CAP03#||Columnas CA-14|74409.4|090626|0|
+~T|CAP03#|Suministro y montaje de columnas metálicas tipo CA-14 de 20 m o equivalente.
+
+Incluye el conjunto de trabajos necesarios para la implantación de las nuevas columnas de alumbrado deportivo, con plataforma, accesorios de acceso y seguridad, transporte, izado, aplomado, nivelación, fijación, apriete de anclajes y comprobaciones finales.|
+~D|CAP03#
+|T0301\\4
+\T0302\\4
+\T0303\\1
+\|
+~C|T0301|ud|Suministro de columna CA-14 de 20 m actualizada por incremento de acero|15964.13|090726|0|
+~T|T0301|Suministro de columna metálica tipo CA-14 de 20 m de altura, o equivalente de prestaciones iguales o superiores, actualizada por incremento de acero.
+
+Columna para alumbrado deportivo en campo de fútbol, preparada para soportar proyectores LED de alta potencia, incluyendo fuste metálico, placa base, plataforma de mantenimiento, accesorios, escalera o sistema de acceso, sistema anticaídas cuando proceda, tratamiento anticorrosión, galvanizado/pintado según especificación, documentación técnica del fabricante, transporte a obra y descarga. Incluso elementos auxiliares necesarios para su montaje, certificados de fabricación y compatibilidad con las cargas de viento y equipos previstos. Totalmente suministrada en obra.|
+~D|T0301
+|M01A0010\\1.374
+\MAT0010\\1
+\|
+~C|MAT0010|ud|Suministro de columna CA-14 con plataforma, accesorios, escalera, anticaidas y transporte|15932.47|090626|3|
+~C|T0302|ud|Montaje, aplomado y fijacion de columna CA-14|1853.69|090726|0|
+~T|T0302|Montaje, aplomado y fijación de columna metálica tipo CA-14 de 20 m o equivalente.
+
+Incluye izado mediante grúa, posicionamiento sobre cimentación existente o sistema de anclaje ejecutado, colocación sobre placa base, nivelación, aplomado, apriete de tuercas, contratuercas y arandelas, comprobación de verticalidad, revisión de accesos, plataforma y elementos de seguridad, pequeño material, eslingas, útiles de montaje, medios auxiliares y coordinación de maniobras. Incluso limpieza final y comprobación de estabilidad. Totalmente instalada.|
+~D|T0302
+|M01A0010\\8.239
+\M01A0030\\8.239
+\M01B0040\\8.239
+\QAC0050\\6
+\QAC0060\\3
+\MAT0011\\1
+\|
+~C|MAT0011|ud|Eslingas, utillaje, pequeno material, nivelacion, apriete y medios auxiliares|606.7|090626|3|
+~C|T0303|PA|Partida Alzada por posibles problemas derivados de la instalación de las Columnas.|970.87|210522|0|
+~T|T0303|Partida alzada a justificar por posibles problemas derivados de la instalación de las columnas.
+
+Se destina a resolver incidencias puntuales durante el montaje, tales como ajustes de placa base, pequeñas adaptaciones de apoyo, reposición de elementos auxiliares, operaciones complementarias de nivelación o actuaciones no previsibles expresamente autorizadas por la Dirección Facultativa. Su abono requerirá justificación documental, medición real y aprobación previa.|
+~C|CAP04#||Luminarias y control|68555.43|090626|0|
+~T|CAP04#|Suministro, instalación, orientación y control de luminarias deportivas LED.
+
+Comprende proyectores LED deportivos de alta potencia, montaje en plataforma de columna, conexionado, orientación fotométrica, ajuste de encendidos, sistema de control y puesta en marcha, manteniendo la compatibilidad con el estudio lumínico y las necesidades funcionales del campo de fútbol.|
+~D|CAP04#
+|T0401\\16
+\T0402\\16
+\T0403\\1
+\|
+~C|T0401|ud|Suministro de luminaria LED deportiva AAA-LUX WS2506 o similar.|3252.73|090726|0|
+~T|T0401|Suministro de luminaria LED deportiva AAA-LUX WS2506 o similar de prestaciones iguales o superiores.
+
+Proyector LED deportivo de alta potencia, potencia aproximada 1.625 W, con drivers incluidos, óptica adecuada al estudio lumínico del campo de fútbol, cuerpo y disipación aptos para intemperie, grado de protección y resistencia mecánica adecuados para instalación exterior, sistema de fijación orientable, compatibilidad con regulación/control previsto y documentación técnica del fabricante. Incluso embalaje, transporte a obra, accesorios específicos de montaje y garantía del fabricante. Totalmente suministrada en obra.|
+~D|T0401
+|M01B0070\\0.275
+\MAT0012\\1
+\|
+~C|MAT0012|ud|Suministro de luminaria LED deportiva de 1625 W con drivers incluidos|3246.47|090626|3|
+~C|T0402|ud|Montaje, conexionado y orientacion de luminaria en plataforma|403.37|090726|0|
+~T|T0402|Montaje, conexionado y orientación de luminaria deportiva LED en plataforma de columna.
+
+Incluye colocación del proyector sobre soporte o bastidor, fijación mecánica, conexionado eléctrico, puesta a tierra si procede, prensaestopas, punteras, conectores, pequeño material, identificación de circuito, comprobación de aprietes, regulación de orientación conforme a replanteo fotométrico, verificación de funcionamiento y pruebas de encendido. Incluso medios de elevación, herramientas, medios auxiliares y limpieza final. Totalmente instalada, orientada y en servicio.|
+~D|T0402
+|M01B0070\\2.746
+\M01B0080\\2.746
+\QAC0060\\1
+\MAT0013\\1
+\|
+~C|MAT0013|ud|Pequeno material, conectores, fijaciones, punteras y medios auxiliares|244.2|090626|3|
+~C|T0403|ud|Suministro, instalacion y configuracion de sistema de control|8061.12|090726|0|
+~T|T0403|Suministro, instalación, configuración y puesta en marcha del sistema de control del alumbrado deportivo.
+
+Incluye Control Box 2.0 o similar, botonera, receptores RF, elementos de comunicación, cableado auxiliar, alimentación, protecciones asociadas si proceden, programación de escenas o niveles de encendido, configuración de grupos de proyectores, pruebas de mando local/remoto, comprobación de alcance, formación básica de uso y documentación final. Incluso pequeño material, rotulación, medios auxiliares y ajustes necesarios para dejar el sistema operativo.|
+~D|T0403
+|M01B0070\\10.987
+\M01B0080\\10.989
+\MAT0014\\1
+\|
+~C|MAT0014|ud|Control Box 2.0, botonera, receptores RF, configuracion y puesta en marcha|7574.8|090626|3|
+~C|CAP05#||Cuadros electricos y cableado a proyectores|23350.84|090626|0|
+~T|CAP05#|Cuadros eléctricos de columna y cableado de alimentación a proyectores.
+
+Incluye desmontaje de cuadros existentes, suministro de nuevos cuadros equipados, cableado desde cuadro a proyectores, conexionados individuales, protecciones, rotulación, pruebas eléctricas y puesta en servicio de cada conjunto.|
+~D|CAP05#
+|T0501\\4
+\T0502\\4
+\T0503\\560
+\T0504\\16
+\T0505\\1
+\|
+~C|T0501|ud|Desmontaje y retirada de cuadro electrico existente de columna|502.78|090726|0|
+~T|T0501|Desmontaje y retirada de cuadro eléctrico existente de columna.
+
+Incluye desconexión, comprobación de ausencia de tensión, identificación de circuitos, desmontaje del cuadro y elementos auxiliares, retirada de cableado obsoleto cuando proceda, pequeño material, medios auxiliares, carga, transporte interior, acopio provisional y gestión posterior. Incluso limpieza de la zona y medidas de seguridad necesarias. Totalmente ejecutado.|
+~D|T0501
+|M01B0070\\2.747
+\M01B0080\\2.747
+\MAT0015\\1
+\|
+~C|MAT0015|ud|Pequeno material, desconexion, retirada y gestion del cuadro existente|381.2|090626|3|
+~C|T0502|ud|Cuadro electrico de columna equipado IP65|3411.04|090726|0|
+~T|T0502|Suministro e instalación de cuadro eléctrico de columna equipado, con envolvente IP65 o superior, o equivalente.
+
+Incluye armario de poliéster o material adecuado para intemperie, seccionador, protecciones magnetotérmicas, diferenciales si proceden, protección contra sobretensiones, bornas, canaletas, cableado interno, prensaestopas, rotulación, esquemas, pequeño material, fijaciones y conexión a la instalación existente o nueva. Incluso montaje, conexionado, comprobaciones eléctricas, verificación de aprietes y pruebas de funcionamiento. Totalmente instalado y en servicio.
+
+Se admitirá solución equivalente que mantenga o mejore el grado de protección, seguridad eléctrica, capacidad de maniobra, selectividad y compatibilidad con los proyectores y el sistema de control previsto.|
+~D|T0502
+|M01B0070\\10.986
+\M01B0080\\10.986
+\MAT0016\\1
+\|
+~C|MAT0016|ud|Armario poliester IP65 con seccionador, protecciones, diferencial, sobretensiones, bornas, canaletas, cableado interno y rotulacion|2924.8|090626|3|
+~C|T0503|m|Cableado desde cuadro hasta proyectores|8.55|090726|0|
+~T|T0503|Cableado desde cuadro eléctrico de columna hasta proyectores.
+
+Incluye suministro y tendido de cable RZ1-K (AS) 0,6/1 kV Cu 3G2,5 mm² o sección equivalente según cálculo y protección, guiado por canalización existente o elementos de columna, fijaciones, bridas, protección mecánica en pasos singulares, identificación de conductores, pequeño material, comprobación de continuidad, aislamiento y polaridad. Incluso medios auxiliares y limpieza final. Totalmente instalado.|
+~D|T0503
+|M01B0070\\0.055
+\M01B0080\\0.055
+\MAT0017\\1
+\|
+~C|MAT0017|m|Cable RZ1-K (AS) 0,6/1 kV Cu 3G2,5 mm2, guia, fijaciones y pequeno material|6.12|090626|3|
+~C|T0504|ud|Conexionado individual de proyector|78.42|090726|0|
+~T|T0504|Conexionado individual de proyector LED deportivo.
+
+Incluye entrada de cable en proyector o caja de conexión, prensaestopas, punteras, bornes, identificación, apriete de conexiones, comprobación de polaridad, continuidad y aislamiento, verificación de funcionamiento, sellado si procede y pequeño material. Incluso medios auxiliares y pruebas finales. Totalmente ejecutado.|
+~D|T0504
+|M01B0070\\1.098
+\M01B0080\\0.275
+\MAT0018\\1
+\|
+~C|MAT0018|ud|Prensaestopas, punteras, identificacion, borneros y comprobacion de funcionamiento|47.52|090626|3|
+~C|T0505|PA|Partida Alzada por posibles problemas derivados del cambio de cuadros.|970.87|210522|0|
+~T|T0505|Partida alzada a justificar por posibles problemas derivados del cambio de cuadros.
+
+Se destina a resolver incidencias puntuales no previstas durante la sustitución de cuadros, tales como adaptación de soportes, pequeñas modificaciones de cableado, sustitución de elementos auxiliares, ajustes de protecciones o trabajos complementarios autorizados por la Dirección Facultativa. Su abono requerirá justificación documental, medición real y aprobación previa.|
+~C|CAP06#||Legalización|573.83|090626|0|
+~T|CAP06#|Legalización, documentación final y apoyo técnico a la puesta en servicio de la instalación.
+
+Incluye recopilación documental, certificados, comprobaciones, planos o esquemas finales, apoyo a tramitación y entrega de documentación de obra terminada.|
+~D|CAP06#
+|T0601\\1
+\|
+~C|T0601|ud|Legalizacion y documentacion de obra|557.12|090726|0|
+~T|T0601|Legalización y documentación final de la obra.
+
+Incluye elaboración o recopilación de documentación técnica final, esquemas eléctricos, relación de equipos instalados, certificados de materiales, certificados de instalación cuando proceda, resultados de pruebas, apoyo a la tramitación administrativa, documentación para la puesta en servicio y entrega a la Propiedad o Dirección Facultativa. Incluso copias digitales y soporte técnico hasta dejar documentada la actuación. Totalmente realizado.|
+~D|T0601
+|M01B0070\\5.245
+\M01A0010\\5.245
+\MAT0020\\1
+\|
+~C|MAT0020|ud|Documentacion final a apoyo a legalizacion|316.96|090626|3|
+~C|CAP07#||Seguridad y Salud|3871.22|090626|0|
+~T|CAP07#|Seguridad y Salud.
+
+Conjunto de medios de protección individual, protección colectiva, señalización, botiquín y mantenimiento de medidas preventivas durante la ejecución de los trabajos, especialmente por tratarse de actuaciones con medios de elevación, trabajos en altura, manipulación de columnas y trabajos eléctricos.|
+~D|CAP07#
+|SS010\\6
+\SS020\\6
+\SS030\\6
+\SS040\\4
+\SS050\\4
+\SS060\\2
+\SS070\\20
+\SS080\\4
+\SS090\\200
+\SS100\\6
+\SS110\\1
+\SS120\\20
+\|
+~C|SS010|ud|Casco de seguridad para trabajos en obra|16.61|090626|0|
+~T|SS010|Suministro de casco de seguridad para trabajos en obra, homologado, incluso ajuste, reposición si procede por deterioro imputable a la obra y parte proporcional de gestión preventiva. Totalmente disponible para su uso.|
+~D|SS010
+|D32AA0040\\1
+\|
+~C|D32AA0040|ud|Casco seguridad SH 4, Würth|16.61|231111|3|
+~C|SS020|ud|Guantes de seguridad anticorte|9.69|090626|0|
+~T|SS020|Suministro de guantes de seguridad anticorte para trabajos de manipulación de materiales, desmontajes, cableado y pequeño montaje eléctrico. Incluso reposición cuando proceda y parte proporcional de medios preventivos. Totalmente disponibles para su uso.|
+~D|SS020
+|D32AB0030\\1
+\|
+~C|D32AB0030|ud|Guantes Tigerflex anticorte, Würth|9.69|231111|3|
+~C|SS030|ud|Botas de seguridad S3|54.06|090626|0|
+~T|SS030|Suministro de botas de seguridad S3 para personal de obra, con puntera y plantilla de protección, suela antideslizante y características adecuadas a trabajos de montaje y manipulación de cargas. Totalmente disponibles para su uso.|
+~D|SS030
+|D32AC0010\\1
+\|
+~C|D32AC0010|ud|Botas Hercules S3, Würth|54.06|231111|3|
+~C|SS040|ud|Arnes anticaidas homologado|74.37|090626|0|
+~T|SS040|Suministro de arnés anticaídas homologado para trabajos en altura, compatible con línea de vida o sistema anticaídas previsto. Incluso revisión inicial, ajuste y disponibilidad en obra. Totalmente operativo.|
+~D|SS040
+|D32AE0010\\1
+\|
+~C|D32AE0010|ud|Arnés anticaídas Basic, Würth|74.37|231111|3|
+~C|SS050|ud|Equipo anticaidas con absorbedor|111.48|090626|0|
+~T|SS050|Suministro de equipo anticaídas con absorbedor, pinza y mosquetones, homologado y compatible con los trabajos en columna, plataforma y medios de elevación. Incluso revisión inicial y disponibilidad en obra. Totalmente operativo.|
+~D|SS050
+|D32AE0100\\1
+\|
+~C|D32AE0100|ud|Anticaída c/absorbedor, pinza y mosq., Würth|111.48||3|
+~C|SS060|ud|Linea de vida movil 20 m|325.7|090626|0|
+~T|SS060|Suministro de línea de vida móvil de 20 m o sistema equivalente para trabajos en altura, incluso elementos de anclaje, montaje, revisión y retirada al finalizar los trabajos. Totalmente operativa.|
+~D|SS060
+|D32AE0150\\1
+\|
+~C|D32AE0150|ud|Línea de vida movil 20 m, Würth|325.7|190221|3|
+~C|SS070|ud|Vallado metalico modular de obra|6.9|090626|0|
+~T|SS070|Suministro, colocación y retirada de vallado metálico modular de obra para delimitación de zonas de trabajo, acopios y áreas de maniobra de grúa o camión cesta. Incluso bases, uniones, recolocaciones y mantenimiento durante la obra.|
+~D|SS070
+|D32BB0040\\1
+\|
+~C|D32BB0040|ud|Valla metálica modular, tipo Ayuntamiento, de 2,50x1,10 m|6.9||3|
+~C|SS080|ud|Cartel indicativo de riesgo con soporte|53.78|090626|0|
+~T|SS080|Suministro y colocación de cartel indicativo de riesgo con soporte, para señalización preventiva de trabajos eléctricos, trabajos en altura, zona de maniobra o riesgo general de obra. Incluso retirada al finalizar los trabajos.|
+~D|SS080
+|D32CA0030\\1
+\|
+~C|D32CA0030|ud|Cartel indicativo de riesgo de PVC, con soporte metálico|53.78||3|
+~C|SS090|m|Cinta de balizamiento bicolor|1.15|090626|0|
+~T|SS090|Suministro y colocación de cinta de balizamiento bicolor para delimitación provisional de zonas de trabajo, pasos restringidos o áreas de seguridad. Incluso retirada y gestión al finalizar su uso.|
+~D|SS090
+|D32CB0010\\1
+\|
+~C|D32CB0010|m|Cinta de balizamiento bicolor|1.15||3|
+~C|SS100|ud|Chaleco reflectante de alta visibilidad|5.99|090626|0|
+~T|SS100|Suministro de chaleco reflectante de alta visibilidad para personal de obra, adecuado para trabajos en exterior y zonas de tránsito o maniobra. Totalmente disponible para su uso.|
+~D|SS100
+|D32CC0010\\1
+\|
+~C|D32CC0010|ud|Chaleco reflectante|5.99||3|
+~C|SS110|ud|Botiquin metalico de obra|49.9|090626|0|
+~T|SS110|Suministro de botiquín metálico de obra con dotación básica reglamentaria, instalado en zona accesible durante la ejecución de los trabajos. Incluso reposición mínima de material consumido durante la obra.|
+~C|SS120|h|Conservacion y mantenimiento de protecciones colectivas|60.67|090726|0|
+~T|SS120|Conservación y mantenimiento de protecciones colectivas, señalización y medios preventivos durante la obra.
+
+Incluye revisión periódica, recolocación de vallados, cintas, señales y protecciones, sustitución de elementos deteriorados, limpieza de zonas de paso y adaptación de medidas preventivas a las distintas fases de trabajo. Totalmente ejecutado.|
+~D|SS120
+|D32F0010\\1.373
+\|
+~C|D32F0010|h|Hora de cuadrilla p/conservación y mantenimiento protecciones|44.19||1|
+~C|CAP08#||Gestión de Residuos|5729.42|090626|0|
+~T|CAP08#|Gestión de residuos.
+
+Incluye carga, clasificación, transporte y entrega de residuos generados durante desmontajes y ejecución de la obra a instalación autorizada o gestor autorizado, con la documentación de control que proceda.|
+~D|CAP08#
+|GR010\\4
+\GR020\\3
+\GR030\\3
+\GR040\\0.15
+\GR050\\0.1
+\GR060\\60
+\|
+~C|GR010|ud|Carga y transporte de residuos metalicos y electricos|1218.13|090626|0|
+~T|GR010|Carga y transporte de residuos metálicos y eléctricos procedentes del desmontaje de proyectores, columnas, cuadros y elementos auxiliares.
+
+Incluye medios de carga, contenedores o acopios temporales, transporte a gestor autorizado, tasas o costes complementarios cuando procedan, gestión documental y limpieza de zona de acopio. Totalmente ejecutado.|
+~D|GR010
+|T0103\\1
+\|
+~C|T0103|ud|Carga y transporte de residuos metalicos y electricos|1218.13|090726|0|
+~T|T0103|Carga y transporte de residuos metálicos y eléctricos procedentes de los desmontajes.
+
+Incluye recogida en obra, carga manual o mecánica, contenedores, transporte hasta gestor autorizado, documentación de entrega, canon o costes complementarios de gestión, limpieza del punto de acopio y parte proporcional de medios auxiliares. Totalmente ejecutado.|
+~D|T0103
+|M01A0030\\2.749
+\QAB0030\\3
+\MAT0003\\1
+\|
+~C|MAT0003|ud|Contenedores, gestion documental, canon y costes complementarios de gestor autorizado|1039.55|090626|3|
+~C|GR020|m³|Clasificacion en obra de residuos de construccion|21.57|090626|0|
+~T|GR020|Clasificación en obra de residuos de construcción y demolición.
+
+Incluye separación por fracciones, acopio en condiciones adecuadas, identificación, movimiento interior y preparación para transporte a instalación autorizada. Totalmente ejecutado.|
+~D|GR020
+|D37A0010\\1
+\|
+~C|D37A0010|m³|Clasificación en obra de residuos de la construcción|21.57||3|
+~C|GR030|m³|Transporte de residuos a instalacion autorizada 20 km|13.12|090626|0|
+~T|GR030|Transporte de residuos de construcción y demolición a instalación autorizada situada a distancia aproximada de 20 km.
+
+Incluye carga, transporte, descarga, documentación de control y medios auxiliares necesarios. Totalmente ejecutado.|
+~D|GR030
+|D37B0060\\1
+\|
+~C|D37B0060|m³|Transporte residuos a instalac. autorizada 20 km.|13.12||3|
+~C|GR040|t|Coste de entrega de residuos de plastico a valorizacion|200|090626|0|
+~T|GR040|Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|GR040
+|D37CC0070\\1
+\|
+~C|D37CC0070|t|Coste entrega residuos de plástico a instalación de valorización|200|181113|3|
+~C|GR050|t|Coste de entrega de residuos de papel y carton a valorizacion|550|090626|0|
+~T|GR050|Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|GR050
+|D37CC0080\\1
+\|
+~C|D37CC0080|t|Coste entrega residuos de papel y cartón a instalación de valorización|550|181113|3|
+~C|GR060|Ud|Gestión de residuo RAEE de luminaria|8.35|010626|0|
+~T|GR060|Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE.|
+~D|GR060
+|RAEE\\1
+\|
+~C|RAEE|Ud|Gestión de residuo RAEE de luminaria vial|8.35|010626|3|
+~T|RAEE|Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE.|

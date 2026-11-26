@@ -1,0 +1,525 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.8||ANSI|
+~K|\2\2\3\2\2\2\2\EUR\|0|
+~C|%0.03|%|Medios auxiliares|3|220416|0|
+~C|8|km|Desplazamiento camión-bomba|1.74|210207|2|
+~C|C.01#||DEMOLICIONES Y LEVANTES|6526.36|220416|0|
+~D|C.01#|C.01.01\1\1\|
+~C|C.01.01#||DEMOLICIÓN DE ESTRUCTURAS|6526.36|220416|0|
+~D|C.01.01#|C.01.01.01\1\82.31\|
+~C|C.01.01.01|m3|DEMOLICIÓN MURO DE HORMIGÓN|79.29|220416|0|
+~D|C.01.01.01|MAO09\1\0.15\QAA0020\1\1\QAG0010\1\1\%0.03\1\0.03\|
+~C|C.02#||MOVIMIENTO DE TIERRAS|775100.57|220416|0|
+~D|C.02#|C.02.01\1\1\C.02.02\1\1\C.02.03\1\1\C.02.04\1\1\|
+~C|C.02.01#||DESMONTES|740275.04|220416|0|
+~D|C.02.01#|C.02.01.01\1\83931.41\|
+~C|C.02.01.01|m3|DESMONTE EN TODO TIPO DE TERRENO|8.82|220416|0|
+~D|C.02.01.01|MAO03\1\0.006\MAQ14\1\0.016\MAQ24\1\0.03\MAQ08\1\0.064\%0.03\1\0.03\|
+~C|C.02.02#||TERRAPLENES|20153.06|220416|0|
+~D|C.02.02#|C.02.02.01\1\5167.45\|
+~C|C.02.02.01|m3|TERRAPLÉN DE LA EXCAVACIÓN|3.9|220416|0|
+~D|C.02.02.01|MAO03\1\0.012\MAO09\1\0.012\MAQ42\1\0.02\MAQ39\1\0.01\MAQ46\1\0.011\%0.03\1\0.03\|
+~C|C.02.03#||EXCAVACIÓN EN CIMIENTOS|14411.77|220416|0|
+~D|C.02.03#|C.02.03.01\1\1461.64\|
+~C|C.02.03.01|m3|EXCAVACIÓN CIMIENTOS TERRENO DE TRÁNSITO|9.86|220416|0|
+~D|C.02.03.01|MAO03\1\0.02\MAO09\1\0.04\MAQ08\1\0.065\MAQ21\1\0.04\MAQ24\1\0.035\%0.03\1\0.03\|
+~C|C.02.04#||EXCAVACIÓN EN ZANJAS|260.7|220416|0|
+~D|C.02.04#|C.02.04.01\1\26.44\|
+~C|C.02.04.01|m3|EXCAV.ZANJA TERRENO TRÁNSITO|9.86|220416|0|
+~D|C.02.04.01|MAO03\1\0.02\MAO09\1\0.04\MAQ08\1\0.065\MAQ21\1\0.04\MAQ24\1\0.035\%0.03\1\0.03\|
+~C|C.03#||HORMIGÓN|585065.18|210207|0|
+~D|C.03#|C.03.01\1\1\C.03.02\1\1\C.03.03\1\1\C.03.04\1\1\|
+~C|C.03.01#||HORMIGÓN EN MUROS|402252.17|210207|0|
+~D|C.03.01#|C.03.01.01\1\441.64\C.03.01.02\1\717.2\C.03.01.03\1\566.06\C.03.01.04\1\383.1\|
+~C|C.03.01.01|m3|HORMIGÓN EN CIMIENTOS|257.42|210207|0|
+~D|C.03.01.01|MAO05\1\0.85\MAO09\1\0.85\E01HBC0060\1\1.02\QBA0010\1\0.3\E01E0010\1\0.05\P01HB010\1\0.152\8\1\0.02\%0.03\1\0.03\|
+~C|C.03.01.02|m3|HORMIGÓN EN MUROS|269.21|210207|0|
+~D|C.03.01.02|MAO05\1\1.1\MAO09\1\1.1\E01HBC0060\1\1.02\QBA0010\1\0.3\E01E0010\1\0.05\P01HB010\1\0.152\8\1\0.02\%0.03\1\0.03\|
+~C|C.03.01.03|m2|HORMIGÓN DE LIMPIEZA|47.93|220416|0|
+~D|C.03.01.03|MAO09\1\0.6\P01HM010\1\0.25\E01E0010\1\0.015\%0.03\1\0.03\|
+~C|C.03.01.04|m3|HORMIGÓN EN ESPALDÓN|178.43|210207|0|
+~D|C.03.01.04|MAO05\1\0.75\MAO09\1\0.75\E01HBB0042\1\0.62\E01CC0220\1\0.4\QBA0010\1\0.25\E01E0010\1\0.045\P01HB010\1\0.152\8\1\0.02\%0.03\1\0.03\|
+~C|C.03.02#||HORMIGÓN EN SOLERAS|167209.48|210207|0|
+~D|C.03.02#|C.03.02.01\1\2831.64\C.03.02.03\1\19.22\|
+~C|C.03.02.01|m2|SOL. ARM. HA-30, 20#15x15x8|57.43|210207|0|
+~D|C.03.02.01|E04SE200\1\0.2\E04SE201\1\1\|
+~C|C.03.02.03|m3|HORMIGÓN HM-25/B/20/IIIa|238.73|220416|0|
+~D|C.03.02.03|MAO05\1\0.5\MAO09\1\0.6\E01HBB0042\1\1.06\QBA0010\1\0.25\E01E0010\1\0.02\E01CC0020\1\0.4\P01HB010\1\0.132\%0.03\1\0.03\|
+~C|C.03.03#||HORMIGÓN EN HIDROTECNIAS|10566.6|210207|0|
+~D|C.03.03#|C.03.03.01\1\50.29\C.03.03.02\1\8\|
+~C|C.03.03.01|m3|HORMIGÓN CICLÓPEO HM-25/B/20/IIIa|203.51|210207|0|
+~D|C.03.03.01|MAO05\1\0.85\MAO09\1\0.85\E01HBB0042\1\0.62\E01CC0020\1\0.4\QBA0010\1\0.25\E01E0010\1\0.045\P01HB010\1\0.252\8\1\0.02\%0.03\1\0.03\|
+~C|C.03.03.02|ml.|GUARDATUBOS D= 400mm|41.51|020512|0|
+~D|C.03.03.02|MAO09\1\0.06\MAO05\1\0.06\P02TP250\1\1\%0.03\1\0.03\|
+~C|C.03.04#||HORMIGÓN EN MURETES LATERALES|5036.93|190715|0|
+~D|C.03.04#|C.03.04.02\1\18.54\C.03.04.03\1\48.75\|
+~C|C.03.04.02|m3|HORMIGÓN HA-30/B/20/IIIa|255.35|220416|0|
+~D|C.03.04.02|MAO05\1\0.85\MAO09\1\0.85\E01HAC0101\1\1.06\QBA0010\1\0.25\E01E0010\1\0.02\P01HB010\1\0.132\%0.03\1\0.03\|
+~C|C.03.04.03|m2|ME 15x15 A Ø 8-8 B500S 6x2,2|6.21|190715|0|
+~D|C.03.04.03|MAO15\1\0.014\MAO16\1\0.014\E01AB0080\1\1.207\%0.03\1\0.03\|
+~C|C.04#||ENCOFRADOS|28126.38|020512|0|
+~D|C.04#|C.04.01\1\1\|
+~C|C.04.01#||ENCOFRADOS|28126.38|020512|0|
+~D|C.04.01#|C.04.01.01\1\93.53\C.04.01.02\1\18.6\C.04.01.03\1\374.25\|
+~C|C.04.01.01|m2|ENCOFRADO VISTO HIDROTECNIAS|25.88|220416|0|
+~D|C.04.01.01|MAO21\1\0.35\MAO18\1\0.35\P01EM290\1\0.026\P03AAA020\1\0.1\P01UC030\1\0.05\%0.03\1\0.03\|
+~C|C.04.01.02|m2|ENCOFRADO VISTO MURETES LATERALES|25.88|220416|0|
+~D|C.04.01.02|MAO21\1\0.35\MAO18\1\0.35\P01EM290\1\0.026\P03AAA020\1\0.1\P01UC030\1\0.05\%0.03\1\0.03\|
+~C|C.04.01.03|m2|ENCOFRADO VISTO MUROS HORMIGÓN|67.4|020512|0|
+~D|C.04.01.03|MAO21\1\0.5\MAO18\1\0.5\M12EF020\1\2.12\P01DC010\1\0.4\P01UC030\1\0.02\M02GC110\1\0.07\%0.03\1\0.03\|
+~C|C.05#||SEÑALIZACIÓN|7803.6|140208|0|
+~D|C.05#|C.05.01\1\1\C.05.02\1\1\C.05.03\1\1\|
+~C|C.05.01#||SEÑALIZACIÓN VERTICAL|1779.04|140208|0|
+~D|C.05.01#|C.05.01.01\1\4\C.05.01.02\1\4\|
+~C|C.05.01.01|ud|SEÑAL CIRCULAR REFLEXIVA E.G. D=60 cm.|212.23|140208|0|
+~D|C.05.01.01|MAO03\1\0.25\MAO06\1\0.65\MAO09\1\0.65\MAQ69\1\0.25\MAT9920\1\1\MAT9924\1\3.5\MAT25\1\0.15\MAQ36\1\1.8\%0.03\1\0.03\|
+~C|C.05.01.02|ud|SEÑAL TRIANGULAR REFLEXIVA E.G. L=70 cm.|232.53|140208|0|
+~D|C.05.01.02|MAO03\1\0.25\MAO06\1\0.65\MAO09\1\0.65\MAQ69\1\0.25\MAT9921\1\1\MAT9924\1\3\MAT25\1\0.15\MAQ36\1\1.8\%0.03\1\0.03\|
+~C|C.05.02#||CARTEL DE OBRA|853.81|140208|0|
+~D|C.05.02#|C.05.02.01\1\1\|
+~C|C.05.02.01|ud|CARTEL DE OBRA 2,1X1,4 m|853.81|140208|0|
+~D|C.05.02.01|MAO03\1\0.5\MAO06\1\1\MAO09\1\1\MAQ69\1\0.5\MAT25\1\0.4\MAT67\1\10\MAT9947\1\3\MAT9948\1\9\MAT9952\1\1\%0.03\1\0.03\|
+~C|C.05.03#||SEÑALIZACIÓN TERRAPLÉN|5170.75|140208|0|
+~D|C.05.03#|C.05.03.01\1\37\|
+~C|C.05.03.01|ud|PERFÍL HUECO CUADRADO 100.3|139.75|140208|0|
+~D|C.05.03.01|MAO03\1\0.25\MAO06\1\0.65\MAO09\1\0.65\MAQ69\1\0.25\E01ACBB0090\1\1\MAT25\1\0.15\MAQ36\1\1.85\%0.03\1\0.03\|
+~C|C.06#||CERRAJERÍA|74668.67|020512|0|
+~D|C.06#|C.06.01\1\1\C.06.02\1\1\|
+~C|C.06.01#||PUERTA|1421.6|220416|0|
+~D|C.06.01#|C.06.01.01\1\1\|
+~C|C.06.01.01|ud|PUERTA  4,00x2,00. 40/14 STD|1421.6|220416|0|
+~D|C.06.01.01|MAO13\1\3\MAO22\1\3\P13VP250\1\1\MAT25\1\0.008\MAQ69\1\0.05\%0.03\1\0.03\|
+~C|C.06.02#||VALLADO PERIMETRAL|73247.07|020512|0|
+~D|C.06.02#|C.06.02.01\1\1923\|
+~C|C.06.02.01|ml|MALLA S/T. PLASTIF. 40/14-17 H=2,00|38.09|020512|0|
+~D|C.06.02.01|MAO02\1\0.29\P13VS030\1\2\P13VP130\1\0.3\P13VP120\1\0.08\P13VP140\1\0.08\P13VP150\1\0.08\MAT25\1\0.012\MAQ69\1\0.07\%0.03\1\0.03\|
+~C|C.07#||SEGURIDAD Y SALUD|28918.06|270306|0|
+~D|C.07#|C.07.01\1\1\C.07.02\1\1\C.07.03\1\1\C.07.04\1\1\C.07.05\1\1\C.07.06\1\1\|
+~C|C.07.01#||PROTECCIONES INDIVIDUALES|4399.3|120322|0|
+~D|C.07.01#|MS01\1\15\MS02\1\15\MS03\1\9\MS04\1\15\MS05\1\15\MS06\1\15\MS07\1\30\MS08\1\9\MS09\1\15\MS10\1\15\MS11\1\9\MS12\1\30\MS13\1\6\MS14\1\7\MS15\1\4\|
+~C|C.07.02#||PROTECCIONES COLECTIVAS|13191.8|270306|0|
+~D|C.07.02#|MS16\1\4\MS17\1\4\MS18\1\1000\MS19\1\12\MS20\1\12\MS21\1\2\MS22\1\4\MS23\1\700\MS24\1\15\MS39\1\166\|
+~C|C.07.03#||PROTECCIÓN DE INSTALACIONES|595|270306|0|
+~D|C.07.03#|MS25\1\1\MS26\1\1\|
+~C|C.07.04#||PREVENCIÓN DE INCENDIOS|306.96|191011|0|
+~D|C.07.04#|MS27\1\2\MS28\1\2\|
+~C|C.07.05#||MEDICINA PREVENTIVA Y FORMACIÓN DEL PERSONAL|2635|191011|0|
+~D|C.07.05#|MS29\1\5\MS30\1\2\MS31\1\9\MS32\1\15\|
+~C|C.07.06#||ASEOS Y VESTUARIOS|7790|191011|0|
+~D|C.07.06#|MS33\1\15\MS34\1\12\MS35\1\10\MS36\1\1\MS37\1\1\MS38\1\1\|
+~C|C.08#||GESTIÓN DE RESIDUOS|7338.62|140208|0|
+~D|C.08#|C.08.01\1\1\C.08.02\1\1\C.08.03\1\1\C.08.04\1\1\|
+~C|C.08.01#||DEMOLICIONES|163.51|220416|0|
+~D|C.08.01#|C.08.01.01\1\83\|
+~C|C.08.01.01|m3|CARGA RNP VALORIZABLES S/CAMIÓN|1.97|220416|0|
+~D|C.08.01.01|MAO09\1\0.016\MAQ13\1\0.016\MAQ23\1\0.016\%0.03\1\0.03\|
+~C|C.08.02#||MAQUINARIA TODO TIPO|3915.59|140208|0|
+~D|C.08.02#|C.08.02.01\1\3\C.08.02.02\1\50\C.08.02.03\1\5\|
+~C|C.08.02.01|kg|TRATAMIENTO FILTROS ACEITE|67.78|140208|0|
+~D|C.08.02.01|MAO09\1\0.1\MAT9936\1\1\MAT9946\1\0.5\MAT9941\1\1\%0.03\1\0.03\|
+~C|C.08.02.02|kg|TRATAMIENTO ACEITE USADO|67.47|140208|0|
+~D|C.08.02.02|MAO09\1\0.1\MAT9935\1\1\MAT9946\1\0.5\MAT9942\1\1\%0.03\1\0.03\|
+~C|C.08.02.03|kg|TRATAMIENTO ABSORBENTES Y TRAPOS|67.75|140208|0|
+~D|C.08.02.03|MAO09\1\0.1\MAT9936\1\1\MAT9946\1\0.5\MAT9943\1\1\%0.03\1\0.03\|
+~C|C.08.03#||HORMIGONADO|3103.58|140208|0|
+~D|C.08.03#|C.08.03.01\1\5\C.08.03.02\1\38\|
+~C|C.08.03.01|ms|COSTE CONTENEDOR MADERA 30m3.|96.62|140208|0|
+~D|C.08.03.01|MAQ66\1\1\%0.03\1\0.03\|
+~C|C.08.03.02|kg|TRATAMIENTO RESTOS DESENCOFRANTE|68.96|140208|0|
+~D|C.08.03.02|MAO09\1\0.1\MAT9935\1\1\MAT9946\1\0.5\MAT9940\1\1\%0.03\1\0.03\|
+~C|C.08.04#||VARIOS|155.94|140208|0|
+~D|C.08.04#|C.08.04.01\1\1\C.08.04.02\1\1\C.08.04.03\1\3\|
+~C|C.08.04.01|kg|TRATAMIENTO FLUORESCENTES|11.99|140208|0|
+~D|C.08.04.01|MAO09\1\0.1\MAT9938\1\1\MAT9945\1\1\%0.03\1\0.03\|
+~C|C.08.04.02|PA|GESTIÓN PAPEL CARTÓN|100|041011|0|
+~D|C.08.04.02|MAQ67\1\1\|
+~C|C.08.04.03|kg|TRATAMIENTO ENVASES METÁLICOS|14.65|140208|0|
+~D|C.08.04.03|MAO09\1\0.1\MAT9937\1\1\MAT9946\1\0.5\MAT9944\1\1\%0.03\1\0.03\|
+~C|C.09#||CONTROL DE CALIDAD|22603.41|300726|0|
+~D|C.09#|C.09.01\1\1\|
+~C|C.09.01#|PA|CONTROL DE CALIDAD|22603.41|300726|0|
+~D|C.09.01#|C.09.01.01\1\1\|
+~C|C.09.01.01|PA|PARTIDA CONTROL DE CALIDAD|22603.41|300726|0|
+~C|C.10#||PARTIDA ALZADA A JUSTIFICAR|15000|300726|0|
+~D|C.10#|C.10.01\1\1\|
+~C|C.10.01#|PA|PARTIDA ALZADA A JUSTIFICAR|15000|300726|0|
+~D|C.10.01#|C.10.01.01\1\1\|
+~C|C.10.01.01|PA|PARTIDA ALZADA A JUSTIFICAR|15000|300726|0|
+~C|E01AB0080|m²|Malla electros. cuadrícula 15x15 cm, ø 8-8 mm|4.48|190715|3|
+~C|E01ACBB0090|ml|Perfil hueco cuadrado 100.3 (granall. y pint.)|66.9|300726|3|
+~C|E01CC0020|m³|Piedra en rama tamaño maximo 30 cm|19.5|090126|3|
+~C|E01CC0220|m3|Piedra en rama tamaño máximo 50 cm|18.3|090126|3|
+~C|E01E0010|m3|Agua|2.33|050126|3|
+~C|E01HAC0101|m3|Horm prep HA-30/B/20/IIIa, bombeado|171.46|090126|3|
+~C|E01HBB0042|m3|Horm. prep. HM-25/B/20/IIIa, bombeado|161.93|090126|3|
+~C|E01HBC0060|m3|Horm prep HM-30/B/20/IIIa, bombeado|175.96|300726|3|
+~C|E04SE200|m3|HORMIGÓN HA-30/B/20/IIIa EN SOLERA|256.08|210207|0|
+~D|E04SE200|MAO05\1\0.85\MAO09\1\0.85\E01HAC0101\1\1.06\QBA0010\1\0.3\E01E0010\1\0.05\P01HB010\1\0.132\8\1\0.02\M11HC020\1\0.025\%0.03\1\0.03\|
+~C|E04SE201|m2|ME 15x15 A Ø 8-8 B500S 6x2,2|6.21|190715|0|
+~D|E04SE201|MAO15\1\0.014\MAO16\1\0.014\E01AB0080\1\1.207\%0.03\1\0.03\|
+~C|M02GC110|h.|Grúa celosía s/camión 30 t.|112.05|020512|2|
+~C|M11HC020|h.|Equipo cortajuntas losas|11.38|140208|2|
+~C|M12EF020|m2|Encof.panel metal.5/10 m2. 50 p.|14.31|090126|2|
+~C|MAO02|h.|Cuadrilla A|57.53|090126|1|
+~D|MAO02|MAO05\1\1\MAO11\1\1\MAO09\1\0.5\|
+~C|MAO03|h.|Capataz|26.23|090126|1|
+~C|MAO05|h.|Oficial Primera|23.7|090126|1|
+~C|MAO06|h.|Oficial segunda|22.42|090126|1|
+~C|MAO09|h.|Peón ordinario|22.12|300726|1|
+~C|MAO11|h|Ayudante|22.77|300726|1|
+~C|MAO13|h.|Oficial 1ª Cerrajero|18.88|050126|1|
+~C|MAO15|h.|Oficial 1ª ferralla|23.7|090126|1|
+~C|MAO16|h.|Ayudante ferralla|20.77|090126|1|
+~C|MAO18|h.|Ayudante encofrador|23.23|300726|1|
+~C|MAO21|h.|Oficial 1ª encofrador|24.29|300726|1|
+~C|MAO22|h.|Ayudante cerrajero|17.82|050126|1|
+~C|MAQ08|h.|Excavadora hidráulica cadenas 135 CV|77.9|300726|2|
+~C|MAQ13|h.|Pala cargadora neumáticos 85 CV/1,2m3|52.81|120322|2|
+~C|MAQ14|h.|Pala cargadora neumáticos 200 CV/3,7m3|75.48|090126|2|
+~C|MAQ21|h.|Martillo rompedor hidráulico 600 kg.|13.87|090126|2|
+~C|MAQ23|h.|Camión basculante 4x2 10 t.|44.95|050126|2|
+~C|MAQ24|h.|Camión basculante 4x4 14 t.|73.23|090126|2|
+~C|MAQ36|m3|km transporte hormigón|0.29|140208|2|
+~C|MAQ39|h.|Cisterna agua s/camión 10.000 l.|88.03|050126|2|
+~C|MAQ42|h.|Motoniveladora de 135 CV|88.25|050126|2|
+~C|MAQ46|h.|Rodillo vibrante autopropuls.mixto 15 t.|50.62|050126|2|
+~C|MAQ66|ms|Alquiler contenedor madera 30m3|93.81|140208|2|
+~C|MAQ67|PA|Retirada papel cartón|100|041011|2|
+~C|MAQ69|h.|Ahoyadora gasolina 1 persona|48.89|050126|2|
+~C|MAT25|m3|Hormigón HM-20/P/20/I central|136.71|300726|3|
+~C|MAT67|kg|Acero corrugado B 400 S/SD  6 mm|2.86|300726|3|
+~C|MAT9920|ud|Señal circular reflex. E.G. D=60 cm|84.79|300726|3|
+~C|MAT9921|ud|Señal triangular refle.E.G. L=70 cm|112|300726|3|
+~C|MAT9924|m.|Poste galvanizado 80x40x2 mm.|15|300726|3|
+~C|MAT9935|ud|Bidón tapones 200 l.|60|050126|3|
+~C|MAT9936|ud|Bidón ballestas 200 l.|60|050126|3|
+~C|MAT9937|ud|Sacas big-bag de 1000l.|8.45|140208|3|
+~C|MAT9938|ud|Caja tubos fluorescentes 1,5m|5.87|140208|3|
+~C|MAT9940|kg|Tratamiento restos desencofrante|1.65|140208|3|
+~C|MAT9941|kg|Tratamiento filtros aceite|0.51|140208|3|
+~C|MAT9942|kg|Tratamiento aceite usado|0.2|050126|3|
+~C|MAT9943|kg|Tratamiento absorb. y trapos cont|0.48|140208|3|
+~C|MAT9944|kg|Tratamiento envases met.cont.|0.47|140208|3|
+~C|MAT9945|kg|Tratamiento fluorescentes|3.56|140208|3|
+~C|MAT9946|ud|Palet zona residuos|6.18|140208|3|
+~C|MAT9947|m2|Panel acero perfilado pintado|78.23|140208|3|
+~C|MAT9948|m.|Poste IPN 120 galvanizado|45.41|251011|3|
+~C|MAT9952|ud|Placa anclaje sustent. paneles|20.17|050126|3|
+~C|MS01|ud|Casco de seguridad homologado|11.38|120322|3|
+~C|MS02|ud|Mono de trabajo|16.43|050126|3|
+~C|MS03|ud|Impermeable|22.19|050126|3|
+~C|MS04|ud|Mascarilla antipolvo|7.38|050126|3|
+~C|MS05|ud|Gafa antipolvo y anti-impactos|18.15|050126|3|
+~C|MS06|ud|Protector auditivo|29.11|050126|3|
+~C|MS07|ud|Par guantes de goma finos|3.82|050126|3|
+~C|MS08|ud|Par botas impermeables|15.25|050126|3|
+~C|MS09|ud|Chaleco reflectante|24.08|050126|3|
+~C|MS10|ud|Par botas de seguridad de cuero|67.68|050126|3|
+~C|MS11|ud|Par guantes resistencia al corte|11.93|050126|3|
+~C|MS12|ud|Filtro para mascarilla antipolvo|4.3|050126|3|
+~C|MS13|ud|Cinturón de seguridad y arnes|63.09|050126|3|
+~C|MS14|ud|Par guantes dieléctricos|63.44|050126|3|
+~C|MS15|ud|Par botas dieléctricas|68.9|050126|3|
+~C|MS16|ud|Señal circular o triangular|46.79|050126|3|
+~C|MS17|ud|Cartel metálico indicativo de riesgo de 700X100 cm|12|191011|3|
+~C|MS18|m|Cinta de balizamiento|2.55|120322|3|
+~C|MS19|h|Mano de obra de señalista.|17.82|050126|1|
+~C|MS20|h|Camión de riego.|88.03|050126|2|
+~C|MS21|ud|Pasarela para paso sobre zanjas|13|270306|3|
+~C|MS22|ud|Topes para camiones|30|191011|3|
+~C|MS23|m|Malla de polietileno de color naranja de 1.20 m. de altura|2.53|050126|3|
+~C|MS24|ms|Comité de Seguridad y Salud|140|191011|3|
+~C|MS25|ud|Instalación de toma de tierra|150|270306|3|
+~C|MS26|ud|Cuadro de obra|445|191011|3|
+~C|MS27|ud|Extintor de polvo polivalente|68.48|120322|3|
+~C|MS28|ud|Extintor manual de CO2|85|191011|3|
+~C|MS29|ud|Reposición  de  material  sanitario|60|191011|3|
+~C|MS30|ud|Botiquín instalado en obra.|80|191011|3|
+~C|MS31|ms|Formación en seguridad e higiene|75|191011|3|
+~C|MS32|ud|Reconocimiento médico|100|191011|3|
+~C|MS33|ms|Limpieza y desinfección|125|191011|3|
+~C|MS34|ud|Taquilla  metálica  individual|50|090126|3|
+~C|MS35|ms|Modulo oficina, aseo-vestuarios|450|090126|3|
+~C|MS36|ud|Acometida agua, saneamiento y energía|300|191011|3|
+~C|MS37|ud|Recipiente para recogida de basuras.|15|191011|3|
+~C|MS38|ud|Equipamiento oficina, aseo-vestuarios|500|090126|3|
+~C|MS39|m|Red de seguridad vert perímetro. pescante tipo horca|30.84|100716|3|
+~C|P01DC010|kg|Aditivo desencofrante|8.27|120322|3|
+~C|P01EM290|m3|Madera pino encofrar 26 mm.|290|120322|3|
+~C|P01HB010|h.|Camión bomba, para bombeo de hormigón|192.85|090126|2|
+~C|P01HM010|m3|Hormigón HM-150/B/20/cemento sulforresistente de central|132.9|090126|3|
+~C|P01UC030|kg|Puntas 20x100|8.75|090126|3|
+~C|P02TP250|ml.|Tubo de PVC  D=400 mm|37.55|020512|3|
+~C|P03AAA020|kg|Alambre atar 1,30 mm.|5.21|120322|3|
+~C|P13VP120|ud|Poste galv. D=48 h=2 m. escuadra|27.05|020512|3|
+~C|P13VP130|ud|Poste galv.D=48 h=2 m.intermedio|8.99|050126|3|
+~C|P13VP140|ud|Poste galv. D=48 h=2 m. jabalcón|27.05|020512|3|
+~C|P13VP150|ud|Poste galv.D=48 h=2 m.tornapunta|8.99|050126|3|
+~C|P13VP250|ud|Puerta met.aba.galv. 400x200 STD|1266.56|300726|3|
+~C|P13VS030|m2|Malla S/T gal.plast. 40/14-17 V.|3.75|300726|3|
+~C|PROYECTO##|||1551150.85|270306|0|
+~D|PROYECTO##|C.01\1\1\C.02\1\1\C.03\1\1\C.04\1\1\C.05\1\1\C.06\1\1\C.07\1\1\C.08\1\1\C.09\1\1\C.10\1\1\|
+~C|QAA0020|h|Retroexcavadora 72 kW|65.92|050126|2|
+~C|QAG0010|h|Martillo hidráulico 450 kg|7.74|050126|2|
+~C|QBA0010|h.|Vibrador eléctrico|6.78|270222|2|
+~T|%0.03|Costes indirectos|
+~T|8|Desplazamiento de camión bomba|
+~T|C.01.01.01|Demolición de muro de hormigón. ejecutada con retroexcavadora con martillo rompedor, incluso acopio de escombros a pié de carga y p.p. de medios auxiliares y de seguridad. Medido vulumen inicial.
+|
+~T|C.02.01.01|Desmonte en todo tipo de terreno terreno, con medios mecánicos, incluso empleo de martillo, transporte de los productos de la excavación a vertedero o lugar de empleo, hasta 100 km. de distancia.
+|
+~T|C.02.02.01|Terraplén con productos procedentes de la excavación  incluye extendido, humectación y compactación al 95 % PM, incluso perfilado de taludes, rasanteo de la superficie de coronación y preparación de la superficie de asiento, terminado.
+|
+~T|C.02.03#|
+|
+~T|C.02.03.01|Excavación en cimientos en terreno de tránsito, incluso carga y transporte de los productos de la excavación a vertedero o lugar de empleo.|
+~T|C.02.04.01|Excavación en zanja en terreno de tránsito, incluso carga y transporte de los productos de la excavación a vertedero o lugar de empleo.
+
+|
+~T|C.03.01.01|Hormigón en masa HM-30 N/mm2, consistencia blanda, Tmáx.20 mm., para corrosión por cloruros , elaborado en central en cimientos, incluso vertido por medio de camión-bomba, vibrado y colocado.  Según normas NTE-CCM , EHE y CTE-SE-C.
+|
+~T|C.03.01.02|Hormigón en masa HM-30 N/mm2, consistencia blanda, Tmáx.20 mm., para corrosión por cloruros , elaborado en central en muros, incluso vertido por medio de camión-bomba, vibrado y colocado.  Según normas NTE-CCM , EHE y CTE-SE-C.|
+~T|C.03.01.03|Hormigón en masa HM-15 N/mm2, consistencia blanda, Tmáx.20 mm., sulforresistente, de 20 cm de espesor, elaborado en central para limpieza y nivelado de fondos de cimentación, incluso vertido por medios manuales y colocación.|
+~T|C.03.01.04|Hormigón ciclópeo en espaldón de muros con un 60% de hormigón en masa HM-25/B/20/IIIa y un 40% de piedra en rama tamaño máximo 50 cm, incluso vertido por medio de camión-bomba, colocación de la piedra, vibrado, vertido y curado.  Según normas NTE-CCM , EHE y CTE-SE-C.
+
+|
+~T|C.03.02.01|Solera de hormigón armado de 20 cm. de espesor, realizada con hormigón HA-30/B/20/IIIa, de central, i/vertido, curado, colocación y armado con # 15x15/8, p.p. de juntas, aserrado de las mismas y fratasado.Según la normativa en vigor EHE-08 y DB-SE-C.
+|
+~T|C.03.02.03|Hormigón ciclópeo en cimientos con un 60% de hormigón en masa HM-25/B/20/IIIa y un 40 % de piedra en rama tamaño máximo 40 cm, incluso vertido y curado. s/ EHE-08.
+|
+~T|C.03.03.01|Hormigón ciclópeo en muros con un 60% de hormigón en masa HM-25/B/20/IIIa y un 40% de piedra en rama tamaño máximo 30 cm, incluso vertido por medio de camión-bomba, colocación de la piedra, vibrado, vertido y curado.  Según normas NTE-CCM , EHE y CTE-SE-C.
+|
+~T|C.03.03.02|ml. de suministro y colocación de guardatubos en zanja consistente en tubería de P.V.C de 400 mm. de diámetro, de 8 kN/m2 de rigidez circunferencial, corrugada exterior y lisa interior, con juntas elásticas, i/. p.p. de montaje, solapes de tubos y pequeño material, formación de pendientes; totalmente terminada,conexionada, colocada y probada.|
+~T|C.03.04.02|Hormigón en masa HA-30 N/mm2, consistencia blanda, Tmáx.20 mm., para corrosión por cloruros , elaborado en central en muros, incluso vertido por medio de camión-bomba, vibrado y colocado.  Según normas NTE-CCM , EHE y CTE-SE-C.
+|
+~T|C.03.04.03|Malla electrosoldada en cuadrícula 15x15 cm. con acero corrugado de Ø 8 mm. B 500 S, de dimensiones 6x2,2 m. Totalmente colocado en obra, i/p.p. de alambre de atar. Según normas  EHE - 08 y DB-SE-A.|
+~T|C.04.01.01|Encofrado y desencofrado con madera suelta en zanjas, considerando 4 posturas.  Según NTE-EME.|
+~T|C.04.01.02|Encofrado y desencofrado con madera suelta en zanjas, considerando 4 posturas.  Según NTE-EME.
+|
+~T|C.04.01.03|Encofrado y desencofrado a dos caras, en muros con paneles metálicos modulares hasta 6 m. de altura y 50 posturas. Según EHE-08 y DB-SE-C.|
+~T|C.05.01.01|Señal circular de diámetro 60 cm., reflexiva nivel I (E.G.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada.
+|
+~T|C.05.01.02|Señal triangular de lado 70 cm., reflexiva nivel I (E.G.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada.
+|
+~T|C.05.02.01|Suministro e instalación de un cartel informativo de la obra, que consistirá mediante panel en chapa de acero galvanizada y perfilada de 2,10 x 1,40 m colocado sobre postes de 3 m de altura, desde la rasante a la base del cartel, (4,5 m en total), anclado al suelo mediante dos dados de hormigón H-20 de 60X60X60 cm. 
+|
+~T|C.06.01.01|Puerta de 1 hoja de 4,00x2,00 m. para cerramiento exterior, con bastidor de tubo de acero laminado en frío de 40x40 mm. y malla S/T galvanizada en caliente 40/14 STD, i/herrajes de colgar y seguridad, parador de pie y tope, elaborada en taller, ajuste y montaje en obra.
+
+|
+~T|C.06.02.01|Vallado de 2,00 m. de altura realizado con malla simple torsión plastificada en verde, de trama 40/14-17 y postes de tubo de acero galvanizado por inmersión de 48 mm. de diámetro, p.p. de postes de esquina, jabalcones y tornapuntas, tensores, grupillas y accesorios, totalmente montada i/ replanteo y recibido de postes con hormigón HM-20/P/20/I de central, incluso excavación con ahoyadora de gasolina, totalmente terminado.
+
+
+|
+~T|C.07.01#|Protecciones individuales|
+~T|C.07.02#|Protecciones colectivas|
+~T|C.07.03#|Señalización|
+~T|C.07.04#|Prevención de incendios|
+~T|C.07.05#|Medicina prventiva y formación del personal|
+~T|C.07.06#|Aseos y vestuarios|
+~T|C.08.01.01|Carga de residuos no peligrosos valorables (maderas, plásticos, cartones, chatarras..) sobre camión medio-grande, con pala cargadora, a granel, y con un peón ordinario de ayuda, sin incluir transporte.
+|
+~T|C.08.02.01|Tratamiento en planta por gestor autorizado de filtros de aceite almacenados en la instalación en bidones ballestas de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)
+|
+~T|C.08.02.02|Tratamiento en planta por gestor autorizado de aceite usado almacenados en la instalación en bidones de tapones de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)
+|
+~T|C.08.02.03|Tratamiento en planta por gestor autorizado de absorbentes y trapos contaminados, almacenados en la instalación en bidones ballestas de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)
+|
+~T|C.08.03.01|Coste del alquiler de contenedor de 30m3. de capacidad, sólo permitido éste tipo de residuo en el contenedor por el gestor de residuos no peligrosos 
+|
+~T|C.08.03.02|Tratamiento en planta por gestor autorizado de restos de desencofrante y desencofrantes caducados, almacenados en la instalación en bidones de tapones de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)
+|
+~T|C.08.04.01|Tratamiento en planta por gestor autorizado de fluorescentes almacenados en la caseta de obra en cajas, que deben adquirirse la primera vez, i/ etiquetación por parte de peón de la caja correspondiente. (Real Decreto 833/1988, de 20 de julio).
+|
+~T|C.08.04.02|Servicio de recogida y entrega de papel y cartón generados en la  obra, hasta la Nave de Papel Cartón, del Complejo Ambiental .
+|
+~T|C.08.04.03|Tratamiento en planta por gestor autorizado de envases metálicos vacíos contaminados (ej. latas de pintura, adhesivo PVC..) almacenadas en la instalación en bidones ballesta de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)
+|
+~T|C.09.01#|Partida control de calidad|
+~T|C.09.01.01|Partida control de calidad|
+~T|C.10.01#|Ranurado de la solera del tramo final de la canalización Bco. del Ciervo próxima a la ODT del paseo Marítimo para mejorar el drenaje del agua de mar almacenada con motivo de la dinámica litoral, según Dirección de Obra.|
+~T|C.10.01.01|Ranurado de la solera del tramo final de la canalización Bco. del Ciervo próxima a la ODT del paseo Marítimo para mejorar el drenaje del agua de mar almacenada con motivo de la dinámica litoral, según Dirección de Obra.
+|
+~T|E01AB0080|Malla electrosoldada ME 15x15 ø 8-8 B 500 S 6x2,20, UNE 36092|
+~T|E01ACBB0090|Perfil hueco cuadrado, conformado en frío, CFRHS 100x100x3 mm (granallado y pintado), acero S 275 J0 H, UNE-EN 10219.|
+~T|E01CC0020|Piedra en rama tamaño maximo 40 cm|
+~T|E01CC0220|Piedra en rama tamaño maximo 50 cm
+|
+~T|E01E0010|Agua|
+~T|E01HAC0101|Hormigón preparado HA-30/B/20/IIIa, bombeado
+|
+~T|E01HBB0042|Hormigón preparado HM-25/B/20/IIIa, bombeado|
+~T|E01HBC0060|Hormigón preparado HM-30/B/20/IIIa, bombeado|
+~T|E04SE200|Hormigón para armar HA-30/B/20/IIIa, de 30 N/mm2.,consistencia blanda, Tmáx. 20 mm, de central, i/vertido bombeado, colocado y p.p. de vibrado regleado y curado en soleras. Según EHE-08 y DB-SE-C.
+|
+~T|E04SE201|Malla electrosoldada en cuadrícula 15x15 cm. con acero corrugado de Ø 8 mm. B 500 S, de dimensiones 6x2,2 m. Totalmente colocado en obra, i/p.p. de alambre de atar. Según normas  EHE - 08 y DB-SE-A.
+|
+~T|M02GC110|Grúa de celosía sobre camión|
+~T|M11HC020|Equipo cortajuntas para losas|
+~T|M12EF020|encofrado panel metálico|
+~T|MAO02|Cuadrilla A|
+~T|MAO03|Capataz|
+~T|MAO05|Oficial de primera|
+~T|MAO06|Oficial de segunda|
+~T|MAO09|Peón|
+~T|MAO11|Ayudante|
+~T|MAO13|Oficial de primera cerrajero|
+~T|MAO15|Oficial de primera ferralla|
+~T|MAO16|Ayudante de ferralla|
+~T|MAO18|Ayudante de encofrador|
+~T|MAO21|Oficial de primera encofrador|
+~T|MAO22|Ayudante de carrajero|
+~T|MAQ08|Excavadora hidráulica sobre cadenas|
+~T|MAQ13|Pala cargadora sobre neumáticos|
+~T|MAQ14|Pala cargadora sobre neumáticos|
+~T|MAQ21|Martillo rompedor hidráulico|
+~T|MAQ23|Camión basculante|
+~T|MAQ24|Camión basculante|
+~T|MAQ36|Km transporte de hormigón|
+~T|MAQ39|Cisterna de agua sobre camión|
+~T|MAQ42|Motoniveladora|
+~T|MAQ46|Rodillo vibrante autopropulsado|
+~T|MAQ66|Contenedor de madera|
+~T|MAQ67|Retirada de papel y cartón|
+~T|MAQ69|Ahoyadora de gasolina|
+~T|MAT25|Hormigón|
+~T|MAT67|Acero corrugado|
+~T|MAT9920|Señal cirular reflexiva D=60 cm.|
+~T|MAT9921|Señal triangular reflexiva|
+~T|MAT9924|Poste galvanizado|
+~T|MAT9935|Bidón|
+~T|MAT9936|Bidón ballesta|
+~T|MAT9937|Sacas big-bag|
+~T|MAT9938|Caja para tubos fluorescentes|
+~T|MAT9940|Tratamiento de restos de desencofrante|
+~T|MAT9941|Tratamiento filtros de aceite|
+~T|MAT9942|Tratamiento aceite usado|
+~T|MAT9943|Tratamiento absorbentes y trapos contaminados|
+~T|MAT9944|Tratamiento de envases metálicos contaminados|
+~T|MAT9945|Tratamiento de fluorescentes|
+~T|MAT9946|Palet|
+~T|MAT9947|Panel de acero|
+~T|MAT9948|Poste galvanizado|
+~T|MAT9952|Placa de anclaje|
+~T|MS01|Casco de seguridad homologado.|
+~T|MS02|Mono o buzo de trabajo.|
+~T|MS03|Impermeable.|
+~T|MS04|Mascarilla respiración antipolvo.|
+~T|MS05|Gafa antipolvo y anti-impactos.|
+~T|MS06|Protector auditivo auricular 33 dB según normativa.|
+~T|MS07|Par de guantes de goma finos.|
+~T|MS08|Par botas impermeables al agua y a la humedad.|
+~T|MS09|Chaleco reflectante|
+~T|MS10|Par botas de seguridad de cuero.|
+~T|MS11|Par de guantes de cuero.|
+~T|MS12|Filtro para mascarilla antipolvo.|
+~T|MS13|Cinturón de seguridad de sujeción y homologado.|
+~T|MS14|Par de guantes dieléctricos.|
+~T|MS15|Par botas dieléctricas.|
+~T|MS16|Señal  de  peligro  de   90  cm., reflexiva, con trípode metálico, incluida la colocación.  (Imputación de 1/3 del coste de adquisición)|
+~T|MS17|Cartel metálico indicativo de riesgo de 30x30 cm  incluida la colocación.|
+~T|MS18|Cinta de balizamiento, incluido soporte, colocación y desmontaje.|
+~T|MS19|Mano de obra de señalista.|
+~T|MS20|Camión de riego.|
+~T|MS21|Pasarela para paso sobre zanjas y cubrición de huecos horizontales formada por tablones de madera.|
+~T|MS22|Topes de desplazamiento para camiones incluido montaje y desmontaje.|
+~T|MS23|Malla de polietileno tipo Masnet de color naranja de 1.20 m. de altura y equipo de montantes metálicos, totalmente instalada.|
+~T|MS24|Comité de seguridad y salud|
+~T|MS25|Instalación de toma de tierra compuesta por cable de cobre y electrodo conectado a tierra en cuadros de electricidad, máquinas eléctricas, etc, incluso desmontaje.|
+~T|MS26|Cuadro de obra|
+~T|MS27|Extintor de polvo polivalente, para un uso, incluso soporte y colocación.|
+~T|MS28|Extintor manual de CO2 de 6 kg. colocado sobre soporte fijado a paramento vertical incluido p.p. de pequeño material, recargas y desmontaje según OGSHT (O.M. 09/03/71) valorado en función del número optimo de utilizaciones.|
+~T|MS29|Reposición  de  material  sanitario  durante  el transcurso de la obra.|
+~T|MS30|Botiquín instalado en obra.|
+~T|MS31|Formación en Seguridad  e  Higiene en el Trabajo.|
+~T|MS32|Reconocimiento médico|
+~T|MS33|Brigada de limpieza y conservación de instalaciones.|
+~T|MS34|Taquilla  metálica  individual  con  llave, colocada. (Imputación del 50 por ciento del coste de adquisición)|
+~T|MS35|Alquiler mes de modulo prefabricado de vestuarios, de 6,00x2,38x2,30 m. de panel de acero lacado y aislamiento de poliuretano de 35 mm., paredes revestidas con tablero fenólico, pavimento de lamas de acero galvanizado con aislamiento de fibra de vidrio y tablero fenólico, instalación eléctrica con puntos de luz, interruptores y  protección diferencial, totalmente equipado y a disposición  (coste imputado a esta  obra  como parte proporcional del periodo utilizado según mediciones).|
+~T|MS36|Acometida  de  agua  y  energía  eléctrica  para vestuario  y  comedor  totalmente terminado y en servicio.|
+~T|MS37|Recipiente para recogida de basuras.|
+~T|MS38|Equipamiento de oficina, aseos y vestuarios|
+~T|MS39|Red de seguridad vertical en perímetro, de malla de polipropileno # 100 mm, con D de cuerda de malla 4,5 mm y cuerda perimetral D 12 mm, (amortización = 30%), colocada con pescante metálico tipo horca, anclaje de red a forjado, incluso colocación y desmontado.
+|
+~T|P01DC010|Aditivo desencofrante|
+~T|P01EM290|Madera de pino para encofrar|
+~T|P01HB010|Camión bomba estacionado en obra, para bombeo de hormigón. Incluso p/p de desplazamiento.|
+~T|P01HM010|Hormigón preparado HM-150/B/20|
+~T|P01UC030|Puntas|
+~T|P02TP250|Tubo de PVC|
+~T|P03AAA020|Alambre para atar|
+~T|P13VP250|Puerta metálica abatible galvanizada|
+~T|QAA0020|Retroexcavadora sobre ruedas, 72 kW, peso en orden de trabajo 8140 kg|
+~T|QAG0010|Martillo hidráulico 450 kg|
+~T|QBA0010|Vibrador eléctrico|
+~M|C.01.01#\C.01.01.01|1\1\1\|82.31|\Hidrotécnia 1\0.195\\\\\Hidrotécnia 2\0.27\\\\\Hidrotécnia 3\0.255\\\\\Hidrotécnia 4\0.435\\\\\Hidrotécnia 5\0.3\\\\\Hidrotécnia 6\0.195\\\\\Hidrotécnia 7\0.435\\\\\Hidrotécnia 8\0.195\\\\\Acceso 1\35\\\\\Acceso Plaza de los Pescadores\45\\\\|
+~M|C.02.01#\C.02.01.01|2\1\1\|83931.41|\Acceso 1\110.989\\\\\Acceso 2\326.629\\\\\Acceso Plaza de Los Pescadores\109.956\\\\\Cauce del Barranco\83383.825\\\\|
+~M|C.02.02#\C.02.02.01|2\2\1\|5167.45|\Acceso 1\5.838\\\\\Acceso 2\151.216\\\\\Acceso Plaza de Los Pescadores\1.564\\\\\Cauce del Barranco\5008.825\\\\|
+~M|C.02.03#\C.02.03.01|2\3\1\|1461.64|\Cimentación Muro 1\1\22.59\4.7\1.7\\Cimentación Muro 2\1\27\5.2\1.7\\Cimentación Muro 3\1\33.59\2.2\1.2\\Solera (Muro 1)\491\\\\\Solera (Muro 2)\22\\\\\Solera (Muro 3)\49\\\\\Espaldón (Muro 1)\1\22.59\3.8\1.7\\Espaldón (Muro 2)\1\27\3.6\1.7\\Espaldón (Muro 3)\1\33.59\2\1.2\|
+~M|C.02.04#\C.02.04.01|2\4\1\|26.44|\Hidrotecnia 1\1\12.9\0.5\0.5\\Hidrotecnia 2\1\12.9\0.5\0.5\\Hidrotecnia 3\1\12.75\0.5\0.5\\Hidrotecnia 4\1\13.2\0.5\0.5\\Hidrotecnia 5\1\13.35\0.5\0.5\\Hidrotecnia 6\1\13.5\0.5\0.5\\hidrotecnia 7\1\13.6\0.5\0.5\\Hidrotecnia 8\1\13.46\0.5\0.5\|
+~M|C.03.01#\C.03.01.01|3\1\1\|441.64|\Muro 1\1\22.29\4.7\1.5\\Muro 2\1\27\5.2\1.5\\Muro 3\1\33.59\2.2\1\|
+~M|C.03.01#\C.03.01.02|3\1\2\|717.2|\Muro 1\234.6\\\\\Muro 2\400.5\\\\\Muro 3\82.1\\\\|
+~M|C.03.01#\C.03.01.03|3\1\3\|566.06|\Cimiento Muro 1\1\22.29\8.5\\\Cimiento Muro 2\1\27\8.76\\\Cimiento Muro 3\1\33.59\4.17\\|
+~M|C.03.01#\C.03.01.04|3\1\4\|383.1|\Espaldón Muro 1\154.6\\\\\Espaldón Muro 2\151.23\\\\\Espaldón Muro 3\77.27\\\\|
+~M|C.03.02#\C.03.02.01|3\2\1\|2831.64|\Solera 1\2449.34\\\\\Solera 2\104.67\\\\\Solera 3\277.63\\\\|
+~M|C.03.02#\C.03.02.03|3\2\2\|19.22|\Tacón Solera Muro 1\1\12\0.5\0.8\\Tacón Solera Muro 2\1\9\0.5\0.8\\Tacón Solera Muro 3\1\27.04\0.5\0.8\|
+~M|C.03.03#\C.03.03.01|3\3\1\|50.29|\Hidrotecnia 1\1\12.9\0.5\0.65\\Hidrotecnia 2\1\12.9\0.5\0.9\\Hidrotecnia 3\1\12.75\0.5\0.85\\Hidrotecnia 4\1\13.2\0.5\1.45\\Hidrotecnia 5\1\13.35\0.5\1\\Hidrotecnia 6\1\13.5\0.5\0.65\\Hidrotecnia 7\1\13.6\0.5\1.45\\Hidrotecnia 8\1\13.46\0.5\0.65\|
+~M|C.03.03#\C.03.03.02|3\3\2\|8|\Hidrotecnia 1\2\0.5\\\\Hidrotecnia 2\2\0.5\\\\Hidrotecnia 3\2\0.5\\\\Hidrotecnia 4\2\0.5\\\\Hidrotecnia 5\2\0.5\\\\Hidrotecnia 6\2\0.5\\\\Hidrotecnia 7\2\0.5\\\\Hidrotecnia 8\2\0.5\\\|
+~M|C.03.04#\C.03.04.02|3\4\1\|18.54|\Murete 1\6.175\\\\\Murete 2\6.175\\\\\Murete 3\6.175\\\\|
+~M|C.03.04#\C.03.04.03|3\4\2\|48.75|\Murete 1\16.25\\\\\Murete 2\16.25\\\\\Murete 3\16.25\\\\|
+~M|C.04.01#\C.04.01.01|4\1\1\|93.53|\Hidrotecnia 1\2\12.5\\0.15\\Hidrotecnia 2\2\12.56\\0.4\\Hidrotecnia 3\2\12.4\\0.35\\Hidrotecnia 4\2\13\\0.95\\Hidrotecnia 5\2\13.04\\0.5\\Hidrotecnia 6\2\13.1\\0.15\\Hidrotecnia 7\2\13.4\\0.95\\Hidrotecnia 8\2\13.06\\0.15\|
+~M|C.04.01#\C.04.01.02|4\1\2\|18.6|\Muerte 1\2\6.2\\0.5\\Murete 2\2\6.2\\0.5\\Murete 3\2\6.2\\0.5\|
+~M|C.04.01#\C.04.01.03|4\1\3\|374.25|\Muro 1\1\22.29\\5\\Muro 2\1\27\\6\\Muro 3\1\33.6\\3\|
+~M|C.05.01#\C.05.01.01|5\1\1\|4|\Limitación de velocidad 20 Km/h R-301\1\\\\\Entrada Prohibida R-101\3\\\\|
+~M|C.05.01#\C.05.01.02|5\1\2\|4|\Otros Peligros P-50\4\\\\|
+~M|C.05.02#\C.05.02.01|5\2\1\|1|\Acceso barranco\1\\\\|
+~M|C.05.03#\C.05.03.01|5\3\1\|37|\Señalización Taludes Muro 1\7\\\\\Señalización Taludes Muro 2\30\\\\|
+~M|C.06.01#\C.06.01.01|6\1\1\|1|\Acceso 1\1\\\\|
+~M|C.06.02#\C.06.02.01|6\2\1\|1923|\Valllado perimetral\1\1923\\\|
+~M|C.07.01#\MS01|7\1\1\|15|\\\\\\|
+~M|C.07.01#\MS02|7\1\2\|15|\\\\\\|
+~M|C.07.01#\MS03|7\1\3\|9|\\\\\\|
+~M|C.07.01#\MS04|7\1\4\|15|\\\\\\|
+~M|C.07.01#\MS05|7\1\5\|15|\\\\\\|
+~M|C.07.01#\MS06|7\1\6\|15|\\\\\\|
+~M|C.07.01#\MS07|7\1\7\|30|\\\\\\|
+~M|C.07.01#\MS08|7\1\8\|9|\\\\\\|
+~M|C.07.01#\MS09|7\1\9\|15|\\\\\\|
+~M|C.07.01#\MS10|7\1\10\|15|\\\\\\|
+~M|C.07.01#\MS11|7\1\11\|9|\\\\\\|
+~M|C.07.01#\MS12|7\1\12\|30|\\\\\\|
+~M|C.07.01#\MS13|7\1\13\|6|\\\\\\|
+~M|C.07.01#\MS14|7\1\14\|7|\\\\\\|
+~M|C.07.01#\MS15|7\1\15\|4|\\\\\\|
+~M|C.07.02#\MS16|7\2\1\|4|\\\\\\|
+~M|C.07.02#\MS17|7\2\2\|4|\\\\\\|
+~M|C.07.02#\MS18|7\2\3\|1000|\\\\\\|
+~M|C.07.02#\MS19|7\2\4\|12|\\\\\\|
+~M|C.07.02#\MS20|7\2\5\|12|\\\\\\|
+~M|C.07.02#\MS21|7\2\6\|2|\\\\\\|
+~M|C.07.02#\MS22|7\2\7\|4|\\\\\\|
+~M|C.07.02#\MS23|7\2\8\|700|\\\\\\|
+~M|C.07.02#\MS24|7\2\9\|15|\\\\\\|
+~M|C.07.03#\MS25|7\3\1\|1|\\\\\\|
+~M|C.07.03#\MS26|7\3\2\|1|\\\\\\|
+~M|C.07.04#\MS27|7\4\1\|2|\\\\\\|
+~M|C.07.04#\MS28|7\4\2\|2|\\\\\\|
+~M|C.07.05#\MS29|7\5\1\|5|\\\\\\|
+~M|C.07.05#\MS30|7\5\2\|2|\\\\\\|
+~M|C.07.05#\MS31|7\5\3\|9|\\\\\\|
+~M|C.07.05#\MS32|7\5\4\|15|\\\\\\|
+~M|C.07.06#\MS33|7\6\1\|15|\\\\\\|
+~M|C.07.06#\MS34|7\6\2\|12|\\\\\\|
+~M|C.07.06#\MS35|7\6\3\|10|\\\\\\|
+~M|C.07.06#\MS36|7\6\4\|1|\\\\\\|
+~M|C.07.06#\MS37|7\6\5\|1|\\\\\\|
+~M|C.07.06#\MS38|7\6\6\|1|\\\\\\|
+~M|C.08.01#\C.08.01.01|8\1\1\|83|\Muro de Hormigón\83\\\\|
+~M|C.08.02#\C.08.02.01|8\2\1\|3|\Maquinaria movimiento de tierras\3\\\\|
+~M|C.08.02#\C.08.02.02|8\2\2\|50|\Maquinaria\50\\\\|
+~M|C.08.02#\C.08.02.03|8\2\3\|5|\Maquinaria\5\\\\|
+~M|C.08.03#\C.08.03.01|8\3\1\|5|\Madera encofrados\5\\\\|
+~M|C.08.03#\C.08.03.02|8\3\2\|38|\Hidrotecnias\8\\\\\Muros\25\\\\\Muretes laterales\5\\\\|
+~M|C.08.04#\C.08.04.01|8\4\1\|1|\Caseta de obra\1\\\\|
+~M|C.08.04#\C.08.04.02|8\4\2\|1|\Papel-Cartón obra\1\\\\|
+~M|C.08.04#\C.08.04.03|8\4\3\|3|\Aceites y grasas\3\\\\|
+~M|C.09.01#\C.09.01.01|9\1\1\|1|\Partida Control de Calidad\1\\\\|
+~M|C.10.01#\C.10.01.01|10\1\1\|1|\Partida alzada a justificar\1\\\\|

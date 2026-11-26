@@ -1,0 +1,1556 @@
+{
+ "expediente": "CMAYOR/2026/39Y14/0011",
+ "organismo": "Dirección Territorial de Educación y Universidades de Castellón",
+ "titulo": "Reforma de la instalación de calefacción y mejoras en el patio de infantil en el CEIP Mare de Deu de la Vallivana de Morella",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "173771.55 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=e4ca3WBdXHqZsqp7HWdeWNZ6p9cQjn1xfGcCDUphQowUuy%2Bkg1fLCyAuPoEJaAHUtQV%2BOzfhYRy4NsFSYvkzAqiK6YsSBs5qU56chYvc7biB0nvVKRzfe4rpHcnlPhSZ",
+ "archivo_origen": "CMAYOR_2026_39Y14_0011_REFORMA_DE_CALEFACCION_Y_MEJORAS_EN_EL_PATIO_CEIP_MARE_DE_DE.bc3",
+ "total_bc3": 143612.85,
+ "suma_partidas": 143612.85,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "SalaCaldera",
+   "resumen": "Sala de caldera",
+   "importe": 12783.6
+  },
+  {
+   "codigo": "Conducciones",
+   "resumen": "Conducciones",
+   "importe": 49130.24
+  },
+  {
+   "codigo": "RegRadi",
+   "resumen": "Regulación radiadores",
+   "importe": 9551.52
+  },
+  {
+   "codigo": "Electricidad",
+   "resumen": "Electricidad y control",
+   "importe": 4405.94
+  },
+  {
+   "codigo": "Obra",
+   "resumen": "Obra",
+   "importe": 1429.41
+  },
+  {
+   "codigo": "Residuos",
+   "resumen": "Gestión de residuos",
+   "importe": 1556.55
+  },
+  {
+   "codigo": "SyS",
+   "resumen": "Seguridad y Salud",
+   "importe": 1922.73
+  },
+  {
+   "codigo": "PI",
+   "resumen": "Patio infantil",
+   "importe": 62832.86
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "DesmClim",
+   "unidad": "h",
+   "resumen": "Desmontaje de elementos de climatización existentes, tanto en sala de calderas como en puntos de distribución o de consumo, en instalación interior o exterior. Comprende caldera, canalizaciones, radiadores, máquinas de climatización, calderas, condensadoras, bombas, depósitos, calderines... y resto de elementos de instalación de climatización. Reaprovechamiento de aquellos elementos que considere la dirección de obra. Incluye eliminación de residuos y reparación de desperfectos de obra. Totalmente eliminado.",
+   "cantidad": 50.0,
+   "precio": 27.17,
+   "importe": 1358.5,
+   "descripcion": "Desmontaje de elementos de climatización existentes, tanto en sala de calderas como en puntos de distribución o de consumo, en instalación interior o exterior. Comprende caldera, canalizaciones, radiadores, máquinas de climatización, calderas, condensadoras, bombas, depósitos, calderines... y resto de elementos de instalación de climatización. Reaprovechamiento de aquellos elementos que considere la dirección de obra. Incluye eliminación de residuos y reparación de desperfectos de obra. Totalmente eliminado."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "DsmBmbAp",
+   "unidad": "h",
+   "resumen": "Desmontaje de bombas de calefacción existentes y posterior montaje en nueva instalación. Incluye elementos de conexión y montaje. Totalmente instaladas y en funcionamiento.",
+   "cantidad": 5.0,
+   "precio": 27.17,
+   "importe": 135.85,
+   "descripcion": "Desmontaje de bombas de calefacción existentes y posterior montaje en nueva instalación. Incluye elementos de conexión y montaje. Totalmente instaladas y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "MntBmb",
+   "unidad": "h",
+   "resumen": "Montaje de bomba de calefacción existente previamente desmontada. Incluye accesorios y elementos de conexión y montaje. Totalmente instalada y en funcionamiento.",
+   "cantidad": 3.0,
+   "precio": 48.18,
+   "importe": 144.54,
+   "descripcion": "Montaje de bomba de calefacción existente previamente desmontada. Incluye accesorios y elementos de conexión y montaje. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "CrQnt32H",
+   "unidad": "Ud",
+   "resumen": "Circulador para instalación de calefacción, de 11 m³/h de caudal máximo. Altura máxima 11 m.c.a.; rango de temperatura -10 a 110ºC; presión de trabajo 10 bar; diámetro nominal 2\"; conexión tubería racor 1¼\"; 230 V; 1.000-4.800 rpm; 0,15-1,33 A; 10-305 W; IPX4D; 5,4 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,23. Modelo Quantum Eco 32H de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 1403.46,
+   "importe": 2806.92,
+   "descripcion": "Circulador para instalación de calefacción, de 11 m³/h de caudal máximo. Altura máxima 11 m.c.a.; rango de temperatura -10 a 110ºC; presión de trabajo 10 bar; diámetro nominal 2\"; conexión tubería racor 1¼\"; 230 V; 1.000-4.800 rpm; 0,15-1,33 A; 10-305 W; IPX4D; 5,4 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,23. Modelo Quantum Eco 32H de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "CrQM45-14",
+   "unidad": "Ud",
+   "resumen": "Circulador para instalación de calefacción, de 4,4 m³/h de caudal máximo. Altura máxima 7,5 m.c.a.; rango de temperatura -10 a 95ºC; máxima presión de trabajo 6 bar; diámetro nominal 2\"; conexión tubería racor 1 1/4\"; 230 V; 800-4.800 rpm; 0,04-0,7 A; 4-75 W; IPX 2D; 3,2 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,2. Modelo Quantum Maxi 1045 de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 484.18,
+   "importe": 484.18,
+   "descripcion": "Circulador para instalación de calefacción, de 4,4 m³/h de caudal máximo. Altura máxima 7,5 m.c.a.; rango de temperatura -10 a 95ºC; máxima presión de trabajo 6 bar; diámetro nominal 2\"; conexión tubería racor 1 1/4\"; 230 V; 800-4.800 rpm; 0,04-0,7 A; 4-75 W; IPX 2D; 3,2 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,2. Modelo Quantum Maxi 1045 de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "CrQM35-14",
+   "unidad": "Ud",
+   "resumen": "Circulador para instalación de calefacción, de 3,5 m³/h de caudal máximo. Altura máxima 6 m.c.a.; rango de temperatura -10 a 95ºC; máxima presión de trabajo 6 bar; diámetro nominal 2\"; conexión tubería racor 1 1/4\"; 230 V; 800-4.200 rpm; 0,04-0,44 A; 4-42 W; IPX 2D; 3 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,2. Modelo Quantum Maxi 1035 1 1/4\" de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 344.45,
+   "importe": 688.9,
+   "descripcion": "Circulador para instalación de calefacción, de 3,5 m³/h de caudal máximo. Altura máxima 6 m.c.a.; rango de temperatura -10 a 95ºC; máxima presión de trabajo 6 bar; diámetro nominal 2\"; conexión tubería racor 1 1/4\"; 230 V; 800-4.200 rpm; 0,04-0,44 A; 4-42 W; IPX 2D; 3 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,2. Modelo Quantum Maxi 1035 1 1/4\" de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "CrQM25-1",
+   "unidad": "Ud",
+   "resumen": "Circulador para instalación de calefacción, de 2,7 m³/h de caudal máximo. Altura máxima 4,2 m.c.a.; rango de temperatura -10 a 95ºC; máxima presión de trabajo 6 bar; diámetro nominal 1 1/2\"; conexión tubería racor 1\"; 230 V; 800-3.500 rpm; 0,04-0,26 A; 4-21 W; IPX 2D; 2,6 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,2. Modelo Quantum Maxi 1025 1\" de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 304.53,
+   "importe": 304.53,
+   "descripcion": "Circulador para instalación de calefacción, de 2,7 m³/h de caudal máximo. Altura máxima 4,2 m.c.a.; rango de temperatura -10 a 95ºC; máxima presión de trabajo 6 bar; diámetro nominal 1 1/2\"; conexión tubería racor 1\"; 230 V; 800-3.500 rpm; 0,04-0,26 A; 4-21 W; IPX 2D; 2,6 kg. Control electrónico de la velocidad. Rotor húmedo. 3 velocidades y 2 modalidades de funcionamiento automático: presión diferencial variable o constante. De acuerdo con directiva ErP 2015 con índice de eficiencia <0,2. Modelo Quantum Maxi 1025 1\" de la marca Baxi o equivalente. Incluye accesorios de conexión, elementos de montaje, aislamiento del cuerpo de la bomba, puesta en marcha y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "MngVb1_1/2",
+   "unidad": "Ud",
+   "resumen": "Manguito elástico antivibratorio 1 1/2\" roscado. Cuerpo EPDM de doble onda; refuerzo interior de fibra de nylon; elementos rígidos de acero al carbono cincado; presión máxima de trabajo 10 bar, temperatura máxima 105ºC. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Marca Genebre o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 4.0,
+   "precio": 32.16,
+   "importe": 128.64,
+   "descripcion": "Manguito elástico antivibratorio 1 1/2\" roscado. Cuerpo EPDM de doble onda; refuerzo interior de fibra de nylon; elementos rígidos de acero al carbono cincado; presión máxima de trabajo 10 bar, temperatura máxima 105ºC. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Marca Genebre o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "MngVb1_1/4",
+   "unidad": "Ud",
+   "resumen": "Manguito elástico antivibratorio 1 1/4\" roscado. Cuerpo EPDM de doble onda; refuerzo interior de fibra de nylon; elementos rígidos de acero al carbono cincado; presión máxima de trabajo 10 bar, temperatura máxima 105ºC. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Marca Genebre o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 10.0,
+   "precio": 25.81,
+   "importe": 258.1,
+   "descripcion": "Manguito elástico antivibratorio 1 1/4\" roscado. Cuerpo EPDM de doble onda; refuerzo interior de fibra de nylon; elementos rígidos de acero al carbono cincado; presión máxima de trabajo 10 bar, temperatura máxima 105ºC. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Marca Genebre o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "MngVb1",
+   "unidad": "Ud",
+   "resumen": "Manguito elástico antivibratorio 1\" roscado. Cuerpo EPDM de doble onda; refuerzo interior de fibra de nylon; elementos rígidos de acero al carbono cincado; presión máxima de trabajo 10 bar, temperatura máxima 105ºC. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Marca Genebre o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 23.06,
+   "importe": 46.12,
+   "descripcion": "Manguito elástico antivibratorio 1\" roscado. Cuerpo EPDM de doble onda; refuerzo interior de fibra de nylon; elementos rígidos de acero al carbono cincado; presión máxima de trabajo 10 bar, temperatura máxima 105ºC. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Marca Genebre o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VMz1_1/4",
+   "unidad": "Ud",
+   "resumen": "Valvula mezcladora de 3 vías, de 1 y 1/4\", con servomotor. Regulación del caudal de agua; posible acción manual de la válvula; cuerpo y obturador de latón y juntas tóricas de EPDM. Válvula de la marca Baxi o equivalente. Modelo de servomotor SM-41 de la marca Baxi o equivalente; 230 V; potencia 5 VA; tiempo de giro 90º 120 s; par de trabajo 6 N·m. Incluye cableado, sondas de temperatura, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 3.0,
+   "precio": 295.15,
+   "importe": 885.45,
+   "descripcion": "Valvula mezcladora de 3 vías, de 1 y 1/4\", con servomotor. Regulación del caudal de agua; posible acción manual de la válvula; cuerpo y obturador de latón y juntas tóricas de EPDM. Válvula de la marca Baxi o equivalente. Modelo de servomotor SM-41 de la marca Baxi o equivalente; 230 V; potencia 5 VA; tiempo de giro 90º 120 s; par de trabajo 6 N·m. Incluye cableado, sondas de temperatura, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VMz1",
+   "unidad": "Ud",
+   "resumen": "Valvula mezcladora de 3 vías, de 1\", con servomotor. Regulación del caudal de agua; posible acción manual de la válvula; cuerpo y obturador de latón y juntas tóricas de EPDM. Válvula de la marca Baxi o equivalente. Modelo de servomotor SM-41 de la marca Baxi o equivalente; 230 V; potencia 5 VA; tiempo de giro 90º 120 s; par de trabajo 6 N·m. Incluye cableado, sondas de temperatura, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 286.74,
+   "importe": 286.74,
+   "descripcion": "Valvula mezcladora de 3 vías, de 1\", con servomotor. Regulación del caudal de agua; posible acción manual de la válvula; cuerpo y obturador de latón y juntas tóricas de EPDM. Válvula de la marca Baxi o equivalente. Modelo de servomotor SM-41 de la marca Baxi o equivalente; 230 V; potencia 5 VA; tiempo de giro 90º 120 s; par de trabajo 6 N·m. Incluye cableado, sondas de temperatura, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VMz3/4",
+   "unidad": "Ud",
+   "resumen": "Valvula mezcladora de 3 vías, de 3/4\", con servomotor. Regulación del caudal de agua; posible acción manual de la válvula; cuerpo y obturador de latón y juntas tóricas de EPDM. Válvula de la marca Baxi o equivalente. Modelo de servomotor SM-41 de la marca Baxi o equivalente; 230 V; potencia 5 VA; tiempo de giro 90º 120 s; par de trabajo 6 N·m. Incluye cableado, sondas de temperatura, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 278.34,
+   "importe": 278.34,
+   "descripcion": "Valvula mezcladora de 3 vías, de 3/4\", con servomotor. Regulación del caudal de agua; posible acción manual de la válvula; cuerpo y obturador de latón y juntas tóricas de EPDM. Válvula de la marca Baxi o equivalente. Modelo de servomotor SM-41 de la marca Baxi o equivalente; 230 V; potencia 5 VA; tiempo de giro 90º 120 s; par de trabajo 6 N·m. Incluye cableado, sondas de temperatura, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "Desf1-12",
+   "unidad": "Ud",
+   "resumen": "Desfangador (separador de lodos) de 1 1/2\" con separador magnético y aislamiento. Caudal 6 m3/h; P máxima de trabajo 10 bar; cuerpo de latón, filtro de acero inoxidable y juntas de EPDM. Marca Baxi o equivalente. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 285.69,
+   "importe": 285.69,
+   "descripcion": "Desfangador (separador de lodos) de 1 1/2\" con separador magnético y aislamiento. Caudal 6 m3/h; P máxima de trabajo 10 bar; cuerpo de latón, filtro de acero inoxidable y juntas de EPDM. Marca Baxi o equivalente. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "Desf1-14",
+   "unidad": "Ud",
+   "resumen": "Desfangador (separador de lodos) de 1 1/4\" con separador magnético. Caudal 6 m3/h; P máxima de trabajo 10 bar; cuerpo de latón, filtro de acero inoxidable y juntas de EPDM. Marca Baxi o equivalente. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 182.73,
+   "importe": 182.73,
+   "descripcion": "Desfangador (separador de lodos) de 1 1/4\" con separador magnético. Caudal 6 m3/h; P máxima de trabajo 10 bar; cuerpo de latón, filtro de acero inoxidable y juntas de EPDM. Marca Baxi o equivalente. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "PrgAut",
+   "unidad": "Ud",
+   "resumen": "Purgador automático para circuito de calefacción. Rosca 1/2\"; presión máxima de trabajo 10 bar; temperatura máxima de trabajo 110ºC; accionamiento por flotador; cuerpo de latón. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Modelo Flexvent de la marca Baxi o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 8.0,
+   "precio": 28.86,
+   "importe": 230.88,
+   "descripcion": "Purgador automático para circuito de calefacción. Rosca 1/2\"; presión máxima de trabajo 10 bar; temperatura máxima de trabajo 110ºC; accionamiento por flotador; cuerpo de latón. Incluye accesorios de montaje y conexión y reparación de desperfectos de obra. Modelo Flexvent de la marca Baxi o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "V3Seg3/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de seguridad de 3/4\", tarada a 3 bar, con embudo de desagüe. P máxima de calefacción 200 kW. Marca Baxi o equivalente. Salida de 3/4\". Incluye desagüe, tubo de desagüe, accesorios de montaje y conexión y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 63.96,
+   "importe": 127.92,
+   "descripcion": "Válvula de seguridad de 3/4\", tarada a 3 bar, con embudo de desagüe. P máxima de calefacción 200 kW. Marca Baxi o equivalente. Salida de 3/4\". Incluye desagüe, tubo de desagüe, accesorios de montaje y conexión y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "FilC11/2",
+   "unidad": "Ud",
+   "resumen": "Filtro inspeccionable 1 1/2\" con malla de acero inoxidable. Cuerpo y tapón en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar. Incluye filtro, accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R74A de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 61.49,
+   "importe": 61.49,
+   "descripcion": "Filtro inspeccionable 1 1/2\" con malla de acero inoxidable. Cuerpo y tapón en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar. Incluye filtro, accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R74A de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "FilC11/4",
+   "unidad": "Ud",
+   "resumen": "Filtro inspeccionable 1 1/4\" con malla de acero inoxidable. Cuerpo y tapón en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar. Incluye filtro, accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R74A de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 45.36,
+   "importe": 45.36,
+   "descripcion": "Filtro inspeccionable 1 1/4\" con malla de acero inoxidable. Cuerpo y tapón en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar. Incluye filtro, accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R74A de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "FilC3/4",
+   "unidad": "Ud",
+   "resumen": "Filtro inspeccionable 3/4\" con malla de acero inoxidable. Cuerpo y tapón en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar. Incluye filtro, accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R74A de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 18.79,
+   "importe": 18.79,
+   "descripcion": "Filtro inspeccionable 3/4\" con malla de acero inoxidable. Cuerpo y tapón en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar. Incluye filtro, accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R74A de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "LlBoC11/2",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 1 1/2\", con obturador de latón cromado. Presión nominal 35 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra.",
+   "cantidad": 4.0,
+   "precio": 48.2,
+   "importe": 192.8,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 1 1/2\", con obturador de latón cromado. Presión nominal 35 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "LlBoC11/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 1 1/4\", con obturador de latón cromado. Presión nominal 35 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra.",
+   "cantidad": 15.0,
+   "precio": 32.13,
+   "importe": 481.95,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 1 1/4\", con obturador de latón cromado. Presión nominal 35 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "LlBoC1",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 1\", con obturador de latón cromado. Presión nominal 35 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra.",
+   "cantidad": 2.0,
+   "precio": 22.99,
+   "importe": 45.98,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 1\", con obturador de latón cromado. Presión nominal 35 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "LlBoC3/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 3/4\", con obturador de latón cromado. Presión nominal 42 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra.",
+   "cantidad": 8.0,
+   "precio": 16.79,
+   "importe": 134.32,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 3/4\", con obturador de latón cromado. Presión nominal 42 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "LlBoC1/2",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 1/2\", con obturador de latón cromado. Presión nominal 42 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra.",
+   "cantidad": 14.0,
+   "precio": 13.32,
+   "importe": 186.48,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 1/2\", con obturador de latón cromado. Presión nominal 42 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "LlBoC1/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 1/4\", con obturador de latón cromado. Presión nominal 42 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra.",
+   "cantidad": 2.0,
+   "precio": 11.27,
+   "importe": 22.54,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 1/4\", con obturador de latón cromado. Presión nominal 42 bar a 100ºC; máxima temperatura 185ºC; estanquidad de la esfera por anillos de PTFE; estanquidad del eje por doble junta tórica con arandelas PTFE; maneta de acero inoxidable y recubrimiento plástico, de 1/4 de vuelta. Según UNE-EN 12164 y UNE-EN 12165. Serie Cubo de la marca Baxi o equivalente. Totalmente instalada y puesta en funcionamiento. Incluye material auxiliar, eliminación de elemento existente y reparación de desperfectos en obra."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "Colectores",
+   "unidad": "Ud",
+   "resumen": "Colectores de PPR multicapa de impulsión y retorno de los circuitos de la escuela y de la residencia. Medidas y conexiones según plano. 4 unidades en total. Marca Reboca o equivalente. Incluye aislamiento térmico, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalados y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 961.53,
+   "importe": 961.53,
+   "descripcion": "Colectores de PPR multicapa de impulsión y retorno de los circuitos de la escuela y de la residencia. Medidas y conexiones según plano. 4 unidades en total. Marca Reboca o equivalente. Incluye aislamiento térmico, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalados y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VsEx14B",
+   "unidad": "Ud",
+   "resumen": "Vaso de expansión hidroneumático de 140 l, para calefacción, de membrana elástica. Cámara de gas con nitrógeno a presión. Temperatura máxima de trabajo 110ºC; presión de llenado 1 bar; conexión de entrada rosca 1\"; presión máxima de trabajo 3 bar; Ø484x952 mm; 33,5 kg. Acero al carbono pintado exteriormente. Modelo Vasoflex 140 de la marca Baxi o equivalente. Incluye accesorios de montaje y conexión y desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 516.77,
+   "importe": 516.77,
+   "descripcion": "Vaso de expansión hidroneumático de 140 l, para calefacción, de membrana elástica. Cámara de gas con nitrógeno a presión. Temperatura máxima de trabajo 110ºC; presión de llenado 1 bar; conexión de entrada rosca 1\"; presión máxima de trabajo 3 bar; Ø484x952 mm; 33,5 kg. Acero al carbono pintado exteriormente. Modelo Vasoflex 140 de la marca Baxi o equivalente. Incluye accesorios de montaje y conexión y desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VsEx5B",
+   "unidad": "Ud",
+   "resumen": "Vaso de expansión hidroneumático de 50 l, para calefacción, de membrana elástica. Cámara de gas con nitrógeno a presión. Temperatura máxima de trabajo 110ºC; presión de llenado 1 bar; conexión de entrada rosca 1\"; presión máxima de trabajo 3 bar; Ø519x540 mm; 20 kg. Acero al carbono pintado exteriormente. Modelo Vasoflex 80 de la marca Baxi o equivalente. Incluye accesorios de montaje y conexión. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 188.98,
+   "importe": 188.98,
+   "descripcion": "Vaso de expansión hidroneumático de 50 l, para calefacción, de membrana elástica. Cámara de gas con nitrógeno a presión. Temperatura máxima de trabajo 110ºC; presión de llenado 1 bar; conexión de entrada rosca 1\"; presión máxima de trabajo 3 bar; Ø519x540 mm; 20 kg. Acero al carbono pintado exteriormente. Modelo Vasoflex 80 de la marca Baxi o equivalente. Incluye accesorios de montaje y conexión. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "GrfDs3/4",
+   "unidad": "Ud",
+   "resumen": "Grifo de desagüe de 3/4\" y cierre de bola. Cuerpo de latón. Incluye accesorios de montaje y conexión. Marca Baxi o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 20.03,
+   "importe": 20.03,
+   "descripcion": "Grifo de desagüe de 3/4\" y cierre de bola. Cuerpo de latón. Incluye accesorios de montaje y conexión. Marca Baxi o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "GrfDs1/2",
+   "unidad": "Ud",
+   "resumen": "Grifo de desagüe de 1/2\" y cierre de bola. Cuerpo de latón. Incluye accesorios de montaje y conexión. Marca Baxi o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 16.78,
+   "importe": 16.78,
+   "descripcion": "Grifo de desagüe de 1/2\" y cierre de bola. Cuerpo de latón. Incluye accesorios de montaje y conexión. Marca Baxi o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "EmbV3/4",
+   "unidad": "Ud",
+   "resumen": "Embudo para descarga, con entrada de 3/4\" en vertical y salida en vertical. Cuerpo de latón. Incluye accesorios de montaje y conexión. Modelo R141 de la marca Giacomini o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 16.73,
+   "importe": 16.73,
+   "descripcion": "Embudo para descarga, con entrada de 3/4\" en vertical y salida en vertical. Cuerpo de latón. Incluye accesorios de montaje y conexión. Modelo R141 de la marca Giacomini o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "EmbV1/2",
+   "unidad": "Ud",
+   "resumen": "Embudo para descarga, con entrada de 1/2\" en vertical y salida en vertical. Cuerpo de latón. Incluye accesorios de montaje y conexión. Modelo R141 de la marca Giacomini o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 15.68,
+   "importe": 15.68,
+   "descripcion": "Embudo para descarga, con entrada de 1/2\" en vertical y salida en vertical. Cuerpo de latón. Incluye accesorios de montaje y conexión. Modelo R141 de la marca Giacomini o equivalente. Incluye desmontaje de elemento existente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VRet11/2",
+   "unidad": "Ud",
+   "resumen": "Válvula de retención de 1 1/2\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 64.8,
+   "importe": 129.6,
+   "descripcion": "Válvula de retención de 1 1/2\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VRet11/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de retención de 1 1/4\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 6.0,
+   "precio": 48.15,
+   "importe": 288.9,
+   "descripcion": "Válvula de retención de 1 1/4\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VRet1",
+   "unidad": "Ud",
+   "resumen": "Válvula de retención de 1\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 32.45,
+   "importe": 32.45,
+   "descripcion": "Válvula de retención de 1\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "VRet3/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de retención de 3/4\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 26.45,
+   "importe": 26.45,
+   "descripcion": "Válvula de retención de 3/4\" a disco de plástico con obturador metálico. Cuerpo en latón; temperatura máxima de trabajo 110ºC; P máxima de trabajo 16 bar; P de apertura 0,02 bar. Incluye accesorios de montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Modelo R60 de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "ManC6",
+   "unidad": "Ud",
+   "resumen": "Manómetro Ø52 mm con conexión de 1/4\". Salida lateral o posterior; aguja roja de referencia; tarado de 0 a 6 bar; temperatura máxima 110ºC. Incluye vaina, accesorios de montaje y conexión, eliminación de elemento existente y reparación de desperfectos de obra. Modelo R225I de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 8.0,
+   "precio": 18.99,
+   "importe": 151.92,
+   "descripcion": "Manómetro Ø52 mm con conexión de 1/4\". Salida lateral o posterior; aguja roja de referencia; tarado de 0 a 6 bar; temperatura máxima 110ºC. Incluye vaina, accesorios de montaje y conexión, eliminación de elemento existente y reparación de desperfectos de obra. Modelo R225I de la marca Giacomini o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "TrmVnB",
+   "unidad": "Ud",
+   "resumen": "Termómetro con vaina Ø63 mm. Rango 0-120 ºC. Incluye vaina, accesorios de montaje y conexión, desmontaje de elemento existente y reparación de desperfectos de obra. Marca Baxi o equivalente. Totalmente instalado y en funcionamiento.",
+   "cantidad": 11.0,
+   "precio": 15.8,
+   "importe": 173.8,
+   "descripcion": "Termómetro con vaina Ø63 mm. Rango 0-120 ºC. Incluye vaina, accesorios de montaje y conexión, desmontaje de elemento existente y reparación de desperfectos de obra. Marca Baxi o equivalente. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "SndInmB",
+   "unidad": "Ud",
+   "resumen": "Sonda de inmersión para montaje en vaina, para conexión a centralita de control compatible. Incluye cableado, accesorios de montaje y conexión, eliminación de elemento existente y reparación de desperfectos de obra. Modelo QAZ 36 de la marca Baxi o equivalente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 4.0,
+   "precio": 25.09,
+   "importe": 100.36,
+   "descripcion": "Sonda de inmersión para montaje en vaina, para conexión a centralita de control compatible. Incluye cableado, accesorios de montaje y conexión, eliminación de elemento existente y reparación de desperfectos de obra. Modelo QAZ 36 de la marca Baxi o equivalente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "Desc3_4",
+   "unidad": "Ud",
+   "resumen": "Desconector de 3/4\", DN 20. Temperatura de funcionamiento 65ºC; pico de temperatura 90ºC durante 1 h al día; PN 10 bar. Cuerpo de latón, conexiones roscadas. De acuerdo con EN 1717. Modelo BA BM 020 de la marca Watts o equivalente. Incluye embudo de descarga, juntas, accesorios de montaje e instalación y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado.",
+   "cantidad": 1.0,
+   "precio": 270.4,
+   "importe": 270.4,
+   "descripcion": "Desconector de 3/4\", DN 20. Temperatura de funcionamiento 65ºC; pico de temperatura 90ºC durante 1 h al día; PN 10 bar. Cuerpo de latón, conexiones roscadas. De acuerdo con EN 1717. Modelo BA BM 020 de la marca Watts o equivalente. Incluye embudo de descarga, juntas, accesorios de montaje e instalación y reparación de desperfectos de obra. Incluye desmontaje de elemento existente. Totalmente instalado."
+  },
+  {
+   "capitulo": "Sala de caldera",
+   "codigo": "Cont15",
+   "unidad": "Ud",
+   "resumen": "Contador de agua fría y caliente de 15 mm con esfera orientable 360ºC. Caudal nominal 1,5 m3/h; caudal máximo 2,5 m3/h; precisión 1 l; totalizador de 8 dígitos; temperatura máxima de trabajo 30ºC; conexión roscada 3/4\". Modelo ETR-LOC de la marca Standard Ibérica o equivalente. Incluye accesorios de montaje y conexión, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 49.48,
+   "importe": 49.48,
+   "descripcion": "Contador de agua fría y caliente de 15 mm con esfera orientable 360ºC. Caudal nominal 1,5 m3/h; caudal máximo 2,5 m3/h; precisión 1 l; totalizador de 8 dígitos; temperatura máxima de trabajo 30ºC; conexión roscada 3/4\". Modelo ETR-LOC de la marca Standard Ibérica o equivalente. Incluye accesorios de montaje y conexión, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "RecForj",
+   "unidad": "Ud",
+   "resumen": "Reconocimiento del forjado sanitario grabando con cámara el trazado de las tuberías y marcándolo en el plano. Examen de la misma en busca de fugas tras la prueba de presión. Examen de correcto montaje de las conexiones hasta las tuberías que atraviesan el forjado hacia arriba. Las imágenes se entregarán al director de obra y se debe identificar a qué zona corresponden.",
+   "cantidad": 3.0,
+   "precio": 100.6,
+   "importe": 301.8,
+   "descripcion": "Reconocimiento del forjado sanitario grabando con cámara el trazado de las tuberías y marcándolo en el plano. Examen de la misma en busca de fugas tras la prueba de presión. Examen de correcto montaje de las conexiones hasta las tuberías que atraviesan el forjado hacia arriba. Las imágenes se entregarán al director de obra y se debe identificar a qué zona corresponden."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPprC50S",
+   "unidad": "m",
+   "resumen": "Tubería Ø50 mm exterior, espesor 4,6 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR11; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 25.0,
+   "precio": 34.66,
+   "importe": 866.5,
+   "descripcion": "Tubería Ø50 mm exterior, espesor 4,6 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR11; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "Cq32-54",
+   "unidad": "m",
+   "resumen": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 60 mm de diámetro interior y 32 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento.",
+   "cantidad": 25.0,
+   "precio": 23.19,
+   "importe": 579.75,
+   "descripcion": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 60 mm de diámetro interior y 32 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPprC40S",
+   "unidad": "m",
+   "resumen": "Tubería Ø40 mm exterior, espesor 3,7 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR11; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 310.0,
+   "precio": 23.84,
+   "importe": 7390.4,
+   "descripcion": "Tubería Ø40 mm exterior, espesor 3,7 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR11; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "Cq32-42",
+   "unidad": "m",
+   "resumen": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 42 mm de diámetro interior y 32 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento.",
+   "cantidad": 310.0,
+   "precio": 19.82,
+   "importe": 6144.2,
+   "descripcion": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 42 mm de diámetro interior y 32 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPprC32S",
+   "unidad": "m",
+   "resumen": "Tubería Ø32 mm exterior, espesor 2,9 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR11; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 280.0,
+   "precio": 18.56,
+   "importe": 5196.8,
+   "descripcion": "Tubería Ø32 mm exterior, espesor 2,9 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR11; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "Cq25-35",
+   "unidad": "m",
+   "resumen": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 35 mm de diámetro interior y 25 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento.",
+   "cantidad": 280.0,
+   "precio": 16.25,
+   "importe": 4550.0,
+   "descripcion": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 35 mm de diámetro interior y 25 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPprC25S",
+   "unidad": "m",
+   "resumen": "Tubería Ø25 mm exterior, espesor 3,5 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR7,4; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 435.0,
+   "precio": 13.24,
+   "importe": 5759.4,
+   "descripcion": "Tubería Ø25 mm exterior, espesor 3,5 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR7,4; coeficiente de dilatación lineal 0,03 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "Cq25-25",
+   "unidad": "m",
+   "resumen": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 25 mm de diámetro interior y 25 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento.",
+   "cantidad": 435.0,
+   "precio": 13.69,
+   "importe": 5955.15,
+   "descripcion": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 25 mm de diámetro interior y 25 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPprC20S",
+   "unidad": "m",
+   "resumen": "Tubería Ø20 mm exterior, espesor 2,8 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR7,4; coeficiente de dilatación lineal 0,035 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 70.0,
+   "precio": 6.85,
+   "importe": 479.5,
+   "descripcion": "Tubería Ø20 mm exterior, espesor 2,8 mm, de polipropileno copolímero random con fibra de vidtrio (PPR-CT), resistente a la temperatura, para instalación interior de calefacción, colocada superficialmente. SDR7,4; coeficiente de dilatación lineal 0,035 mm/mºC; compuesta, multicapa (faser); PN=9,5 bar a 50 años, de color azul con franjas verdes. De acuerdo con UNE-EN 15874. Modelo Faser Clima de la marca Repolen o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "Cq25-22",
+   "unidad": "m",
+   "resumen": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 22 mm de diámetro interior y 25 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento.",
+   "cantidad": 70.0,
+   "precio": 10.26,
+   "importe": 718.2,
+   "descripcion": "Aislamiento térmico (coquilla), tubular, elastomérico, flexible, de 22 mm de diámetro interior y 25 mm de espesor, colocado superficialmente, para la distribución de fluidos desde -40ºC a +110°C. Factor de resistencia a la difusión del vapor de agua µ 10.000, resistencia al fuego BL s2 d0, conductividad térmica a 10ºC 0,034 W/m·K y de 0,037 W/m·K a 40ºC. Elastómero extruido de célula cerrada nitril-PVC. Marca Isocell o equivalente. Incluye material de montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalado y puesto en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbMc32S",
+   "unidad": "m",
+   "resumen": "Tubería multicapa Ø32 mm y espesor 3 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 3.0,
+   "precio": 14.81,
+   "importe": 44.43,
+   "descripcion": "Tubería multicapa Ø32 mm y espesor 3 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbMc25S",
+   "unidad": "m",
+   "resumen": "Tubería multicapa Ø25 mm y espesor 2,5 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 534.0,
+   "precio": 11.89,
+   "importe": 6349.26,
+   "descripcion": "Tubería multicapa Ø25 mm y espesor 2,5 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbMc20S",
+   "unidad": "m",
+   "resumen": "Tubería multicapa Ø20 mm y espesor 2 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 395.0,
+   "precio": 8.83,
+   "importe": 3487.85,
+   "descripcion": "Tubería multicapa Ø20 mm y espesor 2 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbMc16S",
+   "unidad": "m",
+   "resumen": "Tubería multicapa Ø16 mm y espesor 2 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 20.0,
+   "precio": 6.63,
+   "importe": 132.6,
+   "descripcion": "Tubería multicapa Ø16 mm y espesor 2 mm de PEX/Al/PEX para instalación interior de fontanería en montaje superficial o empotrado. Con barrera de oxígeno. Según UNE-EN 21003. Marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPPR32S",
+   "unidad": "m",
+   "resumen": "Tubería Ø32 mm exterior, espesor 2,9 mm, de polipropileno copolímero random (PP-R), para instalación interior de fontanería, colocada superficialmente. Serie 5/SDR11; monocapa; PN=10 bar. Según UNE-EN 15874. Marca Repolen, o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 50.0,
+   "precio": 12.69,
+   "importe": 634.5,
+   "descripcion": "Tubería Ø32 mm exterior, espesor 2,9 mm, de polipropileno copolímero random (PP-R), para instalación interior de fontanería, colocada superficialmente. Serie 5/SDR11; monocapa; PN=10 bar. Según UNE-EN 15874. Marca Repolen, o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbPPR25S",
+   "unidad": "m",
+   "resumen": "Tubería Ø25 mm exterior, espesor 3,5 mm, de polipropileno copolímero random (PP-R), para instalación interior de fontanería, colocada superficialmente. Serie 3,2/SDR7,4; monocapa; PN=16 bar. Según UNE-EN 15874. Marca Repolen, o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 20.0,
+   "precio": 9.36,
+   "importe": 187.2,
+   "descripcion": "Tubería Ø25 mm exterior, espesor 3,5 mm, de polipropileno copolímero random (PP-R), para instalación interior de fontanería, colocada superficialmente. Serie 3,2/SDR7,4; monocapa; PN=16 bar. Según UNE-EN 15874. Marca Repolen, o equivalente. Incluye accesorios de conexión y montaje, eliminación de tubería existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "LlBo1",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 1\". Presión nominal 25 bar; temperatura de servicio -20/100ºC. Cuerpo niquelado y palanca roja. Según UNE-EN 12164 y UNE-EN 12165. Serie Nilo de la marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 16.83,
+   "importe": 16.83,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 1\". Presión nominal 25 bar; temperatura de servicio -20/100ºC. Cuerpo niquelado y palanca roja. Según UNE-EN 12164 y UNE-EN 12165. Serie Nilo de la marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "LlBo3/4",
+   "unidad": "Ud",
+   "resumen": "Válvula de esfera de latón niquelado para roscas de 3/4\". Presión nominal 25 bar; temperatura de servicio -20/100ºC. Cuerpo niquelado y palanca roja. Según UNE-EN 12164 y UNE-EN 12165. Serie Nilo de la marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 10.4,
+   "importe": 20.8,
+   "descripcion": "Válvula de esfera de latón niquelado para roscas de 3/4\". Presión nominal 25 bar; temperatura de servicio -20/100ºC. Cuerpo niquelado y palanca roja. Según UNE-EN 12164 y UNE-EN 12165. Serie Nilo de la marca Arco o equivalente. Incluye accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos en obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "ColPS50",
+   "unidad": "m",
+   "resumen": "Colector suspendido de PVC-U, serie B, Ø50 mm y 3 mm de espesor. Unión pegada con adhesivo. De acuerdo con UNE-EN 1329. Marca Crearplast o equivalente. Incluye la conexión aguas arriba y abajo, curvas, injertos, derivaciones y resto de accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento.",
+   "cantidad": 20.0,
+   "precio": 9.54,
+   "importe": 190.8,
+   "descripcion": "Colector suspendido de PVC-U, serie B, Ø50 mm y 3 mm de espesor. Unión pegada con adhesivo. De acuerdo con UNE-EN 1329. Marca Crearplast o equivalente. Incluye la conexión aguas arriba y abajo, curvas, injertos, derivaciones y resto de accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalada y puesta en funcionamiento."
+  },
+  {
+   "capitulo": "Conducciones",
+   "codigo": "TbAsDb40",
+   "unidad": "m",
+   "resumen": "Tubería preaislada flexible Ø40 mm para transporte de calor, con 2 tuberías interiores, aislamiento y capa exterior de protección. Tubería interior de PE-Xa de 3,7 mm de espesor (SDR11) con barrera de oxígeno EVOH exterior, según DIN 16892/16893, con conductividad de 0,38 W/mK. Espuma aislante de poliuretano elástica y libre de CFC, con conductividad térmica 0,0246 W/mK y con capa periférica de polietileno, con capacidad de absorción de agua menor del 1% según DIN 53428. Ambas capas aislantes recubiertas por lámina de aluminio para mejorar la barrera de oxígeno. Carcasa exterior de PE-HD y Ø175 mm. Radio de curvatura mínimo 80 cm. Temperatura máxima de servicio de 95ºC a 6 bar. Marca ALB o equivalente. Incluye accesorios de montaje y conexión. Totalmente instalada y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 124.27,
+   "importe": 124.27,
+   "descripcion": "Tubería preaislada flexible Ø40 mm para transporte de calor, con 2 tuberías interiores, aislamiento y capa exterior de protección. Tubería interior de PE-Xa de 3,7 mm de espesor (SDR11) con barrera de oxígeno EVOH exterior, según DIN 16892/16893, con conductividad de 0,38 W/mK. Espuma aislante de poliuretano elástica y libre de CFC, con conductividad térmica 0,0246 W/mK y con capa periférica de polietileno, con capacidad de absorción de agua menor del 1% según DIN 53428. Ambas capas aislantes recubiertas por lámina de aluminio para mejorar la barrera de oxígeno. Carcasa exterior de PE-HD y Ø175 mm. Radio de curvatura mínimo 80 cm. Temperatura máxima de servicio de 95ºC a 6 bar. Marca ALB o equivalente. Incluye accesorios de montaje y conexión. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "CTrmVH",
+   "unidad": "Ud",
+   "resumen": "Cabezal termostático antivandálico. Conexión M28x1,5; protección antirrobo y contra manipulación indebida; ajuste del valor de consigna entre 8 y 26ºC; bloqueo mediante herramienta especial. Modelo Herzcules M28 de la marca Herz o equivalente. Incluye llave de bloqueo y accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 93.0,
+   "precio": 44.72,
+   "importe": 4158.96,
+   "descripcion": "Cabezal termostático antivandálico. Conexión M28x1,5; protección antirrobo y contra manipulación indebida; ajuste del valor de consigna entre 8 y 26ºC; bloqueo mediante herramienta especial. Modelo Herzcules M28 de la marca Herz o equivalente. Incluye llave de bloqueo y accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "VTrmV3/4",
+   "unidad": "Ud",
+   "resumen": "Válvula termostatizable de escuadra de 3/4\". Cabezal alineado con la entrada de agua al radiador, no perpendicular a la pared; DN 20; rosca macho o hembra o soldable. Cuerpo en latón niquelado; junta tórica; posibilidad de desmontaje del cartucho termostático sin necesidad de vaciado de la instalación. Modelo TS-90 escuadra especial de la marca Hrz o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 61.0,
+   "precio": 41.55,
+   "importe": 2534.55,
+   "descripcion": "Válvula termostatizable de escuadra de 3/4\". Cabezal alineado con la entrada de agua al radiador, no perpendicular a la pared; DN 20; rosca macho o hembra o soldable. Cuerpo en latón niquelado; junta tórica; posibilidad de desmontaje del cartucho termostático sin necesidad de vaciado de la instalación. Modelo TS-90 escuadra especial de la marca Hrz o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "VTrmV1/2",
+   "unidad": "Ud",
+   "resumen": "Válvula termostatizable de escuadra de 1/2\". Cabezal alineado con la entrada de agua al radiador, no perpendicular a la pared; DN 15; rosca macho o hembra o soldable. Cuerpo en latón niquelado; junta tórica; posibilidad de desmontaje del cartucho termostático sin necesidad de vaciado de la instalación. Modelo TS-90 escuadra especial de la marca Hrz o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 32.0,
+   "precio": 32.52,
+   "importe": 1040.64,
+   "descripcion": "Válvula termostatizable de escuadra de 1/2\". Cabezal alineado con la entrada de agua al radiador, no perpendicular a la pared; DN 15; rosca macho o hembra o soldable. Cuerpo en latón niquelado; junta tórica; posibilidad de desmontaje del cartucho termostático sin necesidad de vaciado de la instalación. Modelo TS-90 escuadra especial de la marca Hrz o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "Term3/4",
+   "unidad": "Ud",
+   "resumen": "Válvula y cabezal termostático de 3/4\", de escuadra o recta, con rosca macho o hembra o soldable. Cuerpo en latón estampado con acabado exterior cromado mate; doble reglaje; recorrido máximo del volante de una sola vuelta; rosca con junta; montaje del enlace mediante llave hexagonal. Modelo NT de la marca Baxi o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 8.0,
+   "precio": 43.99,
+   "importe": 351.92,
+   "descripcion": "Válvula y cabezal termostático de 3/4\", de escuadra o recta, con rosca macho o hembra o soldable. Cuerpo en latón estampado con acabado exterior cromado mate; doble reglaje; recorrido máximo del volante de una sola vuelta; rosca con junta; montaje del enlace mediante llave hexagonal. Modelo NT de la marca Baxi o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "Term1/2",
+   "unidad": "Ud",
+   "resumen": "Válvula y cabezal termostático de 1/2\", de escuadra o recta, con rosca macho o hembra o soldable. Cuerpo en latón estampado con acabado exterior cromado mate; doble reglaje; recorrido máximo del volante de una sola vuelta; rosca con junta; montaje del enlace mediante llave hexagonal. Modelo NT de la marca Baxi o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento.",
+   "cantidad": 10.0,
+   "precio": 36.53,
+   "importe": 365.3,
+   "descripcion": "Válvula y cabezal termostático de 1/2\", de escuadra o recta, con rosca macho o hembra o soldable. Cuerpo en latón estampado con acabado exterior cromado mate; doble reglaje; recorrido máximo del volante de una sola vuelta; rosca con junta; montaje del enlace mediante llave hexagonal. Modelo NT de la marca Baxi o equivalente. Incluye accesorios de conexión y montaje. Incluye desmontaje de elemento existente. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "TrmTX3",
+   "unidad": "Ud",
+   "resumen": "Cronotermostato de ambiente, programable, digital, con transmisión por cable. Modo calefacción/refrigeración; bloqueo de seguridad; programación semanal ó 5+2 días; resolución de tiempo de ajuste 10 min; bloqueo de pantalla para ajuste; temperatura de ajuste comprendida entre 5ºC y 35ºC, a intervalos de 0,5ºC; conexión a 2 hilos; funcionamiento manual o automático; apagado del dispositivo; alimentación mediante pilas; iluminación de la pantalla; montaje mural. Modelo TX3000 de la marca Baxi o equivalente. Incluye cableado, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 6.0,
+   "precio": 151.16,
+   "importe": 906.96,
+   "descripcion": "Cronotermostato de ambiente, programable, digital, con transmisión por cable. Modo calefacción/refrigeración; bloqueo de seguridad; programación semanal ó 5+2 días; resolución de tiempo de ajuste 10 min; bloqueo de pantalla para ajuste; temperatura de ajuste comprendida entre 5ºC y 35ºC, a intervalos de 0,5ºC; conexión a 2 hilos; funcionamiento manual o automático; apagado del dispositivo; alimentación mediante pilas; iluminación de la pantalla; montaje mural. Modelo TX3000 de la marca Baxi o equivalente. Incluye cableado, accesorios de conexión y montaje, eliminación de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Regulación radiadores",
+   "codigo": "VlZnFcMt1",
+   "unidad": "Ud",
+   "resumen": "Electroválvula de 1\", de 2 vías, motorizada, con micro-interruptor final de carrera con contacto libre de tensión. Presión diferencial y temperatura máximas de trabajo 5 bar y 100ºC. Servomotor IP 54, con tiempo de maniobra (90º) 5 min, 230 V. Sin corriente la válvula no deja pasar el agua. Marca Polytherm o equivalente. Incluye accesorios de montaje y conexión. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 193.19,
+   "importe": 193.19,
+   "descripcion": "Electroválvula de 1\", de 2 vías, motorizada, con micro-interruptor final de carrera con contacto libre de tensión. Presión diferencial y temperatura máximas de trabajo 5 bar y 100ºC. Servomotor IP 54, con tiempo de maniobra (90º) 5 min, 230 V. Sin corriente la válvula no deja pasar el agua. Marca Polytherm o equivalente. Incluye accesorios de montaje y conexión. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "E8.0631",
+   "unidad": "Ud",
+   "resumen": "Centralita digital de control para equipo de calefacción. Control de temperatura ambiente en función de la exterior; regulación de hasta 2 válvulas mezcladoras para calefacción y 1 para ACS, controlando 1 ó 2 calderas o 1 quemador de 1 ó 2 etapa y los circuladores correspondientes; 2 relés auxiliares (multifunción temperatura y tiempo); integración en circuito bus; programación de la temperatura de confort y temperatura reducida para períodos nocturnos o ausencias, con posibilidad de fijar el horario para cada día de la semana; 2 programas distintos para cada circuito; programación de vacaciones; control de temperatura ambiente interior mediante sonda FRB1; protección automática antiheladas; clasificación ErP III; contribución a la eficiencia según ErP 1,5%, pantalla LCD. Modelo Elfatherm E8.0631 de la marca Baxi o equivalente. Incluye sonda de ambiente FBR1, 1 sonda de temperatura exterior, 4 sondas de ida y una sonda de ACS; cableado, canalización, accesorios de montaje y conexión y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 745.63,
+   "importe": 745.63,
+   "descripcion": "Centralita digital de control para equipo de calefacción. Control de temperatura ambiente en función de la exterior; regulación de hasta 2 válvulas mezcladoras para calefacción y 1 para ACS, controlando 1 ó 2 calderas o 1 quemador de 1 ó 2 etapa y los circuladores correspondientes; 2 relés auxiliares (multifunción temperatura y tiempo); integración en circuito bus; programación de la temperatura de confort y temperatura reducida para períodos nocturnos o ausencias, con posibilidad de fijar el horario para cada día de la semana; 2 programas distintos para cada circuito; programación de vacaciones; control de temperatura ambiente interior mediante sonda FRB1; protección automática antiheladas; clasificación ErP III; contribución a la eficiencia según ErP 1,5%, pantalla LCD. Modelo Elfatherm E8.0631 de la marca Baxi o equivalente. Incluye sonda de ambiente FBR1, 1 sonda de temperatura exterior, 4 sondas de ida y una sonda de ACS; cableado, canalización, accesorios de montaje y conexión y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "E8.1121",
+   "unidad": "Ud",
+   "resumen": "Centralita digital de control para equipo de calefacción. Control de temperatura ambiente en función de la exterior; regulación de hasta 2 válvulas mezcladoras para calefacción y 1 para ACS, controlando 1 ó 2 calderas o 1 quemador de 1 ó 2 etapa y los circuladores correspondientes; 2 relés auxiliares (multifunción temperatura y tiempo); integración en circuito bus; programación de la temperatura de confort y temperatura reducida para períodos nocturnos o ausencias, con posibilidad de fijar el horario para cada día de la semana; 2 programas distintos para cada circuito; programación de vacaciones; control de temperatura ambiente interior mediante sonda FRB1; protección automática antiheladas; clasificación ErP III; contribución a la eficiencia según ErP 1,5%, pantalla LCD. Modelo Elfatherm E8.1121 de la marca Baxi o equivalente. Incluye sonda de ambiente FBR1, 1 sonda de temperatura exterior, 4 sondas de ida y una sonda de ACS; cableado, canalización, accesorios de montaje y conexión y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 630.06,
+   "importe": 630.06,
+   "descripcion": "Centralita digital de control para equipo de calefacción. Control de temperatura ambiente en función de la exterior; regulación de hasta 2 válvulas mezcladoras para calefacción y 1 para ACS, controlando 1 ó 2 calderas o 1 quemador de 1 ó 2 etapa y los circuladores correspondientes; 2 relés auxiliares (multifunción temperatura y tiempo); integración en circuito bus; programación de la temperatura de confort y temperatura reducida para períodos nocturnos o ausencias, con posibilidad de fijar el horario para cada día de la semana; 2 programas distintos para cada circuito; programación de vacaciones; control de temperatura ambiente interior mediante sonda FRB1; protección automática antiheladas; clasificación ErP III; contribución a la eficiencia según ErP 1,5%, pantalla LCD. Modelo Elfatherm E8.1121 de la marca Baxi o equivalente. Incluye sonda de ambiente FBR1, 1 sonda de temperatura exterior, 4 sondas de ida y una sonda de ACS; cableado, canalización, accesorios de montaje y conexión y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "CbH07_6",
+   "unidad": "m",
+   "resumen": "Cable unipolar de 6 mm² de sección, aislamiento 450/750 V, H07Z1-K (AS), flexible clase 5 (-K), no propagador de la llama ni del incendio, con baja emisión de humos y gases tóxicos, libre de halógenos y ácidos corrosivos. Designación CPR Cca-s1b,d1,a1. Color según código normalizado. Según UNE-EN 50525-3-31. Modelo Afumex class 750 V (AS) de la marca Prysmian o equivalente. Incluye clemas, accesorios de conexión y montaje, eliminación de cableado existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 6.0,
+   "precio": 3.98,
+   "importe": 23.88,
+   "descripcion": "Cable unipolar de 6 mm² de sección, aislamiento 450/750 V, H07Z1-K (AS), flexible clase 5 (-K), no propagador de la llama ni del incendio, con baja emisión de humos y gases tóxicos, libre de halógenos y ácidos corrosivos. Designación CPR Cca-s1b,d1,a1. Color según código normalizado. Según UNE-EN 50525-3-31. Modelo Afumex class 750 V (AS) de la marca Prysmian o equivalente. Incluye clemas, accesorios de conexión y montaje, eliminación de cableado existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "CbRZ_2_5",
+   "unidad": "m",
+   "resumen": "Cable unipolar de 2,5 mm² de sección, aislamiento 0,6/1 kV, RZ1-K (AS), libre de halógenos, flexible clase 5 (-K). Aislante de polietileno reticulado y cubierta de compuesto termoplástico a base de poliolefina, no propagador de la llama ni del incendio, con baja emisión de humos y gases tóxicos, libre de halógenos y ácidos corrosivos. Designación CPR Cca-s1b,d1,a1. Color según código normalizado. Según UNE-EN 21123-4. Modelo Afumex class 1000 V (AS) de la marca Prysmian o equivalente. Incluye clemas, accesorios de conexión y montaje, eliminación de cableado existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 80.0,
+   "precio": 2.3,
+   "importe": 184.0,
+   "descripcion": "Cable unipolar de 2,5 mm² de sección, aislamiento 0,6/1 kV, RZ1-K (AS), libre de halógenos, flexible clase 5 (-K). Aislante de polietileno reticulado y cubierta de compuesto termoplástico a base de poliolefina, no propagador de la llama ni del incendio, con baja emisión de humos y gases tóxicos, libre de halógenos y ácidos corrosivos. Designación CPR Cca-s1b,d1,a1. Color según código normalizado. Según UNE-EN 21123-4. Modelo Afumex class 1000 V (AS) de la marca Prysmian o equivalente. Incluye clemas, accesorios de conexión y montaje, eliminación de cableado existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "CbH07_1_5",
+   "unidad": "m",
+   "resumen": "Cable unipolar de 1,5 mm² de sección, aislamiento 450/750 V, H07Z1-K (AS), flexible clase 5 (-K), no propagador de la llama ni del incendio, con baja emisión de humos y gases tóxicos, libre de halógenos y ácidos corrosivos. Designación CPR Cca-s1b,d1,a1. Color según código normalizado. Según UNE-EN 50525-3-31. Modelo Afumex class 750 V (AS) de la marca Prysmian o equivalente. Incluye clemas, accesorios de conexión y montaje, eliminación de cableado existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 820.0,
+   "precio": 1.28,
+   "importe": 1049.6,
+   "descripcion": "Cable unipolar de 1,5 mm² de sección, aislamiento 450/750 V, H07Z1-K (AS), flexible clase 5 (-K), no propagador de la llama ni del incendio, con baja emisión de humos y gases tóxicos, libre de halógenos y ácidos corrosivos. Designación CPR Cca-s1b,d1,a1. Color según código normalizado. Según UNE-EN 50525-3-31. Modelo Afumex class 750 V (AS) de la marca Prysmian o equivalente. Incluye clemas, accesorios de conexión y montaje, eliminación de cableado existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "TubCor20",
+   "unidad": "m",
+   "resumen": "Tubo corrugado forrado (doble capa) curvable de Ø20 mm, de PVC, según norma UNE-EN 61386-22. Resistencia a la compresión: >320 N; resistencia al impacto: >2J a -5ºC; temperatura mínima y máxima de utilización: -5 y +60ºC; rigidez dieléctrica >2000 V; resistencia de aislamiento >100 MW; IP54; no propagador de la llama; color gris. Marca Tupersa o equivalente. Incluye manguitos, grapas, cajas de derivación, accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 150.0,
+   "precio": 2.14,
+   "importe": 321.0,
+   "descripcion": "Tubo corrugado forrado (doble capa) curvable de Ø20 mm, de PVC, según norma UNE-EN 61386-22. Resistencia a la compresión: >320 N; resistencia al impacto: >2J a -5ºC; temperatura mínima y máxima de utilización: -5 y +60ºC; rigidez dieléctrica >2000 V; resistencia de aislamiento >100 MW; IP54; no propagador de la llama; color gris. Marca Tupersa o equivalente. Incluye manguitos, grapas, cajas de derivación, accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "MQ",
+   "unidad": "Ud",
+   "resumen": "Montaje de interruptor magnetotérmico para línea de subcuadro de bombas y centralitas, en cuadro existente en sala de calderas. Incluye accesorios de conexión y montaje y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 36.46,
+   "importe": 36.46,
+   "descripcion": "Montaje de interruptor magnetotérmico para línea de subcuadro de bombas y centralitas, en cuadro existente en sala de calderas. Incluye accesorios de conexión y montaje y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "Q_18",
+   "unidad": "Ud",
+   "resumen": "Cuadro eléctrico de superficie, de 18 módulos, con elementos y conexiones según esquema unifilar, con puerta opaca, cerradura con llave, portaplanos, tapas, fondo, carril DIN, soportes para aparamenta de caja moldeada, bornas repartidoras, colector de tierra, placas pasacables, obturadores, abrazaderas, etiqueta de riesgo eléctrico y accessorios de conexión (punteras, peines, puentes, etiquetas...) y montaje (fijaciones, bisagras...). Clase II; IP40; IK08; chasis extraíble. Debe permitir montajes según IEC 61439-3. Modelo Gold-P de la marca IDE o equivalente. Incluye aparamenta cableada y comprobada según esquema del proyecto. Incluye desmontaje de cuadro existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 311.39,
+   "importe": 311.39,
+   "descripcion": "Cuadro eléctrico de superficie, de 18 módulos, con elementos y conexiones según esquema unifilar, con puerta opaca, cerradura con llave, portaplanos, tapas, fondo, carril DIN, soportes para aparamenta de caja moldeada, bornas repartidoras, colector de tierra, placas pasacables, obturadores, abrazaderas, etiqueta de riesgo eléctrico y accessorios de conexión (punteras, peines, puentes, etiquetas...) y montaje (fijaciones, bisagras...). Clase II; IP40; IK08; chasis extraíble. Debe permitir montajes según IEC 61439-3. Modelo Gold-P de la marca IDE o equivalente. Incluye aparamenta cableada y comprobada según esquema del proyecto. Incluye desmontaje de cuadro existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "CDS9x9",
+   "unidad": "Ud",
+   "resumen": "Caja de derivación superficial estanca de PVC, de 95x95x52 mm con tapa y conos Ø25/40 mm. IP65; IK07; cierre con tornillos. Material plástico libre de halógenos. Marca IDE o equivalente. Incluye accesorios de conexión y montaje y el resto de elementos nec",
+   "cantidad": 27.0,
+   "precio": 5.04,
+   "importe": 136.08,
+   "descripcion": "Caja de derivación superficial estanca de PVC, de 95x95x52 mm con tapa y conos Ø25/40 mm. IP65; IK07; cierre con tornillos. Material plástico libre de halógenos. Marca IDE o equivalente. Incluye accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "CnE20x12",
+   "unidad": "m",
+   "resumen": "Canal de 20x12,5 mm con tapa exterior, IK08, IP4X según UNE 20324, abrible sólo con un útil, resistencia al impacto fuerte (6 J), T de trabajo -15 °C / + 60 °C y no propagadora de la llama. Según UNE-EN 50085-1. Suministrada en unidades de 3 m con puentes cada 0,5 m. Serie 10 de la marca Efapel o equivalente. Incluye ángulos, cajas de derivación, accesorios de conexión y montaje, desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalada y en servicio.",
+   "cantidad": 45.0,
+   "precio": 4.87,
+   "importe": 219.15,
+   "descripcion": "Canal de 20x12,5 mm con tapa exterior, IK08, IP4X según UNE 20324, abrible sólo con un útil, resistencia al impacto fuerte (6 J), T de trabajo -15 °C / + 60 °C y no propagadora de la llama. Según UNE-EN 50085-1. Suministrada en unidades de 3 m con puentes cada 0,5 m. Serie 10 de la marca Efapel o equivalente. Incluye ángulos, cajas de derivación, accesorios de conexión y montaje, desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalada y en servicio."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "TubR25",
+   "unidad": "m",
+   "resumen": "Tubo rígido para canalización fija en superficie Ø25 mm, curvable en caliente, de PVC, enchufable, de color gris. Resistencia a la compresión 1.250 N, resistencia al impacto 2 J, temperatura de trabajo -5°C hasta 90°C, IP547 según UNE 20324, no propagador de la llama. Según UNE-EN 61386-1 y UNE-EN 61386-22. Modelo Tuperplas enchufable de la marca Tupersa o equivalente. Incluye manguitos, curvas, grapas, cajas de derivación, accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 20.0,
+   "precio": 5.33,
+   "importe": 106.6,
+   "descripcion": "Tubo rígido para canalización fija en superficie Ø25 mm, curvable en caliente, de PVC, enchufable, de color gris. Resistencia a la compresión 1.250 N, resistencia al impacto 2 J, temperatura de trabajo -5°C hasta 90°C, IP547 según UNE 20324, no propagador de la llama. Según UNE-EN 61386-1 y UNE-EN 61386-22. Modelo Tuperplas enchufable de la marca Tupersa o equivalente. Incluye manguitos, curvas, grapas, cajas de derivación, accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "TubR20",
+   "unidad": "m",
+   "resumen": "Tubo rígido para canalización fija en superficie Ø20 mm, curvable en caliente, de PVC, enchufable, de color gris. Resistencia a la compresión 1.250 N, resistencia al impacto 2 J, temperatura de trabajo -5°C hasta 90°C, IP547 según UNE 20324, no propagador de la llama. Según UNE-EN 61386-1 y UNE-EN 61386-22. Modelo Tuperplas enchufable de la marca Tupersa o equivalente. Incluye manguitos, curvas, grapas, cajas de derivación, accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 27.0,
+   "precio": 4.53,
+   "importe": 122.31,
+   "descripcion": "Tubo rígido para canalización fija en superficie Ø20 mm, curvable en caliente, de PVC, enchufable, de color gris. Resistencia a la compresión 1.250 N, resistencia al impacto 2 J, temperatura de trabajo -5°C hasta 90°C, IP547 según UNE 20324, no propagador de la llama. Según UNE-EN 61386-1 y UNE-EN 61386-22. Modelo Tuperplas enchufable de la marca Tupersa o equivalente. Incluye manguitos, curvas, grapas, cajas de derivación, accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "Higrost",
+   "unidad": "Ud",
+   "resumen": "Higrostato con sonda de 2 m y contacto libre de potencial. Montaje en superficie. Rango de medición 5-95% de humedad relativa; pantalla LCD; piloto luminoso de funcionamiento; medición de temperatura; relé inversor 3A/230 V; montaje mural. Modelo HST de la marca Kimo o equivalente. Incluye sonda, accesorios de conexión y montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 171.18,
+   "importe": 171.18,
+   "descripcion": "Higrostato con sonda de 2 m y contacto libre de potencial. Montaje en superficie. Rango de medición 5-95% de humedad relativa; pantalla LCD; piloto luminoso de funcionamiento; medición de temperatura; relé inversor 3A/230 V; montaje mural. Modelo HST de la marca Kimo o equivalente. Incluye sonda, accesorios de conexión y montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "Q_4",
+   "unidad": "Ud",
+   "resumen": "Cuadro eléctrico de superficie, de 4 módulos, con elementos y conexiones según esquema unifilar, con puerta opaca, cerradura con llave, portaplanos, tapas, fondo, carril DIN, soportes para aparamenta de caja moldeada, bornas repartidoras, colector de tierra, placas pasacables, obturadores, abrazaderas, etiqueta de riesgo eléctrico y accessorios de conexión (punteras, peines, puentes, etiquetas...) y montaje (fijaciones, bisagras...). Clase II; IP40; IK07; chasis extraíble. Debe permitir montajes según IEC 61439-3. Modelo Ecology de la marca IDE o equivalente. Incluye aparamenta cableada y comprobada según esquema del proyecto. Incluye desmontaje de cuadro existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 173.58,
+   "importe": 173.58,
+   "descripcion": "Cuadro eléctrico de superficie, de 4 módulos, con elementos y conexiones según esquema unifilar, con puerta opaca, cerradura con llave, portaplanos, tapas, fondo, carril DIN, soportes para aparamenta de caja moldeada, bornas repartidoras, colector de tierra, placas pasacables, obturadores, abrazaderas, etiqueta de riesgo eléctrico y accessorios de conexión (punteras, peines, puentes, etiquetas...) y montaje (fijaciones, bisagras...). Clase II; IP40; IK07; chasis extraíble. Debe permitir montajes según IEC 61439-3. Modelo Ecology de la marca IDE o equivalente. Incluye aparamenta cableada y comprobada según esquema del proyecto. Incluye desmontaje de cuadro existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "Ventil",
+   "unidad": "Ud",
+   "resumen": "Extractor Ø100 mm con compuerta antirretorno para instalación en pared, en forjado sanitario de la cocina. Carcasa y hélice de plástico ABS; IPX4. Modelo Erelis 100 de la marca Casals o equivalente. Incluye accesorios de conexión y montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 2.0,
+   "precio": 66.74,
+   "importe": 133.48,
+   "descripcion": "Extractor Ø100 mm con compuerta antirretorno para instalación en pared, en forjado sanitario de la cocina. Carcasa y hélice de plástico ABS; IPX4. Modelo Erelis 100 de la marca Casals o equivalente. Incluye accesorios de conexión y montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "ArqPP22",
+   "unidad": "Ud",
+   "resumen": "Arqueta de polipropileno de 200x200 mm. Tapa de PVC; entradas troqueladas. Marca Jimten o equivalente. Incluye accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 29.19,
+   "importe": 29.19,
+   "descripcion": "Arqueta de polipropileno de 200x200 mm. Tapa de PVC; entradas troqueladas. Marca Jimten o equivalente. Incluye accesorios de conexión y montaje y el resto de elementos necesarios para la instalación. Incluye desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalada y en funcionamiento."
+  },
+  {
+   "capitulo": "Electricidad y control",
+   "codigo": "TubSot63",
+   "unidad": "m",
+   "resumen": "Tubo curvable Ø63 mm, suministrado en rollo, de polietileno de doble pared (interior lisa y exterior corrugada), de color naranja o rojo, para canalización enterrada, resistencia a la compresión >450 N, resistencia al impacto >2 J, con grado de protección IP 44 según UNE 20324. Según UNE-EN 61386-1, UNE-EN 61386-22 y UNE-EN 50086-2-4. Modelo Ultra-TP I Normal, de la marca Tupersa o equivalente. Incluye tapones, manguitos, material sellante para lograr estanqueidad, desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 12.35,
+   "importe": 12.35,
+   "descripcion": "Tubo curvable Ø63 mm, suministrado en rollo, de polietileno de doble pared (interior lisa y exterior corrugada), de color naranja o rojo, para canalización enterrada, resistencia a la compresión >450 N, resistencia al impacto >2 J, con grado de protección IP 44 según UNE 20324. Según UNE-EN 61386-1, UNE-EN 61386-22 y UNE-EN 50086-2-4. Modelo Ultra-TP I Normal, de la marca Tupersa o equivalente. Incluye tapones, manguitos, material sellante para lograr estanqueidad, desmontaje de canalizaciones existentes y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "CrtHrm",
+   "unidad": "m",
+   "resumen": "Corte por vía seca de hormigón impreso para abrir registro en forjado de la cocina. Hasta un espesor máximo de 30 cm, realizado con equipo de corte con disco de diamante. Incluye: Replanteo de la superficie de forjado a cortar, retirada y acopio de escombros, limpieza de los restos de obra, carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: metros lineales de corte según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente cortada según especificaciones de Proyecto.",
+   "cantidad": 1.0,
+   "precio": 102.06,
+   "importe": 102.06,
+   "descripcion": "Corte por vía seca de hormigón impreso para abrir registro en forjado de la cocina. Hasta un espesor máximo de 30 cm, realizado con equipo de corte con disco de diamante. Incluye: Replanteo de la superficie de forjado a cortar, retirada y acopio de escombros, limpieza de los restos de obra, carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: metros lineales de corte según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente cortada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "DemPavPs",
+   "unidad": "m²",
+   "resumen": "Demolición de pavimento existente en el exterior del edificio para abrir zanja para paso de instalaciones entre la sala de caldera y el gimnasio. Hormigón impreso, con martillo neumático, sin deteriorar los elementos constructivos contiguos, y carga manual sobre camión o contenedor. Criterio de valoración económica: El precio incluye el picado del material de agarre adherido al soporte, pero no incluye la demolición de la base soporte. Incluye: Demolición del elemento. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente demolida según especificaciones de Proyecto.",
+   "cantidad": 2.5,
+   "precio": 15.51,
+   "importe": 38.78,
+   "descripcion": "Demolición de pavimento existente en el exterior del edificio para abrir zanja para paso de instalaciones entre la sala de caldera y el gimnasio. Hormigón impreso, con martillo neumático, sin deteriorar los elementos constructivos contiguos, y carga manual sobre camión o contenedor. Criterio de valoración económica: El precio incluye el picado del material de agarre adherido al soporte, pero no incluye la demolición de la base soporte. Incluye: Demolición del elemento. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente demolida según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "ExcPaso",
+   "unidad": "m³",
+   "resumen": "Paso instalaciones sala caldera-gimnasio. Excavación de zanjas para instalaciones hasta una profundidad de 2 m, en cualquier tipo de terreno, con medios manuales, y carga manual a camión. Criterio de valoración económica: El precio no incluye el transporte de los materiales excavados. Incluye: Replanteo general y fijación de los puntos y niveles de referencia. Colocación de las camillas en las esquinas y extremos de las alineaciones. Excavación en sucesivas franjas horizontales y extracción de tierras. Refinado de fondos con extracción de las tierras. Carga manual a camión de los materiales excavados. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto, sin duplicar esquinas ni encuentros. Criterio de medición de obra: Se medirá el volumen teórico ejecutado según especificaciones de Proyecto, sin duplicar esquinas ni encuentros y sin incluir los incrementos por excesos de excavación no autorizados, ni el relleno necesario para reconstruir la sección teórica por defectos imputables al Contratista. Se medirá la excavación una vez realizada y antes de que sobre ella se efectúe ningún tipo de relleno. Si el Contratista cerrase la excavación antes de conformada la medición, se entenderá que se aviene a lo que unilateralmente determine el director de la ejecución de la obra.",
+   "cantidad": 1.25,
+   "precio": 40.7,
+   "importe": 50.88,
+   "descripcion": "Paso instalaciones sala caldera-gimnasio. Excavación de zanjas para instalaciones hasta una profundidad de 2 m, en cualquier tipo de terreno, con medios manuales, y carga manual a camión. Criterio de valoración económica: El precio no incluye el transporte de los materiales excavados. Incluye: Replanteo general y fijación de los puntos y niveles de referencia. Colocación de las camillas en las esquinas y extremos de las alineaciones. Excavación en sucesivas franjas horizontales y extracción de tierras. Refinado de fondos con extracción de las tierras. Carga manual a camión de los materiales excavados. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto, sin duplicar esquinas ni encuentros. Criterio de medición de obra: Se medirá el volumen teórico ejecutado según especificaciones de Proyecto, sin duplicar esquinas ni encuentros y sin incluir los incrementos por excesos de excavación no autorizados, ni el relleno necesario para reconstruir la sección teórica por defectos imputables al Contratista. Se medirá la excavación una vez realizada y antes de que sobre ella se efectúe ningún tipo de relleno. Si el Contratista cerrase la excavación antes de conformada la medición, se entenderá que se aviene a lo que unilateralmente determine el director de la ejecución de la obra."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "PasoInst",
+   "unidad": "Ud",
+   "resumen": "Paso de instalaciones sala caldera-gimnasio. Conducto de fábrica enterrado de sección rectangular de 50x50x500 cm, sobre solera de hormigón en masa HM-20/B/20/X0 de 15 cm de espesor. Construida con fábrica de ladrillo cerámico macizo, de 1/2 pie de espesor, recibido con mortero de cemento, industrial, M-5, de dimensiones interiores 50x50x500 cm, cerrada superiormente con tablero cerámico hueco machihembrado y losa de hormigón HA-30/B/20/XC4+XA2, armada con malla electrosoldada y sellada herméticamente con mortero de cemento. Incluso mortero para sellado de juntas y remates.",
+   "cantidad": 1.0,
+   "precio": 235.8,
+   "importe": 235.8,
+   "descripcion": "Paso de instalaciones sala caldera-gimnasio. Conducto de fábrica enterrado de sección rectangular de 50x50x500 cm, sobre solera de hormigón en masa HM-20/B/20/X0 de 15 cm de espesor. Construida con fábrica de ladrillo cerámico macizo, de 1/2 pie de espesor, recibido con mortero de cemento, industrial, M-5, de dimensiones interiores 50x50x500 cm, cerrada superiormente con tablero cerámico hueco machihembrado y losa de hormigón HA-30/B/20/XC4+XA2, armada con malla electrosoldada y sellada herméticamente con mortero de cemento. Incluso mortero para sellado de juntas y remates. Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós. Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós. Incluye: Replanteo. Eliminación de las tierras sueltas del fondo de la excavación. Vertido y compactación del hormigón en formación de solera. Colocación de la arqueta prefabricada. Formación de agujeros para el paso de los tubos. Colocación y conexión de la llave de paso. Colocación de la tapa y los accesorios. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto. Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós. Incluye: Replanteo. Eliminación de las tierras sueltas del fondo de la excavación. Vertido y compactación del hormigón en formación de solera. Colocación de la arqueta prefabricada. Formación de agujeros para el paso de los tubos. Colocación y conexión de la llave de paso. Colocación de la tapa y los accesorios. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "Impr",
+   "unidad": "m²",
+   "resumen": "Colocación de pavimento a base de baldosa existente de 40x40 sobre capa de mortero de agarre.",
+   "cantidad": 2.5,
+   "precio": 30.81,
+   "importe": 77.03,
+   "descripcion": "Colocación de pavimento a base de baldosa existente de 40x40 sobre capa de mortero de agarre."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "RtrFrjd",
+   "unidad": "m",
+   "resumen": "Demolición de forjado de hormigón armado con medios mecánicos. Corte para montar tapa de arqueta en la cocina. Corte por vía seca en fojado de hormigón, hasta un espesor máximo de 30 cm, realizado con equipo de corte con disco de diamante. Posterior demolición con martillo y escoplo hasta abrir un cuadrado para instalar una tapa de arqueta. Criterio de valoración económica: El precio no incluye el levantado del pavimento. Incluye: Replanteo de la superficie de forjado a demoler. Demolición del elemento. Corte de las armaduras. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente demolida según especificaciones de Proyecto.",
+   "cantidad": 2.8,
+   "precio": 147.06,
+   "importe": 411.77,
+   "descripcion": "Demolición de forjado de hormigón armado con medios mecánicos. Corte para montar tapa de arqueta en la cocina. Corte por vía seca en fojado de hormigón, hasta un espesor máximo de 30 cm, realizado con equipo de corte con disco de diamante. Posterior demolición con martillo y escoplo hasta abrir un cuadrado para instalar una tapa de arqueta. Criterio de valoración económica: El precio no incluye el levantado del pavimento. Incluye: Replanteo de la superficie de forjado a demoler. Demolición del elemento. Corte de las armaduras. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente demolida según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "TapaCcna",
+   "unidad": "Ud",
+   "resumen": "Tapa prefabricada de hormigón armado de 70x70 cm y paso libre 60x60 cm con cierre hermético al paso de los olores mefíticos para colocación en la zona de la cocina. Realización del cierre hermético y colocación de la tapa y los accesorios. Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós. Incluye: Replanteo. Vertido y compactación del hormigón en formación de solera. Formación de la obra de fábrica con ladrillos, previamente humedecidos, colocados con mortero. Conexionado de los colectores a la arqueta. Relleno de hormigón para formación de pendientes. Enfoscado y bruñido con mortero, redondeando los ángulos del fondo y de las paredes interiores de la arqueta. Colocación del colector de conexión de PVC en el fondo de la arqueta. Realización del cierre hermético y colocación de la tapa y los accesorios. Comprobación de su correcto funcionamiento. Realización de pruebas de servicio. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.",
+   "cantidad": 1.0,
+   "precio": 117.06,
+   "importe": 117.06,
+   "descripcion": "Tapa prefabricada de hormigón armado de 70x70 cm y paso libre 60x60 cm con cierre hermético al paso de los olores mefíticos para colocación en la zona de la cocina. Realización del cierre hermético y colocación de la tapa y los accesorios. Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós. Incluye: Replanteo. Vertido y compactación del hormigón en formación de solera. Formación de la obra de fábrica con ladrillos, previamente humedecidos, colocados con mortero. Conexionado de los colectores a la arqueta. Relleno de hormigón para formación de pendientes. Enfoscado y bruñido con mortero, redondeando los ángulos del fondo y de las paredes interiores de la arqueta. Colocación del colector de conexión de PVC en el fondo de la arqueta. Realización del cierre hermético y colocación de la tapa y los accesorios. Comprobación de su correcto funcionamiento. Realización de pruebas de servicio. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "TrrCcna",
+   "unidad": "m³",
+   "resumen": "Retirada de capa de tierra contaminada, de 5 cm de espesor, del forjado sanitario de la zona de la cocina, con medios manuales y carga manual a camión. Forjado a baja altura, unos 80 cm. Criterio de valoración económica: El precio no incluye el transporte de los materiales excavados. Incluye replanteo general. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto, sin duplicar esquinas ni encuentros. Criterio de medición de obra: Se medirá el volumen teórico ejecutado según especificaciones de Proyecto, sin duplicar esquinas ni encuentros y sin incluir los incrementos por excesos de excavación no autorizados, ni el relleno necesario para reconstruir la sección teórica por defectos imputables al Contratista. Se medirá la excavación una vez realizada y antes de que sobre ella se efectúe ningún tipo de relleno. Si el Contratista cerrase la excavación antes de conformada la medición, se entenderá que se aviene a lo que unilateralmente determine el director de la ejecución de la obra.",
+   "cantidad": 2.25,
+   "precio": 60.36,
+   "importe": 135.81,
+   "descripcion": "Retirada de capa de tierra contaminada, de 5 cm de espesor, del forjado sanitario de la zona de la cocina, con medios manuales y carga manual a camión. Forjado a baja altura, unos 80 cm. Criterio de valoración económica: El precio no incluye el transporte de los materiales excavados. Incluye replanteo general. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto, sin duplicar esquinas ni encuentros. Criterio de medición de obra: Se medirá el volumen teórico ejecutado según especificaciones de Proyecto, sin duplicar esquinas ni encuentros y sin incluir los incrementos por excesos de excavación no autorizados, ni el relleno necesario para reconstruir la sección teórica por defectos imputables al Contratista. Se medirá la excavación una vez realizada y antes de que sobre ella se efectúe ningún tipo de relleno. Si el Contratista cerrase la excavación antes de conformada la medición, se entenderá que se aviene a lo que unilateralmente determine el director de la ejecución de la obra."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "Escomb",
+   "unidad": "Ud",
+   "resumen": "Retirada de capa de tierra contaminada, de 5 cm de espesor, del forjado sanitario de la zona de la cocina",
+   "cantidad": 1.0,
+   "precio": 100.6,
+   "importe": 100.6,
+   "descripcion": "Retirada de escombros de obra existentes en forjado sanitario. Restos de ladrillos, plásticos, metales, textiles... por todo el forjado sanitario. Carga a camión."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "SndHigr",
+   "unidad": "Ud",
+   "resumen": "Perforación del forjado en la zona de la cocina para paso de sonda higrómetrica al forjado sanitario. Perforación por vía húmeda en forjado de hormigón con capa de compresión y bovedilla, de 37 mm de diámetro, hasta una profundidad máxima de 35 cm, realizada con perforadora con corona diamantada, para el paso de instalaciones. Incluye: Replanteo de las zonas a perforar. Perforación con corona diamantada. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Reparación de desperfectos de obra. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.",
+   "cantidad": 1.0,
+   "precio": 24.33,
+   "importe": 24.33,
+   "descripcion": "Perforación del forjado en la zona de la cocina para paso de sonda higrómetrica al forjado sanitario. Perforación por vía húmeda en forjado de hormigón con capa de compresión y bovedilla, de 37 mm de diámetro, hasta una profundidad máxima de 35 cm, realizada con perforadora con corona diamantada, para el paso de instalaciones. Incluye: Replanteo de las zonas a perforar. Perforación con corona diamantada. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Reparación de desperfectos de obra. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "TermC3",
+   "unidad": "Ud",
+   "resumen": "Perforación por vía seca en muro de hormigón macizo, de 37 mm de diámetro, hasta una profundidad máxima de 35 cm, realizada con perforadora con corona diamantada, para el paso de instalaciones. Incluye: Replanteo de las zonas a perforar. Perforación con corona diamantada. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Reparación de desperfectos de obra. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.",
+   "cantidad": 1.0,
+   "precio": 24.82,
+   "importe": 24.82,
+   "descripcion": "Perforación por vía seca en muro de hormigón macizo, de 37 mm de diámetro, hasta una profundidad máxima de 35 cm, realizada con perforadora con corona diamantada, para el paso de instalaciones. Incluye: Replanteo de las zonas a perforar. Perforación con corona diamantada. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Reparación de desperfectos de obra. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "Mosqu",
+   "unidad": "Ud",
+   "resumen": "Montaje de tela mosquitera para tapar el orificio del forjado sanitario de la cocina, que servirá de expulsión de aire húmedo. Incluye accesorios de conexión y montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento.",
+   "cantidad": 1.0,
+   "precio": 12.27,
+   "importe": 12.27,
+   "descripcion": "Montaje de tela mosquitera para tapar el orificio del forjado sanitario de la cocina, que servirá de expulsión de aire húmedo. Incluye accesorios de conexión y montaje, desmontaje de elemento existente y reparación de desperfectos de obra. Totalmente instalado y en funcionamiento."
+  },
+  {
+   "capitulo": "Obra",
+   "codigo": "Ayudas",
+   "unidad": "m²",
+   "resumen": "Ayudas de albañilería para ejecución de instalaciones.",
+   "cantidad": 20.0,
+   "precio": 4.91,
+   "importe": 98.2,
+   "descripcion": "Repercusión por m² de superficie construida de obra, de ayudas de cualquier trabajo de albañilería, necesarias para la correcta ejecución de las instalaciones, en edificio de otros usos, incluida p/p de elementos comunes. Incluso material auxiliar para la correcta ejecución de los trabajos. Incluye: Trabajos de apertura y tapado de rozas. Apertura de agujeros en paramentos, falsos techos, muros, forjados y losas, para el paso de instalaciones. Colocación de pasamuros. Colocación y recibido de cajas para elementos empotrados. Sellado de agujeros y huecos de paso de instalaciones. Criterio de medición: Superficie de la obra que se realiza."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GTA010",
+   "unidad": "Ud",
+   "resumen": "Transporte de tierras con contenedor.",
+   "cantidad": 2.0,
+   "precio": 115.18,
+   "importe": 230.36,
+   "descripcion": "Transporte de tierras con contenedor de 7 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor. Criterio de valoración económica: El precio incluye el canon de vertido por entrega de residuos. Incluye: Carga a camión del contenedor. Transporte de residuos de construcción a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente transportadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GCA010",
+   "unidad": "m³",
+   "resumen": "Clasificación de residuos de la construcción.",
+   "cantidad": 70.0,
+   "precio": 2.58,
+   "importe": 180.6,
+   "descripcion": "Clasificación y depósito en contenedor de los residuos de construcción y/o demolición, separándolos en las siguientes fracciones: hormigón, cerámicos, metales, maderas, vidrios, plásticos, papeles o cartones y residuos peligrosos; dentro de la obra en la que se produzcan, con medios manuales. Incluye: Nada. Criterio de medición de proyecto: Volumen teórico, estimado a partir del peso y la densidad aparente de los diferentes materiales que componen los residuos, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá, incluyendo el esponjamiento, el volumen de residuos realmente clasificado según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GRA010",
+   "unidad": "Ud",
+   "resumen": "Transporte de residuos inertes con contenedor. Hormigones y baldosas.",
+   "cantidad": 10.0,
+   "precio": 71.83,
+   "importe": 718.3,
+   "descripcion": "Transporte de residuos inertes de hormigones, morteros y prefabricados producidos en obras de construcción y/o demolición, con contenedor de 1,5 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor. Criterio de valoración económica: El precio incluye el canon de vertido por entrega de residuos. Incluye: Carga a camión del contenedor. Transporte de residuos de construcción a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente transportadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GRA010b",
+   "unidad": "Ud",
+   "resumen": "Transporte de residuos inertes con contenedor. Maderas.",
+   "cantidad": 1.0,
+   "precio": 98.61,
+   "importe": 98.61,
+   "descripcion": "Transporte de residuos inertes de madera producidos en obras de construcción y/o demolición, con contenedor de 1,5 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor. Criterio de valoración económica: El precio incluye el canon de vertido por entrega de residuos. Incluye: Carga a camión del contenedor. Transporte de residuos de construcción a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente transportadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GRA010c",
+   "unidad": "Ud",
+   "resumen": "Transporte de residuos inertes con contenedor. Plásticos.",
+   "cantidad": 1.0,
+   "precio": 131.46,
+   "importe": 131.46,
+   "descripcion": "Transporte de residuos inertes plásticos producidos en obras de construcción y/o demolición, con contenedor de 1,5 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor. Criterio de valoración económica: El precio incluye el canon de vertido por entrega de residuos. Incluye: Carga a camión del contenedor. Transporte de residuos de construcción a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente transportadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GRA010d",
+   "unidad": "Ud",
+   "resumen": "Transporte de residuos inertes con contenedor. Metalicos y aleaciones.",
+   "cantidad": 1.0,
+   "precio": 98.61,
+   "importe": 98.61,
+   "descripcion": "Transporte de residuos inertes metálicos producidos en obras de construcción y/o demolición, con contenedor de 1,5 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor. Criterio de valoración económica: El precio incluye el canon de vertido por entrega de residuos. Incluye: Carga a camión del contenedor. Transporte de residuos de construcción a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente transportadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Gestión de residuos",
+   "codigo": "GRA010e",
+   "unidad": "Ud",
+   "resumen": "Transporte de residuos inertes con contenedor. Papel y cartón.",
+   "cantidad": 1.0,
+   "precio": 98.61,
+   "importe": 98.61,
+   "descripcion": "Transporte de residuos inertes de papel y cartón, producidos en obras de construcción y/o demolición, con contenedor de 1,5 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor. Criterio de valoración económica: El precio incluye el canon de vertido por entrega de residuos. Incluye: Carga a camión del contenedor. Transporte de residuos de construcción a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente transportadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YIC010",
+   "unidad": "Ud",
+   "resumen": "Casco.",
+   "cantidad": 10.0,
+   "precio": 0.34,
+   "importe": 3.4,
+   "descripcion": "Casco contra golpes, destinado a proteger al usuario de los efectos de golpes de su cabeza contra objetos duros e inmóviles, amortizable en 10 usos. Incluye: Nada. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente suministradas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YIJ010",
+   "unidad": "Ud",
+   "resumen": "Protector ocular.",
+   "cantidad": 10.0,
+   "precio": 3.74,
+   "importe": 37.4,
+   "descripcion": "Gafas de protección con montura universal, de uso básico, con dos oculares integrados en una montura de gafa convencional con protección lateral, amortizable en 5 usos. Incluye: Nada. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente suministradas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YIM010",
+   "unidad": "Ud",
+   "resumen": "Par de guantes.",
+   "cantidad": 10.0,
+   "precio": 4.83,
+   "importe": 48.3,
+   "descripcion": "Par de guantes contra riesgos mecánicos, de algodón con refuerzo de serraje vacuno en la palma, resistente a la abrasión, al corte por cuchilla, al rasgado y a la perforación, amortizable en 4 usos. Incluye: Nada. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente suministradas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YIP010",
+   "unidad": "Ud",
+   "resumen": "Calzado de seguridad, protección y trabajo.",
+   "cantidad": 10.0,
+   "precio": 29.63,
+   "importe": 296.3,
+   "descripcion": "Par de botas bajas de seguridad, con puntera resistente a un impacto de hasta 200 J y a una compresión de hasta 15 kN, con resistencia al deslizamiento, con código de designación SB, amortizable en 2 usos. Incluye: Nada. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente suministradas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YIU005",
+   "unidad": "Ud",
+   "resumen": "Ropa de protección.",
+   "cantidad": 10.0,
+   "precio": 11.23,
+   "importe": 112.3,
+   "descripcion": "Mono de protección, amortizable en 5 usos. Incluye: Nada. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente suministradas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YCB040",
+   "unidad": "Ud",
+   "resumen": "Protección de paso peatonal sobre zanja abierta para paso de instalaciones entre sala de caldera y gimnasio, mediante pasarela de acero, de 1,50 m de longitud para anchura máxima de zanja de 0,9 m, anchura útil de 0,87 m, con plataforma de superficie antideslizante sin desniveles, con 400 kg de capacidad de carga, rodapiés laterales de 0,15 m, barandillas laterales de 1 m de altura, con travesaño lateral, amortizable en 20 usos. Incluso elementos de fijación al suelo para garantizar la inmovilidad del conjunto. Incluye: Colocación de la pasarela sobre el suelo. Fijación de la pasarela al suelo. Desmontaje del conjunto. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.",
+   "cantidad": 1.0,
+   "precio": 21.16,
+   "importe": 21.16,
+   "descripcion": "Protección de paso peatonal sobre zanja abierta para paso de instalaciones entre sala de caldera y gimnasio, mediante pasarela de acero, de 1,50 m de longitud para anchura máxima de zanja de 0,9 m, anchura útil de 0,87 m, con plataforma de superficie antideslizante sin desniveles, con 400 kg de capacidad de carga, rodapiés laterales de 0,15 m, barandillas laterales de 1 m de altura, con travesaño lateral, amortizable en 20 usos. Incluso elementos de fijación al suelo para garantizar la inmovilidad del conjunto. Incluye: Colocación de la pasarela sobre el suelo. Fijación de la pasarela al suelo. Desmontaje del conjunto. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YCB030",
+   "unidad": "m",
+   "resumen": "Delimitación de la zona de excavación abierta para paso de instalaciones entre la sala de calderas y el gimnasio mediante vallado perimetral formado por vallas peatonales de hierro, de 1,10x2,50 m, color amarillo, con barrotes verticales montados sobre bastidor de tubo, con dos pies metálicos, amortizables en 20 usos. Incluye: Montaje del elemento. Desmontaje del elemento. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Longitud medida según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá la longitud realmente montada según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.",
+   "cantidad": 10.0,
+   "precio": 3.2,
+   "importe": 32.0,
+   "descripcion": "Delimitación de la zona de excavación abierta para paso de instalaciones entre la sala de calderas y el gimnasio mediante vallado perimetral formado por vallas peatonales de hierro, de 1,10x2,50 m, color amarillo, con barrotes verticales montados sobre bastidor de tubo, con dos pies metálicos, amortizables en 20 usos. Incluye: Montaje del elemento. Desmontaje del elemento. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Longitud medida según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá la longitud realmente montada según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YCH030",
+   "unidad": "m²",
+   "resumen": "Protección de hueco horizontal de forjado para acceso al forjado en cocina, de superficie inferior o igual a 1 m² mediante tablero de madera de pino de 22 mm de espesor, colocado de manera que cubra la totalidad del hueco, reforzado en su parte inferior por tabloncillos, quedando el conjunto con la suficiente resistencia para soportar los esfuerzos a los que se le va a someter y sujeto al forjado con puntas planas de acero de modo que se impida su movimiento horizontal. Amortizable en 4 usos. Incluye: Colocación del elemento. Sujeción del entablado al soporte. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Superficie del hueco horizontal, medida según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá la superficie realmente montada según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.",
+   "cantidad": 1.0,
+   "precio": 11.39,
+   "importe": 11.39,
+   "descripcion": "Protección de hueco horizontal de forjado para acceso al forjado en cocina, de superficie inferior o igual a 1 m² mediante tablero de madera de pino de 22 mm de espesor, colocado de manera que cubra la totalidad del hueco, reforzado en su parte inferior por tabloncillos, quedando el conjunto con la suficiente resistencia para soportar los esfuerzos a los que se le va a someter y sujeto al forjado con puntas planas de acero de modo que se impida su movimiento horizontal. Amortizable en 4 usos. Incluye: Colocación del elemento. Sujeción del entablado al soporte. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Superficie del hueco horizontal, medida según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá la superficie realmente montada según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YMM010",
+   "unidad": "Ud",
+   "resumen": "Botiquín de urgencia.",
+   "cantidad": 1.0,
+   "precio": 143.04,
+   "importe": 143.04,
+   "descripcion": "Botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos. Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YPC020",
+   "unidad": "Ud",
+   "resumen": "Alquiler de caseta prefabricada para vestuarios.",
+   "cantidad": 3.0,
+   "precio": 145.48,
+   "importe": 436.44,
+   "descripcion": "Mes de alquiler de caseta prefabricada para vestuarios en obra, de dimensiones 4,20x2,33x2,30 m (9,80 m²), compuesta por: estructura metálica, cerramiento de chapa con terminación de pintura prelacada, cubierta de chapa, aislamiento interior, instalación de electricidad, tubos fluorescentes y punto de luz exterior, ventanas de aluminio con luna y rejas, puerta de entrada de chapa, suelo de aglomerado revestido con PVC continuo y poliestireno con apoyo en base de chapa y revestimiento de tablero en paredes. Criterio de valoración económica: El precio incluye la limpieza y el mantenimiento de la caseta durante el periodo de alquiler. Incluye: Montaje, instalación y comprobación. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Amortización en forma de alquiler mensual, según condiciones definidas en el contrato suscrito con la empresa suministradora."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YPC005",
+   "unidad": "Ud",
+   "resumen": "Alquiler de aseo portátil.",
+   "cantidad": 3.0,
+   "precio": 185.29,
+   "importe": 555.87,
+   "descripcion": "Mes de alquiler de aseo portátil de polietileno, de 1,20x1,20x2,35 m, color gris, sin conexiones, con inodoro químico anaerobio con sistema de descarga de bomba de pie, espejo, puerta con cerradura y techo translúcido para entrada de luz exterior. Criterio de valoración económica: El precio incluye la limpieza y el mantenimiento del aseo durante el periodo de alquiler. Incluye: Montaje, instalación y comprobación. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Amortización en forma de alquiler mensual, según condiciones definidas en el contrato suscrito con la empresa suministradora."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YSM006",
+   "unidad": "m",
+   "resumen": "Cinta de señalización con vallas peatonales.",
+   "cantidad": 20.0,
+   "precio": 3.3,
+   "importe": 66.0,
+   "descripcion": "Señalización y delimitación de zonas de trabajo mediante doble cinta de señalización, de material plástico, de 8 cm de anchura y 0,05 mm de espesor, impresa por ambas caras en franjas de color amarillo y negro, sujeta a vallas peatonales de hierro, de 1,10x2,50 m, color amarillo, con barrotes verticales montados sobre bastidor de tubo, con dos pies metálicos, separadas cada 5,00 m entre ejes, amortizables en 20 usos. Incluso montaje, mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera y desmontaje. Incluye: Montaje de las vallas. Colocación de la cinta. Desmontaje del conjunto. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Longitud medida según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá la longitud realmente montada según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YSS020",
+   "unidad": "Ud",
+   "resumen": "Cartel general indicativo de riesgos.",
+   "cantidad": 1.0,
+   "precio": 10.03,
+   "importe": 10.03,
+   "descripcion": "Suministro, colocación y desmontaje de cartel general indicativo de riesgos, de PVC serigrafiado, de 990x670 mm, con 6 orificios de fijación, amortizable en 3 usos, fijado con bridas de nylon. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera. Incluye: Colocación. Desmontaje posterior. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YSS031",
+   "unidad": "Ud",
+   "resumen": "Señal de seguridad y salud en el trabajo, de prohibición.",
+   "cantidad": 1.0,
+   "precio": 5.1,
+   "importe": 5.1,
+   "descripcion": "Suministro, colocación y desmontaje de señal de prohibición, de PVC serigrafiado, de 297x210 mm, con pictograma negro de forma circular sobre fondo blanco, con 4 orificios de fijación, amortizable en 3 usos, fijada con bridas de nylon. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera. Incluye: Colocación. Desmontaje posterior. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YCR030",
+   "unidad": "m",
+   "resumen": "Vallado provisional de solar con vallas trasladables.",
+   "cantidad": 10.0,
+   "precio": 14.4,
+   "importe": 144.0,
+   "descripcion": "Vallado provisional de solar compuesto por vallas trasladables de 3,50x2,00 m, formadas por panel de malla electrosoldada con pliegues de refuerzo, de 200x100 mm de paso de malla, con alambres horizontales de 5 mm de diámetro y verticales de 4 mm, soldados en los extremos a postes verticales de 40 mm de diámetro, acabado galvanizado, amortizables en 5 usos y bases prefabricadas de hormigón, de 65x24x12 cm, con 8 orificios, para soporte de los postes, amortizables en 5 usos, fijadas al pavimento con pletinas de 20x4 mm y tacos de expansión de acero. Malla de ocultación de polietileno de alta densidad, color verde, colocada sobre las vallas. Incluye: Montaje del conjunto. Fijación de las bases al pavimento. Colocación de la malla. Desmontaje del conjunto. Transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Longitud medida según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá la longitud realmente montada según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "DQP020",
+   "unidad": "m²",
+   "resumen": "Retirada de capa de gravas y corteza de pino en patio con recuperación de gravas y eliminación de la corteza. Incluso reubicación en lugar concreto del patio.",
+   "cantidad": 473.178,
+   "precio": 10.06,
+   "importe": 4760.17,
+   "descripcion": "Retirada, recuperación y reubicación en otro lugar del patio de capa de gravas y corteza de pino ( retirada) formada por 10 cm de espesor en patio, con medios manuales y recuperación de la grava para su posterior ubicación en otro emplazamiento, y carga manual sobre camión o contenedor. Incluye: Retirada de la grava. Acopio de los materiales a reutilizar y su posterior colocación en otro lugar del patio. Carga manual del material a reutilizar sobre camión. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente desmontada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "DMX050",
+   "unidad": "m²",
+   "resumen": "Demolición de pavimento exterior de baldosas y/o losetas de hormigón.",
+   "cantidad": 257.273,
+   "precio": 4.47,
+   "importe": 1150.01,
+   "descripcion": "Demolición de pavimento exterior de baldosas y/o losetas de hormigón, con martillo neumático, y carga manual sobre camión o contenedor. Criterio de valoración económica: El precio incluye el picado del material de agarre, pero no incluye la demolición de la base soporte. Incluye: Demolición del elemento. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente demolida según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "DMX021",
+   "unidad": "m²",
+   "resumen": "Demolición de solera o pavimento de hormigón.",
+   "cantidad": 300.654,
+   "precio": 7.17,
+   "importe": 2155.69,
+   "descripcion": "Demolición de solera o pavimento de hormigón en masa de hasta 15 cm de espesor, con martillo neumático, y carga manual sobre camión o contenedor. Criterio de valoración económica: El precio no incluye la demolición de la base soporte. Incluye: Demolición del elemento. Fragmentación de los escombros en piezas manejables. Retirada y acopio de escombros. Limpieza de los restos de obra. Carga manual de escombros sobre camión o contenedor. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente demolida según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "DPD010",
+   "unidad": "m",
+   "resumen": "Levantado de vallado con marco metálico y montantes de madera.",
+   "cantidad": 12.339,
+   "precio": 18.61,
+   "importe": 229.63,
+   "descripcion": "Levantado con medios manuales y equipo de oxicorte, de vallado metálico-madera en forma recta, de 100 cm de altura, situada en patio y fijada a pavimento existente, sin deteriorar los elementos constructivos a los que está sujeta, y carga manual sobre camión o contenedor. Criterio de valoración económica: El precio incluye el desmontaje de los accesorios y de los elementos de fijación. Incluye: Levantado del elemento. Retirada y acopio del material levantado. Limpieza de los restos de obra. Carga manual del material levantado y restos de obra sobre camión o contenedor. Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la longitud realmente desmontada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "DFD020",
+   "unidad": "m",
+   "resumen": "Levantado de barandilla metálica sobre muro de piedra y posterior ubicación en el mismo emplazamiento.",
+   "cantidad": 10.392,
+   "precio": 18.09,
+   "importe": 187.99,
+   "descripcion": "Levantado con medios manuales y equipo de oxicorte, de barandilla metálica en forma recta, de 100 cm de altura, situada sobre muro de piedra, sin deteriorar los elementos constructivos a los que está sujeta y recuperación del material para su posterior tratamiento- reparación y ubicación en el mismo emplazamiento. Criterio de valoración económica: El precio incluye el desmontaje de los accesorios y de los elementos de fijación. Incluye: Levantado del elemento. Clasificación y etiquetado. Acopio de los materiales a reutilizar. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la longitud realmente desmontada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "RYP006",
+   "unidad": "m²",
+   "resumen": "Preparación de superficie metálica, para repintar.",
+   "cantidad": 10.4,
+   "precio": 13.87,
+   "importe": 144.25,
+   "descripcion": "Preparación de superficie de barandilla metálica, con capas de pintura en buen estado, mediante limpieza de la superficie con alcohol, impregnando la pintura existente, eliminándola con espátula o lija una vez reblandecida, para proceder posteriormente a su repintado. Incluye: Eliminación de la pintura existente. Limpieza de la superficie. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "RNE020",
+   "unidad": "m²",
+   "resumen": "Esmalte sobre cerrajería de acero.",
+   "cantidad": 10.4,
+   "precio": 21.34,
+   "importe": 221.94,
+   "descripcion": "Aplicación manual de dos manos de esmalte sintético de secado rápido, a base de resinas alquídicas, color gris, acabado mate, (rendimiento: 0,077 l/m² cada mano); previa aplicación de una mano de imprimación sintética antioxidante de secado rápido, a base de resinas alquídicas, color gris, acabado mate (rendimiento: 0,125 l/m²), sobre barandilla exterior con entrepaño de barrotes, de acero. Incluye: Preparación y limpieza de la superficie soporte. Aplicación de una mano de imprimación. Aplicación de dos manos de acabado. Criterio de medición de proyecto: Superficie del polígono envolvente, medida según documentación gráfica de Proyecto, por una sola cara, sin descontar huecos. Criterio de medición de obra: Se medirá la superficie del polígono envolvente de las unidades realmente ejecutadas según especificaciones de Proyecto, por una sola cara."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "FDD010",
+   "unidad": "m",
+   "resumen": "Anclaje de barandilla de acero recuperada y reparada.",
+   "cantidad": 10.4,
+   "precio": 17.7,
+   "importe": 184.08,
+   "descripcion": "Anclaje de barandilla de acero recuperada y reparada, Colocación en la misma forma inicial, de 100 cm de altura, formada por: bastidor compuesto de barandal superior e inferior de cuadradillo de perfil macizo de acero laminado en caliente de 12x12 mm y montantes de cuadradillo de perfil macizo de acero laminado en caliente de 12x12 mm con una separación de 100 cm entre sí; entrepaño para relleno de los huecos del bastidor compuesto de barrotes verticales de cuadradillo de perfil macizo de acero laminado en caliente de 12x12 mm con una separación de 10 cm y pasamanos de cuadradillo de perfil macizo de acero laminado en caliente de 12x12 mm. Incluso pletinas para fijación mediante atornillado en elemento de hormigón con tornillos de acero. Elaboración en taller y ajuste final en obra. Totalmente terminada y lista para pintar. Incluye: Marcado de los puntos de fijación del bastidor. Presentación del tramo de barandilla de forma que los puntos de anclaje del bastidor se sitúen en los puntos marcados. Aplomado y nivelación. Resolución de las uniones entre tramos de barandilla. Resolución de las uniones al paramento. Montaje de elementos complementarios. Criterio de medición de proyecto: Longitud medida a ejes, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá, en la dirección del pasamanos, a ejes, la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "ANS010",
+   "unidad": "m²",
+   "resumen": "Solera de hormigón con malla electrosoldada de 20cm de espesor.",
+   "cantidad": 312.425,
+   "precio": 53.25,
+   "importe": 16636.63,
+   "descripcion": "Solera de hormigón con malla electrosoldada de 20 cm de espesor, realizada con hormigón HA-25/F/20/XC2 fabricado en central, con malla electrosoldada inferior, ME 15x15 Ø 5-5 B 500 T 6x2,20 UNE-EN 10080, extendido y vibrado manual mediante regla vibrante, con acabado superficial mediante fratasadora mecánica; con juntas de retracción de 5 mm de espesor, mediante corte con disco de diamante. Incluso panel de poliestireno expandido de 3 cm de espesor, para la ejecución de juntas de dilatación, y masilla elástica para sellado de las juntas de retracción. Criterio de valoración económica: El precio no incluye la base de la solera. Incluye: Preparación de la superficie de apoyo del hormigón. Replanteo de las juntas de construcción y de dilatación. Tendido de niveles mediante toques, maestras de hormigón o reglas. Riego de la superficie base. Formación de juntas de construcción y de juntas perimetrales de dilatación. Colocación de la malla electrosoldada con separadores homologados. Conexionado, anclaje y emboquillado de las redes de instalaciones proyectadas. Vertido, extendido y vibrado del hormigón. Conexión de los elementos exteriores. Curado del hormigón. Fratasado mecánico de la superficie. Replanteo de las juntas de retracción. Corte del hormigón. Limpieza final y sellado de las juntas de retracción. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto, sin deducir la superficie ocupada por los pilares situados dentro de su perímetro."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UXH010",
+   "unidad": "m²",
+   "resumen": "Solado de baldosas de hormigón 60 X 40 X 6 cm. sobre solera.",
+   "cantidad": 307.768,
+   "precio": 57.81,
+   "importe": 17792.07,
+   "descripcion": "Suministro y colocación de pavimento para uso de parques y jardines, de baldosas de hormigón fabricado con cemento fotocatalítico, descontaminante y autolimpiable, para exteriores, acabado superficial de la cara vista: granallado, clase resistente a flexión T, clase resistente según la carga de rotura 7, clase de desgaste por abrasión I, formato nominal 60x40x6 cm, color gris, según UNE-EN 1339, colocadas a pique de maceta con arena , dejando entre ellas una junta de separación de entre 5 mm. Incluso, juntas estructurales y de dilatación, cortes a realizar para ajustarlas a los bordes del confinamiento o a las intrusiones existentes en el pavimento y relleno de juntas con arena silícea de tamaño 0/2 mm. Colocada a matajuntas y desplazamiento de 1/3 entre hiladas, sobre una capa de arena de granulometría comprendida entre 0,5 y 5 mm, dejando entre ellos una junta de separación de 10 mm, para su posterior rejuntado con arena natural, fina y seca, de 2 mm de tamaño máximo; y vibrado del pavimento con bandeja vibrante de guiado manual. Criterio de valoración económica: El precio no incluye la base de apoyo. Incluye: Replanteo de maestras y niveles. Extendido de la capa de mortero. Humectación de las piezas a colocar. Colocación individual, a pique de maceta, de las piezas. Formación de juntas y encuentros. Limpieza del pavimento y las juntas. Relleno de las juntas con arena seca, mediante cepillado. Eliminación del material sobrante de la superficie, mediante barrido. Criterio de medición de proyecto: Superficie medida en proyección horizontal, según documentación gráfica de Proyecto, deduciendo los huecos de superficie mayor de 1,5 m². No se han tenido en cuenta los retaceos como factor de influencia para incrementar la medición, toda vez que en la descomposición se ha considerado el tanto por cien de roturas general. Criterio de medición de obra: Se medirá, en proyección horizontal, la superficie realmente ejecutada según especificaciones de Proyecto, deduciendo los huecos de superficie mayor de 1,5 m²."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "RSN210",
+   "unidad": "m",
+   "resumen": "Junta de dilatación en pavimento continuo de hormigón en exteriores. Sistema Omega 3 mm HCJ \"FIBRATEC\" o Equivalente.",
+   "cantidad": 14.556,
+   "precio": 82.75,
+   "importe": 1204.51,
+   "descripcion": "Junta de dilatación en pavimento continuo de hormigón de entre 150 y 160 mm de espesor en exteriores, sistema Omega 3 mm HCJ \"FIBRATEC\"o Equivalente., compuesto por: perfil Omega 140x3mm HCJ \"FIBRATEC\", con junta elástica de EPDM en la parte superior, de acero galvanizado en caliente con recubrimiento de zinc, aluminio y magnesio y espuma de polietileno en la parte inferior, fijación con barras corrugadas de acero. Incluye: Replanteo de la junta. Colocación y aplomado de miras de referencia. Tendido de hilos entre miras. Colocación del perfil. Realización de taladros. Colocación de las barras corrugadas de acero. Fijación de las barras corrugadas de acero con soldadura. Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UXA010",
+   "unidad": "m²",
+   "resumen": "Solado de baldosas de hormigón 60X40X6 cm. Sobre zahorras.",
+   "cantidad": 16.0,
+   "precio": 55.53,
+   "importe": 888.48,
+   "descripcion": "Suministro y colocación de pavimento e baldosa de hormigón de color gris de 60x 40 x6 cm, cuyas características técnicas cumplen la UNE-EN 1344,para uso privado en zona de parques y jardines, de hormigón fabricado con cemento fotocatalítico, descontaminante y autolimpiable, para exteriores, acabado superficial de la cara vista: granallado, clase resistente a flexión T, clase resistente según la carga de rotura 7, clase de desgaste por abrasión I, según UNE-EN 1339, colocadas a pique de maceta con arena , dejando entre ellas una junta de separación de entre 5 mm. Incluso, juntas estructurales y de dilatación, cortes a realizar para ajustarlas a los bordes del confinamiento o a las intrusiones existentes en el pavimento y relleno de juntas con arena silícea de tamaño 0/2 mm., realizado sobre firme compuesto por base flexible de zahorra natural, de 20 cm de espesor, con extendido y compactado al 100% del Proctor Modificado, mediante la colocación flexible, a matajuntas y desplazamiento de 1/3 entre hiladas, sobre una capa de arena de granulometría comprendida entre 0,5 y 5 mm, dejando entre ellos una junta de separación de 10 mm, para su posterior rejuntado con arena natural, fina y seca, de 2 mm de tamaño máximo; y vibrado del pavimento con bandeja vibrante de guiado manual. Incluye: Replanteo de maestras y niveles. Corte de las piezas. Preparación de la explanada. Extendido y compactación de la base. Ejecución del encuentro con los bordes de confinamiento. Extendido y nivelación de la capa de arena. Colocación de baldosa. Relleno de juntas con arena y vibrado del pavimento. Limpieza. Criterio de medición de proyecto: Superficie medida en proyección horizontal, según documentación gráfica de Proyecto. No se han tenido en cuenta los retaceos como factor de influencia para incrementar la medición, toda vez que en la descomposición se ha considerado el tanto por cien de roturas general. Criterio de medición de obra: Se medirá, en proyección horizontal, la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UVA010",
+   "unidad": "m",
+   "resumen": "Valla de madera.",
+   "cantidad": 25.364,
+   "precio": 113.71,
+   "importe": 2884.14,
+   "descripcion": "Valla de madera de pino tratada en autoclave con sales hidrosolubles, con clase de uso 4 según UNE-EN 335, formada por montantes cuadrados de 15 x 15cm y 120 cm de altura, largueros de 9,5x 2,2 cm. y lamas de 1200 x 9,5x2,5 mm, base de madera fijada a la cimentación con tornillos estructurales de acero cincado. (ver documentación gráfica). Incluye: Replanteo y marcado de ejes. Corte y ensamble de las piezas. Colocación y fijación provisional de la valla. Aplomado y nivelación. Fijación definitiva de la valla. Criterio de medición de proyecto: Longitud medida a ejes, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá, a ejes, la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UVP020",
+   "unidad": "Ud",
+   "resumen": "Puerta de madera de acceso a área de juegos infantiles.",
+   "cantidad": 1.0,
+   "precio": 169.02,
+   "importe": 169.02,
+   "descripcion": "Puerta de madera de 1,20 x 0,80cm formada por postes verticales y dos travesaños horizontales y lamas todos ellos de madera de pino silvestre, tratada en autoclave, acabado con barniz protector, de extremos redondeados y cantos romos. con tornilleria de acero galvanizado, embutida y protegida con tapones de seguridad, con elementos de fijación. Incluye: Replanteo de alineaciones y niveles. Colocación de los postes. Montaje de la puerta. Fijación sobre los postes. Colocación de los herrajes de cierre. Ajuste final de la hoja. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "RSM023",
+   "unidad": "m",
+   "resumen": "Borde/jardinera de traviesas de madera sobre solera de hormigón.",
+   "cantidad": 70.043,
+   "precio": 28.63,
+   "importe": 2005.33,
+   "descripcion": "Borde jardinera formado por una traviesa 1,00m de madera de pino, de 22 x 16 cm, tratada en autoclave con sales hidrosolubles, con clase de uso 4 según UNE-EN 335, colocada horizontalmente sobre solera o terreno acondicionado, incluso tirafondos y tacos como piezas de fijación al hormigón, y pletinas metálicas de unión entre sí. Criterio de valoración económica: el precio incluye instalación y accesorios de montaje y anclaje. Incluye: Replanteo, marcado y corte de remate lateral. Fijación entre traviesas y al terreno o la solera. Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto. No se ha incrementado la medición por roturas y recortes, ya que en la descomposición se ha considerado un 5% más de piezas. Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "RSM023b",
+   "unidad": "m",
+   "resumen": "Borde/ jardinera de traviesas de madera sobre terreno.",
+   "cantidad": 16.124,
+   "precio": 35.03,
+   "importe": 564.82,
+   "descripcion": "Borde/ jardinera formado por una traviesa 1,00m de madera de pino, de 22 x 16 cm, tratada en autoclave con sales hidrosolubles, con clase de uso 4 según UNE-EN 335, colocada horizontalmente sobre terreno previamente acondicionado. Preparación del terreno. Excavación de pequeña zanja, limpieza nivelación y compactado de la tierra y base de gravas. Fijación mediante varillas de 80 cm incluso taladros para su colocación y pletinas metálicas de unión entre sí. Incluye: Replanteo, marcado y corte. Taladro de la traviesa y clavado de varillas de hierro de 80 cm. Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto. No se ha incrementado la medición por roturas y recortes, ya que en la descomposición se ha considerado un 5% más de piezas. Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UJV010",
+   "unidad": "m",
+   "resumen": "seto de buxus sempervirens. (boj)",
+   "cantidad": 23.581,
+   "precio": 101.49,
+   "importe": 2393.24,
+   "descripcion": "Seto de boj (Busus sempervirens) de 0,3-0,5 m de altura (4 ud/m). Incluye: Apertura de zanja con los medios indicados. Abonado del terreno. Plantación. Primer riego. Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UJA050",
+   "unidad": "m³",
+   "resumen": "Aporte de tierra vegetal.",
+   "cantidad": 20.137,
+   "precio": 77.98,
+   "importe": 1570.28,
+   "descripcion": "Aporte de tierra vegetal cribada, suministrada en sacos y extendida con medios manuales, mediante pala, azada y rastrillo, en capas de espesor uniforme y sin producir daños a las plantas existentes. Incluye: Acopio de la tierra vegetal. Extendido y perfilado de la tierra vegetal. Señalización y protección del terreno. Criterio de medición de proyecto: Volumen medido según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el volumen realmente ejecutado según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UXP020",
+   "unidad": "m²",
+   "resumen": "Cubrición decorativa con corteza de pino.",
+   "cantidad": 1.0,
+   "precio": 52.17,
+   "importe": 52.17,
+   "descripcion": "Cubrición decorativa, realizada mediante: extendido de corteza de pino, calidad extra, de 25/40 mm, con medios manuales, hasta formar una capa uniforme de 15 cm de espesor mínimo Incluye: extendido de corteza de pino, calidad extra, de 25/40 mm, con medios manuales, hasta formar una capa uniforme de 15 cm de espesor mínimo. Criterio de medición de proyecto: Superficie medida en proyección horizontal, según documentación gráfica de Proyecto. No se han tenido en cuenta los retaceos como factor de influencia para incrementar la medición, toda vez que en la descomposición se ha considerado el tanto por cien de roturas general. Criterio de medición de obra: Se medirá, en proyección horizontal, la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UXO005",
+   "unidad": "m²",
+   "resumen": "Acondicionamiento de pavimento terrizo. Tierra morterenca o equivalente del lugar.",
+   "cantidad": 10.0,
+   "precio": 4.47,
+   "importe": 44.7,
+   "descripcion": "Acondicionamiento con medios mecánicos de pavimento terrizo existente mediante la formación de una capa uniforme de arena caliza de 10 cm de espesor. Incluso apisonado individual, rasanteo, extendido, humectación, compactado y limpieza. Incluye: Carga y transporte a pie de tajo del material de relleno y regado del mismo. Extendido del material de relleno en capas de grosor uniforme. Perfilado de bordes. Riego de la capa. Apisonado mediante rodillo vibrador. Nivelación. Criterio de medición de proyecto: Superficie medida en proyección horizontal, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá, en proyección horizontal, la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UJD020",
+   "unidad": "m²",
+   "resumen": "Malla antihierbas sintética.",
+   "cantidad": 125.784,
+   "precio": 6.61,
+   "importe": 831.43,
+   "descripcion": "Malla de polipropileno no tejido, de 150 mm/s de permeabilidad al agua, expresada como índice de velocidad y 90 g/m² de masa superficial, con función antihierbas, fijada al terreno donde se vaya a realizar la plantación, a razón de 1 planta/m² con piquetas de anclaje de acero, en \"L\", de 6 mm de diámetro.. Incluye: Preparación del terreno. Colocación de la malla antihierbas. Extendido de los áridos. Riego de limpieza. Criterio de medición de proyecto: Superficie medida en proyección horizontal, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá, en proyección horizontal, la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "ADR005",
+   "unidad": "m³",
+   "resumen": "Aportación de gravas de 12-20 mm de diámetro ,",
+   "cantidad": 20.0,
+   "precio": 25.88,
+   "importe": 517.6,
+   "descripcion": "Relleno localizado con grava de 12 a 20 mm de diámetro. Incluye: Transporte y descarga del material de relleno a pie de tajo. Extendido del material de relleno en tongadas de espesor uniforme. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el volumen realmente ejecutado según especificaciones de Proyecto, sin incluir los incrementos por excesos de excavación no autorizados."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "EHS016",
+   "unidad": "m³",
+   "resumen": "Cilindro de hormigón visto de 40 cm de diámetro. Con cantos lijados o biselados",
+   "cantidad": 0.063,
+   "precio": 477.12,
+   "importe": 30.06,
+   "descripcion": "Cilindro de hormigón visto con cantos lijados, de 40 cm de diámetro y 40 cm altura, realizado con hormigón HM-25/F/20/XC2 fabricado en obra; montaje y desmontaje de sistema de encofrado, con acabado visto con textura lisa, de hasta 0,5 m de altura libre, formado por: superficie encofrante de moldes cilíndricos de bandas de papel kraft, aluminio y polietileno, de un solo uso y estructura soporte vertical de puntales metálicos o abrazaderas, amortizables en 150 usos y agente filmógeno, para el curado de hormigones y morteros. Criterio de valoración económica: El precio incluye el montaje en el lugar definitivo de su colocación en obra. Incluye: Replanteo. Colocación de las armaduras con separadores homologados. Montaje del sistema de encofrado. Vertido y compactación del hormigón. Desmontaje del sistema de encofrado. Curado del hormigón. Criterio de medición de proyecto: Volumen medido según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el volumen realmente ejecutado según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "EHS016b",
+   "unidad": "m³",
+   "resumen": "Cilindro de hormigón visto de 25 cm de diámetro. Con cantos lijados o biselados",
+   "cantidad": 0.025,
+   "precio": 402.36,
+   "importe": 10.06,
+   "descripcion": "Cilindro de hormigón visto con cantos lijados, de 25 cm de diámetro y 30 cm altura, realizado con hormigón HM-25/F/20/XC2 fabricado en obra; montaje y desmontaje de sistema de encofrado, con acabado visto con textura lisa, de hasta 0,5 m de altura libre, formado por: superficie encofrante de moldes cilíndricos de bandas de papel kraft, aluminio y polietileno, de un solo uso y estructura soporte vertical de puntales metálicos o abrazaderas, amortizables en 150 usos y agente filmógeno, para el curado de hormigones y morteros. Criterio de valoración económica: El precio incluye el montaje en el lugar definitivo de su colocación en obra. Incluye: Replanteo. Colocación de las armaduras con separadores homologados. Montaje del sistema de encofrado. Vertido y compactación del hormigón. Desmontaje del sistema de encofrado. Curado del hormigón. Criterio de medición de proyecto: Volumen medido según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el volumen realmente ejecutado según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "UMG005",
+   "unidad": "Ud",
+   "resumen": "Agora infantil circular formado por troncos macizos de madera sin corteza. Ver documento gráfico.",
+   "cantidad": 1.0,
+   "precio": 5600.93,
+   "importe": 5600.93,
+   "descripcion": "Agora infantil circular formado por troncos macizos de madera sin corteza de dimensiones según documentación gráfica. Colocación en obra: con tacos químicos, sobre una superficie base. Incluso elementos de fijación. Criterio de valoración económica: El precio no incluye la superficie base. Incluye: Replanteo. Limpieza y preparación de la superficie soporte. Montaje, colocación y aplomado del conjunto decilindros. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "IVV015",
+   "unidad": "m",
+   "resumen": "Conducto de ladrillo cerámico para el paso de instalaciones de 50x50 .",
+   "cantidad": 5.0,
+   "precio": 41.31,
+   "importe": 206.55,
+   "descripcion": "Ejecución de conducto de ladrillo cerámico, formado por piezas ladrillos cerámicas, de 33x16x7 cm, recibidas con mortero de cemento, industrial, M-5. Incluso piezas de registro, de desviación y especiales. Incluye: Replanteo. Colocación y aplomado de miras de referencia. Colocación de las piezas, recibidas con mortero. Repaso de juntas. Criterio de medición de proyecto: Longitud . Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "CSV010",
+   "unidad": "m³",
+   "resumen": "Zapata corrida de cimentación de hormigón HM-25/F/20/XC2.",
+   "cantidad": 2.0,
+   "precio": 111.57,
+   "importe": 223.14,
+   "descripcion": "Zapata corrida de cimentación de hormigón, para anclaje de elementos de madera, realizada en excavación previa, con hormigón HM-25/F/20/XC2 fabricado en central, y vertido desde camión. Criterio de valoración económica: El precio incluye el encofrado. Incluye: Replanteo. Vertido y compactación del hormigón. Coronación y enrase de cimientos. Curado del hormigón. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el volumen teórico ejecutado según especificaciones de Proyecto, sin incluir los incrementos por excesos de excavación no autorizados."
+  },
+  {
+   "capitulo": "Patio infantil",
+   "codigo": "ADE010",
+   "unidad": "m³",
+   "resumen": "Excavación de zanjas para cimentacion de anclaje de troncos.",
+   "cantidad": 6.0,
+   "precio": 28.99,
+   "importe": 173.94,
+   "descripcion": "Excavación de zanjas para cimentacion de anclaje de troncos hasta una profundidad de 1 m, en suelo de arcilla semidura, con medios mecánicos o manuales, y carga a camión. Criterio de valoración económica: El precio no incluye el transporte de los materiales excavados. Incluye: Replanteo general y fijación de los puntos y niveles de referencia. Excavación en sucesivas franjas horizontales y extracción de tierras. Refinado de fondos y laterales a mano, con extracción de las tierras. Carga a camión de los materiales excavados. Criterio de medición de proyecto: Volumen medido sobre las secciones teóricas de la excavación, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el volumen teórico ejecutado según especificaciones de Proyecto, sin duplicar esquinas ni encuentros y sin incluir los incrementos por excesos de excavación no autorizados, ni el relleno necesario para reconstruir la sección teórica por defectos imputables al Contratista. Se medirá la excavación una vez realizada y antes de que sobre ella se efectúe ningún tipo de relleno. Si el Contratista cerrase la excavación antes de conformada la medición, se entenderá que se aviene a lo que unilateralmente determine el director de la ejecución de la obra."
+  }
+ ]
+}

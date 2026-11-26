@@ -1,0 +1,287 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.8||ANSI|
+~K|\2\2\3\2\2\2\2\EUR\|0|
+~C| 04#||RED DE ABASTECIMIENTO DE AGUA POTABLE|4589.06|310100|0|
+~D| 04#|UArq40x40agu\1\5\U13RB020\1\2\UNIONFD FIBRO\1\4\UACOMAGVIVI\1\14\UHORNACINA\1\7\Tapa contador\1\7\|
+~C|01.04|TN|MBC TIPO AC-16 SURF 50/70 CON CAMION CALORIFUGADO|150.86|101100|0|
+~D|01.04|O01OA010\1\0.01\O01OA030\1\0.01\O01OA070\1\0.03\M05PN010\1\0.02\M03MC110\1\0.02\M07CB020\1\0.02\M08EA100\1\0.02\M08RT050\1\0.02\M08RV020\1\0.02\M08CA110\1\0.003\M07W030\1\40\P01AF300\1\0.522\P01AF310\1\0.284\P01AF320\1\0.095\P01PL010\1\0.045\P01PC010\1\8\P01AF800\1\0.054\M07Z11\1\1\|
+~C|A03H050|m3|HORM. DOSIF. 250 kg /CEMENTO Tmáx.20|55.53|310100|3|
+~D|A03H050|O01OA070\1\0.7\P01CC020\1\0.255\P01AA030\1\0.675\P01AG020\1\1.35\P01DW050\1\0.18\M03HH030\1\0.5\|
+~A|A03H050|río\dosificación\consistencia\rodar\vibración\cemento\areno\plástico\hormigón\|
+~C|ASFALTADO##||ASFALTADO DE CALLES CASCO URBANO|157089.53|310100|0|
+~D|ASFALTADO##|C01\1\1\C02\1\1\C03\1\1\C04\1\1\|
+~C|C01#||PAVIMENTACION. ACABADO FINAL|145736.94|101100|0|
+~D|C01#|U03DF010\1\2252\U03VCS050\1\1243.68\U03\1\233\01.04\1\18.06\|
+~C|C02#||SEGURIDAD Y SALUD|2851.25|310100|0|
+~D|C02#|CAP11.1\1\1\CAP11.2\1\1\|
+~C|C03#||CONTROL DE CALIDAD|6942.96|101100|0|
+~D|C03#|U19PB010\1\36\U19PB290\1\36\|
+~C|C04#||GESTIÓN DE RESIDUOS DE LA CONSTRUCCIÓN|1558.38|230414|0|
+~D|C04#|U20CC010\1\112.6\U20CT018\1\112.6\|
+~C|CAP11.1#||PROTECCIONES INDIVIDUALES|504.95|310100|0|
+~D|CAP11.1#|E28RA010\1\8\E28RA070\1\4\E28RA090\1\4\E28RA120\1\5\E28RA100\1\2\E28RC090\1\6\E28RC100\1\3\E28RC150\1\7\E28RM060\1\11\E28RP020\1\7\E28RP060\1\6\E28RP150\1\3\|
+~C|CAP11.2#||PROTECIONES COLECTIVAS|2346.3|310100|0|
+~D|CAP11.2#|E28ES060\1\2\E28ES080\1\4\E28PB120\1\20\E28PB180\1\12\E28PE080\1\0.6\U18BCC040\1\350\U18BCN021\1\8\U18VAT011\1\3\U18LF070\1\6\P31BM110\1\1\|
+~C|E04CE020|m2|ENCOF.MAD.ZAP.Y VIG.RIOS.Y ENCE.|4.43|310100|0|
+~D|E04CE020|P01EM290\1\0.02\P03AA020\1\0.1\P01UC030\1\0.05\|
+~A|E04CE020|madero\encofrar\desencofrante\viga\encepado\río\zanja\zapata\|
+~C|E28ES060|ud|PALETA MANUAL 2 CARAS STOP-OBL.|12.63|140826|0|
+~D|E28ES060|P31SV090\1\1\|
+~C|E28ES080|ud|PLACA SEÑALIZACIÓN RIESGO|5.29|161209|0|
+~D|E28ES080|O01OA070\1\0.15\P31SV120\1\0.333\|
+~C|E28PB120|m.|BARAND.PROTECCIÓN LATERAL ZANJAS|12.01|101100|0|
+~D|E28PB120|O01OA030\1\0.3\O01OA070\1\0.3\P31CB030\1\0.015\P31CB190\1\0.67\|
+~C|E28PB180|ud|VALLA CONTENCIÓN DE PEATONES|58.94|161209|0|
+~D|E28PB180|O01OA070\1\0.1\P31CB050\1\1\|
+~C|E28PE080|ud|CUADRO GENERAL OBRA Pmáx= 80 kW.|734.87|101209|0|
+~D|E28PE080|P31CE110\1\0.2\ULEGALELECT\1\1\|
+~C|E28RA010|ud|CASCO DE SEGURIDAD|2.82|161209|0|
+~D|E28RA010|P31IA010\1\1\|
+~C|E28RA070|ud|GAFAS CONTRA IMPACTOS|3.43|161209|0|
+~D|E28RA070|P31IA120\1\0.333\|
+~C|E28RA090|ud|GAFAS ANTIPOLVO|0.93|161209|0|
+~D|E28RA090|P31IA140\1\0.333\|
+~C|E28RA100|ud|SEMI MÁSCARA ANTIPOLVO 1 FILTRO|8.25|310100|0|
+~D|E28RA100|P31IA150\1\0.333\|
+~C|E28RA120|ud|CASCOS PROTECTORES AUDITIVOS|4.18|161209|0|
+~D|E28RA120|P31IA200\1\0.333\|
+~C|E28RC090|ud|TRAJE IMPERMEABLE|11.2|161209|0|
+~D|E28RC090|P31IC100\1\1\|
+~C|E28RC100|ud|TRAJE AGUA VERDE INGENIERO|21.79|310100|0|
+~D|E28RC100|P31IC105\1\1\|
+~C|E28RC150|ud|PETO REFLECTANTE DE SEGURIDAD|7.08|310100|0|
+~D|E28RC150|P31IC140\1\0.333\|
+~C|E28RM060|ud|PAR GUANTES DE NITRILO|3.56|161209|0|
+~D|E28RM060|P31IM025\1\1\|
+~C|E28RP020|ud|PAR DE BOTAS ALTAS DE AGUA (VERDES)|14.5|161209|0|
+~D|E28RP020|P31IP011\1\1\|
+~C|E28RP060|ud|PAR DE BOTAS DE AGUA DE SEGURIDAD|15.98|161209|0|
+~D|E28RP060|P31IP020\1\0.333\|
+~C|E28RP150|ud|PAR RODILLERAS|2.96|161209|0|
+~D|E28RP150|P31IP100\1\0.333\|
+~A|E28RP150|amortización\círculo\par\protección\|
+~C|EMUBIT|tn|Emulsión bituminosa|750|130826|3|
+~C|LIHKFGHDº||Botiquin|166.43|161209|0|
+~C|M03HH030|h.|Hormigonera 300 l. gasolina|2.8|161209|2|
+~C|M03MC110|h|Planta asfáltica caliente discontínua 160 t/h|350|180626|2|
+~C|M05FP020|h|Fresadora pavimento en frío a=1000 mm.|183.31|101100|2|
+~A|M05FP020|frío\pavimentación\|
+~C|M05PN010|h|Pala cargadora neumáticos 85 cv 1,2 m3|45|180626|2|
+~C|M07AC010|h.|Dumper convencional 1.500 kg.|2.26|210207|2|
+~C|M07CB020|h.|Camión basculante 4x4 14 t.|44|180626|2|
+~C|M07N070|m3|Canon de escombros a vertedero|9.8|230414|2|
+~C|M07W030|t.|km transporte aglomerado|0.25|180626|2|
+~C|M07Z11|Ud|Desplazmiento equipo 5000tm M.B.C|67|140826|2|
+~C|M07Z110|ud|Desplazmiento equipo 5000tm M.B.|9|180626|2|
+~A|M07Z110|equipo\|
+~C|M08B020|h.|Barredora remolcada c/motor auxiliar|4.63|030508|2|
+~C|M08CA110|h|Cisterna agua s/camión 10.000 l|40|180626|2|
+~C|M08EA100|h.|Extended.asfáltica cadenas 2,5/6m.110CV|90|180626|2|
+~A|M08EA100|asfalto\cadena\|
+~C|M08RT050|h.|Rodillo vibrante autoprop. tándem 10 t.|45|180626|2|
+~A|M08RT050|vibración\rodillo\|
+~C|M08RV020|h|Compactador asfálto neumático automatico 12/22 t|55|180626|2|
+~C|M08Z120|h|Camión cisterna emulsion bituminosa|40|130826|2|
+~C|M10SA010|h.|Ahoyadora|22.31|310100|2|
+~C|O01OA010|h|Encargado|20.52|020116|1|
+~C|O01OA020|h.|Capataz|19.85|240414|1|
+~C|O01OA030|h|Oficial primera|13.81|101100|1|
+~C|O01OA031|h.|Oficial primera|19.85|240414|1|
+~C|O01OA040|h.|Oficial segunda|15.7|151209|1|
+~C|O01OA070|h.|Peón ordinario|16.8|240414|1|
+~C|O01OB170|h.|Oficial 1ª fontanero calefactor|19.9|010608|1|
+~C|O01OB180|h.|Oficial 2ª fontanero calefactor|17.18|010608|1|
+~C|O01OB195|h.|Ayudante fontanero|16.62|310100|1|
+~A|O01OB195|ayudante\fontanería\|
+~C|P01AA030|t.|Arena de río 0/6 mm.|9.05|310100|3|
+~C|P01AF221|u|Losa ceramica|8|221214|3|
+~C|P01AF300|t|Árido machaqueo 0/6 mm D.A.<20|16|180626|3|
+~C|P01AF310|t|Árido machaqueo 6/12 mm D.A.<20|16|180626|3|
+~C|P01AF320|t|Árido machaqueo 12/18 mm D.A.<20|16|180626|3|
+~C|P01AF800|t|Filler calizo mezcla bituminosa caliente factoría|62|180626|3|
+~C|P01AG020|t.|Garbancillo 4/20 mm.|12.02|310100|3|
+~C|P01CC020|t.|Cemento CEM II/A-P 32,5 R sacos|78|240414|3|
+~C|P01DW050|m3|Agua|0.8|230106|3|
+~C|P01EM290|m3|Madera pino encofrar 26 mm.|214.2|100504|3|
+~A|P01EM290|pino\encofrar\madero\|
+~C|P01HM010|m3|Hormigón HM-20/P/20/I central|48.16|020710|3|
+~C|P01LT020|ud|Ladrillo perfora. tosco 25x12x7|0.14|310106|3|
+~C|P01MC010|m3|Mortero preparado en central (M-100)|51.1|240414|3|
+~C|P01MC040|m3|Mortero 1/6 de central (M-40)|48.8|240414|3|
+~C|P01PC010|kg|Fuel-oil pesado 2,7 S tipo 1|1.1|180626|3|
+~C|P01PL010|t|Betún 50/70 a pie de planta|750|180626|3|
+~C|P01UC030|kg|Puntas 20x100|1|310100|3|
+~A|P01UC030|punta\|
+~C|P03AA020|kg|Alambre atar 1,30 mm.|1|050406|3|
+~C|P26PPL010|ud|Collarín PP para PE-PVC D=32-1/2''mm|1.45|100504|3|
+~A|P26PPL010|collarín\|
+~C|P26RB020|ud|Boca riego bayoneta bronce c/tapa 3/4"|45.2|161209|3|
+~A|P26RB020|bayoneta\boca\riego\bronce\|
+~C|P26UPM020|ud|Enlace rosca-M PP p/PE D=25-3/4"mm|1.25|210207|3|
+~A|P26UPM020|enlace\|
+~C|P26UPM120|ud|Enlace rosca-M/H latón p/PE D=32-1"mm|2.15|101209|3|
+~A|P26UPM120|enlace\latón\|
+~C|P26VE101|ud|Válvula esfera metal D=3/4"|4.15|101209|3|
+~A|P26VE101|válvula\esfera\metal\|
+~C|P26VE121|ud|Válvula antirretorno metal D=3/4"|9.5|101209|3|
+~A|P26VE121|válvula\esfera\metal\|
+~C|P27EB060|m.|Cinta baliz.plást. R/B y A/B|0.05|260411|3|
+~C|P27EB091|ud|Cono polietil.reflect.TB-6 500mm|11.45|271201|3|
+~C|P27EL160|ud|Foco diodo d=60 mm y progamador|142.65|130206|3|
+~C|P27ER041|ud|Señal triang. refl. H.I. L=70 cm|45.57|100101|3|
+~C|P27EW010|m.|Poste galvanizado 80x40x2 mm.|7.03|310106|3|
+~C|P31BM110|ud|Botiquín de urgencias + 1 repuesto completo|166.43|161209|3|
+~D|P31BM110|LIHKFGHDº\1\1\|
+~C|P31CB030|m3|Tablón madera pino 20x7 cm.|136.79|161209|3|
+~C|P31CB050|ud|Valla contenc. peatones 2,5x1 m.|57.26|161209|3|
+~C|P31CB190|m.|Puntal de pino 2,5 m D=8/10|1.17|161209|3|
+~C|P31CE110|ud|Cuadro general obra pmáx. 80 kW.|1574.35|161209|3|
+~C|P31IA010|ud|Casco seguridad|2.82|161209|3|
+~C|P31IA120|ud|Gafas protectoras|10.3|161209|3|
+~C|P31IA140|ud|Gafas antipolvo|2.8|161209|3|
+~C|P31IA150|ud|Semi-mascarilla 1 filtro|24.76|310100|3|
+~C|P31IA200|ud|Cascos protectores auditivos|12.56|161209|3|
+~C|P31IC100|ud|Traje impermeable 2 p. PVC|11.2|161209|3|
+~C|P31IC105|ud|Traje agua verde tipo ingeniero|21.79|310100|3|
+~C|P31IC140|ud|Peto reflectante a/r.|21.26|310100|3|
+~C|P31IM025|ud|Par guantes nitrilo amarillo|3.56|161209|3|
+~C|P31IP011|ud|Par botas altas de agua (verdes)|14.5|161209|3|
+~C|P31IP020|ud|Par botas de agua de seguridad|48|161209|3|
+~C|P31IP100|ud|Par rodilleras|8.9|161209|3|
+~A|P31IP100|par\|
+~C|P31SV090|ud|Paleta manual 2c. stop-d.obli|12.63|140826|3|
+~C|P31SV120|ud|Placa informativa PVC 50x30|8.31|161209|3|
+~C|P32VC130|ud|Toma de muestras, bituminosos|30.45|101100|3|
+~A|P32VC130|toma\muestra\betún\|
+~C|P32VC140|ud|Cntdº en agua, emulsiones|15.23|101100|3|
+~A|P32VC140|agua\emulsión\|
+~C|P32VC150|ud|Residuo de destilación, emulsiones|76.13|101100|3|
+~A|P32VC150|emulsión\residuo\|
+~C|P32VC170|ud|Penetración, bituminosos|40.6|101100|3|
+~A|P32VC170|penetración\betún\|
+~C|PUERHORNACINA|ud|Puerta para hornacina de contador de agua potable , de aluminio|34|260411|3|
+~C|Tapa contador|ud|TAPA DE ALUMINIO EN CONTADOR Y COLOCACION|138.54|010608|0|
+~D|Tapa contador|O01OB170\1\0.8\O01OB180\1\0.8\O01OA031\1\2\O01OA070\1\2\P01MC010\1\0.031\PUERHORNACINA\1\1\|
+~C|U03|ud|MARCACIÓN DE ARQUETAS CON LOSA CERAMICA|5.14|240414|0|
+~D|U03|O01OA070\1\0.02\P01AF221\1\0.6\|
+~C|U03DF010|m2|FRESADO FIRME MBC SECCIÓN COMPLETA|14.91|101100|0|
+~D|U03DF010|O01OA020\1\0.001\O01OA070\1\0.002\M05FP020\1\0.08\M07AC010\1\0.003\M08B020\1\0.003\M07CB020\1\0.004\|
+~A|U03DF010|vertedero\sección\mezcla\betún\transporte\planta\firme\calzada\caliente\carga\|
+~C|U03VCS050|t|MEZCLA BITUMINOSA EN CALIENTE TIPO AC-16 SURF 50/70 S DESGASTE Á|87.03|101100|0|
+~D|U03VCS050|O01OA010\1\0.01\O01OA030\1\0.01\O01OA070\1\0.03\M05PN010\1\0.02\M03MC110\1\0.02\M07CB020\1\0.02\M08EA100\1\0.02\M08RT050\1\0.02\M08RV020\1\0.02\M08CA110\1\0.003\M07W030\1\40\P01AF300\1\0.522\P01AF310\1\0.284\P01AF320\1\0.095\P01PL010\1\0.045\P01PC010\1\8\P01AF800\1\0.054\M07Z110\1\0.005\EMUBIT\1\0.004\M08Z120\1\0.003\|
+~C|U06VAV101|ud|VÁLVULA ESFERA METAL D=3/4"|12.58|210207|0|
+~D|U06VAV101|O01OB170\1\0.16\O01OB180\1\0.16\P26VE101\1\1\P26UPM020\1\2\|
+~A|U06VAV101|esfera\válvula\metal\corte\diámetro\tubería\abastecer\agua\accesorio\latón\colocación\interior\|
+~G|U06VAV101|U06VAV101.jpg\|
+~C|U06VAV121|ud|VÁLVULA ANTIRRETORNO METAL D=3/4"|17.93|210207|0|
+~D|U06VAV121|O01OB170\1\0.16\O01OB180\1\0.16\P26UPM020\1\2\P26VE121\1\1\|
+~A|U06VAV121|esfera\válvula\metal\corte\diámetro\tubería\abastecer\agua\accesorio\latón\colocación\interior\|
+~G|U06VAV121|U06VAV121.jpg\|
+~C|U07SR328|ud|ANCLAJE TAPÓN TUBERIA ABASTECIMIENTO.D=80-150mm|2.13|310100|0|
+~C|U13RB020|ud|BOCA RIEGO BAYONETA C/TAPA 3/4"|76.15|310100|0|
+~D|U13RB020|O01OB170\1\0.8\O01OB195\1\0.8\A03H050\1\0.005\P26PPL010\1\1\P26RB020\1\1\|
+~A|U13RB020|montaje\tapa\bobina\bayoneta\boca\enlace\riego\metal\instalación\hormigón\construcción\diámetro\latón\|
+~C|U18BCC040|m.|CINTA BALIZAMIENTO DE PLÁSTICO|0.22|260411|0|
+~D|U18BCC040|O01OA070\1\0.01\P27EB060\1\1\|
+~C|U18BCN021|ud|CONO POLIETILENO REFLECT. 500 mm|13.97|271201|0|
+~D|U18BCN021|O01OA070\1\0.15\P27EB091\1\1\|
+~C|U18LF070|ud|FOCO DIODO D=60 mm Y PROGAMADOR|42.38|130206|0|
+~D|U18LF070|O01OA070\1\0.4\P27EL160\1\0.25\|
+~C|U18VAT011|ud|SEÑAL TRIANG. REFL. H.I. L=70 cm|100.67|310100|0|
+~D|U18VAT011|O01OA020\1\0.25\O01OA040\1\0.5\O01OA070\1\0.5\M10SA010\1\0.25\P27ER041\1\1\P27EW010\1\3\P01HM010\1\0.15\|
+~C|U19PB010|ud|TOMA MUESTRAS, MATERIALES BITUMINOSOS|30.45|101100|0|
+~D|U19PB010|P32VC130\1\1\|
+~A|U19PB010|material\toma\muestra\imprimación\betún\ensayo\ligante\|
+~C|U19PB290|ud|CONFORMIDAD, EMULSIONES ASFALTICAS|162.41|101100|0|
+~D|U19PB290|P32VC130\1\1\P32VC140\1\1\P32VC150\1\1\P32VC170\1\1\|
+~A|U19PB290|asfalto\conformidad\residuo\emulsión\comprobación\contenedor\penetración\laboratorio\agua\ensayo\|
+~C|U20CC010|Tn|CLASIFICACIÓN DE RESIDUOS|2.02|240414|0|
+~D|U20CC010|O01OA070\1\0.12\|
+~A|U20CC010|residuo\construcción\medio\clasificación\manual\demolición\norma\fracción\pie\|
+~C|U20CT018|Tn|GESTIÓN DE LOS RESIDUOS DE CONSTR, INCL. CANON- GASTOS VARIOS|11.82|230414|0|
+~D|U20CT018|O01OA070\1\0.12\M07N070\1\1\|
+~A|U20CT018|medio\manual\carga\tubo\contenedor\camión\máximo\evacuación\mano\|
+~C|UACOMAGVIVI|ud|REALIZACIÓN DE ACOMETIDA A VIVIENDA  PARA CAMBIO CONTADOR|71.27|210207|0|
+~D|UACOMAGVIVI|U06VAV101\1\2\U06VAV121\1\1\P26UPM120\1\2\O01OB170\1\1.2\|
+~C|UArq40x40agu|ud|ARQUETA PARA LLAVE DE AGUA DE 40X40 CM.M INTERIOR|227.03|310106|0|
+~D|UArq40x40agu|O01OA031\1\3.5\O01OA070\1\3.5\P01LT020\1\84\P01MC010\1\0.051\P01MC040\1\0.141\P01HM010\1\0.11\tapa fund 50\1\1\|
+~C|UBRIDAS|ud|Para uniones|16.4|110708|3|
+~C|UHORNACINA|ud|HORNACINA PARA CONTADOR AGUA POTABLE|75.95|310106|0|
+~D|UHORNACINA|O01OA031\1\2\O01OA070\1\2\P01LT020\1\8\P01MC010\1\0.03\|
+~C|ULEGALELECT|ud|Tramitación en organismos instalación cuadro eléctrico de obras|420|101209|0|
+~C|UMANGUITOUNI|ud|Manguito de unión de polietileno a fibrocemento de 63 a 60 mm|24.56|161209|3|
+~C|UNIONFD FIBRO|ud|UNIÓN TUBERIA FUNDICION A FIBROCEMENTO|200.6|010608|0|
+~D|UNIONFD FIBRO|O01OB170\1\3\O01OB180\1\3\UMANGUITOUNI\1\1\UBRIDAS\1\2\UPIEZAS VAR\1\1\|
+~C|UPIEZAS VAR|ud|Para uniones|32|290109|3|
+~C|tapa fund 50|ud|Tapa de fundición para calzada de 50 x 50cm. interior|72.2|161209|3|
+~T|A03H050|Hormigón de dosificación 250 kg con cemento CEM II/B-P 32,5 N, arena de río y  árido rodado Tmáx. 20 mm., con hormigonera de 250 l., para vibrar y consistencia plástica.|
+~T|E04CE020|Encofrado y desencofrado con madera suelta en zapatas, zanjas, vigas y encepados, considerando 4 posturas.  Según NTE-EME.|
+~T|E28ES060|Señal de seguridad manual a dos caras: Stop-Dirección obligatoria, tipo paleta. (amortizable en dos usos). s/ R.D. 485/97.|
+~T|E28ES080|Placa señalización-información en PVC serigrafiado de 50x30 cm., fijada mecánicamente, amortizable en 3 usos, incluso colocación y desmontaje. s/ R.D. 485/97.|
+~T|E28PB120|Barandilla protección lateral de zanjas, formada por tres tabloncillos de madera de pino de 20x5 cm. y estaquillas de madera de D=8 cm. hincadas en el terreno cada 1,00 m. (amortizable en 3 usos), incluso colocación y desmontaje.  s/ R.D. 486/97.|
+~T|E28PB180|Valla de contención de peatones, metálica, prolongable de 2,50 m. de largo y 1 m. de altura, color amarillo, amortizable en 5 usos, incluso colocación y desmontaje.  s/ R.D. 486/97.|
+~T|E28PE080|Cuadro general de mandos y protección de obra para una potencia máxima de 40 kW. compuesto por armario con revestimiento de poliéster, de 90x80 cm., índice de protección IP 66, con cerradura, interruptor automático magnetotérmico de 4x32 A., relé diferencial de 40A( 0,3 A., 0,03mA),  interruptores automáticos magnetotérmicos de 4x25 A, tres  magnetortérmicos de 2x16A., incluyendo cableado, rótulos de identificación de circuitos, bornes de salida y p.p. de conexión a tierra, para una resistencia no superior de 20 Ohmios, instalado y legalizado, (amortizable en 6 obras).  s/ R.D. 486/97.|
+~T|E28RA010|Casco de seguridad con arnés de adaptación. Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RA070|Gafas protectoras contra impactos, incoloras, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RA090|Gafas antipolvo antiempañables, panorámicas, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RA100|Semi-mascarilla antipolvo un filtro, (amortizable en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RA120|Protectores auditivos con arnés a la nuca, (amortizables en 3 usos).  Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RC090|Traje impermeable de trabajo, 2 piezas de PVC, (amortizable en un uso). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RC100|Traje de agua color verde tipo ingeniero, (amortizable en un uso). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RC150|Peto reflectante de seguridad personal en colores amarillo y rojo, (amortizable en 3 usos).  Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RM060|Par de guantes de nitrilo alta-resistencia. Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RP020|Par de botas altas de agua color verde, (amortizables en 1 uso).  Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RP060|Par de botas de seguridad con plantilla y puntera de acero, (amortizables en 3 usos).  Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|E28RP150|Par de rodilleras ajustables de protección ergonómica, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92.|
+~T|Tapa contador|Tapa de contador para reponer la existente, o de nueva instalación, consiste en tapa de aluminio blanco con cristal sencillo fijada a fachada incluso colocacion en cerramiento de vivienda, tapado de acometida mediante mortero M-40 sobre tuberia y alicatado segun revestimiento de fachada existente.|
+~T|U03|Marcación de arquetas con loseta cerámica de 10x10 de 5 cms. de grosor, marcando el tipo de instalación en los terminos que solicte la dirección facultativa. |
+~T|U03DF010|Fresado (1-2 cm.) de firme de mezcla bituminosa en caliente en sección completa o semicalzada, incluso carga, barrido y transporte a vertedero o planta de reciclaje o lugar de empleo.|
+~T|U03VCS050|Mezcla bituminosa en caliente tipo AC 16 surf 50/70 S para capa de rodadura, elaborada con árido grueso procedente de machaqueo de piedra de cantera, con un coeficiente de desgaste de Los Ángeles inferior al 20%. Incluye la ejecución previa de riego de adherencia mediante la aplicación uniforme de emulsión bituminosa de rotura rápida (tipo C60B3 ADH o similar según normativa), a razón de la dotación residual prescrita en proyecto. Incluye el betún asfáltico tipo 50/70, la dotación de áridos, polvo mineral de aportación (filler), la dosificación y fabricación en planta, el transporte a pie de obra mediante camiones adecuadamente cubiertos, el extendido mediante extendedora autopropulsada y la compactación mecánica por capas con rodillo vibratorio y de neumáticos hasta alcanzar una densidad mínima del 98% del ensayo Marshall. Se incluye la limpieza previa de la superficie mediante barrido mecánico profunda, el corte de juntas de pavimentos existentes y los medios auxiliares necesarios. Todo ello ejecutado en total conformidad con las especificaciones técnicas de la Norma 6.1-IC de Secciones de Firme y las Órdenes Circulares vigentes de la Dirección General de Carreteras sobre mezclas bituminosas y materiales asfálticos. Medida la partida por peso neto real de la mezcla verificado en báscula oficial de pesaje a la entrada de la obra|
+~T|U06VAV101|Válvula de corte de esfera, de latón, de 3/4" de diámetro interior, colocada en tubería de abastecimiento de agua, i/juntas y accesorios, completamente instalada.|
+~T|U06VAV121|Válvula antirretorno, de latón, de 3/4" de diámetro interior, colocada en tubería de abastecimiento de agua, i/juntas y accesorios, completamente instalada.|
+~T|U07SR328|Dado de anclaje para tapón en conducciones de agua, de diámetros comprendidos entre 80 y 150 mm., con hormigón HA-25/P/20/I, elaborado en central para relleno del dado, i/excavación, encofrado, colocación de armaduras, vibrado, desencofrado y arreglo de tierras, s/NTE-IFA-19.|
+~T|U13RB020|Boca de riego tipo bayoneta con tapa, de enlace rápido, construida en latón, de 3/4" de diámetro, montada sobre bobina metálica, i/conexión y hormigonado, instalada.|
+~T|U18BCC040|Cinta de balizamiento de plástico R/B y A/B de resistencia normal, colocada.|
+~T|U18BCN021|Cono polietileno reflectante de 500 mm colocado.|
+~T|U18LF070|Foco de diodos LED de d=60 mm compuesto por 32 diodos LED ambar de alta luminosidad por una cara, dotado de progamador electronico con funcionamiento sincrono de los focos y celula crepuscular automatica, amortizable en 4 obras.|
+~T|U18VAT011|Señal triangular de lado 70 cm., reflexiva nivel II (H.I.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada.|
+~T|U19PB010|Toma de muestras para ensayos de ligantes e imprimaciones bituminosas, s/ NLT 121.|
+~T|U19PB290|Ensayo completo para comprobación de la conformidad de emulsiones asfálticas, mediante la realización de ensayos de laboratorio para determinar el contenido en agua, s/ NLT 137, la destilación, s/ NLT 139, y la determinación de la penetración sobre el residuo de destilación, s/ NLT 124.|
+~T|U20CC010|Clasificación a pie de obra de residuos de construcción o demolición en fracciones según normativa vigente.|
+~T|U20CT018|Gestión de los residuos de la consrucción, desde su generación en obra, clasificación, separación, carga y trasnporte, incluidos los canon, impuestos y gastos derivados para su gestión golobal, informes, etc...|
+~T|UACOMAGVIVI|Realización de la desinstalación e instalación de contador de agua potable, en hornacina y/o arqueta destinada a este uso, para acometida a vivienda unifamiliar o plurifamiliar, con piezas y elementos auxiliares de latón, de marca reconocida por la empresa suminsitradora, contemplando llaves de corte antes y después dle contador, cambio de contador (aportado por la empresa suminsitrasora), válvula antirretorno, en diámetros  desde 3/4 a 2" de diámetro, totalmente instalado y probado, siguiendo las indicaciones de la D.T.|
+~T|UArq40x40agu|Arqueta para alojamiento de válvula de corte, de 40x40x80 cm. interior, construida con fábrica de ladrillo perforado de 1/2 pie de espesor, recibido con mortero de cemento, colocado perimetralmente sobre solera de hormigón en masa HM/20/P/20/I, enfoscada y bruñida por el interior con mortero de cemento y , y con tapa de fundición   de 50 x 50 x 50 mm, interior libre de 400 x 400 mm, de grafito esferoidal GE-500 según norma IDO 1083 (1987), EN 124 Clase C250, provista de pasador central para levantarla y marco cuadrado de sección sifónica con pintura hidrosoluble negra, no tóxica y  no  inflamable, totalmente  terminada y con p.p. de medios auxiliares y cama de grava filtrante en el fondo, sin incluir la excavación, ni el relleno perimetral posterior.
+|
+~T|UHORNACINA|Arqueta para alojamiento de válvula de corte, de 40x40x80 cm. interior, construida con fábrica de ladrillo perforado de 1/2 pie de espesor, recibido con mortero de cemento, colocado perimetralmente sobre solera de hormigón en masa HM/20/P/20/I, enfoscada y bruñida por el interior con mortero de cemento y , y con tapa de fundición   de 50 x 50 x 50 mm, interior libre de 400 x 400 mm, de grafito esferoidal GE-500 según norma IDO 1083 (1987), EN 124 Clase C250, provista de pasador central para levantarla y marco cuadrado de sección sifónica con pintura hidrosoluble negra, no tóxica y  no  inflamable, totalmente  terminada y con p.p. de medios auxiliares y cama de grava filtrante en el fondo, sin incluir la excavación, ni el relleno perimetral posterior.
+|
+~T|ULEGALELECT|Tramitación de la instalación frente a los organismos correspondientes y empresa suministradora, para la obtención de los certificados de puesta en sevicio de las  INSTALACIONES DE ALUMBRADO PÚBLICO , incluyendo el pago de tasas, impuestos y gastos varios, totalmente visado por la consejería de Innovación ciencia y Empresa.|
+~T|UNIONFD FIBRO|Unión de tubería de abastecimiento de agua potable a tubería existente de fibrocemento, totalmente termindda y probada.|
+~M|C01#\U03DF010|1\1\|2252|\c/ Fuente Lucena\1\110\\\\Avd de la Libertad\1\25\\\\C/ Huerta de los patos\1\895\\\\C/Benito Pérez Galdós\1\50\\\\C/ Albahaca\1\50\\\\C/ Ildefonso Marzo\1\218\\\\C/ Charlot\1\324\\\\C/ Las Flores\1\530\\\\C/Palmito\1\50\\\|
+~M|C01#\U03VCS050|1\2\|1243.68|\Viales proyectados (6-8) cms, densidad 2,5 T/m3)\\\\\3\2.5\1\1941\\0.06\3\2.5\1\256\\0.06\3\2.5\1\895\\0.06\3\2.5\1\420\\0.06\3\2.5\1\350\\0.06\3\2.5\1\696.53\\0.06\3\2.5\1\1374\\0.06\3\2.5\1\911\\0.08\3\2.5\1\858\\0.08\|
+~M|C01#\U03|1\3\|233|\Viales proyectados\\\\\\c/ Fuente Lucena\1\20\\\\Avd de la Libertad\1\8\\\\C/ Huerta de los patos\1\25\\\\C/Benito Pérez Galdós\1\15\\\\C/ Albahaca\1\10\\\\C/ Ildefonso Marzo\1\25\\\\C/ Charlot\1\25\\\\C/ Las Flores\1\30\\\\C/Palmito\1\25\\\\prevision\50\\\\|
+~M|C01#\01.04|1\4\|18.06|3\2.5\1\72.25\\0.1\|
+~M|CAP11.1#\E28RA010|2\1\1\|8|\\5\\\\\repuesto- visitas\3\\\\|
+~M|CAP11.1#\E28RA070|2\1\2\|4|\\3\\\\\REPUESTO\1\\\\|
+~M|CAP11.1#\E28RA090|2\1\3\|4|\\3\\\\\REPUESTO\1\\\\|
+~M|CAP11.1#\E28RA120|2\1\4\|5|\\4\\\\\REPUESTO\1\\\\|
+~M|CAP11.1#\E28RA100|2\1\5\|2|\\2\\\\|
+~M|CAP11.1#\E28RC090|2\1\6\|6|\\5\\\\\REOUESTO\1\\\\|
+~M|CAP11.1#\E28RC100|2\1\7\|3|\\3\\\\|
+~M|CAP11.1#\E28RC150|2\1\8\|7|\\6\\\\\REPUESTO\1\\\\|
+~M|CAP11.1#\E28RM060|2\1\9\|11|\\10\\\\\REPUESTO\1\\\\|
+~M|CAP11.1#\E28RP020|2\1\10\|7|\\6\\\\\REPUESTO\1\\\\|
+~M|CAP11.1#\E28RP060|2\1\11\|6|\\6\\\\|
+~M|CAP11.1#\E28RP150|2\1\12\|3|\\3\\\\|
+~M|CAP11.2#\E28ES060|2\2\1\|2|\\2\\\\|
+~M|CAP11.2#\E28ES080|2\2\2\|4|\\4\\\\|
+~M|CAP11.2#\E28PB120|2\2\3\|20|\\20\\\\|
+~M|CAP11.2#\E28PB180|2\2\4\|12|\\12\\\\|
+~M|CAP11.2#\E28PE080|2\2\5\|0.6|\\0.6\\\\|
+~M|E28PE080\ULEGALELECT|2\2\5\2\|1|\\1\\\\|
+~M|CAP11.2#\U18BCC040|2\2\6\|350|\\350\\\\|
+~M|CAP11.2#\U18BCN021|2\2\7\|8|\\8\\\\|
+~M|CAP11.2#\U18VAT011|2\2\8\|3|\\3\\\\|
+~M|CAP11.2#\U18LF070|2\2\9\|6|\\6\\\\|
+~M|C03#\U19PB010|3\1\|36|\Viales proyectados\\\\\\c/ Fuente Lucena\4\\\\\Avd de la Libertad\4\\\\\C/ Huerta de los patos\4\\\\\C/Benito Pérez Galdós\4\\\\\C/ Albahaca\4\\\\\C/ Ildefonso Marzo\4\\\\\C/ Charlot\4\\\\\C/ Las Flores\4\\\\\C/Palmito\4\\\\\\\\\\|
+~M|C03#\U19PB290|3\2\|36|\Viales proyectados\\\\\\c/ Fuente Lucena\4\\\\\Avd de la Libertad\4\\\\\C/ Huerta de los patos\4\\\\\C/Benito Pérez Galdós\4\\\\\C/ Albahaca\4\\\\\C/ Ildefonso Marzo\4\\\\\C/ Charlot\4\\\\\C/ Las Flores\4\\\\\C/Palmito\4\\\\|
+~M|C04#\U20CC010|4\1\|112.6|\ Tn asfalto fresado\\\\\3\2.5\1\110\\0.02\3\2.5\1\25\\0.02\3\2.5\1\895\\0.02\3\2.5\1\50\\0.02\3\2.5\1\50\\0.02\3\2.5\1\218\\0.02\3\2.5\1\324\\0.02\3\2.5\1\530\\0.02\3\2.5\1\50\\0.02\|
+~M|C04#\U20CT018|4\2\|112.6|\ Tn asfalto fresado\\\\\3\2.5\1\110\\0.02\3\2.5\1\25\\0.02\3\2.5\1\895\\0.02\3\2.5\1\50\\0.02\3\2.5\1\50\\0.02\3\2.5\1\218\\0.02\3\2.5\1\324\\0.02\3\2.5\1\530\\0.02\3\2.5\1\50\\0.02\|

@@ -1,0 +1,1914 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.8||ANSI|
+~K|\2\2\2\2\2\2\2\EUR\|0|
+~C|%NAAA|%|Despeses auxiliars|1|051126|3|
+~C|%NAAA00000150|%|Medios auxiliares|1.5|051126|0|
+~C|%NAAA00000200|%|Medios auxiliares|2|051126|0|
+~C|%NAAA00000250|%|Medios auxiliares|2.5|051126|0|
+~C|%ZZ|%|Costes directos complementarios|2|051126|0|
+~C|01##||Pressupost 01|316250.7|051126|0|
+~D|01##|01.01\1\1\01.02\1\1\01.03\1\1\01.04\1\1\01.05\1\1\01.06\1\1\01.07\1\1\01.08\1\1\01.09\1\1\01.0A\1\1\01.0B\1\1\01.0C\1\1\01.0D\1\1\|
+~C|01.01#||  NOTAS INFORMATIVAS|0|051126|0|
+~D|01.01#|E93A000Z\1\1\712AZ002\1\1\712AZ003\1\1\EGASOS10\1\1\712A002Z\1\1\712AZ001\1\1\|
+~C|01.02#||  TRABAJOS PREVIOS Y DERRIBOS|4985.29|051126|0|
+~D|01.02#|P2143-4RQT\1\9.55\P2143-4RR2\1\3.9\P214R-8GWY\1\34.16\DLP300142\1\1\P2142-4RN5\1\13.87\DIE040\1\1\P21G1-4RU1\1\10.8\P21G1-4RU2\1\3.85\P221I-8GY9\1\10.2\P214K-CRN1\1\2\P5ZJR-HBNN\1\4\P5ZJR-HBNQ\1\68.4\|
+~C|01.03#||  ENVOLVENTE EXTERIOR|16247.8|051126|0|
+~D|01.03#|01.03.01\1\1\01.03.02\1\1\|
+~C|01.03.01#||  CERRAMIENTOS DE FACHADA|140.33|051126|0|
+~D|01.03.01#|P6126-5A4X\1\1\P6145-56HN\1\3.4\|
+~C|01.03.02#||  ACABADOS DE FACHADA|16107.47|051126|0|
+~D|01.03.02#|P87D-6RNI\1\24\P874-HKTD\1\167.24\P89H-4V75\1\218.66\P811-3EQD\1\41.94\P4DB-4317\1\20.34\P453A-KG3J\1\3.4\P4BD-43N1\1\20.34\P4B7-3FPH\1\98.79\P9G7-9LSU\1\3.26\P8B1-6073\1\6.98\P9VE-B6JX\1\3.6\P9D3-35SU\1\7.4\P811-3F8R\1\1.2\|
+~C|01.04#||  DIVISORIAS Y ACABADOS INTERIORES|67859.33|051126|0|
+~D|01.04#|01.04.01\1\1\01.04.02\1\1\|
+~C|01.04.01#||  DIVISORIAS INTERIORES|10833.31|051126|0|
+~D|01.04.01#|P43N1-W0FD\1\30.41\P43N1-W0FX\1\20.01\NAO03000000X\1\30.41\NAO030000000\1\20.01\P43N1-W01X\1\34\P43N1-W0X2\1\94.2\|
+~C|01.04.02#||  REVESTIMIENTOS INTERIORES|57026.02|051126|0|
+~D|01.04.02#|P7D0-5RJN\1\825.08\K898X00P\1\445.08\P864-AE5L\1\63.41\P864-REXX\1\29.01\P83EA-3Y8H\1\19.32\P822-3NQV\1\12.86\P89I-4V8S\1\18.99\P89B-4UEC\1\96.22\P8A2-HYMQ\1\193.87\P8E2-H7WD\1\12.25\P8A4-AKV8\1\195.18\P653-8NX1\1\15.38\|
+~C|01.05#||  PAVIMENTOS|19965.34|051126|0|
+~D|01.05#|P9J4-9ESU\1\4.18\P930-11A8F\1\2.25\P4B9-D6QO\1\15\P9M3-XBVF\1\383.5\P9D5-35ZC\1\6.23\P9ER-HY9N\1\4.8\|
+~C|01.06#||  FALSOS TECHOS|52202.12|051126|0|
+~D|01.06#|P43G-CW7B\1\87.5\P84N-A82E\1\4.07\P848-HCI5\1\338.9\P848-HCX2\1\274.7\P848-HCIX\1\217.47\P430-6UIK\1\0.22\P8A2-HYMQ\1\9.64\P8A4-AKV8\1\83.02\|
+~C|01.07#||  CUBIERTA E IMPERMEABILIZACIONES|2467.46|051126|0|
+~D|01.07#|P514-61T6\1\9.52\P750-E81H\1\9.52\P7ZB-AHFD\1\12.4\P732-611O\1\2.1\P630-ZBA7\1\10.96\P547-6CHF\1\11.5\|
+~C|01.08#||  CARPINTERIA Y CERRAJERÍA|51388.02|051126|0|
+~D|01.08#|01.08.01\1\1\01.08.02\1\1\01.08.03\1\1\|
+~C|01.08.01#||  CARPINTERÍAS EXTERIORES|25267.19|051126|0|
+~D|01.08.01#|PAF9-5TGM\1\1\PAF9-5TG1\1\1\PAFA-7R5M\1\1\PAF9-5TGX\1\1\PAF9-5TX1\1\1\|
+~C|01.08.02#||  CARPINTERÍAS INTERIORES|10219.46|051126|0|
+~D|01.08.02#|PAQ5-380F\1\2\PAQ5-38X1\1\2\PAQ5-38X2\1\1\PAQ5-38X3\1\1\|
+~C|01.08.03#||  CERRAJERÍA|15901.37|051126|0|
+~D|01.08.03#|P54A-61SI\1\1\P54A-61SX\1\1\P54A-61XX\1\1\P54A-61X2\1\1\P54A-61XZ\1\1.82\E894XEAP\1\11.37\P8B5-6NOI\1\1.23\P54A-61X6\1\2\P54A-61X3\1\1\P54A-61X4\1\1\P54A-61X5\1\12\ZPAX003\1\12.3\|
+~C|01.09#||  MOBILIARIO Y EQUIPAMIENTO|7998.6|051126|0|
+~D|01.09#|01.09.01\1\1\01.09.02\1\1\|
+~C|01.09.01#||  MOBILIARIO|4847|051126|0|
+~D|01.09.01#|P8A1-KKJT\1\0.75\P848-HCHX\1\9.5\PAQ5-38XB\1\8\PAQ5-38XA\1\5.2\PAQ5-38XC\1\0.6\PAQ5-38XD\1\1.5\PAQ5-38XE\1\4.08\PAQ5-38XH\1\2.42\PAQ5-38XF\1\2.05\PAQ5-38XG\1\0.75\P8A2-HYMQ\1\15.85\|
+~C|01.09.02#||   EQUIPAMIENTO|3151.6|051126|0|
+~D|01.09.02#|PJ11C-3CWH\1\2\PJ117-3BYD\1\2\PJ219-3SGK\1\2\PJ21C-3SHO\1\1\PJ3D-3FKU\1\2\EJ46U020\1\2\EJ46U015\1\2\EJ46X001\1\2\EJ46X002\1\2\EJ46X003\1\2\EJ46X004\1\1\EJ46X005\1\1\EJ46X006\1\1\EJ46X007\1\2\EJ46X008\1\12\EJ46X009\1\1\|
+~C|01.0A#||  INSTALACIONES|77860.1|051126|0|
+~D|01.0A#|01.0A.01\1\1\01.0A.02\1\1\01.0A.03\1\1\01.0A.04\1\1\01.0A.05\1\1\01.0A.06\1\1\01.0A.07\1\1\|
+~C|01.0A.01#||  INSTALACIÓN DE FONTANERÍA|1898.68|051126|0|
+~D|01.0A.01#|PE22-367V\1\1\PJ07-628M\1\1\PZAAFS01\1\1\|
+~C|01.0A.02#||  INSTALACIÓN DE ELECTRICIDAD|22593.94|051126|0|
+~D|01.0A.02#|01.0A.02.01\1\1\01.0A.02.02\1\1\01.0A.02.03\1\1\01.0A.02.04\1\1\|
+~C|01.0A.02.01#||  Centralización de contadores|850|051126|0|
+~D|01.0A.02.01#|EG1NX122\1\1\|
+~C|01.0A.02.02#||  Preinstalación|19749.25|051126|0|
+~D|01.0A.02.02#|ZZZ10002\1\1\ZZZ50001\1\260\ZZZ50003\1\300\ZZZ50004\1\50\ZZZ50005\1\50\ZZZ50006\1\370\ZZZ50007\1\380\ZZZ50011\1\100\ZZZ50012\1\280\E6148656\1\20\E6148658\1\90\E6148659\1\480\E6148677\1\5\ELCT032\1\1\|
+~C|01.0A.02.03#||  Red de tierra|170|051126|0|
+~D|01.0A.02.03#|E6148675\1\5\E6148676\1\1\|
+~C|01.0A.02.04#||  Mecanismos|1824.69|051126|0|
+~D|01.0A.02.04#|PG6H-CUJA\1\9\PG6H-CUJQ\1\3\PG6H-CUJP\1\2\PG6H-CUJ2\1\2\PG6H-CUIX\1\1\PG70-78AA\1\3\PG6H-CUIO\1\2\PG6H-CUJX\1\3\|
+~C|01.0A.03#||  INSTALACIÓN DE ILUMINACIÓN|9861.45|051126|0|
+~D|01.0A.03#|PHN0-H9YX\1\72\PHN0-H9X1\1\3\PHN0-H9X2\1\1\PHN0-H9X3\1\7\PG8C-HD15\1\1\PHN0-6U27\1\2\|
+~C|01.0A.04#||  INSTALACIÓN DE VENTILACIÓN|19972.52|051126|0|
+~D|01.0A.04#|01.0A.04.01\1\1\01.0A.04.02\1\1\01.0A.04.03\1\1\01.0A.04.04\1\1\|
+~C|01.0A.04.01#||  Grupos de ventilación|10304.87|051126|0|
+~D|01.0A.04.01#|GV001\1\1\|
+~C|01.0A.04.02#||  Rejas y bocas de extracción|2251.2|051126|0|
+~D|01.0A.04.02#|ICR03003C307\1\6\ICR05020799X\1\1\PEP6-8FV3\1\2\ICR070079904\1\1\PE40-60DD\1\1\ICR03003C30X\1\6\|
+~C|01.0A.04.03#||  Red de conductos y accesorios|3133.5|051126|0|
+~D|01.0A.04.03#|E6148664\1\32.3\E614867X\1\2\IVV030000000\1\10.8\|
+~C|01.0A.04.04#||  Ventiladores industriales|4282.95|051126|0|
+~D|01.0A.04.04#|PEJ4-48CY\1\3\|
+~C|01.0A.05#||  INSTALACIÓN DE CLIMATIZACIÓN|19515.42|051126|0|
+~D|01.0A.05#|01.0A.05.01\1\1\01.0A.05.02\1\1\01.0A.05.03\1\1\01.0A.05.04\1\1\01.0A.05.05\1\1\|
+~C|01.0A.05.01#||  Unidades autónomas|10314.4|051126|0|
+~D|01.0A.05.01#|BCD001\1\2\|
+~C|01.0A.05.02#||  Rejas y bocas de extracción|1229.4|051126|0|
+~D|01.0A.05.02#|ICR03003C307\1\6\ICR050207990\1\1\|
+~C|01.0A.05.03#||  Red de conductos|4793.86|051126|0|
+~D|01.0A.05.03#|E61486X7\1\32.9\|
+~C|01.0A.05.04#||  Distribución de fluidos|2039.8|051126|0|
+~D|01.0A.05.04#|EFB45357\1\30\EF5BXX01\1\20\EF5BXX02\1\30\|
+~C|01.0A.05.05#||  Varios|1137.96|051126|0|
+~D|01.0A.05.05#|US110458\1\2\PEZ1-6RX2\1\4\|
+~C|01.0A.06#||  INSTALACIÓN DE SANEAMIENTO|2349.82|051126|0|
+~D|01.0A.06#|PD18-8D4X\1\1\PD18-8D5M\1\15.24\PD18-8D50\1\26.8\PD16-HAWZ\1\11.5\PD54-10MWK\1\1\PD31-56AD\1\1\|
+~C|01.0A.07#||  INSTALACIÓN CONTRAINCENDIOS|1668.27|051126|0|
+~D|01.0A.07#|PM32-DZ5H\1\2\PM32-DZ5C\1\1\PMS0-6Z8Z\1\2\PMS0-6Z90\1\2\PH56-61US\1\5\PH56-61UX\1\2\|
+~C|01.0B#||  VARIOS|9043.27|051126|0|
+~D|01.0B#|PQ14-H8SZ\1\1\PB90-FK6V\1\15\CL40-00J3\1\110\C152-003B\1\6\|
+~C|01.0C#||  GESTIÓN DE RESIDUOS|2656.61|051126|0|
+~D|01.0C#|PPAUAB0X\1\1\|
+~C|01.0D#||  SEGURIDAD Y SALUD|3576.76|051126|0|
+~D|01.0D#|PPAUAB01\1\0.97\|
+~C|712A002Z|u|Todas las partidas del presupuesto de movimiento y carga de tier|0|051126|0|
+~C|712AZ001|u|Todas las partidas del presupuesto llevan incluidas la parte pro|0|051126|0|
+~C|712AZ002|u|Todos los elementos presupuestados incluyen el suministro, coloc|0|051126|0|
+~C|712AZ003|u|Todas las partidas del presupuesto llevan incluidas las mermas d|0|051126|0|
+~C|A01-FEOZ|h|Ayudante encofrador|22.83|051126|1|
+~C|A01-FEP0|h|Ayudante ferrallista|22.83|051126|1|
+~C|A01-FEP3|h|Ayudante colocador|22.83|051126|1|
+~C|A01-FEP6|h|Ayudante carpintero|23.01|051126|1|
+~C|A01-FEP9|h|Ayudante pintor|22.83|051126|1|
+~C|A01-FEPB|h|Ayudante cerrajero|22.91|051126|1|
+~C|A01-FEPC|h|Ayudante calefactor|22.79|051126|1|
+~C|A01-FEPD|h|Ayudante electricista|22.79|051126|1|
+~C|A01-FEPE|h|Ayudante fontanero|22.79|051126|1|
+~C|A01-FEPH|h|Ayudante montador|22.83|051126|1|
+~C|A0127000|h|Oficial 1a col·locador|24.5|051126|1|
+~C|A012D000|h|Oficial 1a pintor|24.5|051126|1|
+~C|A012H000|h|Oficial 1a electricista|25.32|051126|1|
+~C|A013D000|h|Ajudant pintor|22.83|051126|1|
+~C|A0D-0007|h|Peón|21.64|051126|1|
+~C|A0E-000A|h|Peón especialista|22.28|051126|1|
+~C|A0F-000B|h|Oficial 1a|24.5|051126|1|
+~C|A0F-000C|h|Oficial 1a calefactor|25.32|051126|1|
+~C|A0F-000D|h|Oficial 1a colocador|24.5|051126|1|
+~C|A0F-000E|h|Oficial 1a electricista|25.32|051126|1|
+~C|A0F-000F|h|Oficial 1a encofrador|24.5|051126|1|
+~C|A0F-000I|h|Oficial 1a ferrallista|24.5|051126|1|
+~C|A0F-000K|h|Oficial 1a carpintero|24.93|051126|1|
+~C|A0F-000N|h|Oficial 1a fontanero|25.32|051126|1|
+~C|A0F-000P|h|Oficial 1a cerrajero|24.88|051126|1|
+~C|A0F-000R|h|Oficial 1a montador|25.32|051126|1|
+~C|A0F-000S|h|Oficial 1a de obra pública|24.5|051126|1|
+~C|A0F-000T|h|Oficial 1a albañil|24.5|051126|1|
+~C|A0F-000V|h|Oficial 1a pintor|24.5|051126|1|
+~C|A0F-000X|m2|Oficial 1a carpintero a metro2|50|051126|1|
+~C|B011-05ME|m3|Agua|2.14|051126|3|
+~C|B015-16HR|l|Diluyente pintura silic.,p/velad.piedra|12.2|051126|3|
+~C|B03J-0K7V|t|Grava piedra calc.grandària màxima 20 mm p/horms.|19.54|051126|3|
+~C|B03L-05MQ|t|Arena piedra calc. P/horms.|18.25|051126|3|
+~C|B03L-05N7|t|Arena p/morte.|19.59|051126|3|
+~C|B053-1VF9|kg|Lechada p/cerámica CG2 (UNE-EN 13888),color|1.38|051126|3|
+~C|B054-06DH|kg|Cal aérea hidratada CL 90-S,sacos|0.36|051126|3|
+~C|B055-067M|t|Cemento pórtland+caIiza CEM II/B-L 32,5R, & sacos|160.24|051126|3|
+~C|B058-15G7|kg|Emulsión anticorrosiva de res.sint.|12.67|051126|3|
+~C|B060-2D5U|m3|Hormigón con fibras HAF-30/A-3-3/F/12-60/IIb+E,entre 30 y 35kg/m|171.97|051126|3|
+~C|B069-2A9O|m3|Horm.no estructural HNE-15/P/20|96.17|051126|3|
+~C|B06A-2MHM|m3|Horm.no estr.rec. HRNE-235/B/20, sust.50% árido grueso p/árido r|123.08|051126|3|
+~C|B06D-0L9C|m3|Hormigón 200kg/m3,1:3:6,cemento pórtland+caIiza CEM II/B-L 32,5R|100.65|051126|0|
+~D|B06D-0L9C|A0E-000A\1\1.1\%NAAA\1\0.01\B011-05ME\1\0.18\B03J-0K7V\1\1.55\B03L-05MQ\1\0.65\B055-067M\1\0.2\C176-00FX\1\0.6\|
+~C|B06FA-HYR1|m3|Hormigón para armar +adit. hidrófugo HA - 25 / AC / 10 / XC1 can|134.5|051126|3|
+~C|B07F-0LSV|m3|Mortero de cal,arena,380kg/m3 cal aérea hidratada CL 90-S,1:4,10|191.02|051126|0|
+~D|B07F-0LSV|A0E-000A\1\1\%NAAA\1\0.01\B011-05ME\1\0.2\B03L-05N7\1\1.52\B054-06DH\1\380\C176-00FX\1\0.7\|
+~C|B07F-0LSZ|m3|Mortero mixto cemento pórtland+caIiza CEM II/B-L,cal,arena,380kg|181.95|051126|0|
+~D|B07F-0LSZ|A0E-000A\1\1.05\%NAAA\1\0.01\B055-067M\1\0.38\B054-06DH\1\190\B011-05ME\1\0.2\B03L-05N7\1\1.38\C176-00FX\1\0.73\|
+~C|B07F-0LT4|m3|Mortero cemento pórtland+caIiza CEM II/B-L,arena,250kg/m3 cement|96.43|051126|0|
+~D|B07F-0LT4|A0E-000A\1\1\%NAAA\1\0.01\B055-067M\1\0.25\B011-05ME\1\0.2\B03L-05N7\1\1.63\C176-00FX\1\0.7\|
+~C|B07F-0LT5|m3|Mortero cemento pórtland+caIiza CEM II/B-L,arena,380kg/m3 cement|115.11|051126|0|
+~D|B07F-0LT5|A0E-000A\1\1\%NAAA\1\0.01\B03L-05N7\1\1.52\B011-05ME\1\0.2\B055-067M\1\0.38\C176-00FX\1\0.7\|
+~C|B07F-0LT6|m3|Mortero mixto cemento pórtland+caIiza CEM II/B-L,cal,arena,200kg|231.65|051126|0|
+~D|B07F-0LT6|A0E-000A\1\1.05\%NAAA\1\0.01\B011-05ME\1\0.2\B055-067M\1\0.2\B03L-05N7\1\1.53\B054-06DH\1\400\C176-00FX\1\0.73\|
+~C|B07F-0LT8|m3|Mortero cemento pórtland+caIiza CEM II/B-L,arena,200kg/m3 cement|90.58|051126|0|
+~D|B07F-0LT8|A0E-000A\1\1\%NAAA\1\0.01\B055-067M\1\0.2\B011-05ME\1\0.2\B03L-05N7\1\1.74\C176-00FX\1\0.7\|
+~C|B07L-1PY6|t|Mort.albañilería M5,sacos,(G) UNE-EN 998-2|66.49|051126|3|
+~C|B07L-1PYB|t|Mort.albañilería M7.5,sacos,(G) UNE-EN 998-2|68.32|051126|3|
+~C|B094-06TK|kg|Adhesivo cementoso C2|0.89|051126|3|
+~C|B0A5-06VX|u|Tornillo autorosc.,arand.|0.18|051126|3|
+~C|B0A7X1X1|u|4 ruedas giratorias para muebles de alta resistencia (hasta 400k|32|051126|0|
+~C|B0AK-07AS|kg|Clavo acero|1.89|051126|3|
+~C|B0AK-07AT|kg|Clavo acero galv.|2.34|051126|3|
+~C|B0AM-078F|kg|Alambre recocido,D=1,3mm|1.94|051126|3|
+~C|B0AN-07J2|u|Taco químico D=12mm,torn./arand./tuerca|6.94|051126|3|
+~C|B0AN-07JX|u|Taco químico D=12mm|3.17|051126|3|
+~C|B0AO-07IG|u|Taco nylon D<=5mm,+tornillo|0.16|051126|3|
+~C|B0AO-07II|u|Taco nylon D=6 a 8 mm,+tornillo|0.28|051126|3|
+~C|B0AQ-07EX|cu|Tornillos acero,galvanizados|5.06|051126|3|
+~C|B0AQ-07GQ|cu|Tornillos p/made.o tac.PVC|4.87|051126|3|
+~C|B0AQ-07GR|cu|Tornillos p/yeso lam.|13.71|051126|3|
+~C|B0AQ-07GT|cu|Tornillos p/made.o tac.PVC acero,cadmiados|4.87|051126|3|
+~C|B0AQ-07XX|cu|Tornillo autoperforante  Aquapanel|20|051126|3|
+~C|B0B6-107D|kg|Acero b/corrug.obra y manipulado taller B400S|1.64|051126|0|
+~D|B0B6-107D|A0F-000I\1\0.01\A01-FEP0\1\0.01\%NAAA\1\0.01\B0B7-106P\1\1.05\B0AM-078F\1\0.01\|
+~C|B0B7-106P|kg|Acero b/corrugada B400S|1.09|051126|3|
+~C|B0B8-107V|m2|Malla electr.acero corr.ME 15x15cm,D:6-6mm,6x2,2m B500T|3.01|051126|3|
+~C|B0B8-107X|m2|Malla electr.acero corr.ME 15x15cm,D:5-5mm,6x2,2m B500T|2.32|051126|3|
+~C|B0C60-1GAX|m2|Placa policarbonato cel.,e=16mm,núm.pared=6,trat.absor.rad.ultra|16.21|051126|3|
+~C|B0C60-IM01|u|Imán autoadhesivo de neodimio Ø10×2 mm|0.19|051126|3|
+~C|B0CC0-21OQ|m2|Placa yeso lamin.,H,e=15mm,borde afinado|8.57|051126|3|
+~C|B0CC1-21OQ|m2|Placa de cemento Aquapanel|19.97|051126|3|
+~C|B0CH2-21FI|m2|Perfil greca.ch.acer galv.,e=0,6mm,liso,|8.36|051126|3|
+~C|B0CH9-0E4Y|m2|Plancha plegada (div.patrones),lisa,acero galv.+prelac.,e=1,2mm,|14.37|051126|3|
+~C|B0CU2-2GV7|m|Tricapa 16mm|100.28|051126|3|
+~C|B0CU2-TRXX|m2|Tricapa 42mm|80.01|051126|3|
+~C|B0D21-07OY|m|Tablón madera pino p/10 usos|0.5|051126|3|
+~C|B0D31-07P4|m3|Lata madera pino|407.28|051126|3|
+~C|B0D62-07PL|cu|Puntal metálico telescópico h=3m,150usos|14.94|051126|3|
+~C|B0D70-0CEN|m2|Tablero machihe.made.pino,e=22mm,5 usos|3.85|051126|3|
+~C|B0DZ1-0ZLZ|l|Desencofrante|3.03|051126|3|
+~C|B0F18-0E2K|u|Superladrillo 500x200x50mm,p/revestir,categoría I,LD,UNE-EN 771-|0.45|051126|3|
+~C|B0F1A-06WV|u|Ladrillo perforado,240x115x100mm,c.vist.,categoría I,HD,UNE-EN 7|0.34|051126|3|
+~C|B0F1A-075F|u|Ladrillo perforado,290x140x100mm,p/revestir,categoría I,HD,UNE-E|0.26|051126|3|
+~C|B0FG2-0GM3|m2|Baldosa gres porcelanico 15x15cm con precorte 3,75x3,75|55.55|051126|3|
+~C|B0FG3-0EBL|u|Rasilla cerám.común rect.,el.mec. 28x14x1,3cm,rosado|0.16|051126|3|
+~C|B433-1BSS|m3|Elemento madera lam. combinada GL24c,33/45mm,7x13-20x100cm,ct.l=|1578.05|051126|3|
+~C|B435-2HIY|u|P.p.herr.p/m.contral|4.35|051126|3|
+~C|B439-W1E1|m3|,perfil mad.p/est.entram.lig. abeto C16 cepillado 100 mm x 100 m|909.35|051126|3|
+~C|B44Z-0LZT|kg|Acero S235JRC,pieza simp.,perf.conf.L,U,C,Z,omega,cortado medida|1.87|051126|3|
+~C|B44Z-0LZU|kg|Acero S235JRC,pieza simp.,perf.conf.L,U,C,Z,omega,trab.taller p/|2.4|051126|3|
+~C|B5ZZB-131C|u|Tornillo acero galv.5.5x110mm,junta Pb/Fe,taco D=8/10mm|0.21|051126|3|
+~C|B5ZZB-131H|u|Tornillo acero galv.5.4x65mm,junta metal/goma,taco D=8/10mm|0.25|051126|3|
+~C|B630-0KR0|m|Cantonera plancha acero galv.+prelac. E=0,6mm,desarr.=35cm,plieg|11.18|051126|3|
+~C|B712-FGN9|m2|Lámina bet.modif. Autoprot.met.LBM(SBS) 30/M-NA|8.49|051126|3|
+~C|B712-FGNB|m2|Lámina bet.modif. autoprot.met.LBM(SBS) 48/M-TV 60g/m2|13.92|051126|3|
+~C|B740-0SLK|m2|Lámina PVC p/intemp.,e=1,5mm,s/arm.|7.83|051126|3|
+~C|B7B1-0KPA|m2|Geotextil fieltro PP no tej.ligado mecán.,100 a 110g/m2|1.4|051126|3|
+~C|B7C25-182C|m2|Plancha XPS,e=40mm,resist.compres.>= 300 kPa,res.térmica=1.29-1,|7.45|051126|3|
+~C|B7C25-182G|m2|Plancha XPS,e=60mm,resist.compres.>= 300kPa,res.térmica=1.935-1,|10.77|051126|3|
+~C|B7C93-0J1Q|m2|Placa ríg.MW-roca,dens.=126 a 160kg/m3,e=90mm,cond.térmica <= 0.|20.13|051126|3|
+~C|B7CZ2-0IRE|u|Taco+soporte nylon p/fijar mat.aisl.,e<=40mm|0.37|051126|3|
+~C|B7D6-0IQJ|kg|Mortero ignifugo cemento+MW-roca,250kg/m3,aisl.fuego,sacos|1.02|051126|3|
+~C|B7J1-0SL0|m|Cinta pap.resist., p/juntas placas yeso laminado|0.05|051126|3|
+~C|B7J6-0GSL|kg|Masilla p/junta cartón-yeso|1.37|051126|3|
+~C|B7JE-0GTI|dm3|Masilla sella.,poliuretano monocomponente|20.05|051126|3|
+~C|B7JE-0GTM|dm3|Masilla sella.,silicona neut. monocomponente|23.97|051126|3|
+~C|B7Z0-13F3|kg|Emulsión bituminosa, tipo ED|1.06|051126|3|
+~C|B7Z5-2HJ9|m|Perfil ch.acero galv.,e=0,6mm,+lám.PVC flex.,desarr.=160mm,2plie|8.15|051126|3|
+~C|B845-2L8P|m2|Entramado estruc.simple acero galv.p/falso techo continuo pl.yes|4.25|051126|3|
+~C|B896-HYAR|kg|Pintura plástica,p/int.|3.76|051126|3|
+~C|B896-HYC4|kg|Pintura silicato,p/ext.|8.12|051126|3|
+~C|B89ZC100|kg|Esmalt poliuretà,un compon.|8.66|051126|3|
+~C|B89ZPD00|kg|Pintura plàstica,p/int.|3.76|051126|3|
+~C|B8A0-2J0F|l|Lasur al agua a base de resinas,mate|17.55|051126|3|
+~C|B8A1-0P19|kg|Barniz ignífugo a base de resinas al agua,un comp.,p/madera,clas|13.59|051126|3|
+~C|B8A1-HYB0|kg|Barniz de poliuretano al agua,un comp.,p/madera,certif. ECO LABE|20.07|051126|3|
+~C|B8B2-15TL|kg|Protector hidrófugo|44.12|051126|3|
+~C|B8Z6-0P27|kg|Imprimación fijadora acrílica|8.35|051126|3|
+~C|B8Z6-0P29|kg|Imprimación neutraliz. acrílica|41.11|051126|3|
+~C|B8Z6-0P2C|kg|Imprimación látex|10.57|051126|3|
+~C|B8ZAN000|kg|Imprimació epoxi|30.29|051126|3|
+~C|B8ZK-0P39|l|Protector p/madera (TP8)|8.69|051126|3|
+~C|B8ZM-0P35|kg|Selladora|5.39|051126|3|
+~C|B9E2-0HOS|m2|Loseta gris 20x20x4cm,cl.1a,precio sup. Liso|10.98|051126|3|
+~C|B9J3-28DE|m2|Felpudo perfiles alum.ensamblables anch=25 a 35mm h=9mm,cepillo,|365.18|051126|3|
+~C|B9M2-XYMG|kg|Emulsión res.sint..b.acuosa,capa acabado,p/pav.continuo+pigmento|2.08|051126|3|
+~C|B9M2-XYMH|kg|Emulsión res.sint..b.acuosa,capa base,p/pav.continuo+pigmentos|2.33|051126|3|
+~C|B9M2-XYMI|kg|Emulsión res.sint..b.acuosa,c.imprimación,p/pav.continuo|2.54|051126|3|
+~C|B9VA-2OD4|u|Peldaño hormigón pref.,1 secc.escuad.,40x120x15cm,bisel,liso,bla|87.3|051126|3|
+~C|BAF5-1335|u|Puerta de aluminio formada por 2 hojas batientes y 2 hojas fijas|4102.5|051126|3|
+~C|BAF5-133X|u|Puerta de aluminio formada por 2 puertas de 2 hojas batientes|5164.6|051126|3|
+~C|BAF5-XX11|u|Conjunto formado por 4 ventanas de lamas orientables con rotura|8420.38|051126|3|
+~C|BAF5-XX12|u|Conjunto formado por 2 ventanas de lamas orientables con rotura|3484.06|051126|3|
+~C|BAF5-XX13|u|Mando a distancia para controlar conjunto de ventanas de lamas o|128.61|051126|3|
+~C|BAF6-1VBQ|u|Conjunto formado por 1 ventana fija.|1983.13|051126|3|
+~C|BAQ3-0YB0|u|Puerta interior de madera con paneles de madera tricapa de abeto|2436.07|051126|3|
+~C|BAQ3-0YX1|u|Puerta interior de madera con paneles de madera tricapa de abeto|1854.34|051126|3|
+~C|BAQ3-0YX2|u|Puerta de armario de 1 hoja|429.91|051126|3|
+~C|BAQ3-0YX3|u|Puerta de armario de 2 hojas|1071.27|051126|3|
+~C|BAZA-H5FR|m|Perfil aluminio anodizado tipo U 50x20x2mm|5.86|051126|3|
+~C|BB90-0XRA|u|Señalización exterior con pictogramas independientes cortados me|26.57|051126|3|
+~C|BCD001|u|Máquina de aire acondicionado tipo split de conductos formado po|5157.2|051126|0|
+~C|BD11-0MDE|u|Brida p/tub.PVC,D=entre 75 y 110mm|1.03|051126|3|
+~C|BD11-0MDG|u|Brida p/tub.PVC,D=entre 125 y 160mm|1.97|051126|3|
+~C|BD11-H4Y7|u|Brida galvan.+zinc.p/tubo zinc-titanio DN=120mm|1.27|051126|3|
+~C|BD18-H6AG|m|Tubo zinc-titanio unión plegada,DN=120mm E=0,6mm|10.14|051126|3|
+~C|BD1A-1NDI|m|Tubo PVC-U pared maciza,área aplicación B,DN=125mm,long.=3m,p/en|7.26|051126|3|
+~C|BD1A-1NDJ|m|Tubo PVC-U pared maciza,área aplicación B,DN=160mm,long.=3m,p/en|9.36|051126|3|
+~C|BD1A-1NDM|m|Tubo PVC-U pared maciza,área aplicación B,DN=110mm,long.=3m,p/en|6.37|051126|3|
+~C|BD34-2044|u|Tapa pref.horm.arm.,90x90x6cm|45.67|051126|3|
+~C|BD55-10LSN|u|Sumidero sifónico de ABS,80 a 120 mm,salid. vertical,D=25 a 50 m|7.96|051126|3|
+~C|BDW1-1C2T|u|Accesorio p/bajante tubo zinc titanio,DN=120mm,e=0,6mm|14.2|051126|3|
+~C|BDW3-FFA8|u|Elemento mont. p/tub.PVC,D=110mm|0.08|051126|3|
+~C|BDW3-FFAA|u|Accesorio genérico p/tub.PVC,D=110mm|5.62|051126|3|
+~C|BDW3-FFAJ|u|Accesorio genérico p/tub.PVC,D=125mm|7.86|051126|3|
+~C|BDW3-FFAK|u|Accesorio genérico p/tub.PVC,D=160mm|17.3|051126|3|
+~C|BDW3-FFAO|u|Elemento mont. p/tub.PVC,D=125mm|0.12|051126|3|
+~C|BDW3-FFAP|u|Elemento mont. p/tub.PVC,D=160mm|0.26|051126|3|
+~C|BDY1-0LMJ|u|Elemento mont.p/baj.tubo plancha zinc-titani,DN=120mm,e=0,6mm|1.22|051126|3|
+~C|BE22-0OLD|u|Caldera eléct.,230/400V,pot=5kW,planch.acero,p/calef.,mural|180|051126|3|
+~C|BE40-16LA|u|Sombrerete chimenea planc.ac.inox.,d=500mm adapt.doble tubo|202.36|051126|3|
+~C|BEJ3-0OOX|m|Carril de fijación Walraven RapidStrut (PG) modelo 6505242|38.6|051126|3|
+~C|BEP6-20LF|u|Boca extracción D.conex.=100mm,D.ext.=140mm,acero galv.pintado,p|47.24|051126|3|
+~C|BEZ4-1CJN|kg|Gas R-407c/R-410a,p/circuitos refrigerantes|99.69|051126|3|
+~C|BF51-04NF|m|Tubo Cu R220 (recocido),DN=12mm,e=1mm,UNE-EN 1057|4.16|051126|3|
+~C|BF53-FGLJ|m|Tubo Cu R250 (semiduro),DN=22mm,e=1mm,UNE-EN 1057|7.22|051126|3|
+~C|BFW6-04NZ|u|Acc.tubo cobreDN=12mm, p/ soldar capilar.|1.75|051126|3|
+~C|BFW6-04O0|u|Acc.tubo cobreDN=22mm, p/ soldar capilar.|3.28|051126|3|
+~C|BFYC-04OK|u|Pp.elem.mont.,tubo Cu sanit. DN=22mm,p/soldar por capilaridad|0.71|051126|3|
+~C|BFYC-04OW|u|Pp.elem.mont.,tubo Cu sanit. DN=12mm,p/soldar por capilaridad|0.48|051126|3|
+~C|BG12-0G6T|u|Caja deriv.plástico,90x90mm,prot.IP-40,p/empotrar|2.03|051126|3|
+~C|BG22X001|u|Dispensador de papel higiénico circular manual para rollo de pap|40.25|051126|3|
+~C|BG22X002|u|Cubo sanitario circular para interior, de 5L de capacidad, accio|23.88|051126|3|
+~C|BG22X003|u|Escobillero de baño para ir a pared fabricado con acero inoxidab|20.81|051126|3|
+~C|BG22X004|u|Cubo sanitario cuadrado para interior, de 12L de capacidad, acci|39.87|051126|3|
+~C|BG22X005|u|Dispensador de soluciones antisépticas con capacidad para 900cc|75.05|051126|3|
+~C|BG22X006|u|Dispensador de toallas de papel, acabado inoxidable satinado. Mo|41.86|051126|3|
+~C|BG22X007|u|Colgador de pared de acero inoxidable satinado. Modelo JNF IN.14|5.6|051126|3|
+~C|BG22X008|u|Taburete circular  de madera contrachapado de abeto tipo Frosta|40|051126|3|
+~C|BG22X009|u|Silla de oficina giratoria con ruedas y brazos, acabado de piel|133.51|051126|3|
+~C|BG2Q-1KST|m|Tubo flexible corrugado PVC,DN=16mm,1J,320N,2000V|0.21|051126|3|
+~C|BG2Q-1KSX|u|Ventilador de techo Ø2400mm marca Magnovent modelo Airslim S+|1378.34|051126|3|
+~C|BG35-06F4|m|Cable Cu 450/750 V, H07Z-K, 1x1,5mm2, Dca-s2, d2, a2|0.45|051126|3|
+~C|BG6C-34VZ|u|Kit mecanismos,2 elementos,2 conmutadores,+marco y bastidor|28.04|051126|3|
+~C|BG6C-34W0|u|Kit mecanismos,2 elementos,2 bases enchufe,+marco y bastidor|29.34|051126|3|
+~C|BG6C-34W8|u|Kit mecanismos,3 elementos,3 conmutadores,+marco y bastidor|40.45|051126|3|
+~C|BG6C-34WD|u|Kit mecanismos,1 elemento,1 conmutador,+marco y bastidor|15.74|051126|3|
+~C|BG6C-34WF|u|Kit mecanismos,1 elemento,1 toma RJ45,+marco y bastidor|22.59|051126|3|
+~C|BG6C-34WG|u|Kit mecanismos,1 elemento,1 base enchufe,+marco y bastidor|16.43|051126|3|
+~C|BG70-1O9C|u|Int.detect.mov.,tipo univ.,resistivas,1000W,230V,10 a 300s,5 a 1|73.85|051126|3|
+~C|BG80-H6J5|u|Actuador DALI|369.64|051126|3|
+~C|BH64-2IFI|u|Equipo autónomo de emergencia y señalización con 340 lúmenes y l|96.95|051126|3|
+~C|BH64-2IFX|u|Equipo autónomo de emergencia y señalización con 100 lúmenes y l|191.72|051126|3|
+~C|BHN0-1BU7|u|Aplique de exterior cilíndrico blanco modelo KOV 2L Aplique redo|83.33|051126|3|
+~C|BHU6-H6X1|u|Pantalla estanca Monoblock DALI 2 de 1220-1520mm de longitud de|80.43|051126|3|
+~C|BHU6-H6X2|u|Apliques de superficie de techo de 100x60mm GU10 C2 de CELER o e|18.25|051126|3|
+~C|BHU6-H6X3|u|Downlight Superficie de 292x15mm Slim Redondo de C2 de CELER o e|13.97|051126|3|
+~C|BHU6-H6X4|u|Portalámparas blanco mate de 70x60mm modelo TEN 70 de FARO o equ|16.15|051126|3|
+~C|BHU6-H6X5|u|Bombilla LED decorativa tipo globo opaca de 125mm de diámetro.|3.21|051126|3|
+~C|BJ115-0QEQ|u|Lavabo mural/apoyar porcel.,senc.,anch.53 a 75cm,blanco,precio a|133.94|051126|3|
+~C|BJ11C-0Q80|u|Inodoro mural,porcel.,horiz.,blanco,precio alto|312.25|051126|3|
+~C|BJ11O-0PMV|kg|Pasta sellar.enl.|4.56|051126|3|
+~C|BJ211-0R4W|u|Grifo paso mural,p/empotrar,cromado,precio alto,salida 1/2 y ent|49.98|051126|3|
+~C|BJ219-0RAV|u|Grifo monoman.p/lavab. mural cromado precio alto,2x1/2´´|181.19|051126|3|
+~C|BJ21C-0R8P|u|Grifo mural de 1 agua con conexión a manguera, acabado cromado,|53.06|051126|3|
+~C|BJ3E-0RN8|u|Sifón botella p/p/lavab.,latón cromado,D=1´´1/4,enlace D=30mm,p/|26.98|051126|3|
+~C|BJ46U015|u|Barra mural fixa en angle p/bany adaptat,L=600 i 600mm,acer inox|80.08|051126|3|
+~C|BJ46U020|u|Barra mural doble abatible p/bany adaptat,L=800mm,acer inox.|138.04|051126|3|
+~C|BM30-0T70|u|Armario p/extin.p/montar superf.|44.85|051126|3|
+~C|BM33-0T4F|u|Extintor polvo seco poliv.,6kg,presión incorpo.pintado|44.01|051126|3|
+~C|BM33-0T4U|u|Extintor CO2,5kg,presión incorpo.pintado|88.41|051126|3|
+~C|BMS0-1K0K|u|Rótulo señ. salid.emergencia,297x148mm2,panel PVC,espesor=0,7mm,|2.64|051126|3|
+~C|BMS0-1K0U|u|Rótulo señ. instal.protección/incendios,210x210mm2,panel PVC,esp|3.33|051126|3|
+~C|BMY3-0TC7|u|P.p.elementos especiales p/extint.|0.36|051126|3|
+~C|BQ13X240|u|Banco de bloque de hormigón de color gris, tipo Sócrates de Esco|916.14|051126|3|
+~C|C111-0056|h|Compresor+dos martillos neumáticos|15.8|051126|2|
+~C|C131-005G|h|Rodillo vibratorio autopropulsado,12 a 14 t|83.04|051126|2|
+~C|C136-00F4|h|Motoniveladora pequeña|100.31|051126|2|
+~C|C13B-00JP|h|Tractor+zanjadora,p/zanjas anch.hasta 30cm,prof.hasta 90cm|51.15|051126|2|
+~C|C152-003A|h|Camión grúa 3t|65.75|051126|2|
+~C|C152-003B|h|Camión grúa|69.4|051126|0|
+~C|C15E-VEN2|h|Dúmper eléctrico,6,5kW,1,5t,hidráulico|34.21|051126|2|
+~C|C15G-00DC|h|Grúa autopropulsada 20t|65.34|051126|2|
+~C|C176-00FX|h|Hormigonera 165l|2.16|051126|2|
+~C|C178-00GF|h|Máquina cortajuntas disco diamante p/pavimento|7.75|051126|2|
+~C|C17A-00JL|h|Mezc.cont, sacos|2.31|051126|2|
+~C|C200X00P|u|Repercusió de eines i pistona per a projecció de pintura|1.44|051126|2|
+~C|C201-002N|h|Mezclad-bombeadora,p/morteros+yesos proyect.|5.72|051126|2|
+~C|C20G-00DT|h|Màquina taladradora|4.28|051126|2|
+~C|C20H-00DN|h|Martillo romp.man.|4.15|051126|2|
+~C|C20K-00DP|h|Reglón vibratorio|5.38|051126|2|
+~C|C20L-00DO|h|Fratás mecánico|6.11|051126|2|
+~C|C20M-00J4|h|Sold.lám.PVC,manual,aire cal.|4.35|051126|2|
+~C|CL40-00J3|d|Plataform.elevad. telesc.artic.,autopro.motor gasoil,h= 20m,anch|56.36|051126|0|
+~C|DIE040|Ud|Desmontaje de centralización de contadores.|6.7|051126|0|
+~D|DIE040|MO003\1\0.15\MO102\1\0.15\%NAAA00000200\1\0.02\|
+~C|DLP300142|Ud|Desmontaje de puerta de garaje.|1481.31|051126|0|
+~D|DLP300142|MO018\1\26.39\MO059\1\26.39\MO113\1\14.67\%NAAA00000200\1\0.02\|
+~C|E6148656|m|Tubo 50 mm|3.3|051126|0|
+~C|E6148658|m|Tubo 32 mm|1.83|051126|0|
+~C|E6148659|m|Tubo 25 mm|1.23|051126|0|
+~C|E6148664|m|Conducto chapa galvanizada d450|79.79|051126|0|
+~C|E6148675|m|conductos de cobre desnudo trenzado 35mm2|25|051126|0|
+~C|E6148676|u|puente de seccionamiento|45|051126|0|
+~C|E6148677|m|Tubo 20 mm|0.93|051126|0|
+~C|E614867X|m|Conducto de extracción aislado|145.68|051126|0|
+~C|E61486X7|m|Conducto de impulsión aislado|145.71|051126|0|
+~C|E894XEAP|m2|Pintado de elementos de acero con pintura poliuretano, con dos c|35.35|051126|0|
+~D|E894XEAP|A013D000\1\0.08\A012D000\1\0.77\%NAAA00000150\1\0.015\B8ZAN000\1\0.31\B89ZC100\1\0.57\|
+~C|E93A000Z|u|En todos los precios está incluida la repercusión en concepto de|0|051126|0|
+~C|EF5BXX01|M|Tubo cobre frigorífico,D=3/8'',G=1,00mm soldado+aislamiento|26.75|051126|0|
+~C|EF5BXX02|M|Tubo cobre frigorífico,D=5/8'',G=1,00mm soldado+aislamiento|45.3|051126|0|
+~C|EFB45357|ud|Desagüe tubo PE-R, d=16mm, maq. cond+evap. conn.|4.86|051126|0|
+~C|EG1NX122|u|CPM trifásico|850|051126|0|
+~C|EGASOS10|u|Todas las partidas de instalaciones llevan incluidas las partes|0|051126|0|
+~C|EJ46U015|u|Barra mural fixa en angle p/bany adaptat,L=600 i 600mm,acer inox|88.8|051126|0|
+~D|EJ46U015|A0127000\1\0.35\%NAAA00000150\1\0.015\BJ46U015\1\1\|
+~C|EJ46U020|u|Barra mural doble abatible para baño adaptado, de 800 mm de larg|162.92|051126|0|
+~D|EJ46U020|A0127000\1\1\%NAAA00000150\1\0.015\BJ46U020\1\1\|
+~C|EJ46X001|u|Dispensador de papel higiénico circular manual para rollo de pap|40.25|051126|0|
+~D|EJ46X001|BG22X001\1\1\|
+~C|EJ46X002|u|Cubo sanitario circular para interior, de 5L de capacidad, accio|23.88|051126|0|
+~D|EJ46X002|BG22X002\1\1\|
+~C|EJ46X003|u|Escobillero de baño para ir a pared fabricado con acero inoxidab|20.81|051126|0|
+~D|EJ46X003|BG22X003\1\1\|
+~C|EJ46X004|u|Cubo sanitario cuadrado para interior, de 12L de capacidad, acci|39.87|051126|0|
+~D|EJ46X004|BG22X004\1\1\|
+~C|EJ46X005|u|Dispensador de soluciones antisépticas con capacidad para 900cc|75.05|051126|0|
+~D|EJ46X005|BG22X005\1\1\|
+~C|EJ46X006|u|Dispensador de toallas de papel, acabado inoxidable satinado. Mo|41.86|051126|0|
+~D|EJ46X006|BG22X006\1\1\|
+~C|EJ46X007|u|Colgador de pared de acero inoxidable satinado. Modelo JNF IN.14|5.6|051126|0|
+~D|EJ46X007|BG22X007\1\1\|
+~C|EJ46X008|u|Taburete circular  de madera contrachapado de abeto tipo Frosta|40|051126|0|
+~D|EJ46X008|BG22X008\1\1\|
+~C|EJ46X009|u|Silla de oficina giratoria con ruedas y brazos, acabado de piel|133.51|051126|0|
+~D|EJ46X009|BG22X009\1\1\|
+~C|ELCT032|ud|Toma trifasica 32 A a 30 m con tapa madera|989.5|051126|0|
+~D|ELCT032|ELM002\1\30\ELM003\1\30\ELM001\1\30\ELM007\1\1\ELM004\1\1\ELM009\1\4\ELM008\1\1\ELM010\1\1\ELM006\1\1\ELM005\1\1\MOC001\1\2.5\MOE002\1\2\MOC002\1\1\MOE001\1\7\|
+~C|ELM001|m|Cable RZ1-K (AS) 0,6/1 kV, 5G6 mm2|7.8|051126|3|
+~C|ELM002|m|Tubo rigido libre halogenos diam. 32 mm|3.1|051126|3|
+~C|ELM003|m|Soportes, fijaciones y accesorios de canalizacion|0.85|051126|3|
+~C|ELM004|ud|Base mural CEE 32 A 400 V 5P IP67|52|051126|3|
+~C|ELM005|ud|Magnetotermico 4P 32 A curva C|65|051126|3|
+~C|ELM006|ud|Diferencial 4P 40 A 30 mA tipo A|105|051126|3|
+~C|ELM007|ud|Bornes, punteras y material auxiliar conexiones|25|051126|3|
+~C|ELM008|ud|Bastidor de soporte para tapa de zocalo|28|051126|3|
+~C|ELM009|ud|Iman de fijacion de tapa, con contraparte|3.5|051126|3|
+~C|ELM010|ud|Herrajes, remates y protector de cantos|13|051126|3|
+~C|GV001|ud|Recuperador de calor entálpico KOSNER KRC 5 CRHE BP EVO-PH SH (o|10304.87|051126|0|
+~C|ICR03003C307|Ud|Rejilla de impulsión.|190.58|051126|0|
+~D|ICR03003C307|MO005\1\1.92\MO104\1\1.92\MT42TRX081AN\1\1\%ZZ\1\0.02\|
+~C|ICR03003C30X|Ud|Embocadura de reja plana de 800x150 mm sobre conducto circular f|57.24|051126|0|
+~D|ICR03003C30X|MO104\1\1.11\MT42TRX081AX\1\1\MO005\1\1.11\|
+~C|ICR050207990|Ud|Rejilla de retorno.|85.92|051126|0|
+~D|ICR050207990|MO104\1\0.29\MO005\1\0.29\MT77X20Y\1\1\%ZZ\1\0.02\|
+~C|ICR05020799X|Ud|Rejilla de retorno circular.|90.84|051126|0|
+~D|ICR05020799X|MO005\1\0.4\MT77X20Y\1\1\MO104\1\0.4\%ZZ\1\0.02\|
+~C|ICR070079904|Ud|Rejilla de intemperie.|230.89|051126|0|
+~D|ICR070079904|MO104\1\0.27\MT4VBB7C\1\1\MO005\1\0.27\%ZZ\1\0.02\|
+~C|IVV030000000|m|Conducto de PVC.|24.53|051126|0|
+~D|IVV030000000|MO011\1\0.59\MO080\1\0.29\MT11VAR010\1\0.02\MT11VAR009\1\0.03\MT42CVP020BE\1\1\MT42CVP420B\1\1\%ZZ\1\0.02\|
+~C|K898X00P|m2|Pintado a pistola de paramento horizontal interior sobre proyect|6.9|051126|0|
+~D|K898X00P|A013D000\1\0.02\A012D000\1\0.13\%NAAA00000150\1\0.015\B89ZPD00\1\0.5\C200X00P\1\0.91\|
+~C|MATACC|ud|Accesorios ordinarios de PE40 y conexiones extremo|37|051126|2|
+~C|MATAR|m3|Arena seleccionada cama y proteccion tuberia|25|051126|2|
+~C|MATCIN|m|Cinta senalizadora agua enterrada|0.35|051126|2|
+~C|MATPAS|ud|Pasamuros y sellado entrada edificio|29|051126|2|
+~C|MATPE40|m|Tuberia PE100 SDR11 PN16 DE40 mm agua potable|3|051126|2|
+~C|MATPRU|ud|Medios y consumibles prueba y limpieza|25|051126|2|
+~C|MATTE|ud|Derivacion en te y adaptadores red privada existente|42|051126|2|
+~C|MATVAL|ud|Llave de corte origen y enlaces compatibles|39|051126|2|
+~C|MAUX|ud|Pequenos medios auxiliares de ejecucion|20|051126|2|
+~C|MO003|h|Oficial 1ª electricista.|22.74|051126|1|
+~C|MO005|h|Oficial 1ª electricista.|22.74|051126|1|
+~C|MO011|h|Oficial 1ª montador.|22.74|051126|1|
+~C|MO018|h|Oficial 1ª cerrajero.|22.42|051126|1|
+~C|MO054|h|Oficial 1ª montador de aislamientos.|22.74|051126|1|
+~C|MO059|h|Ayudante cerrajero.|21.06|051126|1|
+~C|MO080|h|Ayudante montador.|21.02|051126|1|
+~C|MO101|h|Ayudante electricista.|20.98|051126|1|
+~C|MO102|h|Ayudante electricista.|20.98|051126|1|
+~C|MO104|h|Ayudante electricista.|20.98|051126|1|
+~C|MO113|h|Peón ordinario construcción.|20.78|051126|1|
+~C|MOAYU|h|Ayudante fontanero|22|051126|2|
+~C|MOC001|h|Oficial carpintero, corte y montaje tapa|28|051126|1|
+~C|MOC002|h|Ayudante carpintero y acabado|23|051126|1|
+~C|MOE001|h|Oficial instalador electricista|28|051126|1|
+~C|MOE002|h|Ayudante electricista|23|051126|1|
+~C|MOFON|h|Oficial primera fontanero|27|051126|2|
+~C|MT11VAR009|l|Líquido limpiador para pegado mediante adhesivo de tubos y acces|37.6|051126|3|
+~C|MT11VAR010|l|Adhesivo para tubos y accesorios de PVC.|47.92|051126|3|
+~C|MT16LRA060F|m²|Panel semirrígido de lana mineral, espesor 50 mm, según UNE-EN 1|6.26|051126|3|
+~C|MT42CVP020BE|m|Tubo liso de PVC, de 90 mm de diámetro exterior, con extremo abo|2.34|051126|3|
+~C|MT42CVP420B|Ud|Material auxiliar para montaje y sujeción a la obra de los condu|0.1|051126|3|
+~C|MT42TRX081AN|Ud|Rejilla de impulsión, para conducto circular, de chapa de acero|102.9|051126|3|
+~C|MT42TRX081AX|Ud|Embocadura de reja plana de 800x150 mm sobre conducto circular f|8.71|051126|3|
+~C|MT4VBB7C|Ud|Rejilla de intemperie para instalaciones de ventilación, marco f|214.57|051126|3|
+~C|MT77X20Y|Ud|Rejilla de retorno, de aluminio extruido, anodizado color natura|71.57|051126|3|
+~C|NAO030000000|m²|Aislamiento térmico entre montantes en trasdosado autoportante d|22.31|051126|0|
+~D|NAO030000000|MO054\1\0.35\MO101\1\0.35\MT16LRA060F\1\1.05\%ZZ\1\0.02\|
+~C|NAO03000000X|m²|Aislamiento térmico entre montantes en trasdosado autoportante d|27.24|051126|0|
+~D|NAO03000000X|MT16LRA060F\1\2.1\MO054\1\0.31\MO101\1\0.31\%ZZ\1\0.02\|
+~C|P2142-4RN5|m|Arranque coron.,metal,hasta 30cm,m.man.,carga manual|7.47|051126|0|
+~D|P2142-4RN5|A0D-0007\1\0.34\%NAAA00000150\1\0.015\|
+~C|P2143-4RQT|m2|Derribo solera horm.lig.armado,hasta 15cm,compres.,carga manual|11.35|051126|0|
+~D|P2143-4RQT|A0D-0007\1\0.1\A0E-000A\1\0.3\%NAAA00000150\1\0.015\C111-0056\1\0.15\|
+~C|P2143-4RR2|m2|Arranque pavim. cerámico,m.man.,carga manual|11.56|051126|0|
+~D|P2143-4RR2|A0D-0007\1\0.3\A0E-000A\1\0.22\%NAAA00000150\1\0.015\|
+~C|P2146-HXKH|m2|Demol.pavim. Loset.s/horm. E fins a 10 cm,anch.fins a 2 m,compre|31.57|051126|3|
+~D|P2146-HXKH|A0D-0007\1\0.63\A0E-000A\1\0.63\%NAAA00000150\1\0.015\C111-0056\1\0.22\|
+~C|P214K-CRN1|m2|Derribo.cub.inclin. chapas met. m.man.,carga manual|23.5|051126|0|
+~D|P214K-CRN1|A0D-0007\1\1.07\%NAAA00000150\1\0.015\|
+~C|P214R-8GWY|m2|Apertura de hueco,e=40cm,a mano+mart.romp.man.,carga manual|70.05|051126|0|
+~D|P214R-8GWY|A0D-0007\1\1.51\A0E-000A\1\1.51\%NAAA00000150\1\0.015\C20H-00DN\1\0.66\|
+~C|P214W-HXLT|m|Corte pavimento piezas|4.55|051126|3|
+~D|P214W-HXLT|A0E-000A\1\0.15\%NAAA00000150\1\0.015\C178-00GF\1\0.15\|
+~C|P21G1-4RU1|m|Desmontaje de bajante interior, de 200mm de diámetro|8.13|051126|0|
+~D|P21G1-4RU1|A0D-0007\1\0.37\%NAAA00000150\1\0.015\|
+~C|P21G1-4RU2|m|Desmontaje de colector suspendido, de 200mm de diámetro máximo,|15.16|051126|0|
+~D|P21G1-4RU2|A0D-0007\1\0.69\%NAAA00000150\1\0.015\|
+~C|P221I-8GY9|m|Excav.zanja instal.20x60cm tractor+zanjad.,rell.+compact. tierra|16.6|051126|0|
+~D|P221I-8GY9|A0D-0007\1\0.57\%NAAA00000150\1\0.015\C13B-00JP\1\0.08\|
+~C|P2241-HP8D|m2|Repaso+comp.caja pavimento,95%PM,entorno urbano s/dif.movaceras|3.67|051126|3|
+~D|P2241-HP8D|C131-005G\1\0.02\C136-00F4\1\0.02\|
+~C|P430-6UIK|m3|Viga de madera de 8x12 cm de sección, con elemento de madera lam|9249.46|051126|0|
+~D|P430-6UIK|A0F-000K\1\110\A01-FEP6\1\55\%NAAA00000150\1\0.015\B433-1BSS\1\1\B0AQ-07GQ\1\2\C15G-00DC\1\55\|
+~C|P43G-CW7B|m2|Techo de tableros de madera tricapa de abeto de 42mm de espesor,|187.47|051126|0|
+~D|P43G-CW7B|A01-FEP6\1\1.45\A0F-000K\1\2.89\%NAAA00000150\1\0.015\B0CU2-TRXX\1\1\B0AK-07AT\1\0.2\|
+~C|P43N1-W01X|m2|Recrecido de rastreles para enrase de revestimiento de madera co|49.36|051126|0|
+~D|P43N1-W01X|A01-FEPH\1\1.04\A0F-000R\1\0.52\%NAAA00000150\1\0.015\B435-2HIY\1\0.6\B439-W1E1\1\0.01\B0AK-07AT\1\0.08\|
+~C|P43N1-W0FD|m2|Entramado de madera de 10cm de espesor formado por montantes, du|135.76|051126|0|
+~D|P43N1-W0FD|A01-FEPH\1\2.69\A0F-000R\1\1.97\%NAAA00000150\1\0.015\B435-2HIY\1\1\B0AK-07AT\1\0.11\B439-W1E1\1\0.02\|
+~C|P43N1-W0FX|m2|Entramado de madera de 5cm de espesor formado por montantes, dur|135.76|051126|0|
+~D|P43N1-W0FX|A0F-000R\1\1.97\A01-FEPH\1\2.69\%NAAA00000150\1\0.015\B435-2HIY\1\1\B439-W1E1\1\0.02\B0AK-07AT\1\0.11\|
+~C|P43N1-W0X2|m|Rastreles de madera para falso techo y encofrado temporal de lan|10.99|051126|0|
+~D|P43N1-W0X2|A0F-000R\1\0.22\A01-FEPH\1\0.22\%NAAA00000150\1\0.015\B439-W1E1\1\0\B0AK-07AT\1\0.1\|
+~C|P453A-KG3J|m3|Hormigonado brancales y antepecho con hormigón|916.05|051126|0|
+~D|P453A-KG3J|A0D-0007\1\17.1\A0F-000T\1\15.75\%NAAA00000250\1\0.025\B06FA-HYR1\1\1.05\|
+~C|P4B7-3FPH|kg|Arm.y conectores para brancales AP400S barras corrug.|17.28|051126|0|
+~D|P4B7-3FPH|A01-FEP0\1\0.25\A0F-000I\1\0.33\%NAAA00000150\1\0.015\B0AM-078F\1\0.02\B0AN-07JX\1\0.5\B0B6-107D\1\1\|
+~C|P4B9-D6QO|m2|Armadura d/losa AP500T,malla electr.acero corr.ME 15x15cm,D:5-5m|8.57|051126|0|
+~D|P4B9-D6QO|A0F-000I\1\0.12\A01-FEP0\1\0.12\%NAAA00000150\1\0.015\B0B8-107X\1\1.2\B0AM-078F\1\0.01\|
+~C|P4BD-43N1|m2|Armadurap/muro AP500T,malla electr.acero corr.ME 15x15cm,D:6-6mm|22.38|051126|0|
+~D|P4BD-43N1|A01-FEP0\1\0.39\A0F-000I\1\0.39\%NAAA00000150\1\0.015\B0B8-107V\1\1.2\B0AM-078F\1\0.02\|
+~C|P4DB-4317|m2|Montaje+desmont.encofrado tablero,p/brancales recta,horm.visto|85.97|051126|0|
+~D|P4DB-4317|A01-FEOZ\1\1.35\A0F-000F\1\1.92\%NAAA00000250\1\0.025\B0DZ1-0ZLZ\1\0.05\B0D62-07PL\1\0.02\B0D31-07P4\1\0\B0AK-07AS\1\0.15\B0D21-07OY\1\1.99\B0D70-0CEN\1\1.15\|
+~C|P4Z0-JV01|u|Ancoratge+ tac químic,D=12mm,carg./voland./fem.,col.s/suport|12.13|051126|3|
+~D|P4Z0-JV01|A0F-000B\1\0.2\%NAAA00000150\1\0.015\B0AN-07J2\1\1\C20G-00DT\1\0.05\|
+~C|P514-61T6|m2|Aisl.térm.cub.invert,plancha XPS,tens.compres.>= 300kPa,e=80mm,c|27.02|051126|0|
+~D|P514-61T6|P7C25-DDKY\1\1.2\P7B1-6Q3O\1\2\|
+~C|P547-6CHF|m2|Reparación puntual de cubierta sandwich|58.65|051126|0|
+~D|P547-6CHF|A0F-000D\1\0.4\A01-FEP3\1\0.1\%NAAA00000250\1\0.025\B7C93-0J1Q\1\1\B0A5-06VX\1\16.5\B44Z-0LZT\1\3\B0CH2-21FI\1.05\2\|
+~C|P54A-61SI|u|S01. Marquesina exterior de estructura de perfiles de acero galv|5051.72|051126|0|
+~D|P54A-61SI|A0F-000P\1\46.88\A01-FEPB\1\93.75\A0F-000B\1\46.88\%NAAA00000250\1\0.025\B0AN-07J2\1\10\B44Z-0LZU\1\170\|
+~C|P54A-61SX|u|S02. Perfil tubular 10x10 para formación de dintel metálico de c|545.34|051126|0|
+~D|P54A-61SX|A01-FEPB\1\10.53\A0F-000B\1\2.63\A0F-000P\1\5.26\%NAAA00000250\1\0.025\B0AN-07J2\1\4\B44Z-0LZU\1\29.21\|
+~C|P54A-61X2|u|S06. Soporte exterior para máquinas de clima formado por perfile|2560.28|051126|0|
+~D|P54A-61X2|A01-FEPB\1\55.56\A0F-000P\1\18.52\A0F-000B\1\18.52\%NAAA00000250\1\0.025\B44Z-0LZU\1\109.45\B0AN-07J2\1\8\|
+~C|P54A-61X3|u|Refuerzo dintel marquesina|2840.17|051126|0|
+~D|P54A-61X3|A0F-000P\1\20.83\A01-FEPB\1\62.5\A0F-000B\1\20.83\%NAAA00000250\1\0.025\B44Z-0LZU\1\109.45\B0AN-07J2\1\8\|
+~C|P54A-61X4|u|Protección tubular de acero galvanizado en caliente para bajante|236.19|051126|0|
+~D|P54A-61X4|A01-FEPB\1\2\A0F-000B\1\0\A0F-000P\1\2\%NAAA00000250\1\0.025\B44Z-0LZU\1\46.02\B0AN-07J2\1\4\|
+~C|P54A-61X5|u|Soporte tubular D40mm galvanizado|54.86|051126|0|
+~D|P54A-61X5|A0F-000P\1\0.5\A01-FEPB\1\0.35\A0F-000B\1\0.5\%NAAA00000250\1\0.025\B0AN-07J2\1\2\B44Z-0LZU\1\3.1\|
+~C|P54A-61X6|u|4 carriles de fijación Walraven RapidStrut (PG) modelo 6505242 o|38.6|051126|0|
+~D|P54A-61X6|BEJ3-0OOX\1\1\|
+~C|P54A-61XX|u|S03. Puerta exterior de acero pregalvanizado y pintado para CPM|1028.75|051126|0|
+~D|P54A-61XX|A01-FEPB\1\25.57\A0F-000P\1\5.68\A0F-000B\1\2.84\%NAAA00000250\1\0.025\B44Z-0LZU\1\71.03\B0AN-07J2\1\6\|
+~C|P54A-61XZ|u|S04. Dinteles de refuerzo|735.49|051126|0|
+~D|P54A-61XZ|A01-FEPB\1\10.34\A0F-000B\1\3.45\A0F-000P\1\6.9\%NAAA00000250\1\0.025\B0AN-07JX\1\16\B44Z-0LZU\1\74.73\|
+~C|P5ZJR-HBNN|m|Reparación canal lámina bituminosa autoprotegida|79.99|051126|0|
+~D|P5ZJR-HBNN|A01-FEP3\1\1.4\A0F-000D\1\1.4\%NAAA00000150\1\0.015\B712-FGN9\1\1.5\|
+~C|P5ZJR-HBNQ|m|Limpieza canal,destasc.gárgolas+bajantes|2.41|051126|0|
+~D|P5ZJR-HBNQ|A0D-0007\1\0.11\%NAAA00000150\1\0.015\|
+~C|P6126-5A4X|m2|Pared cerram.apoyada,1cara,11,5cm,ladrillo perforado,240x115x100|64.54|051126|0|
+~D|P6126-5A4X|A0D-0007\1\0.63\A0F-000T\1\1.27\%NAAA00000250\1\0.025\B0F1A-06WV\1\41.27\B07F-0LT6\1\0.02\|
+~C|P6145-56HN|m2|Tabicón apoyado divis.4cm|22.29|051126|0|
+~D|P6145-56HN|A0D-0007\1\0.14\A0F-000T\1\0.28\%NAAA00000250\1\0.025\B0F18-0E2K\1\27\B07F-0LT8\1\0\|
+~C|P630-ZBA7|m2|Remate lateral canal planch.plegada|62.72|051126|0|
+~D|P630-ZBA7|P83Z0-424C\1\0.4\P6Z5-6546\1\1.45\P7C25-DCHD\1\1\P83ES-CUXA\1\1\|
+~C|P653-8NX1|m2|Placa yeso hidrofugada adherida 15mm|26.79|051126|0|
+~D|P653-8NX1|A0F-000D\1\0.03\A01-FEP3\1\0.03\%NAAA00000150\1\0.015\B0CC0-21OQ\1\2.06\B7J6-0GSL\1\0.8\B7J1-0SL0\1\4\B0AQ-07EX\1\0.12\B0AQ-07GR\1\0.3\B0AO-07II\1\6\|
+~C|P6Z5-6546|m|Perf.conf.acero galv.,ome.50x2mm,col.fij.mec.|10.95|051126|3|
+~D|P6Z5-6546|A01-FEPH\1\0.1\A0F-000R\1\0.1\%NAAA00000150\1\0.015\B0AO-07II\1\1.6\B44Z-0LZT\1\3\|
+~C|P732-611O|m2|Reparación de impermabilización formado por imprimación previa t|44.56|051126|0|
+~D|P732-611O|A01-FEP3\1\0.4\A0F-000D\1\0.6\%NAAA00000250\1\0.025\B7Z0-13F3\1\0.6\B712-FGNB\1\1.4\|
+~C|P750-E81H|m2|Membrana e=1,5mm,de una láminaPVC p/intemp.s/arm.,col.s/adh.|34.97|051126|0|
+~D|P750-E81H|A0F-000D\1\0.66\A01-FEP3\1\0.33\%NAAA00000150\1\0.015\B740-0SLK\1\1.21\C20M-00J4\1\0.33\|
+~C|P7B1-6Q3O|m2|Geotextil fieltro PP no tej. ligado mecán.,100 a 110g/m2,s/adh.|3|051126|3|
+~D|P7B1-6Q3O|A0F-000D\1\0.04\A01-FEP3\1\0.02\%NAAA00000150\1\0.015\B7B1-0KPA\1\1.1\|
+~C|P7C25-DCHD|m2|Aislam.plancha XPS,e=40mm,resist.compres.>= 300 kPa,res.térmica=|11.81|051126|3|
+~D|P7C25-DCHD|A0D-0007\1\0.04\A0F-000T\1\0.08\%NAAA00000150\1\0.015\B7C25-182C\1.05\1\B7CZ2-0IRE\1\3\|
+~C|P7C25-DDKY|m2|Aislam.plancha XPS,e=60mm,resist.compres.>= 300kPa,res.térmica=1|17.52|051126|3|
+~D|P7C25-DDKY|A0D-0007\1\0.09\A0F-000T\1\0.17\%NAAA00000150\1\0.015\B7C25-182G\1\1.05\|
+~C|P7D0-5RJN|m2|R01. Aislamiento e=5cm,mortero ignifugo cemento+MW-roca,250kg/m3|27.49|051126|0|
+~D|P7D0-5RJN|A01-FEP3\1\0\A0F-000D\1\0\%NAAA00000250\1\0.025\B011-05ME\1\0.03\B7D6-0IQJ\1\24.48\C201-002N\1\0.43\|
+~C|P7ZB-AHFD|m|Remate p/imper.perfil ch.acero galv.,e=0,6mm,+lám.PVC flex.,desa|34.02|051126|0|
+~D|P7ZB-AHFD|A01-FEPH\1\0.49\A0F-000R\1\0.49\%NAAA00000150\1\0.015\B7Z5-2HJ9\1\1.05\B5ZZB-131H\1\6\|
+~C|P811-3EQD|m2|Enfoscado maestreado,vert.ext.,h<3m,mortero mixto 1:0,5:4,salpic|43.75|051126|0|
+~D|P811-3EQD|A0F-000T\1\1.12\A0D-0007\1\0.54\%NAAA00000250\1\0.025\B07F-0LSZ\1\0.02\|
+~C|P811-3F8R|m2|Enfoscado buena vista,vert.ext.,h<3m,mortero mixto 1:2:10,fratas|49.4|051126|0|
+~D|P811-3F8R|A0F-000T\1\1.12\A0D-0007\1\0.75\%NAAA00000250\1\0.025\B07F-0LT6\1\0.02\|
+~C|P822-3NQV|m2|Alicatado de paramento vertical interior a una altura <= 3 m con|87.04|051126|0|
+~D|P822-3NQV|A0D-0007\1\0.1\A0F-000D\1\0.3\%NAAA00000250\1\0.025\B094-06TK\1\4.9\B053-1VF9\1\0.51\B0FG2-0GM3\1\1.3\|
+~C|P83EA-3Y8H|m2|R06. Aplacado vert. placa cemento Aquapanel|36.48|051126|0|
+~D|P83EA-3Y8H|A0F-000D\1\0.49\A01-FEP3\1\0.15\%NAAA00000150\1\0.015\B7J1-0SL0\1\2\B7J6-0GSL\1\0.4\B0AQ-07XX\1\0.01\B0CC1-21OQ\1\1\|
+~C|P83ES-CUXA|m2|Rev.vert.perf.plegad galv.+prelac.,p/fachadas,1,2mm,lisa,h>3m,co|25.01|051126|3|
+~D|P83ES-CUXA|A0F-000R\1\0.18\A01-FEPH\1\0.2\%NAAA00000150\1\0.015\B0CH9-0E4Y\1.02\1\B0A5-06VX\1\6\|
+~C|P83Z0-424C|m|Cantonera acero galv.+prelac. E=0,6mm,desarr.=35cm,plieg=5,fij.m|25.04|051126|3|
+~D|P83Z0-424C|A01-FEPH\1\0.17\A0F-000R\1\0.33\%NAAA00000150\1\0.015\B5ZZB-131C\1\1.5\B630-0KR0\1.1\1\|
+~C|P848-HCHX|m|Perfil L perimetral de acero galvanizado de 40x40x3mm para sujec|32.12|051126|0|
+~D|P848-HCHX|A0F-000R\1\0.58\A01-FEPH\1\0.58\%NAAA00000150\1\0.015\B44Z-0LZU\1\1.57\|
+~C|P848-HCI5|m2|Falso techo de policarbonato reticulado de 6 paredes de 16mm de|21.46|051126|0|
+~D|P848-HCI5|A0F-000R\1\0.1\A01-FEPH\1\0.1\%NAAA00000150\1\0.015\B0C60-1GAX\1\1\B0C60-IM01\1\1.87\|
+~C|P848-HCIX|m|Instalación de subestructura para falso techo formada por perfil|43.19|051126|0|
+~D|P848-HCIX|A0F-000R\1\0.7\A01-FEPH\1\0.7\%NAAA00000150\1\0.015\B44Z-0LZU\1\1.57\B0AN-07J2\1\0.75\|
+~C|P848-HCX2|m|Instalación de subestructura para falso techo formada por perfil|42.04|051126|0|
+~D|P848-HCX2|A0F-000R\1\0.71\A01-FEPH\1\0.71\%NAAA00000150\1\0.015\B44Z-0LZU\1\3.06\|
+~C|P84N-A82E|m2|Formación cajón falso techo placas yeso laminado tipo H,e=15mm,c|53.92|051126|0|
+~D|P84N-A82E|A01-FEP3\1\0.2\A0F-000D\1\0.65\%NAAA00000150\1\0.015\B7J1-0SL0\1\3.78\B0CC0-21OQ\1\1.2\B0AQ-07GR\1\0.84\B7J6-0GSL\1\1.41\B845-2L8P\1\2.16\|
+~C|P864-AE5L|m|R02. Revestimiento vert.,h<3m, tricapa|149.43|051126|0|
+~D|P864-AE5L|A01-FEP6\1\1.02\A0F-000K\1\1.02\%NAAA00000150\1\0.015\B0D31-07P4\1\0.04\B0AQ-07GT\1\0.12\B0CU2-2GV7\1\0.8\B0AO-07IG\1\12.5\B0AK-07AT\1\0.3\|
+~C|P864-REXX|m|R03-R04-R05. Revestimiento vert.,h<3m, tricapa|127.3|051126|0|
+~D|P864-REXX|A01-FEP6\1\0.9\A0F-000K\1\0.9\%NAAA00000150\1\0.015\B0AO-07IG\1\12.5\B0AQ-07GT\1\0.12\B0AK-07AT\1\0.3\B0CU2-2GV7\1\0.8\|
+~C|P874-HKTD|m2|Limpieza sup. param.vert. mortero,cepillado manual+retirada elem|9.17|051126|0|
+~D|P874-HKTD|A0F-000B\1\0.1\A0D-0007\1\0.3\%NAAA00000250\1\0.025\|
+~C|P87D-6RNI|u|Relleno agujero <=30x30x30cm3 en param.,baldosa cerám.+mort.mixt|47.73|051126|0|
+~D|P87D-6RNI|A0F-000B\1\1.25\A0D-0007\1\0.63\%NAAA00000150\1\0.015\B015-16HR\1\0.04\B07F-0LSV\1\0\B07F-0LT6\1\0.01\|
+~C|P89B-4UEC|m2|Pintado cercha horm.,pintura plástica,liso,1fondo+2acab.|8.8|051126|0|
+~D|P89B-4UEC|A01-FEP9\1\0.03\A0F-000V\1\0.25\%NAAA00000150\1\0.015\B896-HYAR\1\0.5\|
+~C|P89H-4V75|m2|Pintado vert. ext. cemento,pintura silicato,liso,imprimación neu|14.05|051126|0|
+~D|P89H-4V75|A0F-000V\1\0.04\A01-FEP9\1\0\%NAAA00000150\1\0.015\B8Z6-0P29\1\0.21\B8Z6-0P27\1\0.14\B896-HYC4\1\0.4\|
+~C|P89I-4V8S|m2|Pint.vert. pintura plástica liso+selladora+2acab.|6.63|051126|0|
+~D|P89I-4V8S|A0F-000V\1\0.1\A01-FEP9\1\0.01\%NAAA00000150\1\0.015\B8ZM-0P35\1\0.15\B8Z6-0P2C\1\0.15\B896-HYAR\1\0.4\|
+~C|P8A1-KKJT|m2|3 manos de lijado y 2 de barniz de poliuretano bicomponente a ba|38.65|051126|0|
+~D|P8A1-KKJT|A0F-000V\1\1.18\A01-FEP9\1\0.12\%NAAA00000150\1\0.015\B8ZK-0P39\1\0.15\B8A1-HYB0\1\0.26\|
+~C|P8A2-HYMQ|m2|Barnizado de paneles tricapa, con barniz ignífugo a base de resi|12.46|051126|0|
+~D|P8A2-HYMQ|A0F-000V\1\0.3\A01-FEP9\1\0.04\%NAAA00000150\1\0.015\B8A1-0P19\1\0.3\|
+~C|P8A4-AKV8|m2|Tratam.prot.superf.,superf.vert.madera,lasur al agua a base de r|62.76|051126|0|
+~D|P8A4-AKV8|A0F-000V\1\2.22\A01-FEP9\1\0.22\%NAAA00000150\1\0.015\B8A0-2J0F\1\0.14\|
+~C|P8B1-6073|m2|Hidrof.param.horiz.ext.,protector hidrófugo|38.25|051126|0|
+~D|P8B1-6073|A0F-000V\1\1\A01-FEP9\1\0.1\B8B2-15TL\1\0.26\|
+~C|P8B5-6NOI|m2|Tratamiento anticor.emulsión anticorrosiva res.sint.|14.33|051126|0|
+~D|P8B5-6NOI|A0F-000B\1\0.5\%NAAA00000150\1\0.015\B058-15G7\1\0.15\|
+~C|P8E2-H7WD|m|Coronación arrimadero perfil aluminio anodizado U 50x20x2, fijad|18.88|051126|0|
+~D|P8E2-H7WD|A0F-000D\1\0.38\%NAAA00000150\1\0.015\B0AO-07IG\1\4\BAZA-H5FR\1\1.5\|
+~C|P930-11A8F|m3|Base p/pav. hormigón para usos no estructurales con áridos recic|373.99|051126|0|
+~D|P930-11A8F|A0D-0007\1\4.8\A0E-000A\1\1.6\A0F-000S\1\1.6\%NAAA00000150\1\0.015\B06A-2MHM\1\1.05\C15E-VEN2\1\1.6\C20K-00DP\1\1.6\|
+~C|P93R-HY9P|m3|Reparación base acera hormigón 200kg/m3,1:3:6,cemento pórtland+c|151.92|051126|3|
+~D|P93R-HY9P|A0F-000S\1\0.36\A0D-0007\1\1.45\%NAAA00000250\1\0.025\B06D-0L9C\1\1.1\|
+~C|P9D3-35SU|m2|Pavimento bald.cerám.común rect. 28x14x1,3cm,rosado,col.mort.1:2|84|051126|0|
+~D|P9D3-35SU|A0D-0007\1\1.05\A0F-000T\1\2.1\%NAAA00000150\1\0.015\B0FG3-0EBL\1\25.56\B07F-0LT6\1\0.02\|
+~C|P9D5-35ZC|m2|Pavimento int.baldosa gres prensado esmaltado antides.,rectang/c|87.17|051126|0|
+~D|P9D5-35ZC|A0F-000D\1\0.61\A0D-0007\1\0.04\A01-FEP3\1\0.27\%NAAA00000150\1\0.015\B053-1VF9\1\1.43\B094-06TK\1\7\B0FG2-0GM3\1\1.02\|
+~C|P9E1-HY9O|m2|Pavimento loseta acera gris,20x20x4cm,precio sup.,col.tend.mort.|57.57|051126|3|
+~D|P9E1-HY9O|A0F-000S\1\1.05\A0D-0007\1\0.79\%NAAA00000150\1\0.015\B055-067M\1\0\B011-05ME\1\0\B9E2-0HOS\1\1.02\B07F-0LT4\1\0.03\|
+~C|P9ER-HY9N|m2|Reposición pav.loseta, loseta gris 20x20x4cm,cl.1a,precio sup. L|113.73|051126|0|
+~D|P9ER-HY9N|P93R-HY9P\1\0.1\P9E1-HY9O\1\1\P2146-HXKH\1\1\P214W-HXLT\1\1.26\P2241-HP8D\1\1\|
+~C|P9G7-9LSU|m2|Pavimento e=15cm hormigón con fibras HAF-30/A-3-3/F/12-60/IIb+E,|44.53|051126|0|
+~D|P9G7-9LSU|A0D-0007\1\0.42\A0F-000T\1\0.28\%NAAA00000150\1\0.015\B060-2D5U\1\0.16\C20L-00DO\1\0.09\C20K-00DP\1\0.05\|
+~C|P9J4-9ESU|m2|Felpudo perfiles alum.ensamblables anch=25 a 35mm,h=9mm,cepillo,|297.43|051126|0|
+~D|P9J4-9ESU|A0F-000D\1\0.11\A01-FEP3\1\0.11\%NAAA00000150\1\0.015\B9J3-28DE\1\0.8\|
+~C|P9M3-XBVF|m2|Pavim.cont.resinas,1 c.imprimación,1 capa base,1capa acabado|43.45|051126|0|
+~D|P9M3-XBVF|A0F-000B\1\0.5\A0D-0007\1\0.5\%NAAA00000150\1\0.015\B9M2-XYMH\1\0.84\B9M2-XYMG\1\8.3\B9M2-XYMI\1\0.32\|
+~C|P9VE-B6JX|m|Peldaño SUPERSTEP de Breinco de una pieza monolítica de hormigón|111.88|051126|0|
+~D|P9VE-B6JX|A0D-0007\1\0.51\A0E-000A\1\0\A0F-000T\1\0.51\%NAAA00000150\1\0.015\B07L-1PYB\1\0.01\B011-05ME\1\0\B9VA-2OD4\1\1\C17A-00JL\1\0\|
+~C|PAF9-5TG1|u|Fe02. Conjunto formado por 4 ventanas de lamas orientables.|8717.21|051126|0|
+~D|PAF9-5TG1|A0F-000R\1\5.49\A01-FEPH\1\1.1\%NAAA00000250\1\0.025\BAF5-XX13\1\1\BAF5-XX11\1\1\|
+~C|PAF9-5TGM|u|Fe01. Conjunto formado por 2 hojas batientes y 2 fijos laterales|4965.34|051126|0|
+~D|PAF9-5TGM|A0F-000R\1\28.17\A01-FEPH\1\5.63\%NAAA00000250\1\0.025\BAF5-1335\1\1\|
+~C|PAF9-5TGX|u|Fe04. Conjunto formado por 2 puertas de 2 hojas batientes cada u|5885.49|051126|0|
+~D|PAF9-5TGX|A0F-000R\1\23.53\A01-FEPH\1\4.71\%NAAA00000250\1\0.025\BAF5-133X\1\1\|
+~C|PAF9-5TX1|u|Fe05. Conjunto formado por 2 ventanas de lamas orientables.|3673.94|051126|0|
+~D|PAF9-5TX1|A0F-000R\1\2\A01-FEPH\1\0.4\%NAAA00000250\1\0.025\BAF5-XX13\1\1\BAF5-XX12\1\1\|
+~C|PAFA-7R5M|u|Fe03. Conjunto formado por 1 ventana fija.|2025.21|051126|0|
+~D|PAFA-7R5M|A0F-000R\1\0.9\A01-FEPH\1\0.18\%NAAA00000250\1\0.025\B7JE-0GTI\1\0.52\BAF6-1VBQ\1\1\B7JE-0GTM\1\0.17\|
+~C|PAQ5-380F|u|Fi01. Puerta interior de madera con paneles de madera tricapa de|2458.98|051126|0|
+~D|PAQ5-380F|A0F-000K\1\0.86\A01-FEP6\1\0.04\%NAAA00000250\1\0.025\BAQ3-0YB0\1\1\|
+~C|PAQ5-38X1|u|Fi02. Puerta interior de madera con paneles de madera tricapa de|1877.25|051126|0|
+~D|PAQ5-38X1|A0F-000K\1\0.86\A01-FEP6\1\0.04\%NAAA00000250\1\0.025\BAQ3-0YX1\1\1\|
+~C|PAQ5-38X2|u|Fi03. Armario de 1 hoja batiente|452.82|051126|0|
+~D|PAQ5-38X2|A01-FEP6\1\0.04\A0F-000K\1\0.86\%NAAA00000250\1\0.025\BAQ3-0YX2\1\1\|
+~C|PAQ5-38X3|u|Fi04. Armario de 2 hojas batientes|1094.18|051126|0|
+~D|PAQ5-38X3|A0F-000K\1\0.86\A01-FEP6\1\0.04\%NAAA00000250\1\0.025\BAQ3-0YX3\1\1\|
+~C|PAQ5-38XA|m2|M01. Panel de exposición formado por tableros de madera de trica|162|051126|0|
+~D|PAQ5-38XA|A0F-000X\1\3.24\|
+~C|PAQ5-38XB|u|4 ruedas giratorias para muebles de alta resistencia (hasta 400k|32|051126|0|
+~D|PAQ5-38XB|B0A7X1X1\1\1\|
+~C|PAQ5-38XC|m2|M02. Plataforma de soporte para máquina de exposición formada po|893|051126|0|
+~D|PAQ5-38XC|A0F-000X\1\17.86\|
+~C|PAQ5-38XD|m2|M03. Plataforma de soporte para máquina de exposición formada po|435|051126|0|
+~D|PAQ5-38XD|A0F-000X\1\8.7\|
+~C|PAQ5-38XE|m2|M04. Banco para exposicón fromado por 6 paneles de madera tricap|217.5|051126|0|
+~D|PAQ5-38XE|A0F-000X\1\4.35\|
+~C|PAQ5-38XF|m2|M06. Mostrador de acceso de 2 baldas|208.5|051126|0|
+~D|PAQ5-38XF|A0F-000X\1\4.17\|
+~C|PAQ5-38XG|m2|M07. Mueble lavabo baño|250|051126|0|
+~D|PAQ5-38XG|A0F-000X\1\5\|
+~C|PAQ5-38XH|m2|M05. Mesa para catas formado por 4 paneles de madera tricapa de|217.5|051126|0|
+~D|PAQ5-38XH|A0F-000X\1\4.35\|
+~C|PB90-FK6V|u|Señalización exterior con pictogramas independientes cortados me|30.49|051126|0|
+~D|PB90-FK6V|A0F-000R\1\0.08\A01-FEPH\1\0.08\%NAAA00000150\1\0.015\BB90-0XRA\1\1\|
+~C|PD16-HAWZ|m|Bajante tubo zinc-titanio unión plegada,DN=120mm E=0,6mm,fij.mec|61.17|051126|0|
+~D|PD16-HAWZ|A0F-000D\1\1.11\A01-FEP3\1\0.55\%NAAA00000150\1\0.015\BDW1-1C2T\1\0.33\BD11-H4Y7\1\0.55\BD18-H6AG\1\1.4\BDY1-0LMJ\1\1\|
+~C|PD18-8D4X|m|Colector PVC-U pared maciza,B,DN=160mm,fija.meca.bridas|34.97|051126|0|
+~D|PD18-8D4X|A01-FEP3\1\0.2\A0F-000D\1\0.4\%NAAA00000150\1\0.015\BDW3-FFAP\1\1\BD1A-1NDJ\1\1.4\BDW3-FFAK\1\0.33\BD11-0MDG\1\0.67\|
+~C|PD18-8D50|m|Colector y bajante PVC-U pared maciza,B,DN=110mm,fija.meca.brida|24.67|051126|0|
+~D|PD18-8D50|A01-FEP3\1\0.18\A0F-000D\1\0.36\%NAAA00000150\1\0.015\BD1A-1NDM\1\1.4\BDW3-FFA8\1\1\BD11-0MDE\1\0.67\BDW3-FFAA\1\0.33\|
+~C|PD18-8D5M|m|Colector PVC-U pared maciza,B,DN=125mm,fija.meca.bridas|31.94|051126|0|
+~D|PD18-8D5M|A0F-000D\1\0.49\A01-FEP3\1\0.24\%NAAA00000150\1\0.015\BDW3-FFAO\1\1\BD11-0MDG\1\0.67\BDW3-FFAJ\1\0.33\BD1A-1NDI\1\1.4\|
+~C|PD31-56AD|u|Arqueta paso,tapa regis.,75x75x70cm,pared e=15cm ladrillo perfor|416.84|051126|0|
+~D|PD31-56AD|A0F-000T\1\9.1\A0D-0007\1\4.55\%NAAA00000150\1\0.015\BD34-2044\1\1\B0F1A-075F\1\84\B011-05ME\1\0\B055-067M\1\0.01\B069-2A9O\1\0.12\B07F-0LT8\1\0.11\|
+~C|PD54-10MWK|u|Sumidero sifónico de acero inoxidable de 15x15cm con salida hori|46.62|051126|0|
+~D|PD54-10MWK|A0D-0007\1\0.53\A0F-000T\1\1.06\%NAAA00000150\1\0.015\BD55-10LSN\1\1\B07L-1PY6\1\0.01\|
+~C|PE22-367V|u|Caldera eléct.,230/400V,pot=5kW,planch.acero,p/calef.,mural|286.46|051126|0|
+~D|PE22-367V|A0F-000C\1\2.18\A01-FEPC\1\2.18\%NAAA00000150\1\0.015\BE22-0OLD\1\1\|
+~C|PE40-60DD|u|Sombrerete chimenea planc.ac.inox.d=500mm,adapt.doble tubo,col.f|318.75|051126|0|
+~D|PE40-60DD|A01-FEPC\1\2.36\A0F-000C\1\2.36\%NAAA00000250\1\0.025\BE40-16LA\1\1\|
+~C|PEJ4-48CY|u|Ventilador de techo Ø2400mm marca Magnovent modelo Airslim S+|1427.65|051126|0|
+~D|PEJ4-48CY|A0F-000C\1\1\A01-FEPC\1\1\%NAAA00000250\1\0.025\BG2Q-1KSX\1\1\|
+~C|PEP6-8FV3|u|Boca extracción D.conex.=100mm,D.ext.=140mm,acero galv.pintado,f|61.9|051126|0|
+~D|PEP6-8FV3|A01-FEPH\1\0.3\A0F-000R\1\0.3\%NAAA00000150\1\0.015\BEP6-20LF\1\1\|
+~C|PEZ1-6RX2|kg|Carga gas R-32|134.49|051126|0|
+~D|PEZ1-6RX2|A0F-000C\1\0.1\A01-FEPC\1\0.1\%NAAA00000150\1\0.015\BEZ4-1CJN\1\1.3\|
+~C|PF53-3C6S|m|Tubo Cu R220 (recocido),DN=12mm,e=1mm,soldado capil.,dific.media|12.1|051126|3|
+~D|PF53-3C6S|A01-FEPH\1\0.14\A0F-000R\1\0.14\%NAAA00000150\1\0.015\BFYC-04OW\1\1\BF51-04NF\1\1.02\BFW6-04NZ\1\0.3\|
+~C|PF56-FJEH|m|Tubo Cu R250 (semiduro),DN=22mm,e=1mm,UNE-EN 1057,soldado capil.|17.86|051126|3|
+~D|PF56-FJEH|A01-FEPH\1\0.18\A0F-000R\1\0.18\%NAAA00000150\1\0.015\BFYC-04OK\1\1\BF53-FGLJ\1\1.02\BFW6-04O0\1\0.3\|
+~C|PG12-DH7C|u|Caja deriv.plástico,90x90mm,prot.IP-40,empotrada|7.05|051126|3|
+~D|PG12-DH7C|A0F-000E\1\0.15\A01-FEPD\1\0.05\%NAAA00000150\1\0.015\BG12-0G6T\1\1\|
+~C|PG2N-EUJG|m|Tubo flexible corrugado PVC,DN=16mm,1J,320N,2000V,empotrado|1.2|051126|3|
+~D|PG2N-EUJG|A01-FEPD\1\0.02\A0F-000E\1\0.02\%NAAA00000150\1\0.015\BG2Q-1KST\1\1.02\|
+~C|PG35-DYD7|m|Cable Cu 450/750 V, H07Z-K, 1x1,5mm2, Dca-s2, d2, a2,col.tubo|1.45|051126|3|
+~D|PG35-DYD7|A01-FEPD\1\0.02\A0F-000E\1\0.02\%NAAA00000150\1\0.015\BG35-06F4\1\1.02\|
+~C|PG6H-CUIO|u|Kit mecanismos,2 elementos,2 interruptores,+marco y bastidor,emp|70.6|051126|0|
+~D|PG6H-CUIO|A0F-000E\1\0.99\A01-FEPD\1\0.74\%NAAA00000150\1\0.015\BG6C-34VZ\1\1\|
+~C|PG6H-CUIX|u|Kit de mecanismos 3 elementos de doble tecla, con 6 interruptore|133.92|051126|0|
+~D|PG6H-CUIX|A0F-000E\1\2.17\A01-FEPD\1\1.63\%NAAA00000150\1\0.015\BG6C-34W8\1\1\|
+~C|PG6H-CUJ2|u|Kit mecanismos,1 elemento, 1 interruptor,+marco y bastidor,empot|39.85|051126|0|
+~D|PG6H-CUJ2|A01-FEPD\1\0.42\A0F-000E\1\0.56\%NAAA00000150\1\0.015\BG6C-34WD\1\1\|
+~C|PG6H-CUJA|u|Kit mecanismos,2 elementos,2 bases enchufe,+marco y bastidor,emp|73.14|051126|0|
+~D|PG6H-CUJA|A01-FEPD\1\0.76\A0F-000E\1\1.02\%NAAA00000150\1\0.015\BG6C-34W0\1\1\|
+~C|PG6H-CUJP|u|Kit mecanismos,1 elemento,1 toma RJ45,+marco y bastidor,empotrad|57.28|051126|0|
+~D|PG6H-CUJP|A0F-000E\1\0.81\A01-FEPD\1\0.6\%NAAA00000150\1\0.015\BG6C-34WF\1\1\|
+~C|PG6H-CUJQ|u|Kit mecanismos,1 elemento,1 base enchufe,+marco y bastidor,empot|41.02|051126|0|
+~D|PG6H-CUJQ|A01-FEPD\1\0.43\A0F-000E\1\0.57\%NAAA00000150\1\0.015\BG6C-34WG\1\1\|
+~C|PG6H-CUJX|u|Kit mecanismo,1 elemento,1 caja ciega,+marco y bastidor,empotrad|39.09|051126|0|
+~D|PG6H-CUJX|A01-FEPD\1\0.58\A0F-000E\1\0.77\%NAAA00000150\1\0.015\BG6C-34W0\1\0.2\|
+~C|PG70-78AA|u|Int.detect.mov.,tipo univ.,resistivas,1000W,230V,10 a 300s,5 a 1|152.24|051126|0|
+~D|PG70-78AA|A01-FEPD\1\1.4\A0F-000E\1\1.79\%NAAA00000150\1\0.015\BG70-1O9C\1\1\|
+~C|PG8C-HD15|u|Actuador DALI,bus cable,carril DIN|561.22|051126|0|
+~D|PG8C-HD15|A01-FEPH\1\3.92\A0F-000R\1\3.92\%NAAA00000150\1\0.015\BG80-H6J5\1\1\|
+~C|PH54-AJQC|u|Equipo autónomo de emergencia y señalización con 340 lúmenes y l|104.28|051126|3|
+~D|PH54-AJQC|A012H000\1\0.15\A01-FEPD\1\0.15\%NAAA00000150\1\0.015\BH64-2IFI\1\1\|
+~C|PH54-AJQX|u|Equipo autónomo de emergencia y señalización con 100 lúmenes y l|199.05|051126|3|
+~D|PH54-AJQX|A012H000\1\0.15\A01-FEPD\1\0.15\%NAAA00000150\1\0.015\BH64-2IFX\1\1\|
+~C|PH56-61US|u|Equipo autónomo de emergencia y señalización con 340 lúmenes y l|141.13|051126|0|
+~D|PH56-61US|PG12-DH7C\1\1\PG35-DYD7\1\16\PG2N-EUJG\1\5.5\PH54-AJQC\1\1\|
+~C|PH56-61UX|u|Equipo autónomo de emergencia y señalización con 100 lúmenes y l|235.9|051126|0|
+~D|PH56-61UX|PH54-AJQX\1\1\PG35-DYD7\1\16\PG2N-EUJG\1\5.5\PG12-DH7C\1\1\|
+~C|PHN0-6U27|u|Aplique de exterior cilíndrico blanco modelo KOV 2L Aplique redo|180.99|051126|0|
+~D|PHN0-6U27|A0F-000E\1\2\A01-FEPD\1\2\%NAAA00000150\1\0.015\BHN0-1BU7\1\1\|
+~C|PHN0-H9X1|u|Apliques de superficie de techo de 100x60mm GU10 C2 de CELER o e|43.16|051126|0|
+~D|PHN0-H9X1|A0F-000E\1\0.51\A01-FEPD\1\0.51\%NAAA00000150\1\0.015\BHU6-H6X2\1\1\|
+~C|PHN0-H9X2|u|Downlight Superficie de 292x15mm Slim Redondo de C2de CELER o eq|88.2|051126|0|
+~D|PHN0-H9X2|A0F-000E\1\1.52\A01-FEPD\1\1.52\%NAAA00000150\1\0.015\BHU6-H6X3\1\1\|
+~C|PHN0-H9X3|u|Portalámparas blanco mate de 70x60mm modelo TEN 70 de FARO o equ|37.43|051126|0|
+~D|PHN0-H9X3|A0F-000E\1\0.37\A01-FEPD\1\0.37\%NAAA00000150\1\0.015\BHU6-H6X5\1\1\BHU6-H6X4\1\1\|
+~C|PHN0-H9YX|u|Pantalla estanca Monoblock DALI 2 de 1220-1520mm de longitud de|117.48|051126|0|
+~D|PHN0-H9YX|A01-FEPD\1\0.77\A0F-000E\1\0.77\BHU6-H6X1\1\1\|
+~C|PJ07-628M|u|Inst.font.c.higien.,lavabo,inodoro plato duch.,calent.acum.eléct|896.72|051126|0|
+~D|PJ07-628M|A0F-000D\1\14.29\A01-FEP3\1\7.14\PF53-3C6S\1\1.5\PY05-5CJ1\1\7.9\PJ211-3E9P\1\3\PF56-FJEH\1\7.9\|
+~C|PJ117-3BYD|u|Lavabo mural/apoyar porcel.,senc.,anch.53 a 75cm,blanco,precio a|159.57|051126|0|
+~D|PJ117-3BYD|A0F-000N\1\0.78\A01-FEPE\1\0.2\%NAAA00000250\1\0.025\B7JE-0GTM\1\0.03\BJ115-0QEQ\1\1\|
+~C|PJ11C-3CWH|u|Inodoro completo compacto adosado a pared con salida dual (inclu|396.7|051126|0|
+~D|PJ11C-3CWH|A01-FEPE\1\0.42\A0D-0007\1\0.42\A0F-000T\1\0.83\A0F-000N\1\1.67\%NAAA00000250\1\0.025\BJ11C-0Q80\1\1\BJ11O-0PMV\1\0.25\B07F-0LT4\1\0\|
+~C|PJ211-3E9P|u|Grifo paso,empotrada,latón cromado,precio alto,salid.D=1/2,entra|59.54|051126|3|
+~D|PJ211-3E9P|A0F-000N\1\0.3\A01-FEPE\1\0.08\%NAAA00000150\1\0.015\BJ211-0R4W\1\1\|
+~C|PJ219-3SGK|u|Grifería monomando empotrable para lavabo modelo Ona de Roca o e|225.27|051126|0|
+~D|PJ219-3SGK|A01-FEPE\1\0.35\A0F-000N\1\1.4\%NAAA00000150\1\0.015\BJ219-0RAV\1\1\|
+~C|PJ21C-3SHO|u|Grifo mural de 1 agua con conexión a manguera, acabado cromado,|67.17|051126|0|
+~D|PJ21C-3SHO|A0F-000N\1\0.45\A01-FEPE\1\0.11\%NAAA00000150\1\0.015\BJ21C-0R8P\1\1\|
+~C|PJ3D-3FKU|u|Sifón botella p/p/lavab.,latón cromado,D=1´´1/4,enlace D=30mm,co|33.27|051126|0|
+~D|PJ3D-3FKU|A01-FEPE\1\0.05\A0F-000N\1\0.2\%NAAA00000150\1\0.015\BJ3E-0RN8\1\1\|
+~C|PM32-DZ5C|u|Extintor manual CO2,5kg,presión incorpo.,pintado,sop.pared|102.94|051126|0|
+~D|PM32-DZ5C|A01-FEPH\1\0.29\A0F-000R\1\0.29\%NAAA00000150\1\0.015\BMY3-0TC7\1\1\BM33-0T4U\1\1\|
+~C|PM32-DZ5H|u|Extintor manual polvo seco poliv.,6kg,presión incorpo.,pintado,a|167.92|051126|0|
+~D|PM32-DZ5H|A01-FEPH\1\1.61\A0F-000R\1\1.61\%NAAA00000150\1\0.015\BM33-0T4F\1\1\BMY3-0TC7\1\1\BM30-0T70\1\1\|
+~C|PMS0-6Z8Z|u|Rótulo señ. salid.emergencia,297x148mm2,panel PVC,espesor=0,7mm,|13.05|051126|0|
+~D|PMS0-6Z8Z|A0F-000R\1\0.38\%NAAA00000150\1\0.015\BMS0-1K0K\1\1\B0AO-07IG\1\4\|
+~C|PMS0-6Z90|u|Rótulo señ. instal.protección/incendios,210x210mm2,panel PVC,esp|12.97|051126|0|
+~D|PMS0-6Z90|A0F-000R\1\0.35\%NAAA00000150\1\0.015\B0AO-07IG\1\4\BMS0-1K0U\1\1\|
+~C|PPAUAB01|PA|Partida alzada de abono íntegro para el cumplimiento de las medi|3687.38|051126|0|
+~C|PPAUAB0X|PA|Partida alzada de abono íntegro para el cumplimiento de la gesti|2656.61|051126|0|
+~C|PQ14-H8SZ|u|Banco de bloque de hormigón de color blanco, tipo Sócrates de Es|1969.92|051126|0|
+~D|PQ14-H8SZ|A0F-000B\1\9\A0D-0007\1\9\%NAAA00000250\1\0.025\BQ13X240\1\1\C152-003A\1\9\P4Z0-JV01\1\3\|
+~C|PY05-5CJ1|m|Abertura roza pared ladrillo hue.,m.man.,tapada mortero 1:4|5.79|051126|3|
+~D|PY05-5CJ1|A0F-000T\1\0.1\A0D-0007\1\0.15\%NAAA00000150\1\0.015\B07F-0LT5\1\0\|
+~C|PZAAFS01|ud|Derivacion enterrada AFS nave-anexo, 30 m PE100 DE40 PN16, compl|715.5|051126|0|
+~D|PZAAFS01|MATPAS\1\1\MATPRU\1\1\MOFON\1\8\MOAYU\1\6\MAUX\1\1\MATPE40\1\30\MATAR\1\3\MATCIN\1\30\MATTE\1\1\MATVAL\1\1\MATACC\1\1\|
+~C|TMA#||Classificacions Mediambient|0|051126|0|
+~D|TMA#|ZZ\1\1\ZR\1\1\ZC\1\1\|
+~C|US110458|u|Precarga de nitrógeno a 25 atm.|300|051126|0|
+~C|WT14-FMED|m3|Escombro de elemento de hormigón en masa|0|051126|0|
+~C|WT23-FMEL|m3|Escombro de obra fábrica cerámica de ladrillo perforado|0|051126|0|
+~C|WT24-FMEM|m3|Escombro de obra fábrica cerámica de ladrillo hueco|0|051126|0|
+~C|WT25-FMEN|m3|Escombro de obra fábrica cerámica de ladrillo macizo|0|051126|0|
+~C|ZC#||Selectiva Bàsica|0|051126|0|
+~C|ZF1682737|m3|escombro pavimento baldosa cerámica|0|051126|0|
+~C|ZF1682738|m3|escombro pavimento terrazo|0|051126|0|
+~C|ZF1682740|m3|escombro revestimiento mortero cemento|0|051126|0|
+~C|ZF1682741|m3|escombro elemento madera|0|051126|0|
+~C|ZF1682743|m3|escombro obra fábrica ladrillo perforado|0|051126|0|
+~C|ZF1682744|m3|escombro obra fábrica bloque hormigón|0|051126|0|
+~C|ZF1682745|m3|terreno flojo excavación|0|051126|0|
+~C|ZF1682746|m3|terreno compacto excavación|0|051126|0|
+~C|ZF1682747|m3|escombro fca cerámica ladrillo hueco|0|051126|0|
+~C|ZF1682748|m2|escombro forjado 22+4cm semiv.HA|0|051126|0|
+~C|ZF1682751|u|garrafa HDPE 5 l,162x180mm,h=250mm(*)|0|051126|0|
+~C|ZF1682752|u|bidón HDPE,1 l,D=90mm,h=250mm(*)|0|051126|0|
+~C|ZF1682753|m|mandril cartón D 50 mm, espesor 7 mm|0|051126|0|
+~C|ZF1682754|u|cantonera,95x35x95mm,ondaC,e=4mm|0|051126|0|
+~C|ZF1682755|u|cantonera,95x75x95mm,ondaC,e=4mm|0|051126|0|
+~C|ZF1682756|u|cantonera,95x55x95mm,ondaC,e=4mm|0|051126|0|
+~C|ZF1682757|u|saco PE 50 kg,1200x730x0,4 mm(*)|0|051126|0|
+~C|ZF1682758|u|saco PE 50 kg,1200x730x0,4 mm|0|051126|0|
+~C|ZF1683043|kg|árido|0|051126|0|
+~C|ZF1683059|kg|poliestireno expandido|0|051126|0|
+~C|ZF1683069|kg|acero|0|051126|0|
+~C|ZF1683136|kg|escayola|0|051126|0|
+~C|ZF1683144|kg|pintura acrílica|0|051126|0|
+~C|ZF1683173|m3|papel o cartón embalaje|0|051126|0|
+~C|ZF1683175|m3|plástico embalaje|0|051126|0|
+~C|ZF1683204|kg|materia vegetal|0|051126|0|
+~C|ZF1683207|u|saco PE 25 kg,900x550x0,4 mm|0|051126|0|
+~C|ZF1683214|u|bidón hojalata 20 l, D=285mm,h=362 mm|0|051126|0|
+~C|ZF1683228|u|bidón hojalata 25 l, D=285mm,h=431 mm|0|051126|0|
+~C|ZF1683240|u|palet madera 100x100cm,15 kg Qd<=800kg|0|051126|0|
+~C|ZF1683241|u|palet madera 120x80cm,15 kg Qd<=800kg|0|051126|0|
+~C|ZF1683242|u|palet madera 120x80cm,25 kg Qd<=1000kg|0|051126|0|
+~C|ZF1683243|u|palet madera 120x80cm,8 kg Qd<=400kg|0|051126|0|
+~C|ZF1683244|u|palet madera 120x100cm,10 kg Qd<=500kg|0|051126|0|
+~C|ZF1683245|u|palet madera 120x100cm,15 kg Qd<=800kg|0|051126|0|
+~C|ZF1683246|m2|film polietileno 25 micras|0|051126|0|
+~C|ZF1683247|u|palet madera 120x100cm,20 kg Qd<=1000kg|0|051126|0|
+~C|ZF1683248|u|palet madera 120x120cm,27 kg Qd<=1000kg|0|051126|0|
+~C|ZF1683249|u|palet madera 120x120cm,30 kg Qd<=1500kg|0|051126|0|
+~C|ZF1683250|u|palet madera 120x120cm,30 kg Qd<=2000kg|0|051126|0|
+~C|ZF1683251|u|saco papel kraft 25 kg,900x550x0,38 mm|0|051126|0|
+~C|ZF1683252|m2|film polietileno 0,2 mm|0|051126|0|
+~C|ZF1683254|u|saco papel kraft 50 kg,1200x730x0,38 mm|0|051126|0|
+~C|ZF1683257|m2|cartón,simple onda,ondaC,g=4mm,590g/m2|0|051126|0|
+~C|ZF1683262|m|mandril cartón D127 mm, espesor 7 mm|0|051126|0|
+~C|ZF1683264|u|bidón hojalata 25 l,D=285mm,h=431mm(*)|0|051126|0|
+~C|ZF1683267|m2|film polietileno 25 micras (*)|0|051126|0|
+~C|ZF1683268|u|saco PE 25 kg,900x550x0,4 mm(*)|0|051126|0|
+~C|ZF1683269|u|bidón hojalata 4 l, D=170mm,h=204 mm(*)|0|051126|0|
+~C|ZF1683270|m2|film polietileno 0,5 mm|0|051126|0|
+~C|ZF1683273|u|bidón hojalata 20 l, D=285mm,h=362 mm(*)|0|051126|0|
+~C|ZF1683274|u|bidón hojalata 200kg,D=61cm,h=88cm(*)|0|051126|0|
+~C|ZF1683277|u|bidón hojalata 42 l, D=410mm,h=458 mm(*)|0|051126|0|
+~C|ZF1683278|u|garrafa HDPE 25 l,240x295mm,h=458mm(*)|0|051126|0|
+~C|ZF1683282|u|bidón hojalata 10 l, D=285mm,h=200mm(*)|0|051126|0|
+~C|ZF1683283|u|saco papel kraft 25 kg,900x550x0,38mm(*)|0|051126|0|
+~C|ZF1683284|u|bidón HDPE 42 l, D=410mm,h=458 mm(*)|0|051126|0|
+~C|ZF1683285|m2|cartón,simple onda,ondaA,g=5mm,900g/m2|0|051126|0|
+~C|ZF1683286|m3|escombro elemento mampostería|0|051126|0|
+~C|ZF1683287|m3|escombro fca cerámica ladrillo macizo|0|051126|0|
+~C|ZF1683289|m3|escombro pavimento mezcla bituminosa|0|051126|0|
+~C|ZF1683297|m2|escombro celosia bloq.mortero 20x20x8cm|0|051126|0|
+~C|ZF1683298|m2|escombro celosia cerámica 15x15x10cm|0|051126|0|
+~C|ZF1683300|m3|madera embalaje|0|051126|0|
+~C|ZF1683310|m2|film PE bombolles D=25 mm|0|051126|0|
+~C|ZF1683311|m2|film PE bombolles D=10 mm|0|051126|0|
+~C|ZF1683312|m2|film PE+nylon bombolles D=10 mm|0|051126|0|
+~C|ZF1683313|u|contenedor jar.HDPE 3 l,D=15 cm|0|051126|0|
+~C|ZF1683315|m2|cartón,sim.,onda micr,g=1,5mm,250g/m2(*)|0|051126|0|
+~C|ZF1683330|m2|escombro enyesado|0|051126|0|
+~C|ZF1683331|m3|escombro revestimiento mortero cal|0|051126|0|
+~C|ZF1683332|m2|escombro estuco|0|051126|0|
+~C|ZF1683333|m2|escombro aplacado piedra natural|0|051126|0|
+~C|ZF1683334|m2|escombro revestimiento baldosa cerámica|0|051126|0|
+~C|ZF1683336|u|recipient aerosol hojalata 750ml(*)|0|051126|0|
+~C|ZF1683351|m2|cartón,simple,onda micro,g=1,5mm,250g/m2|0|051126|0|
+~C|ZF1683352|m3|escombro elemento HA|0|051126|0|
+~C|ZF1683353|m3|escombro elemento HM|0|051126|0|
+~C|ZF1696029|u|saco PP|0|051126|0|
+~C|ZF1701822|m3|escombro baldosa cerámica|0|051126|0|
+~C|ZF1702571|m3|escombro edificación obra fábrica|0|051126|0|
+~C|ZF1702572|m3|escombro edificación hormigón armado|0|051126|0|
+~C|ZF1702574|m3|escombro edificación estructura acero|0|051126|0|
+~C|ZF1710123|m3|terreno vegetal excavación|0|051126|0|
+~C|ZF1710124|m3|roca blanda|0|051126|0|
+~C|ZF1710125|m3|terreno tránsito excavación|0|051126|0|
+~C|ZF1711007|m3|terreno no clasificado excavación|0|051126|0|
+~C|ZF1718622|kg|restos poda vegetales limpios|0|051126|0|
+~C|ZF1718623|kg|restos poda troncos y cepas|0|051126|0|
+~C|ZF1735398|u|cartucho PE aplicación pistola, 300ml(*)|0|051126|0|
+~C|ZF1739472|u|bidón hojalata 15 l, D=285mm,h=296 mm(*)|0|051126|0|
+~C|ZF1879242|m3|escombro obra fábrica tochana|0|051126|0|
+~C|ZF1879243|m3|escombro obra bloque perforado mortero|0|051126|0|
+~C|ZF1879282|m2|escombro reja simple torsión galvanizada|0|051126|0|
+~C|ZF1879414|m2|cinta pintor|0|051126|0|
+~C|ZF1884313|m|viertaguas galv.1,5mm,desarr.160 mm|0|051126|0|
+~C|ZF1884314|m|vierteaguas 29cm,rasill.goter.col.mort.|0|051126|0|
+~C|ZF1884315|m|coronación pared 13-17,5cm pieza cerám.|0|051126|0|
+~C|ZF1884361|m3|escombro pared vidr.moldeado,mort.|0|051126|0|
+~C|ZF1988066|m2|tablero,contrachapado,e=4mm,2,6kg/m2|0|051126|0|
+~C|ZF1988344|m2|tablero,contrachapado,e=6mm,4,4kg/m2|0|051126|0|
+~C|ZF1988345|m2|tablero,contrachapado,e=18mm,12,2kg/m2|0|051126|0|
+~C|ZF1988346|m2|tablero,contrachapado,e=30mm,20,4kg/m2|0|051126|0|
+~C|ZPAX003|m|Pasatubos cilíndrico abierto acero galva|93.11|051126|0|
+~C|ZR#||Selectiva RD 105/2008|0|051126|0|
+~C|ZZ#||Selectiva LER|0|051126|0|
+~C|ZZZ10002|u|Instalación cuadro eléctrico trifásico 23 lineas monof|4403.7|051126|0|
+~C|ZZZ50001|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 25 mm². Unipolar|13.95|051126|0|
+~C|ZZZ50003|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 35 mm². Unipolar|19.11|051126|0|
+~C|ZZZ50004|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 1.5 mm². Unipola|0.81|051126|0|
+~C|ZZZ50005|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 4x1.5. Multicond|4.47|051126|0|
+~C|ZZZ50006|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2.5 mm². Unipola|2.19|051126|0|
+~C|ZZZ50007|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x2.5. Multicond|3.78|051126|0|
+~C|ZZZ50011|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 16 mm². Unipolar|9.12|051126|0|
+~C|ZZZ50012|m|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x1.5. Multicond|2.67|051126|0|
+~T|%ZZ|Costes directos complementarios|
+~T|712A002Z|Todas las partidas del presupuesto de movimiento y carga de tierras y escombros llevan incluidas el movimiento interior en obra, para su posterior carga con medios mecánicos y transporte, de contenedores en camión de hasta 7 toneladas, hasta destino. No se admiten incrementos en concepto horas operarios, maquinaria, transporte y tasas.|
+~T|712AZ001|Todas las partidas del presupuesto llevan incluidas la parte proporcional de gastos indirectos, medios auxiliares, equipos y sistemas de elevación, andamios, escaleras, permisos, ocupaciones de viales, cargas y descargas materiales, acometidas provisionales electricidad y agua con sus instalaciones, contadores y cuadros, etc, no especificados explícitamente en el presente presupuesto, necesarios para la correcta ejecución de las partidas.|
+~T|712AZ002|Todos los elementos presupuestados incluyen el suministro, colocación en obra en el punto indicado, montaje y repaso final, con todos los elementos y accesorios necesarios que se necesiten para su correcta ejecución.|
+~T|712AZ003|Todas las partidas del presupuesto llevan incluidas las mermas de material en el propio precio de la partida. No se admiten incrementos de medición en concepto de mermas.|
+~T|A01-FEOZ|Ayudante encofrador|
+~T|A01-FEP0|Ayudante ferrallista|
+~T|A01-FEP3|Ayudante colocador|
+~T|A01-FEP6|Ayudante carpintero|
+~T|A01-FEP9|Ayudante pintor|
+~T|A01-FEPB|Ayudante cerrajero|
+~T|A01-FEPC|Ayudante calefactor|
+~T|A01-FEPD|Ayudante electricista|
+~T|A01-FEPE|Ayudante fontanero|
+~T|A01-FEPH|Ayudante montador|
+~T|A0127000|Oficial 1a col·locador|
+~T|A012D000|Oficial 1a pintor|
+~T|A012H000|Oficial 1a electricista|
+~T|A013D000|Ajudant pintor|
+~T|A0D-0007|Peón|
+~T|A0E-000A|Peón especialista|
+~T|A0F-000B|Oficial 1a|
+~T|A0F-000C|Oficial 1a calefactor|
+~T|A0F-000D|Oficial 1a colocador|
+~T|A0F-000E|Oficial 1a electricista|
+~T|A0F-000F|Oficial 1a encofrador|
+~T|A0F-000I|Oficial 1a ferrallista|
+~T|A0F-000K|Oficial 1a carpintero|
+~T|A0F-000N|Oficial 1a fontanero|
+~T|A0F-000P|Oficial 1a cerrajero|
+~T|A0F-000R|Oficial 1a montador|
+~T|A0F-000S|Oficial 1a de obra pública|
+~T|A0F-000T|Oficial 1a albañil|
+~T|A0F-000V|Oficial 1a pintor|
+~T|A0F-000X|Oficial 1a carpintero a metro2|
+~T|B011-05ME|Agua|
+~T|B015-16HR|Diluyente de pintura mineral al silicato, para veladura de piedra natural|
+~T|B03J-0K7V|Grava de cantera de piedra calcárea, de grandària màxima 20 mm, para hormigones|
+~T|B03L-05MQ|Arena de cantera de piedra calcárea para hormigones|
+~T|B03L-05N7|Arena de cantera para morteros|
+~T|B053-1VF9|Material para rejuntado de baldosas cerámicas CG2 según norma UNE-EN 13888, de color|
+~T|B054-06DH|Cal aérea hidratada CL 90-S, en sacos|
+~T|B055-067M|Cemento pórtland con caliza CEM II/B-L 32,5 R según UNE-EN 197-1, en sacos|
+~T|B058-15G7|Emulsión anticorrosiva a base de resinas sintéticas|
+~T|B060-2D5U|Hormigón con fibras HAF-30/A-3-3/F/12-60/IIb+E, tamaño máximo del árido 12 mm, con >= 300 kg/m3 de cemento y entre 30 y 35 kg/m3 de fibras de acero conformadas en extremos, apto para clase de exposición IIb+E|
+~T|B069-2A9O|Hormigón de uso no estructural HNE-15/P/20 de resistencia a compresión 15 N/mm2, consistencia plástica y tamaño máximo del árido 20 mm|
+~T|B06A-2MHM|Hormigón para usos no estructurales con áridos reciclados, de consistencia blanda y tamaño máximo del árido 20 mm, con 235 kg/m3 de cemento, HRNE- 235/ B/ 20, con una sustitución del 50% del árido grueso por árido reciclado mixto con marcado CE, procedente de plantas de reciclado de residuos de la construcción o demolición autorizadas|
+~T|B06D-0L9C|Hormigón de 200 kg/m3, con una proporción en volumen 1:3:6, con cemento pórtland con caliza CEM II/B-L 32,5 R y árido de piedra calcárea de grandària màxima 20 mm, elaborado en obra con hormigonera de 165 l|
+~T|B06FA-HYR1|Hormigón para armar autocompactante con aditivo hidrófugo HA - 25 / AC / 10 / XC1 con una cantidad de cemento de 275 kg/m3 i relación agua cemento =< 0.6|
+~T|B07F-0LSV|Mortero de cal y arena, con 380 kg/m3 de cal aérea hidratada CL 90-S, con una proporción en volumen 1:4 y 10 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|B07F-0LSZ|Mortero mixto de cemento pórtland con caliza CEM II/B-L, cal y arena, con 380 kg/m3 de cemento, con una proporción en volumen 1:0,5:4 y 10 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|B07F-0LT4|Mortero de cemento pórtland con caliza CEM II/B-L y arena, con 250 kg/m3 de cemento, con una proporción en volumen 1:6 y 5 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|B07F-0LT5|Mortero de cemento pórtland con caliza CEM II/B-L y arena, con 380 kg/m3 de cemento, con una proporción en volumen 1:4 y 10 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|B07F-0LT6|Mortero mixto de cemento pórtland con caliza CEM II/B-L, cal y arena, con 200 kg/m3 de cemento, con una proporción en volumen 1:2:10 y 2,5 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|B07F-0LT8|Mortero de cemento pórtland con caliza CEM II/B-L y arena, con 200 kg/m3 de cemento, con una proporción en volumen 1:8 y 2,5 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|B07L-1PY6|Mortero para albañilería, clase M 5 (5 N/mm2), en sacos, de designación (G) según norma UNE-EN 998-2|
+~T|B07L-1PYB|Mortero para albañilería, clase M 7.5 (7,5 N/mm2), en sacos, de designación (G) según norma UNE-EN 998-2|
+~T|B094-06TK|Adhesivo cementoso tipo C2 según norma UNE-EN 12004|
+~T|B0A5-06VX|Tornillo autoroscante con arandela|
+~T|B0A7X1X1|4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente.|
+~T|B0AK-07AS|Clavo de acero|
+~T|B0AK-07AT|Clavo de acero galvanizado|
+~T|B0AM-078F|Alambre recocido 1,3 mm|
+~T|B0AN-07J2|Taco químico de diámetro 12 mm, perforación, vaina de plástico e inyección de resina epoxi. Incluso tornillo, arandela y tuerca|
+~T|B0AN-07JX|Taco químico de diámetro 12 mm, perforación, vaina de plástico e inyección de resina epoxi.|
+~T|B0AO-07IG|Taco de nylon de 5 mm de diámetro, como máximo, con tornillo|
+~T|B0AO-07II|Taco de nylon de 6 a 8 mm de diámetro, con tornillo|
+~T|B0AQ-07EX|Tornillos, de acero galvanizados|
+~T|B0AQ-07GQ|Tornillos para madera o tacos de PVC|
+~T|B0AQ-07GR|Tornillos para placas de yeso laminado|
+~T|B0AQ-07GT|Tornillos para madera o tacos de PVC, de acero, cadmiados|
+~T|B0AQ-07XX|Tornillo autoperforante Aquapanel Maxi TB ´´KNAUF´´ 4,2x25|
+~T|B0B6-107D|Acero en barras corrugadas elaborado en obra y manipulado en taller B400S, de límite elástico >= 400 N/mm2|
+~T|B0B7-106P|Acero en barras corrugadas B400S de límite elástico >= 400 N/mm2|
+~T|B0B8-107V|Malla electrosoldada de barras corrugadas de acero ME 15x15 cm D:6-6 mm 6x2,2 m B500T UNE-EN 10080|
+~T|B0B8-107X|Malla electrosoldada de barras corrugadas de acero ME 15x15 cm D:5-5 mm 6x2,2 m B500T UNE-EN 10080|
+~T|B0C60-1GAX|Placa de policarbonato celular de 16 mm de espesor y 6 paredes, de 600 mm de anchura y tratamiento para la absorción de la radiación ultravioleta en las dos caras|
+~T|B0C60-IM01|Imán de neodimio Ø10×2 mm, autoadhesivo por una cara.|
+~T|B0CC0-21OQ|Placa de yeso laminado hidrófuga (H) y espesor 15 mm, con borde afinado (BA), según la norma UNE-EN 520|
+~T|B0CC1-21OQ|Placa de cemento Portland Aquapanel Indoor KNAUF  de 12,5x1200x2400 mm, revestida con una capa de fibra de vidrio embebida en mabas caras.|
+~T|B0CH2-21FI|Perfil grecado de chapa de acero galvanizada con grecas cada 172 mm, de 44 mm de altura y 0,6 mm de espesor, con una inercia entre 26 y 27 cm4 y una masa superficial entre 6 y 7 kg/m2, acabado liso según la norma UNE-EN 14782|
+~T|B0CH9-0E4Y|Chapa plegada (diversos patrones) de textura lisa, de acero galvanizado y prelacado de 1,2 mm de espesor, para fachadas|
+~T|B0CU2-2GV7|Tablero tricapa de madera de abeto, de 16 mm de espesor de 1250x2500, para ambiente seco según UNE-EN 636, con tratamiento de reacción al fuego al autoclave, consiguiendo una reacción al fuego C-s2,d0|
+~T|B0CU2-TRXX|Tablero tricapa de madera de abeto, de 42 mm de espesor de 5000x2500, para ambiente seco según UNE-EN 636, con tratamiento de reacción al fuego al autoclave, consiguiendo una reacción al fuego C-s2,d0|
+~T|B0D21-07OY|Tablón de madera de pino para 10 usos|
+~T|B0D31-07P4|Lata de madera de pino|
+~T|B0D62-07PL|Puntal metálico y telescópico para 3 m de altura y 150 usos|
+~T|B0D70-0CEN|Tablero elaborado con machihembrado de madera de pino, de 22 mm de espesor, para 5 usos|
+~T|B0DZ1-0ZLZ|Desencofrante|
+~T|B0F18-0E2K|Superladrillo de 500x200x50 mm, para revestir, categoría I, LD, según la norma UNE-EN 771-1|
+~T|B0F1A-06WV|Ladrillo perforado, de 240x115x100 mm, caras vistas, categoría I, HD, según la norma UNE-EN 771-1|
+~T|B0F1A-075F|Ladrillo perforado, de 290x140x100 mm, para revestir, categoría I, HD, según la norma UNE-EN 771-1|
+~T|B0FG2-0GM3|Baldosa de cerámica de gres porcelánico, azulejo, de forma cuadrada de 15x15cm con precorte de 3,75x3,75cm, nivel de resbaladicidad C2, precio alto, grupo BIII (UNE-EN 14411)|
+~T|B0FG3-0EBL|Rasilla cerámica tipo Raster Grid S o equivalente, de forma rectangular y elaboración mecánica, de 15x151,3 cm, color a definir por la DF|
+~T|B433-1BSS|Elemento de madera laminada combinada GL24c, con espesor de laminado 33/45 mm, de 7x13 a 20x100 cm de sección constante y longitud hasta 25 m, trabajada en el taller y con tratamiento insecticida-fungicida con un nivel de penetración NP 2 según UNE-EN 351-1|
+~T|B435-2HIY|Parte proporcional de herrajes y juntas para madera contralaminada|
+~T|B439-W1E1|Perfil de madera para estructura de entramado ligero de abeto C16 cepillado de 100 mm de anchura, 50 mm de espesor y hasta 5 m largo, trabajada en el taller con tratamiento insecticida-fungicida con un nivel de penetración NP 1 (UNE-EN 351-1)|
+~T|B44Z-0LZT|Acero S235JRC según UNE-EN 10025-2, formado por pieza simple, en perfiles conformados en frío serie L, U, C, Z y omega, cortado a medida y galvanizado|
+~T|B44Z-0LZU|Acero S235JRC según UNE-EN 10025-2, formado por pieza simple, en perfiles conformados en frío serie L, U, C, Z y omega, trabajado en el taller para colocar con tornillos y galvanizado|
+~T|B5ZZB-131C|Tornillo de acero galvanizado de 5.5x110 mm, con juntas de plomo y hierro y taco de nylon de 8/10 mm|
+~T|B5ZZB-131H|Tornillo de acero galvanizado de 5.4x65 mm, con juntas de metal y goma y taco de nylon 8/10 mm|
+~T|B630-0KR0|Cantonera de plancha de acero galvanizado y prelacado de 0,6 mm de espesor y de 35 cm de desarrollo, con 5 pliegues|
+~T|B712-FGN9|Lámina de betún modificado con elastómero, con autoprotección metálica, LBM (SBS) 30/M-NA sin armadura|
+~T|B712-FGNB|Lámina de betún modificado con elastómero, con autoprotección metálica, LBM (SBS) 48/M-TV con armadura de tejido de fibra de vidrio de 60 g/m2|
+~T|B740-0SLK|Lámina de PVC flexible resistente a la intemperie de espesor 1,5 mm y sin armadura|
+~T|B7B1-0KPA|Geotextil formado por fieltro de polipropileno no tejido, ligado mecánicamente de 100 a 110 g/m2|
+~T|B7C25-182C|Plancha de poliestireno extruido (XPS), de 40 mm de espesor, resistencia a compresión >= 300 kPa, resistencia térmica entre 1.29 y 1,176 m2·K/W, con la superficie lisa y borde media madera|
+~T|B7C25-182G|Plancha de poliestireno extruido (XPS), de 60 mm de espesor, resistencia a compresión >= 300 kPa, resistencia térmica entre 1.935 y 1,765 m2·K/W, con la superficie lisa y borde media madera|
+~T|B7C93-0J1Q|Placa rígida de lana mineral de roca (MW), de densidad 126 a 160 kg/m3, de 90 mm de espesor, con una conductividad térmica <= 0.039 W/(m·K) y resistencia térmica >= 2,308 m2·K/W|
+~T|B7CZ2-0IRE|Taco y soporte de nylon para fijar materiales aislantes, de 40 mm de espesor como máximo|
+~T|B7D6-0IQJ|Mortero ignífugo de cemento y lana mineral de roca, de 250 kg/m3 de densidad, para aislamiento contra el fuego, en sacos|
+~T|B7J1-0SL0|Cinta de papel resistente para juntas de placas de yeso laminado|
+~T|B7J6-0GSL|Masilla para junta de placas de cartón-yeso|
+~T|B7JE-0GTI|Masilla para sellados, de aplicación con pistola, de base poliuretano monocomponente|
+~T|B7JE-0GTM|Masilla para sellados, de aplicación con pistola, de base silicona neutra monocomponente|
+~T|B7Z0-13F3|Emulsión bituminosa, tipo ED|
+~T|B7Z5-2HJ9|Perfil de plancha de acero galvanizado de 0,6 mm de espesor con de lámina de PVC flexible adherida y resistente a la intemperie de 1,2 mm de espesor, de 160 mm de desarrollo e 2 pliegues|
+~T|B845-2L8P|Entramado de estructura simple de acero galvanizado para falso techo continuo de placas de yeso laminado formado por perfiles colocados cada 600 mm como máximo, para fijar al techo mediante varilla de suspensión cada 1,2 m, para soportar una carga de hasta 15 kg|
+~T|B896-HYAR|Pintura plástica, para interiores|
+~T|B896-HYC4|Pintura al silicato, para exteriores|
+~T|B89ZC100|Esmalt de poliuretà d'un component|
+~T|B89ZPD00|Pintura plàstica per a interiors|
+~T|B8A0-2J0F|Lasur al agua a base de resinas con protector insecticida-fungicida, acabado mate transparente o color a definir por la DF.|
+~T|B8A1-0P19|Barniz ignífugo a base de resinas al agua de un componente, para madera, con clase de reacción al fuego B-s1,d0|
+~T|B8A1-HYB0|Barniz de poliuretano al agua de un componente, para madera, con certificado ECO LABEL|
+~T|B8B2-15TL|Protector hidrófugo|
+~T|B8Z6-0P27|Imprimación fijadora acrílica|
+~T|B8Z6-0P29|Imprimación neutralizadora acrílica|
+~T|B8Z6-0P2C|Imprimación al látex|
+~T|B8ZAN000|Imprimació epoxi|
+~T|B8ZK-0P39|Protector químico insecticida-fungicida para madera (TP8)|
+~T|B8ZM-0P35|Selladora|
+~T|B9E2-0HOS|Loseta gris de 20x20x4 cm, clase 1a, precio superior de textura liso|
+~T|B9J3-28DE|Felpudo formado por perfiles de aluminio ensamblables de 25 a 35 mm de anchura y de 9 mm de altura, con acabado de cepillo, para instalación en superficie o empotrado en pavimentos laminados|
+~T|B9M2-XYMG|Emulsión de resinas sintéticas en base acuosa, para capa de acabado para pavimento continuo, con pigmentos|
+~T|B9M2-XYMH|Emulsión de resinas sintéticas en base acuosa, para capa base para pavimento continuo, con pigmentos|
+~T|B9M2-XYMI|Emulsión de resinas sintéticas en base acuosa, para capa de imprimación para pavimento continuo|
+~T|B9VA-2OD4|Peldaño de hormigón prefabricado de 1 pieza de sección escuadría de 40x120x15 cm, con bisel y acabado liso, de color blanco modelo SUPERSTEP de Breinco|
+~T|BAF5-1335|Puerta de aluminio formada por 2 hojas batientes y 2 hojas fijas
+
+Material: Fijos serie SOLEAL 55 y puertas serie SOLEAL 55PY de Technal o equivalente de apertura exterior.
+Dimensiones: Hueco de obra de 402x238cm y hueco de paso de 85x233cm. 
+Vidrio: Vidrio laminar 4+4/16 argón NE/4+4 Planitherm (bajo emisivo).
+Acabado: Anodizado plata.
+Accionamiento: Tirador tubular para puertas exteriores de acero inoxidable modelo I-2000 de Didheya de 60cm de longitud o eq. Barras antipánico de acero inoxidable JNF IN.20.951 o equivalente.
+Cerradura: Cerradura de seguridad de golpe y llave.
+Accesorios: Perfil de estanqueidad inferior de 22m para itinerario accesible y freno cierrapuertas.|
+~T|BAF5-133X|Conjunto formado por 2 puertas de 2 hojas batientes cada una
+
+Material: Puertas serie SOLEAL 55PY de Technal o equivalente de apertura exterior.
+Dimensiones: Hueco de obra de 320x215cm y hueco de paso de 76x210cm. 
+Vidrio: 4+4/12 argón NE/4+4 Planitherm (bajo emisivo).
+Acabado: Anodizado plata.
+Accionamiento: Tirador tubular para puertas exteriores de acero inoxidable modelo I-2000 de Didheya de 60cm de longitud o eq. Barras antipánico de acero inoxidable JNF IN.20.951 o equivalente.
+Cerradura: Cerradura de seguridad y llave.
+Accesorios: Perfil de estanqueidad inferior de 22m para itinerario accesible y freno cierrapuertas.|
+~T|BAF5-XX11|Conjunto formado por 4 ventanas de lamas orientables con rotura de puente térmico.|
+~T|BAF5-XX12|Conjunto formado por 2 ventanas de lamas orientables con rotura de puente térmico.|
+~T|BAF5-XX13|Mando a distancia para controlar conjunto de ventanas de lamas orientables, emisor y receptor radio V230/50Hz.|
+~T|BAF6-1VBQ|Conjunto formado por 1 ventana fija.
+
+Material: Ventana fija serie SOLEAL 55 de Technal o equivalente.
+Dimensiones: Hueco de obra de 220x231cm. 
+Vidrio: 6+6/12 argón NE/4+4 Planitherm (bajo emisivo).
+Acabado: Anodizado plata.|
+~T|BAQ3-0YB0|Puerta interior de madera con paneles de madera tricapa de abeto para ir enrasada por la cara exterior y sin marco superior.
+
+Material: Marcos y estructura interior de la hoja de madera de pino flandes dimensiones según detalle, con tratamiento para los cantos vistos de los marcos y hoja. Hoja conformada por 2 paneles de madera tricapa de abeto AB/C de 16mm de espesor de 83x230cm, incluye barniz ignífugo para mejora de la reacción al fuego de la madera hasta conseguir un C-s2,d0 por la cara exterior. Aislamiento interior de lana mineral de 5cm de espesor.
+Dimensiones: Hueco de obra de 91x230cm y hueco de paso de 80x230cm.
+Acabado: Paneles tricapa y marcos vistos con acabado de 2 manos de lijado y 1 de lasur color estándar a definir por la DF o transparente aplicados de manera alterna (lijar+lasur+lijar). 
+Accionamiento: Manilla tubular recta JNF IN.00.028 o equivalente.
+Herrajes: Bisagras ocultas para puerta enrasada modelo K6700 de la marca Koblenz o equivalente.
+Cerradura: Cerradura de embutir con resbalón.
+Señalética: 1 unidad con pictograma para baños formado por silueta de mujer y de hombre de panel de tricapa de 13mm con corte laser y mismo acabado que la hoja de la puerta.|
+~T|BAQ3-0YX1|Puerta interior de madera con paneles de madera tricapa de abeto con marco de madera de pino para ir enrasada por la cara exterior.
+
+Material: Marcos y estructura interior de la hoja de madera de pino flandes dimensiones según detalle, con tratamiento para los cantos vistos de los marcos y hoja. Hoja conformada por 2 paneles de madera tricapa de abeto AB/C de 16mm de espesor de 86.6x207.8cm, incluye barniz ignífugo para mejora de la reacción al fuego de la madera hasta conseguir un C-s2,d0 por la cara exterior. Aislamiento interior de lana mineral de 3cm de espesor.
+Dimensiones: Hueco de obra de 91x210cm y hueco de paso de 85x207cm.
+Acabado: Paneles tricapa y marcos vistos con acabado de 2 manos de lijado y 1 de lasur transparente aplicados de manera alterna (lijar+lasur+lijar). Panel interior y marcos interiores acabados con tinte para madera color a definir por la DF.
+Accionamiento: Manilla tubular recta JNF IN.00.028 o equivalente. Condena de baño JNF IN.04.112 o equivalente.
+Herrajes: Bisagras vistas cilíndricas de acero inoxidable mate.
+Cerradura: Cerradura de embutir con resbalón.|
+~T|BAQ3-0YX2|Puerta de armario de 1 hoja
+
+Material: Marco lateral de madera de pino flandes dimensiones según detalle. Hoja formada por tablero de madera tricapa de abeto de 16mm de espesor de 47x230cm con tratamiento al autoclave con sales ignífugas para conseguir un C-s2,d0.
+Dimensiones: Hueco de obra de 44x230cm.
+Acabado: Panel tricapa con 2 manos de lijado y 1 de lasur transparente aplicados de manera alterna (lijar+lasur+lijar) por ambas caras.
+Herrajes: 3 bisagras de cazoleta con freno y regulación por hoja.
+Paño: Cerradura sobrepuesta por el interior con formación de cerradero en tabique.|
+~T|BAQ3-0YX3|Puerta de armario de 2 hojas
+
+Material: Marco perimetral de madera de pino flandes dimensiones según detalle. Hojas formadas por tablero de madera tricapa de abeto de 16mm de espesor de 68.7x230cm con tratamiento al autoclave con sales ignífugas para conseguir un C-s2,d0.
+Dimensiones: Hueco de obra de 141x230cm.
+Acabado: Paneles tricapa con 2 manos de lijado y 1 de lasur transparente aplicados de manera alterna (lijar+lasur+lijar) por ambas caras.
+Accionamiento: Formación de 2 agujeron en los tableros de Ø25mm para apertura.
+Herrajes: 3 bisagras de cazoleta con freno y regulación por hoja.|
+~T|BAZA-H5FR|Perfil de aluminio anodizado tipo U de 50x20x2 mm|
+~T|BB90-0XRA|Señalización exterior con pictogramas independientes cortados mediante corte laser con medidas aproximadas de 18x18cm, de chapa de acero galvanizado de 10mm, fijado con barillas posteriores y epoxi. Acabado pintado con 2 capas de esmalte al agua color de fachada, previa imprimación|
+~T|BCD001|Equipo de aire acondicionado tipo split de conductos con bomba de calor y tecnología Inverter, Mitsubishi Electric, gama Mr. Slim Serie Pro, modelo MGPEZ-140YJA o equivalente, formado por unidad interior PEAD-SM140JA y unidad exterior PUZ-SM140YKA, con refrigerante R32 y alimentación trifásica a 400 V. A validar según planos y cálculos de la memoria de climatización.
+
+Clase A+
+Capacidad frigorífica: 14,1 kW
+Capacidad calorífica: 16,1 kW
+
+Incluye mando de control y posibilidad de regulación mediante sonda de temperatura ambiente independiente, ubicada separadamente de la unidad interior y del mando, con accesorio compatible aprobado por el fabricante. Su instalación, cableado y configuración quedan incluidos.
+
+Incluye suministro, montaje y sistema completo de soportación y fijación de ambas unidades, con perfiles, suspensiones, anclajes, tornillería y elementos antivibratorios necesarios, dimensionados para el equipo y con protección anticorrosiva y acabado. Incluye conexiones, accesorios, ajustes, pruebas y puesta en marcha.
+
+Conjunto totalmente instalado, acabado y en funcionamiento, según documentación de proyecto, instrucciones del fabricante y aprobación de la DF.|
+~T|BD11-0MDE|Brida para tubo de PVC entre 75 y 110 mm|
+~T|BD11-0MDG|Brida para tubo de PVC entre 125 y 160 mm|
+~T|BD11-H4Y7|Brida de chapa de acero galvanizado zincado para tubo de zinc-titanio de diámetro nominal 120 mm|
+~T|BD18-H6AG|Tubo de chapa de zinc-titanio con unión longitudinal plegada, de diámetro nominal 120 mm y de 0,6 mm de espesor|
+~T|BD1A-1NDI|Tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 125 mm y de longitud 3 m, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, para encolar|
+~T|BD1A-1NDJ|Tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 160 mm y de longitud 3 m, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, para encolar|
+~T|BD1A-1NDM|Tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 110 mm y de longitud 3 m, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, para encolar|
+~T|BD34-2044|Tapa prefabricada de hormigón armado de 90x90x6 cm|
+~T|BD55-10LSN|Sumidero sifónico de acero inoxidablde de 15x15 con salida horizontal|
+~T|BDW1-1C2T|Accesorio para bajante de tubo de zinc titanio de DN 120 mm y 0,6 mm de espesor|
+~T|BDW3-FFA8|Elemento de montaje para tubo de PVC de D=110 mm|
+~T|BDW3-FFAA|Accesorio genérico para tubo de PVC de D=110 mm|
+~T|BDW3-FFAJ|Accesorio genérico para tubo de PVC de D=125 mm|
+~T|BDW3-FFAK|Accesorio genérico para tubo de PVC de D=160 mm|
+~T|BDW3-FFAO|Elemento de montaje para tubo de PVC de D=125 mm|
+~T|BDW3-FFAP|Elemento de montaje para tubo de PVC de D=160 mm|
+~T|BDY1-0LMJ|Elemento de montaje para bajante de tubo de plancha de zinc-titanio de DN 120 mm y 0,6 mm de espesor|
+~T|BE22-0OLD|Caldera eléctrica de 30 litros con instalación vertical. Modelo EWH 30 C  de Teka.
+Capacidad: 30 litros
+Tanque esmaltado en Zafire
+Ánodo de magnesio
+Termostato temperatura: 30º – 75º
+Válvula de presión > 7,5 bar
+Presión máxima: 0,75 Mpa
+Termómetro
+Válvula de seguridad
+Protección sobrecalentamiento
+Protección calentamiento en seco
+Grado de protección humedad IPX4
+Potencia: 1.500 W
+Grosor aislamiento: 20 mm
+Conexión G ½
+Consumo medio: 1-2 personas|
+~T|BE40-16LA|Sombrerete de chimenea de plancha de acero inoxidable, de 500 mm de adaptado para doble tubo|
+~T|BEJ3-0OOX|Carril de fijación Walraven RapidStrut (PG) modelo 6505242|
+~T|BEP6-20LF|Boca de extracción de 100 mm de diámetro de conexión y 140 mm de diámetro exterior, de acero galvanizado con acabado pintado, para colocar en pared o techo|
+~T|BEZ4-1CJN|Gas refrigerante tipo R-407c o R-410a, para circuitos refrigerantes|
+~T|BF51-04NF|Tubo de cobre R220 (recocido) de 12 mm de diámetro nominal y de espesor 1 mm, según la norma UNE-EN 1057|
+~T|BF53-FGLJ|Tubo de cobre R250 (semiduro) de 22 mm de diámetro nominal y de espesor 1 mm, según la norma UNE-EN 1057|
+~T|BFW6-04NZ|Accesorio para tubo de cobre 12 mm de diámetro nominal para soldar por capilaridad|
+~T|BFW6-04O0|Accesorio para tubo de cobre 22 mm de diámetro nominal para soldar por capilaridad|
+~T|BFYC-04OK|Parte proporcional de elementos de montaje, para tubo de cobre sanitario de 22 mm de diámetro nominal, para soldar por capilaridad|
+~T|BFYC-04OW|Parte proporcional de elementos de montaje, para tubo de cobre sanitario de 12 mm de diámetro nominal, para soldar por capilaridad|
+~T|BG12-0G6T|Caja de derivación cuadrada de plástico, de 90x90 mm, con grado de protección IP-40 y para empotrar|
+~T|BG22X001|Dispensador de papel higiénico circular manual para rollo de papel industrial y para adosar a la pared de hasta 275mm. Acabado inoxidable satinado modelo PR0787CS de Mediclinics o equivalente.|
+~T|BG22X002|Cubo sanitario circular para interior, de 5L de capacidad, accionado mediante pedal, para apoyarse directamente en el suelo. Acabado inoxidable satinado, modelo PP1305CS de Mediclinics o equivalente|
+~T|BG22X003|Escobillero de baño para ir a pared fabricado con acero inoxidable AISI 304 y acabado satinado, modelo ES1002CS de Mediclinics o equivalente.|
+~T|BG22X004|Cubo sanitario cuadrado para interior, de 12L de capacidad, accionado mediante pedal, para apoyarse directamente en el suelo. Acabado inoxidable satinado, modelo PP1214CS de Mediclinics o equivalente.|
+~T|BG22X005|Dispensador de soluciones antisépticas con capacidad para 900cc con mirilla de control de nivel. Activado por sensor de proximidad. Acabado inoxidable satinado.  Modelo JNF IN.60.562 o equivalente.|
+~T|BG22X006|Dispensador de toallas de papel, acabado inoxidable satinado. Modelo JNF IN.60.548 o equivalente.|
+~T|BG22X007|Colgador de pared de acero inoxidable satinado. Modelo JNF IN.14.500 o equivalente.|
+~T|BG22X008|Taburete circular  de madera contrachapado de abeto tipo Frosta de IKEA o equivalente.|
+~T|BG22X009|Silla de oficina giratoria con ruedas y brazos, acabado de piel negro de respaldo bajo, modelo Larsen PU Low Back de Northdeco o equivalente.|
+~T|BG2Q-1KST|Tubo flexible corrugado de PVC, de 16 mm de diámetro nominal, aislante y no propagador de la llama, resistencia al impacto de 1 J, resistencia a compresión de 320 N y una rigidez dieléctrica de 2000 V|
+~T|BG2Q-1KSX|Ventilador industrial de techo de Ø2400mm de 6 aspas marca Magnovent modelo Airslim S+. Aspas lacadas en blanco.|
+~T|BG35-06F4|Cable con conductor de cobre de tensión asignada inferior o igual a 450/750 V, de designación H07Z-K, construcción según norma UNE-EN 50525-3-41, unipolar, de sección 1x1,5 mm2, con aislamiento de poliolefinas, clase de reacción al fuego Dca-s2, d2, a2 según la norma UNE-EN 50575, con baja emisión humos|
+~T|BG6C-34VZ|Kit de mecanismos de 2 elementos, con 2 conmutadores, con marco y bastidor|
+~T|BG6C-34W0|Kit de mecanismos de 2 elementos, con 2 bases de enchufe, con marco y bastidor|
+~T|BG6C-34W8|Kit de mecanismos de 3 elementos, con 3 conmutadores, con marco y bastidor|
+~T|BG6C-34WD|Kit de mecanismos de 1 elemento, con 1 conmutador, con marco y bastidor|
+~T|BG6C-34WF|Kit de mecanismos de 1 elemento, con 1 toma RJ45, con marco y bastidor|
+~T|BG6C-34WG|Kit de mecanismos de 1 elemento, con 1 base de enchufe, con marco y bastidor|
+~T|BG70-1O9C|Interruptor detector de movimiento, de tipo universal, para cargas resistivas de hasta 1000 W de poténcia y 230 V de tensión de alimentación, de 10 a 300 s de tiempo de desconexión, sensibilidad de activación de 5 a 120 lx, con tapa, precio superior, para empotrar|
+~T|BG80-H6J5|Actuador para equipos DALI, sompuesto por:
+Fuente de alimentación DALI con interfaz USB integrada para montaje en carril DIN, modelo PS-DALILINK de la marca B.E.G o equivalente. Ref. 93189
+Kit de montaje en superficie para detectores empotrables PD4N-FT modelo  de la marca B.E.G o equivalente.. Ref. 93465.
+Detector de presencia con controlador de aplicación DALI integrado para un control eficiente de la iluminación modelo PD4N-M-DACO DALI-2 de la marca B.E.G o equivalente. Ref. 93460.
+Mando de control a distancia|
+~T|BH64-2IFI|Equipo autónomo de emergencia y señalización con 340 lúmenes y lámpara de LEDs marca Duisa modelo D-Ecold-320|
+~T|BH64-2IFX|Equipo autónomo de emergencia y señalización con 100 lúmenes y lámpara de LEDs marca Duisa modelo D-Ecold-90|
+~T|BHN0-1BU7|Aplique de exterior cilíndrico blanco modelo KOV 2L Aplique redondo blanco 2700K 14°/14° de FARO o equivalente.|
+~T|BHU6-H6X1|Pantalla estanca Monoblock DALI 2 de 1220-1520mm de longitud de la marca CELER o equivalente.|
+~T|BHU6-H6X2|Apliques de superficie de techo de 100x60mm GU10 C2 de CELER o equivalente.|
+~T|BHU6-H6X3|Downlight Superficie de 292x15mm Slim Redondo de C2 de CELER o equivalente.|
+~T|BHU6-H6X4|Portalámparas blanco mate de 70x60mm modelo TEN 70 de FARO o equivalente.|
+~T|BHU6-H6X5|Bombilla LED decorativa tipo globo opaca de 125mm de diámetro.|
+~T|BJ115-0QEQ|Lavabo sobre encimera de 550x390x130mm, precio alto, apoyado sobre encimera o mueble, modelo The Gap Round de Roca o equivalente.|
+~T|BJ11C-0Q80|Inodoro completo compacto adosado a pared con salida dual (incluye taza, cisterna de alimentación inferior y tapa), modelo The Gap Square de Roca o equivalente.|
+~T|BJ11O-0PMV|Pasta para sellar el enlace de inodoros, vertederos y placas turcas|
+~T|BJ211-0R4W|Grifo de paso mural, para empotrar, de latón cromado, precio alto, con salida de 1/2 y entrada de 1/2|
+~T|BJ219-0RAV|Grifería monomando empotrable para lavabo modelo Ona de Roca o equivalente., precio alto, con dos entradas de 1/2´´|
+~T|BJ21C-0R8P|Grifo mural de 1 agua con conexión a manguera, acabado cromado, modelo  03450102 de Tres.|
+~T|BJ3E-0RN8|Sifón de botella para lavabo, de latón cromado 1´´1/4 con enlace de diámetro 30 mm, para conectar al ramal|
+~T|BJ46U015|Barra mural fixa en angle per a bany adaptat, de 600 i 600 mm de llargària i 35 mm de D, de tub d'acer inoxidable|
+~T|BJ46U020|Barra mural doble abatible per a bany adaptat, de 800 mm de llargària i 35 mm de D, de tub d'acer inoxidable|
+~T|BM30-0T70|Armario para extintor para montar superficialmente|
+~T|BM33-0T4F|Extintor de polvo seco polivalente, de carga 6 kg, con presión incorporada, pintado|
+~T|BM33-0T4U|Extintor de dióxido de carbono, de carga 5 kg, con presión incorporada, pintado|
+~T|BMS0-1K0K|Rótulo señalización salida de emergencia, rectangular, de 297x148 mm2 de panel de PVC de 0,7 mm de espesor, fotoluminiscente categoría B según UNE 23035-4|
+~T|BMS0-1K0U|Rótulo señalización instalación de protección contra incendios, cuadrado, de 210x210 mm2 de panel de PVC de 0,7 mm de espesor, fotoluminiscente categoría B según UNE 23035-4|
+~T|BMY3-0TC7|Parte proporcional de elementos especiales para extintores|
+~T|BQ13X240|Banco de bloque de hormigón de color gris, tipo Sócrates de Escofet, o equivalente, acabado arenado e hidrofugado, de 240x60x46 cm|
+~T|C111-0056|Compresor con dos martillos neumáticos|
+~T|C131-005G|Rodillo vibratorio autopropulsado, de 12 a 14 t|
+~T|C136-00F4|Motoniveladora pequeña|
+~T|C13B-00JP|Tractor con zanjadora, para zanjas de hasta 30 cm de anchura y hasta 90 cm de profundidad|
+~T|C152-003A|Camión grúa de 3 t|
+~T|C152-003B|Camión grúa|
+~T|C15E-VEN2|Dúmper eléctrico de 6,5 kW, de 1,5 t de carga útil, con mecanismo hidráulico|
+~T|C15G-00DC|Grúa autopropulsada de 20 t|
+~T|C176-00FX|Hormigonera de 165 l|
+~T|C178-00GF|Máquina cortajuntas con disco de diamante para pavimento|
+~T|C17A-00JL|Mezclador continuo para mortero preparado en sacos|
+~T|C200X00P|Repercusió de eines i pistona per a projecció de pintura|
+~T|C201-002N|Mezcladora-bombeadora para morteros y yesos proyectados|
+~T|C20G-00DT|Màquina taladradora|
+~T|C20H-00DN|Martillo rompedor manual|
+~T|C20K-00DP|Reglón vibratorio|
+~T|C20L-00DO|Fratás mecánico|
+~T|C20M-00J4|Equipo de soldadura para láminas de PVC, manual, por aire caliente|
+~T|CL40-00J3|Alquiler de plataforma elevadora autopropulsada de tijera eléctrica de 10 m de altura de trabajo, para la ejecución de trabajos en altura. Incluye la repercusión del transporte de entrega y recogida en obra, carga y descarga, seguro de responsabilidad civil y cobertura de daños de la máquina según las condiciones del contrato de alquiler, mantenimiento, revisiones y gastos de gestión y residuos asociados al alquiler. Precio por día laborable, con repercusión de los costes correspondientes a días no laborables,|
+~T|DIE040|Desmontaje de centralización de contadores instalada en cuarto o armario de contadores, formada por 2 módulos, con medios manuales, y carga manual sobre camión o contenedor.
+Incluye: Desmontaje del elemento. Retirada y acopio del material desmontado. Limpieza de los restos de obra. Carga manual del material desmontado y restos de obra sobre camión o contenedor.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente desmontadas según especificaciones de Proyecto.|
+~T|DLP300142|Desmontaje de puerta de garaje abatible de más de 7 m² de superficie, con medios manuales y recuperación del material para su posterior ubicación en otro emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que está sujeta, y carga manual sobre camión o contenedor.
+Criterio de valoración económica: El precio incluye el desmontaje de los mecanismos y de los accesorios.
+Incluye: Desmontaje del elemento. Clasificación y etiquetado. Acopio de los materiales a reutilizar. Carga manual del material a reutilizar sobre camión. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente desmontadas según especificaciones de Proyecto.|
+~T|E6148656|Tubo 50 mm|
+~T|E6148658|Tubo 32 mm|
+~T|E6148659|Tubo 25 mm|
+~T|E6148664|Red de conductos circulares helicoidales de distribución de aire para climatización de 450mm de diámetro, constituida por conductos de chapa galvanizada de 0,6 mm de espesor y juntas transversales con vaina deslizante tipo bayoneta. Incluso embocaduras, derivaciones, accesorios de montaje, elementos de fijación y piezas especiales, como manguitos, abrazaderas reforzadas, varillas roscadas de zinc y tapas ciegas|
+~T|E6148675|Conexión de conductor de cobre trenzado con abrazadera de cobre a pica y puente de seccionamiento |
+~T|E6148676|puente de seccionamiento|
+~T|E6148677|Tubo 20 mm|
+~T|E614867X|Conducto circular helicoidal de chapa galvanizada de 450mm de diámetro interior y 500mm exterior para la distribución de aire climatizado formado por panel rígido de alta densidad de lana de vidrio Climaver Neto ´´ISOVER´´, según UNE-EN 14303, de 25 mm de espesor, revestido por un complejo triplex aluminio visto + malla de fibra de vidrio + kraft por el exterior y un tejido de vidrio acústico de alta resistencia mecánica (tejido NETO) por el interior, resistencia térmica 0,78 m²K/W, conductividad térmica 0,032 W/(mK), instalado con sistema Climaver Metal compuesto por perfiles de aluminio extrusionado Perfiver L ´´ISOVER´´ en las aristas longitudinales del conducto y Perfiver H ´´ISOVER´´ para la formación de puertas de inspección o registro, conexiones a máquinas, a rejillas o a difusores. Incluso codos, derivaciones, sellado de uniones con cola Climaver, embocaduras, soportes metálicos galvanizados, elementos de fijación, sellado de tramos con cinta Climaver Neto de aluminio, accesorios de montaje y piezas especiales,  como manguitos, abrazaderas reforzadas, varillas roscadas de zinc y tapas ciegas|
+~T|E61486X7|Conducto circular helicoidal de chapa galvanizada de 450mm de diámetro interior y 500mm exterior para la distribución de aire climatizado formado por panel rígido de alta densidad de lana de vidrio Climaver Neto ´´ISOVER´´, según UNE-EN 14303, de 25 mm de espesor, revestido por un complejo triplex aluminio visto + malla de fibra de vidrio + kraft por el exterior y un tejido de vidrio acústico de alta resistencia mecánica (tejido NETO) por el interior, resistencia térmica 0,78 m²K/W, conductividad térmica 0,032 W/(mK), instalado con sistema Climaver Metal compuesto por perfiles de aluminio extrusionado Perfiver L ´´ISOVER´´ en las aristas longitudinales del conducto y Perfiver H ´´ISOVER´´ para la formación de puertas de inspección o registro, conexiones a máquinas, a rejillas o a difusores. Incluso codos, derivaciones, sellado de uniones con cola Climaver, embocaduras, soportes metálicos galvanizados, elementos de fijación, sellado de tramos con cinta Climaver Neto de aluminio, accesorios de montaje y piezas especiales|
+~T|E894XEAP|Pintado de elementos de acero con pintura poliuretano, con dos capas de imprimación epoxi y dos de acabado|
+~T|E93A000Z|En todos los precios está incluida la repercusión en concepto de limpieza general de todo el edificio. Incluye limpieza de carpinterías, cristales, paredes, techos y mobiliario, limpieza previa a inspecciones técnicas y una última antes de la entrega de llaves/apertura del centro.|
+~T|EF5BXX01| Tubo de cobre frigorífico de 3/8'' de diámetro nominal, de 1,00 mm de espesor, limpio, purgado con nitrógeno, con coquilla elastomérica de conductividad y espesor conforme a UNE 100-170 y homologado con comportamiento en el fuego M1. Incluye accesorios, soportes mediante bridas isofónicas, perfil normalizado, montaje y aislamiento mod. HT/Armaflex de 25mm de espesor. Los tramos que queden en contacto directo con el ambiente irán protegidos con pintura o protección contra los rayos UVA.|
+~T|EF5BXX02|Tubo de cobre frigorífico de 5/8'' de diámetro nominal, de 1,00 mm de espesor, limpio, purgado con nitrógeno, con coquilla elastomérica de conductividad y espesor conforme a UNE 100-170 y homologado con comportamiento en el fuego M1. Incluye accesorios, soportes mediante bridas isofónicas, perfil normalizado, montaje y aislamiento mod. HT/Armaflex de 25mm de espesor. Los tramos que queden en contacto directo con el ambiente irán protegidos con pintura o protección contra los rayos UVA.|
+~T|EFB45357|Ud. de desagüe con polietileno reticulado (PE-R) de 16 mm de diámetro nominal, serie 5 según norma UNE 53-381, conectado a presión, con grado de dificultad medio recogida a sumidero más cercano por maquina exterior e interior hasta bajando más cercano.
+
+Etiquetado Energético (Frío) A
+Etiquetado Energético (Calor) A
+Frigorías 11500
+SEER 210%
+SCOP 150%
+Consumo Frío (W) 4265
+Consumo Calor (W) 3680
+Superficie recomendada (m2) Más de 105 m2
+Nivel de ruido Moderado
+Longitud máxima tubería 30
+Diferencia de nivel máxima 40
+Nivel sonoro (Unidad interior) dB(A) 34/38/43
+Nivel sonoro (Unidad exterior) db(A) 55
+Refrigerante R-32
+Diámetro línea frig. Líquido mm (pulg´´) 9.52 (3/8´´)
+Diámetro línea frig. Gas mm (pulg´´) 15.875 (5/8´´)
+Medidas (Alto x Ancho x Fondo) 250x1600x732 mm
+Medidas Unidad Exterior (Alto x Ancho x Fondo) 981x1050x330 (+40) mm
+Peso aproximado 44 kg ud. int / 85 kg ud. ext
+Bomba de drenaje Incluida
+Gama Serie PRO
+Referencia Unidad Interior PEAD-SM140JA
+Referencia Unidad Exterior PUZ-SM140YKA
+Carga de refrigerante de fábrica (kg) 3.6
+Cableado eléctrico Trifásico
+Alimentación eléctrica Unidad exterior|
+~T|EG1NX122|	
+Caja de protección y medida CPM2-S4, de hasta 63 A de intensidad, para 1 contador trifásico, formada por una envolvente aislante, precintable, autoventilada y con mirilla de material transparente resistente a la acción de los rayos ultravioletas, para instalación empotrada. Incluso equipo completo de medida, bornes de conexión, bases cortacircuitos y fusibles para protección de la derivación individual. Normalizada por la empresa suministradora. Según UNE-EN 60439-1, grado de inflamabilidad según se indica en UNE-EN 60439-3, con grados de protección IP43 según UNE 20324 e IK09 según UNE-EN 50102.
+
+Incluye tubo PVC a exterior, según indicaciones de compañía y pequeño material, y las ayudas de albañilería necesarias para encastar y dirigir la red según indicaciones de compañia y DF.|
+~T|EGASOS10|Todas las partidas de instalaciones llevan incluidas las partes proporcionales de las ayudas de albañilería y de otros oficios necesarios, zanjas verticales, zanjas horizontales, agujeros, pequeño material, elementos auxiliares de soporte, etc., no especificados en el presente presupuesto, y necesarios para su correcta realización.|
+~T|EJ46U015|Barra mural fija en ángulo para baño adaptado, de 600 y 600 mm de largo y 35 mm de D, de tubo de acero inoxidable, colocado con fijaciones mecánicas|
+~T|EJ46U020|Barra mural doble abatible para baño adaptado, de 800 mm de largo y 35 mm de D, de tubo de acero inoxidable, colocado con fijaciones mecánicas|
+~T|EJ46X001|Dispensador de papel higiénico circular manual para rollo de papel industrial y para adosar a la pared de hasta 275mm. Acabado inoxidable satinado modelo PR0787CS de Mediclinics o equivalente.|
+~T|EJ46X002|Cubo sanitario circular para interior, de 5L de capacidad, accionado mediante pedal, para apoyarse directamente en el suelo. Acabado inoxidable satinado, modelo PP1305CS de Mediclinics o equivalente.|
+~T|EJ46X003|Escobillero de baño para ir a pared fabricado con acero inoxidable AISI 304 y acabado satinado, modelo ES1002CS de Mediclinics o equivalente.|
+~T|EJ46X004|Cubo sanitario cuadrado para interior, de 12L de capacidad, accionado mediante pedal, para apoyarse directamente en el suelo. Acabado inoxidable satinado, modelo PP1214CS de Mediclinics o equivalente.|
+~T|EJ46X005|Dispensador de soluciones antisépticas con capacidad para 900cc con mirilla de control de nivel. Activado por sensor de proximidad. Acabado inoxidable satinado.  Modelo JNF IN.60.562 o equivalente.|
+~T|EJ46X006|Dispensador de toallas de papel, acabado inoxidable satinado. Modelo JNF IN.60.548 o equivalente.|
+~T|EJ46X007|Colgador de pared de acero inoxidable satinado. Modelo JNF IN.14.500 o equivalente.|
+~T|EJ46X008|Taburete circular  de madera contrachapado de abeto tipo Frosta de IKEA o equivalente.|
+~T|EJ46X009|Silla de oficina giratoria con ruedas y brazos, acabado de piel negro de respaldo bajo, modelo Larsen PU Low Back de Northdeco o equivalente.|
+~T|ELCT032|Suministro e instalacion de toma de corriente industrial trifasica CEE 32 A, 400 V, 5 polos (3F+N+PE), IP67, situada al fondo de la nave, alimentada desde el cuadro electrico de sala de control mediante linea exclusiva de 30,00 m de cable de cobre RZ1-K (AS) 0,6/1 kV 5G6 mm2, de baja emision de humos y libre de halogenos, tendido por canalizacion fija con tubo rigido libre de halogenos diametro nominal 32 mm y fijaciones. Incluye interruptor magnetotermico tetrapolar 32 A, curva C, e interruptor diferencial tetrapolar 40 A, 30 mA, tipo A, instalados en cuadro existente, con conexiones, identificacion de circuito, accesorios y comprobaciones de continuidad de proteccion, aislamiento, polaridad, disparo del diferencial y funcionamiento. Incluye formacion de tapa registrable y desmontable de madera, con piezas de la propia madera del zocalo de la nave (material de revestimiento aportado de la misma obra, sin valorar un suministro nuevo), corte y ajuste, bastidor auxiliar, cuatro imanes de fijacion con contraplacas, remates y acabado igual al zocalo, para ocultar la base cuando no se utilice. La tapa permitira acceso sencillo sin herramientas y su colocacion no reducira la seguridad ni accesibilidad de la base ni encerrara conexiones en servicio; durante el uso la toma quedara descubierta. Medida la unidad completamente terminada. Se debera comprobar seccion y protecciones conforme a intensidad admisible, caida de tension, cortocircuito, trazado real, potencia simultanea y condiciones del REBT, especialmente ITC-BT-28 en local de publica concurrencia. No incluye ampliaciones de cuadro, modificaciones de acometida o potencia contratada, ni legalizaciones adicionales, si fueran necesarias.|
+~T|ELM001|Cable RZ1-K (AS) 0,6/1 kV, 5G6 mm2|
+~T|ELM002|Tubo rigido libre halogenos diam. 32 mm|
+~T|ELM003|Soportes, fijaciones y accesorios de canalizacion|
+~T|ELM004|Base mural CEE 32 A 400 V 5P IP67|
+~T|ELM005|Magnetotermico 4P 32 A curva C|
+~T|ELM006|Diferencial 4P 40 A 30 mA tipo A|
+~T|ELM007|Bornes, punteras y material auxiliar conexiones|
+~T|ELM008|Bastidor de soporte para tapa de zocalo|
+~T|ELM009|Iman de fijacion de tapa, con contraparte|
+~T|ELM010|Herrajes, remates y protector de cantos|
+~T|GV001|Recuperador de calor entálpico KOSNER KRC 5 CRHE BP EVO-PH SH o equivalente, a validar según planos y cálculos de la memoria de ventilación y climatización.
+
+Potencia eléctrica: 1,27 kW. Alimentación monofásica.
+Peso: 352 kg.
+Caudal nominal: 2.916 m³/h.
+Dimensiones: 2.400×1.740×635 mm.
+
+Incluye suministro, montaje y la totalidad del sistema de soportación y anclaje a la estructura del edificio, dimensionado para el peso y las condiciones de funcionamiento del equipo, con todos los perfiles, ménsulas, suspensiones, placas, anclajes, tornillería y apoyos antivibratorios necesarios. Incluye protección anticorrosiva y acabado de los elementos metálicos, conexiones, accesorios, regulación, pruebas y puesta en marcha.
+
+Equipo y sistema de soportación totalmente terminados, instalados y en funcionamiento, según documentación de proyecto, instrucciones del fabricante y aprobación de la DF.|
+~T|ICR03003C307|Rejilla de impulsión con regulación de caudal, para conducto circular, de chapa de acero galvanizado, superficie estándar galvanizada, con lamas verticales y horizontales regulables individualmente, de 800x150 mm, fijación mediante tornillos vistos, montada en conducto metálico circular. Incluso accesorios de montaje y elementos de fijación.
+Incluye: Replanteo. Montaje y fijación de la rejilla.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.|
+~T|ICR03003C30X|Embocadura de reja plana de 800x150 mm sobre conducto circular formado por 4 largueros de chapa de acero galvanizado, mismo acabado que rejas y conducto. Incluye tornillería, manguitos y accesorios necesarios.|
+~T|ICR050207990|Rejilla de retorno, de aluminio extruido, anodizado color natural E6-C-0, con lamas horizontales fijas, de 425x325 mm, salida de aire perpendicular a la rejilla, fijación mediante tornillos vistos, montada en conducto metálico rectangular. Incluso accesorios de montaje y elementos de fijación.
+Incluye: Replanteo. Montaje y fijación de la rejilla.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.|
+~T|ICR05020799X|Rejilla de retorno circular, de aluminio extruido, anodizado color natural E6-C-0, con lamas horizontales fijas, de 450 mm de diámetro, entrada de aire perpendicular a la rejilla, fijación mediante tornillos vistos, montada en conducto metálico rectangular. Incluso accesorios de montaje y elementos de fijación.
+Incluye: Replanteo. Montaje y fijación de la rejilla.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.|
+~T|ICR070079904|Rejilla de intemperie circular para instalaciones de ventilación, marco frontal y lamas de chapa perfilada de acero galvanizado, de 450 mm de diámetro, tela metálica de acero galvanizado con malla de 20x20 mm, con marco de montaje de chapa de acero galvanizado. Incluso accesorios de montaje y elementos de fijación.
+Incluye: Replanteo. Montaje y fijación del marco en el cerramiento. Fijación de la rejilla en el marco. Conexión al conducto.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.|
+~T|IVV030000000|Conducto de ventilación, formado por tubo liso de PVC, de 90 mm de diámetro exterior, pegado mediante adhesivo, colocado en posición vertical u horizontal. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas especiales. Incluye parte proporcional de tubo flexible en caso de ser necesario.
+Criterio de valoración económica: El precio no incluye las compuertas de regulación, las compuertas cortafuego, las rejillas ni los difusores.
+Incluye: Replanteo del recorrido del conducto y de la situación de los elementos de sujeción. Presentación en seco de tubos y piezas especiales. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Longitud proyectada, según documentación gráfica de Proyecto, medida entre los ejes de los elementos o de los puntos a conectar, sin descontar las piezas especiales.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.|
+~T|K898X00P|Pintado a pistola de paramento horizontal y vertical interior sobre proyectado de lana de roca y/o mortero ablativo, con pintura plástica con acabado liso, con una capa de fondo, diluida, y dos de acabado, aplicado a pistola, color a elegir equivalente a RAL 9010. Incluye pintado sobre tubos de PVC, conductos, cableado y demás, instalaciones según indicaciones de la DF.|
+~T|MATACC|Accesorios ordinarios de PE40 y conexiones extremo|
+~T|MATAR|Arena seleccionada cama y proteccion tuberia|
+~T|MATCIN|Cinta senalizadora agua enterrada|
+~T|MATPAS|Pasamuros y sellado entrada edificio|
+~T|MATPE40|Tuberia PE100 SDR11 PN16 DE40 mm agua potable|
+~T|MATPRU|Medios y consumibles prueba y limpieza|
+~T|MATTE|Derivacion en te y adaptadores red privada existente|
+~T|MATVAL|Llave de corte origen y enlaces compatibles|
+~T|MAUX|Pequenos medios auxiliares de ejecucion|
+~T|MO003|Oficial 1ª electricista.|
+~T|MO005|Oficial 1ª electricista.|
+~T|MO011|Oficial 1ª montador.|
+~T|MO018|Oficial 1ª cerrajero.|
+~T|MO054|Oficial 1ª montador de aislamientos.|
+~T|MO059|Ayudante cerrajero.|
+~T|MO080|Ayudante montador.|
+~T|MO101|Ayudante electricista.|
+~T|MO102|Ayudante electricista.|
+~T|MO104|Ayudante electricista.|
+~T|MO113|Peón ordinario construcción.|
+~T|MOAYU|Ayudante fontanero|
+~T|MOC001|Oficial carpintero, corte y montaje tapa|
+~T|MOC002|Ayudante carpintero y acabado|
+~T|MOE001|Oficial instalador electricista|
+~T|MOE002|Ayudante electricista|
+~T|MOFON|Oficial primera fontanero|
+~T|MT11VAR009|Líquido limpiador para pegado mediante adhesivo de tubos y accesorios de PVC.|
+~T|MT11VAR010|Adhesivo para tubos y accesorios de PVC.|
+~T|MT16LRA060F|Panel semirrígido de lana mineral, espesor 50 mm, según UNE-EN 13162, Euroclase A1 de reacción al fuego según UNE-EN 13501-1 y factor de resistencia a la difusión del vapor de agua 1.|
+~T|MT42CVP020BE|Tubo liso de PVC, de 90 mm de diámetro exterior, con extremo abocardado, según UNE-EN 1329-1, con el precio incrementado el 20% en concepto de accesorios y piezas especiales.|
+~T|MT42CVP420B|Material auxiliar para montaje y sujeción a la obra de los conductos de PVC, de 90 mm de diámetro exterior.|
+~T|MT42TRX081AN|Rejilla de impulsión, para conducto circular, de chapa de acero galvanizado, superficie estándar galvanizada, con lamas verticales y horizontales regulables individualmente, de 825x125 mm, fijación mediante tornillos vistos.|
+~T|MT42TRX081AX|Embocadura de reja plana de 800x150 mm sobre conducto circular formado por 4 largueros de chapa de acero galvanizado, mismo acabado que rejas y conducto. Incluye tornillería, manguitos y accesorios necesarios.|
+~T|MT4VBB7C|Rejilla de intemperie para instalaciones de ventilación, marco frontal y lamas de chapa perfilada de acero galvanizado, de 400x495 mm, tela metálica de acero galvanizado con malla de 20x20 mm, con marco de montaje de chapa de acero galvanizado, con elementos de fijación.|
+~T|MT77X20Y|Rejilla de retorno, de aluminio extruido, anodizado color natural E6-C-0, con lamas horizontales fijas, de 425x325 mm, salida de aire perpendicular a la rejilla, fijación mediante tornillos vistos.|
+~T|NAO030000000|Aislamiento térmico entre los montantes de la estructura portante del trasdosado autoportante de placas, formado por panel semirrígido de lana mineral, espesor 50 mm y densidad de 30-40kg/m3, según UNE-EN 13162, colocado entre los montantes de la estructura portante.
+Incluye: Corte del aislamiento. Colocación del aislamiento entre los montantes.
+Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto.|
+~T|NAO03000000X|Aislamiento térmico entre los montantes de la estructura portante del trasdosado autoportante de placas, formado por panel semirrígido de lana mineral, espesor 2x50 mm y densidad 30-40kg/m3, según UNE-EN 13162, colocado entre los montantes de la estructura portante.
+Incluye: Corte del aislamiento. Colocación del aislamiento entre los montantes.
+Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto.|
+~T|P2142-4RN5|Arranque de coronación de metal, de hasta 30 cm de ancho, con medios manuales y carga manual de escombros sobre camión o contenedor. Incluye cortes necesarios según indicaciones de ls DF.|
+~T|P2143-4RQT|Derribo de solera de hormigón ligeramente armado, de hasta 15 cm de espesor, con compresor y carga manual de escombros sobre camión o contenedor|
+~T|P2143-4RR2|Arranque de pavimento cerámico, con medios manuales y carga manual de escombros sobre camión o contenedor|
+~T|P2146-HXKH|Demolición de pavimento de losetas colocadas sobre base de hormigón de fins a 10 cm de espesor, incluído la demolición de la base, de ancho fins a 2 m, con compresor y carga sobre camión con medios manuales, en entorno urbano sin dificultad de movilidad, en aceras <= 3 m de ancho o calzada/plataforma única <= 7 m de ancho, sin afectación por servicios o elementos de mobiliario urbano, en actuaciones de 1 a 10 m2|
+~T|P214K-CRN1|Derribo parcial de cubierta inclinada de chapas metálicas tipo panel sándwich para pasos de instalaciones y accesorios de cubierta,con medios manuales y carga manual de escombros sobre camión o contenedor|
+~T|P214R-8GWY|Apertura de hueco para posterior colocación de la carpintería, en hoja exterior de cerramiento de fachada, de fábrica, vista, formada por doble hoja de ladrillo perforado de 24/25 cm de espesor, con medios manuales, sin afectar a la estabilidad de la hoja o de los elementos constructivos contiguos, y carga manual de escombros sobre camión o contenedor.|
+~T|P214W-HXLT|Corte en pavimento de piezas con máquina cortajuntas con disco de diamante para pavimento, para delimitar la zona a demolir|
+~T|P21G1-4RU1|Desmontaje de bajante interior, de 200mm de diámetro máximo, con medios manuales, y carga manual sobre camión o contenedor|
+~T|P21G1-4RU2|Desmontaje de colector suspendido, de 200mm de diámetro máximo, con medios manuales y carga manual sobre camión o contenedor|
+~T|P221I-8GY9|Excavación de zanja para paso de instalaciones de 20 cm de anchura y 45 cm de profundidad, con medios manuales y relleno y compactación con tierras seleccionadas de la propia excavación, sin piedras con medios manuales|
+~T|P2241-HP8D|Repaso y compactado de caja de pavimento, con compactación del 95% PM, en entorno urbano sin dificultad de movilidad, en aceras <= 3 m de ancho o calzada/plataforma única <= 7 m de ancho, sin afectación por servicios o elementos de mobiliario urbano, en actuaciones de 1 a 10 m2|
+~T|P430-6UIK|Viga de madera laminada combinada GL24c de 8x12 cm de sección, con espesor de laminado 33/45 mm, de 7x13 a 20x100 cm de sección constante y longitud hasta 25 m, trabajada en el taller y con tratamiento insecticida-fungicida con un nivel de penetración NP 2 según UNE-EN 351-1, montada sobre tablero tricapa y atornillada a tablero por la cara inferior|
+~T|P43G-CW7B|Techo de tableros de madera tricapa de abeto de 42mm de espesor, panel de 5000x2500mm. Anclado mecánicamente sobre el entramado vertical de madera, y sobre perfiles de madera laterales cuando apoya sobre pared lateral. Despiece según planos. Se incluyen las perforaciones en forjados necesarias para el paso de instalaciones según indicaciones de la DF.|
+~T|P43N1-W01X|Recrecido de rastreles para enrase de revestimiento de madera con pilastras de ladrillo. Subestrucrura de rastreles horizontales y verticales para generar cámara entre pilastras de madera de abeto cepillado de 48x40mm de sección, clase resistente C16; con tratamiento insecticida-fungicida con un nivel de protección NP 1 según UNE-EN 351-1; Incluye Tratamiento en autoclave vacío-vacío de la estructura de madera, con garantía decenal, y certificado para Clase de Uso 3.1.|
+~T|P43N1-W0FD|Entramado de madera de 10cm de espesor formado por montantes, durmientes y testeros de madera aserrada de pino silvestre tipo KVH con cerrificado PEFC de 48x98mm de sección, clase resistente C24 y separación entre montantes de 60cm. Tratamiento al autoclave para clase de uso 3.1. Con tratamiento insecticisda-fungicida con un nivel de penetración NP 1 según UNE-EN 351-1; cortado a medida de elementos a taller y montado en obra con fijaciones mecánicas; incluye los rigidizadores de trabas y/o uniones, bandas desolidarizadora de EPDM 5mm, bandas sellantes y fijaciones mecánicas de acero galvanizado. Se incluyen las perforaciones en montantes y travesaños necesarias para el paso de instalaciones según indicaciones de la DF. Partida totalmente acabada según planos, detalles e indicaciones de la DF. |
+~T|P43N1-W0FX|Entramado de madera de 5cm de espesor formado por montantes, durmientes y testeros de madera aserrada de pino silvestre tipo KVH con cerrificado PEFC de 48x98mm de sección, clase resistente C24 y separación entre montantes de 60cm. Tratamiento al autoclave para clase de uso 3.1. Con tratamiento insecticisda-fungicida con un nivel de penetración NP 1 según UNE-EN 351-1; cortado a medida de elementos a taller y montado en obra con fijaciones mecánicas; incluye los rigidizadores de trabas y/o uniones, bandas desolidarizadora de EPDM 5mm, bandas sellantes y fijaciones mecánicas de acero galvanizado. Se incluyen las perforaciones en montantes y travesaños necesarias para el paso de instalaciones según indicaciones de la DF. Partida totalmente acabado según planos, detalles e indicaciones de la DF.|
+~T|P43N1-W0X2|Suministro y colocación de rastreles auxiliares de madera para formación y delimitación perimetral de falso techo y encofrado temporal durante los trabajos de proyección de lana de roca, formados por un primer rastrel de madera aserrada de pino o abeto de sección 40×40 mm, fijado mecánicamente al soporte existente y que permanecerá instalado como remate perimetral del falso techo, y un segundo rastrel superpuesto de sección 40×20 mm, fijado mediante puntas o tornillos, que actuará como encofrado provisional durante el proyectado de lana de roca. Incluye suministro de madera sin cepillar, cortes, mermas, encuentros, fijaciones, replanteo, colocación, nivelación y posterior desmontaje y retirada del rastrel superior una vez finalizado el proyectado. Totalmente ejecutado y acabado, sin incluir medios auxiliares de elevación, valorados en partida independiente.|
+~T|P453A-KG3J|Hormigonado de brancales y antepecho con hormigón para armar autocompactante con aditivo hidrófugo HA - 25 / AC / 10 / XC1 con una cantidad de cemento de 275 kg/m3 i relación agua cemento =< 0.6, vertido con cubilote|
+~T|P4B7-3FPH|Armadura y conectores para brancales con redondos D12 de 15cmc/20 AP400 S de acero en barras corrugadas B400S de límite elástico >= 400 N/mm2. Incluye la formación de agujeros y taco químico|
+~T|P4B9-D6QO|Armadura de losas AP500 T con malla electrosoldada de barras corrugadas de acero ME 15x15 cm D:5-5 mm 6x2,2 m B500T UNE-EN 10080|
+~T|P4BD-43N1|Armadura para muro AP500 T con malla electrosoldada de barras corrugadas de acero ME 15x15 cm D:6-6 mm 6x2,2 m B500T UNE-EN 10080|
+~T|P4DB-4317|Montaje y desmontaje de encofrado con tablero de madera de pino, en horizontal, para brancales y antepechos de directriz recta, para dejar el hormigón visto, sin berenjenos. Incluye desencofrante y despieces de tableros según DF. Incluye pulido y reparación de zuncho superior de hormigón existente.|
+~T|P4Z0-JV01|Ancoratge amb tac químic de 12 mm de diàmetre amb cargol, volandera i femella, sobre suport |
+~T|P514-61T6|Aislamiento térmico para formación de cubierta invertida no transitable, con plancha de poliestireno extruido (XPS), resistencia a compresión >= 300 kPa, de 80 mm de espesor, con caras lisas y canto media madera, colocadas sin adherir, capa separadora con geotextil de polipropileno|
+~T|P547-6CHF|Reparación puntual de cubierta sándwich ejecutada *in situ*, con pendiente inferior al 30 %, formada por dos chapas grecada de acero galvanizado de 0,6 mm de espesor, con grecas cada 172 mm y 44 mm de altura, separadas mediante perfiles omega de acero de 100 mm de altura y aislamiento intermedio de lana mineral de roca de 90 mm de espesor y densidad de 126 a 160 kg/m³. Incluye desmontaje parcial de los elementos deteriorados, sustitución o reposición de chapas, aislamiento y perfiles auxiliares afectados, fijaciones mecánicas, solapes, remates, sellado de juntas y encuentros con la cubierta existente, garantizando la continuidad de la impermeabilización y la estanqueidad del conjunto. Incluye materiales, cortes, mermas, ajustes y todos los trabajos necesarios para dejar la cubierta completamente reparada y acabada.|
+~T|P54A-61SI|S01. Marquesina exterior de estructura de acero galvanizado en caliente y pintado, de dimensiones exteriores 3750×2400 mm.
+
+Material y geometría: Marco rectangular formado por cuatro perfiles UPE 120 soldados entre sí y dos tubos interiores de 40×40×3 mm, soldados entre las UPE longitudinales. Posición según planos y longitudes definitivas a comprobar en obra.
+
+Fijaciones: Anclaje a los brancales cerámicos laterales mediante seis tacos químicos M12 por lado, con varillas, tuercas, arandelas y tamices cuando corresponda, adecuados al soporte existente.
+
+Tirantes: Dos barras lisas macizas de acero soldable de Ø36 mm y desarrollo aproximado de 3300 mm por barra, curvadas según planos y soldadas al perfil UPE frontal y al soporte metálico superior del dintel. Incluye las soldaduras estructurales y su repaso, sin reducir la sección resistente de los cordones.
+
+Protección y acabado: Galvanizado en caliente tras la fabricación en taller, incluidos los orificios de ventilación y drenaje y las rigidizaciones provisionales necesarias, con su posterior retirada. Reparación local de las zonas afectadas por cortes o soldaduras mediante ZINGASPRAY de ZINGA o equivalente, previa preparación del metal y según prescripciones del fabricante. Preparación del galvanizado, una mano de WASH PRIMER y dos manos de esmalte de poliuretano satinado, del mismo color que la fachada, a definir por la DF. En las zonas reparadas con ZINGASPRAY se utilizará una imprimación o sellador compatible según el fabricante. Incluye los retoques hasta obtener un acabado uniforme.
+
+Incluye suministro, fabricación, cortes, despuntes, perforaciones, accesorios, replanteo, montaje, ajustes, controles y ensayos previstos en proyecto y en el plan de control de calidad, medidas de protección individual y colectiva, limpieza y gestión de residuos.
+
+No incluye el refuerzo del dintel ni sus pletinas y anclajes, valorados aparte; sí incluye la soldadura de los tirantes a dicho soporte. Medios de elevación y andamios, madera, aislamiento, impermeabilización y remates de cubierta valorados en partidas independientes.
+
+Partida totalmente terminada, pintada y colocada según documentación gráfica y órdenes de la DF.
+
+Unidades: 1|
+~T|P54A-61SX|S02. Perfil tubular 10x10 para formación de dintel metálico de carpintería.
+
+Material: Perfil tubular de acero galvanizado en caliente de 100x100x3mm.
+Dimensiones: 3200mm de longitud.
+Fijaciones: Fijación al brancal de hormigón mediante pletina soldada de 110x54x10mm y 2 fijaciones de taco químico por lado.
+Acabado:  1 mano de imprimación epoxídica antióxido y 2 manos de esmalte de poliuretano acabado satinado. Mismo color de la fachada a definir por la DF.
+
+Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia.
+
+Partida totalmente terminada según documentación grafica y ordenes de la DF.|
+~T|P54A-61X2|S06. Soporte exterior para máquinas de clima formado por perfiles de acero.
+
+Material: Vigas IPE 120 de acero como soporte. Perfil tubular de acero galvanizado de 50x50x3mm y perfil en ´´L´´ de acero 40x40x3mm soldado a los perfiles inferiores.
+Dimensiones: Marco de 4260x614mm.
+Fijaciones: Todo el conjunto soldado.
+Acabado:  1 mano de imprimación epoxídica antióxido y 2 manos de esmalte de poliuretano acabado satinado. 
+Accesorios:  4 carriles de fijación Walraven RapidStrut (PG) modelo 6505242 o equivalente. Incluye sistema de impermabilización de los apoyos formado por imprimación previa tipo ECO PRIM GRIP PLUS o equivalente, encintado de esquinas entre perfiles metálicos y panel sandwich con MAPEBAND EASY adherido, y posterior cubrimiento de toda la superfície afectada con  impermeabilizante acrílico. Previo sellado de juntas con silicona tipo Mapeflex MS45 o equivalente.
+
+Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia.
+
+Partida totalmente terminada según documentación grafica y ordenes de la DF.|
+~T|P54A-61X3|Refuerzo del dintel superior del hueco de acceso principal para la sujeción de marquesina (sujeción de S01)
+
+Material: Limpieza mecánica completa de los dos perfiles IPE existentes que conforman el dintel, mediante cepillado metálico, eliminación de óxido y cascarilla, y posterior limpieza y desengrasado con disolvente.
+Colocación de 11 perfiles tubulares de acero de 60 × 60 × 4 mm, soldados entre las almas de los dos perfiles IPE existentes, distribuidos según indicaciones de la DF.
+Colocación de pletina inferior continua de acero de 375 × 20 cm y 8 mm de espesor, soldada entre las alas inferiores de los perfiles IPE existentes y enrasada con estas, mediante soldadura a tope con preparación de bordes biselados a 45°. Relleno completo de la cámara interior entre los perfiles IPE existentes mediante espuma rígida de poliuretano, evitando la formación de espacios huecos.
+Refuerzo de ambos extremos del perfil IPE interior mediante una pletina superior y una inferior de acero en cada extremo, de 40 × 15 cm y 10 mm de espesor, soldadas a las alas del perfil IPE y ancladas al muro existente mediante 4 anclajes químicos M12 por pletina, con un total de 4 pletinas y 16 anclajes.
+Incluye preparación, ajuste y soldadura estructural de los dos tirantes Ø36 mm de la marquesina a los perfiles IPE y a la pletina inferior, según detalles de proyecto.
+
+Acabado: Aplicación de una mano de imprimación epoxídica anticorrosiva sobre todos los elementos de acero, incluidas soldaduras y zonas afectadas por los trabajos de montaje, y dos manos de esmalte de poliuretano de acabado satinado, con color a definir por la DF.
+
+Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia.
+
+Partida totalmente terminada según documentación grafica y ordenes de la DF.|
+~T|P54A-61X4|Protección metálica frente a golpes para bajante exterior, formada por tubo circular de acero de Ø127 mm de diámetro exterior, 3 mm de espesor y 900 mm de altura, dispuesto alrededor de la bajante existente de aproximadamente Ø110 mm, sin contacto con esta. Diámetro definitivo a comprobar en obra según dimensiones reales y encuentros existentes.
+
+Fijación independiente al muro mediante cuatro varillas de acero soldable de Ø12 mm, soldadas a la cara posterior del tubo y ancladas mediante resina de anclaje químico adecuada al soporte, con tamices cuando corresponda. Longitud y profundidad de anclaje según soporte existente y prescripciones del fabricante.
+
+Acabado galvanizado en caliente del conjunto después de ejecutar todos los cortes y soldaduras, incluidos cantos desbarbados y repasados, sin aristas cortantes. Extremo inferior dispuesto para permitir el drenaje.
+
+Incluye suministro, fabricación, anclajes, desmontaje y recolocación del tramo inferior de bajante necesario para introducir la protección, ajustes, montaje y limpieza. Unidad totalmente instalada y acabada según detalles de proyecto e indicaciones de la DF.
+
+
+Medición: 2 uds.|
+~T|P54A-61X5|Suministro y colocación de soporte metálico para suspensión de equipos de climatización, formado por tubo circular de acero galvanizado de diámetro exterior 40 mm y espesor 2,5 mm, de longitud variable entre 80cm y 110cm, soldado a placa de anclaje de acero de dimensiones aproximadas 150×80×6 mm, con cartelas triangulares de rigidización en la unión entre tubo y placa y tape circular de acero galvanizado soldado. Incluye corte, mecanizado, perforaciones, soldaduras, galvanizado en caliente del conjunto una vez fabricado, tacos de anclaje mecánicos o químicos, transporte, montaje y todos los trabajos necesarios para su completa instalación. No incluye medios auxiliares de elevación, valorados en partida independiente.
+
+Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia.
+
+Partida totalmente terminada según documentación grafica y ordenes de la DF.|
+~T|P54A-61X6|4 carriles de fijación Walraven RapidStrut (PG) modelo 6505242 o equivalente|
+~T|P54A-61XX|S03. Puerta exterior de acero pregalvanizado y pintado para CPM
+
+Material: Puerta no estanca, formada por marco perimetral tubular de 40×20×2 mm, bastidor de hoja batiente de 60×20×2 mm y chapa plana de acero de 3 mm de espesor, todos ellos pregalvanizados.
+
+Dimensiones: Hueco de obra de 910×1310 mm. Medidas definitivas a comprobar en obra.
+
+Fijaciones: Fijación del marco al muro cerámico mediante anclajes químicos M10, con varillas, tuercas, arandelas y tamices cuando corresponda, adecuados al soporte.
+
+Acabado: Preparación y limpieza de las superficies, reparación de la protección anticorrosiva en cortes y soldaduras mediante recubrimiento rico en zinc compatible con el sistema de acabado, una mano de imprimación epoxídica anticorrosiva apta para acero galvanizado y dos manos de esmalte de poliuretano satinado. Espesores y tiempos de repintado según fabricante. Mismo color que la fachada, a definir por la DF.
+
+Herrajes: Bisagras ocultas de acero galvanizado, adecuadas al peso de la hoja y para un ángulo de apertura superior a 150°.
+
+Cerradura: Cerradura homologada por la compañía distribuidora.
+
+Señalética: Según requisitos de la compañía distribuidora.
+
+Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia.
+
+Partida totalmente terminada, pintada y colocada, según documentación gráfica y órdenes de la DF.
+
+Unidades: 1|
+~T|P54A-61XZ|S04. Dintel de refuerzo.
+
+Pletina de acero para refuerzo de zuncho de hormigón
+Material: Pletina lisa de acero 8mm de espesor de 300x3800mm y barras corrugadas de 10mm de diámetro y 250mm de longitud soldadas a la pletina.
+Fijaciones: Fijación a zuncho de homrigón mediante taladros y resina epoxi.
+Acabado:  1 mano de imprimación epoxídica antióxido en la parte expuesta.
+
+Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia.
+
+Partida totalmente terminada según documentación grafica y ordenes de la DF.|
+~T|P5ZJR-HBNN|Reparación de canal hasta 80 cm de desarrollo colocando una lámina impermeabilizante bituminosa con autoprotección metálica adherida en caliente, y rehaciendo las embocaduras de los bajantes|
+~T|P5ZJR-HBNQ|Limpieza de canal y desatasco de gárgolas y bajantes|
+~T|P6126-5A4X|Pared de cerramiento apoyada a una cara vista de espesor 11,5 cm, de ladrillo perforado, de 240x115x100 mm, caras vistas, categoría I, HD, según la norma UNE-EN 771-1, colocado con mortero mixto de cemento pórtland con caliza CEM II/B-L, cal y arena, con 200 kg/m3 de cemento, con una proporción en volumen 1:2:10 y 2,5 N/mm2 de resistencia a compresión, elaborado en obra|
+~T|P6145-56HN|Hoja de partición interior, de 4 cm de espesor, de fábrica de ladrillo cerámico hueco sencillo, para revestir, 24x11,5x4 cm, con juntas horizontales y verticales de 10 mm de espesor, recibida con mortero de cemento industrial, color gris, M-5, suministrado a granel.|
+~T|P630-ZBA7|Tabique pluvial de planchas plegada (diversos patrones) de acero galvanizado y prelacado, de 1,2 mm de espesor, colocadas horizontalmente, con solape, con fijaciones mecánicas sobre guias verticales, de perfiles conformados de acero galvanizado tipo omega; perfil de junta de estanqueidad vertical entre placas, aislamiento interior con placas de plancha de poliestireno extruido (XPS), canto media madera, con parte proporcional de remates perimetrales de plancha de acero prelacado|
+~T|P653-8NX1|Revestimiento interior de paramento vertical mediante placa de yeso laminado hidrófuga (H) de 15 mm de espesor, atornillada mecánicamente directamente sobre soporte de placa de cemento tipo Aquapanel, sin estructura auxiliar de perfilería metálica, incluso p/p de tornillería, cortes, ajustes y accesorios necesarios para su correcta colocación.|
+~T|P6Z5-6546|Perfiles conformados de acero galvanizado tipo omega de 50x2 mm, colocados con fijaciones mecánicas|
+~T|P732-611O|Reparación de impermabilización formado por imprimación previa tipo ECO PRIM GRIP PLUS o equivalente, encintado de esquinas entre perfiles metálicos y panel sandwich con MAPEBAND EASY adherido, y posterior cubrimiento de toda la superfície afectada con  impermeabilizante acrílico. Previo sellado de juntas con silicona tipo Mapeflex MS45 o equivalente.|
+~T|P750-E81H|Membrana de espesor 1,5 mm, de una lámina de PVC flexible resistente a la intemperie, sin armadura, colocada sin adherir al soporte. Incluye perfil colaminado perimetral plano para fijación y sellado perimetral de todo el conjunto. Partida totalmente acabada según indicaciones de la DF.|
+~T|P7B1-6Q3O|Geotextil formado por fieltro de polipropileno no tejido ligado mecánicamente de 100 a 110 g/m2, colocada sin adherir|
+~T|P7C25-DCHD|Aislamiento de plancha de poliestireno extruido (XPS), de 40 mm de espesor, resistencia a compresión >= 300 kPa, resistencia térmica entre 1.29 y 1,176 m2·K/W, con la superficie lisa y borde media madera, colocada con fijaciones mecánicas|
+~T|P7C25-DDKY|Aislamiento de plancha de poliestireno extruido (XPS), de 60 mm de espesor, resistencia a compresión >= 300 kPa, resistencia térmica entre 1.935 y 1,765 m2·K/W, con la superficie lisa y borde media madera, colocada sin adherir|
+~T|P7D0-5RJN|R01. Aislamiento de espesor 5 cm, con mortero ignífugo de cemento y lana mineral de roca, de 250 kg/m3 de densidad, proyectado sobre elementos superficiales. Incluye medio auxiliares para altura >3m. Incluso proyectado sobre elementos de instalaciones y cableado según indicaciones de la DF. Incluye protección de los elementos adyacentes en paramentos verticales y horizontales.|
+~T|P7ZB-AHFD|Remate para impermeabilización con perfil colaminado de plancha de acero galvanizado de 0,6 mm de espesor, con lámina de PVC flexible adherida y resistente a la intemperie de 1,2 mm de espesor, de 160 mm de desarrollo e 2 pliegues, colocado con fijaciones mecánicas|
+~T|P811-3EQD|Enfoscado maestreado sobre paramento vertical exterior, a 3,00 m de altura, como máximo, con mortero mixto 1:0,5:4, acabado salpicado según indicaciones de la DF|
+~T|P811-3F8R|Enfoscado a buena vista sobre paramento vertical exterior, a 3,00 m de altura, como máximo, con mortero mixto 1:2:10, fratasado|
+~T|P822-3NQV|Alicatado de paramento vertical interior a una altura <= 3 m con azulejo de gres porcelánico de 15x15cm con precorte 3,75x3,75cm de DITAI tipo Raster Grid S o equivalente color a definir por la DF, grupo BIII (UNE-EN 14411), colocadas con adhesivo cementoso tipo C2 según norma UNE-EN 12004 y rejuntado con mortero de juntas cementoso mejorado, con absorción de agua reducida y resistencia elevada a la abrasión tipo CG 2 W A, rejuntado color a definir por la DF, en juntas de 3 mm de espesor (UNE-EN 13888). Despiece según planos e indicaciones de la DF.|
+~T|P83EA-3Y8H|R06. Aplacado vertical con placa de cemento Portland Aquapanel Indoor ´´KNAUF´´ de 12,5x1200x2400mm, colocada sobre estructura de entramado de madera. Incluye encintado, masillado y fijaciones mecánicas con tornillería autoperforante Aquapanel Mix TB 4,2x25|
+~T|P83ES-CUXA|Revestimiento vertical con perfil plegado de plancha de acero galvanizado y prelacado, para fachadas, con un espesor de 1,2 mm, lisa, a más de 3,00 m de altura, colocada con fijaciones mecánicas|
+~T|P83Z0-424C|Cantonera de plancha de acero galvanizado y prelacado de 0,6 mm de espesor y 35 cm de desarrollo con 5 pliegues, colocada con fijaciones mecánicas|
+~T|P848-HCHX|Perfil L perimetral de acero galvanizado de 40x40x3mm para sujección inferior, de muebles M05, M06 y M07. Incluye corte, soldadura y trabajos necesarios para la formación de subestructura sugún planos, detalles e indicaciones de la DF.|
+~T|P848-HCI5|Falso techo de policarbonato reticulado de 6 paredes de 16mm de grosor, color opal. Colocado apoyado sobre entramado de perfiles de acero galvanizado, para una altura de hasta 6m. Incluye corte in situ con sierra caladora a baja velocidad y transporte de paneles. Incluye plataforma elevedora para colocación a más de 3m de altura.|
+~T|P848-HCIX|Instalación de subestructura para falso techo formada por perfiles perimetrales de acero galvanizado en L 50x30x3mm con cortes en las esquinas en inglete y fijadas a perímetro mediante taco químo D12  tornillo, arandela y tuerca. Incluye colocación a más de 3m de altura.|
+~T|P848-HCX2|Instalación de subestructura para falso techo formada por perfiles intermedios de acero galvanizado tipo Omega 100x30x30mm y 2mm de espesor, apoyada y fijada mecanicamente a subestructura de perfiles L perimetrales. Incluye cortes en obra según despiece de planos. Incluye colocación a más de 3m de altura.|
+~T|P84N-A82E|Formación de cajón en falso techo con placas de yeso laminado tipo hidrófuga (H) de 15 mm de espesor, colocadas con entramado estructura simple de acero galvanizado formado por perfiles colocados cada 600 mm fijados al techo mediante varilla de suspensión cada 1,2 m. Incluye medios auxiliares para colocación de cajón a más de 3m de altura|
+~T|P864-AE5L|R02. Revestimiento vertical a 3,00 m de altura, como máximo, con tablero tricapa de madera de abeto,  de 16 mm de espesor, dimensiones del panel 1250x2500mm, veta vertical, para ambiente seco según UNE-EN 636, reacción al fuego C-s2, d0, colocado fijaciones mecánicas sobre rastrelado de madera de 40x40mm cada 40cm. Incluye tramos de panel sobrante para cerrar la camar superior de la zona entre pilastras de la nave. Incluye fijaciones mecánicas, cortes y despiece según planos e indicaciones de la DF. Se incluyen las perforaciones en muros y forjados necesarias para el paso de instalaciones según indicaciones de la DF.|
+~T|P864-REXX|R03-R04-R05. Revestimiento vertical a 3,00 m de altura, como máximo, con tablero tricapa de madera de abeto,  de 16 mm de espesor, dimensiones del panel 1250x2500mm, veta vertical, para ambiente seco según UNE-EN 636, reacción al fuego C-s2, d0.  Incluye fijaciones mecánicas, cortes y despiece según planos e indicaciones de la DF. Se incluyen las perforaciones en muros y forjados necesarias para el paso de instalaciones según indicaciones de la DF.|
+~T|P874-HKTD|Limpieza superficial de paramento vertical de mortero, de polvo, restos orgánicos y biodepósitos-detritus con medios manuales no agresivos e instrumentos desincrustantes con cepillado manual y retirada de elementos sueltos|
+~T|P87D-6RNI|Partida alzada de estimación de relleno de agujeros e imperfecciones de fachada de obra vista y reparación, en paramento vertical con  mortero mixto 1:2:10 y acabad enfoscado fratasado con mortero de cal 1:4 |
+~T|P89B-4UEC|Pintado de cercha de hormigón con pintura plástica, con acabado liso con una capa de fondo diluida, y dos de acabado. Color a definir por la DF. Icluye plataforma elevadora para una altura de hasta 20m.|
+~T|P89H-4V75|Aplicación manual de dos manos de pintura a la cal, color blanco, la primera mano diluida con un 30 a 40% de agua y la siguiente diluida con un 30% de agua o sin diluir, (rendimiento: 0,29 l/m² cada mano); previa aplicación de una mano de imprimación granulosa translúcida, sobre paramento exterior. Se incluyen todos los medios auxiliares para pintado de paramento vertical y horizontal hasta 7 metros de altura. Incluye pintado de superficies tanto lisas como rugosas, jambas, dinteles, cableado de fachada, y todos los elementos que conforman el exterior del edificio.|
+~T|P89I-4V8S|Pintado de paramento vertical de yeso/placa de cemento, con pintura plástica con acabado liso, con una capa selladora y dos de acabado. Incluye capa de imprimación en caso de ser necesaria. Color a definir por la DF.|
+~T|P8A1-KKJT|3 manos de lijado y 2 de barniz de poliuretano bicomponente a base agua acabado transparente mate aplicados de manera alterna. Incluye imprimación o capa selladora para reducir la absorción del barniz.|
+~T|P8A2-HYMQ|Barnizado de paneles tricapa, con barniz ignífugo a base de resinas al agua de un componente, para madera, con clase de reacción al fuego C-s2,d0, con dos capas, con la superficie mate.|
+~T|P8A4-AKV8|Tratamiento de protección superficial de superficie vertical u horizontal de madera, con lasur al agua a base de resinas con protector insecticida-fungicida, acabado mate transparente o color a definir por la DF, aplicado en dos manos de lasur y dos manos de lijado alternados. Con protección al fuego incluida para cumplimiento Cs2d0.|
+~T|P8B1-6073|Hidrofugado de paramento horizontal exterior con protector hidrófugo|
+~T|P8B5-6NOI|Tratamiento anticorrosivo para elementos de acero con emulsión anticorrosiva de resinas sintéticas|
+~T|P8E2-H7WD|Coronación de arrimadero con perfil de aluminio anodizado en L 15x15mm, de remate superior de baldosas, fijado mecánicamente sobre paredess, acabado pintado con pintura plástica acabado mate textura lisa, aplicada en 2 manos sobre una mano de imprimación acrílica, color igual que las paredes D01. Sellado inferior con rejuntado cementoso. Posición según detalles e indicaciones de la DF.|
+~T|P930-11A8F|Base para pavimento de hormigón para usos no estructurales con áridos reciclados, de consistencia blanda y tamaño máximo del árido 20 mm, con 235 kg/m3 de cemento, HRNE- 235/ B/ 20, con una sustitución del 50% del árido grueso por árido reciclado mixto con marcado CE, procedente de plantas de reciclado de residuos de la construcción o demolición autorizadas, vertido con transporte interior mecánico con extendido y compactado manual, acabada maestreado, con dúmper elèctric|
+~T|P93R-HY9P|Base de acera con hormigón de 200 kg/m3, con una proporción en volumen 1:3:6, con cemento pórtland con caliza CEM II/B-L 32,5 R y árido de piedra calcárea de grandària màxima 20 mm, elaborado en obra con hormigonera de 165 l, vertido manualmente, en entorno urbano sin dificultad de movilidad, en aceras <= 3 m de ancho o calzada/plataforma única <= 7 m de ancho, sin afectación por servicios o elementos de mobiliario urbano, en actuaciones de 0.2 a 2 m3|
+~T|P9D3-35SU|Remate de cornisa formado por doble rasilla cerámica común, de forma rectangular, de 28x14x1,3 cm, de color rosado, colocada a pique de maceta con mortero mixto 1:2:10.|
+~T|P9D5-35ZC|Pavimento interior, de baldosa de gres porcelánico de 15x15 con precorte 3,75x3,75cm de DITAIL tipo RASTER GRID S color a definir por la DF, precio alto, grupo BIb-BIIa (UNE-EN 14411), colocadas con adhesivo para baldosa cerámica C2 (UNE-EN 12004) y rejuntado con lechada CG2 (UNE-EN 13888) color a definir por la DF.|
+~T|P9E1-HY9O|Pavimento de loseta para acera gris de 20x20x4 cm, clase 1a, precio superior, colocado al tendido con mortero cemento 1:6 y lechada de cemento pórtland, en entorno urbano sin dificultad de movilidad, en aceras <= 3 m de ancho o calzada/plataforma única <= 7 m de ancho, sin afectación por servicios o elementos de mobiliario urbano, en actuaciones de 1 a 10 m2|
+~T|P9ER-HY9N|Reposición de pavimento de loseta, con loseta gris de 20x20x4 cm, clase 1a, precio superior de textura liso, colocado al tendido con mortero, incluído demolición de la base, repaso y compactado de caja de pavimento, con compactación del 95% PM y ejecución de la base de espesor 10 cm con hormigón de 200 kg/m3, con una proporción en volumen 1:3:6, en entorno urbano sin dificultad de movilidad, en aceras <= 3 m de ancho o calzada/plataforma única <= 7 m de ancho, sin afectación por servicios o elementos de mobiliario urbano, en actuaciones de 1 a 10 m2|
+~T|P9G7-9LSU|Pavimento de 15 cm de espesor de hormigón con fibras HAF-30/A-3-3/F/12-60/IIb+E, tamaño máximo del árido 12 mm, con >= 300 kg/m3 de cemento y entre 30 y 35 kg/m3 de fibras de acero conformadas en extremos, apto para clase de exposición IIb+E, acabado fratasado mecánico|
+~T|P9J4-9ESU|Felpudo formado por perfiles de aluminio ensamblables de 25 a 35 mm de ancho y 9 mm de altura, con acabado de cepillo, instalado en superficie o empotrado en pavimentos laminados|
+~T|P9M3-XBVF|Suministro y colocación de pavimento continuo tipo Compac EP/S QC, de 3–4 mm de espesor, formado por resinas epoxi y áridos de cuarzo coloreado, con sellado epoxi y acabado de barniz de poliuretano. Preparación de la superficie mediante medios mecánicos para abrir el poro y mejorar la adherencia, incluyendo limpieza y aspirado. Aplicación a rodillo de una capa de imprimación de resina epoxi (150–200 g/m²), con espolvoreo de árido de cuarzo natural QN de 0,7–1,3 mm (500 g/m²). Aplicación de una capa de fondo de resina epoxi (800 g/m²), premezclada con áridos de cuarzo coloreado QC de 0,7–1,3 mm (500 g/m²). Sobre la capa todavía húmeda, espolvoreo de árido de cuarzo coloreado QC de 0,7–1,3 mm (3.500 g/m²). Compactación y alisado mediante fratasadora eléctrica ligera o «mosquito». Aplicación mediante llana de goma o metálica de dos capas de sellado de resina epoxi (250 g/m² por capa). Acabado con tres manos de barniz de poliuretano mate, satinado o brillante, a elegir por la dirección facultativa (75 g/m² por mano), respetando los tiempos de repintado indicados por el fabricante. Incluye materiales, mano de obra y medios auxiliares necesarios para su completa ejecución.|
+~T|P9VE-B6JX|Peldaño SUPERSTEP de Breinco de una pieza monolítica de hormigón prefabricado de 1 pieza de sección escuadría de 15x40x120cm, con bisel y acabado liso, de color blanco, colocado con mortero M 7.5|
+~T|PAF9-5TG1|Fe02. Conjunto formado por 4 ventanas de lamas orientables.
+
+Material: Carpintería de aluminio con rotura de puente térmico modelo UIN2.RT o equivalente
+Dimensiones: Hueco de obra de 402x210cm. Dimensión de cada ventana 101x201cm.
+Vidrio: 3+3/12/3+3.
+Acabado: Anodizado plata.
+Accionamiento: Motorizado con MOTOR VISTO 230 V AC / 50 Hz controlado por mando a distancia.
+Accesorios: Incluye 4 motores para accionameinto y 1 mando a distancia para controlar el conjunto, emisor y receptor radio V230/50Hz.
+
+Incluye cableado e instalación de los motores para su correcto funcionamiento.|
+~T|PAF9-5TGM|Fe01. Conjunto formado por 2 hojas batientes y 2 fijos laterales.
+
+Material: Fijos serie SOLEAL 55 y puertas serie SOLEAL 55PY de Technal o equivalente de apertura exterior.
+Dimensiones: Hueco de obra de 402x238cm y hueco de paso de 85x233cm. 
+Vidrio: Vidrio laminar 4+4/16 argón NE/4+4 Planitherm (bajo emisivo).
+Acabado: Anodizado plata.
+Accionamiento: Tirador tubular para puertas exteriores de acero inoxidable modelo I-2000 de Didheya de 60cm de longitud o eq. Barras antipánico de acero inoxidable JNF IN.20.951 o equivalente.
+Cerradura: Cerradura de seguridad de golpe y llave.
+Accesorios: Perfil de estanqueidad inferior de 22m para itinerario accesible y freno cierrapuertas.|
+~T|PAF9-5TGX|Fe04. Conjunto formado por 2 puertas de 2 hojas batientes cada una
+
+Material: Puertas serie SOLEAL 55PY de Technal o equivalente de apertura exterior.
+Dimensiones: Hueco de obra de 320x215cm y hueco de paso de 76x210cm. 
+Vidrio: 4+4/12 argón NE/4+4 Planitherm (bajo emisivo).
+Acabado: Anodizado plata.
+Accionamiento: Tirador tubular para puertas exteriores de acero inoxidable modelo I-2000 de Didheya de 60cm de longitud o eq. Barras antipánico de acero inoxidable JNF IN.20.951 o equivalente.
+Cerradura: Cerradura de seguridad y llave.
+Accesorios: Perfil de estanqueidad inferior de 22m para itinerario accesible y freno cierrapuertas.|
+~T|PAF9-5TX1|Fe05. Conjunto formado por 2 ventanas de lamas orientables.
+
+Material: Carpintería de aluminio con rotura de puente térmico modelo UIN2.RT o equivalente
+Dimensiones: Hueco de obra de 320x121cm. Dimensión de cada ventana 160x121cm.
+Vidrio: 3+3/12/3+3.
+Acabado: Anodizado plata.
+Accionamiento: Motorizado con MOTOR VISTO 230 V AC / 50 Hz controlado por mando a distancia.
+Accesorios: Incluye 2 motores para accionameinto y 1 mando a distancia para controlar el conjunto, emisor y receptor radio V230/50Hz.
+
+Incluye cableado e instalación de los motores para su correcto funcionamiento.|
+~T|PAFA-7R5M|Fe03. Conjunto formado por 1 ventana fija.
+
+Material: Ventana fija serie SOLEAL 55 de Technal o equivalente.
+Dimensiones: Hueco de obra de 220x231cm. 
+Vidrio: 6+6/12 argón NE/4+4 Planitherm (bajo emisivo).
+Acabado: Anodizado plata.|
+~T|PAQ5-380F|Fi01. Puerta interior de madera con paneles de madera tricapa de abeto para ir enrasada por la cara exterior y sin marco superior.
+
+Material: Marcos y estructura interior de la hoja de madera de pino flandes dimensiones según detalle, con tratamiento para los cantos vistos de los marcos y hoja. Hoja conformada por 2 paneles de madera tricapa de abeto AB/C de 16mm de espesor de 83x230cm, incluye barniz ignífugo para mejora de la reacción al fuego de la madera hasta conseguir un C-s2,d0 por la cara exterior. Aislamiento interior de lana mineral de 5cm de espesor.
+Dimensiones: Hueco de obra de 91x230cm y hueco de paso de 80x230cm.
+Acabado: Paneles tricapa y marcos vistos con acabado de 2 manos de lijado y 1 de lasur color estándar a definir por la DF o transparente aplicados de manera alterna (lijar+lasur+lijar). 
+Accionamiento: Manilla tubular recta JNF IN.00.028 o equivalente.
+Herrajes: Bisagras ocultas para puerta enrasada modelo K6700 de la marca Koblenz o equivalente.
+Cerradura: Cerradura de embutir con resbalón.
+Señalética: 1 unidad con pictograma para baños formado por silueta de mujer y de hombre de panel de tricapa de 13mm con corte laser y mismo acabado que la hoja de la puerta. 1 unidad con pictograma para información formado por ´´i´´ de tricapa de 13mm con corte laser y mismo acabado que la hoja de la puerta.|
+~T|PAQ5-38X1|Fi02. Puerta interior de madera con paneles de madera tricapa de abeto con marco de madera de pino para ir enrasada por la cara exterior.
+
+Material: Marcos y estructura interior de la hoja de madera de pino flandes dimensiones según detalle, con tratamiento para los cantos vistos de los marcos y hoja. Hoja conformada por 2 paneles de madera tricapa de abeto AB/C de 16mm de espesor de 86.6x207.8cm, incluye barniz ignífugo para mejora de la reacción al fuego de la madera hasta conseguir un C-s2,d0 por la cara exterior. Aislamiento interior de lana mineral de 3cm de espesor.
+Dimensiones: Hueco de obra de 91x210cm y hueco de paso de 85x207cm.
+Acabado: Paneles tricapa y marcos vistos con acabado de 2 manos de lijado y 1 de lasur transparente aplicados de manera alterna (lijar+lasur+lijar). Panel interior y marcos interiores acabados con tinte para madera color a definir por la DF.
+Accionamiento: Manilla tubular recta JNF IN.00.028 o equivalente. Condena de baño JNF IN.04.112 o equivalente.
+Herrajes: Bisagras vistas cilíndricas de acero inoxidable mate.
+Cerradura: Cerradura de embutir con resbalón.|
+~T|PAQ5-38X2|Fi03. Armario de 1 hoja batiente
+
+Material: Marco lateral de madera de pino flandes dimensiones según detalle. Hoja formada por tablero de madera tricapa de abeto de 16mm de espesor de 47x230cm.
+Dimensiones: Hueco de obra de 44x230cm.
+Acabado: Panel tricapa con 2 manos de lijado y 2 de barniz ignifugo transparente aplicados de manera alterna por ambas caras.
+Herrajes: 3 bisagras de cazoleta con freno y regulación por hoja.
+Paño: Cerradura sobrepuesta por el interior con formación de cerradero en tabique.|
+~T|PAQ5-38X3|Fi04. Armario de 2 hojas batientes
+
+Material: Marco perimetral de madera de pino flandes dimensiones según detalle. Hojas formadas por tablero de madera tricapa de abeto de 16mm de espesor de 68.7x230cm.
+Dimensiones: Hueco de obra de 141x230cm.
+Acabado: Paneles tricapa con 2 manos de lijado y 2 de barniz ignifugo transparente aplicados de manera alterna por ambas caras.
+Accionamiento: Formación de 2 agujeros en los tableros de Ø25mm para apertura.
+Herrajes: 3 bisagras de cazoleta con freno y regulación por hoja.|
+~T|PAQ5-38XA|Panel de exposición formado por tableros de madera de tricapa de abeto de 42mm de espesor en 2 piezas, unión mediante encaje perpendicular a 90º grados.
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: Panel 1 130x190cm y panel 2 30x50cm.|
+~T|PAQ5-38XB|4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente.|
+~T|PAQ5-38XC|M02. Plataforma de soporte para máquina de exposición formada por tablero de madera tricapa de abeto de 42mm de espesor.
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: Panel 60x100cm.
+Accesorios: 4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente.|
+~T|PAQ5-38XD|M03. Plataforma de soporte para máquina de exposición formada por tablero de madera tricapa de abeto de 42mm de espesor.
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: Panel 134x112cm.
+Accesorios: 4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente.|
+~T|PAQ5-38XE|M04. Banco para exposicón fromado por 5 paneles de madera tricapa de 42mm.
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: 1 panel de 300x40cm, 1 panel de 15x268cm y 3 paneles de 41x40cm.
+Fijaciones: Uniones mediante puntas y resina epoxi. |
+~T|PAQ5-38XF|M06. Mostrador de acceso de 2 baldas
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: Panel 1 de 241.6x31.6cm, y Panel 2 de 241.6x60cm.
+Fijaciones: Anclada mecánicamente por la cara inferior. 
+Accesorios: Perfil L perimetral de acero galvanizado de 40x40x3mm para sujección inferior.|
+~T|PAQ5-38XG|M07. Mueble lavabo baño
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: Panel 1 de 162.4x46.6cm.
+Fijaciones: Anclada mecánicamente por la cara inferior. 
+Accesorios: Perfil L perimetral de acero galvanizado de 40x40x3mm para sujección inferior. Agujeros en el tablero para desagüe.|
+~T|PAQ5-38XH|M05. Mesa para catas formado por 4 paneles de madera tricapa de 42mm.
+
+Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo.
+Dimensiones: 1 panel de 200x80cm, 2 paneles de 70.8x40cm y 1 panel de 168x15cm.
+Fijaciones: Uniones mediante puntas y resina epoxi. |
+~T|PB90-FK6V|Señalización exterior con pictogramas independientes cortados mediante corte laser con medidas aproximadas de 18x18cm, de chapa de acero galvanizado de 10mm, fijado con barillas posteriores y epoxi. Acabado pintado con 2 capas de esmalte al agua color de fachada, previa imprimación|
+~T|PD16-HAWZ|Bajante exterior de tubo de chapa de zinc-titanio con unión longitudinal plegada, de diámetro nominal 110 mm y de 0,6 mm de espesor, incluidas las piezas especiales y fijado mecánicamente con soportes exteriores a pared. Incluye formación de codo en la parte inferior para evacuación.  Incluye empalme a sistema existente, sellados y accesorios para su correcto funcionamiento.|
+~T|PD18-8D4X|Colector de tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 160 mm, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, incluidas las piezas especiales y fijado mecánicamente con bridas|
+~T|PD18-8D50|Colector y bajante de tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 110 mm, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, incluidas las piezas especiales y fijado mecánicamente con bridas. Incluye empalme a sistema existente, sellados y accesorios para su correcto funcionamiento.|
+~T|PD18-8D5M|Colector de tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 125 mm, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, incluidas las piezas especiales y fijado mecánicamente con bridas|
+~T|PD31-56AD|Arqueta de paso y tapa registrable, de 75x75x70 cm de medidas interiores, con pared de 15 cm de espesor de ladrillo perforado de 290x140x100 mm, enfoscada y enlucida por dentro con mortero 1:8, sobre solera de hormigón en masa de 10 cm y con tapa prefabricada de hormigón armado|
+~T|PD54-10MWK|Sumidero sifónico de acero inoxidable de 15x15cm con salida horizontal D50mm. Modelo 21011 de Genebre o equivalente|
+~T|PE22-367V|Caldera eléctrica de 30 litros de capacidad para instalación mural. Modelo EWH 30 C de Teka o equivalente.
+Capacidad: 30 litros
+Tanque esmaltado en Zafire
+Ánodo de magnesio
+Termostato temperatura: 30º – 75º
+Válvula de presión > 7,5 bar
+Presión máxima: 0,75 Mpa
+Termómetro
+Válvula de seguridad
+Protección sobrecalentamiento
+Protección calentamiento en seco
+Grado de protección humedad IPX4
+Potencia: 1.500 W
+Grosor aislamiento: 20 mm
+Conexión G ½
+Consumo medio: 1-2 personas|
+~T|PE40-60DD|Sombrerete de chimenea de plancha de acero inoxidable, de 500 mm, adaptado para doble tubo, colocado con fijaciones mecánicas|
+~T|PEJ4-48CY|Instalación de ventilador industrial de techo de Ø2400mm de 6 aspas marca Magnovent modelo Airslim S+, instalado a una altura de más de 5m. Incluye el lacado de las aspas en blanco.|
+~T|PEP6-8FV3|Boca de extracción de 100 mm de diámetro de conexión y 140 mm de diámetro exterior, de acero galvanizado con acabado pintado, fijada con tornillos a pared o techo y ajustada a caudales de salida|
+~T|PEZ1-6RX2|Carga de circuito refrigerante de gas refrigerante tipo R-32.
+Incluye limpieza interior circuito frigorífico hacer el vacío con bomba y pruebas necesarias.|
+~T|PF53-3C6S|Tubo de cobre R220 (recocido) de 12 mm de diámetro nominal, de 1 mm de espesor, según normaUNE-EN 1057, soldado por capilaridad, con grado de dificultad mediano y colocado empotrado|
+~T|PF56-FJEH|Tubo de cobre R250 (semiduro) de 22 mm de diámetro nominal, de 1 mm de espesor, según la norma UNE-EN 1057, soldado por capilaridad, con grado de dificultad mediano y colocado empotrado|
+~T|PG12-DH7C|Caja de derivación cuadrada de plástico, de 90x90 mm, con grado de protección IP-40, empotrada|
+~T|PG2N-EUJG|Tubo flexible corrugado de PVC, de 16 mm de diámetro nominal, aislante y no propagador de la llama, resistencia al impacto de 1 J, resistencia a compresión de 320 N y una rigidez dieléctrica de 2000 V, montado empotrado|
+~T|PG35-DYD7|Cable con conductor de cobre de tensión asignada inferior o igual a 450/750 V, de designación H07Z-K, construcción según norma UNE-EN 50525-3-41, unipolar, de sección 1x1,5 mm2, con aislamiento de poliolefinas, clase de reacción al fuego Dca-s2, d2, a2 según la norma UNE-EN 50575, con baja emisión humos, colocado en tubo|
+~T|PG6H-CUIO|Kit de mecanismos 2 elementos, con 2 interruptores, con marco y bastidor, empotrado|
+~T|PG6H-CUIX|Kit de mecanismos 3 elementos de doble tecla, con 6 interruptores, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF.|
+~T|PG6H-CUJ2|Kit de mecanismos interruptor de 1 elemento, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF.|
+~T|PG6H-CUJA|Kit de mecanismos 2 elementos, con 2 bases de enchufe, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF.|
+~T|PG6H-CUJP|Kit de mecanismos 1 elemento, con 1 toma RJ45, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF.|
+~T|PG6H-CUJQ|Kit de mecanismos 1 elemento, con 1 base de enchufe, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF.|
+~T|PG6H-CUJX|Kit de mecanismo 1 elemento, con 1 caja ciega, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF. Incluye corrugados y pasos necesarios indicados por la DF.|
+~T|PG70-78AA|Interruptor detector de movimiento de pared, de tipo universal, para cargas resistivas de hasta 1000 W de poténcia y 230 V de tensión de alimentación, de 10 a 300 s de tiempo de desconexión, sensibilidad de activación de 5 a 120 lx, precio superior, empotrado. Modelo Jung Home 1.1 o equivalente|
+~T|PG8C-HD15|Actuador para equipos DALI, sompuesto por:
+Fuente de alimentación DALI con interfaz USB integrada para montaje en carril DIN, modelo PS-DALILINK de la marca B.E.G o equivalente. Ref. 93189
+Kit de montaje en superficie para detectores empotrables PD4N-FT modelo  de la marca B.E.G o equivalente.. Ref. 93465.
+Detector de presencia con controlador de aplicación DALI integrado para un control eficiente de la iluminación modelo PD4N-M-DACO DALI-2 de la marca B.E.G o equivalente. Ref. 93460.
+Mando de control a distancia|
+~T|PH54-AJQC|Luz de emergencia no permanente y no estanca, con grado de protección IP4X, de forma rectangular con difusor y cuerpo de policarbonato, con lámpara fluorescente de 8 W, flujo aproximado de 170 a 200 lm, 2 h de autonomía, precio medio, colocada superficial|
+~T|PH54-AJQX|Luz de emergencia no permanente y no estanca, con grado de protección IP4X, de forma rectangular con difusor y cuerpo de policarbonato, con lámpara fluorescente de 8 W, flujo aproximado de 170 a 200 lm, 2 h de autonomía, precio medio, colocada superficial|
+~T|PH56-61US|Equipo autónomo de emergencia y señalización con 340 lúmenes y lámpara de LEDs marca Duisa modelo D-Ecold-320, colocada, tubo corrugado de PVC de DN 16 mm, conductor de cobre de designación H07Z-K unipolar de 1,5 mm2 de sección y caja de derivación cuadrada colocada empotrada|
+~T|PH56-61UX|Equipo autónomo de emergencia y señalización con 100 lúmenes y lámpara de LEDs marca Duisa modelo D-Ecold-90, colocada, tubo corrugado de PVC de DN 16 mm, conductor de cobre de designación H07Z-K unipolar de 1,5 mm2 de sección y caja de derivación cuadrada colocada empotrada|
+~T|PHN0-6U27|Aplique de exterior cilíndrico blanco modelo KOV 2L Aplique redondo blanco 2700K 14°/14° de FARO o equivalente.|
+~T|PHN0-H9X1|Apliques de superficie de techo de 100x60mm GU10 C2 de CELER o equivalente.|
+~T|PHN0-H9X2|Downlight Superficie de 292x15mm Slim Redondo de C2de CELER o equivalente.|
+~T|PHN0-H9X3|Portalámparas blanco mate de 70x60mm modelo TEN 70 de FARO o equivalente.
+Bombilla LED decorativa tipo globo opaca de 125mm de diámetro.|
+~T|PHN0-H9YX|Suministro e instalación de pantalla estanca Monoblock DALI 2 de 1220 a 1520 mm de longitud, de la marca CELER o equivalente, montada suspendida a más de 3 m de altura mediante subestructura metálica auxiliar de acero galvanizado, con perfiles, varillas roscadas, anclajes y elementos de fijación necesarios para su correcta sujeción, nivelación y estabilidad. Incluye montaje de la subestructura, fijación de la luminaria, conexionado eléctrico, regulación de altura, comprobación de funcionamiento y todos los materiales y trabajos necesarios para su completa instalación. |
+~T|PJ07-628M|Instalación de fontanería para cuarto higiénico, formado por 2 lavabos y 2  inodoros, no incluye sanitarios ni red de desagües, según planos, esquemas y memoria del proyecto. Formado por:
+- Llave de paso general.
+- Claves divisionarias de paso (agua fría y caliente) en lavabos e inodoros.
+- Red de agua para alimentación de los siguientes aparatos: 2 lavabaos, 2 inodoros y 1 caldera eléctrica.
+La red de fontanería interior estará empotrada o suspendida con tubos de polietileno reticulado con alma de aluminio PEX AL PEX. Los montantes verticales y horizontales se fijarán con bridas en las bases de soporte. Toda la tubería en el interior que no esté empotrada la pared se aislará con Armaflex de 9 mm de espesor en AF y con 19 mm de espesor en ACS. Las tuberías que vayan empotradas en la pared deben instalarse con tubo corrugado flexible de PVC de color azul por el AF y rojo por el ACS. El dimensionado de los tubos según lo indicado en los planos y esquemas de proyecto. Los tubos serán perfectamente lisos, de sección circular, y perfectamente calibrados. Las curvas se realizarán con codos y prendas especiales. Toda la instalación debe cumplir la normativa vigente. Incluye la tramitación con la compañía de la instalación según sus exigencias. La instalación quedará finalizada según la normativa de la compañía suministradora.
+
+Incluye las ayudas de albañilería necesarias:
+- Realización de agujeros y regatas por empotramientos que sean necesarios.
+- Tapado de agujeros y regatas.
+- Conexionado y sellado de todos los elementos.
+- Limpieza final y retirada de escombros y basura.|
+~T|PJ117-3BYD|Lavabo sobre encimera de 550x390x130mm, precio alto, apoyado sobre encimera o mueble, modelo The Gap Round de Roca o equivalente.|
+~T|PJ11C-3CWH|Inodoro completo compacto adosado a pared con salida dual (incluye taza, cisterna de alimentación inferior y tapa), precio alto, conectado a la red de evacuación, modelo The Gap Square de Roca o equivalente.|
+~T|PJ211-3E9P|Grifo de paso, empotrada, de latón cromado, precio alto, con salida de 1/2 y entrada de 1/2|
+~T|PJ219-3SGK|Grifería monomando empotrable para lavabo modelo Ona de Roca o equivalente., precio alto, con dos entradas de 1/2´´|
+~T|PJ21C-3SHO|Grifo mural de 1 agua con conexión a manguera, acabado cromado, modelo  03450102 de Tres.|
+~T|PJ3D-3FKU|Sifón de botella para lavabo, de latón cromado de diámetro 1´´1/4 con enlace de diámetro 30 mm, conectado a la red de pequeña evacuación|
+~T|PM32-DZ5C|Extintor manual de dióxido de carbono, de carga 5 kg, con presión incorporada, pintado, con soporte a pared|
+~T|PM32-DZ5H|Extintor manual de polvo seco polivalente, de carga 6 kg, con presión incorporada, pintado, con armario montado superficialmente|
+~T|PMS0-6Z8Z|Rótulo señalización salida de emergencia, rectangular, de 297x148 mm2 de panel de PVC de 0,7 mm de espesor, fotoluminiscente categoría B según UNE 23035-4, colocado fijado mecánicamente sobre paramento vertical|
+~T|PMS0-6Z90|Rótulo señalización instalación de protección contra incendios, cuadrado, de 210x210 mm2 de panel de PVC de 0,7 mm de espesor, fotoluminiscente categoría B según UNE 23035-4, colocado fijado mecánicamente sobre paramento vertical|
+~T|PPAUAB01|Partida alzada de abono íntegro para el cumplimiento de las medidas de seguridad y salud descritas en el Plan de Seguridad|
+~T|PPAUAB0X|Partida alzada de abono íntegro para el cumplimiento de la gestión de residuos descrito en el Estudio de Gestión de Residuos de Demolición y Construcción|
+~T|PQ14-H8SZ|Banco de bloque de hormigón de color blanco, tipo Sócrates de Escofet, o equivalente, acabado arenado e hidrofugado, de 240x60x46 cm, colocado sobre el pavimento con 3 anclajes químicos de diámetro 12mm. Incluye replanteo, medios auxiliares de elevación necesarios y transporte hasta su ubicación final.|
+~T|PY05-5CJ1|Abertura de roza en pared de ladrillo hueco, con medios manuales y tapada con mortero de cemento 1:4|
+~T|PZAAFS01|Suministro y ejecucion completa de derivacion privada de agua fria desde la instalacion existente de la nave hasta el anexo de aseos y patio, para alimentacion conjunta de aparatos sanitarios y red de riego, con longitud aproximada de 30 m, mediante tuberia de polietileno PE100 SDR11 PN16 de diametro exterior 40 mm, apta para agua de consumo humano, segun UNE-EN 12201, instalada enterrada aprovechando zanja ya abierta y parcialmente rellenada por la que discurre la red de saneamiento. Incluye localizacion del punto de conexion en red privada aguas abajo del contador, derivacion en te y adaptadores al material y diametro existente, llave de corte independiente y accesible en origen con enlaces, suministro y tendido de tuberia y piezas de union, cama y recubrimiento protector con material seleccionado, separacion y posicion relativa seguras respecto del saneamiento, cinta de senalizacion, paso de muro y sellado, pequenas operaciones puntuales de descubrimiento y preparacion de extremos, montaje, prueba de presion y estanqueidad antes del tapado, limpieza y puesta en servicio; completamente terminada y funcionando. Diametro y punto de conexion sujetos a comprobacion previa en obra del material y seccion de red existente, presion y caudales simultaneos.|
+~T|US110458| Precarga de nitrógeno a 25 atm. y pruebas de estanqueidad mínimo 48 horas.|
+~T|ZPAX003|Suministro y colocación de canalización metálica vista para paso de instalaciones, de 12,30 m de longitud total, formada por tubo circular de acero al carbono de diámetro exterior 139,7 mm y espesor 2,5 mm, con apertura longitudinal continua en su parte superior mediante corte y eliminación de una franja de 70 mm de anchura, formando una canal abierta para alojamiento de cables de instalaciones. Ejecución en varios tramos según necesidades de fabricación, transporte y montaje, con uniones entre tramos debidamente alineadas y rematadas. Incluye 12 soportes formados por varillas macizas de acero de diámetro 12 mm, soldadas perpendicularmente al tubo, con una separación aproximada de 1,10 m entre soportes, y fijadas al muro existente de ladrillo cerámico perforado tipo gero mediante sistema de anclaje químico homologado para fábrica cerámica, con varilla roscada y resina de inyección, incluyendo tamiz cuando sea necesario, según las características del soporte y las especificaciones del fabricante. Incluye perforaciones puntuales de diámetro 10 mm en la generatriz inferior del tubo para evacuación de posibles acumulaciones de agua, cortes, mecanizados, soldaduras, repasado y eliminación de rebabas y aristas cortantes, preparación de superficies, aplicación de imprimación anticorrosiva y acabado mediante dos manos de esmalte de poliuretano satinado, en color a definir por la Dirección Facultativa. Incluye materiales, mermas, transporte, fijaciones, montaje, nivelación y todos los trabajos necesarios para su completa ejecución. No incluye medios auxiliares de elevación, valorados en partida independiente.|
+~T|ZZZ10002|Cuadro eléctrico trifásico con 23 lineas
+Según esquema unifilar adjunto en proyecto|
+~T|ZZZ50001|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 25 mm². Unipolar|
+~T|ZZZ50003|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 35 mm². Unipolar|
+~T|ZZZ50004|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 1.5 mm². Unipolar|
+~T|ZZZ50005|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 4x1.5. Multiconductor|
+~T|ZZZ50006|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2.5 mm². Unipolar|
+~T|ZZZ50007|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x2.5. Multiconductor|
+~T|ZZZ50011|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 16 mm². Unipolar|
+~T|ZZZ50012|0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x1.5. Multiconductor|
+~M|01.01#\E93A000Z|1\1\|1|\\1\\\\|
+~M|01.01#\712AZ002|1\2\|1|\\1\\\\|
+~M|01.01#\712AZ003|1\3\|1|\\1\\\\|
+~M|01.01#\EGASOS10|1\4\|1|\\1\\\\|
+~M|01.01#\712A002Z|1\5\|1|\\1\\\\|
+~M|01.01#\712AZ001|1\6\|1|\\1\\\\|
+~M|01.02#\P2143-4RQT|2\1\|9.55|\Acceso\8.25\\\\\Mover bajantes pluviales\1\\\\\Fon\1.5\0.2\\\|
+~M|01.02#\P2143-4RR2|2\2\|3.9|\Baño y oficina\3.9\\\\|
+~M|01.02#\P214R-8GWY|2\3\|34.16|\Hueco 2\3.36\3.2\\\\CPM\0.95\1.3\\\\Reja aportación\0.5\0.5\\\\Fon\2.7\3\\\\\1.8\2.2\\\\\2.9\3.4\\\|
+~M|01.02#\DLP300142|2\4\|1|\\1\\\\|
+~M|01.02#\P2142-4RN5|2\5\|13.87|\\13.87\\\\|
+~M|01.02#\DIE040|2\6\|1|\\1\\\\|
+~M|01.02#\P21G1-4RU1|2\7\|10.8|\\2\5.4\\\|
+~M|01.02#\P21G1-4RU2|2\8\|3.85|\\1\3.85\\\|
+~M|01.02#\P221I-8GY9|2\9\|10.2|\\0.3\31\\\\\0.3\2\\\\\0.3\0.5\2\\|
+~M|01.02#\P214K-CRN1|2\10\|2|\\1\\\\\\0.5\\\\\\0.5\\\\|
+~M|01.02#\P5ZJR-HBNN|2\11\|4|\4 bajantes\4\\\\|
+~M|01.02#\P5ZJR-HBNQ|2\12\|68.4|\\36.8\\\\\\31.6\\\\|
+~M|01.03.01#\P6126-5A4X|3\1\1\|1|\\1\\\\|
+~M|01.03.01#\P6145-56HN|3\1\2\|3.4|\\1.9\1\\\\\1.5\1\\\|
+~M|01.03.02#\P87D-6RNI|3\2\1\|24|\\20\\\\\Canales cubierta\4\\\\|
+~M|01.03.02#\P874-HKTD|3\2\2\|167.24|\Fachada prinicpal\12.3\6.7\\\\Fchada lateral\27.42\5.8\0.7\\\\\\\\\DESCUENTOS\\\\\\Acceso\14\-1\\\\Ventana\5.1\-1\\\\Salida lateral\7.4\-1\\\|
+~M|01.03.02#\P89H-4V75|3\2\3\|218.66|\Fachada prinicpal\12.3\6.7\\\\Fchada lateral\27.42\5.8\1\\\\\\\\\DESCUENTOS\\\\\\Acceso\14\-1\\\\Ventana\5.1\-1\\\\Salida lateral\7.4\-1\\\\\\\\\\Rasilla\3.71\\\\|
+~M|01.03.02#\P811-3EQD|3\2\4\|41.94|\Fachada\12.3\1.15\\\\Lateral\27.5\1.3\\\\\\\\\\DESCUENTOS\\\\\\\4\1.15\-1\\\\3.2\1.05\-1\\|
+~M|01.03.02#\P4DB-4317|3\2\5\|20.34|\Ventana\0.8\2.3\2\\\\0.8\2.2\\\\Puerta\0.8\3.36\2\\\\0.8\3.2\\\\Fon\0.8\3\2\\\\0.8\2.7\\\|
+~M|01.03.02#\P453A-KG3J|3\2\6\|3.4||
+~M|01.03.02#\P4BD-43N1|3\2\7\|20.34|\01.02.02/P4DB-4317 Montaje+desmont.encofrado tablero,p/brancales\20.34\\\\|
+~M|01.03.02#\P4B7-3FPH|3\2\8\|98.79|\Ventana\1.5\2\8.9\\\Puerta\2.25\2\8.9\\\Fon\1.8\2\8.9\\\\\\\\|
+~M|01.03.02#\P9G7-9LSU|3\2\9\|3.26|\Ventana\0.88\\\\\Puerta\1.28\\\\\Fon\1.1\\\\|
+~M|01.03.02#\P8B1-6073|3\2\10\|6.98|\Rasilla cubierta\3.72\\\\\01.02.02/P9G7-9LSU Pavimento e=15cm hormigón con fibras HAF-30/A\3.26\\\\|
+~M|01.03.02#\P9VE-B6JX|3\2\11\|3.6|\\3.6\\\\|
+~M|01.03.02#\P9D3-35SU|3\2\12\|7.4|\Cornisa\3.7\2\\\|
+~M|01.03.02#\P811-3F8R|3\2\13\|1.2|\Hueco CGP\0.7\0.6\\\\\0.7\0.3\2\\\\0.6\0.3\2\\|
+~M|01.04.01#\P43N1-W0FD|4\1\1\|30.41|\Caja 1\6.4\2.3\\\\Caja 2\5.42\2.3\\\\Pared baño 1 (puertas)\3\2.3\\\\Pared baño 2 (transversal)\2\2.3\\\\\\\\\\DESCUENTOS\\\\\\Puertas\0.9\2.3\4\-1\|
+~M|01.04.01#\P43N1-W0FX|4\1\2\|20.01|\\\\\\\Armario\0.5\2.3\\\\Medianera baños vecino\5\2.3\\\\Medianera baños calle\3.2\2.3\\\|
+~M|01.04.01#\NAO03000000X|4\1\3\|30.41|\Caja 1\6.4\2.3\\\\Caja 2\5.42\2.3\\\\Pared baño 1 (puertas)\3\2.3\\\\Pared baño 2 (transversal)\2\2.3\\\\\\\\\\DESCUENTOS\\\\\\Puertas\0.9\2.3\4\-1\|
+~M|01.04.01#\NAO030000000|4\1\4\|20.01|\\\\\\\Armario\0.5\2.3\\\\Medianera baños vecino\5\2.3\\\\Medianera baños calle\3.2\2.3\\\|
+~M|01.04.01#\P43N1-W01X|4\1\5\|34||
+~M|01.04.01#\P43N1-W0X2|4\1\6\|94.2|\\\\\\\Perimetro techo\85\1\\\\Verticales\2.3\4\\\|
+~M|01.04.02#\P7D0-5RJN|4\2\1\|825.08|\PB\\\\\\Sala polivalente\69.15\2.3\\\\Oficina\5.07\2.3\\\\\\\\\\P1\87.73\3.1\\\\\\\\\\CERCHAS\\\\\\LATERALES\\\\\\\9.3\\\\\\7.4\\\\\\\\\\\DESCUENTOS\\\\\\Hueco acceso\8.44\-1\\\\Ventana\5.1\-1\\\\Salida lateral\10.75\-1\\\\\\\\\\CUBIERTA\390\\\\\\\\\\\\\\\\|
+~M|01.04.02#\K898X00P|4\2\2\|445.08|\PB\\\\\\Sala polivalente\69.15\2.3\\\\Oficina\5.07\2.3\\\\\\\\\\P1\87.73\3.1\\\\\\\\\\CERCHAS\\\\\\LATERALES\\\\\\\9.3\\\\\\7.4\\\\\\\\\\\DESCUENTOS\\\\\\Hueco acceso\8.44\-1\\\\Ventana\5.1\-1\\\\Salida lateral\10.75\-1\\\\\\\\\\INSTALACIONES\10\\\\|
+~M|01.04.02#\P864-AE5L|4\2\3\|63.41|\Tramo 1\47.28\\\\\Tramo 2\17.13\\\\\Tramo 3\3.2\\\\\\\\\\\Fon\-2.5\\\\\\-1.7\\\\|
+~M|01.04.02#\P864-REXX|4\2\4\|29.01|\Ext oficina\6.6\\\\\Int oficina\6.08\\\\\Ext baños\7\\\\\Int baños\6.93\\\\\\0.45\2\\\\Directo baño\1.5\\\\|
+~M|01.04.02#\P83EA-3Y8H|4\2\5\|19.32|\Baño 1\3.2\2.3\\\\Baño 2\5.2\2.3\\\|
+~M|01.04.02#\P822-3NQV|4\2\6\|12.86|\Baño 1\7.06\1.05\\\\Baño 2\7.01\1.05\\\\\\\\\\Puertas\0.91\1.05\-2\\|
+~M|01.04.02#\P89I-4V8S|4\2\7\|18.99|\Baño 1\7.06\1.35\\\\Baño 2\7.01\1.35\\\|
+~M|01.04.02#\P89B-4UEC|4\2\8\|96.22|\Cercha 1\11.3\0.12\\\\\11\1\\\\\11.3\0.5\\\\\\\\\\Cercha 2\12.1\0.12\\\\\12.1\1\\\\\\\\\\Cercha 3\13.25\0.12\\\\\13.25\1\\\\\\\\\\Cercha 4\14\0.12\\\\\14\1\\\\\\\\\\Cercha 5\14.82\0.12\\\\\14.82\1\\\\\\\\\\Cercha 6\15.66\0.12\\\\\15.66\1\\\|
+~M|01.04.02#\P8A2-HYMQ|4\2\9\|193.87|\Zocalo\67.61\1.95\\\\\\\\\\Caja\6.49\2.3\2\\\Baño ext\7.06\2.3\\\\Baño int\6.93\2.3\\\\\\\\\\\\\\\|
+~M|01.04.02#\P8E2-H7WD|4\2\10\|12.25|\Baño 1\6.15\\\\\Baño 2\6.1\\\\|
+~M|01.04.02#\P8A4-AKV8|4\2\11\|195.18|\01.03.02/P864-AE5L R02. Revestimiento vert.,h<3m, tricapa\67.61\1.9\\\\01.03.02/P864-REXX R03-R04-R05. Revestimiento vert.,h<3m, tricap\29.01\2.3\\\|
+~M|01.04.02#\P653-8NX1|4\2\12\|15.38|\2 baños\6.15\1.25\2\\|
+~M|01.05#\P9J4-9ESU|5\1\|4.18|\\4.18\\\\|
+~M|01.05#\P930-11A8F|5\2\|2.25|\\15\0.15\\\|
+~M|01.05#\P4B9-D6QO|5\3\|15|\\15\\\\|
+~M|01.05#\P9M3-XBVF|5\4\|383.5|\\383.5\\\\|
+~M|01.05#\P9D5-35ZC|5\5\|6.23|\Baño1\3.15\\\\\Baño\3.08\\\\|
+~M|01.05#\P9ER-HY9N|5\6\|4.8|\Calle zona acceso\12\0.4\\\|
+~M|01.06#\P43G-CW7B|6\1\|87.5|\Paneles\7\5\2.5\\|
+~M|01.06#\P84N-A82E|6\2\|4.07|\\4.07\\\\|
+~M|01.06#\P848-HCI5|6\3\|338.9|\\338.9\\\\\\\\\\|
+~M|01.06#\P848-HCX2|6\4\|274.7|\\4.1\67\\\|
+~M|01.06#\P848-HCIX|6\5\|217.47|\1\31.6\\\\\2\33.9\\\\\3\35.45\\\\\4\37.08\\\\\5\38.76\\\\\6\40.68\\\\\\\\\\\\\\\\|
+~M|01.06#\P430-6UIK|6\6\|0.22|\\11.2\0.12\0.08\2\|
+~M|01.06#\P8A2-HYMQ|6\7\|9.64|\Techo exterior\9.64\\\\\\\\\\\\\\\\|
+~M|01.06#\P8A4-AKV8|6\8\|83.02|\Techos interiores\36.69\2\\\\Techo exterior\9.64\\\\|
+~M|01.07#\P514-61T6|7\1\|9.52|\\9.52\\\\|
+~M|01.07#\P750-E81H|7\2\|9.52|\\9.52\\\\|
+~M|01.07#\P7ZB-AHFD|7\3\|12.4|\\12.4\\\\|
+~M|01.07#\P732-611O|7\4\|2.1|\Soportes máquinas cubierta\2.1\\\\|
+~M|01.07#\P630-ZBA7|7\5\|10.96|\Remate lateral canal fachada\27.4\0.4\\\|
+~M|01.07#\P547-6CHF|7\6\|11.5|\Reparación lateral panel sanwich cubierta\27.2\0.2\\\\\30.3\0.2\\\|
+~M|01.08.01#\PAF9-5TGM|8\1\1\|1||
+~M|01.08.01#\PAF9-5TG1|8\1\2\|1||
+~M|01.08.01#\PAFA-7R5M|8\1\3\|1||
+~M|01.08.01#\PAF9-5TGX|8\1\4\|1||
+~M|01.08.01#\PAF9-5TX1|8\1\5\|1||
+~M|01.08.02#\PAQ5-380F|8\2\1\|2|\\2\\\\|
+~M|01.08.02#\PAQ5-38X1|8\2\2\|2|\\2\\\\|
+~M|01.08.02#\PAQ5-38X2|8\2\3\|1|\\1\\\\|
+~M|01.08.02#\PAQ5-38X3|8\2\4\|1|\\1\\\\|
+~M|01.08.03#\P54A-61SI|8\3\1\|1||
+~M|01.08.03#\P54A-61SX|8\3\2\|1||
+~M|01.08.03#\P54A-61XX|8\3\3\|1||
+~M|01.08.03#\P54A-61X2|8\3\4\|1||
+~M|01.08.03#\P54A-61XZ|8\3\5\|1.82|\S04\1\\\\\Fon\0.82\\\\|
+~M|01.08.03#\E894XEAP|8\3\6\|11.37|\Marquesina\12.84\0.48\\\\Tubular\3.2\0.1\4\\\Puerta\0.7\0.7\\\\\\\\\\Maquinas clima\\\\\\IPE\1.95\\\\\Tubular\0.36\\\\\L\0.75\\\\\\0.38\\\\|
+~M|01.08.03#\P8B5-6NOI|8\3\7\|1.23|\S04\0.3\3.8\\\\Placa anclaje marquesina\0.3\0.3\\\|
+~M|01.08.03#\P54A-61X6|8\3\8\|2|\\2\\\\|
+~M|01.08.03#\P54A-61X3|8\3\9\|1||
+~M|01.08.03#\P54A-61X4|8\3\10\|1||
+~M|01.08.03#\P54A-61X5|8\3\11\|12||
+~M|01.08.03#\ZPAX003|8\3\12\|12.3||
+~M|01.09.01#\P8A1-KKJT|9\1\1\|0.75|\01.05.01/PAQ5-38XG M06. Mueble lavabo baño\\2\\\\01.08.01/PAQ5-38XG M07. Mueble lavabo baño\0.75\\\\|
+~M|01.09.01#\P848-HCHX|9\1\2\|9.5|\M06\3.6\2\\\\M07\2.3\\\\|
+~M|01.09.01#\PAQ5-38XB|9\1\3\|8|\M02\1\\\\\M03\1\\\\\M07\1.5\4\\\|
+~M|01.09.01#\PAQ5-38XA|9\1\4\|5.2|\\2.46\2\\\\\0.14\2\\\|
+~M|01.09.01#\PAQ5-38XC|9\1\5\|0.6|\\0.6\\\\|
+~M|01.09.01#\PAQ5-38XD|9\1\6\|1.5|\\1.5\\\\|
+~M|01.09.01#\PAQ5-38XE|9\1\7\|4.08|\\1.2\2\\\\\0.18\4\\\\\0.16\6\\\|
+~M|01.09.01#\PAQ5-38XH|9\1\8\|2.42|\\2\0.8\\\\\0.71\0.4\2\\\\1.68\0.15\\\|
+~M|01.09.01#\PAQ5-38XF|9\1\9\|2.05|\\1.4\\\\\\0.65\\\\\\\\\\|
+~M|01.09.01#\PAQ5-38XG|9\1\10\|0.75|\\0.75\\\\\\\\\\\\\\\\|
+~M|01.09.01#\P8A2-HYMQ|9\1\11\|15.85|\01.08.01/PAQ5-38XA M01. Panel de exposición formado por tableros\5.2\\\\\01.08.01/PAQ5-38XC M02. Plataforma de soporte para máquina de ex\0.6\\\\\01.08.01/PAQ5-38XD M03. Plataforma de soporte para máquina de ex\1.5\\\\\01.08.01/PAQ5-38XE M04. Banco para exposicón fromado por 6 panel\4.08\\\\\01.08.01/PAQ5-38XH M05. Mesa para catas formado por 4 paneles de\2.42\\\\\01.08.01/PAQ5-38XF M06. Mostrador de acceso de 2 baldas\2.05\\\\\\\\\\|
+~M|01.09.02#\PJ11C-3CWH|9\2\1\|2|\\2\\\\|
+~M|01.09.02#\PJ117-3BYD|9\2\2\|2|\\2\\\\|
+~M|01.09.02#\PJ219-3SGK|9\2\3\|2|\\2\\\\|
+~M|01.09.02#\PJ21C-3SHO|9\2\4\|1|\\1\\\\|
+~M|01.09.02#\PJ3D-3FKU|9\2\5\|2|\\2\\\\|
+~M|01.09.02#\EJ46U020|9\2\6\|2||
+~M|01.09.02#\EJ46U015|9\2\7\|2||
+~M|01.09.02#\EJ46X001|9\2\8\|2||
+~M|01.09.02#\EJ46X002|9\2\9\|2||
+~M|01.09.02#\EJ46X003|9\2\10\|2||
+~M|01.09.02#\EJ46X004|9\2\11\|1||
+~M|01.09.02#\EJ46X005|9\2\12\|1||
+~M|01.09.02#\EJ46X006|9\2\13\|1||
+~M|01.09.02#\EJ46X007|9\2\14\|2||
+~M|01.09.02#\EJ46X008|9\2\15\|12||
+~M|01.09.02#\EJ46X009|9\2\16\|1||
+~M|01.0A.01#\PE22-367V|10\1\1\|1||
+~M|01.0A.01#\PJ07-628M|10\1\2\|1||
+~M|01.0A.01#\PZAAFS01|10\1\3\|1||
+~M|01.0A.02.01#\EG1NX122|10\2\1\1\|1||
+~M|01.0A.02.02#\ZZZ10002|10\2\2\1\|1||
+~M|01.0A.02.02#\ZZZ50001|10\2\2\2\|260||
+~M|01.0A.02.02#\ZZZ50003|10\2\2\3\|300||
+~M|01.0A.02.02#\ZZZ50004|10\2\2\4\|50||
+~M|01.0A.02.02#\ZZZ50005|10\2\2\5\|50||
+~M|01.0A.02.02#\ZZZ50006|10\2\2\6\|370||
+~M|01.0A.02.02#\ZZZ50007|10\2\2\7\|380||
+~M|01.0A.02.02#\ZZZ50011|10\2\2\8\|100||
+~M|01.0A.02.02#\ZZZ50012|10\2\2\9\|280||
+~M|01.0A.02.02#\E6148656|10\2\2\10\|20||
+~M|01.0A.02.02#\E6148658|10\2\2\11\|90||
+~M|01.0A.02.02#\E6148659|10\2\2\12\|480||
+~M|01.0A.02.02#\E6148677|10\2\2\13\|5||
+~M|01.0A.02.02#\ELCT032|10\2\2\14\|1||
+~M|01.0A.02.03#\E6148675|10\2\3\1\|5||
+~M|01.0A.02.03#\E6148676|10\2\3\2\|1||
+~M|01.0A.02.04#\PG6H-CUJA|10\2\4\1\|9|\Espacio expositivo\7\\\\\Oficina\2\\\\|
+~M|01.0A.02.04#\PG6H-CUJQ|10\2\4\2\|3|\Proyector\1\\\\\Baño\2\\\\|
+~M|01.0A.02.04#\PG6H-CUJP|10\2\4\3\|2||
+~M|01.0A.02.04#\PG6H-CUJ2|10\2\4\4\|2||
+~M|01.0A.02.04#\PG6H-CUIX|10\2\4\5\|1||
+~M|01.0A.02.04#\PG70-78AA|10\2\4\6\|3||
+~M|01.0A.02.04#\PG6H-CUIO|10\2\4\7\|2||
+~M|01.0A.02.04#\PG6H-CUJX|10\2\4\8\|3||
+~M|01.0A.03#\PHN0-H9YX|10\3\1\|72||
+~M|01.0A.03#\PHN0-H9X1|10\3\2\|3||
+~M|01.0A.03#\PHN0-H9X2|10\3\3\|1||
+~M|01.0A.03#\PHN0-H9X3|10\3\4\|7||
+~M|01.0A.03#\PG8C-HD15|10\3\5\|1||
+~M|01.0A.03#\PHN0-6U27|10\3\6\|2||
+~M|01.0A.04.01#\GV001|10\4\1\1\|1||
+~M|01.0A.04.02#\ICR03003C307|10\4\2\1\|6||
+~M|01.0A.04.02#\ICR05020799X|10\4\2\2\|1||
+~M|01.0A.04.02#\PEP6-8FV3|10\4\2\3\|2||
+~M|01.0A.04.02#\ICR070079904|10\4\2\4\|1||
+~M|01.0A.04.02#\PE40-60DD|10\4\2\5\|1||
+~M|01.0A.04.02#\ICR03003C30X|10\4\2\6\|6||
+~M|01.0A.04.03#\E6148664|10\4\3\1\|32.3|\\29.8\\\\\\2\\\\\\0.5\\\\|
+~M|01.0A.04.03#\E614867X|10\4\3\2\|2||
+~M|01.0A.04.03#\IVV030000000|10\4\3\3\|10.8|\\4.4\\\\\\3.2\2\\\|
+~M|01.0A.04.04#\PEJ4-48CY|10\4\4\1\|3||
+~M|01.0A.05.01#\BCD001|10\5\1\1\|2||
+~M|01.0A.05.02#\ICR03003C307|10\5\2\1\|6||
+~M|01.0A.05.02#\ICR050207990|10\5\2\2\|1||
+~M|01.0A.05.03#\E61486X7|10\5\3\1\|32.9|\\26.4\\\\\\2\\\\\\1\\\\\\2.5\\\\\\1\\\\|
+~M|01.0A.05.04#\EFB45357|10\5\4\1\|30|\\10\\\\\\5\\\\\\\\\\\\15\\\\|
+~M|01.0A.05.04#\EF5BXX01|10\5\4\2\|20||
+~M|01.0A.05.04#\EF5BXX02|10\5\4\3\|30||
+~M|01.0A.05.05#\US110458|10\5\5\1\|2||
+~M|01.0A.05.05#\PEZ1-6RX2|10\5\5\2\|4|\\2\2\\\|
+~M|01.0A.06#\PD18-8D4X|10\6\1\|1|\\1\\\\|
+~M|01.0A.06#\PD18-8D5M|10\6\2\|15.24|\\15.24\\\\|
+~M|01.0A.06#\PD18-8D50|10\6\3\|26.8|\colectores\13.4\\\\\\2\\\\\\\\\\\bajantes\5.7\2\\\|
+~M|01.0A.06#\PD16-HAWZ|10\6\4\|11.5|\\5.75\\2\\\\\\\\|
+~M|01.0A.06#\PD54-10MWK|10\6\5\|1|\\1\\\\|
+~M|01.0A.06#\PD31-56AD|10\6\6\|1|\\1\\\\|
+~M|01.0A.07#\PM32-DZ5H|10\7\1\|2|\\2\\\\|
+~M|01.0A.07#\PM32-DZ5C|10\7\2\|1||
+~M|01.0A.07#\PMS0-6Z8Z|10\7\3\|2|\\2\\\\|
+~M|01.0A.07#\PMS0-6Z90|10\7\4\|2|\\2\\\\|
+~M|01.0A.07#\PH56-61US|10\7\5\|5||
+~M|01.0A.07#\PH56-61UX|10\7\6\|2||
+~M|01.0B#\PQ14-H8SZ|11\1\|1||
+~M|01.0B#\PB90-FK6V|11\2\|15||
+~M|01.0B#\CL40-00J3|11\3\|110|\\\110\\\|
+~M|01.0B#\C152-003B|11\4\|6||
+~M|01.0C#\PPAUAB0X|12\1\|1||
+~M|01.0D#\PPAUAB01|13\1\|0.97||

@@ -68,6 +68,10 @@ Modelos 3D (bicicleta de carretera de cenital.org, 113 piezas con STL, plano PDF
 
 Para un presupuesto real de obra, contactar con la empresa (teléfono o WhatsApp de arriba).
 
+## Licitaciones públicas (gratis)
+
+- [Presupuestos de licitaciones en BC3, CSV y JSON](https://www.obratudela.com/licitaciones/) · [índice JSON](https://www.obratudela.com/licitaciones/indice.json)
+
 ## Más información
 
 - [Obras y reformas realizadas](https://www.obratudela.com/pages/obras.html)

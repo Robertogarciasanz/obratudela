@@ -1,0 +1,806 @@
+{
+ "expediente": "2026/17413",
+ "organismo": "Vicepresidencia del Consejo Insular de Aguas de Fuerteventura",
+ "titulo": "Ejecución de desarenadores, hidrotecnias y accesos rodados en la canalización hidráulica del barranco del Ciervo, en el ámbito de Morro Jable, T.M. Pájara (Fuerteventura)",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1845869.51 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=40oTrrMeZLN3T7f7bwayJiwyc%2BfDE9yHIZVDdVEkBwA7JiFW/S4/DKOOm5UC/hEdJtufaFnNLrCGFg2m%2B90PpttxO9QdvVs08UPY/mS65nl45ClyWkoJ44mKM70IFcOu",
+ "archivo_origen": "2026_17413_Presupuesto.bc3",
+ "total_bc3": 1551150.85,
+ "suma_partidas": 1551150.85,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "C.01",
+   "resumen": "DEMOLICIONES Y LEVANTES",
+   "importe": 6526.36
+  },
+  {
+   "codigo": "C.02",
+   "resumen": "MOVIMIENTO DE TIERRAS",
+   "importe": 775100.57
+  },
+  {
+   "codigo": "C.03",
+   "resumen": "HORMIGÓN",
+   "importe": 585065.18
+  },
+  {
+   "codigo": "C.04",
+   "resumen": "ENCOFRADOS",
+   "importe": 28126.38
+  },
+  {
+   "codigo": "C.05",
+   "resumen": "SEÑALIZACIÓN",
+   "importe": 7803.6
+  },
+  {
+   "codigo": "C.06",
+   "resumen": "CERRAJERÍA",
+   "importe": 74668.67
+  },
+  {
+   "codigo": "C.07",
+   "resumen": "SEGURIDAD Y SALUD",
+   "importe": 28918.06
+  },
+  {
+   "codigo": "C.08",
+   "resumen": "GESTIÓN DE RESIDUOS",
+   "importe": 7338.62
+  },
+  {
+   "codigo": "C.09",
+   "resumen": "CONTROL DE CALIDAD",
+   "importe": 22603.41
+  },
+  {
+   "codigo": "C.10",
+   "resumen": "PARTIDA ALZADA A JUSTIFICAR",
+   "importe": 15000.0
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "DEMOLICIONES Y LEVANTES > DEMOLICIÓN DE ESTRUCTURAS",
+   "codigo": "C.01.01.01",
+   "unidad": "m3",
+   "resumen": "DEMOLICIÓN MURO DE HORMIGÓN",
+   "cantidad": 82.31,
+   "precio": 79.29,
+   "importe": 6526.36,
+   "descripcion": "Demolición de muro de hormigón. ejecutada con retroexcavadora con martillo rompedor, incluso acopio de escombros a pié de carga y p.p. de medios auxiliares y de seguridad. Medido vulumen inicial."
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS > DESMONTES",
+   "codigo": "C.02.01.01",
+   "unidad": "m3",
+   "resumen": "DESMONTE EN TODO TIPO DE TERRENO",
+   "cantidad": 83931.41,
+   "precio": 8.82,
+   "importe": 740275.04,
+   "descripcion": "Desmonte en todo tipo de terreno terreno, con medios mecánicos, incluso empleo de martillo, transporte de los productos de la excavación a vertedero o lugar de empleo, hasta 100 km. de distancia."
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS > TERRAPLENES",
+   "codigo": "C.02.02.01",
+   "unidad": "m3",
+   "resumen": "TERRAPLÉN DE LA EXCAVACIÓN",
+   "cantidad": 5167.45,
+   "precio": 3.9,
+   "importe": 20153.06,
+   "descripcion": "Terraplén con productos procedentes de la excavación incluye extendido, humectación y compactación al 95 % PM, incluso perfilado de taludes, rasanteo de la superficie de coronación y preparación de la superficie de asiento, terminado."
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS > EXCAVACIÓN EN CIMIENTOS",
+   "codigo": "C.02.03.01",
+   "unidad": "m3",
+   "resumen": "EXCAVACIÓN CIMIENTOS TERRENO DE TRÁNSITO",
+   "cantidad": 1461.64,
+   "precio": 9.86,
+   "importe": 14411.77,
+   "descripcion": "Excavación en cimientos en terreno de tránsito, incluso carga y transporte de los productos de la excavación a vertedero o lugar de empleo."
+  },
+  {
+   "capitulo": "MOVIMIENTO DE TIERRAS > EXCAVACIÓN EN ZANJAS",
+   "codigo": "C.02.04.01",
+   "unidad": "m3",
+   "resumen": "EXCAV.ZANJA TERRENO TRÁNSITO",
+   "cantidad": 26.44,
+   "precio": 9.86,
+   "importe": 260.7,
+   "descripcion": "Excavación en zanja en terreno de tránsito, incluso carga y transporte de los productos de la excavación a vertedero o lugar de empleo."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN MUROS",
+   "codigo": "C.03.01.01",
+   "unidad": "m3",
+   "resumen": "HORMIGÓN EN CIMIENTOS",
+   "cantidad": 441.64,
+   "precio": 257.42,
+   "importe": 113686.97,
+   "descripcion": "Hormigón en masa HM-30 N/mm2, consistencia blanda, Tmáx.20 mm., para corrosión por cloruros , elaborado en central en cimientos, incluso vertido por medio de camión-bomba, vibrado y colocado. Según normas NTE-CCM , EHE y CTE-SE-C."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN MUROS",
+   "codigo": "C.03.01.02",
+   "unidad": "m3",
+   "resumen": "HORMIGÓN EN MUROS",
+   "cantidad": 717.2,
+   "precio": 269.21,
+   "importe": 193077.41,
+   "descripcion": "Hormigón en masa HM-30 N/mm2, consistencia blanda, Tmáx.20 mm., para corrosión por cloruros , elaborado en central en muros, incluso vertido por medio de camión-bomba, vibrado y colocado. Según normas NTE-CCM , EHE y CTE-SE-C."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN MUROS",
+   "codigo": "C.03.01.03",
+   "unidad": "m2",
+   "resumen": "HORMIGÓN DE LIMPIEZA",
+   "cantidad": 566.06,
+   "precio": 47.93,
+   "importe": 27131.26,
+   "descripcion": "Hormigón en masa HM-15 N/mm2, consistencia blanda, Tmáx.20 mm., sulforresistente, de 20 cm de espesor, elaborado en central para limpieza y nivelado de fondos de cimentación, incluso vertido por medios manuales y colocación."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN MUROS",
+   "codigo": "C.03.01.04",
+   "unidad": "m3",
+   "resumen": "HORMIGÓN EN ESPALDÓN",
+   "cantidad": 383.1,
+   "precio": 178.43,
+   "importe": 68356.53,
+   "descripcion": "Hormigón ciclópeo en espaldón de muros con un 60% de hormigón en masa HM-25/B/20/IIIa y un 40% de piedra en rama tamaño máximo 50 cm, incluso vertido por medio de camión-bomba, colocación de la piedra, vibrado, vertido y curado. Según normas NTE-CCM , EHE y CTE-SE-C."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN SOLERAS",
+   "codigo": "C.03.02.01",
+   "unidad": "m2",
+   "resumen": "SOL. ARM. HA-30, 20#15x15x8",
+   "cantidad": 2831.64,
+   "precio": 57.43,
+   "importe": 162621.09,
+   "descripcion": "Solera de hormigón armado de 20 cm. de espesor, realizada con hormigón HA-30/B/20/IIIa, de central, i/vertido, curado, colocación y armado con # 15x15/8, p.p. de juntas, aserrado de las mismas y fratasado.Según la normativa en vigor EHE-08 y DB-SE-C."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN SOLERAS",
+   "codigo": "C.03.02.03",
+   "unidad": "m3",
+   "resumen": "HORMIGÓN HM-25/B/20/IIIa",
+   "cantidad": 19.22,
+   "precio": 238.73,
+   "importe": 4588.39,
+   "descripcion": "Hormigón ciclópeo en cimientos con un 60% de hormigón en masa HM-25/B/20/IIIa y un 40 % de piedra en rama tamaño máximo 40 cm, incluso vertido y curado. s/ EHE-08."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN HIDROTECNIAS",
+   "codigo": "C.03.03.01",
+   "unidad": "m3",
+   "resumen": "HORMIGÓN CICLÓPEO HM-25/B/20/IIIa",
+   "cantidad": 50.29,
+   "precio": 203.51,
+   "importe": 10234.52,
+   "descripcion": "Hormigón ciclópeo en muros con un 60% de hormigón en masa HM-25/B/20/IIIa y un 40% de piedra en rama tamaño máximo 30 cm, incluso vertido por medio de camión-bomba, colocación de la piedra, vibrado, vertido y curado. Según normas NTE-CCM , EHE y CTE-SE-C."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN HIDROTECNIAS",
+   "codigo": "C.03.03.02",
+   "unidad": "ml.",
+   "resumen": "GUARDATUBOS D= 400mm",
+   "cantidad": 8.0,
+   "precio": 41.51,
+   "importe": 332.08,
+   "descripcion": "ml. de suministro y colocación de guardatubos en zanja consistente en tubería de P.V.C de 400 mm. de diámetro, de 8 kN/m2 de rigidez circunferencial, corrugada exterior y lisa interior, con juntas elásticas, i/. p.p. de montaje, solapes de tubos y pequeño material, formación de pendientes; totalmente terminada,conexionada, colocada y probada."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN MURETES LATERALES",
+   "codigo": "C.03.04.02",
+   "unidad": "m3",
+   "resumen": "HORMIGÓN HA-30/B/20/IIIa",
+   "cantidad": 18.54,
+   "precio": 255.35,
+   "importe": 4734.19,
+   "descripcion": "Hormigón en masa HA-30 N/mm2, consistencia blanda, Tmáx.20 mm., para corrosión por cloruros , elaborado en central en muros, incluso vertido por medio de camión-bomba, vibrado y colocado. Según normas NTE-CCM , EHE y CTE-SE-C."
+  },
+  {
+   "capitulo": "HORMIGÓN > HORMIGÓN EN MURETES LATERALES",
+   "codigo": "C.03.04.03",
+   "unidad": "m2",
+   "resumen": "ME 15x15 A Ø 8-8 B500S 6x2,2",
+   "cantidad": 48.75,
+   "precio": 6.21,
+   "importe": 302.74,
+   "descripcion": "Malla electrosoldada en cuadrícula 15x15 cm. con acero corrugado de Ø 8 mm. B 500 S, de dimensiones 6x2,2 m. Totalmente colocado en obra, i/p.p. de alambre de atar. Según normas EHE - 08 y DB-SE-A."
+  },
+  {
+   "capitulo": "ENCOFRADOS > ENCOFRADOS",
+   "codigo": "C.04.01.01",
+   "unidad": "m2",
+   "resumen": "ENCOFRADO VISTO HIDROTECNIAS",
+   "cantidad": 93.53,
+   "precio": 25.88,
+   "importe": 2420.56,
+   "descripcion": "Encofrado y desencofrado con madera suelta en zanjas, considerando 4 posturas. Según NTE-EME."
+  },
+  {
+   "capitulo": "ENCOFRADOS > ENCOFRADOS",
+   "codigo": "C.04.01.02",
+   "unidad": "m2",
+   "resumen": "ENCOFRADO VISTO MURETES LATERALES",
+   "cantidad": 18.6,
+   "precio": 25.88,
+   "importe": 481.37,
+   "descripcion": "Encofrado y desencofrado con madera suelta en zanjas, considerando 4 posturas. Según NTE-EME."
+  },
+  {
+   "capitulo": "ENCOFRADOS > ENCOFRADOS",
+   "codigo": "C.04.01.03",
+   "unidad": "m2",
+   "resumen": "ENCOFRADO VISTO MUROS HORMIGÓN",
+   "cantidad": 374.25,
+   "precio": 67.4,
+   "importe": 25224.45,
+   "descripcion": "Encofrado y desencofrado a dos caras, en muros con paneles metálicos modulares hasta 6 m. de altura y 50 posturas. Según EHE-08 y DB-SE-C."
+  },
+  {
+   "capitulo": "SEÑALIZACIÓN > SEÑALIZACIÓN VERTICAL",
+   "codigo": "C.05.01.01",
+   "unidad": "ud",
+   "resumen": "SEÑAL CIRCULAR REFLEXIVA E.G. D=60 cm.",
+   "cantidad": 4.0,
+   "precio": 212.23,
+   "importe": 848.92,
+   "descripcion": "Señal circular de diámetro 60 cm., reflexiva nivel I (E.G.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada."
+  },
+  {
+   "capitulo": "SEÑALIZACIÓN > SEÑALIZACIÓN VERTICAL",
+   "codigo": "C.05.01.02",
+   "unidad": "ud",
+   "resumen": "SEÑAL TRIANGULAR REFLEXIVA E.G. L=70 cm.",
+   "cantidad": 4.0,
+   "precio": 232.53,
+   "importe": 930.12,
+   "descripcion": "Señal triangular de lado 70 cm., reflexiva nivel I (E.G.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada."
+  },
+  {
+   "capitulo": "SEÑALIZACIÓN > CARTEL DE OBRA",
+   "codigo": "C.05.02.01",
+   "unidad": "ud",
+   "resumen": "CARTEL DE OBRA 2,1X1,4 m",
+   "cantidad": 1.0,
+   "precio": 853.81,
+   "importe": 853.81,
+   "descripcion": "Suministro e instalación de un cartel informativo de la obra, que consistirá mediante panel en chapa de acero galvanizada y perfilada de 2,10 x 1,40 m colocado sobre postes de 3 m de altura, desde la rasante a la base del cartel, (4,5 m en total), anclado al suelo mediante dos dados de hormigón H-20 de 60X60X60 cm."
+  },
+  {
+   "capitulo": "SEÑALIZACIÓN > SEÑALIZACIÓN TERRAPLÉN",
+   "codigo": "C.05.03.01",
+   "unidad": "ud",
+   "resumen": "PERFÍL HUECO CUADRADO 100.3",
+   "cantidad": 37.0,
+   "precio": 139.75,
+   "importe": 5170.75,
+   "descripcion": ""
+  },
+  {
+   "capitulo": "CERRAJERÍA > PUERTA",
+   "codigo": "C.06.01.01",
+   "unidad": "ud",
+   "resumen": "PUERTA 4,00x2,00. 40/14 STD",
+   "cantidad": 1.0,
+   "precio": 1421.6,
+   "importe": 1421.6,
+   "descripcion": "Puerta de 1 hoja de 4,00x2,00 m. para cerramiento exterior, con bastidor de tubo de acero laminado en frío de 40x40 mm. y malla S/T galvanizada en caliente 40/14 STD, i/herrajes de colgar y seguridad, parador de pie y tope, elaborada en taller, ajuste y montaje en obra."
+  },
+  {
+   "capitulo": "CERRAJERÍA > VALLADO PERIMETRAL",
+   "codigo": "C.06.02.01",
+   "unidad": "ml",
+   "resumen": "MALLA S/T. PLASTIF. 40/14-17 H=2,00",
+   "cantidad": 1923.0,
+   "precio": 38.09,
+   "importe": 73247.07,
+   "descripcion": "Vallado de 2,00 m. de altura realizado con malla simple torsión plastificada en verde, de trama 40/14-17 y postes de tubo de acero galvanizado por inmersión de 48 mm. de diámetro, p.p. de postes de esquina, jabalcones y tornapuntas, tensores, grupillas y accesorios, totalmente montada i/ replanteo y recibido de postes con hormigón HM-20/P/20/I de central, incluso excavación con ahoyadora de gasolina, totalmente terminado."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS01",
+   "unidad": "ud",
+   "resumen": "Casco de seguridad homologado",
+   "cantidad": 15.0,
+   "precio": 11.38,
+   "importe": 170.7,
+   "descripcion": "Casco de seguridad homologado."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS02",
+   "unidad": "ud",
+   "resumen": "Mono de trabajo",
+   "cantidad": 15.0,
+   "precio": 16.43,
+   "importe": 246.45,
+   "descripcion": "Mono o buzo de trabajo."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS03",
+   "unidad": "ud",
+   "resumen": "Impermeable",
+   "cantidad": 9.0,
+   "precio": 22.19,
+   "importe": 199.71,
+   "descripcion": "Impermeable."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS04",
+   "unidad": "ud",
+   "resumen": "Mascarilla antipolvo",
+   "cantidad": 15.0,
+   "precio": 7.38,
+   "importe": 110.7,
+   "descripcion": "Mascarilla respiración antipolvo."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS05",
+   "unidad": "ud",
+   "resumen": "Gafa antipolvo y anti-impactos",
+   "cantidad": 15.0,
+   "precio": 18.15,
+   "importe": 272.25,
+   "descripcion": "Gafa antipolvo y anti-impactos."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS06",
+   "unidad": "ud",
+   "resumen": "Protector auditivo",
+   "cantidad": 15.0,
+   "precio": 29.11,
+   "importe": 436.65,
+   "descripcion": "Protector auditivo auricular 33 dB según normativa."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS07",
+   "unidad": "ud",
+   "resumen": "Par guantes de goma finos",
+   "cantidad": 30.0,
+   "precio": 3.82,
+   "importe": 114.6,
+   "descripcion": "Par de guantes de goma finos."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS08",
+   "unidad": "ud",
+   "resumen": "Par botas impermeables",
+   "cantidad": 9.0,
+   "precio": 15.25,
+   "importe": 137.25,
+   "descripcion": "Par botas impermeables al agua y a la humedad."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS09",
+   "unidad": "ud",
+   "resumen": "Chaleco reflectante",
+   "cantidad": 15.0,
+   "precio": 24.08,
+   "importe": 361.2,
+   "descripcion": "Chaleco reflectante"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS10",
+   "unidad": "ud",
+   "resumen": "Par botas de seguridad de cuero",
+   "cantidad": 15.0,
+   "precio": 67.68,
+   "importe": 1015.2,
+   "descripcion": "Par botas de seguridad de cuero."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS11",
+   "unidad": "ud",
+   "resumen": "Par guantes resistencia al corte",
+   "cantidad": 9.0,
+   "precio": 11.93,
+   "importe": 107.37,
+   "descripcion": "Par de guantes de cuero."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS12",
+   "unidad": "ud",
+   "resumen": "Filtro para mascarilla antipolvo",
+   "cantidad": 30.0,
+   "precio": 4.3,
+   "importe": 129.0,
+   "descripcion": "Filtro para mascarilla antipolvo."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS13",
+   "unidad": "ud",
+   "resumen": "Cinturón de seguridad y arnes",
+   "cantidad": 6.0,
+   "precio": 63.09,
+   "importe": 378.54,
+   "descripcion": "Cinturón de seguridad de sujeción y homologado."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS14",
+   "unidad": "ud",
+   "resumen": "Par guantes dieléctricos",
+   "cantidad": 7.0,
+   "precio": 63.44,
+   "importe": 444.08,
+   "descripcion": "Par de guantes dieléctricos."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "MS15",
+   "unidad": "ud",
+   "resumen": "Par botas dieléctricas",
+   "cantidad": 4.0,
+   "precio": 68.9,
+   "importe": 275.6,
+   "descripcion": "Par botas dieléctricas."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS16",
+   "unidad": "ud",
+   "resumen": "Señal circular o triangular",
+   "cantidad": 4.0,
+   "precio": 46.79,
+   "importe": 187.16,
+   "descripcion": "Señal de peligro de 90 cm., reflexiva, con trípode metálico, incluida la colocación. (Imputación de 1/3 del coste de adquisición)"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS17",
+   "unidad": "ud",
+   "resumen": "Cartel metálico indicativo de riesgo de 700X100 cm",
+   "cantidad": 4.0,
+   "precio": 12.0,
+   "importe": 48.0,
+   "descripcion": "Cartel metálico indicativo de riesgo de 30x30 cm incluida la colocación."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS18",
+   "unidad": "m",
+   "resumen": "Cinta de balizamiento",
+   "cantidad": 1000.0,
+   "precio": 2.55,
+   "importe": 2550.0,
+   "descripcion": "Cinta de balizamiento, incluido soporte, colocación y desmontaje."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS19",
+   "unidad": "h",
+   "resumen": "Mano de obra de señalista.",
+   "cantidad": 12.0,
+   "precio": 17.82,
+   "importe": 213.84,
+   "descripcion": "Mano de obra de señalista."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS20",
+   "unidad": "h",
+   "resumen": "Camión de riego.",
+   "cantidad": 12.0,
+   "precio": 88.03,
+   "importe": 1056.36,
+   "descripcion": "Camión de riego."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS21",
+   "unidad": "ud",
+   "resumen": "Pasarela para paso sobre zanjas",
+   "cantidad": 2.0,
+   "precio": 13.0,
+   "importe": 26.0,
+   "descripcion": "Pasarela para paso sobre zanjas y cubrición de huecos horizontales formada por tablones de madera."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS22",
+   "unidad": "ud",
+   "resumen": "Topes para camiones",
+   "cantidad": 4.0,
+   "precio": 30.0,
+   "importe": 120.0,
+   "descripcion": "Topes de desplazamiento para camiones incluido montaje y desmontaje."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS23",
+   "unidad": "m",
+   "resumen": "Malla de polietileno de color naranja de 1.20 m. de altura",
+   "cantidad": 700.0,
+   "precio": 2.53,
+   "importe": 1771.0,
+   "descripcion": "Malla de polietileno tipo Masnet de color naranja de 1.20 m. de altura y equipo de montantes metálicos, totalmente instalada."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS24",
+   "unidad": "ms",
+   "resumen": "Comité de Seguridad y Salud",
+   "cantidad": 15.0,
+   "precio": 140.0,
+   "importe": 2100.0,
+   "descripcion": "Comité de seguridad y salud"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES COLECTIVAS",
+   "codigo": "MS39",
+   "unidad": "m",
+   "resumen": "Red de seguridad vert perímetro. pescante tipo horca",
+   "cantidad": 166.0,
+   "precio": 30.84,
+   "importe": 5119.44,
+   "descripcion": "Red de seguridad vertical en perímetro, de malla de polipropileno # 100 mm, con D de cuerda de malla 4,5 mm y cuerda perimetral D 12 mm, (amortización = 30%), colocada con pescante metálico tipo horca, anclaje de red a forjado, incluso colocación y desmontado."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIÓN DE INSTALACIONES",
+   "codigo": "MS25",
+   "unidad": "ud",
+   "resumen": "Instalación de toma de tierra",
+   "cantidad": 1.0,
+   "precio": 150.0,
+   "importe": 150.0,
+   "descripcion": "Instalación de toma de tierra compuesta por cable de cobre y electrodo conectado a tierra en cuadros de electricidad, máquinas eléctricas, etc, incluso desmontaje."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIÓN DE INSTALACIONES",
+   "codigo": "MS26",
+   "unidad": "ud",
+   "resumen": "Cuadro de obra",
+   "cantidad": 1.0,
+   "precio": 445.0,
+   "importe": 445.0,
+   "descripcion": "Cuadro de obra"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PREVENCIÓN DE INCENDIOS",
+   "codigo": "MS27",
+   "unidad": "ud",
+   "resumen": "Extintor de polvo polivalente",
+   "cantidad": 2.0,
+   "precio": 68.48,
+   "importe": 136.96,
+   "descripcion": "Extintor de polvo polivalente, para un uso, incluso soporte y colocación."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PREVENCIÓN DE INCENDIOS",
+   "codigo": "MS28",
+   "unidad": "ud",
+   "resumen": "Extintor manual de CO2",
+   "cantidad": 2.0,
+   "precio": 85.0,
+   "importe": 170.0,
+   "descripcion": "Extintor manual de CO2 de 6 kg. colocado sobre soporte fijado a paramento vertical incluido p.p. de pequeño material, recargas y desmontaje según OGSHT (O.M. 09/03/71) valorado en función del número optimo de utilizaciones."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > MEDICINA PREVENTIVA Y FORMACIÓN DEL PERSONAL",
+   "codigo": "MS29",
+   "unidad": "ud",
+   "resumen": "Reposición de material sanitario",
+   "cantidad": 5.0,
+   "precio": 60.0,
+   "importe": 300.0,
+   "descripcion": "Reposición de material sanitario durante el transcurso de la obra."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > MEDICINA PREVENTIVA Y FORMACIÓN DEL PERSONAL",
+   "codigo": "MS30",
+   "unidad": "ud",
+   "resumen": "Botiquín instalado en obra.",
+   "cantidad": 2.0,
+   "precio": 80.0,
+   "importe": 160.0,
+   "descripcion": "Botiquín instalado en obra."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > MEDICINA PREVENTIVA Y FORMACIÓN DEL PERSONAL",
+   "codigo": "MS31",
+   "unidad": "ms",
+   "resumen": "Formación en seguridad e higiene",
+   "cantidad": 9.0,
+   "precio": 75.0,
+   "importe": 675.0,
+   "descripcion": "Formación en Seguridad e Higiene en el Trabajo."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > MEDICINA PREVENTIVA Y FORMACIÓN DEL PERSONAL",
+   "codigo": "MS32",
+   "unidad": "ud",
+   "resumen": "Reconocimiento médico",
+   "cantidad": 15.0,
+   "precio": 100.0,
+   "importe": 1500.0,
+   "descripcion": "Reconocimiento médico"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > ASEOS Y VESTUARIOS",
+   "codigo": "MS33",
+   "unidad": "ms",
+   "resumen": "Limpieza y desinfección",
+   "cantidad": 15.0,
+   "precio": 125.0,
+   "importe": 1875.0,
+   "descripcion": "Brigada de limpieza y conservación de instalaciones."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > ASEOS Y VESTUARIOS",
+   "codigo": "MS34",
+   "unidad": "ud",
+   "resumen": "Taquilla metálica individual",
+   "cantidad": 12.0,
+   "precio": 50.0,
+   "importe": 600.0,
+   "descripcion": "Taquilla metálica individual con llave, colocada. (Imputación del 50 por ciento del coste de adquisición)"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > ASEOS Y VESTUARIOS",
+   "codigo": "MS35",
+   "unidad": "ms",
+   "resumen": "Modulo oficina, aseo-vestuarios",
+   "cantidad": 10.0,
+   "precio": 450.0,
+   "importe": 4500.0,
+   "descripcion": "Alquiler mes de modulo prefabricado de vestuarios, de 6,00x2,38x2,30 m. de panel de acero lacado y aislamiento de poliuretano de 35 mm., paredes revestidas con tablero fenólico, pavimento de lamas de acero galvanizado con aislamiento de fibra de vidrio y tablero fenólico, instalación eléctrica con puntos de luz, interruptores y protección diferencial, totalmente equipado y a disposición (coste imputado a esta obra como parte proporcional del periodo utilizado según mediciones)."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > ASEOS Y VESTUARIOS",
+   "codigo": "MS36",
+   "unidad": "ud",
+   "resumen": "Acometida agua, saneamiento y energía",
+   "cantidad": 1.0,
+   "precio": 300.0,
+   "importe": 300.0,
+   "descripcion": "Acometida de agua y energía eléctrica para vestuario y comedor totalmente terminado y en servicio."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > ASEOS Y VESTUARIOS",
+   "codigo": "MS37",
+   "unidad": "ud",
+   "resumen": "Recipiente para recogida de basuras.",
+   "cantidad": 1.0,
+   "precio": 15.0,
+   "importe": 15.0,
+   "descripcion": "Recipiente para recogida de basuras."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > ASEOS Y VESTUARIOS",
+   "codigo": "MS38",
+   "unidad": "ud",
+   "resumen": "Equipamiento oficina, aseo-vestuarios",
+   "cantidad": 1.0,
+   "precio": 500.0,
+   "importe": 500.0,
+   "descripcion": "Equipamiento de oficina, aseos y vestuarios"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > DEMOLICIONES",
+   "codigo": "C.08.01.01",
+   "unidad": "m3",
+   "resumen": "CARGA RNP VALORIZABLES S/CAMIÓN",
+   "cantidad": 83.0,
+   "precio": 1.97,
+   "importe": 163.51,
+   "descripcion": "Carga de residuos no peligrosos valorables (maderas, plásticos, cartones, chatarras..) sobre camión medio-grande, con pala cargadora, a granel, y con un peón ordinario de ayuda, sin incluir transporte."
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > MAQUINARIA TODO TIPO",
+   "codigo": "C.08.02.01",
+   "unidad": "kg",
+   "resumen": "TRATAMIENTO FILTROS ACEITE",
+   "cantidad": 3.0,
+   "precio": 67.78,
+   "importe": 203.34,
+   "descripcion": "Tratamiento en planta por gestor autorizado de filtros de aceite almacenados en la instalación en bidones ballestas de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > MAQUINARIA TODO TIPO",
+   "codigo": "C.08.02.02",
+   "unidad": "kg",
+   "resumen": "TRATAMIENTO ACEITE USADO",
+   "cantidad": 50.0,
+   "precio": 67.47,
+   "importe": 3373.5,
+   "descripcion": "Tratamiento en planta por gestor autorizado de aceite usado almacenados en la instalación en bidones de tapones de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > MAQUINARIA TODO TIPO",
+   "codigo": "C.08.02.03",
+   "unidad": "kg",
+   "resumen": "TRATAMIENTO ABSORBENTES Y TRAPOS",
+   "cantidad": 5.0,
+   "precio": 67.75,
+   "importe": 338.75,
+   "descripcion": "Tratamiento en planta por gestor autorizado de absorbentes y trapos contaminados, almacenados en la instalación en bidones ballestas de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > HORMIGONADO",
+   "codigo": "C.08.03.01",
+   "unidad": "ms",
+   "resumen": "COSTE CONTENEDOR MADERA 30m3.",
+   "cantidad": 5.0,
+   "precio": 96.62,
+   "importe": 483.1,
+   "descripcion": "Coste del alquiler de contenedor de 30m3. de capacidad, sólo permitido éste tipo de residuo en el contenedor por el gestor de residuos no peligrosos"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > HORMIGONADO",
+   "codigo": "C.08.03.02",
+   "unidad": "kg",
+   "resumen": "TRATAMIENTO RESTOS DESENCOFRANTE",
+   "cantidad": 38.0,
+   "precio": 68.96,
+   "importe": 2620.48,
+   "descripcion": "Tratamiento en planta por gestor autorizado de restos de desencofrante y desencofrantes caducados, almacenados en la instalación en bidones de tapones de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > VARIOS",
+   "codigo": "C.08.04.01",
+   "unidad": "kg",
+   "resumen": "TRATAMIENTO FLUORESCENTES",
+   "cantidad": 1.0,
+   "precio": 11.99,
+   "importe": 11.99,
+   "descripcion": "Tratamiento en planta por gestor autorizado de fluorescentes almacenados en la caseta de obra en cajas, que deben adquirirse la primera vez, i/ etiquetación por parte de peón de la caja correspondiente. (Real Decreto 833/1988, de 20 de julio)."
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > VARIOS",
+   "codigo": "C.08.04.02",
+   "unidad": "PA",
+   "resumen": "GESTIÓN PAPEL CARTÓN",
+   "cantidad": 1.0,
+   "precio": 100.0,
+   "importe": 100.0,
+   "descripcion": "Servicio de recogida y entrega de papel y cartón generados en la obra, hasta la Nave de Papel Cartón, del Complejo Ambiental ."
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS > VARIOS",
+   "codigo": "C.08.04.03",
+   "unidad": "kg",
+   "resumen": "TRATAMIENTO ENVASES METÁLICOS",
+   "cantidad": 3.0,
+   "precio": 14.65,
+   "importe": 43.95,
+   "descripcion": "Tratamiento en planta por gestor autorizado de envases metálicos vacíos contaminados (ej. latas de pintura, adhesivo PVC..) almacenadas en la instalación en bidones ballesta de 200 l. y paletizados, que deben adquirirse la primera vez, i/ etiquetación por parte de peón del bidón correspondiente. (Real Decreto 833/1988, de 20 de julio.)"
+  },
+  {
+   "capitulo": "CONTROL DE CALIDAD > CONTROL DE CALIDAD",
+   "codigo": "C.09.01.01",
+   "unidad": "PA",
+   "resumen": "PARTIDA CONTROL DE CALIDAD",
+   "cantidad": 1.0,
+   "precio": 22603.41,
+   "importe": 22603.41,
+   "descripcion": "Partida control de calidad"
+  },
+  {
+   "capitulo": "PARTIDA ALZADA A JUSTIFICAR > PARTIDA ALZADA A JUSTIFICAR",
+   "codigo": "C.10.01.01",
+   "unidad": "PA",
+   "resumen": "PARTIDA ALZADA A JUSTIFICAR",
+   "cantidad": 1.0,
+   "precio": 15000.0,
+   "importe": 15000.0,
+   "descripcion": "Ranurado de la solera del tramo final de la canalización Bco. del Ciervo próxima a la ODT del paseo Marítimo para mejorar el drenaje del agua de mar almacenada con motivo de la dinámica litoral, según Dirección de Obra."
+  }
+ ]
+}

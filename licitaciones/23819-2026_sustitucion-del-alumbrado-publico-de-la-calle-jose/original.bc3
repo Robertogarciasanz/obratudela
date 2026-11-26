@@ -1,0 +1,304 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.8||ANSI|
+~K|\2\2\3\2\2\2\2\EUR\|0|
+~C|%%%0.03|%|3%Costes indirectos|3|190621|0|
+~C|%%0.03|%|Coste indirecto|3|090614|0|
+~C|%0.01|%|1% Medios auxiliares|1|010610|0|
+~C|%0.03|%|3% Medios auxiliares|3|250323|0|
+~C|01.01|m|ml. Corte de asfalto con cortadora|3.02|010610|0|
+~D|01.01|M01A0030\1\0.1\U04E0020\1\0.1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|01.02|m²|Demolición pavimento o bordillos hormigón, terrazo, cerámico,...|14.56|010610|0|
+~D|01.02|M01A0030\1\0.25\QBB0010\1\0.1\QAB0030\1\0.1\QAA0001\1\0.2\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|01.03|m²|Demolición con compresor pavimento asfáltico.|11.62|010610|0|
+~D|01.03|M01A0030\1\0.25\QBB0010\1\0.23\QAC0020\1\0.1\%0.01\1\0.01\%%0.03\1\0.03\|
+~C|01.04|u|Base hormigón p/cimentación de báculo o columna de 4<h<7 m|169.57|010610|0|
+~D|01.04|M01A0010\1\0.35\M01A0030\1\0.35\A06B0020\1\0.49\A03A0050\1\0.5\A05AA0020\1\1.8\E22CAC0040.01\1\1\E22CAF0010\1\2\%0.01\1\0.01\%%0.03\1\0.03\|
+~C|01.05|m|Canalización con 1 tubo de PE D 90 mm,|23.91|010610|0|
+~D|01.05|M01A0010\1\0.25\M01A0030\1\0.25\E22CAC0030\1\1\E22CAF0010\1\1\E22CAF0020\1\1\A06B0010\1\0.28\A03A0010\1\0.044\A06C0020\1\0.22\%0.01\1\0.01\%%0.03\1\0.03\|
+~C|01.06|u|Arqueta , conexionado electricidad ext. frabrica de bloques|140.52|010610|0|
+~D|01.06|M01A0010\1\2\M01A0030\1\2\E28BA0130.01\1\1\E10AB0050\1\8\A02A0030\1\0.01\A02A0010\1\0.05\E01CA0010\1\0.038\%0.01\1\0.01\%%0.03\1\0.03\|
+~C|01.07|ml|Bordillo acera achaflanado de hormigón 50x30x15-18 cm|40.57|010610|0|
+~D|01.07|M01A0010\1\0.55\M01A0030\1\0.55\E33LA0080'\1\2\A03A0030\1\0.05\A02A0030\1\0.01\A01B0010\1\0.001\%0.01\1\0.01\%0.03\1\0.03\|
+~C|01.08|m²|Pavimento gris 4 pastillas de 25x25 cm|51.02|010610|0|
+~D|01.08|M01A0010\1\0.7\M01A0030\1\0.7\E33BA0033\1\1.05\A00ZCA001\1\0.03\E01FA0140\1\0.5\EKFHASIF\1\0.1\A03A0010\1\0.07\E01E0010\1\0.01\%0.01\1\0.01\%0.03\1\0.03\|
+~C|02.01|m|Circuito alumbrado público|19.1|090614|0|
+~D|02.01|M01B0070\1\0.05\M01B0080\1\0.05\E22IB0030\1\1\E22IB0050\1\1\%%0.03\1\0.03\|
+~C|02.02|m|Acometida a columna con una luminaria|3.16|090614|0|
+~D|02.02|M01B0070\1\0.04\M01B0080\1\0.03\E22IB0170.04\1\3\%%0.03\1\0.03\|
+~C|02.03|u|Pica de Cobre|23.38|090614|0|
+~D|02.03|M01B0070\1\0.05\M01B0080\1\0.03\E22LB0010\1\1\%%0.03\1\0.03\|
+~C|02.04|u|Caja de Poliester|49.29|250323|0|
+~D|02.04|M01B0070\1\0.85\M01B0080\1\0.8\EEP15GK110F.0\1\1\%0.03\1\0.03\|
+~C|02.05|u|Racores de Derivación|7.31|250323|0|
+~D|02.05|M01B0070\1\0.026\M01B0080\1\0.25\E01RACOR\1\1\%0.03\1\0.03\|
+~C|02.06|u|Luminaria BENITO ILDH01633 DECO HORIZON 16LED|590.37|090614|0|
+~D|02.06|M01B0070\1\1\M01B0080\1\1\E17BAA0050.1A\1\1\%%0.03\1\0.03\|
+~C|02.07|u|Suministro y colocación Columna DELTA MIIXTA DE 7 METROS -ICDE70|1890.64|090614|0|
+~D|02.07|M01B0070\1\3\M01B0080\1\3\E17BDA0110.1A\1\1\QAC0010.A\1\3\%%0.03\1\0.03\|
+~C|02.08|u|Concección a red existente|554.2|010610|0|
+~D|02.08|M01B0070\1\2\M01B0080\1\2\M01A0010\1\2\E24BAB0120\1\10\E24BAB0120AA\1\1\%0.01\1\0.01\%%0.03\1\0.03\|
+~C|02.09|ud|Tramitacion docu+Certificado OCA Electricidad Alumbrado exterior|775.84|090614|0|
+~D|02.09|E17B586866.OC\1\1\%%0.03\1\0.03\|
+~C|03.01|u|Transporte a obra, descarga y recogida caseta provisional obra.|131.1|090614|0|
+~D|03.01|E38DA0030\1\1\M01A0030\1\1\%%0.03\1\0.03\|
+~C|03.02|u|Caseta prefabricada para vestuario, comedor o almacén de obra|78.28|191225|0|
+~D|03.02|E38DA0020\1\1\|
+~C|03.03|u|Botiquín tipo bolso con correa, con contenido sanitario|43.27|090614|0|
+~D|03.03|E38E0020\1\1\%%0.03\1\0.03\|
+~C|03.04|u|Casco seguridad SH 6, Würth|18.51|090614|0|
+~D|03.04|E38AA0370\1\1\%%0.03\1\0.03\|
+~C|03.05|u|Bota lona y piel, con puntera y plantilla metálica|87.37|010610|0|
+~D|03.05|E38AC0010\1\1\%0.01\1\0.01\|
+~C|03.06|u|Señal de cartel obras, PVC, sin soporte metálico|7.14|090614|0|
+~D|03.06|M01A0030\1\0.1\E38CA0030\1\1\%%0.03\1\0.03\|
+~C|03.07|u|Arnés anticaídas Basic, Würth|61.31|161111|0|
+~D|03.07|E38AE0100\1\1\%%0.03\1\0.03\|
+~C|03.08|h|Hora de peón, p/conservación y limpieza de inst. personal|17.17|010610|0|
+~D|03.08|M01A0030\1\1\%0.01\1\0.01\%%0.03\1\0.03\|
+~C|04.01|t|Coste entrega residuos de mezclas bituminosas a instalación de v|14|010610|0|
+~D|04.01|E41CA0090\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.02|t|Coste entrega residuos de madera a instalación de valorización|120|010610|0|
+~D|04.02|E41CA0130\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.03|t|Coste entrega residuos de papel y cartón a instalación de valori|550|010610|0|
+~D|04.03|E41CA0150\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.04|t|Coste entrega residuos de plástico a instalación de valorización|250|010610|0|
+~D|04.04|E41CA0140\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.05|t|Coste entrega residuos escombro limpio ensacado, a instalación d|17|010610|0|
+~D|04.05|E41CA0045\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.06|t|Coste entrega residuos de hormigón a instalación de valorización|12|010610|0|
+~D|04.06|E41CA0010\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.07|t|Coste entrega residuos de ladri y mat cerám. a instalación de va|26|010610|0|
+~D|04.07|E41CA0030\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|04.08|t|Coste entrega Material Potencialmente sustancias peligrosas|560|010610|0|
+~D|04.08|E41CB0010\1\1\%0.01\1\0.01\%%%0.03\1\0.03\|
+~C|05.01|u|Partida a justificar servicios afectados e  imprevistos|1200|191225|0|
+~C|A00ZCA001|m³|Mortero de agarre M15, dosificación 1:3|161.89|010610|3|
+~D|A00ZCA001|M01A0030\1\2.4\E01BA0040\1\0.5\E01CA0020\1\0.7\E01CB0020\1\0.28\E01E0010\1\0.26\QAD0010\1\0.5\%0.01\1\0.01\|
+~C|A01B0010|m³|Pasta de cemento|195.27|181225|3|
+~D|A01B0010|M01A0030\1\2\E01BA0040\1\0.9\E01E0010\1\1\|
+~C|A02A0010|m³|Mortero 1:3 de cemento|152.75|181225|3|
+~D|A02A0010|M01A0030\1\2.4\E01BA0040\1\0.44\E01CA0020\1\0.98\E01E0010\1\0.26\QAD0010\1\0.5\|
+~C|A02A0030|m³|Mortero 1:5 de cemento|131.67|181225|3|
+~D|A02A0030|M01A0030\1\2.4\E01BA0040\1\0.3\E01CA0020\1\1.1\E01E0010\1\0.25\QAD0010\1\0.5\|
+~C|A03A0010|m³|Hormigón en masa de fck= 10 N/mm²|120.06|250525|3|
+~D|A03A0010|M01A0030\1\2\E01BA0040\1\0.225\E01CA0010\1\0.6\E01CB0090\1\1.2\E01E0010\1\0.2\QAD0010\1\0.5\|
+~C|A03A0030|m³|Hormigón en masa de fck= 15 N/mm²|127.22|181225|3|
+~D|A03A0030|M01A0030\1\2\E01BA0040\1\0.27\E01CA0010\1\0.62\E01CB0070\1\1.25\E01E0010\1\0.2\QAD0010\1\0.5\|
+~C|A03A0050|m³|Hormigón en masa de fck= 17.5 N/mm²|135.5|181225|3|
+~D|A03A0050|M01A0030\1\2\E01BA0040\1\0.31\E01CA0010\1\0.64\E01CB0070\1\1.28\E01E0010\1\0.2\QAD0010\1\0.5\|
+~C|A05AA0020|m²|Encofrado y desencofrado de zapatas.|24.11|250323|3|
+~D|A05AA0020|M01A0010\1\0.665\M01A0030\1\0.665\E01IB0010\1\0.003\E01IA0110\1\0.001\E01MA0020\1\0.02\|
+~C|A06B0010|m³|Excavación en zanjas y pozos.|13.01|181225|3|
+~D|A06B0010|M01A0030\1\0.1\QAA0020\1\0.3\|
+~C|A06B0020|m³|Excavación manual en pozos.|76.6|181225|3|
+~D|A06B0020|M01A0030\1\3\QBB0010\1\2\|
+~C|A06C0020|m³|Relleno de zanjas compactado con productos procedentes de las mi|6.86|250525|3|
+~D|A06C0020|M01A0030\1\0.32\E01E0010\1\0.2\QAA0020\1\0.02\QBD0020\1\0.05\|
+~C|C01#||OBRA CIVIL-ALUMBRADO|6154.32|010610|0|
+~D|C01#|01.01\1\102\01.02\1\4\01.03\1\20\01.04\1\14\01.05\1\80\01.06\1\7\01.07\1\2\01.08\1\4\|
+~C|C02#||ELECTRICIDAD ALUMBRADO|46046.68|010610|0|
+~D|C02#|02.01\1\217\02.02\1\135\02.03\1\6\02.04\1\18\02.05\1\18\02.06\1\18\02.07\1\15\02.08\1\1\02.09\1\1\|
+~C|C03#||SEGURIDAD Y SALUD|1027.28|010610|0|
+~D|C03#|03.01\1\1\03.02\1\6\03.03\1\1\03.04\1\2\03.05\1\2\03.06\1\1\03.07\1\1\03.08\1\6\|
+~C|C04#||GESTION DE RESIDUOS|988|010610|0|
+~D|C04#|04.01\1\4\04.02\1\0.4\04.03\1\0.4\04.04\1\0.6\04.05\1\2\04.06\1\4\04.07\1\8\04.08\1\0.4\|
+~C|C05#||PA IMPREVISTOS|1200|191225|0|
+~D|C05#|05.01\1\1\|
+~C|E01BA0040|t|Cemento portland, CEM II/B-P 32,5 R, granel|177.71|181225|3|
+~C|E01CA0010|t|Arena seca|31.85|181225|3|
+~C|E01CA0020|m³|Arena seca|31.85|181225|3|
+~C|E01CB0020|m³|Arido machaqueo 0-4 mm|20.64|020517|3|
+~C|E01CB0070|t|Arido machaqueo 4-16 mm|18.3|181225|3|
+~C|E01CB0090|t|Arido machaqueo 16-32 mm|20.3|250525|3|
+~C|E01E0010|m³|Agua|2.33|181225|3|
+~C|E01FA0140|kg|Adhesivo cementoso C 2TE S1, gris, p/rev y pav int/ext, PEGOLAND|0.66|020517|3|
+~C|E01IA0110|m³|Madera pino gallego|375|181225|3|
+~C|E01IB0010|m³|Madera pino gallego en tablas 25 mm|350|181225|3|
+~C|E01MA0020|kg|Clavos 2"|2.5|250323|3|
+~C|E01RACOR|ud|Racor de derivación Niled|2.45|181225|3|
+~C|E10AB0050|ud|Bloque de hormigón de áridos de picón 9x25x50 cm, CE cat. I|1.01|181225|3|
+~C|E17B586866.OC|u|tramitación documentacion y OCAS|753.24|181225|3|
+~C|E17BAA0050.1A|ud|Luminaria BENITO ILDH01633 DECO HORIZON 16LED|538.77|181225|3|
+~C|E17BDA0110.1A|ud|Columna DELTA MIIXTA DE 7 METROS -ICDE70 o similar|1617.02|181225|3|
+~C|E22CAC0030|m|Tubería PE (rojo) doble pared DN 90 mm, p/canal. eléctr.|3.39|191225|3|
+~C|E22CAC0040.01|m|Tubería PE (rojo) doble pared DN 90 mm, p/canal. eléctr.|1.9|181225|3|
+~C|E22CAF0010|m|Alambre guía 2 mm galvanizado|0.25|181225|3|
+~C|E22CAF0020|m|Cinta señalizadora línea eléctrica|0.4|170721|3|
+~C|E22IB0030|m|Cable Cu 0,6/1kV de 4x25 mm², RV-K 0,6/1 kV, CPR Eca|14.5|250525|3|
+~C|E22IB0050|m|Cable Cu 0,6/1kV de 1x16 mm², RV-K 0,6/1 kV, CPR Eca|2.32|250525|3|
+~C|E22IB0170.04|u|2x2,5 mm2 RV-k 0,6/1 KV+1X2.5 mm2 Cu H07V-K|0.62|191225|3|
+~C|E22LB0010|ud|Pica puesta a tierra de 1,5 m|21.32|250525|3|
+~C|E24BAB0120|m|Tubería PE-100, A.D. PN 16 D=90mm Tuplen|12.83|250525|3|
+~C|E24BAB0120AA|u| conexion red existente|300.57|191225|3|
+~C|E28BA0130.01|u|ud. Registro peatonal 500x500 mm, tapa y marco, fundición|48.77|181225|3|
+~C|E33BA0033|m²|Loseta hidráulica gris 25x25 cm, 4 pastillas, y transp.|10.25|250723|3|
+~C|E33LA0080'|ud|Bordillo acera de hormigón 50x30x12-15 cm|6.2|220125|3|
+~C|E38AA0370|ud|Casco seguridad SH 6, 0899 200 11x, Würth|17.97|191225|3|
+~C|E38AC0010|ud|Botas lona y piel puntera y plantilla metálicas|86.5|191225|3|
+~C|E38AE0100|ud|Arnés Basic anticaídas, 0899 032 029, Würth|59.52|161111|3|
+~C|E38CA0030|ud|Señal cartel obras, PVC, 45x30 cm|5.28|191225|3|
+~C|E38DA0020|ud|Caseta tipo vest., almacén o comedor, 6x2,4x2,4 m|78.28|191225|3|
+~C|E38DA0030|ud|Transp., descarga y post. recogida caseta obra|110.78|191225|3|
+~C|E38E0020|ud|Botiquín tipo bolso c/correa, c/contenido|42.01|191225|3|
+~C|E41CA0010|t|Tasa gestor aut. valorización residuos hormigón, LER 170101|11.53|191225|3|
+~C|E41CA0030|t|Tasa gestor aut. valorización residuos tejas y mat cerám., LER 1|24.99|191225|3|
+~C|E41CA0045|t|Tasa gestor aut. valorización residuos escombro limpio ensacado,|16.34|191225|3|
+~C|E41CA0090|t|Tasa gestor aut. valorización resid. mez. bitum. asfalto sin con|13.45|191225|3|
+~C|E41CA0130|t|Tasa gestor aut. valorización residuos madera, LER 170201|115.35|191225|3|
+~C|E41CA0140|t|Tasa gestor aut. valorización residuos plástico, LER 170203|240.32|191225|3|
+~C|E41CA0150|t|Tasa gestor aut. valorización residuos papel y cartón, LER 20010|528.69|191225|3|
+~C|E41CB0010|t|Tasa gestor aut. tierras y piedras contaminadas, LER 170503|538.31|191225|3|
+~C|EEP15GK110F.0|ud|Caja Poliester grado de protección IP66+ Dif + 2DPN|19.45|181225|3|
+~C|EKFHASIF|l|Compaktuna|8.46|120718|3|
+~C|M01A0010|h|Oficial primera|17.53|181225|1|
+~C|M01A0030|h|Peón|16.5|181225|1|
+~C|M01B0070|h|Oficial electricista|17.66|250525|1|
+~C|M01B0080|h|Ayudante electricista|16.74|181225|1|
+~C|PROYECTO_01##|||55416.28|010610|0|
+~D|PROYECTO_01##|C01\1\1\C02\1\1\C03\1\1\C04\1\1\C05\1\1\|
+~C|QAA0001|h|Miniexcavadora 3500 Kg (martillo + cuchara)|22.95|060521|2|
+~C|QAA0020|h|Retroexcavadora 72 kW|37.87|181225|2|
+~C|QAB0030|h|Camión basculante 15 t|39.15|260424|2|
+~C|QAC0010.A|h|Camión grúa 20 t|38.45|181225|2|
+~C|QAC0020|h|Camión grúa 32 t, pluma 29 m|39.15|220125|2|
+~C|QAD0010|h|Hormigonera portátil 250 l|6.28|181225|2|
+~C|QBB0010|h|Compresor caudal 2,5 m³/m 2 martillos.|13.55|181225|2|
+~C|QBD0020|h|Compactador manual, tipo pequeño de rodillo vibrante de 0,60 t|6.96|250525|2|
+~C|U04E0020|h|Cortadora de pavimento asfalto/hormigón|12.5|220125|2|
+~T|%%%0.03|3% Costes indirectos  |
+~T|%%0.03|3%. Coste indirecto.......(s/total) |
+~T|%0.01|Medios auxiliares|
+~T|01.01|ml. Corte de asfalto con máquina cortadora de disco refrigerada por agua, con una profundidad media de 25cm.  |
+~T|01.02|Demolición de pavimento de hormigón  terrazo, cerámico o piedra natura l(lajas existente) y  bordillos de hormigón,  incluso demolición de P.P. de peldañeado de hormigón, bordillos, atezados, soleras armadas, rellenos de hormigón ciclope, etc, y del espesor que fuese necesario para la ejecución posterior del peldañeado o hasta nivel necesario para la nueva pavimentación, solera o revestimiento, según criterio de la D.F. por medios manuales o mecanicos, incluso perfilado del corte de la demolición, acopio de escombros junto al lugar de carga, limpieza de la zona de trabajo, carga y transporte de escombros a gestor autorizado. Los trabajos se medirán en proyección en planta.
+|
+~T|01.03|Demolición con compresor de pavimento asfáltico de espesor variable hasta llegar al terreno, incluso corte previo de asfalto con máquina, acopio de escombros junto al lugar de carga, limpieza de la zona de trabajo, carga y transporte de escombros a gestor autorizado. |
+~T|01.04|Saneamiento Base para cimentación de báculo, columna o posteletes de 4 a 7 m de altura, realización de dado de hormigón en masa de fck=17,5 N/mm² de70x70x100 cm, incluso encofrado, excavación y demolición precisa, carga y transporte a vertedero , recibido de pernos de anclaje, remate de pavimento, peana de hormigón lavado, codo y canalización de PVC D 110 hasta arqueta. Totalmente acabada.|
+~T|01.05|Canalización eléctrica formada por 1 tubo de polietileno (rojo), de doble pared, D 90 mm, Tuyper o equivalente, s/UNE-EN 50086,. (Tuberías y perfiles plásticos) o equivalente, para distribución de líneas eléctricas de B.T incluso alambre guía galvanizado, cinta de señalización, excavación en zanja, protección con hormigón, relleno y compactación del resto de la zanja con tierras saneadas. Instalada.|
+~T|01.06|ud. Arqueta para conexionado de electricidad en exteriores,de 40x40x40 cms realizada con bloque huec+o de hormigón vibrado de 9x25x50 cm, enfoscada y bruñida interiormente, con tapa y marco de fundición dúctil de 500x500 mm y fondo de arena. Totalmente acabada. |
+~T|01.07|Bordillo de acera, achaflanado, de hormigón de 50x30x15-18 cm, colocado con mortero de cemento 1:5, incluso base y recalce de hormigón y rejuntado.|
+~T|01.08|Pavimento hidráulico de 25x25 cm, color gris, 4 pastillas, colocado sobre capa de mortero de cemento M15 (dosificación cemento - arena 1:3, con árido variable máximo 4 mm) + Puente de unión mediante lechada de Adhesivo cementoso C 2TE S1 eriquesido con Compaktuna, incluso solera de hormigón de fck=10 N/mm² de 7 cm de espesor, cortes, formación de juntas de dilatación, rejuntado y limpieza.
+|
+~T|02.01|CIRCUITO DE ALUMBRADO PÚBLICO, instalado con cable de COBRE aislamiento RV 0,6/1kV formado por 4 conductores de 25mm2 de sección nominal UNE 21123,+ red de tierra formado por 1x16 mm2 Cu  RVK canalizado y aislado. Construido según R.B.T. Medida la unidad por metro de canalización. Se deberá dejar en cada arqueta una coca de medio metro para asegurar la holgura y conexionado adecuado.|
+~T|02.02|Acometida a columna con una luminaria formada por Conductor interior de conexión entre la caja de protección y las luminarias de 2x2.5 mm2 RV-K 0,6/1 kV+ 1x2.5 mm2 Cu H07V-K 450/750 V (amarillo-verde); UNE Cca-s1B, d1, a1; completamente instalado|
+~T|02.03|Pica de tierra de cobre de 14,3mm de diámetro y 2m de longitud según Norma UNE 202 006 incluso grapas de fijación y/o soldadura al conductor de Cu desnudo de 35mm2 de acuerdo al REglamento Eléctrotécnico de baja tensión|
+~T|02.04|Caja de poliester con grado de protección IP66 provista de carril DIN fijada en el interior de la columna con capacidad para albergar 4 módulos. 1 interruptor diferencial 40A/ 30 mA de sensibili- dad  y 1 o 2 DPN de 2x16A |
+~T|02.05|Racores de derivación Niled situados en arqueta con p.p. de cable de 1x16 mm2 Cu 0.6/1kV entre la caja de protección y la red de distribución; Fijación de los 	racores de conexión a la parte alta de la arqueta; Puesta a tierra de la columna desde arqueta mediante cable de 1x16 mm2|
+~T|02.06|Suministro y colocación Luminaria BENITO ILDH01633 DECO HORIZON 16LED  totalmente instaladay funcionando|
+~T|02.07|Suministro de Columna de Fibra o Acero Galvanizado marca DELTA MIIXTA DE 7 METROS -ICDE70 o similar, con placa 250x250x6mm embutida, 7,00 metros de altura, diámetro en punta de 60mm, 3mm de espesor mínimo, Pintado en RAL 7015 Gris Pizarra Texturado, Protección Acabado Marino, incluye: Anclaje M-16,  Tuerca M-16 , Din 9021 arandela zincada M-16. PORTEZUELA COMPLETA MONTADAS. Galvanizado. Pintado RAL 7015 Gris Pizarra Texturado. Totalmente terminado y ejecutado según REBT
+|
+~T|02.08|Conexionado de la instalación a la red existente legalizada según antecedentes, solicitando los permisos necesarios por parte de la empresa responsable del alumbrado para su futura conexión. |
+~T|03.01|Transporte a obra, descarga y posterior recogida de caseta provisional de obra.|
+~T|03.02|Dia alquiler Caseta prefabricada para vestuario, comedor o almacén de obra, de 6,00 x 2,40 x 2,40 m con estructura metálica de perfiles conformados en frio, con cerramiento y techo a base de chapa greca de 23 mm de espesor, prelacado a ambas caras, piso de plancha metálica acabado con PVC, 2 ud de ventanas de hojas correderas de aluminio con rejas y cristales armados, y 1 ud de puerta de perfilería soldada de apertura exterior con cerradura.|
+~T|03.03|Botiquín tipo bolso con correa, con contenido sanitario completo según ordenanzas.|
+~T|03.04|Casco seguridad SH 4, Würth o equivalente, con marcado CE.|
+~T|03.05|Bota lona y piel, con puntera y plantilla metálicas incorporada, (par) homologada CE s/normativa vigente.|
+~T|03.06|Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje.|
+~T|03.07|Arnés anticaídas Basic, Würth o equivalente, con marcado CE.|
+~T|03.08|Hora de peón ESPECIALIZADO EN SEGURIDAD Y SALUD, para conservación y limpieza de instalaciones de personal.|
+~T|04.01|Coste de entrega de residuos de mezclas bituminosas sin contenido en alquitrán de hulla (tasa vertido), con código 170302 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.02|Coste de entrega de residuos de madera (tasa vertido), con código 170201 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.03|Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.04|Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.05|Coste de entrega de residuos mezclados de construcción y demolición distintos de los especificados en los códigos 17 09 01, 17 09 02 y 17 09 03, escombro limpio ensacado, (tasa vertido), con código 170904 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.06|Coste de entrega de residuos de hormigón (tasa vertido), con código 170101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.07|Coste de entrega de residuos de ladrillos y materiales cerámicos (tasa vertido), con código 170103 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|04.08|Material Potencialmente sustancias peligrosas  (pinturas, envases contaminados, etc) (tasa vertido), con código 170503 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de eliminación, según RD 105/2008 y la Ley 7/2022.|
+~T|05.01|ud. Partida alzada a justificar  para servicios afectados  e imprevistos, según criterio de la Dirección Facultativa.|
+~T|A01B0010|Pasta de cemento, amasada a mano, s/RC-08.|
+~T|A02A0010|Mortero 1:3 de cemento y arena, M 15, confeccionado con hormigonera, s/RC-08.|
+~T|A02A0030|Mortero 1:5 de cemento y arena, M-7,5, confeccionado con hormigonera, s/RC-08
+.|
+~T|A03A0010|Hormigón en masa de fck= 10 N/mm², árido machaqueo 32 mm máx., confeccionado con hormigonera.|
+~T|A03A0030|Hormigón en masa de fck= 15 N/mm², árido machaqueo 16 mm máx., confeccionado con hormigonera.|
+~T|A03A0050|Hormigón en masa de fck= 17,5 N/mm², árido machaqueo 16 mm máx., confeccionado con hormigonera.|
+~T|A05AA0020|Encofrado y desencofrado de zapatas. (8 puestas).|
+~T|A06B0010|Excavación en zanjas y pozos en cualquier clase de terreno con extracción de tierras al borde.|
+~T|A06B0020|Excavación manual en pozos en cualquier clase de terreno con acopio de escombros resultantes al borde.|
+~T|A06C0020|Relleno de zanjas compactado por capas de 30 cm de espesor al proctor modificado del 95 %, con productos procedentes de las mismas, incluso riego, aportación de finos y material de préstamos si fuera necesario|
+~T|E01BA0040|Cemento portland, CEM II/B-P 32,5 R, UNE-EN 197-1, tipo II/B, con puzolana natural (P), clase de resistencia 32,5 N/mm² y alta resistencia inicial, a granel, con marcado CE.|
+~T|E01CA0010|Arena seca|
+~T|E01CA0020|Arena seca|
+~T|E01CB0020|Arido machaqueo 0-4 mm|
+~T|E01CB0070|Arido machaqueo 4-16 mm|
+~T|E01CB0090|Arido machaqueo 16-32 mm|
+~T|E01E0010|Agua|
+~T|E01FA0140|Adhesivo cementoso C 2TE S1 (UNE-EN 12004), para la colocación de aplacados y pavimentos, int/ext, especial para fachadas (4 kg/m²), gris, adherencia mejorada, desliz. reducido, tiempo abierto ampliado y deformable, con marcado CE, PEGOLAND FLEX, Grupopuma.|
+~T|E01IA0110|Madera pino gallego|
+~T|E01IB0010|Madera pino gallego en tablas 25 mm|
+~T|E01MA0020|Clavos 2"|
+~T|E10AB0050|Bloque de hormigón de áridos de picón 9x25x50 cm, con marcado CE, categoría I s/UNE-EN 771-3, p=1300-2000 kg/m³, conductividad térmica 0,7 W/mk, Cp=800 J/kg.K, µ=10.|
+~T|E17BAA0050.1A|Proyector multifuncional, clase I, IP55, 70 W, SE, gris grafito, GEWISS EXTRO, ref. GW82281S|
+~T|E17BDA0110.1A|Columna troncocónica acero galvanizado H=4 m, con marcado CE s/UNE-EN 40-5.|
+~T|E22CAC0030|Tubo corrugado de doble pared, lisa interior y corrugado exterior, de polietileno de alta densidad, D=90 mm, para conducción de cables en instalaciones eléctricas enterradas, resistencia a la compresión Tipo 450N, resistencia al impacto Normal, s/UNE-EN 61386-24.|
+~T|E22CAC0040.01|Tubería PE (rojo) doble pared DN 110 mm, p/canal. eléctr., T.P.P.|
+~T|E22CAF0010|Alambre guía 2 mm galvanizado|
+~T|E22CAF0020|Cinta señalizadora línea eléctrica|
+~T|E22IB0030|Cable Cu 0,6/1kV de 4x25 mm², aislamiento de polietileno reticulado XLPE, cubierta de PVC, CPR Eca, 0,6/1 kV|
+~T|E22IB0050|Cable Cu 0,6/1kV de 1x16 mm², aislamiento de polietileno reticulado XLPE, cubierta de PVC, CPR Eca, 0,6/1 kV|
+~T|E22IB0170.04|2x2,5 mm2 RV-k 0,6/1 KV+1X2.5 mm2 Cu H07V-K|
+~T|E22LB0010|Pica puesta a tierra de l=1,5 m, D=14,2 mm|
+~T|E24BAB0120|Tubería polietileno A.D. PE-100, 16 atm, DN(exterior) 90 mm, e=8,2 mm, UNE EN 12201-2, Tuplen|
+~T|E24BAB0120AA|Tubería polietileno A.D. PE-100, 16 atm, DN(exterior) 90 mm, e=8,2 mm, UNE EN 12201-2, Tuplen|
+~T|E28BA0130.01|ud. Registro peatonal 500x500 mm, tapa y marco, fundición dúctil, B-125, Norinco HC |
+~T|E33LA0080'|Bordillo acera de hormigón 50x30x12-15 cm, marcado CE|
+~T|E38AA0370|Casco seguridad SH 4, CAT II EN 397:1995, con marcado CE, ref. 0899 200 11x, Würth|
+~T|E38AC0010|Botas lona y serraje puntera y plantilla metálicas incorporada, mod. 745, CE (par)|
+~T|E38AE0100|Arnés Basic anticaídas, Cat III EN 361, con marcado CE, ref. 0899 032 029, Würth|
+~T|E38CA0030|Señal de cartel de obras, PVC, 45x30 cm|
+~T|E38DA0020|Caseta tipo vestuario, almacén o comedor de 6,0 x 2,4 x 2,4 m.|
+~T|E38DA0030|Transporte, descarga y posterior recogida de caseta de obra.|
+~T|E38E0020|Botiquín tipo bolso con correa, con contenido completo.|
+~T|E41CA0010|Tasa de gestor autorizado valoración en residuos de hormigón, sin sustancias peligrosas, LER 170101. (Densidad aproximada 1,50 t/m³)|
+~T|E41CA0030|Tasa de gestor autorizado valorización en residuos de tejas y materiales cerámicos, sin sustancias peligrosas, LER 170103. (Densidad aproximada entre 1,20 y 1,50 t/m³)|
+~T|E41CA0045|Tasa de gestor autorizado valorización en residuos mezclados de construcción y demolición distintos de los especificados en los códigos 17 09 01, 17 09 02 y 17 09 03, escombro limpio ensacado, LER 170904. (Densidad aproximada entre 1,25 y 1,50 t/m³)|
+~T|E41CA0090|Tasa de gestor autorizado valorización en residuos de mezclas bituminosas, asfaltos sin contenido en alquitrán de hulla, LER 170302.|
+~T|E41CA0130|Tasa de gestor autorizado valoración en residuos de madera, LER 170201.(Densidad aproximada entre 0,60 y 0,90 t/m³)|
+~T|E41CA0140|Tasa de gestor autorizado valoración en residuos de plástico, LER 170203. (Densidad aproximada entre 0,60 y 0,80 t/m³)|
+~T|E41CA0150|Tasa de gestor autorizado valoración en residuos de papel y cartón, LER 200101. (Densidad aproximada entre 0,60 y 0,80 t/m³)|
+~T|E41CB0010|Tasa de gestor autorizado de tierras y piedras que contienen sustancias peligrosas, LER 170503|
+~T|EEP15GK110F.0|Caja conexión con fusibles tipo Cofret IP 55|
+~T|M01A0010|Oficial primera|
+~T|M01A0030|Peón|
+~T|M01B0070|Oficial electricista|
+~T|M01B0080|Ayudante electricista|
+~T|QAA0020|Retroexcavadora sobre ruedas, 72 kW, peso en orden de trabajo 8140 kg|
+~T|QAB0030|Camión basculante 15 t|
+~T|QAC0010.A|Camión grúa de 20 t, pluma de 23 m|
+~T|QAC0020|Camión grúa de 20 t, pluma de 29 m|
+~T|QAD0010|Hormigonera portátil 250 l|
+~T|QBB0010|Compresor caudal 2,5 m³/m 2 martillos.|
+~T|QBD0020|Compactador manual, tipo pequeño de rodillo vibrante de 0,60 t|
+~T|U04E0020|Cortadora de pavimento de asfalto u hormigón, mediante máquina cortadora, incluso replanteo y limpieza, profundidad de corte hasta 250 mm|
+~M|C01#\01.01|1\1\|102|\Paseo La Barca\1\30\\\\Cruce\4\8\\\\calle Luisa Ramos Medina\1\40\\\|
+~M|C01#\01.02|1\2\|4|\Paseo La Barca\1\2\1\\\Cruce\1\2\1\\|
+~M|C01#\01.03|1\3\|20|\\1\40\0.5\\|
+~M|C01#\01.04|1\4\|14|\\14\\\\|
+~M|C01#\01.05|1\5\|80|\Pasage la Barca\1\40\\\\Calle Luisa Ramos Medina\1\40\\\|
+~M|C01#\01.06|1\6\|7|\Pasaje La Barca\7\\\\|
+~M|C01#\01.07|1\7\|2|\Remates\2\1\\\|
+~M|C01#\01.08|1\8\|4|\\1\4\\\|
+~M|C02#\02.01|2\1\|217|\Circuito 1 -luminaria BENITO\1\217\\\|
+~M|C02#\02.02|2\2\|135|\BENITO\18\\\7.5\|
+~M|C02#\02.03|2\3\|6|\\6\\\\|
+~M|C02#\02.04|2\4\|18|\\18\\\\|
+~M|C02#\02.05|2\5\|18|\\18\\\\|
+~M|C02#\02.06|2\6\|18|\TOTAL\18\\\\|
+~M|C02#\02.07|2\7\|15|\\15\\\\|
+~M|C02#\02.08|2\8\|1|\\1\\\\|
+~M|C02#\02.09|2\9\|1|1\\1\\\\|
+~M|C03#\03.01|3\1\|1|\\1\\\\|
+~M|C03#\03.02|3\2\|6|\\1\6\\\|
+~M|C03#\03.03|3\3\|1|\\1\\\\|
+~M|C03#\03.04|3\4\|2|\\2\\\\|
+~M|C03#\03.05|3\5\|2|\\2\\\\|
+~M|C03#\03.06|3\6\|1|\\1\\\\|
+~M|C03#\03.07|3\7\|1|\\1\\\\|
+~M|C03#\03.08|3\8\|6|\\6\\\\|
+~M|C04#\04.01|4\1\|4|\\1\4\\\|
+~M|C04#\04.02|4\2\|0.4|\\1\0.4\\\|
+~M|C04#\04.03|4\3\|0.4|\\1\0.4\\\|
+~M|C04#\04.04|4\4\|0.6|\\1\0.6\\\|
+~M|C04#\04.05|4\5\|2|\\1\2\\\|
+~M|C04#\04.06|4\6\|4|\\1\4\\\|
+~M|C04#\04.07|4\7\|8|\\1\8\\\|
+~M|C04#\04.08|4\8\|0.4|\\1\0.4\\\|
+~M|C05#\05.01|5\1\|1||

@@ -1,0 +1,284 @@
+~V|CYPE INGENIEROS, S.A.|FIEBDC-3/2016|ARQUIMEDES||ANSI|Presupuesto|2|
+~K|-9\2\2\3\2\2\2\2\EUR\|3\13\6\\7|2\2\\3\2\\2\2\2\-9\2\2\2\2\EUR\||
+~X||ce\Coste energético\MJ\eCO2\Emisión de CO2\kg\ler\Código LER\\m\Masa del elemento\kg\v\Volumen\m3\|
+~C|ARTENARA_2026_V2##||Mejora Efi. Energ. Alumbrado e Inst. Públicas Norte de GC. Separata Artenara.|40937.03|220306|0|
+~T|ARTENARA_2026_V2##|Mejora de Alumbrado Publico y Ahorro Energético en el Norte de Gran Canaria. Separata Artenara.|
+~D|ARTENARA_2026_V2##
+|APARTENARA#\\1
+\APG20SS#\\1
+\APG20GR#\\1
+\|
+~C|APARTENARA#||Sustitución Luminarias Artenara|39242.74|090606|0|
+~D|APARTENARA#
+|Z01ABDA0010\\1
+\Z01ABA0020\\200
+\VialAmbar\\10
+\VillaPCAmbar\\35
+\ProyPCAmbar\\8
+\Conexion\\53
+\SustBrazo\\45
+\TomaTierra\\1
+\PINTADO\\8
+\PABDV\\1
+\|
+~C|Z01ABDA0010|m|Suministro y sustitución de línea subterránea de B.T. para alumbrado público 5x(1x25)Al, XZ1(S) CPR Eca, 0,6/1 kV.|6.77|090726|0|
+~T|Z01ABDA0010|Línea subterránea de baja tensión, formada por conductores unipolares de aluminio, aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, de 5x(1x25) mm² Al, instalada, s/UNE 21123 y s/REBT-02.
+Incluye: pp.de terminales, enhebrado en canalización, conexionado y pequeñomaterial.
+Incluye: retirada cableado existente y red trenzada a sustituir.
+Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo.|
+~D|Z01ABDA0010
+|V01IBA0020\\5
+\H01A0030\\0.024
+\H01A0040\\0.024
+\|
+~C|V01IBA0020|m|Conductor unipolar de aluminio 25 mm², XZ1(S) CPR Eca, 0,6/1 kV|1.14|251120|3|
+~T|V01IBA0020|Conductor unipolar de aluminio de 25 mm², aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, para instalaciones enterradas.|
+~C|H01A0030|h|Oficial primera electricista|22.75|110326|1|
+~T|H01A0030|Oficial primera electricista|
+~C|H01A0040|h|Peón electricista|21.57|110326|1|
+~T|H01A0040|Peón electricista|
+~C|Z01ABA0020|m|Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.|11.09|090726|0|
+~T|Z01ABA0020|Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. 
+Incluye conductor  de  protección  identificado  con  marcado  mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ.
+Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02.
+Incluye retirada cableado existente y gestión del mismo. 
+Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo.|
+~D|Z01ABA0020
+|V01IAA0010\\1
+\F01A0030\\0.029
+\H01A0030\\0.033
+\H01A0040\\0.033
+\|
+~C|V01IAA0010|m|Cable trenzado 4x25 mm² Al/54,6 mm² Alm, aisl. XLPE CPR Fca, 0,6/1 kV|8.67|070911|3|
+~T|V01IAA0010|Cable trenzado 4x25 mm² Al/54,6 mm² Alm, formado por conductor de aluminio aislado con polietileno reticulado (XLPE) CPR Fca, 0,6/1 kV, con neutro fiador de aleación de Aluminio-Magnesio-Silicio, para instalaciones de cables tensados, s/UNE 21030.|
+~C|F01A0030|h|Camión grúa 20 t|33.24|251120|2|
+~T|F01A0030|Camión grúa de 20 t, pluma de 23 m|
+~C|VialAmbar|Ud|Suministro e instalación de Luminaria Vial Led, clase II, PC Ambar 1800K.|422.84|090726|0|
+~T|VialAmbar|Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial, clase II, PC Ambar 1800K.
+
+Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02.
+Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015.|
+~D|VialAmbar
+|AbbyPCAmbar\\1
+\M01B0070\\0.409
+\M01B0080\\0.409
+\mq07ple010bg\\0.3
+\|
+~C|AbbyPCAmbar|Ud|Luminaria modelo Abby PC Ambar de Artesolar o similar|398.5|251120|3|
+~T|AbbyPCAmbar|Luminaria modelo Abby PC Ambar de Artesolar o similar
+
+Lum. Ext: ABBY 2 hasta 70W, marca Artesolar o similar, con carcasa y disipador en inyección de aluminio AC-44300, acabado en pintura en polvo RAL 9022. Lentes individuales multicapa universales de PMMA dimensión 50x50mm 2x2 de estándar ZHAGA BOOK 15 con más de 10 configuraciones de óptica y cierre de vidrio plano templado. Tratamiento anticorrosión.  Para instalación lateral a brazo variable de -0° a +15°, Ø 60mm. Dimensiones 445mm x 246mm x 90mm, peso 4,50 Kg. L90 B10 a 700mA 25ºC = 110.000h certificado por laboratorio acreditado ENAC. FHSinst 0%. Eficacia = 67,6 lm/W, módulo LED color PC ÁMBAR. Índices de protección IP66, IK08, módulo LED color PC ÁMBAR. Módulo LED reemplazable, IRC > 70. Incluye driver electrónico 198 - 264 Vac. 50/60 Hz, FP>0,95, regulación autónoma mínimo 8 niveles, posibilidad de modificar el perfil de regulación desde el centro de mando, programación (reajuste de corriente y carga de nuevos perfiles) a través de la línea de alimentación sin elemento electrónico adicional en la luminaria, regulación DALI-2, NFC, aislamiento clase II, protección frente a descargas eléctricas de 20kV. Sistema de apertura sin herramientas con desconexión eléctrica automática. Módulo LED y driver reemplazables y alojados en compartimentos independendientes. Marcado CE, marcado ENEC, certificados ENAC y certificado por el IAC en PC ÁMBAR.
+
+Temperatura de color:  PC Ambar 1800K.
+Garantía: Clase II - 10 años para las luminarias / 10 años
+Vida útil: L90B10>110.000 h.
+Sistema de control incluido: reprogramable en obra/selectro interno de potencias. Garantía limitada 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía. Acabado superficial con imprimación epoxy y poliuretano alifático bicomponente Color Negro texturado N1
+Incluye: Tratamiento Anticorrosión.
+Certificada por el IAC.
+Incluye: Adaptador para montaje en soportes diferentes a 60mm
+Incluye: Driver D4i.
+Incluye: sistema de control durante 5 años.
+Incluye: garantía 10 años.
+Incluye: pintada contra ambientes salinos.
+Incluye: protección de 20kV.
+Incluye: regulación en ángulo para ajuste desde ángulo de brazo a cero grados con respecto a la vía.|
+~C|M01B0070|h|Oficial electricista|22.75||1|
+~T|M01B0070|Oficial electricista|
+~C|M01B0080|h|Ayudante electricista|21.51||1|
+~T|M01B0080|Ayudante electricista|
+~C|mq07ple010bg|h|Alquiler cesta elevadora de brazo articulado, motor diesel, de 16 m de altura máxima de trabajo, incluso mantenimiento y seguro de responsabilidad civil.|20.79|251120|2|
+~C|VillaPCAmbar|Ud|Suministro e instalación de Luminaria Villa Led, clase II, PC Ambar 1800K.|504.21|090726|0|
+~T|VillaPCAmbar|Ud. de retirada de luminaria antigua existente e instalación de luminaria led modelo Villa hasta 60W para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo vertical superior. 
+Temperatura de color: PC Ambar 1800K.
+
+Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02.
+Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015.|
+~D|VillaPCAmbar
+|VillaPcAmbar\\1
+\F01A0010\\0.3
+\H01A0030\\0.409
+\H01A0040\\0.409
+\|
+~C|VillaPcAmbar|Ud|Luminaria Villa Led Artesolar o similar.|475.62|221120|3|
+~T|VillaPcAmbar|Lum. Exterior VILLA PREMIUM hasta 60W, marca Artesolar o similar,  clase II con carcasa de aleación de aluminio AC-43400 según UNE EN 1706, acabado en pintura en polvo poliéster Interpon 610 de Akzonobel, pulverizado electrostáticamente y sublimado al horno color negro. Sistema de apertura manual sin necesidad de herramientas. Disipación interna del módulo LED mediante aletas de aluminio inyectado. Módulo LED y driver estándar Zhaga Book 13, alojados en compartimentos independendientes y reemplazables. Driver alojado en compartimento estanco IP66 de módulo LED y componentes. Cierre de vidrio plano protegido por un marco aluminio inyectado. Óptica secundaria color ámbar de estándar Zhaga Book 15 2x2 50x50mm generando filtro desde 420-500nm para obtener la clasificación LED AMBAR por el Instituto Astrofísico de Canarias (IAC). Dimensiones: 586mm (H) * 400mm (W) * 400 mm (L). Índice de protección IP66 e IK08.
+PC AMBAR IAC: Irradiancia máxima595nm, FWHM = 93nm (<110nm). IRRADIANCIA ESPECTRAL: más del 86% de su irradiancia entre550-700nm (89%), inferior nulo entre 380-440nm (0,47%, ruido), inferior al 1,0% entre 380-500nm (0,83%) e inferior al 10% entre 380-550nm (8,26%), ni hay emisión singular por debajo de 500nm (0,01en 380nm, ruido), todo respecto a la irradiancia total entre 380-780nm. Mínimo 16LEDs de modelo 5050 con una corriente máxima de diseño de 400mA por LED. FHSinst <1%. L90B10 a 25ºC >100.000h. Temperatura de operación -45ºC/+50ºC. Índice de protección IP66 de modulo LED y componentes e IK08.
+Incluye driver electrónico 198 - 264 Vac. 50/60 Hz, FP>0,97, regulación autónoma mínimo 8 niveles, al menos 7 perfiles disponibles, posibilidad de modificar el perfil de regulación desde el centro de mando, programación (reajuste de corriente y carga de nuevos perfiles) a través de la línea de alimentación sin elemento electrónico adicional en la luminaria, regulación por tensión de red (inputDIM), NFC, función Constant Light Output (eCLO). Aislamiento clase II, protección frente a descargas eléctricas de 10kV. 
+
+Totalmente instalada sobre columna, poste, báculo o cualquier soporte existente, debiendo preveerse los accesorios opcionales de instalación, acople que sean necesarias para su correcta instalación y fijación Totalmente instalada y conexionada. 
+Certificada por el IAC.
+Incluye: sistema de control durante 5 años.
+Incluye: garantía 10 años.
+Incluye: pintada contra ambientes salinos.
+Incluye: protección de 10kV.|
+~C|F01A0010|h|Camión cesta|34.91|221120|2|
+~T|F01A0010|Camión cesta|
+~C|ProyPCAmbar|Ud|Suministro e instalación de Proyector Led, clase II, PC Ambar 1800K.|633.81|090726|0|
+~T|ProyPCAmbar|Ud. de retirada de proyector antiguo existente e instalación de proyector led modelo para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo vertical superior. 
+Temperatura de color: 1800 K.
+
+Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02.
+
+Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015.|
+~D|ProyPCAmbar
+|ProyPcAmbar\\1
+\F01A0010\\0.3
+\H01A0030\\0.408
+\H01A0040\\0.408
+\|
+~C|ProyPcAmbar|Ud|Proyector Led Omega Artesolar o Similar, clase II, PC Ambar 1800K.|605.26|221120|3|
+~T|ProyPcAmbar|Proyector: OMEGA 1 hasta 100W, marca Artesolar o similar, con carcasa y disipador en inyección de aluminio según UNE EN 1706. Recubrimiento de pintura en polvo de poliéster Interpon 610 de AkzoNobel, pulverizado electrostáticamente y sublimado al horno acabado en negro. Tratamiento anticorrosión. Disipación mediante aletas externas de aluminio extruido optimizando la disipación del grupo LED. Instalación mediante lira con rótula de ajuste manual sin herramientas. Apertura manual sin herramientas mediante bisagras superiores. Desconexión directa en apertura mediante interruptor interno. Válvula de aireación para evitar condensación entre ciclos encendido/apagado. Cierre de vidrio plano templado de 6mm de espesor. Lentes de PC 50x50mm optimizadas para formato de LED 3030. 96LEDs con una corriente máxima de diseño de 125mA por LED. Módulo LED propio reemplazable, compatible con módulos estándar Zhaga. Dimensiones 308mm x 360mm x 83mm, peso 4,6Kg. Eficacia sistema = 90,9lm/W, PC AMBAR. FHSinst 0% en posición horizontal.  Mantenimiento de flujo L96B10 a 25ºC > 100.000h ensayado para la configuración más crítica por laboratorio acreditado ENAC. Temperatura de operación -45ºC/+55ºC. Índices de protección IP66 e IK10.
+Incluye driver electrónico 100-305Vac, IP67, FP=0,95 a plena carga, regulación 1-10V y regulación de hasta 5 escalones (VM) 
+Aislamiento clase II, protección frente a descargas eléctricas de 10kV. Módulo LED y driver reemplazables. Marcado CE y certificados ENAC.
+con tratamiento anticorrosión España|
+~C|Conexion|Ud|Suministro e instalación de Conexión y protección de luminaria.|47.84|090726|0|
+~T|Conexion|Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02.
+
+Racores:
+Red Aérea P-6
+Red Subterranea RS-11
+
+Incluido:
+1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos.
+2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 
+3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV;
+4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV;
+5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV;
+
+NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente.
+Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato.|
+~D|Conexion
+|H01A0030\\0.122
+\H01A0040\\0.122
+\E22IB0300\\1
+\E224OLK5Q\\1
+\E22HD0010\\1
+\E22HC0020\\1
+\E22IB0040\\2
+\E22IB0050\\1
+\E22NILED\\3
+\|
+~C|E22IB0300|m|Cable manguera de cobre 3x2,5 mm²,RV-K 0,6/1 kV, CPR Eca|1.26|020420|3|
+~T|E22IB0300|Cable manguera de cobre 3x2,5 mm², aislamiento de polietileno reticulado XLPE, cubierta de PVC, CPR Eca, 0,6/1 kV|
+~C|E224OLK5Q|ud|Caja estanca IP55|11.01|251120|3|
+~C|E22HD0010|ud|Interrupt automát magnet 1P+N x 10 A, 6kA.|3.57||3|
+~T|E22HD0010|Interruptor automático magnetotérmico 1P+N x 10 A.|
+~C|E22HC0020|ud|Interruptor diferencial 2Px40A sensib 30 mA, clase A.|15.19||3|
+~T|E22HC0020|Interruptor diferencial 2Px40A sensibilidad 30 mA, clase A.|
+~C|E22IB0040|m|Cable Cu 0,6/1kV de 1x6 mm², Rz 0,6/1 kV, CPR Eca|1.56||3|
+~T|E22IB0040|Cable Cu 0,6/1kV de 1x6 mm², aislamiento de polietileno reticulado XLPE, 0,6/1 kV|
+~C|E22IB0050|m|Cable Cu 0,6/1kV de 1x25 mm², Rz 0,6/1 kV, CPR Eca|2.31||3|
+~T|E22IB0050|Cable Cu 0,6/1kV de 1x25 mm², aislamiento de polietileno reticulado XLPE, 0,6/1 kV|
+~C|E22NILED|Ud|Conector niled o similar|1.99|251120|3|
+~T|E22NILED|Conector niled o similar|
+~C|SustBrazo|ud|Suministro y sustirución de Brazo de Luminaria.|81.05|090726|0|
+~T|SustBrazo|Suministro y sustirución de Brazo de Luminaria instalada en poste o pared, incluso pernos de anclaje, izado y nivelado.
+Totalmente instalado.|
+~D|SustBrazo
+|Brazoycom\\1
+\H01A0030\\0.163
+\H01A0040\\0.164
+\|
+~C|Brazoycom|Ud|Brazo y complementos|73.8|251120|3|
+~T|Brazoycom|Brazo y complementos|
+~C|TomaTierra|Ud|Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.|155.66|090726|0|
+~T|TomaTierra|Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno.
+Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo.
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.|
+~D|TomaTierra
+|mt35tte010b\\1
+\mt35ttc010b\\2.75
+\E22CAD0320\\2.5
+\mt35tta040\\1
+\mt35tta010\\1
+\mt35tta030\\1
+\mt35tta060\\0.333
+\mt35www020\\1
+\M01B0070\\0.013
+\M01B0080\\0.015
+\|
+~C|mt35tte010b|Ud|Electrodo para red de toma de tierra cobreado con 300 µm, fabricado en acero, de 15 mm de diámetro y 2 m de longitud.|17.64|251120|3|
+~C|mt35ttc010b|m|Conductor de cobre desnudo, de 35 mm².|2.64|251120|3|
+~C|E22CAD0320|m|Tubo PVC flexible gris M25, DIFLEX|3.44|130114|3|
+~T|E22CAD0320|Tubo de PVC flexible gris M25 mm, DIFLEX de Gewiss|
+~C|mt35tta040|Ud|Grapa abarcón para conexión de pica.|0.52|251120|3|
+~C|mt35tta010|Ud|Arqueta para toma de tierra, de 300x300 mm, con tapa de registro.|73.96|251120|3|
+~C|mt35tta030|Ud|Puente para comprobación de puesta a tierra de la instalación eléctrica.|45.73|251120|3|
+~C|mt35tta060|Ud|Saco de 5 kg de sales minerales para la mejora de la conductividad de puestas a tierra.|1.92|251120|3|
+~C|mt35www020|Ud|Material auxiliar para instalaciones de toma de tierra.|0.69|251120|3|
+~C|PINTADO|Ud|Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa.|20.42|090726|0|
+~T|PINTADO|Ud. de Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa.|
+~D|PINTADO
+|Pintado\\1
+\M01B0070\\0.1
+\M01B0080\\0.1
+\|
+~C|Pintado|Ud|Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa|15.99|201120|3|
+~T|Pintado|Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa|
+~C|PABDV|PA|Partida Alzada Saneamiento e imprevistos.|2427.18|210522|0|
+~T|PABDV|Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo.|
+~C|APG20SS#||Seguridad y Salud.|1215.04|130218|0|
+~T|APG20SS#|Seguridad y Salud|
+~D|APG20SS#
+|YSX010d\\1
+\YMM010b\\5
+\D32CA0010\\5
+\|
+~C|YSX010d|Ud|Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.|616.01|210522|0|
+~T|YSX010d|Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~C|YMM010b|Ud|Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.|101.42|010720|0|
+~T|YMM010b|Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.
+Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~D|YMM010b
+|mt50eca010\\1
+\|
+~C|mt50eca010|Ud|Botiquín de urgencia provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, con tornillos y tacos para fijar al paramento.|101.42|251120|3|
+~C|D32CA0010|ud|Señal de cartel obras, PVC, sin soporte metálico|11.31|090726|0|
+~T|D32CA0010|Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje.|
+~D|D32CA0010
+|M01A0030\\0.223
+\E38CA0030\\1
+\|
+~C|M01A0030|h|Peón|21.57||1|
+~T|M01A0030|Peón|
+~C|E38CA0030|ud|Señal cartel obras, PVC, 45x30 cm|6.5||3|
+~T|E38CA0030|Señal de cartel de obras, PVC, 45x30 cm|
+~C|APG20GR#||Gestión de Residuos.|479.25|130218|0|
+~T|APG20GR#|Gestión de Residuos.|
+~D|APG20GR#
+|RAELVIAL\\53
+\D37B0060\\0.02
+\D37CC0070\\0.03
+\D37CC0080\\0.03
+\|
+~C|RAELVIAL|Ud|Gestión de residuo RAEE de luminaria vial|8.35|010626|0|
+~T|RAELVIAL|Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE.|
+~D|RAELVIAL
+|RAEE\\1
+\|
+~C|RAEE|Ud|Gestión de residuo RAEE de luminaria vial|8.35|010626|3|
+~T|RAEE|Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE.|
+~C|D37B0060|m³|Transporte residuos a instalac. autorizada 20 km.|13.12||0|
+~T|D37B0060|Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km.|
+~D|D37B0060
+|QAB0030\\0.33
+\|
+~C|QAB0030|h|Camión basculante 15 t|39.76||2|
+~T|QAB0030|Camión basculante 15 t|
+~C|D37CC0070|t|Coste entrega residuos de plástico a instalación de valorización|200|181113|0|
+~T|D37CC0070|Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CC0070
+|E41CA0140\\1
+\|
+~C|E41CA0140|t|Tasa gestor aut. valorización residuos plástico, LER 170203|200|181113|3|
+~T|E41CA0140|Tasa de gestor autorizado valoración en residuos de plástico, LER 170203. (Densidad aproximada entre 0,60 y 0,80 t/m³)|
+~C|D37CC0080|t|Coste entrega residuos de papel y cartón a instalación de valorización|550|181113|0|
+~T|D37CC0080|Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CC0080
+|E41CA0150\\1
+\|
+~C|E41CA0150|t|Tasa gestor aut. valorización residuos papel y cartón, LER 200101|550|181113|3|
+~T|E41CA0150|Tasa de gestor autorizado valoración en residuos de papel y cartón, LER 200101. (Densidad aproximada entre 0,60 y 0,80 t/m³)|

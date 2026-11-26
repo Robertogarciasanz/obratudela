@@ -1,0 +1,201 @@
+{
+ "expediente": "252/2026",
+ "organismo": "Presidencia de la Mancomunidad de Ayuntamientos del Norte de Gran Canaria",
+ "titulo": "Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria, incluido en el Plan de Cooperación del Cabildo de Gran Canaria.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1136492.96 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=n%2BxizJ4e3%2Bgl4xOTv4GxSqdR2Beatj3uM5%2BlWyBcsXCQF9s8oVwweKMjwu9M3CQK2q%2BbCRJaqmAddVH7pSD%2BMtAVi2eBE4AnsqrVQlmmRA97QB3HKyQaFUExmUVQCerk",
+ "archivo_origen": "252_2026_Valleseco.bc3",
+ "total_bc3": 36429.79,
+ "suma_partidas": 36429.79,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "APSB_1_3",
+   "resumen": "Alumbrado Público Fotovoltaico.",
+   "importe": 35613.6
+  },
+  {
+   "codigo": "APF20SS",
+   "resumen": "Seguridad y Salud",
+   "importe": 671.99
+  },
+  {
+   "codigo": "APG20GR",
+   "resumen": "Gestión de Residuos.",
+   "importe": 144.2
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Alumbrado Público Fotovoltaico.",
+   "codigo": "SAT80",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar.",
+   "cantidad": 15.0,
+   "precio": 1804.47,
+   "importe": 27067.05,
+   "descripcion": "Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar. Modelo: COMPACT 80 Potencia máxima: 60 W Flujo luminoso: 6.400 lm Panel solar: Fotovoltaico de 82 Wp Batería: LifePO4 de 460 Wh Luminaria certificada con IAC – Certificado en base a Ley 31/1988. Certificación fotobiológica nivel RG0 - IEC 62471:2009 Incluye: Columnas reforzada de P.R.F.V. marca Adhorna modelo SE-500-PLA o simila de 5 metros. Características: Algoritmo de ajuste automático basado en captación solar y previsión meteorológica, orientación independiente del panel solar, eficiencia certificada de 174 lm/W. Temperatura de color 2700K, 3000K, segun DF."
+  },
+  {
+   "capitulo": "Alumbrado Público Fotovoltaico.",
+   "codigo": "Z01ACEA0030",
+   "unidad": "ud",
+   "resumen": "Base hormigón p/cimentación de báculo o columna de 5<=h<8 m",
+   "cantidad": 15.0,
+   "precio": 437.49,
+   "importe": 6562.35,
+   "descripcion": "Base para cimentación de báculo o columna de 5<=h<8 m de altura, de 0,80x0,80x1,00 m, realizada con hormigón en masa de fck=17,5 N/mm², incluso encofrado, excavación precisa, recibido de pernos de anclaje."
+  },
+  {
+   "capitulo": "Alumbrado Público Fotovoltaico.",
+   "codigo": "UIV010",
+   "unidad": "Ud",
+   "resumen": "Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada.",
+   "cantidad": 15.0,
+   "precio": 80.98,
+   "importe": 1214.7,
+   "descripcion": "Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada. Incluye: Replanteo. Fijación de la columna. Montaje, conexionado y comprobación de su correcto funcionamiento. Incluye: Tornillería embellecedora. Incluye: la colocación completa de la luminaria fotovoltaica, su conexionado y comprobación."
+  },
+  {
+   "capitulo": "Alumbrado Público Fotovoltaico.",
+   "codigo": "D01A0070",
+   "unidad": "m³",
+   "resumen": "Demolición elementos cimentac. horm armado.",
+   "cantidad": 2.0,
+   "precio": 134.75,
+   "importe": 269.5,
+   "descripcion": "Demolición de elementos de cimentación de hormigón armado con medios mecánicos, incluso p.p. de compresor, carga y transporte de escombros a vertedero autorizado, medido el volumen inicial a demoler."
+  },
+  {
+   "capitulo": "Alumbrado Público Fotovoltaico.",
+   "codigo": "PAMAP_08",
+   "unidad": "PA",
+   "resumen": "Partida Alzada imprevistos y legalización de instalaciones.",
+   "cantidad": 1.0,
+   "precio": 500.0,
+   "importe": 500.0,
+   "descripcion": "Partida Alzada imprevistos y legalización de instalaciones."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "YMM010",
+   "unidad": "Ud",
+   "resumen": "Suministro y colocación de botiquín de urgencia, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.",
+   "cantidad": 1.0,
+   "precio": 122.09,
+   "importe": 122.09,
+   "descripcion": "Suministro y colocación de botiquín de urgencia, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos. Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32AA0020",
+   "unidad": "ud",
+   "resumen": "Mascarilla FFP2 autofiltrante, Würth",
+   "cantidad": 3.0,
+   "precio": 3.03,
+   "importe": 9.09,
+   "descripcion": "Mascarilla FFP2 autofiltrante, Würth o equivalente, protección contra partículas sólidas y líquidas de mediana toxicidad, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32AA0040",
+   "unidad": "ud",
+   "resumen": "Casco seguridad SH 4, Würth",
+   "cantidad": 3.0,
+   "precio": 17.11,
+   "importe": 51.33,
+   "descripcion": "Casco seguridad SH 4, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32AB0030",
+   "unidad": "ud",
+   "resumen": "Guantes Tigerflex anticorte, Würth",
+   "cantidad": 3.0,
+   "precio": 9.98,
+   "importe": 29.94,
+   "descripcion": "Guantes Tigerflex anticorte, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32AC0010",
+   "unidad": "ud",
+   "resumen": "Botas Hercules S3, Würth",
+   "cantidad": 3.0,
+   "precio": 55.68,
+   "importe": 167.04,
+   "descripcion": "Botas Hercules S3 (par), Würth o equivalente, con puntera y plantilla metálica, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32CA0010",
+   "unidad": "ud",
+   "resumen": "Señal de cartel obras, PVC, sin soporte metálico",
+   "cantidad": 1.0,
+   "precio": 12.72,
+   "importe": 12.72,
+   "descripcion": "Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32CA0030",
+   "unidad": "ud",
+   "resumen": "Cartel indicativo de riesgo de PVC, con soporte metálico",
+   "cantidad": 1.0,
+   "precio": 57.48,
+   "importe": 57.48,
+   "descripcion": "Cartel indicativo de riesgo, con soporte metálico de 1,3 m de altura, (amortización = 100 %) incluso colocación, apertura de pozo, hormigón de fijación, y desmontado."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32CB0020",
+   "unidad": "m",
+   "resumen": "Cinta de balizamiento con banderolas reflectantes i/soporte",
+   "cantidad": 10.0,
+   "precio": 16.88,
+   "importe": 168.8,
+   "descripcion": "Cinta de balizamiento con banderolas reflectantes, incluso soporte metálico, (amortización = 100 %), colocación y desmontaje."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32CB0030",
+   "unidad": "ud",
+   "resumen": "Cono de señalización reflectante",
+   "cantidad": 2.0,
+   "precio": 12.25,
+   "importe": 24.5,
+   "descripcion": "Cono de señalización reflectante de 60 cm de altura, incluso colocación y posterior retirada."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "D32CB0040",
+   "unidad": "ud",
+   "resumen": "Lámpara para señalización de obras con soporte metálico",
+   "cantidad": 1.0,
+   "precio": 29.0,
+   "importe": 29.0,
+   "descripcion": "Lámpara para señalización de obras con soporte metálico y pilas, i/colocación y desmontaje."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CA0010",
+   "unidad": "t",
+   "resumen": "Coste vertido de tierras y piedras a instalación de valorización",
+   "cantidad": 5.0,
+   "precio": 11.33,
+   "importe": 56.65,
+   "descripcion": "Entrega de tierras y piedras sin sustancias peligrosas (tasa vertido), con código 170504 según la Lista Europea de Residuos (LER) publicada por Orden MAM/304/2002, a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 22/2011."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CB0040",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos mezclados inertes a instalación de valorización",
+   "cantidad": 5.0,
+   "precio": 17.51,
+   "importe": 87.55,
+   "descripcion": "Coste de entrega de residuos mezclados de hormigón, ladrillos, tejas y materiales cerámicos, (tasa vertido), con código 170107 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  }
+ ]
+}

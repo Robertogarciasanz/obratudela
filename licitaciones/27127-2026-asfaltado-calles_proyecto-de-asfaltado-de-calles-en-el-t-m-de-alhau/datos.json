@@ -1,0 +1,336 @@
+{
+ "expediente": "27127/2026 ASFALTADO CALLES",
+ "organismo": "Alcaldía del Ayuntamiento de Alhaurín el Grande",
+ "titulo": "Proyecto de asfaltado de calles en el T.M. de Alhaurín el Grande y Villa del Guadalhorce",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "186936.54 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=ugyHVU%2BOn62i0uWhf0AFGEf3r75CKZ3N%2BWig71j4aKhnnYfzyOLkvZNZoHNng%2BNyLXHJdiTIsWgfazDG4f6P8PTjHGg7UoyBPL2vMOzhOMt45ClyWkoJ44mKM70IFcOu",
+ "archivo_origen": "27127_2026_ASFALTADO_CALLES_20261021_PLAN_ASFALTO_2026.bc3",
+ "total_bc3": 157089.53,
+ "suma_partidas": 157089.53,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "C01",
+   "resumen": "PAVIMENTACION. ACABADO FINAL",
+   "importe": 145736.94
+  },
+  {
+   "codigo": "C02",
+   "resumen": "SEGURIDAD Y SALUD",
+   "importe": 2851.25
+  },
+  {
+   "codigo": "C03",
+   "resumen": "CONTROL DE CALIDAD",
+   "importe": 6942.96
+  },
+  {
+   "codigo": "C04",
+   "resumen": "GESTIÓN DE RESIDUOS DE LA CONSTRUCCIÓN",
+   "importe": 1558.38
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "PAVIMENTACION. ACABADO FINAL",
+   "codigo": "U03DF010",
+   "unidad": "m2",
+   "resumen": "FRESADO FIRME MBC SECCIÓN COMPLETA",
+   "cantidad": 2252.0,
+   "precio": 14.91,
+   "importe": 33577.32,
+   "descripcion": "Fresado (1-2 cm.) de firme de mezcla bituminosa en caliente en sección completa o semicalzada, incluso carga, barrido y transporte a vertedero o planta de reciclaje o lugar de empleo."
+  },
+  {
+   "capitulo": "PAVIMENTACION. ACABADO FINAL",
+   "codigo": "U03VCS050",
+   "unidad": "t",
+   "resumen": "MEZCLA BITUMINOSA EN CALIENTE TIPO AC-16 SURF 50/70 S DESGASTE Á",
+   "cantidad": 1243.68,
+   "precio": 87.03,
+   "importe": 108237.47,
+   "descripcion": "Mezcla bituminosa en caliente tipo AC 16 surf 50/70 S para capa de rodadura, elaborada con árido grueso procedente de machaqueo de piedra de cantera, con un coeficiente de desgaste de Los Ángeles inferior al 20%. Incluye la ejecución previa de riego de adherencia mediante la aplicación uniforme de emulsión bituminosa de rotura rápida (tipo C60B3 ADH o similar según normativa), a razón de la dotación residual prescrita en proyecto. Incluye el betún asfáltico tipo 50/70, la dotación de áridos, polvo mineral de aportación (filler), la dosificación y fabricación en planta, el transporte a pie de obra mediante camiones adecuadamente cubiertos, el extendido mediante extendedora autopropulsada y la compactación mecánica por capas con rodillo vibratorio y de neumáticos hasta alcanzar una densidad mínima del 98% del ensayo Marshall. Se incluye la limpieza previa de la superficie mediante barrido mecánico profunda, el corte de juntas de pavimentos existentes y los medios auxiliares necesarios. Todo ello ejecutado en total conformidad con las especificaciones técnicas de la Norma 6.1-IC de Secciones de Firme y las Órdenes Circulares vigentes de la Dirección General de Carreteras sobre mezclas bituminosas y materiales asfálticos. Medida la partida por peso neto real de la mezcla verificado en báscula oficial de pesaje a la entrada de la obra"
+  },
+  {
+   "capitulo": "PAVIMENTACION. ACABADO FINAL",
+   "codigo": "U03",
+   "unidad": "ud",
+   "resumen": "MARCACIÓN DE ARQUETAS CON LOSA CERAMICA",
+   "cantidad": 233.0,
+   "precio": 5.14,
+   "importe": 1197.62,
+   "descripcion": "Marcación de arquetas con loseta cerámica de 10x10 de 5 cms. de grosor, marcando el tipo de instalación en los terminos que solicte la dirección facultativa."
+  },
+  {
+   "capitulo": "PAVIMENTACION. ACABADO FINAL",
+   "codigo": "01.04",
+   "unidad": "TN",
+   "resumen": "MBC TIPO AC-16 SURF 50/70 CON CAMION CALORIFUGADO",
+   "cantidad": 18.06,
+   "precio": 150.86,
+   "importe": 2724.53,
+   "descripcion": ""
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RA010",
+   "unidad": "ud",
+   "resumen": "CASCO DE SEGURIDAD",
+   "cantidad": 8.0,
+   "precio": 2.82,
+   "importe": 22.56,
+   "descripcion": "Casco de seguridad con arnés de adaptación. Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RA070",
+   "unidad": "ud",
+   "resumen": "GAFAS CONTRA IMPACTOS",
+   "cantidad": 4.0,
+   "precio": 3.43,
+   "importe": 13.72,
+   "descripcion": "Gafas protectoras contra impactos, incoloras, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RA090",
+   "unidad": "ud",
+   "resumen": "GAFAS ANTIPOLVO",
+   "cantidad": 4.0,
+   "precio": 0.93,
+   "importe": 3.72,
+   "descripcion": "Gafas antipolvo antiempañables, panorámicas, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RA120",
+   "unidad": "ud",
+   "resumen": "CASCOS PROTECTORES AUDITIVOS",
+   "cantidad": 5.0,
+   "precio": 4.18,
+   "importe": 20.9,
+   "descripcion": "Protectores auditivos con arnés a la nuca, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RA100",
+   "unidad": "ud",
+   "resumen": "SEMI MÁSCARA ANTIPOLVO 1 FILTRO",
+   "cantidad": 2.0,
+   "precio": 8.25,
+   "importe": 16.5,
+   "descripcion": "Semi-mascarilla antipolvo un filtro, (amortizable en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RC090",
+   "unidad": "ud",
+   "resumen": "TRAJE IMPERMEABLE",
+   "cantidad": 6.0,
+   "precio": 11.2,
+   "importe": 67.2,
+   "descripcion": "Traje impermeable de trabajo, 2 piezas de PVC, (amortizable en un uso). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RC100",
+   "unidad": "ud",
+   "resumen": "TRAJE AGUA VERDE INGENIERO",
+   "cantidad": 3.0,
+   "precio": 21.79,
+   "importe": 65.37,
+   "descripcion": "Traje de agua color verde tipo ingeniero, (amortizable en un uso). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RC150",
+   "unidad": "ud",
+   "resumen": "PETO REFLECTANTE DE SEGURIDAD",
+   "cantidad": 7.0,
+   "precio": 7.08,
+   "importe": 49.56,
+   "descripcion": "Peto reflectante de seguridad personal en colores amarillo y rojo, (amortizable en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RM060",
+   "unidad": "ud",
+   "resumen": "PAR GUANTES DE NITRILO",
+   "cantidad": 11.0,
+   "precio": 3.56,
+   "importe": 39.16,
+   "descripcion": "Par de guantes de nitrilo alta-resistencia. Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RP020",
+   "unidad": "ud",
+   "resumen": "PAR DE BOTAS ALTAS DE AGUA (VERDES)",
+   "cantidad": 7.0,
+   "precio": 14.5,
+   "importe": 101.5,
+   "descripcion": "Par de botas altas de agua color verde, (amortizables en 1 uso). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RP060",
+   "unidad": "ud",
+   "resumen": "PAR DE BOTAS DE AGUA DE SEGURIDAD",
+   "cantidad": 6.0,
+   "precio": 15.98,
+   "importe": 95.88,
+   "descripcion": "Par de botas de seguridad con plantilla y puntera de acero, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECCIONES INDIVIDUALES",
+   "codigo": "E28RP150",
+   "unidad": "ud",
+   "resumen": "PAR RODILLERAS",
+   "cantidad": 3.0,
+   "precio": 2.96,
+   "importe": 8.88,
+   "descripcion": "Par de rodilleras ajustables de protección ergonómica, (amortizables en 3 usos). Certificado CE. s/ R.D. 773/97 y R.D. 1407/92."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "E28ES060",
+   "unidad": "ud",
+   "resumen": "PALETA MANUAL 2 CARAS STOP-OBL.",
+   "cantidad": 2.0,
+   "precio": 12.63,
+   "importe": 25.26,
+   "descripcion": "Señal de seguridad manual a dos caras: Stop-Dirección obligatoria, tipo paleta. (amortizable en dos usos). s/ R.D. 485/97."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "E28ES080",
+   "unidad": "ud",
+   "resumen": "PLACA SEÑALIZACIÓN RIESGO",
+   "cantidad": 4.0,
+   "precio": 5.29,
+   "importe": 21.16,
+   "descripcion": "Placa señalización-información en PVC serigrafiado de 50x30 cm., fijada mecánicamente, amortizable en 3 usos, incluso colocación y desmontaje. s/ R.D. 485/97."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "E28PB120",
+   "unidad": "m.",
+   "resumen": "BARAND.PROTECCIÓN LATERAL ZANJAS",
+   "cantidad": 20.0,
+   "precio": 12.01,
+   "importe": 240.2,
+   "descripcion": "Barandilla protección lateral de zanjas, formada por tres tabloncillos de madera de pino de 20x5 cm. y estaquillas de madera de D=8 cm. hincadas en el terreno cada 1,00 m. (amortizable en 3 usos), incluso colocación y desmontaje. s/ R.D. 486/97."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "E28PB180",
+   "unidad": "ud",
+   "resumen": "VALLA CONTENCIÓN DE PEATONES",
+   "cantidad": 12.0,
+   "precio": 58.94,
+   "importe": 707.28,
+   "descripcion": "Valla de contención de peatones, metálica, prolongable de 2,50 m. de largo y 1 m. de altura, color amarillo, amortizable en 5 usos, incluso colocación y desmontaje. s/ R.D. 486/97."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "E28PE080",
+   "unidad": "ud",
+   "resumen": "CUADRO GENERAL OBRA Pmáx= 80 kW.",
+   "cantidad": 0.6,
+   "precio": 734.87,
+   "importe": 440.92,
+   "descripcion": "Cuadro general de mandos y protección de obra para una potencia máxima de 40 kW. compuesto por armario con revestimiento de poliéster, de 90x80 cm., índice de protección IP 66, con cerradura, interruptor automático magnetotérmico de 4x32 A., relé diferencial de 40A( 0,3 A., 0,03mA), interruptores automáticos magnetotérmicos de 4x25 A, tres magnetortérmicos de 2x16A., incluyendo cableado, rótulos de identificación de circuitos, bornes de salida y p.p. de conexión a tierra, para una resistencia no superior de 20 Ohmios, instalado y legalizado, (amortizable en 6 obras). s/ R.D. 486/97."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "U18BCC040",
+   "unidad": "m.",
+   "resumen": "CINTA BALIZAMIENTO DE PLÁSTICO",
+   "cantidad": 350.0,
+   "precio": 0.22,
+   "importe": 77.0,
+   "descripcion": "Cinta de balizamiento de plástico R/B y A/B de resistencia normal, colocada."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "U18BCN021",
+   "unidad": "ud",
+   "resumen": "CONO POLIETILENO REFLECT. 500 mm",
+   "cantidad": 8.0,
+   "precio": 13.97,
+   "importe": 111.76,
+   "descripcion": "Cono polietileno reflectante de 500 mm colocado."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "U18VAT011",
+   "unidad": "ud",
+   "resumen": "SEÑAL TRIANG. REFL. H.I. L=70 cm",
+   "cantidad": 3.0,
+   "precio": 100.67,
+   "importe": 302.01,
+   "descripcion": "Señal triangular de lado 70 cm., reflexiva nivel II (H.I.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "U18LF070",
+   "unidad": "ud",
+   "resumen": "FOCO DIODO D=60 mm Y PROGAMADOR",
+   "cantidad": 6.0,
+   "precio": 42.38,
+   "importe": 254.28,
+   "descripcion": "Foco de diodos LED de d=60 mm compuesto por 32 diodos LED ambar de alta luminosidad por una cara, dotado de progamador electronico con funcionamiento sincrono de los focos y celula crepuscular automatica, amortizable en 4 obras."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD > PROTECIONES COLECTIVAS",
+   "codigo": "P31BM110",
+   "unidad": "ud",
+   "resumen": "Botiquín de urgencias + 1 repuesto completo",
+   "cantidad": 1.0,
+   "precio": 166.43,
+   "importe": 166.43,
+   "descripcion": ""
+  },
+  {
+   "capitulo": "CONTROL DE CALIDAD",
+   "codigo": "U19PB010",
+   "unidad": "ud",
+   "resumen": "TOMA MUESTRAS, MATERIALES BITUMINOSOS",
+   "cantidad": 36.0,
+   "precio": 30.45,
+   "importe": 1096.2,
+   "descripcion": "Toma de muestras para ensayos de ligantes e imprimaciones bituminosas, s/ NLT 121."
+  },
+  {
+   "capitulo": "CONTROL DE CALIDAD",
+   "codigo": "U19PB290",
+   "unidad": "ud",
+   "resumen": "CONFORMIDAD, EMULSIONES ASFALTICAS",
+   "cantidad": 36.0,
+   "precio": 162.41,
+   "importe": 5846.76,
+   "descripcion": "Ensayo completo para comprobación de la conformidad de emulsiones asfálticas, mediante la realización de ensayos de laboratorio para determinar el contenido en agua, s/ NLT 137, la destilación, s/ NLT 139, y la determinación de la penetración sobre el residuo de destilación, s/ NLT 124."
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS DE LA CONSTRUCCIÓN",
+   "codigo": "U20CC010",
+   "unidad": "Tn",
+   "resumen": "CLASIFICACIÓN DE RESIDUOS",
+   "cantidad": 112.6,
+   "precio": 2.02,
+   "importe": 227.45,
+   "descripcion": "Clasificación a pie de obra de residuos de construcción o demolición en fracciones según normativa vigente."
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS DE LA CONSTRUCCIÓN",
+   "codigo": "U20CT018",
+   "unidad": "Tn",
+   "resumen": "GESTIÓN DE LOS RESIDUOS DE CONSTR, INCL. CANON- GASTOS VARIOS",
+   "cantidad": 112.6,
+   "precio": 11.82,
+   "importe": 1330.93,
+   "descripcion": "Gestión de los residuos de la consrucción, desde su generación en obra, clasificación, separación, carga y trasnporte, incluidos los canon, impuestos y gastos derivados para su gestión golobal, informes, etc..."
+  }
+ ]
+}

@@ -1,0 +1,381 @@
+{
+ "expediente": "23819/2026",
+ "organismo": "Alcaldia del Ayuntamiento de Arucas",
+ "titulo": "Sustitución del Alumbrado Público de la Calle Josefa Machín de Morales, Calle Luisa Ramos Medina desde el nº 1 al nº 15 y Pasaje La Barca",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "65945.38 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=ShTHsllbsRT8JWlMc9zCJ6/3HK5NAiptzTLqAtN338Z6pBY9c4x9ch67qnZG1u/d93wJt3ph2pW90BxcICYZd9O1SPrYpguPLslSy0JbuwbDdQD9RyhUmzT4jZ2In4zL",
+ "archivo_origen": "23819_2026_PRESUPUESTO_EN_BC3.bc3",
+ "total_bc3": 55416.28,
+ "suma_partidas": 55416.28,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "C01",
+   "resumen": "OBRA CIVIL-ALUMBRADO",
+   "importe": 6154.32
+  },
+  {
+   "codigo": "C02",
+   "resumen": "ELECTRICIDAD ALUMBRADO",
+   "importe": 46046.68
+  },
+  {
+   "codigo": "C03",
+   "resumen": "SEGURIDAD Y SALUD",
+   "importe": 1027.28
+  },
+  {
+   "codigo": "C04",
+   "resumen": "GESTION DE RESIDUOS",
+   "importe": 988.0
+  },
+  {
+   "codigo": "C05",
+   "resumen": "PA IMPREVISTOS",
+   "importe": 1200.0
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.01",
+   "unidad": "m",
+   "resumen": "ml. Corte de asfalto con cortadora",
+   "cantidad": 102.0,
+   "precio": 3.02,
+   "importe": 308.04,
+   "descripcion": "ml. Corte de asfalto con máquina cortadora de disco refrigerada por agua, con una profundidad media de 25cm."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.02",
+   "unidad": "m²",
+   "resumen": "Demolición pavimento o bordillos hormigón, terrazo, cerámico,...",
+   "cantidad": 4.0,
+   "precio": 14.56,
+   "importe": 58.24,
+   "descripcion": "Demolición de pavimento de hormigón terrazo, cerámico o piedra natura l(lajas existente) y bordillos de hormigón, incluso demolición de P.P. de peldañeado de hormigón, bordillos, atezados, soleras armadas, rellenos de hormigón ciclope, etc, y del espesor que fuese necesario para la ejecución posterior del peldañeado o hasta nivel necesario para la nueva pavimentación, solera o revestimiento, según criterio de la D.F. por medios manuales o mecanicos, incluso perfilado del corte de la demolición, acopio de escombros junto al lugar de carga, limpieza de la zona de trabajo, carga y transporte de escombros a gestor autorizado. Los trabajos se medirán en proyección en planta."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.03",
+   "unidad": "m²",
+   "resumen": "Demolición con compresor pavimento asfáltico.",
+   "cantidad": 20.0,
+   "precio": 11.62,
+   "importe": 232.4,
+   "descripcion": "Demolición con compresor de pavimento asfáltico de espesor variable hasta llegar al terreno, incluso corte previo de asfalto con máquina, acopio de escombros junto al lugar de carga, limpieza de la zona de trabajo, carga y transporte de escombros a gestor autorizado."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.04",
+   "unidad": "u",
+   "resumen": "Base hormigón p/cimentación de báculo o columna de 4<h<7 m",
+   "cantidad": 14.0,
+   "precio": 169.57,
+   "importe": 2373.98,
+   "descripcion": "Saneamiento Base para cimentación de báculo, columna o posteletes de 4 a 7 m de altura, realización de dado de hormigón en masa de fck=17,5 N/mm² de70x70x100 cm, incluso encofrado, excavación y demolición precisa, carga y transporte a vertedero , recibido de pernos de anclaje, remate de pavimento, peana de hormigón lavado, codo y canalización de PVC D 110 hasta arqueta. Totalmente acabada."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.05",
+   "unidad": "m",
+   "resumen": "Canalización con 1 tubo de PE D 90 mm,",
+   "cantidad": 80.0,
+   "precio": 23.91,
+   "importe": 1912.8,
+   "descripcion": "Canalización eléctrica formada por 1 tubo de polietileno (rojo), de doble pared, D 90 mm, Tuyper o equivalente, s/UNE-EN 50086,. (Tuberías y perfiles plásticos) o equivalente, para distribución de líneas eléctricas de B.T incluso alambre guía galvanizado, cinta de señalización, excavación en zanja, protección con hormigón, relleno y compactación del resto de la zanja con tierras saneadas. Instalada."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.06",
+   "unidad": "u",
+   "resumen": "Arqueta , conexionado electricidad ext. frabrica de bloques",
+   "cantidad": 7.0,
+   "precio": 140.52,
+   "importe": 983.64,
+   "descripcion": "ud. Arqueta para conexionado de electricidad en exteriores,de 40x40x40 cms realizada con bloque huec+o de hormigón vibrado de 9x25x50 cm, enfoscada y bruñida interiormente, con tapa y marco de fundición dúctil de 500x500 mm y fondo de arena. Totalmente acabada."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.07",
+   "unidad": "ml",
+   "resumen": "Bordillo acera achaflanado de hormigón 50x30x15-18 cm",
+   "cantidad": 2.0,
+   "precio": 40.57,
+   "importe": 81.14,
+   "descripcion": "Bordillo de acera, achaflanado, de hormigón de 50x30x15-18 cm, colocado con mortero de cemento 1:5, incluso base y recalce de hormigón y rejuntado."
+  },
+  {
+   "capitulo": "OBRA CIVIL-ALUMBRADO",
+   "codigo": "01.08",
+   "unidad": "m²",
+   "resumen": "Pavimento gris 4 pastillas de 25x25 cm",
+   "cantidad": 4.0,
+   "precio": 51.02,
+   "importe": 204.08,
+   "descripcion": "Pavimento hidráulico de 25x25 cm, color gris, 4 pastillas, colocado sobre capa de mortero de cemento M15 (dosificación cemento - arena 1:3, con árido variable máximo 4 mm) + Puente de unión mediante lechada de Adhesivo cementoso C 2TE S1 eriquesido con Compaktuna, incluso solera de hormigón de fck=10 N/mm² de 7 cm de espesor, cortes, formación de juntas de dilatación, rejuntado y limpieza."
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.01",
+   "unidad": "m",
+   "resumen": "Circuito alumbrado público",
+   "cantidad": 217.0,
+   "precio": 19.1,
+   "importe": 4144.7,
+   "descripcion": "CIRCUITO DE ALUMBRADO PÚBLICO, instalado con cable de COBRE aislamiento RV 0,6/1kV formado por 4 conductores de 25mm2 de sección nominal UNE 21123,+ red de tierra formado por 1x16 mm2 Cu RVK canalizado y aislado. Construido según R.B.T. Medida la unidad por metro de canalización. Se deberá dejar en cada arqueta una coca de medio metro para asegurar la holgura y conexionado adecuado."
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.02",
+   "unidad": "m",
+   "resumen": "Acometida a columna con una luminaria",
+   "cantidad": 135.0,
+   "precio": 3.16,
+   "importe": 426.6,
+   "descripcion": "Acometida a columna con una luminaria formada por Conductor interior de conexión entre la caja de protección y las luminarias de 2x2.5 mm2 RV-K 0,6/1 kV+ 1x2.5 mm2 Cu H07V-K 450/750 V (amarillo-verde); UNE Cca-s1B, d1, a1; completamente instalado"
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.03",
+   "unidad": "u",
+   "resumen": "Pica de Cobre",
+   "cantidad": 6.0,
+   "precio": 23.38,
+   "importe": 140.28,
+   "descripcion": "Pica de tierra de cobre de 14,3mm de diámetro y 2m de longitud según Norma UNE 202 006 incluso grapas de fijación y/o soldadura al conductor de Cu desnudo de 35mm2 de acuerdo al REglamento Eléctrotécnico de baja tensión"
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.04",
+   "unidad": "u",
+   "resumen": "Caja de Poliester",
+   "cantidad": 18.0,
+   "precio": 49.29,
+   "importe": 887.22,
+   "descripcion": "Caja de poliester con grado de protección IP66 provista de carril DIN fijada en el interior de la columna con capacidad para albergar 4 módulos. 1 interruptor diferencial 40A/ 30 mA de sensibili- dad y 1 o 2 DPN de 2x16A"
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.05",
+   "unidad": "u",
+   "resumen": "Racores de Derivación",
+   "cantidad": 18.0,
+   "precio": 7.31,
+   "importe": 131.58,
+   "descripcion": "Racores de derivación Niled situados en arqueta con p.p. de cable de 1x16 mm2 Cu 0.6/1kV entre la caja de protección y la red de distribución; Fijación de los racores de conexión a la parte alta de la arqueta; Puesta a tierra de la columna desde arqueta mediante cable de 1x16 mm2"
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.06",
+   "unidad": "u",
+   "resumen": "Luminaria BENITO ILDH01633 DECO HORIZON 16LED",
+   "cantidad": 18.0,
+   "precio": 590.37,
+   "importe": 10626.66,
+   "descripcion": "Suministro y colocación Luminaria BENITO ILDH01633 DECO HORIZON 16LED totalmente instaladay funcionando"
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.07",
+   "unidad": "u",
+   "resumen": "Suministro y colocación Columna DELTA MIIXTA DE 7 METROS -ICDE70",
+   "cantidad": 15.0,
+   "precio": 1890.64,
+   "importe": 28359.6,
+   "descripcion": "Suministro de Columna de Fibra o Acero Galvanizado marca DELTA MIIXTA DE 7 METROS -ICDE70 o similar, con placa 250x250x6mm embutida, 7,00 metros de altura, diámetro en punta de 60mm, 3mm de espesor mínimo, Pintado en RAL 7015 Gris Pizarra Texturado, Protección Acabado Marino, incluye: Anclaje M-16, Tuerca M-16 , Din 9021 arandela zincada M-16. PORTEZUELA COMPLETA MONTADAS. Galvanizado. Pintado RAL 7015 Gris Pizarra Texturado. Totalmente terminado y ejecutado según REBT"
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.08",
+   "unidad": "u",
+   "resumen": "Concección a red existente",
+   "cantidad": 1.0,
+   "precio": 554.2,
+   "importe": 554.2,
+   "descripcion": "Conexionado de la instalación a la red existente legalizada según antecedentes, solicitando los permisos necesarios por parte de la empresa responsable del alumbrado para su futura conexión."
+  },
+  {
+   "capitulo": "ELECTRICIDAD ALUMBRADO",
+   "codigo": "02.09",
+   "unidad": "ud",
+   "resumen": "Tramitacion docu+Certificado OCA Electricidad Alumbrado exterior",
+   "cantidad": 1.0,
+   "precio": 775.84,
+   "importe": 775.84,
+   "descripcion": ""
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.01",
+   "unidad": "u",
+   "resumen": "Transporte a obra, descarga y recogida caseta provisional obra.",
+   "cantidad": 1.0,
+   "precio": 131.1,
+   "importe": 131.1,
+   "descripcion": "Transporte a obra, descarga y posterior recogida de caseta provisional de obra."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.02",
+   "unidad": "u",
+   "resumen": "Caseta prefabricada para vestuario, comedor o almacén de obra",
+   "cantidad": 6.0,
+   "precio": 78.28,
+   "importe": 469.68,
+   "descripcion": "Dia alquiler Caseta prefabricada para vestuario, comedor o almacén de obra, de 6,00 x 2,40 x 2,40 m con estructura metálica de perfiles conformados en frio, con cerramiento y techo a base de chapa greca de 23 mm de espesor, prelacado a ambas caras, piso de plancha metálica acabado con PVC, 2 ud de ventanas de hojas correderas de aluminio con rejas y cristales armados, y 1 ud de puerta de perfilería soldada de apertura exterior con cerradura."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.03",
+   "unidad": "u",
+   "resumen": "Botiquín tipo bolso con correa, con contenido sanitario",
+   "cantidad": 1.0,
+   "precio": 43.27,
+   "importe": 43.27,
+   "descripcion": "Botiquín tipo bolso con correa, con contenido sanitario completo según ordenanzas."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.04",
+   "unidad": "u",
+   "resumen": "Casco seguridad SH 6, Würth",
+   "cantidad": 2.0,
+   "precio": 18.51,
+   "importe": 37.02,
+   "descripcion": "Casco seguridad SH 4, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.05",
+   "unidad": "u",
+   "resumen": "Bota lona y piel, con puntera y plantilla metálica",
+   "cantidad": 2.0,
+   "precio": 87.37,
+   "importe": 174.74,
+   "descripcion": "Bota lona y piel, con puntera y plantilla metálicas incorporada, (par) homologada CE s/normativa vigente."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.06",
+   "unidad": "u",
+   "resumen": "Señal de cartel obras, PVC, sin soporte metálico",
+   "cantidad": 1.0,
+   "precio": 7.14,
+   "importe": 7.14,
+   "descripcion": "Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.07",
+   "unidad": "u",
+   "resumen": "Arnés anticaídas Basic, Würth",
+   "cantidad": 1.0,
+   "precio": 61.31,
+   "importe": 61.31,
+   "descripcion": "Arnés anticaídas Basic, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "03.08",
+   "unidad": "h",
+   "resumen": "Hora de peón, p/conservación y limpieza de inst. personal",
+   "cantidad": 6.0,
+   "precio": 17.17,
+   "importe": 103.02,
+   "descripcion": "Hora de peón ESPECIALIZADO EN SEGURIDAD Y SALUD, para conservación y limpieza de instalaciones de personal."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.01",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de mezclas bituminosas a instalación de v",
+   "cantidad": 4.0,
+   "precio": 14.0,
+   "importe": 56.0,
+   "descripcion": "Coste de entrega de residuos de mezclas bituminosas sin contenido en alquitrán de hulla (tasa vertido), con código 170302 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.02",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de madera a instalación de valorización",
+   "cantidad": 0.4,
+   "precio": 120.0,
+   "importe": 48.0,
+   "descripcion": "Coste de entrega de residuos de madera (tasa vertido), con código 170201 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.03",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de papel y cartón a instalación de valori",
+   "cantidad": 0.4,
+   "precio": 550.0,
+   "importe": 220.0,
+   "descripcion": "Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.04",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de plástico a instalación de valorización",
+   "cantidad": 0.6,
+   "precio": 250.0,
+   "importe": 150.0,
+   "descripcion": "Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.05",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos escombro limpio ensacado, a instalación d",
+   "cantidad": 2.0,
+   "precio": 17.0,
+   "importe": 34.0,
+   "descripcion": "Coste de entrega de residuos mezclados de construcción y demolición distintos de los especificados en los códigos 17 09 01, 17 09 02 y 17 09 03, escombro limpio ensacado, (tasa vertido), con código 170904 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.06",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de hormigón a instalación de valorización",
+   "cantidad": 4.0,
+   "precio": 12.0,
+   "importe": 48.0,
+   "descripcion": "Coste de entrega de residuos de hormigón (tasa vertido), con código 170101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.07",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de ladri y mat cerám. a instalación de va",
+   "cantidad": 8.0,
+   "precio": 26.0,
+   "importe": 208.0,
+   "descripcion": "Coste de entrega de residuos de ladrillos y materiales cerámicos (tasa vertido), con código 170103 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "GESTION DE RESIDUOS",
+   "codigo": "04.08",
+   "unidad": "t",
+   "resumen": "Coste entrega Material Potencialmente sustancias peligrosas",
+   "cantidad": 0.4,
+   "precio": 560.0,
+   "importe": 224.0,
+   "descripcion": "Material Potencialmente sustancias peligrosas (pinturas, envases contaminados, etc) (tasa vertido), con código 170503 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "PA IMPREVISTOS",
+   "codigo": "05.01",
+   "unidad": "u",
+   "resumen": "Partida a justificar servicios afectados e imprevistos",
+   "cantidad": 1.0,
+   "precio": 1200.0,
+   "importe": 1200.0,
+   "descripcion": "ud. Partida alzada a justificar para servicios afectados e imprevistos, según criterio de la Dirección Facultativa."
+  }
+ ]
+}

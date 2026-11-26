@@ -1,0 +1,276 @@
+{
+ "expediente": "252/2026",
+ "organismo": "Presidencia de la Mancomunidad de Ayuntamientos del Norte de Gran Canaria",
+ "titulo": "Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria, incluido en el Plan de Cooperación del Cabildo de Gran Canaria.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1136492.96 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=i6ACKann6S2UOXNIOyZS1/2Z4eD04uMKJTCBveJWnIRjgSgmDpYRNPBwtL84Bltij8SQQO8dQQe9fZ%2B9%2BJdzyR8C5E/pScuerfxDX%2BPgPGr6CYyL7SIrUOBFfNf52ZqA",
+ "archivo_origen": "252_2026_Moya.bc3",
+ "total_bc3": 78560.82,
+ "suma_partidas": 78560.82,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "APTEROR26",
+   "resumen": "Alumbrado Led Moya",
+   "importe": 57612.22
+  },
+  {
+   "codigo": "APSB_1_3",
+   "resumen": "Fotovoltaicas",
+   "importe": 19505.84
+  },
+  {
+   "codigo": "APG20SS",
+   "resumen": "Seguridad y Salud.",
+   "importe": 1389.77
+  },
+  {
+   "codigo": "APG20GR",
+   "resumen": "Gestión de Residuos.",
+   "importe": 52.99
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "D02A0011",
+   "unidad": "h",
+   "resumen": "Poda o tala de material vegetal.",
+   "cantidad": 10.0,
+   "precio": 59.29,
+   "importe": 592.9,
+   "descripcion": "Poda o tala de material vegetal en el entorno de luminaria o Cuadro de mando con medios mecánicos, con carga sobre camión, con transporte a vertedero. Según necesidades de la obra."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 1300.0,
+   "precio": 11.55,
+   "importe": 15015.0,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "TECEO24S",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalacion de luminaria vial Schréder TECEO S 583092, o similar",
+   "cantidad": 32.0,
+   "precio": 510.88,
+   "importe": 16348.16,
+   "descripcion": "Ud. de instalacion de luminaria LED vial para vias urbanas, marca Schréder, modelo TECEO S 5428 Flat glass 24 5050 LED@333mA Driver@1000mA WW 730 230V 00-70-386, codigo/nº de articulo 583092, o similar estrictamente equivalente. Caracteristicas minimas: flujo de luminaria no inferior a 6.798 lm, potencia del conjunto no superior a 51 W, eficacia del conjunto equivalente al 84,92 % respecto al flujo de lampara indicado en estudio luminico, temperatura de color WW 730 / 3000 K, optica 5428 Flat glass, cierre de vidrio plano, FHSinst / ULOR 0,00 %, clase fotometrica G*4 o superior, indice de deslumbramiento D.6 o superior, intensidades maximas no superiores a las del estudio luminico en angulos criticos: >=70º 363 cd/klm, >=80º 52,6 cd/klm y >=90º 0,00 cd/klm, grado de proteccion IP66 o superior, resistencia al impacto IK08 o superior, cuerpo de aluminio inyectado o material tecnico equivalente de alta resistencia, montaje lateral o en punta sobre espiga/brazo compatible y orientable para dejar la luminaria instalada a 0º respecto a la via. La luminaria ofertada como similar debera aportar fichero fotometrico LDT/IES, ficha tecnica, certificado CE/UE, declaracion RoHS/RAEE cuando proceda, datos de vida util y curva de depreciacion, y debera justificar documentalmente que reproduce los resultados luminicos del estudio de referencia para clase M4 conforme UNE-EN 13201:2015, con factor de mantenimiento 0,80: Lm >= 0,75 cd/m2, Uo >= 0,40, Ul >= 0,60, TI <= 15 % y REI >= 0,30. No se admitira como similar una luminaria que, aun teniendo potencia o flujo parecido, no reproduzca la fotometria, el control de deslumbramiento, el FHSinst 0 % y los resultados luminicos calculados. Incluye: instalada en superficie con medios manuales o mecanicos y recuperacion, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecucion del proceso inverso al de su instalacion, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camion o contenedor, clasificacion y etiquetado. Acopio de los materiales a reutilizar. Reposicion y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camion o contenedor. Montaje, conexionado y comprobacion de su correcto funcionamiento segun REBT-02. Incluye: Tasa ECORAEE segun Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "PRFV_EMP_89",
+   "unidad": "ud",
+   "resumen": "Poste PRFV 8-9 m empotrado/hincado para canalizacion aerea RZ de alumbrado",
+   "cantidad": 13.0,
+   "precio": 1324.09,
+   "importe": 17213.17,
+   "descripcion": "Suministro e instalacion de poste/columna troncoconica de PRFV, marca Adhorna o equivalente, de 8 a 9 m de altura util, para soporte de canalizacion aerea con cable trenzado RZ, clase II, con puerta de registro, herraje de amarre/soporte para cable trenzado, apertura de pozo, empotramiento, aplomado, relleno y compactacion, pequeno recibido con hormigon si procede, medios de izado, camion cesta para trabajos en altura, pequeno material, conexionado interior y puesta en servicio. Medida la unidad totalmente terminada, sin incluir luminaria ni tendido del cable RZ. Dimensiones definitivas segun calculo, terreno y prescripciones del fabricante."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "Z01ACEBBRA",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 100.0,
+   "precio": 40.96,
+   "importe": 4096.0,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "APG02",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 32.0,
+   "precio": 48.72,
+   "importe": 1559.04,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, Clase A, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "IEP021c",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 160.54,
+   "importe": 160.54,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "Z01ACEB0020",
+   "unidad": "ud",
+   "resumen": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado.",
+   "cantidad": 5.0,
+   "precio": 216.39,
+   "importe": 1081.95,
+   "descripcion": "Postelete h=6 m en acero galvanizado 2 1/2\", instalado en pared, incluso colocación de esparragos, izado y nivelado, s/UNE-EN 40-5, incluso caja de conexión, conductor interior para 0,6/1 kV y pernos de anclaje, montado y conexionado."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "Z01ACEBARRI",
+   "unidad": "ud",
+   "resumen": "Arriostramiento a pared y venteo de columnas",
+   "cantidad": 10.0,
+   "precio": 25.59,
+   "importe": 255.9,
+   "descripcion": "Arriostramiento a pared y venteo de columnas, compuesto de cable de acero de 6 mm2 rígido, cancamos, preformas y protección mecánica mediante 3 m de tubo de 1\" PVC rígido pintado (rojo-blanco). Totalmente instalado."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "Z01ACEBM9",
+   "unidad": "Ud",
+   "resumen": "Poste de madera cobra III, h=9 m",
+   "cantidad": 1.0,
+   "precio": 289.56,
+   "importe": 289.56,
+   "descripcion": "Poste de madera cobra III, de 9 m. de altura, según norma UNE 21-003-82, con excavación en todo tipo de terreno de hasta 1 m3 (profund. 1,5 m), de acuerdo con normas de UNELCO, fijación mediante el hincado con piedras y tierra compactada en la cimentación. Incluso pintado de franjas de 0,5 m de ancho en rojo-blanco-rojo."
+  },
+  {
+   "capitulo": "Alumbrado Led Moya",
+   "codigo": "PAAG",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento, imprevistos.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos, legalización y desatasco cem. debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "Fotovoltaicas",
+   "codigo": "Z01ACFS01",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de luminaria solar de la marca microplus germany SL-NATUR2 o similar con sensor de movimiento.",
+   "cantidad": 5.0,
+   "precio": 3109.81,
+   "importe": 15549.05,
+   "descripcion": "Suministro e instalación de luminaria solar de la marca microplus germany SL-NATUR2 o similar con sensor de movimiento. CONJUNTO DE ALUMBRADO SOLAR CON BÁCULO. (SL-NATUR2-50W). Conjunto de alumbrado Solar MICROPLUS GERMANY o similar compuesto por: Columna en chapa de acero galvanizado de 6 metros de altura; Box/Módulo Microplus Germany o similar fabricado en poliéster reforzado (colores según DF) modelo S-MODULUS-AC con cilindro de entronque a columna y soporte metálico para Panel fotovoltaico incluido éste de 270WP con *funcionalidad crepuscular interna *(enciende la luminaria en él ocaso y la apaga al amanecer); integra en su interior 2 baterías de litio BAT-LI 36-25,6 (LIFePO4) 12,8v/24Ah con más de 3.500 ciclos (80% descarga) y 10.000 ciclos (30% descarga) y controlador/driver IP68 MPPT **preprogramado a demanda: tres horas iniciales al 80% y resto 8 horas al 40%; incorpora luminaria tipo VIAL IP66-IK08 de 10 años/50.000H de garantía(lo que antes suceda), con sensor de movimiento, fabricada en inyección de aluminio acabada con pintura en polvo/poliéster gris sable bicolor 2150-2900 y secado en horno >200º; tecnología Microled Plus tono 3.000ºK de50w de potencia y 7.500 lúmenes de rendimiento total efectivo al 100% de funcionamiento, así como conjunto óptico de vidrio con distribución luminosa tipo VIAL Asimétrica/Divergente/Extensiva serie(A). Modelo: SL-NATUR2/PP/050/3.0/A/6 o similar."
+  },
+  {
+   "capitulo": "Fotovoltaicas",
+   "codigo": "Z01ACFS01b",
+   "unidad": "Ud",
+   "resumen": "Suministro de programador y visualiazdor de datos de la marca microplus germany o similar",
+   "cantidad": 1.0,
+   "precio": 137.11,
+   "importe": 137.11,
+   "descripcion": ""
+  },
+  {
+   "capitulo": "Fotovoltaicas",
+   "codigo": "Z01ACEA0030",
+   "unidad": "ud",
+   "resumen": "Base hormigón p/cimentación de báculo o columna de 5<=h<8 m",
+   "cantidad": 7.0,
+   "precio": 341.82,
+   "importe": 2392.74,
+   "descripcion": "Base para cimentación de báculo o columna de 5<=h<8 m de altura, de 0,80x0,80x1,00 m, realizada con hormigón en masa de fck=17,5 N/mm², incluso encofrado, excavación precisa, recibido de pernos de anclaje."
+  },
+  {
+   "capitulo": "Fotovoltaicas",
+   "codigo": "UIV010",
+   "unidad": "Ud",
+   "resumen": "Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada, conexionada a cables de tierra.",
+   "cantidad": 7.0,
+   "precio": 94.4,
+   "importe": 660.8,
+   "descripcion": "Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada. Incluye: Replanteo. Fijación de la columna. Montaje, conexionado y comprobación de su correcto funcionamiento. Incluye: Electrodo para red de toma de tierra cobreado con 300 µm, fabricado en acero, de 14 mm de diámetro y 2 m de longitud y su conexión. Incluye: Conductor de cobre desnudo, de 35 mm² y conductor aislado de cobre para 0,6/1 kV de 1x2,5 mm² para conexionado de tierra. Incluye: la colocación completa de la luminaria fotovoltaica, su conexionado y comprobación."
+  },
+  {
+   "capitulo": "Fotovoltaicas",
+   "codigo": "D01A0070",
+   "unidad": "m³",
+   "resumen": "Demolición elementos cimentac. horm armado.",
+   "cantidad": 2.0,
+   "precio": 133.07,
+   "importe": 266.14,
+   "descripcion": "Demolición de elementos de cimentación de hormigón armado con medios mecánicos, incluso p.p. de compresor, carga y transporte de escombros a vertedero autorizado, medido el volumen inicial a demoler."
+  },
+  {
+   "capitulo": "Fotovoltaicas",
+   "codigo": "PAMAP_08",
+   "unidad": "Pa",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 500.0,
+   "importe": 500.0,
+   "descripcion": "Partida Alzada Saneamiento e imprevistos debido a la complejidad del alumbrado a renovar y el estado actual del mismo al discurrir por centro histórico."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YSX010d",
+   "unidad": "Ud",
+   "resumen": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.",
+   "cantidad": 1.0,
+   "precio": 426.12,
+   "importe": 426.12,
+   "descripcion": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YMM010b",
+   "unidad": "Ud",
+   "resumen": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.",
+   "cantidad": 5.0,
+   "precio": 104.46,
+   "importe": 522.3,
+   "descripcion": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos. Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32AE0010",
+   "unidad": "ud",
+   "resumen": "Arnés anticaídas top 3, Würth",
+   "cantidad": 5.0,
+   "precio": 76.6,
+   "importe": 383.0,
+   "descripcion": "Arnés anticaídas top 3, Würth o equivalente, con marcado CE."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32CA0010",
+   "unidad": "ud",
+   "resumen": "Señal de cartel obras, PVC, sin soporte metálico",
+   "cantidad": 5.0,
+   "precio": 11.67,
+   "importe": 58.35,
+   "descripcion": "Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37B0060",
+   "unidad": "m³",
+   "resumen": "Transporte residuos a instalac. autorizada 20 km.",
+   "cantidad": 0.11,
+   "precio": 13.51,
+   "importe": 1.49,
+   "descripcion": "Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0070",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de plástico a instalación de valorización",
+   "cantidad": 0.03,
+   "precio": 206.0,
+   "importe": 6.18,
+   "descripcion": "Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0080",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de papel y cartón a instalación de valorización",
+   "cantidad": 0.08,
+   "precio": 566.5,
+   "importe": 45.32,
+   "descripcion": "Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  }
+ ]
+}

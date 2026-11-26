@@ -1,0 +1,503 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.82||ANSI|
+~K|\2\2\3\2\2\2\2\EUR\|0|
+~C|%CDC|%|Costes directos complementarios|2|020626|0|
+~C|D01#||ACONDICIONAMIENTO DEL TERRENO|22120|020626|0|
+~D|D01#|D01.01\1\3500\D01.02\1\1500\|
+~C|D01.01|m²|Desbroce y limpieza manual del ámbito de actuación|5.78|020626|0|
+~D|D01.01|mo113\1\0.225\mq09bro010\1\0.021\%CDC\1\0.02\|
+~C|D01.02|m²|Desbroce y limpieza mecánica del ámbito de actuación|1.26|020626|0|
+~D|D01.02|mo113\1\0.008\mq01pan010a\1\0.023\%CDC\1\0.02\|
+~C|D02#||DEMOLICIONES|246612.01|020626|0|
+~D|D02#|D02.01\1\260\D02.02\1\1\D02.03\1\735\D02.04\1\159.64\D02.05\1\928\D02.06\1\289.24\|
+~C|D02.01|m|Desmontaje y retirada de vallado metálico provisional existente|12.9|190626|0|
+~C|D02.02|u|Desmantelamiento selectivo y demolición controlada del edificio|195358|080626|0|
+~C|D02.03|m³|Excavación para el vaciado del trasdós de los muros de sótano|6.82|020626|0|
+~D|D02.03|mo113\1\0.055\mq01ret020b\1\0.13\%CDC\1\0.02\|
+~C|D02.04|m³|Demolición de elementos de cimentación de hormigón armado|116.54|020626|0|
+~D|D02.04|mo113\1\0.657\mo019\1\0.876\mq01exn050c\1\0.757\mq01ret010\1\0.298\mq08sol010\1\0.778\%CDC\1\0.02\|
+~C|D02.05|m³|Relleno y compactación por tongadas con terreno seleccionado|14.51|020626|0|
+~D|D02.05|mo113\1\0.385\mq01pan070b\1\0.027\mq02roa010a\1\0.388\%CDC\1\0.02\|
+~C|D02.06|m³|Relleno y compactación por tongadas con zahorra artificial|37.4|020626|0|
+~D|D02.06|mo113\1\0.385\mq01pan070b\1\0.027\mq02roa010a\1\0.388\mt01zah010c\1\2.2\%CDC\1\0.02\|
+~C|D03#||GESTIÓN DE RESIDUOS|87705.5|020626|0|
+~D|D03#|D03.01\1\1572.3\D03.02\1\250\D03.03\1\225\D03.04\1\1024\D03.05\1\1638.4\D03.06\1\359\D03.07\1\466.7\D03.08\1\37\D03.09\1\27.75\D03.10\1\62\D03.11\1\93\D03.12\1\6\D03.13\1\2\D03.14\1\2\D03.15\1\1\D03.16\1\1\D03.17\1\65\D03.18\1\110.5\|
+~C|D03.01|m³|Clasificación de residuos de la construcción|15|040626|0|
+~C|D03.02|m³|Transporte de residuos vegetales con camión|16.03|020626|0|
+~D|D03.02|mq04cap020oa\1\0.141\%CDC\1\0.02\|
+~C|D03.03|t|Canon de vertido por entrega de residuos vegetales|102|020626|0|
+~D|D03.03|mq04res025ka\1\1\%CDC\1\0.02\|
+~C|D03.04|m³|Transporte de residuos inertes con camión (hormigones)|7.08|020626|0|
+~D|D03.04|mq04cap040a\1\0.082\%CDC\1\0.02\|
+~C|D03.05|t|Canon de vertido por entrega de residuos inertes (hormigones)|2.04|020626|0|
+~D|D03.05|mq04res025aa\1\1\%CDC\1\0.02\|
+~C|D03.06|m³|Transporte de residuos inertes con camión (cerámicos)|5.96|020626|0|
+~D|D03.06|mq04cap040a\1\0.069\%CDC\1\0.02\|
+~C|D03.07|t|Canon de vertido por entrega de residuos inertes (cerámicos)|30.6|020626|0|
+~D|D03.07|mq04res025ba\1\1\%CDC\1\0.02\|
+~C|D03.08|m³|Transporte de residuos inertes con camión (metales)|55.96|020626|0|
+~D|D03.08|mq04cap020oa\1\0.492\%CDC\1\0.02\|
+~C|D03.09|t|Canon de vertido por entrega de residuos inertes (metales)|25.5|020626|0|
+~D|D03.09|mq04res025ha\1\1\%CDC\1\0.02\|
+~C|D03.10|m³|Transporte de residuos inertes con camión (mezcla)|9.67|020626|0|
+~D|D03.10|mq04cap020oa\1\0.085\%CDC\1\0.02\|
+~C|D03.11|t|Canon de vertido por entrega de residuos inertes (mezcla)|51|020626|0|
+~D|D03.11|mq04res025ca\1\1\%CDC\1\0.02\|
+~C|D03.12|u|Transporte de residuos inertes con contenedor|131.1|020626|0|
+~D|D03.12|mq04res010gpa\1\1\%CDC\1\0.02\|
+~C|D03.13|u|Canon de vertido por entrega de contenedor (yeso)|95.5|020626|0|
+~D|D03.13|mq04res020iK\1\1\%CDC\1\0.02\|
+~C|D03.14|u|Canon de vertido por entrega de contenedor (madera)|97.41|020626|0|
+~D|D03.14|mq04res020dK\1\1\%CDC\1\0.02\|
+~C|D03.15|u|Canon de vertido por entrega de contenedor (vidrio)|95.5|020626|0|
+~D|D03.15|mq04res020eK\1\1\%CDC\1\0.02\|
+~C|D03.16|u|Canon de vertido por entrega de contenedor (plastico)|169.17|020626|0|
+~D|D03.16|mq04res020fK\1\1\%CDC\1\0.02\|
+~C|D03.17|m³|Transporte de tierras con camión|5.21|020626|0|
+~D|D03.17|mq04cab010e\1\0.108\%CDC\1\0.02\|
+~C|D03.18|t|Canon de vertido por entrega de tierras|2.3|020626|0|
+~D|D03.18|mq04res035a\1\1\%CDC\1\0.02\|
+~C|D04#||CONTROL DE CALIDAD|7722.03|020626|0|
+~D|D04#|D04.01\1\1\D04.02\1\1\D04.03\1\1\D04.04\1\1\|
+~C|D04.01|u|Ensayo de materiales de relleno|1194.03|020626|0|
+~D|D04.01|mt49stc010b\1\3\mt49sla080b\1\2\mt49sla060\1\1\mt49sue020\1\2\mt49des020\1\3\mt49sla075\1\10\mt49sin020a\1\3\%CDC\1\0.02\|
+~C|D04.02|u|Control de ejecución de rellenos, compactación y estado final|1836|020626|0|
+~D|D04.02|mt49oct010abA\1\1\%CDC\1\0.02\|
+~C|D04.03|u|Control técnico de la demolición y auscultación de colindantes|1836|020626|0|
+~D|D04.03|mt49oct010abA\1\1\%CDC\1\0.02\|
+~C|D04.04|u|Implantación y seguimiento instrumental de vibraciones|2856|020626|0|
+~D|D04.04|V0001\1\1\%CDC\1\0.02\|
+~C|D05#||SEGURIDAD Y SALUD|35779.44|020626|0|
+~D|D05#|D05.01\1\420\D05.02\1\2\D05.03\1\1\D05.04\1\6\D05.05\1\10\D05.06\1\10\D05.07\1\10\D05.08\1\10\D05.09\1\10\D05.10\1\500\D05.11\1\50\D05.12\1\40\D05.13\1\40\D05.14\1\4\D05.15\1\4\D05.16\1\4\D05.17\1\4\D05.18\1\20\D05.19\1\5\D05.20\1\5\D05.21\1\80\D05.22\1\4\D05.23\1\80\D05.24\1\12\D05.25\1\30\D05.26\1\80\D05.27\1\12\D05.28\1\100\D05.29\1\12\D05.30\1\12\D05.31\1\12\D05.32\1\250\D05.33\1\1\D05.34\1\12\D05.35\1\1\D05.36\1\3\D05.37\1\3\D05.38\1\3\D05.39\1\2\D05.40\1\2\D05.41\1\280\D05.42\1\3\|
+~C|D05.01|m|Vallado definitivo de solar con paneles metálicos|47.26|020626|0|
+~D|D05.01|mo119\1\0.522\mo120\1\0.522\mt13ccg100t\1\0.2\mt50spv040f\1\0.98\mt10hmf010tLc\1\0.088\mt50spd078\1\2\%CDC\1\0.02\|
+~C|D05.02|u|Puerta metálica para acceso peatonal, en vallado provisional de|75.51|020626|0|
+~D|D05.02|mo119\1\0.183\mo120\1\0.183\mt50spv011a\1\0.2\%CDC\1\0.02\|
+~C|D05.03|u|Puerta metálica para acceso de vehículos, en vallado provisional|297.42|020626|0|
+~D|D05.03|mo119\1\0.522\mo120\1\0.522\mt50spv011h\1\0.2\mt10hmf010tLc\1\0.25\%CDC\1\0.02\|
+~C|D05.04|u|Cartel general indicativo de riesgos|10.48|020626|0|
+~D|D05.04|mo120\1\0.199\mt50les020a\1\0.333\mt12psg081a\1\6\mt12psg110a\1\6\%CDC\1\0.02\|
+~C|D05.05|u|Señal de seguridad y salud en el trabajo, de advertencia|5.43|020626|0|
+~D|D05.05|mo120\1\0.149\mt50les030fa\1\0.333\mt50spr046\1\4\%CDC\1\0.02\|
+~C|D05.06|u|Señal de seguridad y salud en el trabajo, de prohibición|5.43|020626|0|
+~D|D05.06|mo120\1\0.149\mt50les030nb\1\0.333\mt50spr046\1\4\%CDC\1\0.02\|
+~C|D05.07|u|Señal de seguridad y salud en el trabajo, de obligación|5.43|020626|0|
+~D|D05.07|mo120\1\0.149\mt50les030vb\1\0.333\mt50spr046\1\4\%CDC\1\0.02\|
+~C|D05.08|u|Señal de seguridad y salud en el trabajo, de extinción|5.97|020626|0|
+~D|D05.08|mo120\1\0.149\mt50les030Dc\1\0.333\mt50spr046\1\4\%CDC\1\0.02\|
+~C|D05.09|u|Señal de seguridad y salud en el trabajo, de evacuación, salvame|5.97|020626|0|
+~D|D05.09|mo120\1\0.149\mt50les030Lc\1\0.333\mt50spr046\1\4\%CDC\1\0.02\|
+~C|D05.10|m|Cinta bicolor|2.05|020626|0|
+~D|D05.10|mo120\1\0.068\mt50bal010g\1\1.1\%CDC\1\0.02\|
+~C|D05.11|u|Cono|2.81|020626|0|
+~D|D05.11|mo120\1\0.021\mt50bal030Ca\1\0.1\%CDC\1\0.02\|
+~C|D05.12|m|Valla peatonal|3.8|020626|0|
+~D|D05.12|mo120\1\0.104\mt50vbe010pk\1\0.02\mt50vbe020\1\0.05\%CDC\1\0.02\|
+~C|D05.13|m|Valla trasladable|12.58|020626|0|
+~D|D05.13|mo119\1\0.104\mo120\1\0.209\mt50spv020\1\0.06\mt50spv025\1\0.08\mt50spr050\1\2\%CDC\1\0.02\|
+~C|D05.14|u|Señal provisional de obra (peligro)|15.6|020626|0|
+~D|D05.14|mo120\1\0.149\mt50les010ba\1\0.2\mt50les050a\1\0.2\%CDC\1\0.02\|
+~C|D05.15|u|Señal provisional de obra (reglamento y prioridad)|15.91|020626|0|
+~D|D05.15|mo120\1\0.149\mt50les010ja\1\0.2\mt50les050a\1\0.2\%CDC\1\0.02\|
+~C|D05.16|u|Señal provisional de obra (indicación)|6.1|020626|0|
+~D|D05.16|mo120\1\0.149\mt50les010ra\1\0.2\mt50les050a\1\0.2\%CDC\1\0.02\|
+~C|D05.17|u|Paleta de paso alternativo|12.29|020626|0|
+~D|D05.17|mo120\1\0.021\mt50les070d\1\0.2\%CDC\1\0.02\|
+~C|D05.18|u|Tapa de madera para protección de arqueta abierta|36.1|020626|0|
+~D|D05.18|mo120\1\0.866\mt50spa050g\1\0.032\mt50spa101\1\0.168\%CDC\1\0.02\|
+~C|D05.19|u|Tapa de madera para protección de pozo de registro abierto|28.24|020626|0|
+~D|D05.19|mo120\1\0.724\mt50spa050g\1\0.022\mt50spa101\1\0.2\%CDC\1\0.02\|
+~C|D05.20|u|Extintor|14.96|020626|0|
+~D|D05.20|mo120\1\0.107\mt41ixi110v\1\0.333\%CDC\1\0.02\|
+~C|D05.21|m|Vallado perimetral de delimitación de excavaciones abiertas|4.04|020626|0|
+~D|D05.21|mo120\1\0.119\mt50vbe010pk\1\0.02\%CDC\1\0.02\|
+~C|D05.22|m|Tope para protección de camiones durante la descarga en bordes d|16.24|020626|0|
+~D|D05.22|mo119\1\0.119\mo120\1\0.119\mt50spa050o\1\0.009\mt07emr511a\1\0.5\mt07ala110ga\1\0.005\mt27pfi010\1\0.002\%CDC\1\0.02\|
+~C|D05.23|m|Barandilla de seguridad para protección de bordes de excavación|16.93|020626|0|
+~D|D05.23|mo119\1\0.239\mo120\1\0.239\mt07aco010g\1\2.869\mt50spr046\1\2.52\mt50spr045\1\0.084\mt50spa050g\1\0.002\mt08var050\1\0.05\%CDC\1\0.02\|
+~C|D05.24|u|Casco|0.34|020626|0|
+~D|D05.24|mt50epc020lj\1\0.1\%CDC\1\0.02\|
+~C|D05.25|u|Protector ocular|3.01|020626|0|
+~D|D05.25|mt50epj010lfe\1\0.2\%CDC\1\0.02\|
+~C|D05.26|u|Par de guantes|1.96|020626|0|
+~D|D05.26|mt50epm010cj\1\0.1\%CDC\1\0.02\|
+~C|D05.27|u|Juego de orejeras|5.28|020626|0|
+~D|D05.27|mt50epo010Fj\1\0.1\%CDC\1\0.02\|
+~C|D05.28|u|Juego de tapones|0.03|020626|0|
+~D|D05.28|mt50epo020aa\1\1\%CDC\1\0.02\|
+~C|D05.29|u|Calzado de seguridad|32.57|020626|0|
+~D|D05.29|mt50epp010egb\1\0.5\%CDC\1\0.02\|
+~C|D05.30|u|Chaleco de alta visibilidad|6.72|020626|0|
+~D|D05.30|mt50epu030ice\1\0.2\%CDC\1\0.02\|
+~C|D05.31|u|Pantalón de alta visibilidad|6.27|020626|0|
+~D|D05.31|mt50epu030ide\1\0.2\%CDC\1\0.02\|
+~C|D05.32|u|Mascarilla autofiltrante|4.67|020626|0|
+~D|D05.32|mt50epv020da\1\1\%CDC\1\0.02\|
+~C|D05.33|u|Botiquín de urgencia|146.28|020626|0|
+~D|D05.33|mt50eca010\1\1\mo120\1\0.199\%CDC\1\0.02\|
+~C|D05.34|u|Reconocimiento médico anual|150.11|020626|0|
+~D|D05.34|mt50man010\1\1\%CDC\1\0.02\|
+~C|D05.35|u|Medicina preventiva y primeros auxilios|500|080626|0|
+~C|D05.36|mes|Alquiler de cabina de aseo portátil sin conexiones a la red, con|376.01|020626|0|
+~D|D05.36|mt50cas005a\1\2\%CDC\1\0.02\|
+~C|D05.37|mes|Alquiler de caseta prefabricada para almacén|125.96|020626|0|
+~D|D05.37|mt50cas020n\1\1\%CDC\1\0.02\|
+~C|D05.38|mes|Alquiler de caseta prefabricada para despacho de oficina|193.01|020626|0|
+~D|D05.38|mt50cas030p\1\1\%CDC\1\0.02\|
+~C|D05.39|u|Transporte de cabina de aseo|76.29|020626|0|
+~D|D05.39|mt50cas055a\1\1\mo120\1\0.596\%CDC\1\0.02\|
+~C|D05.40|u|Transporte de caseta prefabricada|306.44|020626|0|
+~D|D05.40|mt50cas060a\1\1\mo120\1\0.845\%CDC\1\0.02\|
+~C|D05.41|m²|Protección de frentes sensibles mediante pantalla, red o similar|6.94|020626|0|
+~D|D05.41|PR01\1\1\%CDC\1\0.02\|
+~C|D05.42|mes|Protección antipolvo|387.6|020626|0|
+~D|D05.42|PR02\1\1\%CDC\1\0.02\|
+~C|PR01||Protección de frentes sensibles mediante pantalla, red o similar|6.8|190626|3|
+~C|PR02|mes|Sistema de protección antipolvo|380|190626|3|
+~C|V0001||Implantación y seguimiento de vibraciones|2800|190626|0|
+~C|VDLE2##|||399938.98|020626|0|
+~D|VDLE2##|D01\1\1\D02\1\1\D03\1\1\D04\1\1\D05\1\1\|
+~C|mo019|h|Oficial 1ª soldador.|25.96|020626|1|
+~C|mo113|h|Peón ordinario construcción.|24.82|020626|1|
+~C|mo119|h|Oficial 1ª Seguridad y Salud.|25.63|040626|1|
+~C|mo120|h|Peón Seguridad y Salud.|24.82|040626|1|
+~C|mq01exn050c|h|Retroexcavadora de 85 kW, con martillo rompedo|72.8|020626|2|
+~C|mq01pan010a|h|Pala cargadora sobre neumáticos de 120 kW/1,9 m³.|45.06|020626|2|
+~C|mq01pan070b|h|Mini pala cargadora sobre neumáticos, de 52 kW/1 m³ kW.|36.8|180626|2|
+~C|mq01ret010|h|Miniretrocargadora de 15 kW.|45.86|040626|2|
+~C|mq01ret020b|h|Retrocargadora de 70 kW|40.9|180626|2|
+~C|mq02roa010a|h|Rodillo vibrante de guiado manual, de 700 kg, anchura de trabajo|9.48|180626|2|
+~C|mq04cab010e|h|Camión basculante de 20 t de carga, de 213 kW.|47.3|040626|2|
+~C|mq04cap020oa|h|Camión de transporte de 15 t con una capacidad de 12 m³ y 2 ejes|111.5|020626|2|
+~C|mq04cap040a|h|Camión bañera de 30 t de carga.|84.62|030626|2|
+~C|mq04res010gpa||Carga y cambio de contenedor de 7 m³, para recogida de residuos|128.53|040626|2|
+~C|mq04res020dK|u|Canon de vertido por entrega de contenedor de 7 m³ con residuos|95.5|040626|0|
+~C|mq04res020eK|u|Canon de vertido por entrega de contenedor de 7 m³ con residuos|93.63|040626|0|
+~C|mq04res020fK|u|Canon de vertido por entrega de contenedor de 7 m³ con residuos|165.85|040626|0|
+~C|mq04res020iK|u|Canon de vertido por entrega de contenedor de 7 m³ con residuos|93.63|040626|0|
+~C|mq04res025aa|t|Canon de vertido por entrega de residuos inertes de hormigones,|2|190626|0|
+~C|mq04res025ba|t|Canon de vertido por entrega de residuos inertes de ladrillos, t|30|190626|0|
+~C|mq04res025ca|t|Canon de vertido por entrega de mezcla sin clasificar de residuo|50|190626|0|
+~C|mq04res025ha|t|Canon de vertido por entrega de residuos inertes metálicos produ|25|190626|0|
+~C|mq04res025ka|t|Canon de vertido por entrega de residuos vegetales producidos du|100|190626|0|
+~C|mq04res035a|t|Canon de vertido por entrega de tierras procedentes de la excava|2.25|190626|0|
+~C|mq08sol010|h|Equipo de oxicorte, con acetileno como combustible y oxígeno com|8.25|020626|2|
+~C|mq09bro010|h|Desbrozadora equipada con disco de dientes de sierra o con hilo|4.48|020626|2|
+~C|mt01zah010c|t|Zahorra artificial caliza.|10.2|180626|3|
+~C|mt07aco010g|kg|Acero en barras corrugadas, UNE-EN 10080 B 500 S, suministrado e|1.22|080626|3|
+~C|mt07ala110ga|m|Perfil de acero UNE-EN 10025 S275JR, serie IPN 200, laminado en|52.65|050626|3|
+~C|mt07emr511a|kg|Herrajes de acero galvanizado tipo DX51D+Z275N y tornillos rosca|11.4|050626|3|
+~C|mt08var050|kg|Alambre galvanizado para atar, de 1,30 mm de diámetro.|1.5|080626|3|
+~C|mt10hmf010tLc|m³|Hormigón HM-20/P/20/X0, fabricado en central.|81.8|040626|3|
+~C|mt12psg081a|u|Tornillo autoperforante 3,5x9,5 mm.|0.01|040626|3|
+~C|mt12psg110a|u|Taco para tornillo.|0.02|040626|3|
+~C|mt13ccg100t|m²|Chapa perfilada de acero galvanizado, de 1 mm de espesor, entre|9.11|040626|3|
+~C|mt27pfi010|l|Imprimación de secado rápido, formulada con resinas alquídicas m|4.8|050626|3|
+~C|mt41ixi110v|u|Extintor portátil de polvo químico ABC polivalente, con presión|36.08|050626|3|
+~C|mt49des020|u|Desplazamiento de personal y equipo a obra para la realización d|43|080626|3|
+~C|mt49oct010abA|u|Control técnico de obra|1800|080626|3|
+~C|mt49sin020a|u|Informe técnico sobre los resultados obtenidos en los ensayos re|172.79|080626|3|
+~C|mt49sla060|u|Ensayo para determinar los Límites de Atterberg (límite líquido|36.1|080626|3|
+~C|mt49sla075|u|Ensayo para determinar la densidad y humedad "in situ" del terre|15|080626|3|
+~C|mt49sla080b|u|Análisis granulométrico por tamizado de una muestra de material|30.1|080626|3|
+~C|mt49stc010b|u|Toma de una muestra de material de relleno o terraplenado.|30.65|080626|3|
+~C|mt49sue020|u|Ensayo Proctor Modificado, según UNE 103501.|92.5|080626|3|
+~C|mt50bal010g|m|Cinta reflectante para balizamiento, de material plástico, de 10|0.29|050626|3|
+~C|mt50bal030Ca|u|Cono de balizamiento reflectante de 75 cm de altura, de 2 piezas|22.25|050626|3|
+~C|mt50cas005a|u|Mes de alquiler de cabina de aseo portátil de polietileno, de 1,|184.32|080626|3|
+~C|mt50cas020n|u|Mes de alquiler de caseta prefabricada para almacenamiento en ob|123.49|080626|3|
+~C|mt50cas030p|u|Mes de alquiler de caseta prefabricada para vestuarios en obra,|189.23|080626|3|
+~C|mt50cas055a|u|Transporte de cabina de aseo, entrega y recogida, a una distanci|60|080626|3|
+~C|mt50cas060a|u|Transporte de caseta prefabricada de obra, entrega y recogida, a|279.46|080626|3|
+~C|mt50eca010|u|Botiquín de urgencia provisto de desinfectantes y antisépticos a|138.47|080626|3|
+~C|mt50epc020lj|u|Casco de protección, EPI de categoría II, según EN 397 y UNE-EN|3.32|080626|3|
+~C|mt50epj010lfe|u|Gafas de protección con montura integral, EPI de categoría II, s|14.74|080626|3|
+~C|mt50epm010cj|u|Par de guantes contra riesgos mecánicos, EPI de categoría II, se|19.23|080626|3|
+~C|mt50epo010Fj|u|Juego de orejeras, acopladas a cascos de protección, con atenuac|51.82|080626|3|
+~C|mt50epo020aa|u|Juego de tapones desechables, moldeables, con atenuación acústic|0.03|080626|3|
+~C|mt50epp010egb|u|Par de botas de media caña de seguridad, con puntera resistente|63.85|080626|3|
+~C|mt50epu030ice|u|Chaleco de alta visibilidad, de material combinado, color amaril|32.96|080626|3|
+~C|mt50epu030ide|u|Pantalón de alta visibilidad, de material combinado, color amari|30.73|080626|3|
+~C|mt50epv020da|u|Mascarilla autofiltrante contra partículas, FFP2, EPI de categor|4.58|080626|3|
+~C|mt50les010ba|u|Señal provisional de obra de chapa de acero galvanizado, de peli|46.56|050626|3|
+~C|mt50les010ja|u|Señal provisional de obra de chapa de acero galvanizado, de regl|48.08|050626|3|
+~C|mt50les010ra|u|Señal provisional de obra de chapa de acero galvanizado, de indi|0|050626|3|
+~C|mt50les020a|u|Cartel general indicativo de riesgos, de PVC serigrafiado, de 99|15.48|040626|3|
+~C|mt50les030Dc|u|Señal de extinción, de PVC serigrafiado, de 297x210 mm, con pict|5.98|050626|3|
+~C|mt50les030Lc|u|Señal de evacuación, salvamento y socorro, de PVC serigrafiado,|5.98|050626|3|
+~C|mt50les030fa|u|Señal de advertencia, de PVC serigrafiado, de 297x210 mm, con pi|4.39|050626|3|
+~C|mt50les030nb|u|Señal de prohibición, de PVC serigrafiado, de 297x210 mm, con pi|4.39|050626|3|
+~C|mt50les030vb|u|Señal de obligación, de PVC serigrafiado, de 297x210 mm, con pic|4.39|050626|3|
+~C|mt50les050a|u|Caballete portátil de acero galvanizado, para señal provisional|11.38|050626|3|
+~C|mt50les070d|u|Paleta manual reflectante de paso alternativo, de polipropileno,|57.67|050626|3|
+~C|mt50man010|u|Reconocimiento médico obligatorio anual al trabajador.|147.17|080626|3|
+~C|mt50spa050g|m³|Tabloncillo de madera de pino, dimensiones 15x5,2 cm.|424.8|050626|3|
+~C|mt50spa050o|m³|Tablón de madera de pino, dimensiones 25x7,5 cm.|439.2|050626|3|
+~C|mt50spa101|kg|Clavos de acero.|1.87|050626|3|
+~C|mt50spd078|u|Anclaje mecánico con tornillo autotaladrante de cabeza hexagonal|1.14|040626|3|
+~C|mt50spr045|u|Tapón protector de PVC, tipo seta, de color rojo, para protecció|0.12|080626|3|
+~C|mt50spr046|u|Brida de nylon, de 4,8x200 mm.|0.04|050626|3|
+~C|mt50spr050|m²|Lona de polietileno de alta densidad, con tratamiento ultraviole|0.63|050626|3|
+~C|mt50spv011a|u|Puerta para acceso peatonal de chapa de acero galvanizado, de un|324|040626|3|
+~C|mt50spv011h|u|Puerta para acceso de vehículos de chapa de acero galvanizado, d|1224|040626|3|
+~C|mt50spv020|u|Valla trasladable de 3,50x2,00 m, formada por panel de malla ele|44.28|050626|3|
+~C|mt50spv025|u|Base prefabricada de hormigón, de 65x24x12 cm, con 8 orificios,|6.91|050626|3|
+~C|mt50spv040f|m|Perfil de acero UNE-EN 10210-1 S275JR, hueco, de sección cuadrad|8.87|040626|3|
+~C|mt50vbe010pk|u|Valla peatonal de hierro, de 1,10x2,50 m, color amarillo, con ba|50.4|050626|3|
+~C|mt50vbe020|u|Tubo reflectante de PVC, color naranja, para mejorar la visibili|2.88|050626|3|
+~T|D01.01|Desbroce y limpieza manual del terreno de topografía con desniveles mínimos, comprendiendo la retirada de pequeñas plantas, maleza, broza, maderas caídas, escombros, basuras y demás materiales superficiales existentes en las zonas afectadas por la demolición y la posterior restitución del terreno, sin alcanzar con carácter general el espesor completo de la capa de tierra vegetal, salvo en puntos localizados en los que resulte necesario para eliminar depósitos orgánicos, residuos mezclados o materiales impropios. Incluye la recogida, acopio y carga manual a camión del material resultante.|
+~T|D01.02|Desbroce y limpieza mecánica del terreno de topografía con desniveles mínimos, comprendiendo la retirada de pequeñas plantas, maleza, broza, maderas caídas, escombros, basuras y demás materiales superficiales existentes en las zonas afectadas por la demolición y la posterior restitución del terreno, sin alcanzar con carácter general el espesor completo de la capa de tierra vegetal, salvo en puntos localizados en los que resulte necesario para eliminar depósitos orgánicos, residuos mezclados o materiales impropios. Incluye la recogida, acopio y carga mecánica a camión del material resultante.|
+~T|D02.01|Desmontaje y retirada de vallado metálico provisional existente en la parcela, destinado a separar la edificación inacabada del resto de la finca, formado por paneles de chapa grecada galvanizada o cerramiento equivalente, postes metálicos, remates superiores inclinados, alambre o elementos de coronación existentes, y sistemas de fijación y sujeción asociados, realizado por medios manuales y mecánicos auxiliares, incluyendo:
+
+desmontaje elemento a elemento de paneles, postes y remates; corte, arranque o extracción de postes; demolición puntual y retirada de anclajes, empotramientos o pequeños dados de hormigón, si existieran; separación de materiales metálicos y residuos resultantes; carga sobre camión o contenedor; transporte interior dentro de la obra; retirada a gestor autorizado o acopio para valorización, según proceda; limpieza final de la franja afectada; relleno y regularización puntual de huecos dejados por los postes, anclajes o dados retirados.
+
+No incluye la ejecución del nuevo vallado provisional de obra ni el cerramiento final de la parcela, que se valorarán en partidas independientes.|
+~T|D02.02|Demolición completa, elemento a elemento, con medios manuales y mecánicos, de la edificación inacabada de 1.800 m² de superficie total estimada, con carga mecánica sobre camión o contenedor, situada en un entorno con dos edificaciones colindantes próximas y estructuralmente independientes, compuesta por 1 planta sobre rasante con una altura edificada aproximada de 3,50 m y 1 planta bajo rasante hasta una profundidad aproximada de 3,50 m. El edificio presenta una estructura de hormigón armado y un estado de conservación regular, a la vista de los estudios previos realizados. Las edificaciones colindantes presentan las siguientes características: la primera tiene una altura edificada aproximada sobre rasante de 10,00 m y su estado de conservación es normal, y la segunda tiene una altura edificada aproximada sobre rasante de 6,00 m y su estado de conservación es normal.
+
+La unidad de obra comprende el desmantelamiento selectivo, por medios manuales y mecánicos, de los elementos no estructurales, cerramientos, fábricas, particiones, restos ligeros, elementos separables y demás componentes no portantes de la edificación, así como la posterior deconstrucción controlada, sectorizada y en secuencia descendente de la totalidad de la superestructura y de los elementos constructivos del edificio situados sobre y bajo rasante, hasta dejar exclusivamente los elementos de cimentación.
+
+Se incluyen expresamente en el alcance de esta unidad la demolición de forjados, vigas, pilares, núcleos, escaleras, cerramientos estructurales, petos, forjados sanitarios y soleras, si las hubiere, así como la demolición de los elementos del sótano una vez que éstos hayan quedado exentos mediante la excavación exterior previa correspondiente, que será objeto de otra partida. La superficie total considerada en esta unidad incluye los 200,00 m² estimados de superficie bajo rasante. 
+
+La ejecución se realizará mediante procedimientos de demolición selectiva y deconstrucción controlada, sin impacto masivo, sin vuelco de pórticos ni colapso inducido, incluyendo el desmontaje previo de elementos no estructurales, la fragmentación controlada del hormigón, el corte de armaduras, la retirada progresiva del material demolido, la limpieza continuada del frente de trabajo y la carga mecánica de escombros sobre camión, contenedor o zona interior de acopio y clasificación.
+
+Quedan excluidos de esta unidad, y serán objeto de partidas independientes, la excavación exterior necesaria para el vaciado del trasdós y para dejar exentos los muros de sótano; la demolición de zapatas, riostras, vigas de atado, losas de cimentación y cualesquiera otros elementos estrictamente integrantes de la cimentación; el relleno posterior, la compactación por tongadas y la regularización o restitución topográfica final del terreno; así como el canon de vertido y la gestión externa de residuos, si se abonan en capítulos específicos.
+
+Criterio de medición en proyecto: número de unidades previstas, según documentación gráfica y escrita del Proyecto de Demolición, correspondiendo la presente partida a una unidad edificatoria completa de 1.800 m², incluida la superficie estimada bajo rasante, con exclusión de la cimentación y de las actuaciones exteriores o finales objeto de otras partidas. 
+
+Criterio de medición en obra y condiciones de abono: se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto de Demolición, entendiéndose incluida en el precio la demolición completa del edificio hasta dejar únicamente la cimentación, con retirada interior y carga de los materiales resultantes, y no siendo abonables con cargo a esta partida las operaciones de excavación exterior, demolición de cimentación, relleno, compactación o restauración final del terreno. 
+
+Criterio de valoración económica: el precio incluye el desmantelamiento selectivo de los elementos no estructurales; la deconstrucción controlada de la superestructura y de los elementos de sótano una vez exentos; la demolición de forjados sanitarios y soleras, si las hubiere; los apeos, apuntalamientos y medios auxiliares provisionales estrictamente necesarios para esta fase; la fragmentación de materiales; la limpieza continuada del frente de trabajo; y la carga mecánica de escombros sobre camión o contenedor. No incluye la excavación exterior para el vaciado de los muros de sótano, la demolición de la cimentación, el canon de vertido y la gestión externa de residuos, ni el relleno, compactación y regularización final del terreno.|
+~T|D02.03|Excavación a cielo abierto, por medios mecánicos, del terreno natural situado en el perímetro exterior de los muros de sótano de la edificación inacabada, ejecutada desde la plataforma superior de trabajo y hasta alcanzar la cota inferior de la cimentación o la indicada por la Dirección Facultativa, con la finalidad de anular los empujes laterales del terreno, transformar los muros de sótano en elementos exentos y posibilitar la demolición posterior de los elementos estructurales bajo rasante incluidos en la partida de demolición principal. La excavación comprenderá la apertura del vaciado exterior, la conformación de talud provisional estable con pendiente mínima 1:1 o la que resulte procedente en función de las condiciones reales del terreno, el reperfilado y limpieza del fondo y de los paramentos excavados, la retirada del material excavado del frente de trabajo y su carga sobre camión o acopio interior, según la organización de la obra.
+
+Se consideran incluidos en esta unidad los trabajos necesarios para ejecutar el vaciado perimetral exterior con la geometría adecuada para garantizar la estabilidad del terreno durante la fase provisional, la accesibilidad de la maquinaria y la posterior demolición a cielo abierto de los muros y demás elementos de sótano. La excavación se realizará de forma progresiva, por tramos compatibles con la estabilidad del entorno, evitando sobrecargas en coronación, descalces bruscos, acumulaciones incontroladas de tierras y afecciones a edificaciones colindantes, servicios existentes o elementos que deban conservarse.
+
+Quedan excluidos de esta unidad la demolición de los muros de sótano, pilares, forjados, soleras o losas inferiores; la demolición de zapatas, riostras, vigas de atado, losas de cimentación y demás elementos estrictamente integrantes de la cimentación; la entibación especial, si resultara necesaria por condiciones no previstas; el transporte a gestor autorizado, el canon de vertido y la gestión externa del material excavado, cuando se abonen en partidas específicas; así como el relleno posterior, la compactación por tongadas y la regularización o restitución topográfica final del terreno.
+
+Criterio de medición en proyecto y en obra: por metro cúbico (m³) de excavación realmente ejecutada, deducido de las dimensiones teóricas definidas en la documentación del proyecto o, en su caso, de las ordenadas por la Dirección Facultativa en función de la geometría real del vaciado necesario para dejar exentos los muros de sótano. No serán abonables con cargo a esta partida los excesos de excavación no justificados ni las operaciones comprendidas en otras partidas.
+
+Criterio de valoración económica: el precio incluye la excavación mecánica a cielo abierto, la conformación y mantenimiento del talud provisional durante la ejecución de esta fase, el reperfilado y limpieza del fondo y de los paramentos excavados, la retirada interior del material, la carga mecánica sobre camión o acopio interior y cuantos medios auxiliares ordinarios sean precisos para dejar exentos los muros de sótano. No incluye la demolición de los elementos estructurales bajo rasante, la demolición de la cimentación, el relleno posterior, la compactación, la restitución final del terreno ni la gestión externa del material excavado, cuando se midan en partidas distintas.|
+~T|D02.04|Demolición de elementos de cimentación de hormigón armado de la edificación inacabada, incluyendo zapatas, riostras, vigas de atado, encepados, losas de cimentación y demás elementos estrictamente integrantes de la cimentación, de profundidad máxima incluso superior a 1,50 m, mediante retroexcavadora equipada con martillo rompedor hidráulico de baja o media energía y equipo de oxicorte o corte de armaduras, con fragmentación controlada del material y carga mecánica sobre camión o contenedor.
+
+La unidad comprende la demolición completa de la cimentación una vez eliminadas las cargas transmitidas por la estructura superior y, en su caso, ejecutadas las excavaciones previas necesarias para dejar accesibles los elementos enterrados, incluyendo la rotura controlada del hormigón, el corte de armaduras, la fragmentación en piezas manejables, la retirada inmediata del material demolido del frente de trabajo y la limpieza continuada de la zona de actuación. 
+
+La ejecución se realizará de forma progresiva y por tramos limitados, evitando procedimientos de impacto indiscriminado, vibraciones excesivas, descalces bruscos o actuaciones incompatibles con la estabilidad del terreno, de las edificaciones colindantes y de los elementos a conservar. 
+
+Quedan excluidos de esta unidad la excavación exterior o interior necesaria para descubrir o liberar la cimentación, la demolición de muros de sótano, alzados enterrados, soleras o losas inferiores no integrantes de la cimentación, el relleno posterior de los huecos resultantes, la compactación y la regularización final del terreno, así como el canon de vertido y la gestión externa de residuos, si se abonan en partidas o capítulos específicos. 
+
+Criterio de medición en proyecto y en obra: por metro cúbico de cimentación realmente demolida, deducido de las dimensiones teóricas de los elementos definidos en la documentación del proyecto y de los efectivamente ejecutados conforme a las órdenes de la Dirección Facultativa.
+Criterio de valoración económica: el precio incluye la demolición completa de los elementos de cimentación definidos en esta partida, la fragmentación controlada del hormigón, el corte de armaduras, la retirada interior del material, la limpieza del frente de trabajo y la carga mecánica sobre camión o contenedor; no incluye las excavaciones previas necesarias para dejar vistas las cimentaciones, ni las operaciones posteriores de relleno, compactación o restitución final del terreno.|
+~T|D02.05|Relleno localizado del vaso del sótano y de la excavación exterior ejecutada para el vaciado del trasdós de los muros de sótano, una vez finalizadas la demolición de los elementos bajo rasante y la limpieza completa del fondo, mediante aportación de suelo seleccionado apto conforme a las prescripciones del proyecto y a su control previo de aceptación. La presente unidad tiene por objeto la colmatación principal del volumen excavado o demolido bajo rasante, hasta una cota inferior a la coronación final de la parcela, reservándose la capa superior de terminación para una partida independiente de zahorra artificial caliza.
+
+El material se dispondrá por tongadas horizontales de espesor máximo de 30 cm, con humectación cuando resulte necesaria, compactación mecánica con medios adecuados a la geometría del relleno y perfilado ordinario de cada capa, sin que pueda extenderse una tongada superior sin haberse alcanzado en la anterior el grado de compactación exigido. La ejecución deberá evitar segregaciones, blandones, coqueras, acumulaciones puntuales, huecos interiores y diferencias locales de densidad que puedan provocar asientos diferenciales o deformaciones posteriores. 
+
+La unidad incluye el relleno del volumen principal del sótano y de la excavación exterior auxiliar, con integración homogénea respecto del terreno existente y en condiciones adecuadas para recibir la capa superior de coronación y terminación funcional de la parcela. No constituye base de pavimento ni acabado superficial definitivo, sino relleno estructural compactado de restitución del volumen demolido.
+
+Condiciones previas de ejecución: no podrá iniciarse esta unidad hasta que hayan finalizado la demolición de los elementos bajo rasante y de la cimentación que interfieran con el volumen a colmatar, y hasta que el fondo del hueco resultante se encuentre limpio de restos de hormigón, ferralla, lodos, tierras sueltas inestables y materiales impropios. Con carácter previo al vertido de la primera tongada deberá haberse verificado la conformidad del fondo por la Dirección Facultativa, conforme al procedimiento de inspección y control previsto en el proyecto. El material de relleno habrá de haber sido previamente aceptado en el marco del Plan de Control de Calidad.
+
+Alcance incluido: se consideran incluidos en esta unidad el suministro del suelo seleccionado apto; su carga y transporte interior en obra; la descarga; el extendido por tongadas; la humectación; la compactación mecánica; el perfilado ordinario de cada capa; y cuantos medios manuales, mecánicos y auxiliares sean precisos para dejar ejecutado el relleno principal del sótano y de la excavación exterior hasta la cota prevista para esta fase. 
+
+Exclusiones expresas: quedan excluidos de esta unidad los ensayos de laboratorio o in situ; el control técnico de compactación y de aceptación del material; la gestión externa de materiales sobrantes; el transporte exterior a obra del material de relleno si se mide aparte; la capa superior de coronación con zahorra artificial caliza; y la regularización topográfica final de precisión o el acabado definitivo superficial de la parcela, cuando se definan en partidas específicas.
+
+Criterio de medición en proyecto y en obra: se medirá por metro cúbico (m³) de relleno realmente ejecutado y compactado, deducido de las dimensiones teóricas del volumen a colmatar y de las cotas previstas en proyecto o, en su caso, de las ordenadas por la Dirección Facultativa. No serán abonables los excesos de relleno derivados de sobreexcavaciones no previstas, defectos de ejecución o reposiciones exigidas por no haberse alcanzado la compactación requerida.
+
+Criterio de valoración económica:el precio incluye la aportación de suelo seleccionado apto, el extendido, la humectación, la compactación mecánica por tongadas hasta obtener una densidad seca in situ no inferior al 95 % del Proctor Modificado, el perfilado ordinario y la colmatación principal del vacío del sótano y de la excavación exterior, en los términos definidos en esta partida. No incluye los ensayos de control de calidad, la asistencia técnica de control, la capa superior de coronación con zahorra artificial caliza, la regularización topográfica final de acabado ni la gestión externa de materiales, cuando dichos conceptos se abonen en partidas o capítulos específicos.|
+~T|D02.06|Relleno localizado de los huecos resultantes de la demolición de zapatas, riostras, vigas de atado, losas de cimentación y demás elementos integrantes de la cimentación, así como ejecución de la capa superior de coronación del vaso del sótano y de la excavación exterior del trasdós, mediante zahorra artificial caliza, con objeto de completar la restitución del terreno y dotar a la parcela de una capa superior estable, regular, drenante y apta para su uso provisional como superficie libre.
+
+La zahorra artificial caliza se dispondrá por tongadas horizontales de espesor máximo de 30 cm, con humectación cuando proceda, compactación mecánica y perfilado ordinario de cada capa, hasta alcanzar las cotas finales de proyecto. En los huecos de cimentación su función será la colmatación compactada de elementos localizados con mayor exigencia de control geométrico y de integración con el relleno circundante; en la parte superior del antiguo sótano y de la excavación exterior su función será constituir la capa de coronación que mejore la regularidad superficial, la capacidad portante inmediata y el drenaje del terreno restituido.
+
+La ejecución deberá garantizar una adecuada trabazón con el relleno previamente ejecutado, evitando diferencias locales de densidad, huecos, blandones o discontinuidades entre materiales. No podrá procederse a la extensión de nuevas tongadas sin haberse alcanzado en la inferior el grado de compactación exigido. La superficie superior quedará regularmente perfilada y con pendientes compatibles con la evacuación de aguas de escorrentía y con el estado final previsto para la parcela.
+
+Condiciones previas de ejecución: no podrá iniciarse esta unidad hasta que se haya ejecutado y aceptado el relleno principal con suelo seleccionado en el volumen del sótano y de la excavación exterior, en su caso, y hasta que los huecos de cimentación y la superficie de apoyo de la capa superior se encuentren limpios, conformados y aptos para recibir la zahorra artificial caliza. El material deberá haber sido previamente aceptado en el marco del control de calidad previsto en el proyecto.
+
+Alcance incluido: se consideran incluidos en esta unidad el suministro de zahorra artificial caliza; la carga y transporte interior en obra; la descarga; el extendido por tongadas; la humectación; la compactación mecánica; el perfilado ordinario; la colmatación de huecos de cimentación; y la ejecución de la capa superior de coronación del antiguo sótano y de la excavación exterior hasta la cota final prevista para esta fase.
+
+Exclusiones expresas: quedan excluidos de esta unidad los ensayos de laboratorio o in situ; el control técnico de compactación y aceptación del material; la gestión externa de materiales sobrantes; el transporte exterior a obra del material si se abona en otra partida; y la regularización topográfica final de precisión o cualquier acabado específico distinto de la coronación ordinaria definida en esta unidad, cuando se midan aparte.
+
+Criterio de medición en proyecto y en obra: se medirá por metro cúbico (m³) de zahorra artificial caliza realmente extendida y compactada, deducido de las dimensiones teóricas de los huecos de cimentación y del espesor previsto para la capa superior de coronación del sótano y de la excavación exterior, según proyecto o, en su caso, según las órdenes de la Dirección Facultativa. No serán abonables los excesos de aporte derivados de sobreespesores no previstos, defectos de ejecución o reposiciones por compactación insuficiente.
+
+Criterio de valoración económica: el precio incluye la aportación de zahorra artificial caliza, el extendido, la humectación, la compactación mecánica por tongadas hasta obtener una densidad seca in situ no inferior al 95 % del Proctor Modificado, el perfilado ordinario y la ejecución completa del relleno de huecos de cimentación y de la capa superior de coronación del sótano y de la excavación exterior en los términos definidos en esta partida. No incluye los ensayos de control de calidad, la asistencia técnica de control, la regularización topográfica final de precisión ni la gestión externa de materiales, cuando dichos conceptos se abonen en partidas o capítulos específicos.|
+~T|D03.01|Clasificación y depósito a pie de obra de los residuos de construcción y/o demolición, separándolos en las siguientes fracciones: hormigón, cerámicos, metales, maderas, vidrios, plásticos, papeles o cartones y residuos peligrosos; dentro de la obra en la que se produzcan, con medios manuales, y carga sobre camión|
+~T|D03.02|Transporte con camión de residuos vegetales producidos durante los trabajos de limpieza de solares, poda y tala de árboles, a vertedero específico, situado a 20 km de distancia.|
+~T|D03.03|Canon de vertido por entrega de residuos vegetales producidos durante los trabajos de limpieza de solares, poda y tala de árboles, en vertedero específico.
+Densidad adoptada: 0,90 t/m³|
+~T|D03.04|Transporte con camión de residuos inertes de hormigones, morteros y prefabricados producidos en obras de construcción y/o demolición, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos, situado a 20 km de distancia.|
+~T|D03.05|Canon de vertido por entrega de residuos inertes de hormigones, morteros y prefabricados producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.
+Densidad adoptada: 1,60 t/m³|
+~T|D03.06|Transporte con camión de residuos inertes de ladrillos, tejas y materiales cerámicos, producidos en obras de construcción y/o demolición, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos, situado a 20 km de distancia.|
+~T|D03.07|Canon de vertido por entrega de residuos inertes de ladrillos, tejas y materiales cerámicos, producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.
+Densidad adoptada: 1,30 t/m³|
+~T|D03.08|Transporte con camión de residuos inertes metálicos producidos en obras de construcción y/o demolición, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos, situado a 20 km de distancia.|
+~T|D03.09|Canon de vertido por entrega de residuos inertes metálicos producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.
+Densidad adoptada: 0,75 t/m³|
+~T|D03.10|Transporte con camión de mezcla sin clasificar de residuos inertes producidos en obras de construcción y/o demolición, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos, situado a 20 km de distancia.|
+~T|D03.11|Canon de vertido por entrega de mezcla sin clasificar de residuos inertes producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.
+Densidad adoptada: 1,50 t/m³
+|
+~T|D03.12|Transporte de residuos inertes plásticos producidos en obras de construcción y/o demolición, con contenedor de 7 m³, a vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos. Incluso servicio de entrega, alquiler y recogida en obra del contenedor.|
+~T|D03.13|Canon de vertido por entrega de contenedor de 7 m³ con residuos inertes de yeso producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.|
+~T|D03.15|Canon de vertido por entrega de contenedor de 7 m³ con residuos inertes vítreos producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.|
+~T|D03.16|Canon de vertido por entrega de contenedor de 7 m³ con residuos inertes plásticos producidos en obras de construcción y/o demolición, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.					|
+~T|D03.18|Canon de vertido por entrega de tierras procedentes de la excavación, en vertedero específico, instalación de tratamiento de residuos de construcción y demolición externa a la obra o centro de valorización o eliminación de residuos.|
+~T|D04.01|Ensayos para la selección, aceptación y control de los materiales de relleno previstos para la restitución del terreno, sobre muestras tomadas en obra, en laboratorio acreditado en el área técnica correspondiente, incluyendo análisis granulométrico según UNE-EN ISO 17892-4, determinación de los límites de Atterberg según UNE-EN ISO 17892-12, ensayo Proctor Modificado según UNE 103501 y ensayos in situ de densidad y humedad mediante densímetro nuclear o procedimiento equivalente admitido, conforme al Plan de Control de Calidad y a las determinaciones del proyecto de Demolición.
+
+La unidad comprende los ensayos necesarios para verificar la aptitud del suelo seleccionado destinado al relleno principal del vacío del sótano y de la excavación exterior, así como, en su caso, para contrastar la idoneidad del material granular previsto para la capa superior de coronación, todo ello en relación con las partidas de relleno y compactación definidas en el proyecto. Los ensayos tendrán por objeto comprobar las características granulométricas y de plasticidad del material de relleno, determinar su densidad máxima y humedad óptima de compactación mediante Proctor Modificado y verificar in situ las condiciones reales de ejecución en obra en cuanto a densidad seca y humedad alcanzadas en las tongadas ejecutadas. 
+
+La presente unidad se refiere al control de aceptación y de ejecución del material de relleno, en coherencia con la solución prevista en el proyecto para la restitución del terreno, que exige la colocación del material por tongadas horizontales de espesor máximo de 30 cm y la obtención de una densidad seca in situ no inferior al 95 % del Proctor Modificado.
+
+Se consideran incluidos en esta unidad: la toma de muestras representativas del material de relleno en obra; la realización en laboratorio acreditado del análisis granulométrico, de los límites de Atterberg y del ensayo Proctor Modificado; la realización de ensayos in situ de densidad y humedad sobre las tongadas ejecutadas; la emisión de los correspondientes resultados, hojas de ensayo e informe de aceptación del material; y la documentación necesaria para su incorporación al expediente de control de calidad de la obra.
+
+Condiciones previas: no podrán iniciarse los ensayos de aceptación sin que el material propuesto como relleno se encuentre claramente identificado y acopiado en condiciones que permitan su muestreo representativo. Los ensayos in situ de densidad y humedad se realizarán una vez extendidas y compactadas las tongadas correspondientes, conforme al procedimiento de ejecución establecido en el proyecto.
+
+Criterio de medición en proyecto y en obra: se medirá por unidad completa realmente ejecutada, comprendiendo el conjunto de ensayos inicialmente previstos para la aceptación del material de relleno y para la comprobación in situ de su compactación y humedad durante la ejecución. No se considerarán incluidos en esta unidad los ensayos extraordinarios que procedan por rechazo de materiales, repetición por defectos de ejecución o causas imputables al contratista.
+
+Criterio de valoración económica: el precio incluye la toma de muestras, la realización de ensayos en laboratorio acreditado, los ensayos in situ de densidad y humedad, la emisión de resultados y la documentación técnica de control necesaria para la aceptación del material de relleno y la verificación de la compactación. No incluye ensayos adicionales o extraordinarios derivados de incidencias, rechazos o incumplimientos de la ejecución.|
+~T|D04.02|Control técnico de ejecución de los rellenos y de la restitución del terreno, incluyendo la verificación previa de la limpieza y conformidad del fondo antes del inicio del relleno, el control de ejecución por tongadas, la comprobación in situ de densidad y humedad, la supervisión de la correcta colocación del suelo seleccionado y de la zahorra artificial caliza, la verificación de la retirada completa de los elementos de cimentación demolidos, la comprobación de pendientes y drenaje superficial, y la emisión del informe final de control de calidad del terreno restituido.
+
+Criterio de medición y abono: por unidad completa realmente ejecutada, incluyendo la totalidad del seguimiento técnico de la fase de rellenos, compactación y comprobación del estado final de la parcela.
+
+Criterio de valoración económica: el precio incluye las comprobaciones previas al relleno, el seguimiento de la ejecución por tongadas, los controles in situ de compactación previstos en el proyecto, la supervisión de pendientes y drenaje superficial y la elaboración del informe final de control de calidad. No incluye ensayos extraordinarios ni trabajos de subsanación derivados de defectos de ejecución.|
+~T|D04.03|Control técnico de la demolición y auscultación de colindantes, incluyendo inspección previa y reconocimiento del estado aparente de las edificaciones colindantes y de los elementos a conservar, reportaje fotográfico inicial, definición de puntos de control, lectura de referencia, seguimiento técnico de las fases sensibles de demolición y excavación, vigilancia de posibles afecciones por vibraciones, desplazamientos o fisuración, comprobación del comportamiento del muro de contención y del entorno inmediato, registro de incidencias y emisión de informe final de seguimiento.
+
+Criterio de medición y abono: por unidad completa realmente ejecutada, incluyendo la totalidad del seguimiento técnico de la demolición en relación con los colindantes y elementos a conservar durante las fases críticas de la obra.
+
+Criterio de valoración económica: el precio incluye la inspección previa, la lectura de referencia, las visitas de seguimiento durante las fases críticas de demolición y excavación, la comprobación de incidencias y la elaboración del informe final de control técnico. No incluye la implantación de sistemas instrumentales permanentes o monitorización continua mediante acelerómetros, vibrómetros u otros equipos específicos, ni ensayos extraordinarios o medidas correctoras derivadas de incidencias no previstas.
+
+|
+~T|D04.04|Implantación y seguimiento instrumental de vibraciones y auscultación puntual de colindantes durante las fases críticas de demolición y excavación, incluyendo instalación de los equipos de medida previstos, lecturas iniciales de referencia, seguimiento instrumental durante las fases sensibles de la obra, retirada de equipos y emisión de informe final de resultados.
+
+La unidad comprende la implantación de una campaña instrumental específica para el control de vibraciones y la auscultación puntual de colindantes en las fases de mayor sensibilidad de la demolición y de la excavación asociada, como complemento del control técnico ordinario definido en la partida D04.03. Incluye la instalación de los equipos previstos, la ejecución de lecturas iniciales de referencia, el seguimiento instrumental durante las fases críticas de demolición controlada, vaciado del trasdós y retirada de cimentaciones, la retirada final de los equipos y la emisión de informe de resultados. La unidad se configura como instrumento de control específico cuando la Dirección Facultativa considere necesario reforzar la vigilancia del comportamiento de los colindantes y del entorno inmediato. 
+
+Alcance incluido: se consideran incluidos en esta unidad el suministro o alquiler de los equipos de medida previstos; su instalación y puesta en servicio; las lecturas iniciales de referencia; las lecturas o controles previstos durante las fases críticas; la retirada de los equipos al término de la campaña; y la emisión del informe final de resultados.
+
+Exclusiones expresas: quedan excluidos de esta unidad la ampliación extraordinaria del número de puntos de control, las campañas adicionales no previstas inicialmente, la monitorización continua permanente no contemplada en la campaña definida, y las reparaciones o medidas correctoras derivadas de incidencias detectadas. 
+
+Criterio de medición y abono: por unidad completa realmente ejecutada, incluyendo la totalidad de la implantación, seguimiento y documentación de la campaña instrumental prevista para la obra.
+
+Criterio de valoración económica: El precio incluye el suministro o alquiler de los equipos, su instalación, las lecturas iniciales y de seguimiento, la retirada de los equipos y la emisión del informe final. No incluye campañas extraordinarias, ampliaciones no previstas de la instrumentación ni medidas correctoras derivadas de incidencias.|
+~T|D05.01|Vallado definitivo de parcela, de 2,00 m de altura, formado por paneles opacos de chapa perfilada de acero galvanizado, de 1,00 mm de espesor, entre 40 y 50 mm de altura de perfil y entre 250 y 270 mm de intereje, fijados a perfiles huecos de acero galvanizado de sección cuadrada, anclados al terreno mediante dados o zócalos de hormigón, con la rigidez y estabilidad necesarias para su permanencia definitiva, incluyendo postes, anclajes, elementos de fijación, remates, aplomado, nivelación y colocación completa.
+
+Criterio de medición y abono: por metro lineal realmente ejecutado de vallado definitivo, medido sobre la longitud instalada de cerramiento terminada y recibida conforme.
+
+Criterio de valoración económica: el precio incluye los paneles opacos de chapa perfilada, los perfiles metálicos de sustentación, los anclajes al terreno mediante dados o zócalos de hormigón, los elementos de fijación, los remates, la colocación completa, nivelación, aplomado y cuantos medios auxiliares sean precisos para dejar el vallado definitivamente instalado. No incluye puertas de acceso, si se valoran en partidas independientes.|
+~T|D05.02|Puerta para acceso peatonal de chapa de acero galvanizado, de una hoja, de 0,9x2,0 m, con lengüetas para candado, colocada en vallado provisional de solar, sujeta mediante postes del mismo material, hincados en el terreno, amortizable en 5 usos.
+|
+~T|D05.03|Puerta para acceso de vehículos de chapa de acero galvanizado, de dos hojas, de 4,0x2,0 m, con lengüetas para candado y herrajes de cierre al suelo, colocada en vallado provisional de solar, sujeta mediante postes del mismo material, anclados al terreno con dados de hormigón HM-20/P/20/X0, amortizable en 5 usos.|
+~T|D05.04|Cartel general indicativo de riesgos, de PVC serigrafiado, de 990x670 mm, amortizable en 3 usos, fijado con tornillos.|
+~T|D05.05|Señal de advertencia, de PVC serigrafiado, de 297x210 mm, con pictograma negro de forma triangular sobre fondo amarillo, amortizable en 3 usos, fijada con bridas.|
+~T|D05.06|Señal de prohibición, de PVC serigrafiado, de 297x210 mm, con pictograma negro de forma circular sobre fondo blanco, amortizable en 3 usos, fijada con bridas.|
+~T|D05.07|Señal de obligación, de PVC serigrafiado, de 297x210 mm, con pictograma blanco de forma circular sobre fondo azul, amortizable en 3 usos, fijada con bridas.|
+~T|D05.08|Señal de extinción, de PVC serigrafiado, de 297x210 mm, con pictograma blanco de forma rectangular sobre fondo rojo, amortizable en 3 usos, fijada con bridas.|
+~T|D05.09|Señal de evacuación, salvamento y socorro, de PVC serigrafiado, de 297x210 mm, con pictograma blanco de forma rectangular sobre fondo verde, amortizable en 3 usos, fijada con bridas.|
+~T|D05.10|Cinta reflectante para balizamiento, de material plástico, de 10 cm de anchura, impresa por ambas caras en franjas de color rojo y blanco.
+|
+~T|D05.11|Cono de balizamiento reflectante de 75 cm de altura, de 2 piezas, con cuerpo de polietileno y base de caucho, con 1 banda reflectante de 300 mm de anchura y retrorreflectancia nivel 1 (E.G.), amortizable en 10 usos.|
+~T|D05.12|Valla peatonal de hierro, de 1,10x2,50 m, amortizable en 20 usos, para delimitación provisional de zona de obras.|
+~T|D05.13|Valla trasladable de 3,50x2,00 m, formada por panel de malla electrosoldada de 200x100 mm de paso de malla y postes verticales de 40 mm de diámetro, acabado galvanizado, colocados sobre bases prefabricadas de hormigón, para delimitación provisional de zona de obras, con malla de ocultación colocada sobre la valla. Amortizables las vallas en 5 usos y las bases en 5 usos.|
+~T|D05.14|Señal provisional de obra de chapa de acero galvanizado, de peligro, triangular, L=70 cm, con retrorreflectancia nivel 1 (E.G.), con caballete portátil de acero galvanizado. Amortizable la señal en 5 usos y el caballete en 5 usos.|
+~T|D05.15|Señal provisional de obra de chapa de acero galvanizado, de reglamentación y prioridad, circular, Ø=60 cm, con retrorreflectancia nivel 1 (E.G.), con caballete portátil de acero galvanizado. Amortizable la señal en 5 usos y el caballete en 5 usos.|
+~T|D05.16|Señal provisional de obra de chapa de acero galvanizado, de indicación, rectangular, 60x90 cm, con retrorreflectancia nivel 1 (E.G.), con caballete portátil de acero galvanizado. Amortizable la señal en 5 usos y el caballete en 5 usos.|
+~T|D05.17|Paleta manual reflectante de paso alternativo, de polipropileno, con señal de detención obligatoria por una cara y de paso por la otra, con mango de aluminio, amortizable en 5 usos.|
+~T|D05.18|Protección de hueco horizontal de una arqueta de 100x100 cm de sección, durante su proceso de construcción hasta que se coloque su tapa definitiva, realizada mediante tabloncillos de madera de pino de 15x5,2 cm, colocados uno junto a otro hasta cubrir la totalidad del hueco, reforzados en su parte inferior por cuatro tabloncillos en sentido contrario, fijados con clavos de acero, con rebaje en su refuerzo para alojarla en el hueco de la planta de la arqueta de modo que impida su movimiento horizontal, preparada para soportar una carga puntual de 3 kN. Amortizable en 4 usos.|
+~T|D05.19|Protección de hueco horizontal de la boca de acceso a un pozo de registro de 60 cm de diámetro, durante su proceso de construcción hasta que se coloque su tapa definitiva, realizada mediante tabloncillos de madera de pino de 15x5,2 cm, colocados uno junto a otro hasta cubrir la totalidad del hueco, reforzados en su parte inferior por tres tabloncillos en sentido contrario, fijados con clavos de acero, con rebaje en su refuerzo para alojarla en el hueco de la planta de la boca de acceso al pozo de registro de modo que impida su movimiento horizontal, preparada para soportar una carga puntual de 3 kN. Amortizable en 4 usos.|
+~T|D05.20|Extintor portátil de polvo químico ABC polivalente, con presión incorporada con nitrógeno, con 6 kg de agente extintor, de eficacia 27A-183B, con casco de acero con revestimiento interior resistente a la corrosión y acabado exterior con pintura epoxi color rojo, tubo sonda, válvula de palanca, anilla de seguridad, manómetro, base de plástico y manguera con boquilla difusora, amortizable en 3 usos.|
+~T|D05.21|Delimitación de la zona de excavaciones abiertas mediante vallado perimetral formado por vallas peatonales de hierro, de 1,10x2,50 m, color amarillo, con barrotes verticales montados sobre bastidor de tubo, con dos pies metálicos, amortizables en 20 usos.|
+~T|D05.22|Protección frente a la caída de camiones en bordes de excavación, durante los trabajos de descarga directa de hormigón o materiales de relleno, formada por tope compuesto por 2 tablones de madera de pino de 25x7,5 cm, amortizables en 4 usos y perfiles de acero UNE-EN 10025 S275JR, laminado en caliente, de la serie IPN 200, con capa de imprimación anticorrosiva, de 1 m de longitud, hincados en el terreno cada 2,0 m, amortizables en 150 usos. Incluso elementos de acero para el ensamble de los tablones.|
+~T|D05.23|Protección de personas en bordes de excavación mediante barandilla de seguridad de 1 m de altura, formada por barra horizontal superior corrugada de acero UNE-EN 10080 B 500 S de 16 mm de diámetro, barra horizontal intermedia corrugada de acero UNE-EN 10080 B 500 S de 16 mm de diámetro y rodapié de tabloncillo de madera de pino de 15x5,2 cm, todo ello sujeto mediante bridas de nylon y alambre a montantes de barra corrugada de acero UNE-EN 10080 B 500 S de 20 mm de diámetro, hincados en el terreno cada 1,00 m. Incluso tapones de PVC, tipo seta, para la protección de los extremos de las armaduras. Amortizable las barras en 3 usos, la madera en 4 usos y los tapones protectores en 15 usos.|
+~T|D05.24|Casco de protección, destinado a proteger al usuario contra la caída de objetos y las consecuentes lesiones cerebrales y fracturas de cráneo, amortizable en 10 usos.|
+~T|D05.25|Gafas de protección con montura integral, con resistencia a impactos de partículas a gran velocidad y media energía, con ocular único sobre una montura flexible y cinta elástica, amortizable en 5 usos.|
+~T|D05.26|Par de guantes contra riesgos mecánicos, de algodón con refuerzo de serraje vacuno en la palma, resistente a la abrasión, al corte por cuchilla, al rasgado y a la perforación, amortizable en 10 usos.|
+~T|D05.27|Juego de orejeras, acopladas a cascos de protección, compuesto por un casquete diseñado para producir presión sobre la cabeza mediante un elemento acoplado a un casco de protección y ajuste con almohadillado central, con atenuación acústica de 30 dB, amortizable en 10 usos.|
+~T|D05.28|Juego de tapones desechables, moldeables, de espuma de poliuretano antialérgica, con atenuación acústica de 31 dB, amortizable en 1 uso.|
+~T|D05.29|Par de botas de media caña de seguridad, con puntera resistente a un impacto de hasta 200 J y a una compresión de hasta 15 kN, con las suelas provistas de resaltes, la zona del tacón cerrada y absorción de energía en la zona del tacón, con resistencia al deslizamiento, a la perforación, a la penetración y a la absorción de agua, con código de designación SB, amortizable en 2 usos.|
+~T|D05.31|Pantalón de alta visibilidad, de material combinado, con propiedades fluorescentes y reflectantes, color amarillo, amortizable en 5 usos.	|
+~T|D05.32|Mascarilla autofiltrante contra partículas, fabricada totalmente de material filtrante, que cubre la nariz, la boca y la barbilla, garantizando un ajuste hermético a la cara del trabajador frente a la atmósfera ambiente, FFP2, amortizable en 1 uso.|
+~T|D05.33|Botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.|
+~T|D05.34|Reconocimiento médico obligatorio anual al trabajador.|
+~T|D05.35|Medicina preventiva y primeros auxilios, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.|
+~T|D05.36|Mes de alquiler de cabina de aseo portátil de polietileno, de 1,20 m de anchura, de 1,20 m de profundidad y de 2,35 m de altura color gris, sin conexiones a la red, con inodoro químico anaerobio con sistema de descarga de bomba de pie y techo translúcido para entrada de luz exterior; con espejo y puerta con cerradura.|
+~T|D05.37|Mes de alquiler de caseta prefabricada para almacenamiento en obra de materiales, pequeña maquinaria y herramientas, de 7,00 m² y de 3,43 m de anchura, de 2,05 m de profundidad y de 2,50 m de altura, compuesta por: estructura metálica mediante perfiles conformados en frío; cerramiento de chapa nervada y galvanizada con terminación de pintura prelacada; cubierta de chapa galvanizada ondulada reforzada con perfil de acero; instalación de electricidad y fuerza con toma exterior a 230 V; tubos fluorescentes y punto de luz exterior; ventanas correderas de aluminio anodizado, con luna de 6 mm y rejas; puerta de entrada de chapa galvanizada de 1 mm con cerradura; suelo de aglomerado hidrófugo de 19 mm.|
+~T|D05.38|Mes de alquiler de caseta prefabricada para vestuarios en obra, de 14,00 m² y de 6,00 m de anchura, de 2,33 m de profundidad y de 2,50 m de altura, compuesta por: estructura metálica mediante perfiles conformados en frío; cerramiento de chapa nervada y galvanizada con terminación de pintura prelacada; cubierta de chapa galvanizada ondulada reforzada con perfil de acero; aislamiento interior con lana de vidrio combinada con poliestireno expandido; instalación de electricidad y fuerza con toma exterior a 230 V; tubos fluorescentes y punto de luz exterior; ventanas correderas de aluminio anodizado, con luna de 6 mm y rejas; puerta de entrada de chapa galvanizada de 1 mm con cerradura; suelo de aglomerado revestido con PVC continuo de 2 mm y poliestireno de 50 mm con apoyo en base de chapa galvanizada de sección trapezoidal y revestimiento de tablero melaminado en paredes.|
+~T|D05.39|Transporte de cabina de aseo, entrega y recogida, a una distancia de hasta 200 km.|
+~T|D05.40|Transporte de caseta prefabricada de obra, entrega y recogida, a una distancia de hasta 200 km.|
+~T|D05.41|Protección fija de frentes sensibles mediante pantalla, red de contención o sistema auxiliar equivalente, dispuesta sobre soporte provisional, vallado existente o bastidor auxiliar ligero, para la contención de proyecciones, la reducción de la dispersión de polvo y la separación física del frente de demolición respecto de edificaciones colindantes, zonas de paso o elementos a conservar, incluyendo elementos de fijación, colocación, mantenimiento durante la ejecución y retirada final.
+
+Criterio de medición y abono: por metro cuadrado realmente dispuesto y mantenido operativo durante la fase en que resulte necesario proteger el frente sensible, medido según la superficie efectivamente protegida, incluyendo montaje, reposiciones ordinarias y desmontaje.
+
+Criterio de valoración económica: el precio incluye la pantalla, red de protección o sistema auxiliar equivalente, el soporte provisional o bastidor auxiliar ligero necesario, los anclajes y elementos de fijación, su colocación, mantenimiento durante la ejecución de la demolición y retirada final. No incluye andamiajes pesados de trabajo con plataformas completas, estructuras independientes de gran entidad ni medios extraordinarios de apeo o contención estructural.|
+~T|D05.42|Sistema provisional de protección antipolvo mediante riego y nebulización para trabajos de demolición, carga, clasificación de residuos y movimientos de tierras, incluyendo depósito o toma de alimentación, mangueras, conexiones, lanzas o boquillas de pulverización, pequeño equipo de impulsión, implantación, mantenimiento ordinario y retirada final.
+
+Criterio de medición y abono: por mes realmente dispuesto y operativo durante la ejecución de los trabajos con generación de polvo.
+
+Criterio de valoración económica: el precio incluye la implantación del sistema de riego o nebulización, sus elementos auxiliares, el mantenimiento ordinario, la reposición de componentes de desgaste y la retirada final. No incluye el consumo extraordinario de agua si se decidiera medir aparte.
+|
+~M|D01#\D01.01|1\1\|3500|\Ámbito no accesible con maquinaria\3500\\\\|
+~M|D01#\D01.02|1\2\|1500|\Ámbito accesible con maquinaria\1500\\\\|
+~M|D02#\D02.01|2\1\|260|\\260\\\\|
+~M|D02#\D02.02|2\2\|1||
+~M|D02#\D02.03|2\3\|735|\Trasdós muros de sótano\1\60\3.5\3.5\|
+~M|D02#\D02.04|2\4\|159.64|\Volúmenes radiales\5\45\0.75\0.45\\Volumen principal\3\40.5\0.75\0.45\\Volumen principal\6\10.5\0.75\0.45\\Volumen circular\26\0.75\0.75\0.45\\Volumen circular 2\1\44\0.75\0.45\|
+~M|D02#\D02.05|2\5\|928|\\1\20\16\2.9\|
+~M|D02#\D02.06|2\6\|289.24|\Volúmenes radiales\5\45\0.75\0.45\\Volumen principal\3\40.5\0.75\0.45\\Volumen principal\6\10.5\0.75\0.45\\Volumen circular\26\0.75\0.75\0.45\\Volumen circular 2\1\44\0.75\0.45\\Sótano\1\18\12\0.6\|
+~M|D03#\D03.01|3\1\|1572.3|\\1572.3\\\\|
+~M|D03#\D03.02|3\2\|250|\Desbroce manual\175\\\\\Desbroce medios mecánicos\75\\\\|
+~M|D03#\D03.03|3\3\|225|\Desbroce manual\157.5\\\\\Desbroce medios mecánicos\67.5\\\\|
+~M|D03#\D03.04|3\4\|1024|\Hormigón (hormigones, morteros y prefabricados).\1024\\\\|
+~M|D03#\D03.05|3\5\|1638.4|\\1638.4\\\\|
+~M|D03#\D03.06|3\6\|359|\Ladrillos, tejas y materiales cerámicos\359\\\\|
+~M|D03#\D03.07|3\7\|466.7|\\466.7\\\\|
+~M|D03#\D03.08|3\8\|37|\\37\\\\|
+~M|D03#\D03.09|3\9\|27.75|\\27.75\\\\|
+~M|D03#\D03.10|3\10\|62|\\62\\\\|
+~M|D03#\D03.11|3\11\|93|\\93\\\\|
+~M|D03#\D03.12|3\12\|6|\Plásticos\1\\\\\Yesos\2\\\\\Vidrio\1\\\\\Madera\2\\\\|
+~M|D03#\D03.13|3\13\|2|\\2\\\\|
+~M|D03#\D03.14|3\14\|2|\\2\\\\|
+~M|D03#\D03.15|3\15\|1|\\1\\\\|
+~M|D03#\D03.16|3\16\|1|\\1\\\\|
+~M|D03#\D03.17|3\17\|65|\\65\\\\|
+~M|D03#\D03.18|3\18\|110.5|\\110.5\\\\|
+~M|D04#\D04.01|4\1\|1|\\1\\\\|
+~M|D04#\D04.02|4\2\|1|\\1\\\\|
+~M|D04#\D04.03|4\3\|1|\\1\\\\|
+~M|D04#\D04.04|4\4\|1|\\1\\\\|
+~M|D05#\D05.01|5\1\|420|\\1\420\\\|
+~M|D05#\D05.02|5\2\|2|\\2\\\\|
+~M|D05#\D05.03|5\3\|1|\\1\\\\|
+~M|D05#\D05.04|5\4\|6|\\6\\\\|
+~M|D05#\D05.05|5\5\|10|\\10\\\\|
+~M|D05#\D05.06|5\6\|10|\\10\\\\|
+~M|D05#\D05.07|5\7\|10|\\10\\\\|
+~M|D05#\D05.08|5\8\|10|\\10\\\\|
+~M|D05#\D05.09|5\9\|10|\\10\\\\|
+~M|D05#\D05.10|5\10\|500|\\500\\\\|
+~M|D05#\D05.11|5\11\|50|\\50\\\\|
+~M|D05#\D05.12|5\12\|40|\\40\\\\|
+~M|D05#\D05.13|5\13\|40|\\40\\\\|
+~M|D05#\D05.14|5\14\|4|\\4\\\\|
+~M|D05#\D05.15|5\15\|4|\\4\\\\|
+~M|D05#\D05.16|5\16\|4|\\4\\\\|
+~M|D05#\D05.17|5\17\|4|\\4\\\\|
+~M|D05#\D05.18|5\18\|20|\\20\\\\|
+~M|D05#\D05.19|5\19\|5|\\5\\\\|
+~M|D05#\D05.20|5\20\|5|\\5\\\\|
+~M|D05#\D05.21|5\21\|80|\\80\\\\|
+~M|D05#\D05.22|5\22\|4|\\4\\\\|
+~M|D05#\D05.23|5\23\|80|\\80\\\\|
+~M|D05#\D05.24|5\24\|12|\\12\\\\|
+~M|D05#\D05.25|5\25\|30|\\30\\\\|
+~M|D05#\D05.26|5\26\|80|\\80\\\\|
+~M|D05#\D05.27|5\27\|12|\\12\\\\|
+~M|D05#\D05.28|5\28\|100|\\100\\\\|
+~M|D05#\D05.29|5\29\|12|\\12\\\\|
+~M|D05#\D05.30|5\30\|12|\\12\\\\|
+~M|D05#\D05.31|5\31\|12|\\12\\\\|
+~M|D05#\D05.32|5\32\|250|\\250\\\\|
+~M|D05#\D05.33|5\33\|1|\\1\\\\|
+~M|D05#\D05.34|5\34\|12|\\12\\\\|
+~M|D05#\D05.35|5\35\|1||
+~M|D05#\D05.36|5\36\|3|\\3\\\\|
+~M|D05#\D05.37|5\37\|3|\\3\\\\|
+~M|D05#\D05.38|5\38\|3|\\3\\\\|
+~M|D05#\D05.39|5\39\|2|\\2\\\\|
+~M|D05#\D05.40|5\40\|2|\\2\\\\|
+~M|D05#\D05.41|5\41\|280|\\1\80\3.5\\|
+~M|D05#\D05.42|5\42\|3|\\3\\\\|

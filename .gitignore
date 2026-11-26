@@ -40,3 +40,7 @@ __pycache__/
 
 # Archivos comprimidos generados
 compressed/
+
+# Descargas publicas de licitaciones (si van en la web)
+!licitaciones/**/original.bc3
+!licitaciones/**/partidas.csv

@@ -1,0 +1,191 @@
+{
+ "expediente": "252/2026",
+ "organismo": "Presidencia de la Mancomunidad de Ayuntamientos del Norte de Gran Canaria",
+ "titulo": "Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria, incluido en el Plan de Cooperación del Cabildo de Gran Canaria.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1136492.96 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=MceKKWOz/mct8UWIC18BwCzRUeVepZMG01dsS%2BzHG3sYMoAs2dTipc2Ah9OTiyAUnHdxTJ3GBvato/qW2sNnoDoNVI%2BvZHxv9jq%2B40q0oGuCx2e6p7hqtlp2aFupgHMr",
+ "archivo_origen": "252_2026_La_Aldea.bc3",
+ "total_bc3": 52941.24,
+ "suma_partidas": 52941.24,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "APLOSESPINOS",
+   "resumen": "Sustitución Luminarias AP Los Espinos",
+   "importe": 51292.13
+  },
+  {
+   "codigo": "APG20SS",
+   "resumen": "Seguridad y Salud.",
+   "importe": 1075.64
+  },
+  {
+   "codigo": "APG20GR",
+   "resumen": "Gestión de Residuos.",
+   "importe": 573.47
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "Z01ABDA0010",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea subterránea de B.T. para alumbrado público 5x(1x25)Al, XZ1(S) CPR Eca, 0,6/1 kV.",
+   "cantidad": 1.0,
+   "precio": 7.2,
+   "importe": 7.2,
+   "descripcion": "Línea subterránea de baja tensión, formada por conductores unipolares de aluminio, aislamiento de polietileno reticulado XLPE, cubierta de poliolefina, CPR Eca, 0,6/1 kV, de 5x(1x25) mm² Al, instalada, s/UNE 21123 y s/REBT-02. Incluye: pp.de terminales, enhebrado en canalización, conexionado y pequeñomaterial. Incluye: retirada cableado existente y red trenzada a sustituir. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "Z01ABA0020",
+   "unidad": "m",
+   "resumen": "Suministro y sustitución de línea aérea de B.T. para alumbrado público de cable trenzado 4x25mm²Al+54,6 mm² Alm.",
+   "cantidad": 1.0,
+   "precio": 11.78,
+   "importe": 11.78,
+   "descripcion": "Suministro y sustitución de línea aérea de baja tensión para alumbrado público, posada sobre fachada o tensada sobre apoyo, formada por conductores unipolares de aluminio trenzados y aislados con polietileno reticulado XLPE CPR Fca, 0,6/1 kV, formando un haz de AL RZ 4x25 mm² Al+54,6 Alm con p.p de herrajes de sujección, conectores, ampacs y tapón final de linea. Incluye conductor de protección identificado con marcado mediante el símbolo de tierra o CP cada 0,5 m. En el mismo color que el cable RZ. Incluye izado y tensado, totalmente instalada, s/UNE 21030-1 y s/REBT-02. Incluye retirada cableado existente y gestión del mismo. Incluye: Carga manual de los restos de obra sobre camión o contenedor. Entrega del cableado retirado al Ayto, si así lo solicita, en dependencias Municipales o gestión del mismo."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "Vial3K",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Vial Led, clase II, 3000K.",
+   "cantidad": 81.0,
+   "precio": 432.02,
+   "importe": 34993.62,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de Luminaria vial 54w, clase II, 3000K. Luminaria IP66, con Flujo lumínico 8600 lms, equipada con protección contra sobretensión de 10kV SPD+Fusible, para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro, con montaje orientable para instalación en casquillo. Garantía: 10 años. 140.000 horas de vida útil L90B10 @ Ta=25°C Grado de protección IP66 según norma IEC 60529 Testada 5.000 horas en niebla salina según norma ASTM Standard B 117 Luminaria: Cree Energy One, 54w, clase II, 3000K o similar. Sistema de control incluido: Medianoche Virtual reprogramable en obra, selector interno de potencias. Garantía 10 años, con regulación de brazo en ángulo para ajuste desde ángulo de brazo xistente a cero grados con respecto a la vía, incluso color de luminaria según D.F. Incluye: cascillo de 70mm si fuese necesario. Incluye: Adaptador para montaje en soportes diferentes a 60mm Incluye: Driver D4i. Incluye: concetores Zhaga Book18. Incluye: sensor Zhaga de comunicación. Incluye: sistema de control durante 5 años. Incluye: garantía 10 años. Incluye: pintada contra ambientes salinos. Incluye: protección de 10kV. Incluye: regulación en ángulo para ajuste desde ángulo de brazo a cero grados con respecto a la vía. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "Villa3K",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Luminaria Villa Led, clase II, 3000K.",
+   "cantidad": 8.0,
+   "precio": 502.94,
+   "importe": 4023.52,
+   "descripcion": "Ud. de retirada de luminaria antigua existente e instalación de luminaria led modelo Villa de 56W para montaje/sujeción horizontal/brazo mural de 32 a 60 mm de diámetro. con montaje orientable para instalación en casquillo vertical superior. Temperatura de color: 3000 K. Incluye: sanemainto brazo y tornillería para colocación de luminaria. Incluye: Driver D4i. Incluye: concetores Zhaga Book18. Incluye: sensor Zhaga de comunicación. Incluye: sistema de control durante 5 años. Incluye: garantía 10 años. Incluye: pintada contra ambientes salinos. Incluye: protección de 10kV. Incluye: Desmontaje de luminaria existente, instalada en superficie con medios manuales o mecánicos y recuperación, acopio y montaje del material en el mismo emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que pueda estar sujeta, carga manual sobre camión o contenedor, clasificación y etiquetado. Acopio de los materiales a reutilizar. Reposición y conexionado del elemento. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Montaje, conexionado y comprobación de su correcto funcionamiento según REBT-02. Incluye: Tasa ECORAEE según Real Decreto RAEE 110/2015."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "Conexion",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Conexión y protección de luminaria.",
+   "cantidad": 88.0,
+   "precio": 50.1,
+   "importe": 4408.8,
+   "descripcion": "Ud. de conexión y protección de luminaria conteniendo caja de derivación estanca (IP 55) con puerta en plástico translúcido para exterior, conteniendo interruptor magnetotérmico 2x10A e interruptor diferencial 2x40 A/30 mA, tres conectores niled tipo P-6/RS-11 o similar, totalmente conectados a la red trenzada/luminaria, según REBT-02. Racores: Red Aérea P-6 Red Subterranea RS-11 Incluido: 1.- Retirada de Cableado de alimentación de luminaria y protección de luminaria antigua, con especial atención al racor y cable neutro de la línea,se debera asegurar su buen estado en todos los casos. 2.- Protección Automática Diferencial formada por automático 2x10A, y diferencial 2x25A, según necesidad totalmente instalada en interior columna, fijada en soporte exterior o en pared según ubicación de luminaria. 3.- Conductor de conexión entre la caja de protección y las luminarias mediante cable 3x2.5 mm2 Rv-K 0,6/1 kV; 4.- Conductores de conexión entre la caja de protección y el trenzado mediante cable de 1x6 mm2 Cu Rz 0,6/1 kV; 5.- Puesta a tierra entre la caja de protección y trenzado mediante cable de 1x16 mm2 Cu Rz 0,6/1 kV; NOTA: En caso de imposibilidad de colocación de la protección en los casos indicados se estimará una colocación similar en exterior o dentro de la luminaria u otra solución técnica equivalente. Será responsabilidad del adjudicatario la correcta sustitución del racor del conductor de neutro, toda rotura de neutro y posteriores averías producidas por la posible rotura de dicho neutro (drivers) correrán por parte del adjudicatario y deberán ser reparadas de inmediato."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "SustBrazo",
+   "unidad": "ud",
+   "resumen": "Suministro y sustirución de Brazo de Luminaria.",
+   "cantidad": 81.0,
+   "precio": 68.03,
+   "importe": 5510.43,
+   "descripcion": "Suministro y sustirución de Brazo de Luminaria instalada en poste o pared, incluso pernos de anclaje, izado y nivelado. Totalmente instalado."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "TomaTierra",
+   "unidad": "Ud",
+   "resumen": "Suministro e instalación de Toma de tierra con una pica de acero cobreado de 2 m de longitud.",
+   "cantidad": 1.0,
+   "precio": 160.54,
+   "importe": 160.54,
+   "descripcion": "Suministro e instalación de toma de tierra para red de alumbrado compuesta por pica de acero cobreado de 2 m de longitud, hincada en el terreno, conectada a puente para comprobación, dentro de una arqueta de registro de 30x30 cm. Incluso grapa abarcón para la conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Incluye: tubo de PVC de 16 atmosferas y diámetro 25 mm.colocado hasta 2.5 m. del suelo y cableado completo. Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexionado a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "PINTADO",
+   "unidad": "Ud",
+   "resumen": "Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa.",
+   "cantidad": 8.0,
+   "precio": 22.03,
+   "importe": 176.24,
+   "descripcion": "Ud. de Saneamiento y repintado de columna existente en el mismo color o el designado por la dirección facultativa."
+  },
+  {
+   "capitulo": "Sustitución Luminarias AP Los Espinos",
+   "codigo": "PABDV",
+   "unidad": "PA",
+   "resumen": "Partida Alzada Saneamiento e imprevistos.",
+   "cantidad": 1.0,
+   "precio": 2000.0,
+   "importe": 2000.0,
+   "descripcion": "Partida Alzada Saneamiento, imprevistos y legalización debido a la complejidad del alumbrado a renovar y el estado actual del mismo."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YSX010d",
+   "unidad": "Ud",
+   "resumen": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo.",
+   "cantidad": 1.0,
+   "precio": 489.24,
+   "importe": 489.24,
+   "descripcion": "Suministro, montaje e instalaciónConjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "YMM010b",
+   "unidad": "Ud",
+   "resumen": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.",
+   "cantidad": 5.0,
+   "precio": 104.46,
+   "importe": 522.3,
+   "descripcion": "Suministro y colocación de botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos. Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos. Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud. Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud."
+  },
+  {
+   "capitulo": "Seguridad y Salud.",
+   "codigo": "D32CA0010",
+   "unidad": "ud",
+   "resumen": "Señal de cartel obras, PVC, sin soporte metálico",
+   "cantidad": 5.0,
+   "precio": 12.82,
+   "importe": 64.1,
+   "descripcion": "Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "RAELVIAL",
+   "unidad": "Ud",
+   "resumen": "Gestión de residuo RAEE de luminaria vial",
+   "cantidad": 89.0,
+   "precio": 6.18,
+   "importe": 550.02,
+   "descripcion": "Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37B0060",
+   "unidad": "m³",
+   "resumen": "Transporte residuos a instalac. autorizada 20 km.",
+   "cantidad": 0.02,
+   "precio": 13.51,
+   "importe": 0.27,
+   "descripcion": "Transporte de residuos a instalación autorizada de gestión de residuos (Consejería de Medio Ambiente), con camión de 15 t, con un recorrido hasta 20 km."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0070",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de plástico a instalación de valorización",
+   "cantidad": 0.03,
+   "precio": 206.0,
+   "importe": 6.18,
+   "descripcion": "Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "Gestión de Residuos.",
+   "codigo": "D37CC0080",
+   "unidad": "t",
+   "resumen": "Coste entrega residuos de papel y cartón a instalación de valorización",
+   "cantidad": 0.03,
+   "precio": 566.5,
+   "importe": 17.0,
+   "descripcion": "Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  }
+ ]
+}

@@ -1,0 +1,446 @@
+{
+ "expediente": "252/2026",
+ "organismo": "Presidencia de la Mancomunidad de Ayuntamientos del Norte de Gran Canaria",
+ "titulo": "Mejora de la eficiencia energética del alumbrado e instalaciones públicas del Norte de Gran Canaria, incluido en el Plan de Cooperación del Cabildo de Gran Canaria.",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "1136492.96 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=iObceOQ8vr1MCyLDjGBZ2ObbbmcuCbW78TmWWFOOfmRjcKAqfPngYpgoFNQ3XUAnRHjhoINZFDT31kPyhXWFnLpkXV05z7sTIy3sbzMLzUd45ClyWkoJ44mKM70IFcOu",
+ "archivo_origen": "252_2026_Arucas.bc3",
+ "total_bc3": 206836.16,
+ "suma_partidas": 206836.16,
+ "costes_indirectos_pct": 3.0,
+ "capitulos": [
+  {
+   "codigo": "CAP01",
+   "resumen": "Trabajos previos y desmontajes",
+   "importe": 9263.68
+  },
+  {
+   "codigo": "CAP02",
+   "resumen": "Cimentaciones existentes y anclajes",
+   "importe": 21082.34
+  },
+  {
+   "codigo": "CAP03",
+   "resumen": "Columnas CA-14",
+   "importe": 74409.4
+  },
+  {
+   "codigo": "CAP04",
+   "resumen": "Luminarias y control",
+   "importe": 68555.43
+  },
+  {
+   "codigo": "CAP05",
+   "resumen": "Cuadros electricos y cableado a proyectores",
+   "importe": 23350.84
+  },
+  {
+   "codigo": "CAP06",
+   "resumen": "Legalización",
+   "importe": 573.83
+  },
+  {
+   "codigo": "CAP07",
+   "resumen": "Seguridad y Salud",
+   "importe": 3871.22
+  },
+  {
+   "codigo": "CAP08",
+   "resumen": "Gestión de Residuos",
+   "importe": 5729.42
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "Trabajos previos y desmontajes",
+   "codigo": "T0101",
+   "unidad": "ud",
+   "resumen": "Desmontaje y retirada de proyector existente",
+   "cantidad": 16.0,
+   "precio": 109.52,
+   "importe": 1752.32,
+   "descripcion": "Desmontaje y retirada de proyector existente instalado en columna o estructura de alumbrado deportivo. La partida incluye desconexión eléctrica previa, identificación de circuitos, desmontaje mecánico del proyector y de sus elementos de fijación, empleo de camión cesta o medio auxiliar equivalente, pequeño material, medios de seguridad, carga, transporte interior, acopio provisional y retirada del equipo desmontado para su gestión posterior. Incluso comprobación de ausencia de tensión, limpieza de la zona de trabajo y parte proporcional de medios auxiliares. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Trabajos previos y desmontajes",
+   "codigo": "T0102",
+   "unidad": "ud",
+   "resumen": "Desmontaje de columna metalica existente de 20 m",
+   "cantidad": 4.0,
+   "precio": 1877.84,
+   "importe": 7511.36,
+   "descripcion": "Desmontaje de columna metálica existente de 20 m de altura. Incluye preparación de la zona de trabajo, señalización y balizamiento, desconexión de elementos existentes, retirada de proyectores o accesorios remanentes, eslingado, utilización de grúa autopropulsada, camión cesta y medios de elevación necesarios, corte o liberación de anclajes, izado controlado, apeo sobre transporte, carga, retirada a zona de acopio o gestor autorizado, limpieza del emplazamiento y pequeño material. Incluso medios auxiliares, herramientas, comprobaciones previas y coordinación de seguridad. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0201",
+   "unidad": "ud",
+   "resumen": "Descubrimiento, limpieza y replanteo de cimentacion existente",
+   "cantidad": 4.0,
+   "precio": 505.5,
+   "importe": 2022.0,
+   "descripcion": "Descubrimiento, limpieza y replanteo de cimentación existente. Incluye excavación o retirada localizada de material alrededor del dado existente cuando sea necesario, limpieza superficial, eliminación de restos sueltos, comprobación geométrica, replanteo de la nueva placa base, marcado de ejes y puntos de anclaje, medios mecánicos y manuales, pequeño material, carga de residuos y limpieza final. Incluso protección provisional de la zona de trabajo. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0202",
+   "unidad": "ud",
+   "resumen": "Informe y verificacion estructural de cimentaciones existentes",
+   "cantidad": 1.0,
+   "precio": 2588.5,
+   "importe": 2588.5,
+   "descripcion": "Informe y verificación estructural de cimentaciones existentes. La partida comprende toma de datos en obra, inspección visual, comprobación dimensional, revisión de compatibilidad entre cimentación existente, placa base, anclajes y nueva columna, valoración técnica de la reutilización de la cimentación y emisión de informe o certificado de comprobación. Incluso desplazamiento, medios de medición, documentación gráfica, coordinación con la Dirección Facultativa y recomendaciones de reparación o refuerzo si proceden. Totalmente realizado."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0203",
+   "unidad": "ud",
+   "resumen": "Anclaje quimico estructural M33 o equivalente",
+   "cantidad": 32.0,
+   "precio": 309.35,
+   "importe": 9899.2,
+   "descripcion": "Ejecución de anclaje químico estructural M33 o equivalente para fijación de columna. Incluye replanteo, perforación sobre cimentación existente con diámetro y profundidad adecuados, limpieza del taladro mediante cepillado y soplado, suministro y colocación de varilla o perno M33 o equivalente, resina química estructural, arandelas, tuercas, consumibles, control de profundidad, tiempo de curado, protección hasta el montaje y comprobación final. Incluso pequeño material, útiles, medios auxiliares y limpieza. Totalmente ejecutado conforme a prescripciones del fabricante y de la Dirección Facultativa."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0204",
+   "unidad": "ud",
+   "resumen": "Regularizacion con grout sin retraccion bajo placa base",
+   "cantidad": 4.0,
+   "precio": 395.32,
+   "importe": 1581.28,
+   "descripcion": "Regularización con mortero grout sin retracción bajo placa base de columna. Incluye preparación del soporte, limpieza, humectación o imprimación si procede, encofrado perimetral, suministro y vertido de mortero grout sin retracción o equivalente, relleno bajo placa, vibrado o compactación según producto, curado, retirada de encofrado, limpieza y comprobación de apoyo uniforme. Incluso pequeño material y medios auxiliares. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0205",
+   "unidad": "ud",
+   "resumen": "Ensayo y control de traccion de anclajes",
+   "cantidad": 4.0,
+   "precio": 426.55,
+   "importe": 1706.2,
+   "descripcion": "Ensayo y control de tracción de anclajes. Incluye desplazamiento de equipo, preparación de puntos de ensayo, montaje de dispositivo de tracción, aplicación de carga de prueba, registro de resultados, interpretación, emisión de informe o acta de ensayo y comunicación a la Dirección Facultativa. Incluso medios auxiliares, pequeño material y reposición de la zona ensayada si procede. Totalmente realizado."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0206",
+   "unidad": "ud",
+   "resumen": "Reparacion localizada de dado existente",
+   "cantidad": 4.0,
+   "precio": 571.29,
+   "importe": 2285.16,
+   "descripcion": "Reparación localizada de dado de cimentación existente. Incluye saneado de zonas deterioradas, eliminación de material suelto, limpieza, pasivado de armaduras si aparecen, imprimación o puente de unión, reconstrucción con mortero de reparación estructural o equivalente, regularización superficial, curado y limpieza final. Incluso medios manuales, pequeño material, herramientas y gestión de residuos generados. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Cimentaciones existentes y anclajes",
+   "codigo": "T0207",
+   "unidad": "PA",
+   "resumen": "Partida Alzada por posibles problemas derivados de la cimentación existente.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida alzada a justificar por posibles problemas derivados de la cimentación existente. Se destina a resolver incidencias no previsibles durante la reutilización de las cimentaciones, tales como pequeñas reparaciones adicionales, adaptaciones de apoyo, ajustes de nivelación, reposiciones puntuales o trabajos complementarios expresamente autorizados por la Dirección Facultativa. Su abono requerirá justificación documental, medición real y aprobación previa."
+  },
+  {
+   "capitulo": "Columnas CA-14",
+   "codigo": "T0301",
+   "unidad": "ud",
+   "resumen": "Suministro de columna CA-14 de 20 m actualizada por incremento de acero",
+   "cantidad": 4.0,
+   "precio": 16443.05,
+   "importe": 65772.2,
+   "descripcion": "Suministro de columna metálica tipo CA-14 de 20 m de altura, o equivalente de prestaciones iguales o superiores, actualizada por incremento de acero. Columna para alumbrado deportivo en campo de fútbol, preparada para soportar proyectores LED de alta potencia, incluyendo fuste metálico, placa base, plataforma de mantenimiento, accesorios, escalera o sistema de acceso, sistema anticaídas cuando proceda, tratamiento anticorrosión, galvanizado/pintado según especificación, documentación técnica del fabricante, transporte a obra y descarga. Incluso elementos auxiliares necesarios para su montaje, certificados de fabricación y compatibilidad con las cargas de viento y equipos previstos. Totalmente suministrada en obra."
+  },
+  {
+   "capitulo": "Columnas CA-14",
+   "codigo": "T0302",
+   "unidad": "ud",
+   "resumen": "Montaje, aplomado y fijacion de columna CA-14",
+   "cantidad": 4.0,
+   "precio": 1909.3,
+   "importe": 7637.2,
+   "descripcion": "Montaje, aplomado y fijación de columna metálica tipo CA-14 de 20 m o equivalente. Incluye izado mediante grúa, posicionamiento sobre cimentación existente o sistema de anclaje ejecutado, colocación sobre placa base, nivelación, aplomado, apriete de tuercas, contratuercas y arandelas, comprobación de verticalidad, revisión de accesos, plataforma y elementos de seguridad, pequeño material, eslingas, útiles de montaje, medios auxiliares y coordinación de maniobras. Incluso limpieza final y comprobación de estabilidad. Totalmente instalada."
+  },
+  {
+   "capitulo": "Columnas CA-14",
+   "codigo": "T0303",
+   "unidad": "PA",
+   "resumen": "Partida Alzada por posibles problemas derivados de la instalación de las Columnas.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida alzada a justificar por posibles problemas derivados de la instalación de las columnas. Se destina a resolver incidencias puntuales durante el montaje, tales como ajustes de placa base, pequeñas adaptaciones de apoyo, reposición de elementos auxiliares, operaciones complementarias de nivelación o actuaciones no previsibles expresamente autorizadas por la Dirección Facultativa. Su abono requerirá justificación documental, medición real y aprobación previa."
+  },
+  {
+   "capitulo": "Luminarias y control",
+   "codigo": "T0401",
+   "unidad": "ud",
+   "resumen": "Suministro de luminaria LED deportiva AAA-LUX WS2506 o similar.",
+   "cantidad": 16.0,
+   "precio": 3350.31,
+   "importe": 53604.96,
+   "descripcion": "Suministro de luminaria LED deportiva AAA-LUX WS2506 o similar de prestaciones iguales o superiores. Proyector LED deportivo de alta potencia, potencia aproximada 1.625 W, con drivers incluidos, óptica adecuada al estudio lumínico del campo de fútbol, cuerpo y disipación aptos para intemperie, grado de protección y resistencia mecánica adecuados para instalación exterior, sistema de fijación orientable, compatibilidad con regulación/control previsto y documentación técnica del fabricante. Incluso embalaje, transporte a obra, accesorios específicos de montaje y garantía del fabricante. Totalmente suministrada en obra."
+  },
+  {
+   "capitulo": "Luminarias y control",
+   "codigo": "T0402",
+   "unidad": "ud",
+   "resumen": "Montaje, conexionado y orientacion de luminaria en plataforma",
+   "cantidad": 16.0,
+   "precio": 415.47,
+   "importe": 6647.52,
+   "descripcion": "Montaje, conexionado y orientación de luminaria deportiva LED en plataforma de columna. Incluye colocación del proyector sobre soporte o bastidor, fijación mecánica, conexionado eléctrico, puesta a tierra si procede, prensaestopas, punteras, conectores, pequeño material, identificación de circuito, comprobación de aprietes, regulación de orientación conforme a replanteo fotométrico, verificación de funcionamiento y pruebas de encendido. Incluso medios de elevación, herramientas, medios auxiliares y limpieza final. Totalmente instalada, orientada y en servicio."
+  },
+  {
+   "capitulo": "Luminarias y control",
+   "codigo": "T0403",
+   "unidad": "ud",
+   "resumen": "Suministro, instalacion y configuracion de sistema de control",
+   "cantidad": 1.0,
+   "precio": 8302.95,
+   "importe": 8302.95,
+   "descripcion": "Suministro, instalación, configuración y puesta en marcha del sistema de control del alumbrado deportivo. Incluye Control Box 2.0 o similar, botonera, receptores RF, elementos de comunicación, cableado auxiliar, alimentación, protecciones asociadas si proceden, programación de escenas o niveles de encendido, configuración de grupos de proyectores, pruebas de mando local/remoto, comprobación de alcance, formación básica de uso y documentación final. Incluso pequeño material, rotulación, medios auxiliares y ajustes necesarios para dejar el sistema operativo."
+  },
+  {
+   "capitulo": "Cuadros electricos y cableado a proyectores",
+   "codigo": "T0501",
+   "unidad": "ud",
+   "resumen": "Desmontaje y retirada de cuadro electrico existente de columna",
+   "cantidad": 4.0,
+   "precio": 517.86,
+   "importe": 2071.44,
+   "descripcion": "Desmontaje y retirada de cuadro eléctrico existente de columna. Incluye desconexión, comprobación de ausencia de tensión, identificación de circuitos, desmontaje del cuadro y elementos auxiliares, retirada de cableado obsoleto cuando proceda, pequeño material, medios auxiliares, carga, transporte interior, acopio provisional y gestión posterior. Incluso limpieza de la zona y medidas de seguridad necesarias. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Cuadros electricos y cableado a proyectores",
+   "codigo": "T0502",
+   "unidad": "ud",
+   "resumen": "Cuadro electrico de columna equipado IP65",
+   "cantidad": 4.0,
+   "precio": 3513.37,
+   "importe": 14053.48,
+   "descripcion": "Suministro e instalación de cuadro eléctrico de columna equipado, con envolvente IP65 o superior, o equivalente. Incluye armario de poliéster o material adecuado para intemperie, seccionador, protecciones magnetotérmicas, diferenciales si proceden, protección contra sobretensiones, bornas, canaletas, cableado interno, prensaestopas, rotulación, esquemas, pequeño material, fijaciones y conexión a la instalación existente o nueva. Incluso montaje, conexionado, comprobaciones eléctricas, verificación de aprietes y pruebas de funcionamiento. Totalmente instalado y en servicio. Se admitirá solución equivalente que mantenga o mejore el grado de protección, seguridad eléctrica, capacidad de maniobra, selectividad y compatibilidad con los proyectores y el sistema de control previsto."
+  },
+  {
+   "capitulo": "Cuadros electricos y cableado a proyectores",
+   "codigo": "T0503",
+   "unidad": "m",
+   "resumen": "Cableado desde cuadro hasta proyectores",
+   "cantidad": 560.0,
+   "precio": 8.81,
+   "importe": 4933.6,
+   "descripcion": "Cableado desde cuadro eléctrico de columna hasta proyectores. Incluye suministro y tendido de cable RZ1-K (AS) 0,6/1 kV Cu 3G2,5 mm² o sección equivalente según cálculo y protección, guiado por canalización existente o elementos de columna, fijaciones, bridas, protección mecánica en pasos singulares, identificación de conductores, pequeño material, comprobación de continuidad, aislamiento y polaridad. Incluso medios auxiliares y limpieza final. Totalmente instalado."
+  },
+  {
+   "capitulo": "Cuadros electricos y cableado a proyectores",
+   "codigo": "T0504",
+   "unidad": "ud",
+   "resumen": "Conexionado individual de proyector",
+   "cantidad": 16.0,
+   "precio": 80.77,
+   "importe": 1292.32,
+   "descripcion": "Conexionado individual de proyector LED deportivo. Incluye entrada de cable en proyector o caja de conexión, prensaestopas, punteras, bornes, identificación, apriete de conexiones, comprobación de polaridad, continuidad y aislamiento, verificación de funcionamiento, sellado si procede y pequeño material. Incluso medios auxiliares y pruebas finales. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Cuadros electricos y cableado a proyectores",
+   "codigo": "T0505",
+   "unidad": "PA",
+   "resumen": "Partida Alzada por posibles problemas derivados del cambio de cuadros.",
+   "cantidad": 1.0,
+   "precio": 1000.0,
+   "importe": 1000.0,
+   "descripcion": "Partida alzada a justificar por posibles problemas derivados del cambio de cuadros. Se destina a resolver incidencias puntuales no previstas durante la sustitución de cuadros, tales como adaptación de soportes, pequeñas modificaciones de cableado, sustitución de elementos auxiliares, ajustes de protecciones o trabajos complementarios autorizados por la Dirección Facultativa. Su abono requerirá justificación documental, medición real y aprobación previa."
+  },
+  {
+   "capitulo": "Legalización",
+   "codigo": "T0601",
+   "unidad": "ud",
+   "resumen": "Legalizacion y documentacion de obra",
+   "cantidad": 1.0,
+   "precio": 573.83,
+   "importe": 573.83,
+   "descripcion": "Legalización y documentación final de la obra. Incluye elaboración o recopilación de documentación técnica final, esquemas eléctricos, relación de equipos instalados, certificados de materiales, certificados de instalación cuando proceda, resultados de pruebas, apoyo a la tramitación administrativa, documentación para la puesta en servicio y entrega a la Propiedad o Dirección Facultativa. Incluso copias digitales y soporte técnico hasta dejar documentada la actuación. Totalmente realizado."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS010",
+   "unidad": "ud",
+   "resumen": "Casco de seguridad para trabajos en obra",
+   "cantidad": 6.0,
+   "precio": 17.11,
+   "importe": 102.66,
+   "descripcion": "Suministro de casco de seguridad para trabajos en obra, homologado, incluso ajuste, reposición si procede por deterioro imputable a la obra y parte proporcional de gestión preventiva. Totalmente disponible para su uso."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS020",
+   "unidad": "ud",
+   "resumen": "Guantes de seguridad anticorte",
+   "cantidad": 6.0,
+   "precio": 9.98,
+   "importe": 59.88,
+   "descripcion": "Suministro de guantes de seguridad anticorte para trabajos de manipulación de materiales, desmontajes, cableado y pequeño montaje eléctrico. Incluso reposición cuando proceda y parte proporcional de medios preventivos. Totalmente disponibles para su uso."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS030",
+   "unidad": "ud",
+   "resumen": "Botas de seguridad S3",
+   "cantidad": 6.0,
+   "precio": 55.68,
+   "importe": 334.08,
+   "descripcion": "Suministro de botas de seguridad S3 para personal de obra, con puntera y plantilla de protección, suela antideslizante y características adecuadas a trabajos de montaje y manipulación de cargas. Totalmente disponibles para su uso."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS040",
+   "unidad": "ud",
+   "resumen": "Arnes anticaidas homologado",
+   "cantidad": 4.0,
+   "precio": 76.6,
+   "importe": 306.4,
+   "descripcion": "Suministro de arnés anticaídas homologado para trabajos en altura, compatible con línea de vida o sistema anticaídas previsto. Incluso revisión inicial, ajuste y disponibilidad en obra. Totalmente operativo."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS050",
+   "unidad": "ud",
+   "resumen": "Equipo anticaidas con absorbedor",
+   "cantidad": 4.0,
+   "precio": 114.82,
+   "importe": 459.28,
+   "descripcion": "Suministro de equipo anticaídas con absorbedor, pinza y mosquetones, homologado y compatible con los trabajos en columna, plataforma y medios de elevación. Incluso revisión inicial y disponibilidad en obra. Totalmente operativo."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS060",
+   "unidad": "ud",
+   "resumen": "Linea de vida movil 20 m",
+   "cantidad": 2.0,
+   "precio": 335.47,
+   "importe": 670.94,
+   "descripcion": "Suministro de línea de vida móvil de 20 m o sistema equivalente para trabajos en altura, incluso elementos de anclaje, montaje, revisión y retirada al finalizar los trabajos. Totalmente operativa."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS070",
+   "unidad": "ud",
+   "resumen": "Vallado metalico modular de obra",
+   "cantidad": 20.0,
+   "precio": 7.11,
+   "importe": 142.2,
+   "descripcion": "Suministro, colocación y retirada de vallado metálico modular de obra para delimitación de zonas de trabajo, acopios y áreas de maniobra de grúa o camión cesta. Incluso bases, uniones, recolocaciones y mantenimiento durante la obra."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS080",
+   "unidad": "ud",
+   "resumen": "Cartel indicativo de riesgo con soporte",
+   "cantidad": 4.0,
+   "precio": 55.39,
+   "importe": 221.56,
+   "descripcion": "Suministro y colocación de cartel indicativo de riesgo con soporte, para señalización preventiva de trabajos eléctricos, trabajos en altura, zona de maniobra o riesgo general de obra. Incluso retirada al finalizar los trabajos."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS090",
+   "unidad": "m",
+   "resumen": "Cinta de balizamiento bicolor",
+   "cantidad": 200.0,
+   "precio": 1.18,
+   "importe": 236.0,
+   "descripcion": "Suministro y colocación de cinta de balizamiento bicolor para delimitación provisional de zonas de trabajo, pasos restringidos o áreas de seguridad. Incluso retirada y gestión al finalizar su uso."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS100",
+   "unidad": "ud",
+   "resumen": "Chaleco reflectante de alta visibilidad",
+   "cantidad": 6.0,
+   "precio": 6.17,
+   "importe": 37.02,
+   "descripcion": "Suministro de chaleco reflectante de alta visibilidad para personal de obra, adecuado para trabajos en exterior y zonas de tránsito o maniobra. Totalmente disponible para su uso."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS110",
+   "unidad": "ud",
+   "resumen": "Botiquin metalico de obra",
+   "cantidad": 1.0,
+   "precio": 51.4,
+   "importe": 51.4,
+   "descripcion": "Suministro de botiquín metálico de obra con dotación básica reglamentaria, instalado en zona accesible durante la ejecución de los trabajos. Incluso reposición mínima de material consumido durante la obra."
+  },
+  {
+   "capitulo": "Seguridad y Salud",
+   "codigo": "SS120",
+   "unidad": "h",
+   "resumen": "Conservacion y mantenimiento de protecciones colectivas",
+   "cantidad": 20.0,
+   "precio": 62.49,
+   "importe": 1249.8,
+   "descripcion": "Conservación y mantenimiento de protecciones colectivas, señalización y medios preventivos durante la obra. Incluye revisión periódica, recolocación de vallados, cintas, señales y protecciones, sustitución de elementos deteriorados, limpieza de zonas de paso y adaptación de medidas preventivas a las distintas fases de trabajo. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Gestión de Residuos",
+   "codigo": "GR010",
+   "unidad": "ud",
+   "resumen": "Carga y transporte de residuos metalicos y electricos",
+   "cantidad": 4.0,
+   "precio": 1254.67,
+   "importe": 5018.68,
+   "descripcion": "Carga y transporte de residuos metálicos y eléctricos procedentes del desmontaje de proyectores, columnas, cuadros y elementos auxiliares. Incluye medios de carga, contenedores o acopios temporales, transporte a gestor autorizado, tasas o costes complementarios cuando procedan, gestión documental y limpieza de zona de acopio. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Gestión de Residuos",
+   "codigo": "GR020",
+   "unidad": "m³",
+   "resumen": "Clasificacion en obra de residuos de construccion",
+   "cantidad": 3.0,
+   "precio": 22.22,
+   "importe": 66.66,
+   "descripcion": "Clasificación en obra de residuos de construcción y demolición. Incluye separación por fracciones, acopio en condiciones adecuadas, identificación, movimiento interior y preparación para transporte a instalación autorizada. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Gestión de Residuos",
+   "codigo": "GR030",
+   "unidad": "m³",
+   "resumen": "Transporte de residuos a instalacion autorizada 20 km",
+   "cantidad": 3.0,
+   "precio": 13.51,
+   "importe": 40.53,
+   "descripcion": "Transporte de residuos de construcción y demolición a instalación autorizada situada a distancia aproximada de 20 km. Incluye carga, transporte, descarga, documentación de control y medios auxiliares necesarios. Totalmente ejecutado."
+  },
+  {
+   "capitulo": "Gestión de Residuos",
+   "codigo": "GR040",
+   "unidad": "t",
+   "resumen": "Coste de entrega de residuos de plastico a valorizacion",
+   "cantidad": 0.15,
+   "precio": 206.0,
+   "importe": 30.9,
+   "descripcion": "Coste de entrega de residuos de plástico (tasa vertido), con código 170203 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "Gestión de Residuos",
+   "codigo": "GR050",
+   "unidad": "t",
+   "resumen": "Coste de entrega de residuos de papel y carton a valorizacion",
+   "cantidad": 0.1,
+   "precio": 566.5,
+   "importe": 56.65,
+   "descripcion": "Coste de entrega de residuos de papel y cartón (tasa vertido), con código 200101 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022."
+  },
+  {
+   "capitulo": "Gestión de Residuos",
+   "codigo": "GR060",
+   "unidad": "Ud",
+   "resumen": "Gestión de residuo RAEE de luminaria",
+   "cantidad": 60.0,
+   "precio": 8.6,
+   "importe": 516.0,
+   "descripcion": "Gestión de residuo de luminaria vial retirada, clasificada como RAEE conforme al Real Decreto 110/2015, incluyendo separación de lámpara en su caso, acopio en obra, carga, transporte a gestor autorizado en Gran Canaria, documento de identificación del traslado, certificado de gestión/reciclado y repercusión de coste ECORAEE."
+  }
+ ]
+}

@@ -1,0 +1,291 @@
+~V|CYPE INGENIEROS, S.A.|FIEBDC-3/2016|ARQUIMEDES||ANSI|Presupuesto|2|
+~K|-9\2\2\3\2\2\2\2\EUR\|3\13\6\\0|2\2\\3\2\\2\2\2\-9\2\2\2\2\EUR\||
+~X||ce\Coste energético\MJ\eCO2\Emisión de CO2\kg\ler\Código LER\\m\Masa del elemento\kg\v\Volumen\m3\|
+~C|VALLESECO_2026_TIPO_0_V2##||Mejora Eficiencia Energética del Alumbrado e Instalaciones Públicas Norte GC|36429.79|220306|0|
+~T|VALLESECO_2026_TIPO_0_V2##|Mejora de la Eficiencia Energética del Alumbrado e Instalaciones Públicas del Norte de Gran Canaria. Separata Valleseco.|
+~D|VALLESECO_2026_TIPO_0_V2##
+|APSB_1_3#\\1
+\APF20SS#\\1
+\APG20GR#\\1
+\|
+~C|APSB_1_3#||Alumbrado Público Fotovoltaico.|35613.6|090606|0|
+~T|APSB_1_3#|Alumbrado Público Fotovoltaico en distintas zonas del Municipio.|
+~D|APSB_1_3#
+|SAT80\\15
+\Z01ACEA0030\\15
+\UIV010\\15
+\D01A0070\\2
+\PAMAP_08\\1
+\|
+~C|SAT80|Ud|Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar.|1751.91|090726|0|
+~T|SAT80|Suministro e instalación de luminaria solar de la marca Staria Compact 80 o similar.
+
+Modelo: COMPACT 80
+Potencia máxima: 60 W
+Flujo luminoso: 6.400 lm
+Panel solar: Fotovoltaico de 82 Wp
+Batería: LifePO4 de 460 Wh
+Luminaria certificada con IAC – Certificado en base a Ley 31/1988. Certificación fotobiológica nivel RG0 - IEC 62471:2009
+Incluye: Columnas reforzada de P.R.F.V. marca Adhorna modelo SE-500-PLA o simila de 5 metros.
+Características: Algoritmo de ajuste automático basado en captación solar y previsión meteorológica, orientación independiente del panel solar, eficiencia certificada de 174 lm/W.
+Temperatura de color 2700K, 3000K, segun DF.|
+~D|SAT80
+|STARIASAT80\\1
+\ADTU500PLA\\1
+\H01A0030\\0.923
+\H01A0040\\0.923
+\|
+~C|STARIASAT80|Ud|Luminaria solar de la marca Staria SAT 80 orientable o similar.|864.5|140620|3|
+~T|STARIASAT80|Luminaria solar de la marca Staria SAT 80 orientable o similar.
+
+Modelo: SAT 80 (Orientable)
+Potencia máxima: 35 W
+Flujo luminoso: 6.400 lm
+Panel solar: Fotovoltaico de 80 Wp
+Batería: LifePO4 de 460 Wh
+Luminaria certificada con IAC – Certificado en base a Ley 31/1988. Certificación fotobiológica nivel RG0 - IEC 62471:2009
+Altura: Columnas troncocónicas de 5 metros
+Características: Algoritmo de ajuste automático basado en captación solar y previsión meteorológica, orientación independiente del panel solar, eficiencia certificada de 196 lm/W.
+Temperatura de color 2700K, 3000K, segun DF.|
+~C|ADTU500PLA|ud|Columnas reforzada de P.R.F.V. H=5 m marca Adhorna modelo SE500PLA RAL9005 o similar.|846.5|030220|3|
+~T|ADTU500PLA|Columnas reforzada de P.R.F.V. H=5 m marca Adhorna modelo SE500PLA RAL9005 o similar.
+
+Columnas reforzada de P.R.F.V. de una sola pieza para soporte de luminarias, rectas, troncocónicas con 18 mm. por metro de conicidad medida en el diámetro, constituidas por resinas de poliéster reforzadas con tejido de fibra de vidrio, con velo superficial del mismo material, pigmentadas en la masa, obtenidas por centrifugación a altas velocidades con acabado superficial liso y espesor mínimo de 6 mm.Las dimensiones del anclaje y del registro se ajustarán a UNE 72-402 y éste dispondrá de una tapa ajustada y enrasada con la columna, cerrada con llave especial que le proteja de manipulaciones. La placa de anclaje deberá ser también de P.R.F.V. Asimismo, cumplirán las especificaciones del RD 842/2002, los requerimientos de la norma UNE-EN 40-7 y harán mención al comportamiento conforme a la norma UNE EN 12767.El proceso de aseguramiento de la calidad cumpliendo la norma UNE-EN ISO 9001/2000 estará certificado por empresade reconocido prestigio como AENOR.Sin ningun elemento metalico, pintada en masa color ELEGIDO RAL elegido
+ de 5 metros de altura con placa modelo SE500PLA con 60 mm Ø"|
+~C|H01A0030|h|Oficial primera electricista|22.75|110326|1|
+~T|H01A0030|Oficial primera electricista|
+~C|H01A0040|h|Peón electricista|21.57|110326|1|
+~T|H01A0040|Peón electricista|
+~C|Z01ACEA0030|ud|Base hormigón p/cimentación de báculo o columna de 5<=h<8 m|424.75|090726|0|
+~T|Z01ACEA0030|Base para cimentación de báculo o columna de 5<=h<8 m de altura, de 0,80x0,80x1,00 m, realizada con hormigón en masa de fck=17,5 N/mm², incluso encofrado, excavación precisa, recibido de pernos de anclaje.|
+~D|Z01ACEA0030
+|V01CAE0010\\2
+\V01CAB0030\\1
+\K01A0030\\0.64
+\K01A0060\\0.704
+\K01A0040\\2.8
+\H01A0015\\1.133
+\H01A0020\\1.133
+\|
+~C|V01CAE0010|m|Alambre guía 2 mm galvanizado|0.26|110722|3|
+~T|V01CAE0010|Alambre guía 2 mm galvanizado|
+~C|V01CAB0030|m|Tubería PE (rojo) doble pared DN 63 mm, p/canal. eléctr.|4.62|110722|3|
+~T|V01CAB0030|Tubo corrugado de doble pared, lisa interior y corrugado exterior, de polietileno de alta densidad, D=63 mm, para conducción de cables en instalaciones eléctricas enterradas, resistencia a la compresión Tipo 450N, resistencia al impacto Normal, s/UNE-EN 61386-24.|
+~C|K01A0030|m³|Hormigón en masa de fck= 17.5 N/mm²|177.1|090726|0|
+~T|K01A0030|Hormigón en masa de fck= 17,5 N/mm², árido machaqueo 16 mm máx., confeccionado con hormigonera.|
+~D|K01A0030
+|E01BA0040\\0.31
+\E01CA0010\\0.64
+\E01CB0070\\1.28
+\E01E0010\\0.2
+\F01A0040\\0.5
+\H01A0020\\3.56
+\|
+~C|E01BA0040|t|Cemento portland, CEM II/B-P 32,5 R, granel|184.33|030712|3|
+~T|E01BA0040|Cemento portland, CEM II/B-P 32,5 R, UNE-EN 197-1, tipo II/B, con puzolana natural (P), clase de resistencia 32,5 N/mm² y alta resistencia inicial, a granel, con marcado CE.|
+~C|E01CA0010|t|Arena seca|23.27||3|
+~T|E01CA0010|Arena seca|
+~C|E01CB0070|t|Arido machaqueo 4-16 mm|19||3|
+~T|E01CB0070|Arido machaqueo 4-16 mm|
+~C|E01E0010|m³|Agua|3.08||3|
+~T|E01E0010|Agua|
+~C|F01A0040|h|Hormigonera portátil 250 l|6.68|110722|2|
+~T|F01A0040|Hormigonera portátil 250 l|
+~C|H01A0020|h|Peón|21.57|110326|1|
+~T|H01A0020|Peón|
+~C|K01A0060|m³|Excavación manual en pozos.|143.87|090726|0|
+~T|K01A0060|Excavación manual en pozos en cualquier clase de terreno con acopio de escombros resultantes al borde.|
+~D|K01A0060
+|H01A0020\\5.355
+\F01A0050\\2
+\|
+~C|F01A0050|h|Compresor caudal 2,5 m³/min 2 martillos.|14.18|110722|2|
+~T|F01A0050|Compresor caudal 2,5 m³/min 2 martillos.|
+~C|K01A0040|m²|Encofrado y desencofrado de zapatas.|55.16|090726|0|
+~T|K01A0040|Encofrado y desencofrado de zapatas. (8 puestas).|
+~D|K01A0040
+|H01A0015\\1.203
+\H01A0020\\1.203
+\E01IB0110\\0.003
+\E01IA0110\\0.001
+\E01MA0020\\0.02
+\|
+~C|H01A0015|h|Oficial primera|23.04|110326|1|
+~T|H01A0015|Oficial primera|
+~C|E01IB0110|m³|Madera pino gallego en tablas 25 mm|354.79|110722|3|
+~T|E01IB0110|Madera pino gallego en tablas 25 mm|
+~C|E01IA0110|m³|Madera pino gallego|375||3|
+~T|E01IA0110|Madera pino gallego|
+~C|E01MA0020|kg|Clavos 2"|2.5||3|
+~T|E01MA0020|Clavos 2"|
+~C|UIV010|Ud|Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada.|78.62|090726|0|
+~T|UIV010|Montaje e instalación de luminaria, según fabricante, con tuercas y contra tuercas embellecedoras, plantilla, instalada y nivelada.
+Incluye: Replanteo. Fijación de la columna. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Incluye: Tornillería embellecedora.
+Incluye: la colocación completa de la luminaria fotovoltaica, su conexionado y comprobación.|
+~D|UIV010
+|mt34www020\\2
+\mt34www020b\\1
+\F01A0030\\1
+\H01A0040\\0.933
+\H01A0030\\0.932
+\|
+~C|mt34www020|Ud|Anclajes con pernos según fabricante, plantilla, instalada y nivelada.|1.2|140620|3|
+~C|mt34www020b|Ud|Armadura, 6 redondos de diametro 12, según fabricante.|1.2|140620|3|
+~C|F01A0030|h|Camión grúa 20 t|33.7|140420|2|
+~T|F01A0030|Camión grúa de 20 t, pluma de 23 m|
+~C|D01A0070|m³|Demolición elementos cimentac. horm armado.|130.83|090726|0|
+~T|D01A0070|Demolición de elementos de cimentación de hormigón armado con medios mecánicos, incluso p.p. de compresor, carga y transporte de escombros a vertedero autorizado, medido el volumen inicial a demoler.|
+~D|D01A0070
+|M01A0030\\3.309
+\QBB0010\\2.6
+\QAB0030\\0.6
+\QAA0070\\0.008
+\|
+~C|M01A0030|h|Peón|21.57||1|
+~T|M01A0030|Peón|
+~C|QBB0010|h|Compresor caudal 2,5 m³/min 2 martillos.|13.55||2|
+~T|QBB0010|Compresor caudal 2,5 m³/min 2 martillos.|
+~C|QAB0030|h|Camión basculante 15 t|39.76||2|
+~T|QAB0030|Camión basculante 15 t|
+~C|QAA0070|h|Pala cargadora sobre neumáticos, 96 kW|45.46||2|
+~T|QAA0070|Pala cargadora sobre neumáticos, 96 kW, peso en orden de trabajo 10968 kg|
+~C|PAMAP_08|PA|Partida Alzada imprevistos y legalización de instalaciones.|485.44|080125|0|
+~T|PAMAP_08|Partida Alzada imprevistos y legalización de instalaciones.|
+~C|APF20SS#||Seguridad y Salud|671.99|130218|0|
+~T|APF20SS#|Seguridad y Salud|
+~D|APF20SS#
+|YMM010\\1
+\D32AA0020\\3
+\D32AA0040\\3
+\D32AB0030\\3
+\D32AC0010\\3
+\D32CA0010\\1
+\D32CA0030\\1
+\D32CB0020\\10
+\D32CB0030\\2
+\D32CB0040\\1
+\|
+~C|YMM010|Ud|Suministro y colocación de botiquín de urgencia, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.|118.53|010720|0|
+~T|YMM010|Suministro y colocación de botiquín de urgencia, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.
+Incluye: Replanteo en el paramento. Colocación y fijación mediante tornillos.
+Criterio de medición de proyecto: Número de unidades previstas, según Estudio o Estudio Básico de Seguridad y Salud.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Estudio o Estudio Básico de Seguridad y Salud.|
+~D|YMM010
+|mt50eca010\\1
+\|
+~C|mt50eca010|Ud|Botiquín de urgencia provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, con tornillos y tacos para fijar al paramento.|118.53|251120|3|
+~C|D32AA0020|ud|Mascarilla FFP2 autofiltrante, Würth|2.94|231111|0|
+~T|D32AA0020|Mascarilla FFP2 autofiltrante, Würth o equivalente, protección contra partículas sólidas y líquidas de mediana toxicidad, con marcado CE.|
+~D|D32AA0020
+|E38AA0310\\1
+\|
+~C|E38AA0310|ud|Mascarilla FFP2 autofiltrante, 0899 110 522, Würth|2.94|151111|3|
+~T|E38AA0310|Mascarilla FFP2 autofiltrante, protección contra partículas sólidas y líquidas de mediana toxicidad, con marcado CE, ref. 0899 110 522, Würth|
+~C|D32AA0040|ud|Casco seguridad SH 4, Würth|16.61|231111|0|
+~T|D32AA0040|Casco seguridad SH 4, Würth o equivalente, con marcado CE.|
+~D|D32AA0040
+|E38AA0370\\1
+\|
+~C|E38AA0370|ud|Casco seguridad SH 4, 0899 200 11x, Würth|16.61|221111|3|
+~T|E38AA0370|Casco seguridad SH 4, CAT II EN 397:1995, con marcado CE, ref. 0899 200 11x, Würth|
+~C|D32AB0030|ud|Guantes Tigerflex anticorte, Würth|9.69|231111|0|
+~T|D32AB0030|Guantes Tigerflex anticorte, Würth o equivalente, con marcado CE.|
+~D|D32AB0030
+|E38AB0220\\1
+\|
+~C|E38AB0220|ud|Guantes Tigerflex anticorte CUT5/300, 0899 451 3XX, Würth|9.69|161111|3|
+~T|E38AB0220|Guantes Tigerflex anticorte, CAT II s/EN420, 4543 s/EN388, con marcado CE, ref. 0899 451 3XX, Würth|
+~C|D32AC0010|ud|Botas Hercules S3, Würth|54.06|231111|0|
+~T|D32AC0010|Botas Hercules S3 (par), Würth o equivalente, con puntera y plantilla metálica, con marcado CE.|
+~D|D32AC0010
+|E38AC0110\\1
+\|
+~C|E38AC0110|ud|Botas Hercules S3, M422 149 XXX, Würth|54.06|161111|3|
+~T|E38AC0110|Par de botas Hercules S3, con puntera y plantilla metálica, con marcado CE, ref. M422 149 XXX, Würth|
+~C|D32CA0010|ud|Señal de cartel obras, PVC, sin soporte metálico|12.35|090726|0|
+~T|D32CA0010|Señal de cartel de obras, de PVC, sin soporte metálico, (amortización = 100 %), incluso colocación y desmontaje.|
+~D|D32CA0010
+|M01A0030\\0.271
+\E38CA0030\\1
+\|
+~C|E38CA0030|ud|Señal cartel obras, PVC, 45x30 cm|6.5||3|
+~T|E38CA0030|Señal de cartel de obras, PVC, 45x30 cm|
+~C|D32CA0030|ud|Cartel indicativo de riesgo de PVC, con soporte metálico|55.81|090726|0|
+~T|D32CA0030|Cartel indicativo de riesgo, con soporte metálico de 1,3 m de altura, (amortización = 100 %) incluso colocación, apertura de pozo, hormigón de fijación, y desmontado.|
+~D|D32CA0030
+|M01A0030\\0.271
+\E38CA0020\\1
+\E38CA0010\\1
+\A03A0010\\0.064
+\A06B0020\\0.064
+\|
+~C|E38CA0020|ud|Señal obligatoriedad, prohibición y peligro|2.64||3|
+~T|E38CA0020|Señal de obligatoriedad, prohibición y peligro p/señaliz. provisional, PVC, D=30 cm.|
+~C|E38CA0010|ud|Soporte metálico para señal.|32.79||3|
+~T|E38CA0010|Soporte metálico para señal (trípode portátil)|
+~C|A03A0010|m³|Hormigón en masa de fck= 10 N/mm²|111.35|090726|0|
+~T|A03A0010|Hormigón en masa de fck= 10 N/mm², árido machaqueo 32 mm máx., confeccionado con hormigonera.|
+~D|A03A0010
+|M01A0030\\1.25
+\E01BA0040\\0.225
+\E01CA0010\\0.6
+\E01CB0090\\1.2
+\E01E0010\\0.2
+\QAD0010\\0.5
+\|
+~C|E01CB0090|t|Arido machaqueo 16-32 mm|21||3|
+~T|E01CB0090|Arido machaqueo 16-32 mm|
+~C|QAD0010|h|Hormigonera portátil 250 l|6.28||2|
+~T|QAD0010|Hormigonera portátil 250 l|
+~C|A06B0020|m³|Excavación manual en pozos.|115.56|090726|0|
+~T|A06B0020|Excavación manual en pozos en cualquier clase de terreno con acopio de escombros resultantes al borde.|
+~D|A06B0020
+|M01A0030\\4.101
+\QBB0010\\2
+\|
+~C|D32CB0020|m|Cinta de balizamiento con banderolas reflectantes i/soporte|16.39|090726|0|
+~T|D32CB0020|Cinta de balizamiento con banderolas reflectantes, incluso soporte metálico, (amortización = 100 %), colocación y desmontaje.|
+~D|D32CB0020
+|M01A0030\\0.14
+\E38CB0040\\1
+\E38CA0010\\0.33
+\|
+~C|E38CB0040|m|Cordon balizam. c/banderolas reflectantes|2.55||3|
+~T|E38CB0040|Cordon de balizamiento con banderolas reflectantes en rollos de 50 m.|
+~C|D32CB0030|ud|Cono de señalización reflectante|11.89|090726|0|
+~T|D32CB0030|Cono de señalización reflectante de 60 cm de altura, incluso colocación y posterior retirada.|
+~D|D32CB0030
+|M01A0030\\0.07
+\E38CB0060\\1
+\|
+~C|E38CB0060|ud|Cono de señalización reflectante 50 cm|10.38||3|
+~T|E38CB0060|Cono de señalización reflectante 50 cm|
+~C|D32CB0040|ud|Lámpara para señalización de obras con soporte metálico|28.16|090726|0|
+~T|D32CB0040|Lámpara para señalización de obras con soporte metálico y pilas, i/colocación y desmontaje.|
+~D|D32CB0040
+|M01A0030\\0.07
+\E38CB0050\\1
+\|
+~C|E38CB0050|ud|Lámpara intermitente p/señaliz. obras|26.65||3|
+~T|E38CB0050|Lámpara intermitente p/señalización de obras i/pilas y soporte metálico|
+~C|APG20GR#||Gestión de Residuos.|144.2|130218|0|
+~T|APG20GR#|Gestión de Residuos.|
+~D|APG20GR#
+|D37CA0010\\5
+\D37CB0040\\5
+\|
+~C|D37CA0010|t|Coste vertido de tierras y piedras a instalación de valorización|11|291013|0|
+~T|D37CA0010|Entrega de tierras y piedras sin sustancias peligrosas (tasa vertido), con código 170504 según la Lista Europea de Residuos (LER) publicada por Orden MAM/304/2002, a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 22/2011.|
+~D|D37CA0010
+|E41CA0050\\1
+\|
+~C|E41CA0050|t|Tasa gestor autorizado tierras y piedras sin contaminar, LER 170504|11||3|
+~T|E41CA0050|Tasa de gestor autorizado en tierras y piedras sin materia orgánica o vegetal y sin sustancias peligrosas ni suelo contaminado, LER 170504.|
+~C|D37CB0040|t|Coste entrega residuos mezclados inertes a instalación de valorización|17|291013|0|
+~T|D37CB0040|Coste de entrega de residuos mezclados de hormigón, ladrillos, tejas y materiales cerámicos, (tasa vertido), con código 170107 según la Lista Europea de Residuos (LER), a gestor de residuos autorizado por la Consejería de Medio Ambiente, para operaciones de valorización o eliminación, según RD 105/2008 y la Ley 7/2022.|
+~D|D37CB0040
+|E41CA0040\\1
+\|
+~C|E41CA0040|t|Tasa gestor aut. valorización residuos mezclados inertes, LER 170107|17||3|
+~T|E41CA0040|Tasa de gestor autorizado valorización en residuos mezclados de hormigón, ladrillos, tejas y mat. cerámicos (inertes), distintas de las especificadas en el código 170106, sin sustancias peligrosas, LER 170107. (Densidad aproximada 1,50 t/m³)|

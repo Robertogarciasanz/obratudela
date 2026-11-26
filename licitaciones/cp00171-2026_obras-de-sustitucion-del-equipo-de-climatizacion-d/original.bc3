@@ -1,0 +1,596 @@
+~V|SOFT S.A.|FIEBDC-3/2002|Presto 8.8||ANSI|
+~K|\2\2\3\2\2\2\2\EUR\|2|
+~C|%0200|%|Medios auxiliares|2|130821|3|
+~C|%AP0500|%|Accesorios, pruebas, etc.|1.5|080426|3|
+~C|%PM|u|Pequeño material y Accesorios|2|300813|3|
+~C|01#|UD|DEMOLICIONES Y DESMONTAJES|1646.09|230425|0|
+~D|01#|01.01\1\1\01.02\1\1\01.03\1\1\01.09\1\1\01.11\1\47.97\01.15\1\0.3\01.06\1\1\|
+~C|01.01|Ud|DESPEJE Y RETIRADA DE MOBILIARIO A LUGAR DE ACOPIO|112.55|070426|0|
+~D|01.01|mo113\1\5\|
+~C|01.02|Ud|PROTECCIÓN DE MOBILIARIO|55.02|070426|0|
+~D|01.02|mt32war020a\1\10\mt32war030\1\50\mo113\1\2\|
+~C|01.03|Ud|DESMONTAJE INSTALACIÓN DE CLIMATIZACIÓN|434.83|230425|0|
+~D|01.03|mo005\1\3.315\MO104\1\3.315\mq04cag010a\1\5\|
+~C|01.06|Ud|RETIRADA Y RECOLOCACIÓN DE LUMINARIAS|363.68|040326|0|
+~D|01.06|mo102\1\16\|
+~C|01.09|u|DESMONTAJE RÓTULO EXTERIOR|364.88|230425|0|
+~D|01.09|mo020\1\8\mo113\1\8\|
+~C|01.11|m2|DEMOLICIÓN FALSO TECHO REGISTRABLE|5.33|070426|0|
+~D|01.11|mo113\1\0.237\|
+~C|01.15|m2|APERTURA HUECO FACHADA|90.04|070426|0|
+~D|01.15|mo113\1\4\|
+~C|02.07|Ud|ESCALERA ESCAMOTEABLE|897.47|121225|0|
+~D|02.07|mt44efk010ea\1\1\mt08aaa010a\1\0.037\mt09mif010ca\1\0.203\mt15sja100\1\1\mo011\1\1.5\mo080\1\1.662\|
+~C|03#|UD|OBRA CIVIL|10674.82|130821|0|
+~D|03#|CARGADERO\1\1.2\ILUEXT01\1\1\02.07\1\1\03.01\1\100.74\D10DA046\1\4\RTC021\1\1\12.02\1\437.79\06.11\1\47.97\06.12\1\47.97\|
+~C|03.01|m2|FALSO TECHO ZENTIA ACÚSTICO o similar|44.56|130821|0|
+~D|03.01|mt12psg220\1\0.84\mt12psg190\1\0.84\mt12psg210a\1\0.84\mt12psg210b\1\0.84\mt12psg210c\1\0.84\mt12psg200a\1\0.84\mt12psg200b\1\0.84\mt12psg200c\1\1.67\mt12psg200d\1\0.4\mt12psg025f\1\1.02\mo015\1\0.208\mo082\1\0.208\%0200\1\0.02\|
+~C|06.11|m2|AYUDAS ALBAÑILERÍA|7.84|230425|0|
+~D|06.11|mt09pye010b\1\0.03\mt08aaa010a\1\0.012\mt09mif010ia\1\0.038\mq05per010\1\0.009\mo020\1\0.031\mo113\1\0.078\|
+~C|06.12|m2|LIMPIEZA FINAL DE OBRA|1.91|070426|0|
+~D|06.12|mo113\1\0.085\|
+~C|12.02|m2|PINTURA PLÁSTICA LISA MATE SOBRE PARAMENTO VERTICAL|7.99|040226|0|
+~D|12.02|mt27pfs010b\1\0.058\mt27pii080b\1\0.2\mo038\1\0.077\mo076\1\0.097\|
+~A|12.02|colorante\horizontal\imprimacion\liso\mano\paramento\pintura\plastico\vertical\|
+~C|15E022|Ud|PUNTO DE ALIMENTAICÓN EQUIPO MONOFÁSICO|62.09|220510|0|
+~D|15E022|mo003\1\1.347\U30OC542\1\1\U30JW0022A\1\1\U30JW900\1\1\|
+~C|15E024|Ud|PUNTO DE ALIMENTAICÓN EQUIPO TRIFÁSICO|65.75|220510|0|
+~D|15E024|mo003\1\1.2\U30OC542\1\1\U30JW0022B\1\1\U30JW900\1\1\|
+~C|17#|UD|CLIMATIZACIÓN Y VENTILACIÓN|29370.3|300813|0|
+~D|17#|EP\1\1\DA\1\1\CONT\1\1\VARC\1\1\|
+~C|210-TA-100X30|u|Rejilla intemperie 1000x300|243.2|210426|3|
+~C|24#|UD|CONTROL DE CALIDAD|867|140526|0|
+~D|24#|24.04\1\1\24.05\1\1\VARC.06\1\1\|
+~C|24.04|UD|MEDICION DE CALIDAD DEL AIRE|250|140526|0|
+~D|24.04|O01OB52C\1\1\|
+~C|24.05|UD|MEDICION DE RUIDO|200|140526|0|
+~D|24.05|O01OB52R\1\1\|
+~C|25#|UD|GESTION DE RESIDUOS|1060.8|050326|0|
+~D|25#|RESIDUOS\1\1\PLAN\1\1\|
+~C|26#|UD|SEGURIDAD Y SALUD|1411.13|201106|0|
+~D|26#|26.01\1\1\26.02\1\1\26.03\1\1\26.04\1\1\D41G\1\1\|
+~C|26.01#|Ud|PLAN DE SEGURIDAD Y SALUD|255|020626|0|
+~D|26.01#|26.01.01\1\1\|
+~C|26.01.01|Ud|PLAN DE SEGURIDAD Y SALUD|250|020626|0|
+~D|26.01.01|U42WW316.1\1\1\|
+~C|26.02#|Ud|INST. PROVISIONALES DE OBRA|461.61|201106|0|
+~D|26.02#|D41AG\1\1\D42AG\1\1\|
+~C|26.03#|Ud|SEÑALIZACIONES|174.38|080208|0|
+~D|26.03#|D41CA\1\1\D41CC\1\1\|
+~C|26.04#|Ud|PROTECCIONES PERSONALES|367.93|080208|0|
+~D|26.04#|D41EA\1\1\D41EC\1\1\D41EE\1\1\D41EG\1\1\D41ED\1\1\D41EB\1\1\|
+~C|30#|UD|ELECTRICIDAD E ILUMINACIÓN|2368.69|220510|0|
+~D|30#|30.01\1\1\30.05\1\1\30.06\1\1\|
+~C|30.01#|Ud|CUADROS ELÉCTRICOS|1139.85|180111|0|
+~D|30.01#|30.01.10\1\1\CIECM.3cgca1\1\1\CIECM.3cgca25\1\1\CIECM.3ceca4\1\1\CIECM.3adca\1\1\CIECM.4cbbaB\1\1\CIECM.4cbbaP\1\1\CIECM.4aabbR\1\1\|
+~C|30.01.10|Ud|Analizador de redes salida Modbus RS 485|413.43|280914|0|
+~D|30.01.10|mo003\1\0.328\CVM1\1\1\IECM.3cgca22\1\0.4\|
+~C|30.05#|Ud|MECANISMOS|197.47|220510|0|
+~D|30.05#|15E024\1\2\15E022\1\1\|
+~C|30.06#|Ud|VARIOS|1031.37|040226|0|
+~D|30.06#|30.06.01\1\1\|
+~C|30.06.01|Ud|LEGALIZACIÓN  INSTALACIÓN ELÉCTRICA|1011.15|040226|0|
+~D|30.06.01|CDOCIN\1\1\IE081002\1\1\IE081001\1\1\U30AE115\1\1\|
+~C|510518|u|Unidad partida CCHIBA + ECHIBA 22 HE o similar|17823.33|140826|3|
+~C|511310|Ud|Recuperador de calor BALDUR 900|4188|130826|3|
+~C|A02AA510|M3|HORMIGÓN H-200/40 elab. obra|26.68|080208|3|
+~D|A02AA510|U04CA001\1\0.365\U04AA101\1\0.66\U04AF150\1\1.32\U04PY001\1\0.16\A03LA005\1\0.5\|
+~C|A03LA005|Hr|HORMIGONERA ELÉCTRICA 250 L.|0.79|080208|3|
+~D|A03LA005|U02LA201\1\0.819\U%10\1\0.1\U02SW005\1\3.5\|
+~C|ANGULAR|kg|Perfil angular L100.8|2.58|230921|3|
+~C|ASDFASDF|u|Plan Gestión de Residuos|250|140526|3|
+~C|CAR400|Ud|COMPUERTA ANTIRRETORNO 400x400|184.87|230425|0|
+~D|CAR400|mt32ald010jj\1\1\mo005\1\0.286\MO104\1\0.286\|
+~C|CARGADERO|m|CARGADERO FACHADA|44.55|140921|0|
+~D|CARGADERO|mo047\1\0.509\mo094\1\0.509\mt07ali024e\1\1\mq08sol020\1\0.014\mt07ala011l\1\5.888\mt07www040a\1\4\mt27pfi010\1\0.294\ANGULAR\1\1\|
+~C|CDOCIN|u|Documentación instalción eléctrica|400.26|070826|3|
+~C|CIECM.3adca|Ud|Int mag mod II,Iu=16A,Ics=10kA,curva C|38.6|161111|0|
+~D|CIECM.3adca|mo003\1\0.28\IECM.3adca\1\1\IECM.3cgca22\1\1\|
+~C|CIECM.3ceca4|Ud|Int mag mod IV,Iu=16A,Ics=10kA,curva C|64.2|161111|0|
+~D|CIECM.3ceca4|mo003\1\0.28\IECM.3ceca4\1\1\IECM.3cgca22\1\1\|
+~C|CIECM.3cgca1|Ud|Int mag mod IV,Iu=40A,Ics=10kA,curva C|82.45|161111|0|
+~D|CIECM.3cgca1|mo003\1\0.28\IECM.3cgca1\1\1\IECM.3cgca22\1\1\|
+~C|CIECM.3cgca25|Ud|Int mag mod IV,Iu=32A,Ics=10kA,curva C|72.41|220417|0|
+~D|CIECM.3cgca25|mo003\1\0.28\IECM.3cgca25\1\1\IECM.3cgca22\1\1\|
+~C|CIECM.4aabbR|Ud|Int dif II,25A,300mA,Cl:AC|77.37|200324|0|
+~D|CIECM.4aabbR|mo003\1\0.28\IECM.4aabbR\1\1\IECM.3cgca22\1\1\|
+~C|CIECM.4cbbaB|Ud|Int dif IV,40A,300mA,SI|254.95|180111|0|
+~D|CIECM.4cbbaB|IECM.4cbbaB\1\1\mo003\1\0.28\IECM.3cgca22\1\1\|
+~C|CIECM.4cbbaP|Ud|Int dif IV,25A,300mA,Cl:AC|114.09|161111|0|
+~D|CIECM.4cbbaP|mo003\1\0.28\IECM.4cbbaJK\1\1\IECM.3cgca22\1\1\|
+~C|CL.26|UD|UNIDAD PARTIDA CCHIBA/ECHIBA HE 22|18233.87|230425|0|
+~D|CL.26|510518\1\1\mo005\1\2.961\MO104\1\2.961\%AP0500\1\0.015\|
+~C|CL.27|UD|RECUPERADOR DE CALOR BALDUR 900|4393.81|230425|0|
+~D|CL.27|511310\1\1\mt42www090\1\1\mt35aia090aa\1\15\mt42dai900\1\15\mo005\1\2.211\MO104\1\2.211\%AP0500\1\0.015\|
+~C|CONT#|UD|ELEMENTOS DE CONTROL|1891.61|230425|0|
+~D|CONT#|CONT.01\1\1\|
+~C|CONT.01|Ud|CONTROL INST. CLIMATIZACIÓN Y VENTILACIÓN|1854.52|230425|0|
+~D|CONT.01|HYJM-RA10D\1\1\mt42dai750a\1\50\mo005\1\0.819\MO104\1\0.819\|
+~C|CVM1|Ud|Analizador de redes|404.72|280914|3|
+~C|D10DA045|M2|TABIQUE PLADUR o similar 76/400 (46) LM|22.38|140826|0|
+~D|D10DA045|mo011\1\0.2\mo080\1\0.2\U10JA003\1\4\U10JA056\1\0.78\U10JA050\1\2.9\U10JA132\1\3\U10JA110\1\0.95\U10JA196\1\3.5\U10JA052\1\0.15\U10JA192\1\41\U10JA082\1\0.95\|
+~C|D10DA046|M2|TABIQUE ACUSTICO PLADUR o similar|147.71|140826|0|
+~D|D10DA046|mt12pck020c\1\2.4\mt12ppk010la\1\2.1\mt12ppk010ja\1\2.1\mt16lra060c\1\2.1\U10JA056\1\0.78\U10JA050\1\2.9\mt12pfk010i\1\5.5\U10JA110\1\0.95\U10JA196\1\3.5\U10JA052\1\0.15\U10JA192\1\41\U10JA082\1\0.95\mo011\1\0.696\mo080\1\0.696\|
+~C|D41AG#|Ud|MOBILIARIO Y EQUIPAMIENTO|317.65|080208|0|
+~D|D41AG#|D41AG201\1\3\D41AG210\1\1\D41AG620\1\1\D41AG630\1\1\D41AG700\1\1\D41AG801\1\1\D41AG810\1\2\D41AG406\1\1\QEREWQTWQET\1\1\W45ASAFR\1\2\|
+~C|D41AG201|Ud|TAQUILLA METALICA INDIVIDUAL|7.79|040225|0|
+~D|D41AG201|U42AG201\1\0.1\|
+~C|D41AG210|Ud|BANCO POLIPROPILENO 5 PERSONAS|8.57|040225|0|
+~D|D41AG210|U42AG210\1\0.1\|
+~C|D41AG406|UD|PACK MASCARILLAS FFP2 100uds|17.17|160421|0|
+~D|D41AG406|U43SEW456\1\1\|
+~C|D41AG620|Ud|HORNO MICROONDAS DE 800 WAT.|17.03|040225|0|
+~D|D41AG620|U42AG620\1\0.2\|
+~C|D41AG630|Ud|MESA MELAMINA 10 PERSONAS|7.14|040225|0|
+~D|D41AG630|U42AG630\1\0.1\|
+~C|D41AG700|Ud|DEPÓSITO DE BASURAS DE 800 L.|4.93|080208|0|
+~D|D41AG700|U42AG700\1\0.1\|
+~C|D41AG801|Ud|BOTIQUIN DE OBRA|111.06|040225|0|
+~D|D41AG801|U42AG801\1\1\|
+~C|D41AG810|Ud|REPOSICIÓN DE BOTIQUIN|25.67|040225|0|
+~D|D41AG810|U42AG810\1\1\|
+~C|D41CA#|Ud|SEÑALES|148.43|080208|0|
+~D|D41CA#|D41CA010\1\1\D41CA254\1\1\D41CA040\1\1\D41CA258\1\1\D41CA260\1\1\YSX010\1\1\|
+~C|D41CA010|Ud|SEÑAL STOP CON SOPORTE|10.53|080208|0|
+~D|D41CA010|U42CA001\1\0.33\U42CA501\1\0.33\A02AA510\1\0.06\|
+~C|D41CA040|Ud|CARTEL INDICAT. RIESGO I/SOPORTE|10.9|080208|0|
+~D|D41CA040|U42CA005\1\1\U42CA501\1\0.33\A02AA510\1\0.06\|
+~C|D41CA254|Ud|CARTEL PROHIBICIÓN DE PASO|14.75|040225|0|
+~D|D41CA254|U42CA254\1\1\|
+~C|D41CA258|Ud|CARTEL PELIGRO ZONA OBRAS|9.84|040225|0|
+~D|D41CA258|U42CA258\1\1\|
+~C|D41CA260|Ud|CARTEL COMBINADO 100X70 CM.|15.7|040225|0|
+~D|D41CA260|U42CA260\1\1\|
+~C|D41CC#|Ud|VALLAS Y ACOTAMIENTOS|25.95|040225|0|
+~D|D41CC#|D41CC040\1\5\|
+~C|D41CC040|Ud|VALLA CONTENCIÓN PEATONES|5.09|040225|0|
+~D|D41CC040|U42CC040\1\0.2\|
+~C|D41EA#|Ud|PROTECCIONES PARA CABEZA|35.48|080208|0|
+~D|D41EA#|D41EA001\1\4\D41EA201\1\4\D41EA220\1\4\D41EA401\1\4\D41EA410\1\4\|
+~C|D41EA001|Ud|CASCO DE SEGURIDAD|0.87|080208|0|
+~D|D41EA001|U42EA001\1\1\|
+~C|D41EA201|Ud|PANT. SEGURID. PARA SOLDADURA|3.54|080208|0|
+~D|D41EA201|U42EA201\1\1\|
+~C|D41EA220|Ud|GAFAS CONTRA IMPACTOS|3.26|080208|0|
+~D|D41EA220|U42EA220\1\1\|
+~C|D41EA401|Ud|MASCARILLA ANTIPOLVO|0.82|080208|0|
+~D|D41EA401|U42EA401\1\1\|
+~C|D41EA410|Ud|FILTRO RECAMBIO MASCARILLA|0.2|080208|0|
+~D|D41EA410|U42EA410\1\1\|
+~C|D41EB#|Ud|PROTECCIÓN  VÍAS RESPIRATORIAS|14|080208|0|
+~D|D41EB#|D41EB135\1\20\|
+~C|D41EB135|Ud|MASCARILLA POLVOS TOXICOS FFP2|0.69|080208|0|
+~D|D41EB135|U42EB135\1\1\|
+~C|D41EC#|Ud|PROTECCIÓN TOTAL DEL  CUERPO|172.05|080208|0|
+~D|D41EC#|D41EC001\1\5\D41EC030\1\5\D41EC401\1\5\D41EC520\1\5\|
+~C|D41EC001|Ud|MONO DE TRABAJO|3.98|080208|0|
+~D|D41EC001|U42EC001\1\1\|
+~C|D41EC030|Ud|MANDIL SOLDADOR SERRAJE|4.22|080208|0|
+~D|D41EC030|U42EC030\1\1\|
+~C|D41EC401|Ud|CINTURÓN SEGURIDAD CLASE A|19.2|080208|0|
+~D|D41EC401|U42EC401\1\1\|
+~C|D41EC520|Ud|CINTURÓN PORTAHERRAMIENTAS|6.34|080208|0|
+~D|D41EC520|U42EC520\1\1\|
+~C|D41ED#|Ud|PROTECCIÓN DEL OIDO|44.1|080208|0|
+~D|D41ED#|D41ED105\1\100\D41ED115\1\5\|
+~C|D41ED105|Ud|TAPONES ANTIRUIDO|0.08|080208|0|
+~D|D41ED105|U42ED105\1\1\|
+~C|D41ED115|Ud|PROTECTORES AUDITIVOS EXIG.|7.08|080208|0|
+~D|D41ED115|U42ED115\1\1\|
+~C|D41EE#|Ud|PROTECC. DE MANOS Y BRAZOS|48.75|080208|0|
+~D|D41EE#|D41EE001\1\20\D41EE030\1\5\|
+~C|D41EE001|Ud|PAR GUANTES LATEX INDUSTRIAL|0.35|080208|0|
+~D|D41EE001|U42EE001\1\1\|
+~C|D41EE030|Ud|PAR GUANTES AISLANTES|8.15|080208|0|
+~D|D41EE030|U42EE030\1\1\|
+~C|D41EG#|Ud|PROTECCIONES DE PIES Y PIERNAS|53.55|080208|0|
+~D|D41EG#|D41EG030\1\5\D41EG401\1\5\|
+~C|D41EG030|Ud|PAR BOTAS AISLANTES|7.51|080208|0|
+~D|D41EG030|U42EG030\1\1\|
+~C|D41EG401|Ud|PAR POLAINAS SOLDADOR|2.99|080208|0|
+~D|D41EG401|U42EG401\1\1\|
+~C|D41G#|Ud|PROTECCIONES COLECTIVAS|152.21|201106|0|
+~D|D41G#|D41GC\1\1\D41GG\1\1\|
+~C|D41GC#|Ud|PROTECCIONES VERTICALES|0|201106|0|
+~C|D41GG#|Ud|PROTECCIONES VARIAS|152.21|080208|0|
+~D|D41GG#|D41GG405\1\1\D41GG410\1\1\D41GG420\1\2\|
+~C|D41GG405|Ud|EXTINTOR POL. ABC 6Kg. EF 21A-113B|35.42|080208|0|
+~D|D41GG405|U35AA006\1\1\|
+~C|D41GG410|Ud|EXTINTOR NIEVE CARB. 5 Kg. EF 34B|40.12|040225|0|
+~D|D41GG410|U35AA310\1\1\|
+~C|D41GG420|Ud|ESTERILLA DE CAUCHO|36.84|010426|0|
+~D|D41GG420|MTETCPOLV\1\1\|
+~C|D42AG#|Ud|CIERRES PROVISIONALES|143.96|201106|0|
+~D|D42AG#|D10DA045\1\4.5\E15P020\1\1\|
+~C|DA#|UD|DISTRIBUCIÓN DE AIRE|3376.86|300813|0|
+~D|DA#|DA.01\1\24\RECC.047\1\8\RECC.046\1\8\RECC.045\1\16\DA.41\1\1\DA.45\1\1\CAR400\1\2\|
+~C|DA.01|M2|CONDUCTO CLIMAVER PLUS R o similar|45.89|300813|0|
+~D|DA.01|mt42coi010aa\1\1.15\mt42coi020a\1\1.5\mt42coi030\1\0.01\mt42con025\1\0.5\mo005\1\0.4\MO104\1\0.4\%PM\1\0.02\|
+~C|DA.41|Ud|REJILLA INTEMPERIE 1000X300|256.33|300813|0|
+~D|DA.41|210-TA-100X30\1\1\mo005\1\0.17\MO104\1\0.17\%PM\1\0.02\|
+~C|DA.45|Ud|REJILLA INTEMPERIE 1300X1000|256.33|300813|0|
+~D|DA.45|TA-130X100\1\1\mo005\1\0.17\MO104\1\0.17\%PM\1\0.02\|
+~C|E15P020|u|PUERTA CHAPA LISA ABATIBLE 80x200 cm GALVANIZADA|40.41|201106|0|
+~D|E15P020|mo018\1\0.328\mo059\1\0.328\P13P020\1\1\|
+~C|EP#|UD|EQUIPOS DE PRODUCCIÓN|23080.24|230425|0|
+~D|EP#|CL.26\1\1\CL.27\1\1\|
+~C|GR01|u|Gestión de residuos de equipos de climatización en gestor autori|120|050326|2|
+~C|HIOIJHL|u|Conjunto elementos balizamiento y señalización|83.79|040225|3|
+~C|HYJM-RA10D|u|Control centralizado con pantalla tactil HYJM-RA10D|1650|130526|3|
+~C|IE081001|u|Tasas Dirección General de Industria|45.04|040226|3|
+~C|IE081002|u|Certificado de instalaciones eléctricas|359.33|070826|3|
+~C|IE081002A|Ud|Certificado de instalaciones de climatizacion|400|220526|3|
+~C|IECM.3adca|Ud|Int mag mod II,Iu=16A,Ics=10kA,curva C|30.13|161111|3|
+~C|IECM.3ceca4|Ud|Int mag mod IV,Iu=16A,Ics=10kA,curva C|55.73|161111|3|
+~C|IECM.3cgca1|Ud|Int mag mod IV,Iu=40A,Ics=10kA,curva C|73.98|161111|3|
+~C|IECM.3cgca22|Ud|Pequeño Material, bornas, terminales|1.57|040226|3|
+~C|IECM.3cgca25|UD|Int mag mod IV,Iu=32A,Ics=10kA,curva C|63.94|220417|3|
+~C|IECM.4aabbR|Ud|Int dif II,25A,30mA,Cl:AC|68.9|200324|3|
+~C|IECM.4cbbaB|Ud|Int dif IV,40A,300mA,SI|246.48|180111|3|
+~C|IECM.4cbbaJK|Ud|Int dif IV,25A,300mA,Cl:AC|105.62|161111|3|
+~C|ILUEXT01|UD|MONTAJE ROTULO EXTERIOR|364.88|230425|0|
+~D|ILUEXT01|mo020\1\8\mo113\1\8\|
+~C|MO104|h|Ayudante instalador de climatización|21.9|230425|1|
+~C|MTETCPOLV|Ud|Esterilla de caucho industrial antipolvo (tipo felpudo técnico)|36.84|010426|3|
+~C|O01OB520|h|Puesta en marcha|350|220526|3|
+~C|O01OB52C|h.|Medicion de calidad del aire|250|140526|3|
+~C|O01OB52R|h|Medición de ruido|200|140526|3|
+~C|P13P020|u|Puerta chapa lisa galvanizada 80x200 cm|24.86|201106|3|
+~C|PLAN|u|PLAN DE GESTIÓN DE RESIDUOS|250|140526|0|
+~D|PLAN|ASDFASDF\1\1\|
+~C|PRES4587|u|Prueba de estanqueidad red de conductos|400|140526|3|
+~C|PRE_V01_ASPY##||CA Asepeyo Silla|47398.83|201106|0|
+~D|PRE_V01_ASPY##|01\1\1\03\1\1\30\1\1\17\1\1\24\1\1\25\1\1\26\1\1\|
+~C|Q4WQA34|Ud|Unidad desplazamiento|24.34|040225|3|
+~C|QEREWQTWQET|UD|ADECUACIÓN ZONA USO PERSONAL OBRA|22.13|040225|0|
+~D|QEREWQTWQET|W5WQ54\1\1\|
+~C|RECC.045|ML|CONDUCTO CIRCULAR 100 MM|34|230425|0|
+~D|RECC.045|mo005\1\0.25\MO104\1\0.25\mt42con205A\1\1.05\mt42con500B\1\0.1\|
+~C|RECC.046|ML|CONDUCTO CIRCULAR 150 MM|43.78|230425|0|
+~D|RECC.046|mo005\1\0.25\MO104\1\0.25\mt42con205D\1\1.05\mt42con500E\1\0.1\|
+~C|RECC.047|ML|CONDUCTO CIRCULAR 200 MM|54.07|230425|0|
+~D|RECC.047|mo005\1\0.25\MO104\1\0.25\mt42con205f\1\1.05\mt42con500i\1\0.1\|
+~C|RESIDUOS|u|GESTION DE RESIDUOS|790|050326|0|
+~D|RESIDUOS|mq04res010ina\1\1\mq04res010in\1\1\GR01\1\2\|
+~C|RTC021|Ud|PUERTA TABIQUE ACÚSTICO|104.05|140826|0|
+~D|RTC021|mt12ppk065ad\1\1\mo011\1\0.341\mo080\1\0.171\|
+~C|TA-130X100|u|Rejilla intemperie 1300x1000|243.2|210426|3|
+~C|U%10|%|Amortización y otros gastos|10|080208|0|
+~C|U02LA201|h|Hormigonera 250 l.|0.67|080208|2|
+~C|U02SW005|Ud|Kilowatio|0.05|080208|0|
+~C|U04AA101|Tm|Arena de río (0-5mm)|4.68|080208|3|
+~C|U04AF150|Tm|Garbancillo 20/40 mm.|8.93|080208|3|
+~C|U04CA001|Tm|Cemento CEM II/B-P 32,5 R Granel|31.05|080208|3|
+~C|U04PY001|M3|Agua|0.42|080208|3|
+~C|U10JA003|M2|Placa Pladur N-15 mm.o similar|1.95|140826|3|
+~C|U10JA050|Ml|Cinta Juntas PYL|0.02|140826|3|
+~C|U10JA052|Ml|Cinta guardavivos PLADUR® o similar de pvc (30 m)|0.23|140826|3|
+~C|U10JA056|Kg|Pasta para juntas s/n PYL|0.37|140826|3|
+~C|U10JA082|Ml|Junta estanca de 46 mm PYL|0.16|140826|3|
+~C|U10JA110|Ml|Canal 48 mm.|0.78|140826|3|
+~C|U10JA132|Ml|Montante acero galv. 46mm.|0.87|140826|3|
+~C|U10JA192|Ud|Tornillo PM 3,5 x 25|0.01|140826|3|
+~C|U10JA196|Ud|Tornillo MM 3,5 x 9,5|0.01|140826|3|
+~C|U30AE115|u|Inspección Inicial por EICI|206.52|070826|3|
+~C|U30JW0022A|Ud|p.p. canalización y línea eléctrica para punto|25.09|150921|3|
+~C|U30JW0022B|Ud|p.p. canalización y línea eléctrica para punto|32.37|230425|3|
+~C|U30JW900|u|p.p. cajas, regletas y peq. material|2.65|020226|3|
+~C|U30OC542|Ud|Salida de Hilos SIMON 31 o similar|1.16|220510|3|
+~C|U35AA006|u|Extintor polvo ABC 6 Kg.|35.42|080208|3|
+~C|U35AA310|Ud|Extint.nieve carbónica 5 Kg.|40.12|040225|3|
+~C|U42AG201|Ud|Taquilla metálica individual|77.87|040225|3|
+~C|U42AG210|Ud|Banco polipropileno 5 pers.|85.69|040225|3|
+~C|U42AG620|Ud|Horno microondas de 800 wat.|85.14|040225|3|
+~C|U42AG630|Ud|Mesa melamina 10 personas.|71.38|040225|3|
+~C|U42AG700|Ud|Deposito de basuras de 800 l.|49.31|080208|3|
+~C|U42AG801|Ud|Botiquín de obra.|111.06|040225|3|
+~C|U42AG810|Ud|Reposición de botiquín.|25.67|040225|3|
+~C|U42CA001|Ud|Señal circular  D=600 mm|22.85|080208|3|
+~C|U42CA005|Ud|Cartel indic.nor.0.30x0.30 m|7.91|040225|3|
+~C|U42CA254|Ud|Cartel de prohibido el paso a obra|14.75|040225|3|
+~C|U42CA258|Ud|Cartel de peligro zona de obras|9.84|040225|3|
+~C|U42CA260|Ud|Cartel combinado de 100x70 cm.|15.7|040225|3|
+~C|U42CA501|Ud|Soporte metálico para señal|4.22|080208|3|
+~C|U42CC040|Ud|Valla contención peatones|25.47|040225|3|
+~C|U42EA001|Ud|Casco de seguridad homologado|0.87|080208|3|
+~C|U42EA201|Ud|Pantalla seguri.para soldador|3.54|080208|3|
+~C|U42EA220|Ud|Gafas contra impactos.|3.26|080208|3|
+~C|U42EA401|Ud|Mascarilla antipolvo|0.82|080208|3|
+~C|U42EA410|Ud|Filtr.recambio masc.antipol.|0.2|080208|3|
+~C|U42EB135|Ud|Mascarilla pol. TOXIC FFP2|0.69|080208|3|
+~C|U42EC001|Ud|Mono de trabajo.|3.98|080208|3|
+~C|U42EC030|Ud|Mandil de cuero para soldador|4.22|080208|3|
+~C|U42EC401|Ud|Cinturón de seguridad homologado|19.2|080208|3|
+~C|U42EC520|Ud|Cinturón porta herramientas.|6.34|080208|3|
+~C|U42ED105|Ud|Tapones antiruido|0.08|080208|3|
+~C|U42ED115|Ud|Protectores auditivos exig.|7.08|080208|3|
+~C|U42EE001|Ud|Par de guantes de goma.|0.35|080208|3|
+~C|U42EE030|Ud|P.de guantes aislante electri|8.15|080208|3|
+~C|U42EG030|Ud|Par de botas aislantes elect.|7.51|080208|3|
+~C|U42EG401|Ud|Par de polainas para soldador|2.99|080208|3|
+~C|U42WW316.1|Ud|Plan seguridad y salud|250|020626|3|
+~C|U43SEW456|Ud|Pack Mascaras desechables FFP2|17.17|160421|3|
+~C|VARC#|UD|VARIOS|1021.59|040226|0|
+~D|VARC#|VARC.01\1\1\VARC.02\1\1\|
+~C|VARC.01|UD|PUESTA EN MARCHA Y SERVICIO|350|220526|0|
+~D|VARC.01|O01OB520\1\1\|
+~C|VARC.02|UD|LEGALIZACIÓN INSTALACION DE CLIMATIZACIÓN|651.56|040226|0|
+~D|VARC.02|IE081002A\1\1\IE081001\1\1\U30AE115\1\1\|
+~C|VARC.06|UD|PRUEBA DE ESTANQUEIDAD RED DE CONDUCTOS|400|140526|0|
+~D|VARC.06|PRES4587\1\1\|
+~C|W45ASAFR|UD|UNIDAD DESPLAZAMIENTO ZONA PERSONAL|24.34|040225|0|
+~D|W45ASAFR|Q4WQA34\1\1\|
+~C|W5WQ54|Ud|Unidad de adecuación con p.p PYL|22.13|040225|3|
+~C|YSX010|Ud|CONJUNTO ELEMENTOS BALIZAMIENTO Y SEÑALIZACION|83.79|040225|0|
+~D|YSX010|HIOIJHL\1\1\|
+~C|mo003|h|Oficial 1ª electricista|24.64|040226|1|
+~C|mo005|h|Oficial 1ª instalador de climatización|25.74|220926|1|
+~C|mo011|h|Oficial 1ª montador|26.66|140826|1|
+~C|mo015|h|Oficial 1ª montador de falsos techos.|24.64|040226|1|
+~C|mo018|h.|Oficial 1ª cerrajero|24.64|200326|1|
+~C|mo020|h|Oficila 1ª construcción|23.1|230425|1|
+~C|mo038|h|Oficial 1ª pintura|23.97|040226|1|
+~C|mo047|h|Oficial 1ª montador de estructura metálica|24.95|040226|1|
+~C|mo059|h|Ayudante cerrajero|22.77|200326|1|
+~A|mo059|ayudante\cerrajería\|
+~C|mo076|h|Ayudante pintura|22.77|040226|1|
+~C|mo080|h|Ayudante montador|24.59|140826|1|
+~C|mo082|h|Ayudante montador de falsos techos.|22.77|040226|1|
+~C|mo094|h|Ayudante montador de estructura metálica|23.68|040226|1|
+~C|mo102|h|Ayudante electricista|22.73|040326|1|
+~C|mo113|h|Peón ordinario construcción|22.51|070426|1|
+~C|mq04cag010a|h|Camión con grúa de hasta 6t|55.38|070426|2|
+~C|mq04res010in|u|Medios auxiliares de carga y manipulación|400|020626|2|
+~C|mq04res010ina|u|Camión o furgón para transporte de residuos|150|020626|2|
+~C|mq05per010|h|Perforadora con corona diamantada y soporte|28|070426|2|
+~C|mq08sol020|h|Equipo y elementos auxiliares para soldadura eléctrica|3.01|140921|2|
+~C|mt07ala011l|kg|Pletina de acero laminado UNE-EN 10025 S275JR, para aplicaciones|1.83|150921|3|
+~C|mt07ali024e|kg|Acero estructura en perfiles huecos|1.32|140921|3|
+~C|mt07www040a|u|Juego arandelas, tuercas y contratuercas|0.98|150921|3|
+~C|mt08aaa010a|m3|Agua|1.2|060826|3|
+~C|mt09mif010ca|t|Mortero industrial para albañileria|53.48|121225|3|
+~C|mt09mif010ia|t|Mortero industrial para albañileria, de cemento, color gris|45.82|070426|3|
+~C|mt09pye010b|m3|Pasta de yeso|112.02|040226|3|
+~C|mt12pck020c|m|Banda acústica de dilatación autoadhesiva, de espuma de poliuret|0.35|140826|3|
+~C|mt12pfk010i|m|Montante 75/50 "KNAUF" de acero galvanizado, según UNE-EN 14195.|2.94|140826|3|
+~C|mt12ppk010ja|m2|Placa de yeso laminado DFH1I / UNE-EN 520 - 1200 / longitud / 12|8.09|140826|3|
+~C|mt12ppk010la|m2|Placa de yeso laminado DFR / UNE-EN 520 - 625 / longitud / 12,5|28.07|140826|3|
+~C|mt12ppk065ad|m2|Trampilla de registro acústica|90.76|140826|3|
+~C|mt12psg025f|m2|Placa acústica de yeso laminado, de 600x600x12,5 mm|25.95|220926|3|
+~C|mt12psg190|Ud|Varilla de cuelgue.|0.42|220926|3|
+~C|mt12psg200a|m|Perfil primario 24x38x3700 mm, de acero galvanizado, según UNE-E|1.62|220926|3|
+~C|mt12psg200b|m|Perfil secundario 24x32x600 mm, de acero galvanizado, según UNE-|1.62|220926|3|
+~C|mt12psg200c|m|Perfil secundario 24x32x1200 mm, de acero galvanizado, según UNE|1.61|220926|3|
+~C|mt12psg200d|m|Perfil angular 25x25x3000 mm, de acero galvanizado, según UNE-EN|1.51|220926|3|
+~C|mt12psg210a|Ud|Cuelgue para falsos techos suspendidos.|0.38|220926|3|
+~C|mt12psg210b|Ud|Seguro para la fijación del cuelgue, en falsos techos suspendido|0.06|220926|3|
+~C|mt12psg210c|Ud|Conexión superior para fijar la varilla al cuelgue, en falsos te|0.66|220926|3|
+~C|mt12psg220|u|Fijación compuesta por taco y tornillo 5x27.|0.08|220926|3|
+~C|mt15sja100|u|Cartucho de masilla de silicona neutra|3.13|121225|3|
+~C|mt16lra060c|m2|anel semirrígido de lana mineral, espesor 65 mm, según UNE-EN 13|8.27|140826|3|
+~C|mt27pfi010|l|Imprimación de secado rápido, formulada con resinas alquídicas f|3.96|150921|3|
+~C|mt27pfs010b|l|Imprimación acrílica|5.36|070426|3|
+~C|mt27pii080b|l|Pintura plástica fotocatalítica para interior, color blanco|18.09|070426|3|
+~C|mt32ald010jj|ud|Compuerta antirretorno, metálica, 400X400|171.25|060826|3|
+~C|mt32war020a|m2|Lámina de polietileno transparente, de 0,2 mm de espesor|0.25|140526|3|
+~C|mt32war030|m|Cinta plástica autoadhesiva|0.15|140526|3|
+~C|mt35aia090aa|u|Tubo rígido PVC 16 mm|0.77|230425|3|
+~C|mt42coi010aa|m2|Panel rígido Climaver Plus R "ISOVER"|19.78|220926|3|
+~C|mt42coi020a|m|Cinta "Climaver" o similar de aluminio 63 mm|0.52|220926|3|
+~C|mt42coi030|kg|Adhesivo vinílico|14.54|220926|3|
+~C|mt42con025|u|Soporte metálico de acero|4.5|220926|3|
+~C|mt42con205A|ml|Conducto circular helicoidal de acero inoxidable, de 100 mm de d|20.63|220926|3|
+~C|mt42con205D|ml|Conducto circular helicoidal de acero inoxidable, de 150 mm de d|29.88|220926|3|
+~C|mt42con205f|ml|Conducto circular helicoidal de acero inoxidable, de 200 mm de d|39.63|220926|3|
+~C|mt42con500B|Ud|Brida de 100 mm de diámetro y soporte de techo|4.2|220926|3|
+~C|mt42con500E|Ud|Brida de 150 mm de diámetro y soporte de techo|4.9|220926|3|
+~C|mt42con500i|Ud|Brida de 200 mm de diámetro y soporte de techo|5.4|220926|3|
+~C|mt42dai750a|m|Cable bus de comunicaciones|3.31|070525|3|
+~C|mt42dai900|m|Cable bus de 2 hilos, de 0,5 mm2|0.5|230425|3|
+~C|mt42www090|u|Kit de soportes suspensión en techo|16.5|130526|3|
+~C|mt44efk010ea|u|Escalera escamoteable metálica|802.58|121225|3|
+~T|01.01|Ud. Despeje, retirada, embalaje, acopio provisional y posterior recolocación de mobiliario, enseres y equipos existentes de oficina y clínica, en local actual y zona de ampliación, incluyendo suministro de cajas de cartón, carga, transporte interior, descarga, protección, custodia provisional y reposición en su ubicación definitiva, al término de las obras o por fases, según necesidades de la propiedad y de la obra; totalmente terminado.
+
+Incluye, sin carácter limitativo, impresoras, documentación y archivo, equipos informáticos, rack, material sanitario, monitores, sillas de ruedas, negatoscopios, destructoras de papel, pantallas, televisores, productos sanitarios, plantas, expendedor de agua, cafetera, teléfonos, mamparas y equipos auxiliares de papelería.|
+~T|01.02|Ud. Protección de mobiliario existente mediante cubrición con lámina de polietileno transparente durante la ejecución de los trabajos de rehabilitación, incluyendo colocación, mantenimiento en correctas condiciones durante el transcurso de la obra y posterior retirada de la protección; totalmente terminado.|
+~T|01.03|Ud. Desmontaje de instalación de climatización existente en local, compuesta por equipos compactos aire-aire, incluyendo el desmontaje completo de unidades, conductos de aire, difusores, rejillas, retornos, líneas frigoríficas, líneas eléctricas y elementos auxiliares, de cualquier material, sección y dimensiones, tanto en el interior como en el exterior del local, realizado por medios manuales, sin afectar a los elementos constructivos contiguos. La partida incluye la limpieza de la zona de trabajo, retirada y carga de los materiales desmontados a contenedor, así como la parte proporcional de medios auxiliares, dejando las zonas intervenidas en condiciones adecuadas para la ejecución de la nueva instalación, sin incluir transporte a vertedero ni a planta de reciclaje.|
+~T|01.06|Ud. Retirada y posterior recolocación de luminarias afectadas en el área de actuación, según necesidades de la propiedad y de la obra; totalmente terminado.
+|
+~T|01.09|Ud. Desmontaje de rótulo exterior existente, realizado por medios manuales, incluyendo la desconexión eléctrica previa y retirada de elementos luminosos y/o sirena asociada, sin afectar a los elementos constructivos contiguos. La partida comprende el desmontaje completo, acopio y almacenamiento del rótulo en lugar designado por la Propiedad para su posterior montaje, así como la limpieza de la zona de trabajo y la parte proporcional de medios auxiliares, sin incluir transporte a planta de gestión de residuos ni a vertedero, dejando el paramento en condiciones adecuadas para su posterior acondicionamiento.|
+~T|01.11|m2. Demolición de falso techo registrable, formado por placas modulares de 60×60 cm de cualquier material, incluyendo el desmontaje de perfilería, cuelgues y elementos de anclaje, ejecutado por medios manuales y sin afectar a los elementos constructivos contiguos. La partida comprende la limpieza de la zona de trabajo, la retirada y carga de los materiales desmontados a contenedor y la retirada de escombros a pie de carga, así como la parte proporcional de medios auxiliares, sin incluir transporte a vertedero ni a planta de reciclaje. Medición por superficie realmente ejecutada.|
+~T|01.15|Apertura de hueco en fachada, revestida de granito, ejecutado mediante corte de radial, con sustitución del cargadero existente (cargadero medido a parte), con carga sobre contenedor del material sobrante.|
+~T|02.07|Ud. Escalera escamoteable metálica, de 3 tramos, para salvar una altura entre plantas comprendida entre 3,20 y 3,50 m, apta para hueco aproximado de 120×60 cm, de altura regulable, con peldaños antideslizantes de 13 cm de anchura, equipada con tacos de goma, tapa interior, barra de apertura y cajón con aislamiento térmico incorporado, recibida mediante mortero de cemento industrial M-5, incluyendo el sellado perimetral mediante silicona neutra u otro sistema equivalente, garantizando la estanqueidad al aire y la impermeabilidad al agua, dejando la escalera correctamente instalada, ajustada y completamente operativa.|
+~T|03.01|m2. Suministro e instalación de techo suspendido registrable, según la norma UNE-EN 13964:2016. Techo Zentia de Fibra Mineral de 600 o 1200x600x19 mm modelo Sahara 2518M4 o 2522M4, o similar aprobado por la Dirección Facultativa y la propiedad, canto del panel Tegular para apoyo con descuelgue (escalón) de 6.5 mm en T24. Realizado en fibra mineral biosoluble tipo Wet Felt con acabado en cara vista granulado y pintado en color blanco. Incluso formación de fajeado perimetral no registrable de placa de yeso laminado, de ancho y geometría según planos, ejecutado sobre estructura metálica galvanizada, con acabado listo para pintar, incluyendo formación de resalte o canal perimetral para alojamiento de tira LED, con todos los remates, encuentros, refuerzos y elementos auxiliares necesarios para su correcta ejecución. Totalmente instalado y terminado.
+La absorción acústica será de 0.60 aw de acuerdo con la UNE-EN ISO 11654, ensayado según la UNE-EN ISO 354 (Clase C) y aislamiento acústico lateral entre estancias de 34 dB (Valor Dnfw) ensayado según la UNE-EN ISO 10848-2. Las placas tendrán una resistencia a la humedad del 95% RH. Peso de placa: 3.5 kg/m². Conductividad térmica: 0,060 w/mK. Reflexión lumínica: 84%según ISO 7742. Contenido reciclado: 31-35% según UNE-EN ISO 14021. Reciclabilidad del techo y perfilería: 100%. Sin emisión de formaldehido (clasificación E1 según UNE-EN 13964). Sin compuestos orgánicos volátiles (COV) y calidad del aire interior Clase A+. Reacción al fuego: Euroclase A2-s1,d0. El techo puede limpiarse en seco y/o aspirado con cepillo suave. 
+La instalación se compondrá de perfiles primarios Prelude Peakform 24 mm de ancho con longitud estándar 3600 mm y 43 mm de altura en líneas paralelas separadas 1200 mm, con cuelgues AWDN20 con varilla roscada o cuelgue rápido tipo gancho A110 cada 1200 mm a forjado desde dicho perfil (otorgando una capacidad de carga de 10.5 kg/m2), perpendicularmente a estos perfiles se dispondrán perfiles Secundarios de 1200 mm de largo. Dichos perfiles estarán separados 600 mm para poder formar módulos de 600x600 mm y con un secundario de 600 mm conectado a la ranura central de los secundarios de 1200 mm (sin el secundario de 600 mm se obtienen módulos de 1200x600 mm). Toda la perfilería tendrá el alma con un sistema de cosido longitudinal aportando rigidez y estabilidad al sistema y estará certificada Cradle to Cradle (C2C) Silver. 
+Perimetralmente solución con angular de borde estándar BPT1924HD fijado al paramento cada 500 mm, placas y perfiles cortados a conveniencia según forma de la estancia. Los productos dispondrán gratuitamente de una Garantía de sistema de 30 años (Placa + Perfil).
+Nota: la tabica albergará los conductos de aire primario.|
+~T|06.11|m² Ayudas de albañilería a instalaciones de electricidad e iluminación, fontanería y saneamiento, climatización y ventilación, protección contra incendios y demás instalaciones previstas en el interior del local, incluyendo mano de obra para carga y descarga de materiales, apertura de huecos para luminarias y paso de instalaciones, ejecución y posterior tapado de rozas, reposición de placas de falso techo, recibidos, remates, limpieza de tajos, retirada de residuos y p.p. de materiales y medios auxiliares necesarios para dejar la unidad completamente terminada; medida la superficie construida realmente ejecutada.|
+~T|06.12|m² Limpieza final de obra en local, incluyendo retirada de restos de obra y suciedad general, desprendimiento de morteros, yesos, pinturas y materiales adheridos en suelos, paramentos, sanitarios, escaleras, vidrios y carpinterías, barrido general, repaso, recogida y retirada de escombros y residuos a pie de carga; incluso p.p. de productos de limpieza, útiles, medios auxiliares y mano de obra necesaria para dejar las dependencias en adecuadas condiciones de uso; medida la superficie construida realmente ejecutada.|
+~T|12.02|m2. Pintura plástica lisa mate lavable antiácaros Capasilan de Caparol Ref. S1502Y50R, o similar a aprobar por la Dirección Facultativa y la propiedad, sobre paramentos verticales de yeso o yeso laminado, previo lijado de adherencias e imperfecciones, mano de fondo con pintura plástica diluida muy fina, plastecido de faltas y dos manos de acabado, según NTE-RPP-24. Referencia de color Asepeyo.|
+~T|15E022|Ud. Suministro e instalación de punto de alimentación de equipo monofásico, realizado con Salida de hilos de la marca SIMON-31 o equivalente, aprobado por la dirección facultativa y la propiedad. Compuesta salida de hilos y marco embellecedor de color a elegir por la Dirección Facultativa y la propiedad, caja mecanismo universal con tornillo y accesorios. Parte proporcional de circuito de alimentación eléctrico desde cuadro general de mando y protección (bandeja, tubo, línea, bridas, terminales, cajas, clemas, etc. De las marcas Pinazo, Aiscan, General Cable exzhellent XXI, Unex,  Gaestopas,  Solera,  Wago o equivalente, aprobado por la dirección facultativa y la propiedad), no propagadores del incendio y de opacidad reducida (UNE 21.123 parte 4 ó 5 o UNE 21.1002), extra deslizable. Así como cualquier material o trabajo necesario para su instalación y montaje. Totalmente instalado, probado y funcionando. |
+~T|15E024|Ud. Suministro e instalación de punto de alimentación de equipo triofásico, realizado con Salida de hilos de la marca SIMON-31 o equivalente, aprobado por la dirección facultativa y la propiedad. Compuesta salida de hilos y marco embellecedor de color a elegir por la Dirección Facultativa y la propiedad, caja mecanismo universal con tornillo y accesorios. Parte proporcional de circuito de alimentación eléctrico desde cuadro general de mando y protección (bandeja, tubo, línea, bridas, terminales, cajas, clemas, etc. De las marcas Pinazo, Aiscan, General Cable exzhellent XXI, Unex,  Gaestopas,  Solera,  Wago o equivalente, aprobado por la dirección facultativa y la propiedad), no propagadores del incendio y de opacidad reducida (UNE 21.123 parte 4 ó 5 o UNE 21.1002), extra deslizable. Así como cualquier material o trabajo necesario para su instalación y montaje. Totalmente instalado, probado y funcionando. |
+~T|24.04|Ud. Medición de calidad del aire antes de comenzar los trabajos y despues de la finalización de los mismos, con el material adecuado para su ejecución con la redacción de un pequeño informe con la inidcación de los mismos.|
+~T|24.05|Ud. Medición de niveles de ruido de los equipos instalados, realizada tras la finalización de los trabajos y puesta en marcha de las instalaciones, mediante el equipamiento adecuado y homologado para su ejecución. Incluso toma de datos en los puntos representativos, análisis de los resultados obtenidos y redacción de un pequeño informe con la indicación de los valores medidos y verificación del cumplimiento de la normativa aplicable.|
+~T|26.01.01|Ud. Realización y ejecución del Plan de Seguridad y Salud, con un nivel de exigencia alto, previa aprobación por parte de La Dirección Facultativa del mencionado Plan, incluyendo en principio: instalaciones provisionales de obra y señalizaciones, protecciones personales, protecciones colectivas; todo ello cumpliendo la reglamentación vigente.|
+~T|30.01.10|Ud. Suministro e instalación de analizador de redes eléctricas, marca Gavazzi, gama EM21, o equivalente aprobado por la Dirección Facultativa y la Propiedad, apto para medida y supervisión de magnitudes eléctricas en instalaciones de baja tensión, con comunicación mediante protocolo Modbus-RTU a través de puerto RS485 y conexión mediante transformadores toroidales; incluso accesorios, elementos de fijación, conexionado eléctrico y de comunicaciones, parametrización, comprobaciones, ensayos, rotulación y cuantos elementos sean necesarios para su correcto montaje e integración en la instalación; totalmente conectado, probado y funcionando correctamente.
+
+|
+~T|30.06.01|Ud. Elaboración y tramitación de todos los Certificados de Instalación Eléctrica, incluso p.p. de tasa de la Dirección General de Industria,  tasas de E.I.C.I. o cualquier gasto derivado de la mencionada tramitación.|
+~T|A02AA510|M3. Hormigón en masa de resistencia H-200 según EH-91, con cemento CEM II/A-P 32,5 R, arena de río y árido rodado tamaño máximo 40 mm. confeccionado con hormigonera de 250 l., para vibrar y consistencia plástica.|
+~T|CAR400|Ud. Suministro e instalación de compuerta antirretorno rectangular metálica de dimensiones 400 × 400 mm para instalación en conducto de ventilación, fabricada en chapa de acero galvanizado, con lamas de apertura automática por presión del flujo de aire y cierre por gravedad, destinada a impedir el retorno del aire cuando el sistema se encuentra parado o actúan otros equipos conectados a la misma red de conductos. Incluso accesorios de montaje, elementos de fijación, sellado de uniones, conexiones al conducto y cuantos materiales sean necesarios para su correcta instalación y funcionamiento. Totalmente instalada y probada.|
+~T|CARGADERO|Formación de cargadero metálico para hueco de acceso principal, ejecutada mediante acero UNE-EN 10219-1 S275J0H, en L 100x8 acabado con imprimación antioxidante, colocado con uniones soldadas en obra, atirantado a forjado superior mediante anclaje químico. El precio incluye anclajes químicos cada 0,75m, los cortes, los despuntes, las piezas especiales, y los elementos auxiliares de montaje.
+|
+~T|CIECM.3adca|Ud. Suministro e instalación de interruptor automático magnetotérmico modular ejecución bipolarr, montaje en carril DIN-35, con intensidad asignada permanente 16 Amp.,curva C, tensión de empleo 240/415 V. ca. y poder asignado de corte de servicio en cortocircuito 10 kA (UNE-EN 60947-2), marca Schneider Electric  o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando.  
+	|
+~T|CIECM.3ceca4|Ud. Suministro e instalación de interruptor automático magnetotérmico modular ejecución tetrapolar, montaje en carril DIN-35, con intensidad asignada permanente 16 Amp.,curva C, tensión de empleo 240/415 V. ca. y poder asignado de corte de servicio en cortocircuito 10 kA (UNE-EN 60947-2), marca Schneider Electric  o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando.
+|
+~T|CIECM.3cgca1|Ud. Suministro e instalación de interruptor automático magnetotérmico modular ejecución tetrapolar, montaje en carril DIN-35, con intensidad asignada permanente 40 Amp.,curva C, tensión de empleo 240/415 V. ca. y poder asignado de corte de servicio en cortocircuito 10 kA (UNE-EN 60947-2), marca Schneider Electric  o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando. 
+|
+~T|CIECM.3cgca25|Ud. Suministro e instalación de interruptor automático magnetotérmico modular ejecución tetrapolar, montaje en carril DIN-35, con intensidad asignada permanente 32 Amp.,curva C, tensión de empleo 240/415 V. ca. y poder asignado de corte de servicio en cortocircuito 10 kA (UNE-EN 60947-2), marca Schneider Electric o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando.  
+|
+~T|CIECM.4aabbR|Ud. Suministro e instalación de interruptor diferencial sobre carril DIN-35, modular bipolar con intensidad asignada permanente de 25 Amp. e intensidad de defecto de 300 mA, clase AC, con rearme automatico, marca Schneider Electric  o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando.  
+|
+~T|CIECM.4cbbaB|Ud. Suministro e instalación de interruptor diferencial sobre carril DIN-35, modular tetrapolar con intensidad asignada permanente de 40 Amp. e intensidad de defecto de 300 mA, SI, marca Schneider Electric  o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando. 
+|
+~T|CIECM.4cbbaP|Suministro e instalación de interruptor diferencial sobre carril DIN-35, modular tetrapolar con intensidad asignada permanente de 25 Amp. e intensidad de defecto de 300 mA, clase C, marca Schneider Electric  o equivalente, aprobado por la dirección facultativa y la propiedad;  Montado según REBT. Totalmente instalado, probado, rotulado y funcionando.
+|
+~T|CL.26|Ud. Suministro e instalación de unidad partida horizontal aire-aire bomba de calor inverter HITECSA MOSAIC HE modelo CCHIBA+ECHIBA HE 22, o equivalente a aprobar por la Dirección Facultativa y la propiedad, con potencia frigorífica nominal de hasta 22,4 kW, ventiladores tipo Plug Fan de alta eficiencia en condensación y evaporación, compresor con tecnología DC Inverter y programación horaria, apto para funcionamiento acoplado a red de conductos de climatización. Incluso recargo GFEI según Ley 14/2022 para refrigerante R410, aislamiento acústico de la envolvente, aislamiento térmico de la envolvente, aislamiento térmico Euroclase A1 (M0) en condensador y evaporador, filtro F7, filtro G4, sonda de temperatura de retorno en conducto, tarjeta de comunicaciones Modbus RTU, elementos de fijación, conexiones frigoríficas, eléctricas y de control, accesorios necesarios para su correcto funcionamiento, puesta en marcha y comprobación de la instalación. Totalmente instalado y probado.|
+~T|CL.27|Ud. Suministro e instalación de recuperador de calor aire-aire HITECSA/BAXI modelo BALDUR 900, o equivalente a aprobar por la Dirección Facultativa y la propiedad, con intercambiador de placas de aluminio de flujo a contracorriente (counterflow) de alta eficiencia, ventiladores tipo Plug Fan, estructura autoportante de chapa de acero galvanizado con aislamiento térmico de 20 mm, sistema integrado de by-pass motorizado para funcionamiento en free-cooling parcial y total, detectores de filtros sucios y filtración conforme al RITE. Incluso embocadura circular de cuatro conexiones, embocaduras exteriores tipo "pico pato" con malla de protección, filtro F7 en impulsión, filtro M5 en impulsión, filtro M5 en retorno, sonda de calidad de aire en conducto (CO2), tejadillo exterior, elementos de fijación, conexiones a la red de conductos, conexiones eléctricas y de control, accesorios necesarios para su correcto funcionamiento, puesta en marcha y comprobación de la instalación. Totalmente instalado y probado.|
+~T|CONT.01|Suministro e instalación del sistema de control y regulación de la instalación de climatización y ventilación, incluyendo control del equipo autónomo de climatización y del recuperador de calor, controladores, interfaces de usuario, cableado de control, conexionado entre equipos, programación, parametrización, integración de sondas y elementos de campo, gestión del funcionamiento conjunto de los equipos, comunicación entre sistemas y cuantos accesorios sean necesarios para el correcto funcionamiento de la instalación. Incluso pruebas funcionales, puesta en marcha y ajuste de los parámetros de funcionamiento. Totalmente instalado y probado.|
+~T|CVM1|Suministro e instalación de Transformador con relé difrencial incorporado CIRCUTOR o equivalente protegida contra armónicos y perturbaciones; ,03-30 Amp, regulado , y retardo entre 0,02-1 segundo, Incluso transformador toroidal de diametro adecuado a la salida protegida, caja portafusible seccionable para fusibles de A.P.R. tipo cilindrico 00 con fusible de 10A . Totalmente conectado y funcionando.|
+~T|D10DA045|M2. Tabique formado por una placa PLADUR®, o equivalente aprobado por la Dirección Facultativa y la propiedad, tipo N de 15 mm. de espesor, a cada lado de una estructura de acero galvanizado de 46 mm. de ancho, a base de Montantes PLADUR® (elementos verticales), separados entre ejes 400 mm. y Canales PLADUR® (elementos horizontales), dando un ancho total de tabique terminado de 76 mm. Parte proporcional de materiales PLADUR®: tornillería, pastas, cintas de juntas, juntas estancas /acústicas de su perímetro, etc. así como anclajes para canales en suelo y techo, etc. totalmente terminado con calidad de terminación Nivel 1 (Q1). Montaje según Norma UNE 102.040 IN y requisitos del CTE-DB HR.|
+~T|D10DA046|Ud. Suministro e instalación de tabique de altas prestaciones acústicas, de 200 mm de espesor total, formado por doble estructura de perfiles de acero galvanizado de 75 + 75 mm de anchura, con montantes separados 417 mm y disposición reforzada en H, y cuatro placas de yeso laminado de 12,5 mm de espesor, dos por cada cara, compuestas por una placa tipo Diamant "KNAUF", o equivalente aprobado por la Dirección Facultativa y la propiedad, y una placa tipo Silentboard "KNAUF", o equivalente aprobado por la Dirección Facultativa y la propiedad, en cada cara. Incluso aislamiento acústico mediante panel semirrígido de lana mineral de 65 mm de espesor colocado en el interior de la cámara, banda acústica de dilatación autoadhesiva "KNAUF", o equivalente aprobado por la Dirección Facultativa y la propiedad, tornillería, cinta de juntas y pasta de juntas, remates y cuantos materiales y trabajos sean necesarios para su correcta ejecución. Acabado Q2. Totalmente instalado y terminado.|
+~T|D41AG201|Ud. Taquilla metálica individual con llave de 1.78 m. de altura colocada. (10 usos) 
+Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|D41AG210|Ud. Banco de polipropileno para 5 personas con soportes metalicos, colocado. (10 usos)
+Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|D41AG406|Ud. Pack mascaras desechables de cinco capas para adultosm no reutilizables, transpirables plegables con pinza nasal y homologación CE, colocada.
+|
+~T|D41AG620|Ud. Horno microondas de 800 wat. con plato giratorio incorporado (5 usos).
+Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|D41AG630|Ud. Mesa metálica para comedor con una capacidad de 10 personas, y tablero superior de melamina colocada. (10 usos)
+Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|D41AG700|Ud. Deposito de basuras de 800 litros de capacidad realizado en polietileno inyectado, acero y bandas de caucho, con ruedas para su transporte, colocado. (10 usos)
+Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|D41AG801|Ud. Botiquín de urgencia para caseta de obra, provisto de desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, un par de tijeras, pinzas, guantes desechables, bolsa de goma para agua y hielo, antiespasmódicos, analgésicos, tónicos cardíacos de urgencia, un torniquete, un termómetro clínico y jeringuillas desechables, fijado al paramento con tornillos y tacos.
+Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|D41AG810|Ud. Bolsa de hielo, caja de apósitos, paquete de algodón, rollo de esparadrapo, caja de analgésico de ácido acetilsalicílico, caja de analgésico de paracetamol, botella de agua oxigenada, botella de alcohol de 96°, frasco de tintura de yodo para el botiquín de urgencia colocado en la caseta de obra, durante el transcurso de la obra.
+|
+~T|D41CA010|Ud. Señal de stop tipo octogonal de D=600 mm. normalizada, con soporte metálico de hierro galvanizado 80x40x2 mm. y 1,3 m. de altura incluso parte proporcional de apertura de pozo, hormigonado, colocación y desmontado. (3 usos) Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera.|
+~T|D41CA040|Ud. Cartel indicativo de riesgo de 0,30x0,30 m. con soporte metálico de hierro galvanizado 80x40x2 mm. y 1,3 m. de altura, incluso apertura de pozo, hormigonado, colocación y desmontado. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera.|
+~T|D41CA254|Ud. Cartel indicativo de prohibido el paso a la obra de 0,40x0,30 m. sin soporte metálico, incluso colocación y desmontado. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera.|
+~T|D41CA258|Ud. Cartel indicativo de peligro por zona de obras de 0,40x0,30 m. sin soporte metálico, incluso colocación y desmontado. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera.|
+~T|D41CA260|Ud. Suministro de cartel combinado de advertencia de riesgos de 1,00x0,70 m. sin soporte metálico, incluso colocación y desmontado. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera.|
+~T|D41CC040|Ud. Valla autónoma metálica de 2,5 m. de longitud para contención de peatones normalizada, incluso colocación y desmontaje. (20 usos)|
+~T|D41EA001|Ud. Casco de seguridad con desudador, homologado CE.|
+~T|D41EA201|Ud. Pantalla de seguridad para soldadura con fijación en cabeza, homologada CE.|
+~T|D41EA220|Ud. Gafas contra impactos antirayadura, homologadas CE.|
+~T|D41EA401|Ud. Mascarilla antipolvo, homologada.|
+~T|D41EA410|Ud. Filtro recambio mascarilla, homologado.|
+~T|D41EB135|Ud. Mascarilla polvos tóxicos FFP2 con válvula, desechable, homologada CE.|
+~T|D41EC001|Ud. Mono de trabajo, homologado CE.|
+~T|D41EC030|Ud. Mandil de serraje para soldador grado A, 60x90 cm. homologado CE.|
+~T|D41EC401|Ud. Cinturón de seguridad clase A (sujección), con cuerda regulable de 1,8 m. con guarda cabos y 2 mosquetones, homologada CE.|
+~T|D41EC520|Ud. Cinturón portaherramientas, homologado CE.|
+~T|D41ED105|Ud. Pareja de tapones antiruido espuma, homologado CE.|
+~T|D41ED115|Ud. Protectores auditivos tipo orejera para, entornos exigentes, homologado CE.|
+~T|D41EE001|Ud. Par de guantes de latex industrial naranja, homologado CE.|
+~T|D41EE030|Ud. Par de guantes aislantes para electricista, homologados CE.|
+~T|D41EG030|Ud. Par de botas aislantes para electricista, homologadas CE.|
+~T|D41EG401|Ud. Par de polainas para soldador serraje grad A, homologadas CE.|
+~T|D41GG405|Ud. Extintor de polvo ABC con eficacia 21A-113B para extinción de fuego de materias sólidas, líquidas, productos gaseosos e incendios de equipos eléctricos, de 6 Kg. de agente extintor con soporte, manómetro y boquilla con difusor según norma UNE-23110, totalmente instalado.Certificado por AENOR.|
+~T|D41GG410|Ud. Extintor de nieve carbónica CO2 con eficacia 34B para extinción de fuego de materias sólidas, líquidas, e incendios de equipos eléctricos, de 5 Kg. de agente extintor con soporte y manguera con difusor según norma UNE-23110 totalmente instalado.|
+~T|D41GG420|Ud. Suministro e instalación de esterilla de caucho para control de suciedad y polvo en accesos a zona de obra, colocada en zonas de tránsito entre áreas en uso y áreas en intervención, formada por alfombrilla flexible de caucho de alta resistencia, antideslizante, con capacidad de retención de polvo y partículas. Incluye colocación sobre el pavimento existente, adaptación a la geometría del acceso, fijación puntual si fuera necesaria, limpieza inicial y mantenimiento básico durante la ejecución de la obra, así como su retirada al finalizar los trabajos. Totalmente instalada y en funcionamiento durante toda la fase de obra.|
+~T|DA.01|m². Suministro y montaje de conducto rectangular para la distribución de aire climatizado, realizado mediante panel rígido de alta densidad de lana de vidrio tipo Climaver Plus R o equivalente a aprobar por la Dirección Facultativa y la propiedad, conforme a la norma UNE-EN 14303, de 25 mm de espesor. Panel revestido en ambas caras: exterior con complejo de aluminio + malla de fibra de vidrio + kraft, e interior con complejo de aluminio + kraft. Conducto con canto macho rebordeado por el complejo interior para mayor estanqueidad, con resistencia térmica de 0,78 m²·K/W y conductividad térmica de 0,032 W/(m·K). Se incluyen la ejecución de codos, derivaciones, embocaduras, piezas especiales, sellado de uniones con cola específica Climaver, sellado de tramos con cinta de aluminio Climaver, soportes metálicos galvanizados, elementos de fijación, registros de inspección y limpieza, aperturas de servicio, tapas estancas y todos los accesorios de montaje necesarios. Los registros se dispondrán en número y posición suficientes para permitir la inspección, limpieza y mantenimiento de la red, conforme a la IT 1.1.4.3.4 del RITE y a la norma UNE-ENV 12097, especialmente en cambios de dirección, derivaciones, elementos de regulación y tramos que requieran accesibilidad. En conductos ocultos sobre falso techo, dichos registros se coordinarán con registros practicables en el falso techo.
+Instalación realizada conforme al RITE, normativa vigente y recomendaciones del fabricante. Totalmente instalado, sellado, aislado, registrado, accesible para mantenimiento y en correcto estado de funcionamiento.|
+~T|DA.41|Ud. Suministro e instalación de rejilla de ventilación para intemperie, acústica, de dimensiones 1000x300 mm, fabricada en acero galvanizado y lacada en color a definir por la Dirección Facultativa y la propiedad, diseñada para instalación sobre carpintería de aluminio. Rejilla fija con lamas inclinadas en sentido descendente para evitar la entrada de agua, e incorporando rejilla antipájaros interior mediante malla metálica galvanizada. Apta para uso exterior, con alta resistencia a la corrosión y a la radiación solar. Incluye fijación mediante tornillería adecuada, sellado perimetral, accesorios de montaje y elementos de fijación. Totalmente instalada, alineada y en correcto estado de funcionamiento, conforme a normativa vigente y especificaciones del fabricante.
+|
+~T|DA.45|Ud. Suministro e instalación de rejilla de ventilación para intemperie, acústica, de dimensiones 1300x1000 mm, fabricada en acero galvanizado y lacada en color a definir por la Dirección Facultativa y la propiedad, diseñada para instalación sobre carpintería de aluminio. Rejilla fija con lamas inclinadas en sentido descendente para evitar la entrada de agua, e incorporando rejilla antipájaros interior mediante malla metálica galvanizada. Apta para uso exterior, con alta resistencia a la corrosión y a la radiación solar. Incluye fijación mediante tornillería adecuada, sellado perimetral, accesorios de montaje y elementos de fijación. Totalmente instalada, alineada y en correcto estado de funcionamiento, conforme a normativa vigente y especificaciones del fabricante.
+|
+~T|E15P020|Ud. Puerta de chapa lisa abatible de 1 hoja de 80x200 cm realizada con doble chapa de acero galvanizado de 1 mm de espesor, perfiles de acero conformado en frío, herrajes de colgar y seguridad, cerradura sin cilindro ni llave, con apertura mediante manilla de nailon, cerco de perfil de acero conformado en frío con garras para recibir a obra, elaborada en taller, ajuste y fijación en obra (sin incluir recibido de albañilería). Materiales con marcado CE y DdP (Declaración de prestaciones) según Reglamento (UE) 305/2011.|
+~T|ILUEXT01|Ud. Montaje de rótulo exterior, realizado por medios manuales, incluyendo su colocación sobre paramento o estructura soporte, y fijaciones necesarias, sin afectar a los elementos constructivos contiguos. La partida comprende el posicionamiento, anclaje, limpieza de la zona de trabajo y la parte proporcional de medios auxiliares, dejando el conjunto totalmente montado, probado y en condiciones adecuadas de servicio.|
+~T|PLAN|Plan completo de control de gestión de residuos, con un nivel de exigencia alto, previa aprobación por parte del promotor, incluyendo: identificación y cantidad de residuos generaros, procedimientos de evaluación, operaciones con los residuos y gestión de los mismos.|
+~T|QEREWQTWQET|Unidad de adecuación de zona para uso del personal de los trabajadores en obra, incluido parte proporcional de pladur, vallas y elementos necesarios para la correcta adecuación. Incluso parte proporcional de pequeño material, mano de obra y desplazamientos, trabajos, remates, estructuras auxiliares, instalación, ajuste y verificaciones.|
+~T|RECC.045|Suministro e instalación de conducto circular de pared simple helicoidal de acero inoxidable, de 100 mm de diámetro y 0,5 mm de espesor, con refuerzos, i/p.p. de corte, ejecución, codos, embocaduras, derivaciones, elementos de fijación, bridas, soportes, varillas, pintura al horno en color elegido por promotor, sellado de uniones, medios auxiliares, elementos de elevación, equipos de seguridad individual/colectivas, costes indirectos, totalmente instalado según normas UNE y NTE-ICI-23. Según RITE Así como cualquier material o trabajo necesario para su instalación en los horarios que no produzcan molestias en el desarrollo normal de la actividad del centro comercial. Totalmente instalado, probado y funcionando.  
+|
+~T|RECC.046|Suministro e instalación de conducto circular de pared simple helicoidal de acero inoxidable, de 150 mm de diámetro y 0,5 mm de espesor, con refuerzos, i/p.p. de corte, ejecución, codos, embocaduras, derivaciones, elementos de fijación, bridas, soportes, varillas, pintura al horno en color elegido por promotor, sellado de uniones, medios auxiliares, elementos de elevación, equipos de seguridad individual/colectivas, costes indirectos, totalmente instalado según normas UNE y NTE-ICI-23. Según RITE Así como cualquier material o trabajo necesario para su instalación en los horarios que no produzcan molestias en el desarrollo normal de la actividad del centro comercial. Totalmente instalado, probado y funcionando.  
+|
+~T|RECC.047|Suministro e instalación de conducto circular de pared simple helicoidal de acero inoxidable, de 200 mm de diámetro y 0,5 mm de espesor, con refuerzos, i/p.p. de corte, ejecución, codos, embocaduras, derivaciones, elementos de fijación, bridas, soportes, varillas, pintura al horno en color elegido por promotor, sellado de uniones, medios auxiliares, elementos de elevación, equipos de seguridad individual/colectivas, costes indirectos, totalmente instalado según normas UNE y NTE-ICI-23. Según RITE Así como cualquier material o trabajo necesario para su instalación en los horarios que no produzcan molestias en el desarrollo normal de la actividad del centro comercial. Totalmente instalado, probado y funcionando.  
+|
+~T|RESIDUOS|Ud. Gestión de residuos de construcción y demolición generados en obra de reforma de instalación de climatización, incluyendo los residuos procedentes del desmontaje de equipos de climatización, conductos, tuberías, aislamientos, cableado asociado y elementos auxiliares, así como los derivados de la demolición y reposición de falsos techos, pequeñas demoliciones puntuales de tabiquería de fábrica de ladrillo, escombros, embalajes, plásticos, papel/cartón, envases, restos metálicos y demás residuos propios de la actuación. Comprende la recogida, clasificación, acopio temporal en obra, carga, transporte y entrega de los residuos a gestor autorizado, incluyendo, en su caso, alquiler, entrega y retirada de contenedores, medios auxiliares de carga y manipulación, canon de vertido, tasas, transporte interior y exterior, así como la correcta segregación de los residuos conforme a la normativa vigente.
+
+Se incluye igualmente la gestión específica de los residuos procedentes de equipos de climatización desmontados, incluyendo su entrega a gestor autorizado cuando proceda, retirada de componentes, refrigerantes, aceites u otros elementos que requieran tratamiento específico, así como la emisión de los correspondientes certificados, justificantes o documentos acreditativos de entrega y tratamiento de los residuos generados.
+
+Incluso parte proporcional de mano de obra, maquinaria, medios auxiliares, contenedores, limpieza de las zonas afectadas, documentación justificativa, coordinación con gestor autorizado y cualquier material, medio o trabajo necesario para la completa y correcta ejecución de la unidad de obra.|
+~T|RTC021|Ud. Suministro e instalación de trampilla de registro de 613x613 mm, gama Especial, Revo Cleaneo 8/18 R, sistema E112.c "KNAUF", o equivalente aprobado por la Dirección Facultativa y la propiedad, formada por marco de aluminio y puerta de placa de yeso laminado con perforaciones circulares 8/18 R, Cleaneo Akustik Redonda, de 12,5 mm de espesor, integrada en tabique de placas de yeso laminado, destinada al acceso y mantenimiento de las unidades de climatización situadas en el altillo. Incluso accesorios de montaje, fijaciones, remates y cuantos elementos sean necesarios para su correcta instalación y funcionamiento. Totalmente instalada y terminada.|
+~T|U30JW900|Ud. Suministro e instalación de luminaria de empotrar en falso techo, tipo Downlights, SIMON Modelo 725.26 NW.comfort (14 W) o equivalente, aprobado por la dirección facultativa y la propiedad. Incluso  transformador electrónico regulable, lámparas, tasas y accesorios. Parte proporcional de circuito de alimentación eléctrico desde cuadro general de mando y protección (bandeja, tubo, línea, bridas, terminales, cajas, clemas, pulsadores, interruptores, detectores de luminosidad etc. De las marcas Pinazo, Aiscan, General Cable exzhellent XXI, Unex,  Gaestopas,  Solera,  Wago, Simon o equivalente, aprobado por la dirección facultativa y la propiedad), no propagadores del incendio y de opacidad reducida (UNE 21.123 parte 4 ó 5 o UNE 21.1002), extra deslizable. Así como cualquier material o trabajo necesario para su instalación y montaje. Totalmente instalado, probado y funcionando. Incluso tasa de reciclado e impuestos medioambientales.|
+~T|VARC.01|Puesta en marcha y servicio de la instalación y equipos por el fabricante, incluso mediciones de caudales en difusores y rejillas de impulsión y retorno y ajustes de caudales a nominales de proyecto, mediciones de temperaturas de impulsión y salto entálpico de la batería de la evaporadora.
+|
+~T|VARC.02|Ud. Elaboración, suscripción y tramitación administrativa de la documentación técnica y Certificados de Instalación correspondientes a la instalación de climatización, incluyendo la gestión completa ante los organismos competentes, así como la parte proporcional de tasas de la Dirección General de Industria, tasas de E.I.C.I. y cuantos visados, derechos o gastos sean necesarios para su legalización y puesta en servicio; totalmente terminada.|
+~T|VARC.06|Ud. Ejecución de prueba de estanqueidad en red de conductos de climatización conforme a los requisitos establecidos en el Reglamento de Instalaciones Térmicas en los Edificios (RITE) y en la norma UNE-EN 12237 (conductos metálicos) o UNE-EN 1507 (conductos rectangulares), según corresponda. La prueba se realizará mediante la presurización controlada del sistema de conductos (con sobrepresión o depresión, según el caso) con equipo calibrado, registrando las fugas de aire para verificar que los niveles se encuentran dentro de los límites admisibles del correspondiente clase de estanqueidad (A, B, C o D), especificada en proyecto o aplicable según uso del edificio. El servicio incluye la preparación de la red, obturación de bocas, conexión del equipo de ensayo, ejecución del procedimiento completo, medición del caudal de fuga, obtención de resultados, y emisión de informe técnico con valores registrados, interpretación y conclusiones. Incluye desplazamiento, medios técnicos, personal cualificado, certificados de calibración de los equipos y documentación de resultados. Totalmente ejecutado, comprobado, documentado y conforme a normativa vigente.|
+~T|W45ASAFR|Unidad de desplazamiento de zona de uso personal en función de la zona de ejecución de la obra.|
+~T|YSX010|Ud. Conjunto de elementos de balizamiento y señalización provisional de obras, necesarios para el cumplimiento de la normativa vigente en materia de Seguridad y Salud en el Trabajo. Incluso mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera, reparación o reposición, cambio de posición y transporte hasta el lugar de almacenaje o retirada a contenedor.|
+~M|01#\01.01|1\1\|1|\Centro\1\\\\|
+~M|01#\01.02|1\2\|1|\Mobiliario\1\\\\|
+~M|01#\01.03|1\3\|1|\Centro existente\1\\\\|
+~M|01#\01.09|1\4\|1|\Rótulo\1\\\\|
+~M|01#\01.11|1\5\|47.97|\Archivo Historias clínicas\1\12.37\\\\Despacho medico AT\1\21.6\\\\C. Limpieza\1\2.06\\\\Distribuidor 2\1\3.7\\\\DUE AT\1\8.24\\\|
+~M|01#\01.15|1\6\|0.3|\Ampliación hueco\1\1\\0.3\|
+~M|01#\01.06|1\7\|1|\Centro\1\\\\|
+~M|03#\CARGADERO|2\1\|1.2|\Fachada\1\1.2\\\|
+~M|03#\ILUEXT01|2\2\|1|\Rótulo\1\\\\|
+~M|03#\02.07|2\3\|1|\Altillo\1\\\\|
+~M|03#\03.01|2\4\|100.74|\Archivo Historias clínicas\1\12.37\\\\Despacho medico AT\1\21.6\\\\C. Limpieza\1\2.06\\\\Distribuidor 2\1\24.85\\\\DUE AT\1\22.06\\\\Vesturaio personal sanitario\1\5.8\\\\C. Técnico\1\4\\\\Revelado Digital\1\8\\\|
+~M|03#\D10DA046|2\5\|4|\Tabique altillo\1\2\\2\|
+~M|03#\RTC021|2\6\|1|\Altillo\1\\\\|
+~M|03#\12.02|2\7\|437.79|\Archivo Historias clínicas\1\18.25\\3\\Despacho medico AT\1\23.83\\3\\C. Limpieza\1\7.65\\3\\Distribuidor 2\1\36.16\\3\\DUE AT\1\21.13\\3\\Almacén Sanitario\1\15.64\\3\\C. Técnico\1\9\\3\\Revelado Digital\1\14.27\\3\|
+~M|03#\06.11|2\8\|47.97|\Archivo Historias clínicas\1\12.37\\\\Despacho medico AT\1\21.6\\\\C. Limpieza\1\2.06\\\\Distribuidor 2\1\3.7\\\\DUE AT\1\8.24\\\|
+~M|03#\06.12|2\9\|47.97|\Archivo Historias clínicas\1\12.37\\\\Despacho medico AT\1\21.6\\\\C. Limpieza\1\2.06\\\\Distribuidor 2\1\3.7\\\\DUE AT\1\8.24\\\|
+~M|30.01#\30.01.10|3\1\1\|1|\Clima\1\\\\|
+~M|30.01#\CIECM.3cgca1|3\1\2\|1|\4x40A\1\1\\\|
+~M|30.01#\CIECM.3cgca25|3\1\3\|1|\4x32A\1\1\\\|
+~M|30.01#\CIECM.3ceca4|3\1\4\|1|\4x16A\1\1\\\|
+~M|30.01#\CIECM.3adca|3\1\5\|1|\2x16A\1\1\\\|
+~M|30.01#\CIECM.4cbbaB|3\1\6\|1|\4x40A,300mA\1\1\\\|
+~M|30.01#\CIECM.4cbbaP|3\1\7\|1|\4x25A,300mA\1\1\\\|
+~M|30.01#\CIECM.4aabbR|3\1\8\|1|\2x25A,300mA\1\1\\\|
+~M|30.05#\15E024|3\2\1\|2|\Condensadora\1\\\\\Evaporadora\1\\\\|
+~M|30.05#\15E022|3\2\2\|1|\Recuperador\1\\\\|
+~M|30.06#\30.06.01|3\3\1\|1|\\1\\\\|
+~M|EP#\CL.26|4\1\1\|1|\Clima\1\\\\|
+~M|EP#\CL.27|4\1\2\|1|\Recuperador de calor\1\\\\|
+~M|DA#\DA.01|4\2\1\|24|\Distribución aire\1\24\\\|
+~M|DA#\RECC.047|4\2\2\|8|\Tramo 200mm\8\\\\|
+~M|DA#\RECC.046|4\2\3\|8|\Tramo 150mm\8\\\\|
+~M|DA#\RECC.045|4\2\4\|16|\Tramo 100mm\16\\\\|
+~M|DA#\DA.41|4\2\5\|1|\Rejilla aport. aire\1\\\\|
+~M|DA#\DA.45|4\2\6\|1|\Rejilla cond..\1\\\\|
+~M|DA#\CAR400|4\2\7\|2|\Imp. Recuperador\1\\\\\Ret. Recuperador\1\\\\|
+~M|CONT#\CONT.01|4\3\1\|1|\Sistema de climatización\1\\\\|
+~M|VARC#\VARC.01|4\4\1\|1|\Instalación Clima\1\\\\|
+~M|VARC#\VARC.02|4\4\2\|1|\Instalación Clima\1\\\\|
+~M|24#\24.04|5\1\|1|\\1\\\\|
+~M|24#\24.05|5\2\|1|\\1\\\\|
+~M|24#\VARC.06|5\3\|1|\Circuito clima/venti\1\\\\|
+~M|25#\RESIDUOS|6\1\|1|\Local\1\\\\|
+~M|25#\PLAN|6\2\|1|\Obras\1\\\\|
+~M|26.01#\26.01.01|7\1\1\|1|\\1\\\\|
+~M|D41AG#\D41AG201|7\2\1\1\|3||
+~M|D41AG#\D41AG210|7\2\1\2\|1||
+~M|D41AG#\D41AG620|7\2\1\3\|1||
+~M|D41AG#\D41AG630|7\2\1\4\|1||
+~M|D41AG#\D41AG700|7\2\1\5\|1||
+~M|D41AG#\D41AG801|7\2\1\6\|1||
+~M|D41AG#\D41AG810|7\2\1\7\|2||
+~M|D41AG#\D41AG406|7\2\1\8\|1||
+~M|D41AG#\QEREWQTWQET|7\2\1\9\|1||
+~M|D41AG#\W45ASAFR|7\2\1\10\|2||
+~M|D42AG#\D10DA045|7\2\2\1\|4.5|\Sectorización obra\1\1.5\\3\|
+~M|D42AG#\E15P020|7\2\2\2\|1|\Sectorización obra\1\\\\|
+~M|D41CA#\D41CA010|7\3\1\1\|1|\\1\\\\|
+~M|D41CA#\D41CA254|7\3\1\2\|1|\\1\\\\|
+~M|D41CA#\D41CA040|7\3\1\3\|1|\\1\\\\|
+~M|D41CA#\D41CA258|7\3\1\4\|1|\\1\\\\|
+~M|D41CA#\D41CA260|7\3\1\5\|1|\\1\\\\|
+~M|D41CA#\YSX010|7\3\1\6\|1|\\1\\\\|
+~M|D41CC#\D41CC040|7\3\2\1\|5|\\5\\\\|
+~M|D41EA#\D41EA001|7\4\1\1\|4|\\4\\\\|
+~M|D41EA#\D41EA201|7\4\1\2\|4|\\4\\\\|
+~M|D41EA#\D41EA220|7\4\1\3\|4|\\4\\\\|
+~M|D41EA#\D41EA401|7\4\1\4\|4|\\4\\\\|
+~M|D41EA#\D41EA410|7\4\1\5\|4|\\4\\\\|
+~M|D41EC#\D41EC001|7\4\2\1\|5|\\5\\\\|
+~M|D41EC#\D41EC030|7\4\2\2\|5|\\5\\\\|
+~M|D41EC#\D41EC401|7\4\2\3\|5|\\5\\\\|
+~M|D41EC#\D41EC520|7\4\2\4\|5|\\5\\\\|
+~M|D41EE#\D41EE001|7\4\3\1\|20|\\20\\\\|
+~M|D41EE#\D41EE030|7\4\3\2\|5|\\5\\\\|
+~M|D41EG#\D41EG030|7\4\4\1\|5|\\5\\\\|
+~M|D41EG#\D41EG401|7\4\4\2\|5|\\5\\\\|
+~M|D41ED#\D41ED105|7\4\5\1\|100|\\100\\\\|
+~M|D41ED#\D41ED115|7\4\5\2\|5|\\5\\\\|
+~M|D41EB#\D41EB135|7\4\6\1\|20|\\20\\\\|
+~M|D41GG#\D41GG405|7\5\2\1\|1|\\1\\\\|
+~M|D41GG#\D41GG410|7\5\2\2\|1|\\1\\\\|
+~M|D41GG#\D41GG420|7\5\2\3\|2|\\2\\\\|

@@ -1,0 +1,1991 @@
+{
+ "expediente": "2474/2026",
+ "organismo": "Presidencia de la Comarca del Bajo Cinca",
+ "titulo": "Obras de ejecución de \"Proyecto para la adecuación de edificio municipal para centro de interpretación del olivar y del aceite sito en la Avenida San Antonio Abad 65 de Zaidín II\" con Anexo 2 Presupuesto actualizado",
+ "fecha": "2026-11-23",
+ "importe_anuncio": "376338.33 EUR",
+ "enlace_documento": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=4iDnyKilZW3tRzKOVhSkckO0Nu00gXn/E%2BEaoHpeL%2BIj4tF4inR/HrjCngmG8U5MxC/mpe8MSjZj7ROT/u5BxMxmoUzJ8mRO4GN2BK8RZFx45ClyWkoJ44mKM70IFcOu",
+ "archivo_origen": "2474_2026_260511_ZAI_ProyPRESTO.bc3",
+ "total_bc3": 316250.7,
+ "suma_partidas": 316250.7,
+ "costes_indirectos_pct": 0.0,
+ "capitulos": [
+  {
+   "codigo": "01.01",
+   "resumen": "NOTAS INFORMATIVAS",
+   "importe": 0.0
+  },
+  {
+   "codigo": "01.02",
+   "resumen": "TRABAJOS PREVIOS Y DERRIBOS",
+   "importe": 4985.29
+  },
+  {
+   "codigo": "01.03",
+   "resumen": "ENVOLVENTE EXTERIOR",
+   "importe": 16247.8
+  },
+  {
+   "codigo": "01.04",
+   "resumen": "DIVISORIAS Y ACABADOS INTERIORES",
+   "importe": 67859.33
+  },
+  {
+   "codigo": "01.05",
+   "resumen": "PAVIMENTOS",
+   "importe": 19965.34
+  },
+  {
+   "codigo": "01.06",
+   "resumen": "FALSOS TECHOS",
+   "importe": 52202.12
+  },
+  {
+   "codigo": "01.07",
+   "resumen": "CUBIERTA E IMPERMEABILIZACIONES",
+   "importe": 2467.46
+  },
+  {
+   "codigo": "01.08",
+   "resumen": "CARPINTERIA Y CERRAJERÍA",
+   "importe": 51388.02
+  },
+  {
+   "codigo": "01.09",
+   "resumen": "MOBILIARIO Y EQUIPAMIENTO",
+   "importe": 7998.6
+  },
+  {
+   "codigo": "01.0A",
+   "resumen": "INSTALACIONES",
+   "importe": 77860.1
+  },
+  {
+   "codigo": "01.0B",
+   "resumen": "VARIOS",
+   "importe": 9043.27
+  },
+  {
+   "codigo": "01.0C",
+   "resumen": "GESTIÓN DE RESIDUOS",
+   "importe": 2656.61
+  },
+  {
+   "codigo": "01.0D",
+   "resumen": "SEGURIDAD Y SALUD",
+   "importe": 3576.76
+  }
+ ],
+ "partidas": [
+  {
+   "capitulo": "NOTAS INFORMATIVAS",
+   "codigo": "E93A000Z",
+   "unidad": "u",
+   "resumen": "En todos los precios está incluida la repercusión en concepto de",
+   "cantidad": 1.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": "En todos los precios está incluida la repercusión en concepto de limpieza general de todo el edificio. Incluye limpieza de carpinterías, cristales, paredes, techos y mobiliario, limpieza previa a inspecciones técnicas y una última antes de la entrega de llaves/apertura del centro."
+  },
+  {
+   "capitulo": "NOTAS INFORMATIVAS",
+   "codigo": "712AZ002",
+   "unidad": "u",
+   "resumen": "Todos los elementos presupuestados incluyen el suministro, coloc",
+   "cantidad": 1.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": "Todos los elementos presupuestados incluyen el suministro, colocación en obra en el punto indicado, montaje y repaso final, con todos los elementos y accesorios necesarios que se necesiten para su correcta ejecución."
+  },
+  {
+   "capitulo": "NOTAS INFORMATIVAS",
+   "codigo": "712AZ003",
+   "unidad": "u",
+   "resumen": "Todas las partidas del presupuesto llevan incluidas las mermas d",
+   "cantidad": 1.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": "Todas las partidas del presupuesto llevan incluidas las mermas de material en el propio precio de la partida. No se admiten incrementos de medición en concepto de mermas."
+  },
+  {
+   "capitulo": "NOTAS INFORMATIVAS",
+   "codigo": "EGASOS10",
+   "unidad": "u",
+   "resumen": "Todas las partidas de instalaciones llevan incluidas las partes",
+   "cantidad": 1.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": "Todas las partidas de instalaciones llevan incluidas las partes proporcionales de las ayudas de albañilería y de otros oficios necesarios, zanjas verticales, zanjas horizontales, agujeros, pequeño material, elementos auxiliares de soporte, etc., no especificados en el presente presupuesto, y necesarios para su correcta realización."
+  },
+  {
+   "capitulo": "NOTAS INFORMATIVAS",
+   "codigo": "712A002Z",
+   "unidad": "u",
+   "resumen": "Todas las partidas del presupuesto de movimiento y carga de tier",
+   "cantidad": 1.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": "Todas las partidas del presupuesto de movimiento y carga de tierras y escombros llevan incluidas el movimiento interior en obra, para su posterior carga con medios mecánicos y transporte, de contenedores en camión de hasta 7 toneladas, hasta destino. No se admiten incrementos en concepto horas operarios, maquinaria, transporte y tasas."
+  },
+  {
+   "capitulo": "NOTAS INFORMATIVAS",
+   "codigo": "712AZ001",
+   "unidad": "u",
+   "resumen": "Todas las partidas del presupuesto llevan incluidas la parte pro",
+   "cantidad": 1.0,
+   "precio": 0.0,
+   "importe": 0.0,
+   "descripcion": "Todas las partidas del presupuesto llevan incluidas la parte proporcional de gastos indirectos, medios auxiliares, equipos y sistemas de elevación, andamios, escaleras, permisos, ocupaciones de viales, cargas y descargas materiales, acometidas provisionales electricidad y agua con sus instalaciones, contadores y cuadros, etc, no especificados explícitamente en el presente presupuesto, necesarios para la correcta ejecución de las partidas."
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P2143-4RQT",
+   "unidad": "m2",
+   "resumen": "Derribo solera horm.lig.armado,hasta 15cm,compres.,carga manual",
+   "cantidad": 9.55,
+   "precio": 11.35,
+   "importe": 108.39,
+   "descripcion": "Derribo de solera de hormigón ligeramente armado, de hasta 15 cm de espesor, con compresor y carga manual de escombros sobre camión o contenedor"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P2143-4RR2",
+   "unidad": "m2",
+   "resumen": "Arranque pavim. cerámico,m.man.,carga manual",
+   "cantidad": 3.9,
+   "precio": 11.56,
+   "importe": 45.08,
+   "descripcion": "Arranque de pavimento cerámico, con medios manuales y carga manual de escombros sobre camión o contenedor"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P214R-8GWY",
+   "unidad": "m2",
+   "resumen": "Apertura de hueco,e=40cm,a mano+mart.romp.man.,carga manual",
+   "cantidad": 34.16,
+   "precio": 70.05,
+   "importe": 2392.91,
+   "descripcion": "Apertura de hueco para posterior colocación de la carpintería, en hoja exterior de cerramiento de fachada, de fábrica, vista, formada por doble hoja de ladrillo perforado de 24/25 cm de espesor, con medios manuales, sin afectar a la estabilidad de la hoja o de los elementos constructivos contiguos, y carga manual de escombros sobre camión o contenedor."
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "DLP300142",
+   "unidad": "Ud",
+   "resumen": "Desmontaje de puerta de garaje.",
+   "cantidad": 1.0,
+   "precio": 1481.31,
+   "importe": 1481.31,
+   "descripcion": "Desmontaje de puerta de garaje abatible de más de 7 m² de superficie, con medios manuales y recuperación del material para su posterior ubicación en otro emplazamiento, siendo el orden de ejecución del proceso inverso al de su instalación, sin deteriorar los elementos constructivos a los que está sujeta, y carga manual sobre camión o contenedor. Criterio de valoración económica: El precio incluye el desmontaje de los mecanismos y de los accesorios. Incluye: Desmontaje del elemento. Clasificación y etiquetado. Acopio de los materiales a reutilizar. Carga manual del material a reutilizar sobre camión. Retirada y acopio de los restos de obra. Limpieza de los restos de obra. Carga manual de los restos de obra sobre camión o contenedor. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente desmontadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P2142-4RN5",
+   "unidad": "m",
+   "resumen": "Arranque coron.,metal,hasta 30cm,m.man.,carga manual",
+   "cantidad": 13.87,
+   "precio": 7.47,
+   "importe": 103.61,
+   "descripcion": "Arranque de coronación de metal, de hasta 30 cm de ancho, con medios manuales y carga manual de escombros sobre camión o contenedor. Incluye cortes necesarios según indicaciones de ls DF."
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "DIE040",
+   "unidad": "Ud",
+   "resumen": "Desmontaje de centralización de contadores.",
+   "cantidad": 1.0,
+   "precio": 6.7,
+   "importe": 6.7,
+   "descripcion": "Desmontaje de centralización de contadores instalada en cuarto o armario de contadores, formada por 2 módulos, con medios manuales, y carga manual sobre camión o contenedor. Incluye: Desmontaje del elemento. Retirada y acopio del material desmontado. Limpieza de los restos de obra. Carga manual del material desmontado y restos de obra sobre camión o contenedor. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente desmontadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P21G1-4RU1",
+   "unidad": "m",
+   "resumen": "Desmontaje de bajante interior, de 200mm de diámetro",
+   "cantidad": 10.8,
+   "precio": 8.13,
+   "importe": 87.8,
+   "descripcion": "Desmontaje de bajante interior, de 200mm de diámetro máximo, con medios manuales, y carga manual sobre camión o contenedor"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P21G1-4RU2",
+   "unidad": "m",
+   "resumen": "Desmontaje de colector suspendido, de 200mm de diámetro máximo,",
+   "cantidad": 3.85,
+   "precio": 15.16,
+   "importe": 58.37,
+   "descripcion": "Desmontaje de colector suspendido, de 200mm de diámetro máximo, con medios manuales y carga manual sobre camión o contenedor"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P221I-8GY9",
+   "unidad": "m",
+   "resumen": "Excav.zanja instal.20x60cm tractor+zanjad.,rell.+compact. tierra",
+   "cantidad": 10.2,
+   "precio": 16.6,
+   "importe": 169.32,
+   "descripcion": "Excavación de zanja para paso de instalaciones de 20 cm de anchura y 45 cm de profundidad, con medios manuales y relleno y compactación con tierras seleccionadas de la propia excavación, sin piedras con medios manuales"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P214K-CRN1",
+   "unidad": "m2",
+   "resumen": "Derribo.cub.inclin. chapas met. m.man.,carga manual",
+   "cantidad": 2.0,
+   "precio": 23.5,
+   "importe": 47.0,
+   "descripcion": "Derribo parcial de cubierta inclinada de chapas metálicas tipo panel sándwich para pasos de instalaciones y accesorios de cubierta,con medios manuales y carga manual de escombros sobre camión o contenedor"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P5ZJR-HBNN",
+   "unidad": "m",
+   "resumen": "Reparación canal lámina bituminosa autoprotegida",
+   "cantidad": 4.0,
+   "precio": 79.99,
+   "importe": 319.96,
+   "descripcion": "Reparación de canal hasta 80 cm de desarrollo colocando una lámina impermeabilizante bituminosa con autoprotección metálica adherida en caliente, y rehaciendo las embocaduras de los bajantes"
+  },
+  {
+   "capitulo": "TRABAJOS PREVIOS Y DERRIBOS",
+   "codigo": "P5ZJR-HBNQ",
+   "unidad": "m",
+   "resumen": "Limpieza canal,destasc.gárgolas+bajantes",
+   "cantidad": 68.4,
+   "precio": 2.41,
+   "importe": 164.84,
+   "descripcion": "Limpieza de canal y desatasco de gárgolas y bajantes"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > CERRAMIENTOS DE FACHADA",
+   "codigo": "P6126-5A4X",
+   "unidad": "m2",
+   "resumen": "Pared cerram.apoyada,1cara,11,5cm,ladrillo perforado,240x115x100",
+   "cantidad": 1.0,
+   "precio": 64.54,
+   "importe": 64.54,
+   "descripcion": "Pared de cerramiento apoyada a una cara vista de espesor 11,5 cm, de ladrillo perforado, de 240x115x100 mm, caras vistas, categoría I, HD, según la norma UNE-EN 771-1, colocado con mortero mixto de cemento pórtland con caliza CEM II/B-L, cal y arena, con 200 kg/m3 de cemento, con una proporción en volumen 1:2:10 y 2,5 N/mm2 de resistencia a compresión, elaborado en obra"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > CERRAMIENTOS DE FACHADA",
+   "codigo": "P6145-56HN",
+   "unidad": "m2",
+   "resumen": "Tabicón apoyado divis.4cm",
+   "cantidad": 3.4,
+   "precio": 22.29,
+   "importe": 75.79,
+   "descripcion": "Hoja de partición interior, de 4 cm de espesor, de fábrica de ladrillo cerámico hueco sencillo, para revestir, 24x11,5x4 cm, con juntas horizontales y verticales de 10 mm de espesor, recibida con mortero de cemento industrial, color gris, M-5, suministrado a granel."
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P87D-6RNI",
+   "unidad": "u",
+   "resumen": "Relleno agujero <=30x30x30cm3 en param.,baldosa cerám.+mort.mixt",
+   "cantidad": 24.0,
+   "precio": 47.73,
+   "importe": 1145.52,
+   "descripcion": "Partida alzada de estimación de relleno de agujeros e imperfecciones de fachada de obra vista y reparación, en paramento vertical con mortero mixto 1:2:10 y acabad enfoscado fratasado con mortero de cal 1:4"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P874-HKTD",
+   "unidad": "m2",
+   "resumen": "Limpieza sup. param.vert. mortero,cepillado manual+retirada elem",
+   "cantidad": 167.24,
+   "precio": 9.17,
+   "importe": 1533.59,
+   "descripcion": "Limpieza superficial de paramento vertical de mortero, de polvo, restos orgánicos y biodepósitos-detritus con medios manuales no agresivos e instrumentos desincrustantes con cepillado manual y retirada de elementos sueltos"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P89H-4V75",
+   "unidad": "m2",
+   "resumen": "Pintado vert. ext. cemento,pintura silicato,liso,imprimación neu",
+   "cantidad": 218.66,
+   "precio": 14.05,
+   "importe": 3072.17,
+   "descripcion": "Aplicación manual de dos manos de pintura a la cal, color blanco, la primera mano diluida con un 30 a 40% de agua y la siguiente diluida con un 30% de agua o sin diluir, (rendimiento: 0,29 l/m² cada mano); previa aplicación de una mano de imprimación granulosa translúcida, sobre paramento exterior. Se incluyen todos los medios auxiliares para pintado de paramento vertical y horizontal hasta 7 metros de altura. Incluye pintado de superficies tanto lisas como rugosas, jambas, dinteles, cableado de fachada, y todos los elementos que conforman el exterior del edificio."
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P811-3EQD",
+   "unidad": "m2",
+   "resumen": "Enfoscado maestreado,vert.ext.,h<3m,mortero mixto 1:0,5:4,salpic",
+   "cantidad": 41.94,
+   "precio": 43.75,
+   "importe": 1834.88,
+   "descripcion": "Enfoscado maestreado sobre paramento vertical exterior, a 3,00 m de altura, como máximo, con mortero mixto 1:0,5:4, acabado salpicado según indicaciones de la DF"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P4DB-4317",
+   "unidad": "m2",
+   "resumen": "Montaje+desmont.encofrado tablero,p/brancales recta,horm.visto",
+   "cantidad": 20.34,
+   "precio": 85.97,
+   "importe": 1748.63,
+   "descripcion": "Montaje y desmontaje de encofrado con tablero de madera de pino, en horizontal, para brancales y antepechos de directriz recta, para dejar el hormigón visto, sin berenjenos. Incluye desencofrante y despieces de tableros según DF. Incluye pulido y reparación de zuncho superior de hormigón existente."
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P453A-KG3J",
+   "unidad": "m3",
+   "resumen": "Hormigonado brancales y antepecho con hormigón",
+   "cantidad": 3.4,
+   "precio": 916.05,
+   "importe": 3114.57,
+   "descripcion": "Hormigonado de brancales y antepecho con hormigón para armar autocompactante con aditivo hidrófugo HA - 25 / AC / 10 / XC1 con una cantidad de cemento de 275 kg/m3 i relación agua cemento =< 0.6, vertido con cubilote"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P4BD-43N1",
+   "unidad": "m2",
+   "resumen": "Armadurap/muro AP500T,malla electr.acero corr.ME 15x15cm,D:6-6mm",
+   "cantidad": 20.34,
+   "precio": 22.38,
+   "importe": 455.21,
+   "descripcion": "Armadura para muro AP500 T con malla electrosoldada de barras corrugadas de acero ME 15x15 cm D:6-6 mm 6x2,2 m B500T UNE-EN 10080"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P4B7-3FPH",
+   "unidad": "kg",
+   "resumen": "Arm.y conectores para brancales AP400S barras corrug.",
+   "cantidad": 98.79,
+   "precio": 17.28,
+   "importe": 1707.09,
+   "descripcion": "Armadura y conectores para brancales con redondos D12 de 15cmc/20 AP400 S de acero en barras corrugadas B400S de límite elástico >= 400 N/mm2. Incluye la formación de agujeros y taco químico"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P9G7-9LSU",
+   "unidad": "m2",
+   "resumen": "Pavimento e=15cm hormigón con fibras HAF-30/A-3-3/F/12-60/IIb+E,",
+   "cantidad": 3.26,
+   "precio": 44.53,
+   "importe": 145.17,
+   "descripcion": "Pavimento de 15 cm de espesor de hormigón con fibras HAF-30/A-3-3/F/12-60/IIb+E, tamaño máximo del árido 12 mm, con >= 300 kg/m3 de cemento y entre 30 y 35 kg/m3 de fibras de acero conformadas en extremos, apto para clase de exposición IIb+E, acabado fratasado mecánico"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P8B1-6073",
+   "unidad": "m2",
+   "resumen": "Hidrof.param.horiz.ext.,protector hidrófugo",
+   "cantidad": 6.98,
+   "precio": 38.25,
+   "importe": 266.99,
+   "descripcion": "Hidrofugado de paramento horizontal exterior con protector hidrófugo"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P9VE-B6JX",
+   "unidad": "m",
+   "resumen": "Peldaño SUPERSTEP de Breinco de una pieza monolítica de hormigón",
+   "cantidad": 3.6,
+   "precio": 111.88,
+   "importe": 402.77,
+   "descripcion": "Peldaño SUPERSTEP de Breinco de una pieza monolítica de hormigón prefabricado de 1 pieza de sección escuadría de 15x40x120cm, con bisel y acabado liso, de color blanco, colocado con mortero M 7.5"
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P9D3-35SU",
+   "unidad": "m2",
+   "resumen": "Pavimento bald.cerám.común rect. 28x14x1,3cm,rosado,col.mort.1:2",
+   "cantidad": 7.4,
+   "precio": 84.0,
+   "importe": 621.6,
+   "descripcion": "Remate de cornisa formado por doble rasilla cerámica común, de forma rectangular, de 28x14x1,3 cm, de color rosado, colocada a pique de maceta con mortero mixto 1:2:10."
+  },
+  {
+   "capitulo": "ENVOLVENTE EXTERIOR > ACABADOS DE FACHADA",
+   "codigo": "P811-3F8R",
+   "unidad": "m2",
+   "resumen": "Enfoscado buena vista,vert.ext.,h<3m,mortero mixto 1:2:10,fratas",
+   "cantidad": 1.2,
+   "precio": 49.4,
+   "importe": 59.28,
+   "descripcion": "Enfoscado a buena vista sobre paramento vertical exterior, a 3,00 m de altura, como máximo, con mortero mixto 1:2:10, fratasado"
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > DIVISORIAS INTERIORES",
+   "codigo": "P43N1-W0FD",
+   "unidad": "m2",
+   "resumen": "Entramado de madera de 10cm de espesor formado por montantes, du",
+   "cantidad": 30.41,
+   "precio": 135.76,
+   "importe": 4128.46,
+   "descripcion": "Entramado de madera de 10cm de espesor formado por montantes, durmientes y testeros de madera aserrada de pino silvestre tipo KVH con cerrificado PEFC de 48x98mm de sección, clase resistente C24 y separación entre montantes de 60cm. Tratamiento al autoclave para clase de uso 3.1. Con tratamiento insecticisda-fungicida con un nivel de penetración NP 1 según UNE-EN 351-1; cortado a medida de elementos a taller y montado en obra con fijaciones mecánicas; incluye los rigidizadores de trabas y/o uniones, bandas desolidarizadora de EPDM 5mm, bandas sellantes y fijaciones mecánicas de acero galvanizado. Se incluyen las perforaciones en montantes y travesaños necesarias para el paso de instalaciones según indicaciones de la DF. Partida totalmente acabada según planos, detalles e indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > DIVISORIAS INTERIORES",
+   "codigo": "P43N1-W0FX",
+   "unidad": "m2",
+   "resumen": "Entramado de madera de 5cm de espesor formado por montantes, dur",
+   "cantidad": 20.01,
+   "precio": 135.76,
+   "importe": 2716.56,
+   "descripcion": "Entramado de madera de 5cm de espesor formado por montantes, durmientes y testeros de madera aserrada de pino silvestre tipo KVH con cerrificado PEFC de 48x98mm de sección, clase resistente C24 y separación entre montantes de 60cm. Tratamiento al autoclave para clase de uso 3.1. Con tratamiento insecticisda-fungicida con un nivel de penetración NP 1 según UNE-EN 351-1; cortado a medida de elementos a taller y montado en obra con fijaciones mecánicas; incluye los rigidizadores de trabas y/o uniones, bandas desolidarizadora de EPDM 5mm, bandas sellantes y fijaciones mecánicas de acero galvanizado. Se incluyen las perforaciones en montantes y travesaños necesarias para el paso de instalaciones según indicaciones de la DF. Partida totalmente acabado según planos, detalles e indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > DIVISORIAS INTERIORES",
+   "codigo": "NAO03000000X",
+   "unidad": "m²",
+   "resumen": "Aislamiento térmico entre montantes en trasdosado autoportante d",
+   "cantidad": 30.41,
+   "precio": 27.24,
+   "importe": 828.37,
+   "descripcion": "Aislamiento térmico entre los montantes de la estructura portante del trasdosado autoportante de placas, formado por panel semirrígido de lana mineral, espesor 2x50 mm y densidad 30-40kg/m3, según UNE-EN 13162, colocado entre los montantes de la estructura portante. Incluye: Corte del aislamiento. Colocación del aislamiento entre los montantes. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > DIVISORIAS INTERIORES",
+   "codigo": "NAO030000000",
+   "unidad": "m²",
+   "resumen": "Aislamiento térmico entre montantes en trasdosado autoportante d",
+   "cantidad": 20.01,
+   "precio": 22.31,
+   "importe": 446.42,
+   "descripcion": "Aislamiento térmico entre los montantes de la estructura portante del trasdosado autoportante de placas, formado por panel semirrígido de lana mineral, espesor 50 mm y densidad de 30-40kg/m3, según UNE-EN 13162, colocado entre los montantes de la estructura portante. Incluye: Corte del aislamiento. Colocación del aislamiento entre los montantes. Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > DIVISORIAS INTERIORES",
+   "codigo": "P43N1-W01X",
+   "unidad": "m2",
+   "resumen": "Recrecido de rastreles para enrase de revestimiento de madera co",
+   "cantidad": 34.0,
+   "precio": 49.36,
+   "importe": 1678.24,
+   "descripcion": "Recrecido de rastreles para enrase de revestimiento de madera con pilastras de ladrillo. Subestrucrura de rastreles horizontales y verticales para generar cámara entre pilastras de madera de abeto cepillado de 48x40mm de sección, clase resistente C16; con tratamiento insecticida-fungicida con un nivel de protección NP 1 según UNE-EN 351-1; Incluye Tratamiento en autoclave vacío-vacío de la estructura de madera, con garantía decenal, y certificado para Clase de Uso 3.1."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > DIVISORIAS INTERIORES",
+   "codigo": "P43N1-W0X2",
+   "unidad": "m",
+   "resumen": "Rastreles de madera para falso techo y encofrado temporal de lan",
+   "cantidad": 94.2,
+   "precio": 10.99,
+   "importe": 1035.26,
+   "descripcion": "Suministro y colocación de rastreles auxiliares de madera para formación y delimitación perimetral de falso techo y encofrado temporal durante los trabajos de proyección de lana de roca, formados por un primer rastrel de madera aserrada de pino o abeto de sección 40×40 mm, fijado mecánicamente al soporte existente y que permanecerá instalado como remate perimetral del falso techo, y un segundo rastrel superpuesto de sección 40×20 mm, fijado mediante puntas o tornillos, que actuará como encofrado provisional durante el proyectado de lana de roca. Incluye suministro de madera sin cepillar, cortes, mermas, encuentros, fijaciones, replanteo, colocación, nivelación y posterior desmontaje y retirada del rastrel superior una vez finalizado el proyectado. Totalmente ejecutado y acabado, sin incluir medios auxiliares de elevación, valorados en partida independiente."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P7D0-5RJN",
+   "unidad": "m2",
+   "resumen": "R01. Aislamiento e=5cm,mortero ignifugo cemento+MW-roca,250kg/m3",
+   "cantidad": 825.08,
+   "precio": 27.49,
+   "importe": 22681.45,
+   "descripcion": "R01. Aislamiento de espesor 5 cm, con mortero ignífugo de cemento y lana mineral de roca, de 250 kg/m3 de densidad, proyectado sobre elementos superficiales. Incluye medio auxiliares para altura >3m. Incluso proyectado sobre elementos de instalaciones y cableado según indicaciones de la DF. Incluye protección de los elementos adyacentes en paramentos verticales y horizontales."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "K898X00P",
+   "unidad": "m2",
+   "resumen": "Pintado a pistola de paramento horizontal interior sobre proyect",
+   "cantidad": 445.08,
+   "precio": 6.9,
+   "importe": 3071.05,
+   "descripcion": "Pintado a pistola de paramento horizontal y vertical interior sobre proyectado de lana de roca y/o mortero ablativo, con pintura plástica con acabado liso, con una capa de fondo, diluida, y dos de acabado, aplicado a pistola, color a elegir equivalente a RAL 9010. Incluye pintado sobre tubos de PVC, conductos, cableado y demás, instalaciones según indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P864-AE5L",
+   "unidad": "m",
+   "resumen": "R02. Revestimiento vert.,h<3m, tricapa",
+   "cantidad": 63.41,
+   "precio": 149.43,
+   "importe": 9475.36,
+   "descripcion": "R02. Revestimiento vertical a 3,00 m de altura, como máximo, con tablero tricapa de madera de abeto, de 16 mm de espesor, dimensiones del panel 1250x2500mm, veta vertical, para ambiente seco según UNE-EN 636, reacción al fuego C-s2, d0, colocado fijaciones mecánicas sobre rastrelado de madera de 40x40mm cada 40cm. Incluye tramos de panel sobrante para cerrar la camar superior de la zona entre pilastras de la nave. Incluye fijaciones mecánicas, cortes y despiece según planos e indicaciones de la DF. Se incluyen las perforaciones en muros y forjados necesarias para el paso de instalaciones según indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P864-REXX",
+   "unidad": "m",
+   "resumen": "R03-R04-R05. Revestimiento vert.,h<3m, tricapa",
+   "cantidad": 29.01,
+   "precio": 127.3,
+   "importe": 3692.97,
+   "descripcion": "R03-R04-R05. Revestimiento vertical a 3,00 m de altura, como máximo, con tablero tricapa de madera de abeto, de 16 mm de espesor, dimensiones del panel 1250x2500mm, veta vertical, para ambiente seco según UNE-EN 636, reacción al fuego C-s2, d0. Incluye fijaciones mecánicas, cortes y despiece según planos e indicaciones de la DF. Se incluyen las perforaciones en muros y forjados necesarias para el paso de instalaciones según indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P83EA-3Y8H",
+   "unidad": "m2",
+   "resumen": "R06. Aplacado vert. placa cemento Aquapanel",
+   "cantidad": 19.32,
+   "precio": 36.48,
+   "importe": 704.79,
+   "descripcion": "R06. Aplacado vertical con placa de cemento Portland Aquapanel Indoor ´´KNAUF´´ de 12,5x1200x2400mm, colocada sobre estructura de entramado de madera. Incluye encintado, masillado y fijaciones mecánicas con tornillería autoperforante Aquapanel Mix TB 4,2x25"
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P822-3NQV",
+   "unidad": "m2",
+   "resumen": "Alicatado de paramento vertical interior a una altura <= 3 m con",
+   "cantidad": 12.86,
+   "precio": 87.04,
+   "importe": 1119.33,
+   "descripcion": "Alicatado de paramento vertical interior a una altura <= 3 m con azulejo de gres porcelánico de 15x15cm con precorte 3,75x3,75cm de DITAI tipo Raster Grid S o equivalente color a definir por la DF, grupo BIII (UNE-EN 14411), colocadas con adhesivo cementoso tipo C2 según norma UNE-EN 12004 y rejuntado con mortero de juntas cementoso mejorado, con absorción de agua reducida y resistencia elevada a la abrasión tipo CG 2 W A, rejuntado color a definir por la DF, en juntas de 3 mm de espesor (UNE-EN 13888). Despiece según planos e indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P89I-4V8S",
+   "unidad": "m2",
+   "resumen": "Pint.vert. pintura plástica liso+selladora+2acab.",
+   "cantidad": 18.99,
+   "precio": 6.63,
+   "importe": 125.9,
+   "descripcion": "Pintado de paramento vertical de yeso/placa de cemento, con pintura plástica con acabado liso, con una capa selladora y dos de acabado. Incluye capa de imprimación en caso de ser necesaria. Color a definir por la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P89B-4UEC",
+   "unidad": "m2",
+   "resumen": "Pintado cercha horm.,pintura plástica,liso,1fondo+2acab.",
+   "cantidad": 96.22,
+   "precio": 8.8,
+   "importe": 846.74,
+   "descripcion": "Pintado de cercha de hormigón con pintura plástica, con acabado liso con una capa de fondo diluida, y dos de acabado. Color a definir por la DF. Icluye plataforma elevadora para una altura de hasta 20m."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P8A2-HYMQ",
+   "unidad": "m2",
+   "resumen": "Barnizado de paneles tricapa, con barniz ignífugo a base de resi",
+   "cantidad": 193.87,
+   "precio": 12.46,
+   "importe": 2415.62,
+   "descripcion": "Barnizado de paneles tricapa, con barniz ignífugo a base de resinas al agua de un componente, para madera, con clase de reacción al fuego C-s2,d0, con dos capas, con la superficie mate."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P8E2-H7WD",
+   "unidad": "m",
+   "resumen": "Coronación arrimadero perfil aluminio anodizado U 50x20x2, fijad",
+   "cantidad": 12.25,
+   "precio": 18.88,
+   "importe": 231.28,
+   "descripcion": "Coronación de arrimadero con perfil de aluminio anodizado en L 15x15mm, de remate superior de baldosas, fijado mecánicamente sobre paredess, acabado pintado con pintura plástica acabado mate textura lisa, aplicada en 2 manos sobre una mano de imprimación acrílica, color igual que las paredes D01. Sellado inferior con rejuntado cementoso. Posición según detalles e indicaciones de la DF."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P8A4-AKV8",
+   "unidad": "m2",
+   "resumen": "Tratam.prot.superf.,superf.vert.madera,lasur al agua a base de r",
+   "cantidad": 195.18,
+   "precio": 62.76,
+   "importe": 12249.5,
+   "descripcion": "Tratamiento de protección superficial de superficie vertical u horizontal de madera, con lasur al agua a base de resinas con protector insecticida-fungicida, acabado mate transparente o color a definir por la DF, aplicado en dos manos de lasur y dos manos de lijado alternados. Con protección al fuego incluida para cumplimiento Cs2d0."
+  },
+  {
+   "capitulo": "DIVISORIAS Y ACABADOS INTERIORES > REVESTIMIENTOS INTERIORES",
+   "codigo": "P653-8NX1",
+   "unidad": "m2",
+   "resumen": "Placa yeso hidrofugada adherida 15mm",
+   "cantidad": 15.38,
+   "precio": 26.79,
+   "importe": 412.03,
+   "descripcion": "Revestimiento interior de paramento vertical mediante placa de yeso laminado hidrófuga (H) de 15 mm de espesor, atornillada mecánicamente directamente sobre soporte de placa de cemento tipo Aquapanel, sin estructura auxiliar de perfilería metálica, incluso p/p de tornillería, cortes, ajustes y accesorios necesarios para su correcta colocación."
+  },
+  {
+   "capitulo": "PAVIMENTOS",
+   "codigo": "P9J4-9ESU",
+   "unidad": "m2",
+   "resumen": "Felpudo perfiles alum.ensamblables anch=25 a 35mm,h=9mm,cepillo,",
+   "cantidad": 4.18,
+   "precio": 297.43,
+   "importe": 1243.26,
+   "descripcion": "Felpudo formado por perfiles de aluminio ensamblables de 25 a 35 mm de ancho y 9 mm de altura, con acabado de cepillo, instalado en superficie o empotrado en pavimentos laminados"
+  },
+  {
+   "capitulo": "PAVIMENTOS",
+   "codigo": "P930-11A8F",
+   "unidad": "m3",
+   "resumen": "Base p/pav. hormigón para usos no estructurales con áridos recic",
+   "cantidad": 2.25,
+   "precio": 373.99,
+   "importe": 841.48,
+   "descripcion": "Base para pavimento de hormigón para usos no estructurales con áridos reciclados, de consistencia blanda y tamaño máximo del árido 20 mm, con 235 kg/m3 de cemento, HRNE- 235/ B/ 20, con una sustitución del 50% del árido grueso por árido reciclado mixto con marcado CE, procedente de plantas de reciclado de residuos de la construcción o demolición autorizadas, vertido con transporte interior mecánico con extendido y compactado manual, acabada maestreado, con dúmper elèctric"
+  },
+  {
+   "capitulo": "PAVIMENTOS",
+   "codigo": "P4B9-D6QO",
+   "unidad": "m2",
+   "resumen": "Armadura d/losa AP500T,malla electr.acero corr.ME 15x15cm,D:5-5m",
+   "cantidad": 15.0,
+   "precio": 8.57,
+   "importe": 128.55,
+   "descripcion": "Armadura de losas AP500 T con malla electrosoldada de barras corrugadas de acero ME 15x15 cm D:5-5 mm 6x2,2 m B500T UNE-EN 10080"
+  },
+  {
+   "capitulo": "PAVIMENTOS",
+   "codigo": "P9M3-XBVF",
+   "unidad": "m2",
+   "resumen": "Pavim.cont.resinas,1 c.imprimación,1 capa base,1capa acabado",
+   "cantidad": 383.5,
+   "precio": 43.45,
+   "importe": 16663.08,
+   "descripcion": "Suministro y colocación de pavimento continuo tipo Compac EP/S QC, de 3–4 mm de espesor, formado por resinas epoxi y áridos de cuarzo coloreado, con sellado epoxi y acabado de barniz de poliuretano. Preparación de la superficie mediante medios mecánicos para abrir el poro y mejorar la adherencia, incluyendo limpieza y aspirado. Aplicación a rodillo de una capa de imprimación de resina epoxi (150–200 g/m²), con espolvoreo de árido de cuarzo natural QN de 0,7–1,3 mm (500 g/m²). Aplicación de una capa de fondo de resina epoxi (800 g/m²), premezclada con áridos de cuarzo coloreado QC de 0,7–1,3 mm (500 g/m²). Sobre la capa todavía húmeda, espolvoreo de árido de cuarzo coloreado QC de 0,7–1,3 mm (3.500 g/m²). Compactación y alisado mediante fratasadora eléctrica ligera o «mosquito». Aplicación mediante llana de goma o metálica de dos capas de sellado de resina epoxi (250 g/m² por capa). Acabado con tres manos de barniz de poliuretano mate, satinado o brillante, a elegir por la dirección facultativa (75 g/m² por mano), respetando los tiempos de repintado indicados por el fabricante. Incluye materiales, mano de obra y medios auxiliares necesarios para su completa ejecución."
+  },
+  {
+   "capitulo": "PAVIMENTOS",
+   "codigo": "P9D5-35ZC",
+   "unidad": "m2",
+   "resumen": "Pavimento int.baldosa gres prensado esmaltado antides.,rectang/c",
+   "cantidad": 6.23,
+   "precio": 87.17,
+   "importe": 543.07,
+   "descripcion": "Pavimento interior, de baldosa de gres porcelánico de 15x15 con precorte 3,75x3,75cm de DITAIL tipo RASTER GRID S color a definir por la DF, precio alto, grupo BIb-BIIa (UNE-EN 14411), colocadas con adhesivo para baldosa cerámica C2 (UNE-EN 12004) y rejuntado con lechada CG2 (UNE-EN 13888) color a definir por la DF."
+  },
+  {
+   "capitulo": "PAVIMENTOS",
+   "codigo": "P9ER-HY9N",
+   "unidad": "m2",
+   "resumen": "Reposición pav.loseta, loseta gris 20x20x4cm,cl.1a,precio sup. L",
+   "cantidad": 4.8,
+   "precio": 113.73,
+   "importe": 545.9,
+   "descripcion": "Reposición de pavimento de loseta, con loseta gris de 20x20x4 cm, clase 1a, precio superior de textura liso, colocado al tendido con mortero, incluído demolición de la base, repaso y compactado de caja de pavimento, con compactación del 95% PM y ejecución de la base de espesor 10 cm con hormigón de 200 kg/m3, con una proporción en volumen 1:3:6, en entorno urbano sin dificultad de movilidad, en aceras <= 3 m de ancho o calzada/plataforma única <= 7 m de ancho, sin afectación por servicios o elementos de mobiliario urbano, en actuaciones de 1 a 10 m2"
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P43G-CW7B",
+   "unidad": "m2",
+   "resumen": "Techo de tableros de madera tricapa de abeto de 42mm de espesor,",
+   "cantidad": 87.5,
+   "precio": 187.47,
+   "importe": 16403.63,
+   "descripcion": "Techo de tableros de madera tricapa de abeto de 42mm de espesor, panel de 5000x2500mm. Anclado mecánicamente sobre el entramado vertical de madera, y sobre perfiles de madera laterales cuando apoya sobre pared lateral. Despiece según planos. Se incluyen las perforaciones en forjados necesarias para el paso de instalaciones según indicaciones de la DF."
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P84N-A82E",
+   "unidad": "m2",
+   "resumen": "Formación cajón falso techo placas yeso laminado tipo H,e=15mm,c",
+   "cantidad": 4.07,
+   "precio": 53.92,
+   "importe": 219.45,
+   "descripcion": "Formación de cajón en falso techo con placas de yeso laminado tipo hidrófuga (H) de 15 mm de espesor, colocadas con entramado estructura simple de acero galvanizado formado por perfiles colocados cada 600 mm fijados al techo mediante varilla de suspensión cada 1,2 m. Incluye medios auxiliares para colocación de cajón a más de 3m de altura"
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P848-HCI5",
+   "unidad": "m2",
+   "resumen": "Falso techo de policarbonato reticulado de 6 paredes de 16mm de",
+   "cantidad": 338.9,
+   "precio": 21.46,
+   "importe": 7272.79,
+   "descripcion": "Falso techo de policarbonato reticulado de 6 paredes de 16mm de grosor, color opal. Colocado apoyado sobre entramado de perfiles de acero galvanizado, para una altura de hasta 6m. Incluye corte in situ con sierra caladora a baja velocidad y transporte de paneles. Incluye plataforma elevedora para colocación a más de 3m de altura."
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P848-HCX2",
+   "unidad": "m",
+   "resumen": "Instalación de subestructura para falso techo formada por perfil",
+   "cantidad": 274.7,
+   "precio": 42.04,
+   "importe": 11548.39,
+   "descripcion": "Instalación de subestructura para falso techo formada por perfiles intermedios de acero galvanizado tipo Omega 100x30x30mm y 2mm de espesor, apoyada y fijada mecanicamente a subestructura de perfiles L perimetrales. Incluye cortes en obra según despiece de planos. Incluye colocación a más de 3m de altura."
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P848-HCIX",
+   "unidad": "m",
+   "resumen": "Instalación de subestructura para falso techo formada por perfil",
+   "cantidad": 217.47,
+   "precio": 43.19,
+   "importe": 9392.53,
+   "descripcion": "Instalación de subestructura para falso techo formada por perfiles perimetrales de acero galvanizado en L 50x30x3mm con cortes en las esquinas en inglete y fijadas a perímetro mediante taco químo D12 tornillo, arandela y tuerca. Incluye colocación a más de 3m de altura."
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P430-6UIK",
+   "unidad": "m3",
+   "resumen": "Viga de madera de 8x12 cm de sección, con elemento de madera lam",
+   "cantidad": 0.22,
+   "precio": 9249.46,
+   "importe": 2034.88,
+   "descripcion": "Viga de madera laminada combinada GL24c de 8x12 cm de sección, con espesor de laminado 33/45 mm, de 7x13 a 20x100 cm de sección constante y longitud hasta 25 m, trabajada en el taller y con tratamiento insecticida-fungicida con un nivel de penetración NP 2 según UNE-EN 351-1, montada sobre tablero tricapa y atornillada a tablero por la cara inferior"
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P8A2-HYMQ",
+   "unidad": "m2",
+   "resumen": "Barnizado de paneles tricapa, con barniz ignífugo a base de resi",
+   "cantidad": 9.64,
+   "precio": 12.46,
+   "importe": 120.11,
+   "descripcion": "Barnizado de paneles tricapa, con barniz ignífugo a base de resinas al agua de un componente, para madera, con clase de reacción al fuego C-s2,d0, con dos capas, con la superficie mate."
+  },
+  {
+   "capitulo": "FALSOS TECHOS",
+   "codigo": "P8A4-AKV8",
+   "unidad": "m2",
+   "resumen": "Tratam.prot.superf.,superf.vert.madera,lasur al agua a base de r",
+   "cantidad": 83.02,
+   "precio": 62.76,
+   "importe": 5210.34,
+   "descripcion": "Tratamiento de protección superficial de superficie vertical u horizontal de madera, con lasur al agua a base de resinas con protector insecticida-fungicida, acabado mate transparente o color a definir por la DF, aplicado en dos manos de lasur y dos manos de lijado alternados. Con protección al fuego incluida para cumplimiento Cs2d0."
+  },
+  {
+   "capitulo": "CUBIERTA E IMPERMEABILIZACIONES",
+   "codigo": "P514-61T6",
+   "unidad": "m2",
+   "resumen": "Aisl.térm.cub.invert,plancha XPS,tens.compres.>= 300kPa,e=80mm,c",
+   "cantidad": 9.52,
+   "precio": 27.02,
+   "importe": 257.23,
+   "descripcion": "Aislamiento térmico para formación de cubierta invertida no transitable, con plancha de poliestireno extruido (XPS), resistencia a compresión >= 300 kPa, de 80 mm de espesor, con caras lisas y canto media madera, colocadas sin adherir, capa separadora con geotextil de polipropileno"
+  },
+  {
+   "capitulo": "CUBIERTA E IMPERMEABILIZACIONES",
+   "codigo": "P750-E81H",
+   "unidad": "m2",
+   "resumen": "Membrana e=1,5mm,de una láminaPVC p/intemp.s/arm.,col.s/adh.",
+   "cantidad": 9.52,
+   "precio": 34.97,
+   "importe": 332.91,
+   "descripcion": "Membrana de espesor 1,5 mm, de una lámina de PVC flexible resistente a la intemperie, sin armadura, colocada sin adherir al soporte. Incluye perfil colaminado perimetral plano para fijación y sellado perimetral de todo el conjunto. Partida totalmente acabada según indicaciones de la DF."
+  },
+  {
+   "capitulo": "CUBIERTA E IMPERMEABILIZACIONES",
+   "codigo": "P7ZB-AHFD",
+   "unidad": "m",
+   "resumen": "Remate p/imper.perfil ch.acero galv.,e=0,6mm,+lám.PVC flex.,desa",
+   "cantidad": 12.4,
+   "precio": 34.02,
+   "importe": 421.85,
+   "descripcion": "Remate para impermeabilización con perfil colaminado de plancha de acero galvanizado de 0,6 mm de espesor, con lámina de PVC flexible adherida y resistente a la intemperie de 1,2 mm de espesor, de 160 mm de desarrollo e 2 pliegues, colocado con fijaciones mecánicas"
+  },
+  {
+   "capitulo": "CUBIERTA E IMPERMEABILIZACIONES",
+   "codigo": "P732-611O",
+   "unidad": "m2",
+   "resumen": "Reparación de impermabilización formado por imprimación previa t",
+   "cantidad": 2.1,
+   "precio": 44.56,
+   "importe": 93.58,
+   "descripcion": "Reparación de impermabilización formado por imprimación previa tipo ECO PRIM GRIP PLUS o equivalente, encintado de esquinas entre perfiles metálicos y panel sandwich con MAPEBAND EASY adherido, y posterior cubrimiento de toda la superfície afectada con impermeabilizante acrílico. Previo sellado de juntas con silicona tipo Mapeflex MS45 o equivalente."
+  },
+  {
+   "capitulo": "CUBIERTA E IMPERMEABILIZACIONES",
+   "codigo": "P630-ZBA7",
+   "unidad": "m2",
+   "resumen": "Remate lateral canal planch.plegada",
+   "cantidad": 10.96,
+   "precio": 62.72,
+   "importe": 687.41,
+   "descripcion": "Tabique pluvial de planchas plegada (diversos patrones) de acero galvanizado y prelacado, de 1,2 mm de espesor, colocadas horizontalmente, con solape, con fijaciones mecánicas sobre guias verticales, de perfiles conformados de acero galvanizado tipo omega; perfil de junta de estanqueidad vertical entre placas, aislamiento interior con placas de plancha de poliestireno extruido (XPS), canto media madera, con parte proporcional de remates perimetrales de plancha de acero prelacado"
+  },
+  {
+   "capitulo": "CUBIERTA E IMPERMEABILIZACIONES",
+   "codigo": "P547-6CHF",
+   "unidad": "m2",
+   "resumen": "Reparación puntual de cubierta sandwich",
+   "cantidad": 11.5,
+   "precio": 58.65,
+   "importe": 674.48,
+   "descripcion": "Reparación puntual de cubierta sándwich ejecutada *in situ*, con pendiente inferior al 30 %, formada por dos chapas grecada de acero galvanizado de 0,6 mm de espesor, con grecas cada 172 mm y 44 mm de altura, separadas mediante perfiles omega de acero de 100 mm de altura y aislamiento intermedio de lana mineral de roca de 90 mm de espesor y densidad de 126 a 160 kg/m³. Incluye desmontaje parcial de los elementos deteriorados, sustitución o reposición de chapas, aislamiento y perfiles auxiliares afectados, fijaciones mecánicas, solapes, remates, sellado de juntas y encuentros con la cubierta existente, garantizando la continuidad de la impermeabilización y la estanqueidad del conjunto. Incluye materiales, cortes, mermas, ajustes y todos los trabajos necesarios para dejar la cubierta completamente reparada y acabada."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS EXTERIORES",
+   "codigo": "PAF9-5TGM",
+   "unidad": "u",
+   "resumen": "Fe01. Conjunto formado por 2 hojas batientes y 2 fijos laterales",
+   "cantidad": 1.0,
+   "precio": 4965.34,
+   "importe": 4965.34,
+   "descripcion": "Fe01. Conjunto formado por 2 hojas batientes y 2 fijos laterales. Material: Fijos serie SOLEAL 55 y puertas serie SOLEAL 55PY de Technal o equivalente de apertura exterior. Dimensiones: Hueco de obra de 402x238cm y hueco de paso de 85x233cm. Vidrio: Vidrio laminar 4+4/16 argón NE/4+4 Planitherm (bajo emisivo). Acabado: Anodizado plata. Accionamiento: Tirador tubular para puertas exteriores de acero inoxidable modelo I-2000 de Didheya de 60cm de longitud o eq. Barras antipánico de acero inoxidable JNF IN.20.951 o equivalente. Cerradura: Cerradura de seguridad de golpe y llave. Accesorios: Perfil de estanqueidad inferior de 22m para itinerario accesible y freno cierrapuertas."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS EXTERIORES",
+   "codigo": "PAF9-5TG1",
+   "unidad": "u",
+   "resumen": "Fe02. Conjunto formado por 4 ventanas de lamas orientables.",
+   "cantidad": 1.0,
+   "precio": 8717.21,
+   "importe": 8717.21,
+   "descripcion": "Fe02. Conjunto formado por 4 ventanas de lamas orientables. Material: Carpintería de aluminio con rotura de puente térmico modelo UIN2.RT o equivalente Dimensiones: Hueco de obra de 402x210cm. Dimensión de cada ventana 101x201cm. Vidrio: 3+3/12/3+3. Acabado: Anodizado plata. Accionamiento: Motorizado con MOTOR VISTO 230 V AC / 50 Hz controlado por mando a distancia. Accesorios: Incluye 4 motores para accionameinto y 1 mando a distancia para controlar el conjunto, emisor y receptor radio V230/50Hz. Incluye cableado e instalación de los motores para su correcto funcionamiento."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS EXTERIORES",
+   "codigo": "PAFA-7R5M",
+   "unidad": "u",
+   "resumen": "Fe03. Conjunto formado por 1 ventana fija.",
+   "cantidad": 1.0,
+   "precio": 2025.21,
+   "importe": 2025.21,
+   "descripcion": "Fe03. Conjunto formado por 1 ventana fija. Material: Ventana fija serie SOLEAL 55 de Technal o equivalente. Dimensiones: Hueco de obra de 220x231cm. Vidrio: 6+6/12 argón NE/4+4 Planitherm (bajo emisivo). Acabado: Anodizado plata."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS EXTERIORES",
+   "codigo": "PAF9-5TGX",
+   "unidad": "u",
+   "resumen": "Fe04. Conjunto formado por 2 puertas de 2 hojas batientes cada u",
+   "cantidad": 1.0,
+   "precio": 5885.49,
+   "importe": 5885.49,
+   "descripcion": "Fe04. Conjunto formado por 2 puertas de 2 hojas batientes cada una Material: Puertas serie SOLEAL 55PY de Technal o equivalente de apertura exterior. Dimensiones: Hueco de obra de 320x215cm y hueco de paso de 76x210cm. Vidrio: 4+4/12 argón NE/4+4 Planitherm (bajo emisivo). Acabado: Anodizado plata. Accionamiento: Tirador tubular para puertas exteriores de acero inoxidable modelo I-2000 de Didheya de 60cm de longitud o eq. Barras antipánico de acero inoxidable JNF IN.20.951 o equivalente. Cerradura: Cerradura de seguridad y llave. Accesorios: Perfil de estanqueidad inferior de 22m para itinerario accesible y freno cierrapuertas."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS EXTERIORES",
+   "codigo": "PAF9-5TX1",
+   "unidad": "u",
+   "resumen": "Fe05. Conjunto formado por 2 ventanas de lamas orientables.",
+   "cantidad": 1.0,
+   "precio": 3673.94,
+   "importe": 3673.94,
+   "descripcion": "Fe05. Conjunto formado por 2 ventanas de lamas orientables. Material: Carpintería de aluminio con rotura de puente térmico modelo UIN2.RT o equivalente Dimensiones: Hueco de obra de 320x121cm. Dimensión de cada ventana 160x121cm. Vidrio: 3+3/12/3+3. Acabado: Anodizado plata. Accionamiento: Motorizado con MOTOR VISTO 230 V AC / 50 Hz controlado por mando a distancia. Accesorios: Incluye 2 motores para accionameinto y 1 mando a distancia para controlar el conjunto, emisor y receptor radio V230/50Hz. Incluye cableado e instalación de los motores para su correcto funcionamiento."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS INTERIORES",
+   "codigo": "PAQ5-380F",
+   "unidad": "u",
+   "resumen": "Fi01. Puerta interior de madera con paneles de madera tricapa de",
+   "cantidad": 2.0,
+   "precio": 2458.98,
+   "importe": 4917.96,
+   "descripcion": "Fi01. Puerta interior de madera con paneles de madera tricapa de abeto para ir enrasada por la cara exterior y sin marco superior. Material: Marcos y estructura interior de la hoja de madera de pino flandes dimensiones según detalle, con tratamiento para los cantos vistos de los marcos y hoja. Hoja conformada por 2 paneles de madera tricapa de abeto AB/C de 16mm de espesor de 83x230cm, incluye barniz ignífugo para mejora de la reacción al fuego de la madera hasta conseguir un C-s2,d0 por la cara exterior. Aislamiento interior de lana mineral de 5cm de espesor. Dimensiones: Hueco de obra de 91x230cm y hueco de paso de 80x230cm. Acabado: Paneles tricapa y marcos vistos con acabado de 2 manos de lijado y 1 de lasur color estándar a definir por la DF o transparente aplicados de manera alterna (lijar+lasur+lijar). Accionamiento: Manilla tubular recta JNF IN.00.028 o equivalente. Herrajes: Bisagras ocultas para puerta enrasada modelo K6700 de la marca Koblenz o equivalente. Cerradura: Cerradura de embutir con resbalón. Señalética: 1 unidad con pictograma para baños formado por silueta de mujer y de hombre de panel de tricapa de 13mm con corte laser y mismo acabado que la hoja de la puerta. 1 unidad con pictograma para información formado por ´´i´´ de tricapa de 13mm con corte laser y mismo acabado que la hoja de la puerta."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS INTERIORES",
+   "codigo": "PAQ5-38X1",
+   "unidad": "u",
+   "resumen": "Fi02. Puerta interior de madera con paneles de madera tricapa de",
+   "cantidad": 2.0,
+   "precio": 1877.25,
+   "importe": 3754.5,
+   "descripcion": "Fi02. Puerta interior de madera con paneles de madera tricapa de abeto con marco de madera de pino para ir enrasada por la cara exterior. Material: Marcos y estructura interior de la hoja de madera de pino flandes dimensiones según detalle, con tratamiento para los cantos vistos de los marcos y hoja. Hoja conformada por 2 paneles de madera tricapa de abeto AB/C de 16mm de espesor de 86.6x207.8cm, incluye barniz ignífugo para mejora de la reacción al fuego de la madera hasta conseguir un C-s2,d0 por la cara exterior. Aislamiento interior de lana mineral de 3cm de espesor. Dimensiones: Hueco de obra de 91x210cm y hueco de paso de 85x207cm. Acabado: Paneles tricapa y marcos vistos con acabado de 2 manos de lijado y 1 de lasur transparente aplicados de manera alterna (lijar+lasur+lijar). Panel interior y marcos interiores acabados con tinte para madera color a definir por la DF. Accionamiento: Manilla tubular recta JNF IN.00.028 o equivalente. Condena de baño JNF IN.04.112 o equivalente. Herrajes: Bisagras vistas cilíndricas de acero inoxidable mate. Cerradura: Cerradura de embutir con resbalón."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS INTERIORES",
+   "codigo": "PAQ5-38X2",
+   "unidad": "u",
+   "resumen": "Fi03. Armario de 1 hoja batiente",
+   "cantidad": 1.0,
+   "precio": 452.82,
+   "importe": 452.82,
+   "descripcion": "Fi03. Armario de 1 hoja batiente Material: Marco lateral de madera de pino flandes dimensiones según detalle. Hoja formada por tablero de madera tricapa de abeto de 16mm de espesor de 47x230cm. Dimensiones: Hueco de obra de 44x230cm. Acabado: Panel tricapa con 2 manos de lijado y 2 de barniz ignifugo transparente aplicados de manera alterna por ambas caras. Herrajes: 3 bisagras de cazoleta con freno y regulación por hoja. Paño: Cerradura sobrepuesta por el interior con formación de cerradero en tabique."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CARPINTERÍAS INTERIORES",
+   "codigo": "PAQ5-38X3",
+   "unidad": "u",
+   "resumen": "Fi04. Armario de 2 hojas batientes",
+   "cantidad": 1.0,
+   "precio": 1094.18,
+   "importe": 1094.18,
+   "descripcion": "Fi04. Armario de 2 hojas batientes Material: Marco perimetral de madera de pino flandes dimensiones según detalle. Hojas formadas por tablero de madera tricapa de abeto de 16mm de espesor de 68.7x230cm. Dimensiones: Hueco de obra de 141x230cm. Acabado: Paneles tricapa con 2 manos de lijado y 2 de barniz ignifugo transparente aplicados de manera alterna por ambas caras. Accionamiento: Formación de 2 agujeros en los tableros de Ø25mm para apertura. Herrajes: 3 bisagras de cazoleta con freno y regulación por hoja."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61SI",
+   "unidad": "u",
+   "resumen": "S01. Marquesina exterior de estructura de perfiles de acero galv",
+   "cantidad": 1.0,
+   "precio": 5051.72,
+   "importe": 5051.72,
+   "descripcion": "S01. Marquesina exterior de estructura de acero galvanizado en caliente y pintado, de dimensiones exteriores 3750×2400 mm. Material y geometría: Marco rectangular formado por cuatro perfiles UPE 120 soldados entre sí y dos tubos interiores de 40×40×3 mm, soldados entre las UPE longitudinales. Posición según planos y longitudes definitivas a comprobar en obra. Fijaciones: Anclaje a los brancales cerámicos laterales mediante seis tacos químicos M12 por lado, con varillas, tuercas, arandelas y tamices cuando corresponda, adecuados al soporte existente. Tirantes: Dos barras lisas macizas de acero soldable de Ø36 mm y desarrollo aproximado de 3300 mm por barra, curvadas según planos y soldadas al perfil UPE frontal y al soporte metálico superior del dintel. Incluye las soldaduras estructurales y su repaso, sin reducir la sección resistente de los cordones. Protección y acabado: Galvanizado en caliente tras la fabricación en taller, incluidos los orificios de ventilación y drenaje y las rigidizaciones provisionales necesarias, con su posterior retirada. Reparación local de las zonas afectadas por cortes o soldaduras mediante ZINGASPRAY de ZINGA o equivalente, previa preparación del metal y según prescripciones del fabricante. Preparación del galvanizado, una mano de WASH PRIMER y dos manos de esmalte de poliuretano satinado, del mismo color que la fachada, a definir por la DF. En las zonas reparadas con ZINGASPRAY se utilizará una imprimación o sellador compatible según el fabricante. Incluye los retoques hasta obtener un acabado uniforme. Incluye suministro, fabricación, cortes, despuntes, perforaciones, accesorios, replanteo, montaje, ajustes, controles y ensayos previstos en proyecto y en el plan de control de calidad, medidas de protección individual y colectiva, limpieza y gestión de residuos. No incluye el refuerzo del dintel ni sus pletinas y anclajes, valorados aparte; sí incluye la soldadura de los tirantes a dicho soporte. Medios de elevación y andamios, madera, aislamiento, impermeabilización y remates de cubierta valorados en partidas independientes. Partida totalmente terminada, pintada y colocada según documentación gráfica y órdenes de la DF. Unidades: 1"
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61SX",
+   "unidad": "u",
+   "resumen": "S02. Perfil tubular 10x10 para formación de dintel metálico de c",
+   "cantidad": 1.0,
+   "precio": 545.34,
+   "importe": 545.34,
+   "descripcion": "S02. Perfil tubular 10x10 para formación de dintel metálico de carpintería. Material: Perfil tubular de acero galvanizado en caliente de 100x100x3mm. Dimensiones: 3200mm de longitud. Fijaciones: Fijación al brancal de hormigón mediante pletina soldada de 110x54x10mm y 2 fijaciones de taco químico por lado. Acabado: 1 mano de imprimación epoxídica antióxido y 2 manos de esmalte de poliuretano acabado satinado. Mismo color de la fachada a definir por la DF. Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia. Partida totalmente terminada según documentación grafica y ordenes de la DF."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61XX",
+   "unidad": "u",
+   "resumen": "S03. Puerta exterior de acero pregalvanizado y pintado para CPM",
+   "cantidad": 1.0,
+   "precio": 1028.75,
+   "importe": 1028.75,
+   "descripcion": "S03. Puerta exterior de acero pregalvanizado y pintado para CPM Material: Puerta no estanca, formada por marco perimetral tubular de 40×20×2 mm, bastidor de hoja batiente de 60×20×2 mm y chapa plana de acero de 3 mm de espesor, todos ellos pregalvanizados. Dimensiones: Hueco de obra de 910×1310 mm. Medidas definitivas a comprobar en obra. Fijaciones: Fijación del marco al muro cerámico mediante anclajes químicos M10, con varillas, tuercas, arandelas y tamices cuando corresponda, adecuados al soporte. Acabado: Preparación y limpieza de las superficies, reparación de la protección anticorrosiva en cortes y soldaduras mediante recubrimiento rico en zinc compatible con el sistema de acabado, una mano de imprimación epoxídica anticorrosiva apta para acero galvanizado y dos manos de esmalte de poliuretano satinado. Espesores y tiempos de repintado según fabricante. Mismo color que la fachada, a definir por la DF. Herrajes: Bisagras ocultas de acero galvanizado, adecuadas al peso de la hoja y para un ángulo de apertura superior a 150°. Cerradura: Cerradura homologada por la compañía distribuidora. Señalética: Según requisitos de la compañía distribuidora. Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia. Partida totalmente terminada, pintada y colocada, según documentación gráfica y órdenes de la DF. Unidades: 1"
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61X2",
+   "unidad": "u",
+   "resumen": "S06. Soporte exterior para máquinas de clima formado por perfile",
+   "cantidad": 1.0,
+   "precio": 2560.28,
+   "importe": 2560.28,
+   "descripcion": "S06. Soporte exterior para máquinas de clima formado por perfiles de acero. Material: Vigas IPE 120 de acero como soporte. Perfil tubular de acero galvanizado de 50x50x3mm y perfil en ´´L´´ de acero 40x40x3mm soldado a los perfiles inferiores. Dimensiones: Marco de 4260x614mm. Fijaciones: Todo el conjunto soldado. Acabado: 1 mano de imprimación epoxídica antióxido y 2 manos de esmalte de poliuretano acabado satinado. Accesorios: 4 carriles de fijación Walraven RapidStrut (PG) modelo 6505242 o equivalente. Incluye sistema de impermabilización de los apoyos formado por imprimación previa tipo ECO PRIM GRIP PLUS o equivalente, encintado de esquinas entre perfiles metálicos y panel sandwich con MAPEBAND EASY adherido, y posterior cubrimiento de toda la superfície afectada con impermeabilizante acrílico. Previo sellado de juntas con silicona tipo Mapeflex MS45 o equivalente. Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia. Partida totalmente terminada según documentación grafica y ordenes de la DF."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61XZ",
+   "unidad": "u",
+   "resumen": "S04. Dinteles de refuerzo",
+   "cantidad": 1.82,
+   "precio": 735.49,
+   "importe": 1338.59,
+   "descripcion": "S04. Dintel de refuerzo. Pletina de acero para refuerzo de zuncho de hormigón Material: Pletina lisa de acero 8mm de espesor de 300x3800mm y barras corrugadas de 10mm de diámetro y 250mm de longitud soldadas a la pletina. Fijaciones: Fijación a zuncho de homrigón mediante taladros y resina epoxi. Acabado: 1 mano de imprimación epoxídica antióxido en la parte expuesta. Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia. Partida totalmente terminada según documentación grafica y ordenes de la DF."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "E894XEAP",
+   "unidad": "m2",
+   "resumen": "Pintado de elementos de acero con pintura poliuretano, con dos c",
+   "cantidad": 11.37,
+   "precio": 35.35,
+   "importe": 401.93,
+   "descripcion": "Pintado de elementos de acero con pintura poliuretano, con dos capas de imprimación epoxi y dos de acabado"
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P8B5-6NOI",
+   "unidad": "m2",
+   "resumen": "Tratamiento anticor.emulsión anticorrosiva res.sint.",
+   "cantidad": 1.23,
+   "precio": 14.33,
+   "importe": 17.63,
+   "descripcion": "Tratamiento anticorrosivo para elementos de acero con emulsión anticorrosiva de resinas sintéticas"
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61X6",
+   "unidad": "u",
+   "resumen": "4 carriles de fijación Walraven RapidStrut (PG) modelo 6505242 o",
+   "cantidad": 2.0,
+   "precio": 38.6,
+   "importe": 77.2,
+   "descripcion": "4 carriles de fijación Walraven RapidStrut (PG) modelo 6505242 o equivalente"
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61X3",
+   "unidad": "u",
+   "resumen": "Refuerzo dintel marquesina",
+   "cantidad": 1.0,
+   "precio": 2840.17,
+   "importe": 2840.17,
+   "descripcion": "Refuerzo del dintel superior del hueco de acceso principal para la sujeción de marquesina (sujeción de S01) Material: Limpieza mecánica completa de los dos perfiles IPE existentes que conforman el dintel, mediante cepillado metálico, eliminación de óxido y cascarilla, y posterior limpieza y desengrasado con disolvente. Colocación de 11 perfiles tubulares de acero de 60 × 60 × 4 mm, soldados entre las almas de los dos perfiles IPE existentes, distribuidos según indicaciones de la DF. Colocación de pletina inferior continua de acero de 375 × 20 cm y 8 mm de espesor, soldada entre las alas inferiores de los perfiles IPE existentes y enrasada con estas, mediante soldadura a tope con preparación de bordes biselados a 45°. Relleno completo de la cámara interior entre los perfiles IPE existentes mediante espuma rígida de poliuretano, evitando la formación de espacios huecos. Refuerzo de ambos extremos del perfil IPE interior mediante una pletina superior y una inferior de acero en cada extremo, de 40 × 15 cm y 10 mm de espesor, soldadas a las alas del perfil IPE y ancladas al muro existente mediante 4 anclajes químicos M12 por pletina, con un total de 4 pletinas y 16 anclajes. Incluye preparación, ajuste y soldadura estructural de los dos tirantes Ø36 mm de la marquesina a los perfiles IPE y a la pletina inferior, según detalles de proyecto. Acabado: Aplicación de una mano de imprimación epoxídica anticorrosiva sobre todos los elementos de acero, incluidas soldaduras y zonas afectadas por los trabajos de montaje, y dos manos de esmalte de poliuretano de acabado satinado, con color a definir por la DF. Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia. Partida totalmente terminada según documentación grafica y ordenes de la DF."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61X4",
+   "unidad": "u",
+   "resumen": "Protección tubular de acero galvanizado en caliente para bajante",
+   "cantidad": 1.0,
+   "precio": 236.19,
+   "importe": 236.19,
+   "descripcion": "Protección metálica frente a golpes para bajante exterior, formada por tubo circular de acero de Ø127 mm de diámetro exterior, 3 mm de espesor y 900 mm de altura, dispuesto alrededor de la bajante existente de aproximadamente Ø110 mm, sin contacto con esta. Diámetro definitivo a comprobar en obra según dimensiones reales y encuentros existentes. Fijación independiente al muro mediante cuatro varillas de acero soldable de Ø12 mm, soldadas a la cara posterior del tubo y ancladas mediante resina de anclaje químico adecuada al soporte, con tamices cuando corresponda. Longitud y profundidad de anclaje según soporte existente y prescripciones del fabricante. Acabado galvanizado en caliente del conjunto después de ejecutar todos los cortes y soldaduras, incluidos cantos desbarbados y repasados, sin aristas cortantes. Extremo inferior dispuesto para permitir el drenaje. Incluye suministro, fabricación, anclajes, desmontaje y recolocación del tramo inferior de bajante necesario para introducir la protección, ajustes, montaje y limpieza. Unidad totalmente instalada y acabada según detalles de proyecto e indicaciones de la DF. Medición: 2 uds."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "P54A-61X5",
+   "unidad": "u",
+   "resumen": "Soporte tubular D40mm galvanizado",
+   "cantidad": 12.0,
+   "precio": 54.86,
+   "importe": 658.32,
+   "descripcion": "Suministro y colocación de soporte metálico para suspensión de equipos de climatización, formado por tubo circular de acero galvanizado de diámetro exterior 40 mm y espesor 2,5 mm, de longitud variable entre 80cm y 110cm, soldado a placa de anclaje de acero de dimensiones aproximadas 150×80×6 mm, con cartelas triangulares de rigidización en la unión entre tubo y placa y tape circular de acero galvanizado soldado. Incluye corte, mecanizado, perforaciones, soldaduras, galvanizado en caliente del conjunto una vez fabricado, tacos de anclaje mecánicos o químicos, transporte, montaje y todos los trabajos necesarios para su completa instalación. No incluye medios auxiliares de elevación, valorados en partida independiente. Incluye P.P. de todas las pruebas de control de calidad especificadas en CTE, medidas de protección individuales, colectivas y medios auxiliares necesarios (andamios, elevadores, etc); limpieza del lugar de trabajo; retirada de escombros; segregación en origen y carga a camión o contenedor, para posterior transporte a vertedero autorizado a cualquier distancia. Partida totalmente terminada según documentación grafica y ordenes de la DF."
+  },
+  {
+   "capitulo": "CARPINTERIA Y CERRAJERÍA > CERRAJERÍA",
+   "codigo": "ZPAX003",
+   "unidad": "m",
+   "resumen": "Pasatubos cilíndrico abierto acero galva",
+   "cantidad": 12.3,
+   "precio": 93.11,
+   "importe": 1145.25,
+   "descripcion": "Suministro y colocación de canalización metálica vista para paso de instalaciones, de 12,30 m de longitud total, formada por tubo circular de acero al carbono de diámetro exterior 139,7 mm y espesor 2,5 mm, con apertura longitudinal continua en su parte superior mediante corte y eliminación de una franja de 70 mm de anchura, formando una canal abierta para alojamiento de cables de instalaciones. Ejecución en varios tramos según necesidades de fabricación, transporte y montaje, con uniones entre tramos debidamente alineadas y rematadas. Incluye 12 soportes formados por varillas macizas de acero de diámetro 12 mm, soldadas perpendicularmente al tubo, con una separación aproximada de 1,10 m entre soportes, y fijadas al muro existente de ladrillo cerámico perforado tipo gero mediante sistema de anclaje químico homologado para fábrica cerámica, con varilla roscada y resina de inyección, incluyendo tamiz cuando sea necesario, según las características del soporte y las especificaciones del fabricante. Incluye perforaciones puntuales de diámetro 10 mm en la generatriz inferior del tubo para evacuación de posibles acumulaciones de agua, cortes, mecanizados, soldaduras, repasado y eliminación de rebabas y aristas cortantes, preparación de superficies, aplicación de imprimación anticorrosiva y acabado mediante dos manos de esmalte de poliuretano satinado, en color a definir por la Dirección Facultativa. Incluye materiales, mermas, transporte, fijaciones, montaje, nivelación y todos los trabajos necesarios para su completa ejecución. No incluye medios auxiliares de elevación, valorados en partida independiente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "P8A1-KKJT",
+   "unidad": "m2",
+   "resumen": "3 manos de lijado y 2 de barniz de poliuretano bicomponente a ba",
+   "cantidad": 0.75,
+   "precio": 38.65,
+   "importe": 28.99,
+   "descripcion": "3 manos de lijado y 2 de barniz de poliuretano bicomponente a base agua acabado transparente mate aplicados de manera alterna. Incluye imprimación o capa selladora para reducir la absorción del barniz."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "P848-HCHX",
+   "unidad": "m",
+   "resumen": "Perfil L perimetral de acero galvanizado de 40x40x3mm para sujec",
+   "cantidad": 9.5,
+   "precio": 32.12,
+   "importe": 305.14,
+   "descripcion": "Perfil L perimetral de acero galvanizado de 40x40x3mm para sujección inferior, de muebles M05, M06 y M07. Incluye corte, soldadura y trabajos necesarios para la formación de subestructura sugún planos, detalles e indicaciones de la DF."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XB",
+   "unidad": "u",
+   "resumen": "4 ruedas giratorias para muebles de alta resistencia (hasta 400k",
+   "cantidad": 8.0,
+   "precio": 32.0,
+   "importe": 256.0,
+   "descripcion": "4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XA",
+   "unidad": "m2",
+   "resumen": "M01. Panel de exposición formado por tableros de madera de trica",
+   "cantidad": 5.2,
+   "precio": 162.0,
+   "importe": 842.4,
+   "descripcion": "Panel de exposición formado por tableros de madera de tricapa de abeto de 42mm de espesor en 2 piezas, unión mediante encaje perpendicular a 90º grados. Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: Panel 1 130x190cm y panel 2 30x50cm."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XC",
+   "unidad": "m2",
+   "resumen": "M02. Plataforma de soporte para máquina de exposición formada po",
+   "cantidad": 0.6,
+   "precio": 893.0,
+   "importe": 535.8,
+   "descripcion": "M02. Plataforma de soporte para máquina de exposición formada por tablero de madera tricapa de abeto de 42mm de espesor. Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: Panel 60x100cm. Accesorios: 4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XD",
+   "unidad": "m2",
+   "resumen": "M03. Plataforma de soporte para máquina de exposición formada po",
+   "cantidad": 1.5,
+   "precio": 435.0,
+   "importe": 652.5,
+   "descripcion": "M03. Plataforma de soporte para máquina de exposición formada por tablero de madera tricapa de abeto de 42mm de espesor. Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: Panel 134x112cm. Accesorios: 4 ruedas giratorias para muebles de alta resistencia (hasta 400kg) engomadas antimarcas y 2 de ellas con freno accionable tipo GBL o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XE",
+   "unidad": "m2",
+   "resumen": "M04. Banco para exposicón fromado por 6 paneles de madera tricap",
+   "cantidad": 4.08,
+   "precio": 217.5,
+   "importe": 887.4,
+   "descripcion": "M04. Banco para exposicón fromado por 5 paneles de madera tricapa de 42mm. Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: 1 panel de 300x40cm, 1 panel de 15x268cm y 3 paneles de 41x40cm. Fijaciones: Uniones mediante puntas y resina epoxi."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XH",
+   "unidad": "m2",
+   "resumen": "M05. Mesa para catas formado por 4 paneles de madera tricapa de",
+   "cantidad": 2.42,
+   "precio": 217.5,
+   "importe": 526.35,
+   "descripcion": "M05. Mesa para catas formado por 4 paneles de madera tricapa de 42mm. Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: 1 panel de 200x80cm, 2 paneles de 70.8x40cm y 1 panel de 168x15cm. Fijaciones: Uniones mediante puntas y resina epoxi."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XF",
+   "unidad": "m2",
+   "resumen": "M06. Mostrador de acceso de 2 baldas",
+   "cantidad": 2.05,
+   "precio": 208.5,
+   "importe": 427.43,
+   "descripcion": "M06. Mostrador de acceso de 2 baldas Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: Panel 1 de 241.6x31.6cm, y Panel 2 de 241.6x60cm. Fijaciones: Anclada mecánicamente por la cara inferior. Accesorios: Perfil L perimetral de acero galvanizado de 40x40x3mm para sujección inferior."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "PAQ5-38XG",
+   "unidad": "m2",
+   "resumen": "M07. Mueble lavabo baño",
+   "cantidad": 0.75,
+   "precio": 250.0,
+   "importe": 187.5,
+   "descripcion": "M07. Mueble lavabo baño Material: Paneles de madera tricapa de abeto AB/C de 42mm de espesor, procedentes de la merma generada en los tableros 5000x2500mm de falso techo. Dimensiones: Panel 1 de 162.4x46.6cm. Fijaciones: Anclada mecánicamente por la cara inferior. Accesorios: Perfil L perimetral de acero galvanizado de 40x40x3mm para sujección inferior. Agujeros en el tablero para desagüe."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > MOBILIARIO",
+   "codigo": "P8A2-HYMQ",
+   "unidad": "m2",
+   "resumen": "Barnizado de paneles tricapa, con barniz ignífugo a base de resi",
+   "cantidad": 15.85,
+   "precio": 12.46,
+   "importe": 197.49,
+   "descripcion": "Barnizado de paneles tricapa, con barniz ignífugo a base de resinas al agua de un componente, para madera, con clase de reacción al fuego C-s2,d0, con dos capas, con la superficie mate."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "PJ11C-3CWH",
+   "unidad": "u",
+   "resumen": "Inodoro completo compacto adosado a pared con salida dual (inclu",
+   "cantidad": 2.0,
+   "precio": 396.7,
+   "importe": 793.4,
+   "descripcion": "Inodoro completo compacto adosado a pared con salida dual (incluye taza, cisterna de alimentación inferior y tapa), precio alto, conectado a la red de evacuación, modelo The Gap Square de Roca o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "PJ117-3BYD",
+   "unidad": "u",
+   "resumen": "Lavabo mural/apoyar porcel.,senc.,anch.53 a 75cm,blanco,precio a",
+   "cantidad": 2.0,
+   "precio": 159.57,
+   "importe": 319.14,
+   "descripcion": "Lavabo sobre encimera de 550x390x130mm, precio alto, apoyado sobre encimera o mueble, modelo The Gap Round de Roca o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "PJ219-3SGK",
+   "unidad": "u",
+   "resumen": "Grifería monomando empotrable para lavabo modelo Ona de Roca o e",
+   "cantidad": 2.0,
+   "precio": 225.27,
+   "importe": 450.54,
+   "descripcion": "Grifería monomando empotrable para lavabo modelo Ona de Roca o equivalente., precio alto, con dos entradas de 1/2´´"
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "PJ21C-3SHO",
+   "unidad": "u",
+   "resumen": "Grifo mural de 1 agua con conexión a manguera, acabado cromado,",
+   "cantidad": 1.0,
+   "precio": 67.17,
+   "importe": 67.17,
+   "descripcion": "Grifo mural de 1 agua con conexión a manguera, acabado cromado, modelo 03450102 de Tres."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "PJ3D-3FKU",
+   "unidad": "u",
+   "resumen": "Sifón botella p/p/lavab.,latón cromado,D=1´´1/4,enlace D=30mm,co",
+   "cantidad": 2.0,
+   "precio": 33.27,
+   "importe": 66.54,
+   "descripcion": "Sifón de botella para lavabo, de latón cromado de diámetro 1´´1/4 con enlace de diámetro 30 mm, conectado a la red de pequeña evacuación"
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46U020",
+   "unidad": "u",
+   "resumen": "Barra mural doble abatible para baño adaptado, de 800 mm de larg",
+   "cantidad": 2.0,
+   "precio": 162.92,
+   "importe": 325.84,
+   "descripcion": "Barra mural doble abatible para baño adaptado, de 800 mm de largo y 35 mm de D, de tubo de acero inoxidable, colocado con fijaciones mecánicas"
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46U015",
+   "unidad": "u",
+   "resumen": "Barra mural fixa en angle p/bany adaptat,L=600 i 600mm,acer inox",
+   "cantidad": 2.0,
+   "precio": 88.8,
+   "importe": 177.6,
+   "descripcion": "Barra mural fija en ángulo para baño adaptado, de 600 y 600 mm de largo y 35 mm de D, de tubo de acero inoxidable, colocado con fijaciones mecánicas"
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X001",
+   "unidad": "u",
+   "resumen": "Dispensador de papel higiénico circular manual para rollo de pap",
+   "cantidad": 2.0,
+   "precio": 40.25,
+   "importe": 80.5,
+   "descripcion": "Dispensador de papel higiénico circular manual para rollo de papel industrial y para adosar a la pared de hasta 275mm. Acabado inoxidable satinado modelo PR0787CS de Mediclinics o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X002",
+   "unidad": "u",
+   "resumen": "Cubo sanitario circular para interior, de 5L de capacidad, accio",
+   "cantidad": 2.0,
+   "precio": 23.88,
+   "importe": 47.76,
+   "descripcion": "Cubo sanitario circular para interior, de 5L de capacidad, accionado mediante pedal, para apoyarse directamente en el suelo. Acabado inoxidable satinado, modelo PP1305CS de Mediclinics o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X003",
+   "unidad": "u",
+   "resumen": "Escobillero de baño para ir a pared fabricado con acero inoxidab",
+   "cantidad": 2.0,
+   "precio": 20.81,
+   "importe": 41.62,
+   "descripcion": "Escobillero de baño para ir a pared fabricado con acero inoxidable AISI 304 y acabado satinado, modelo ES1002CS de Mediclinics o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X004",
+   "unidad": "u",
+   "resumen": "Cubo sanitario cuadrado para interior, de 12L de capacidad, acci",
+   "cantidad": 1.0,
+   "precio": 39.87,
+   "importe": 39.87,
+   "descripcion": "Cubo sanitario cuadrado para interior, de 12L de capacidad, accionado mediante pedal, para apoyarse directamente en el suelo. Acabado inoxidable satinado, modelo PP1214CS de Mediclinics o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X005",
+   "unidad": "u",
+   "resumen": "Dispensador de soluciones antisépticas con capacidad para 900cc",
+   "cantidad": 1.0,
+   "precio": 75.05,
+   "importe": 75.05,
+   "descripcion": "Dispensador de soluciones antisépticas con capacidad para 900cc con mirilla de control de nivel. Activado por sensor de proximidad. Acabado inoxidable satinado. Modelo JNF IN.60.562 o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X006",
+   "unidad": "u",
+   "resumen": "Dispensador de toallas de papel, acabado inoxidable satinado. Mo",
+   "cantidad": 1.0,
+   "precio": 41.86,
+   "importe": 41.86,
+   "descripcion": "Dispensador de toallas de papel, acabado inoxidable satinado. Modelo JNF IN.60.548 o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X007",
+   "unidad": "u",
+   "resumen": "Colgador de pared de acero inoxidable satinado. Modelo JNF IN.14",
+   "cantidad": 2.0,
+   "precio": 5.6,
+   "importe": 11.2,
+   "descripcion": "Colgador de pared de acero inoxidable satinado. Modelo JNF IN.14.500 o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X008",
+   "unidad": "u",
+   "resumen": "Taburete circular de madera contrachapado de abeto tipo Frosta",
+   "cantidad": 12.0,
+   "precio": 40.0,
+   "importe": 480.0,
+   "descripcion": "Taburete circular de madera contrachapado de abeto tipo Frosta de IKEA o equivalente."
+  },
+  {
+   "capitulo": "MOBILIARIO Y EQUIPAMIENTO > EQUIPAMIENTO",
+   "codigo": "EJ46X009",
+   "unidad": "u",
+   "resumen": "Silla de oficina giratoria con ruedas y brazos, acabado de piel",
+   "cantidad": 1.0,
+   "precio": 133.51,
+   "importe": 133.51,
+   "descripcion": "Silla de oficina giratoria con ruedas y brazos, acabado de piel negro de respaldo bajo, modelo Larsen PU Low Back de Northdeco o equivalente."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE FONTANERÍA",
+   "codigo": "PE22-367V",
+   "unidad": "u",
+   "resumen": "Caldera eléct.,230/400V,pot=5kW,planch.acero,p/calef.,mural",
+   "cantidad": 1.0,
+   "precio": 286.46,
+   "importe": 286.46,
+   "descripcion": "Caldera eléctrica de 30 litros de capacidad para instalación mural. Modelo EWH 30 C de Teka o equivalente. Capacidad: 30 litros Tanque esmaltado en Zafire Ánodo de magnesio Termostato temperatura: 30º – 75º Válvula de presión > 7,5 bar Presión máxima: 0,75 Mpa Termómetro Válvula de seguridad Protección sobrecalentamiento Protección calentamiento en seco Grado de protección humedad IPX4 Potencia: 1.500 W Grosor aislamiento: 20 mm Conexión G ½ Consumo medio: 1-2 personas"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE FONTANERÍA",
+   "codigo": "PJ07-628M",
+   "unidad": "u",
+   "resumen": "Inst.font.c.higien.,lavabo,inodoro plato duch.,calent.acum.eléct",
+   "cantidad": 1.0,
+   "precio": 896.72,
+   "importe": 896.72,
+   "descripcion": "Instalación de fontanería para cuarto higiénico, formado por 2 lavabos y 2 inodoros, no incluye sanitarios ni red de desagües, según planos, esquemas y memoria del proyecto. Formado por: - Llave de paso general. - Claves divisionarias de paso (agua fría y caliente) en lavabos e inodoros. - Red de agua para alimentación de los siguientes aparatos: 2 lavabaos, 2 inodoros y 1 caldera eléctrica. La red de fontanería interior estará empotrada o suspendida con tubos de polietileno reticulado con alma de aluminio PEX AL PEX. Los montantes verticales y horizontales se fijarán con bridas en las bases de soporte. Toda la tubería en el interior que no esté empotrada la pared se aislará con Armaflex de 9 mm de espesor en AF y con 19 mm de espesor en ACS. Las tuberías que vayan empotradas en la pared deben instalarse con tubo corrugado flexible de PVC de color azul por el AF y rojo por el ACS. El dimensionado de los tubos según lo indicado en los planos y esquemas de proyecto. Los tubos serán perfectamente lisos, de sección circular, y perfectamente calibrados. Las curvas se realizarán con codos y prendas especiales. Toda la instalación debe cumplir la normativa vigente. Incluye la tramitación con la compañía de la instalación según sus exigencias. La instalación quedará finalizada según la normativa de la compañía suministradora. Incluye las ayudas de albañilería necesarias: - Realización de agujeros y regatas por empotramientos que sean necesarios. - Tapado de agujeros y regatas. - Conexionado y sellado de todos los elementos. - Limpieza final y retirada de escombros y basura."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE FONTANERÍA",
+   "codigo": "PZAAFS01",
+   "unidad": "ud",
+   "resumen": "Derivacion enterrada AFS nave-anexo, 30 m PE100 DE40 PN16, compl",
+   "cantidad": 1.0,
+   "precio": 715.5,
+   "importe": 715.5,
+   "descripcion": "Suministro y ejecucion completa de derivacion privada de agua fria desde la instalacion existente de la nave hasta el anexo de aseos y patio, para alimentacion conjunta de aparatos sanitarios y red de riego, con longitud aproximada de 30 m, mediante tuberia de polietileno PE100 SDR11 PN16 de diametro exterior 40 mm, apta para agua de consumo humano, segun UNE-EN 12201, instalada enterrada aprovechando zanja ya abierta y parcialmente rellenada por la que discurre la red de saneamiento. Incluye localizacion del punto de conexion en red privada aguas abajo del contador, derivacion en te y adaptadores al material y diametro existente, llave de corte independiente y accesible en origen con enlaces, suministro y tendido de tuberia y piezas de union, cama y recubrimiento protector con material seleccionado, separacion y posicion relativa seguras respecto del saneamiento, cinta de senalizacion, paso de muro y sellado, pequenas operaciones puntuales de descubrimiento y preparacion de extremos, montaje, prueba de presion y estanqueidad antes del tapado, limpieza y puesta en servicio; completamente terminada y funcionando. Diametro y punto de conexion sujetos a comprobacion previa en obra del material y seccion de red existente, presion y caudales simultaneos."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Centralización de contadores",
+   "codigo": "EG1NX122",
+   "unidad": "u",
+   "resumen": "CPM trifásico",
+   "cantidad": 1.0,
+   "precio": 850.0,
+   "importe": 850.0,
+   "descripcion": "Caja de protección y medida CPM2-S4, de hasta 63 A de intensidad, para 1 contador trifásico, formada por una envolvente aislante, precintable, autoventilada y con mirilla de material transparente resistente a la acción de los rayos ultravioletas, para instalación empotrada. Incluso equipo completo de medida, bornes de conexión, bases cortacircuitos y fusibles para protección de la derivación individual. Normalizada por la empresa suministradora. Según UNE-EN 60439-1, grado de inflamabilidad según se indica en UNE-EN 60439-3, con grados de protección IP43 según UNE 20324 e IK09 según UNE-EN 50102. Incluye tubo PVC a exterior, según indicaciones de compañía y pequeño material, y las ayudas de albañilería necesarias para encastar y dirigir la red según indicaciones de compañia y DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ10002",
+   "unidad": "u",
+   "resumen": "Instalación cuadro eléctrico trifásico 23 lineas monof",
+   "cantidad": 1.0,
+   "precio": 4403.7,
+   "importe": 4403.7,
+   "descripcion": "Cuadro eléctrico trifásico con 23 lineas Según esquema unifilar adjunto en proyecto"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50001",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 25 mm². Unipolar",
+   "cantidad": 260.0,
+   "precio": 13.95,
+   "importe": 3627.0,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 25 mm². Unipolar"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50003",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 35 mm². Unipolar",
+   "cantidad": 300.0,
+   "precio": 19.11,
+   "importe": 5733.0,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 35 mm². Unipolar"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50004",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 1.5 mm². Unipola",
+   "cantidad": 50.0,
+   "precio": 0.81,
+   "importe": 40.5,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 1.5 mm². Unipolar"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50005",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 4x1.5. Multicond",
+   "cantidad": 50.0,
+   "precio": 4.47,
+   "importe": 223.5,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 4x1.5. Multiconductor"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50006",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2.5 mm². Unipola",
+   "cantidad": 370.0,
+   "precio": 2.19,
+   "importe": 810.3,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2.5 mm². Unipolar"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50007",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x2.5. Multicond",
+   "cantidad": 380.0,
+   "precio": 3.78,
+   "importe": 1436.4,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x2.5. Multiconductor"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50011",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 16 mm². Unipolar",
+   "cantidad": 100.0,
+   "precio": 9.12,
+   "importe": 912.0,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 16 mm². Unipolar"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ZZZ50012",
+   "unidad": "m",
+   "resumen": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x1.5. Multicond",
+   "cantidad": 280.0,
+   "precio": 2.67,
+   "importe": 747.6,
+   "descripcion": "0,6/1 kV Cobre, Poliolefina termoplástica (Z1), 2x1.5. Multiconductor"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "E6148656",
+   "unidad": "m",
+   "resumen": "Tubo 50 mm",
+   "cantidad": 20.0,
+   "precio": 3.3,
+   "importe": 66.0,
+   "descripcion": "Tubo 50 mm"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "E6148658",
+   "unidad": "m",
+   "resumen": "Tubo 32 mm",
+   "cantidad": 90.0,
+   "precio": 1.83,
+   "importe": 164.7,
+   "descripcion": "Tubo 32 mm"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "E6148659",
+   "unidad": "m",
+   "resumen": "Tubo 25 mm",
+   "cantidad": 480.0,
+   "precio": 1.23,
+   "importe": 590.4,
+   "descripcion": "Tubo 25 mm"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "E6148677",
+   "unidad": "m",
+   "resumen": "Tubo 20 mm",
+   "cantidad": 5.0,
+   "precio": 0.93,
+   "importe": 4.65,
+   "descripcion": "Tubo 20 mm"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Preinstalación",
+   "codigo": "ELCT032",
+   "unidad": "ud",
+   "resumen": "Toma trifasica 32 A a 30 m con tapa madera",
+   "cantidad": 1.0,
+   "precio": 989.5,
+   "importe": 989.5,
+   "descripcion": "Suministro e instalacion de toma de corriente industrial trifasica CEE 32 A, 400 V, 5 polos (3F+N+PE), IP67, situada al fondo de la nave, alimentada desde el cuadro electrico de sala de control mediante linea exclusiva de 30,00 m de cable de cobre RZ1-K (AS) 0,6/1 kV 5G6 mm2, de baja emision de humos y libre de halogenos, tendido por canalizacion fija con tubo rigido libre de halogenos diametro nominal 32 mm y fijaciones. Incluye interruptor magnetotermico tetrapolar 32 A, curva C, e interruptor diferencial tetrapolar 40 A, 30 mA, tipo A, instalados en cuadro existente, con conexiones, identificacion de circuito, accesorios y comprobaciones de continuidad de proteccion, aislamiento, polaridad, disparo del diferencial y funcionamiento. Incluye formacion de tapa registrable y desmontable de madera, con piezas de la propia madera del zocalo de la nave (material de revestimiento aportado de la misma obra, sin valorar un suministro nuevo), corte y ajuste, bastidor auxiliar, cuatro imanes de fijacion con contraplacas, remates y acabado igual al zocalo, para ocultar la base cuando no se utilice. La tapa permitira acceso sencillo sin herramientas y su colocacion no reducira la seguridad ni accesibilidad de la base ni encerrara conexiones en servicio; durante el uso la toma quedara descubierta. Medida la unidad completamente terminada. Se debera comprobar seccion y protecciones conforme a intensidad admisible, caida de tension, cortocircuito, trazado real, potencia simultanea y condiciones del REBT, especialmente ITC-BT-28 en local de publica concurrencia. No incluye ampliaciones de cuadro, modificaciones de acometida o potencia contratada, ni legalizaciones adicionales, si fueran necesarias."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Red de tierra",
+   "codigo": "E6148675",
+   "unidad": "m",
+   "resumen": "conductos de cobre desnudo trenzado 35mm2",
+   "cantidad": 5.0,
+   "precio": 25.0,
+   "importe": 125.0,
+   "descripcion": "Conexión de conductor de cobre trenzado con abrazadera de cobre a pica y puente de seccionamiento"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Red de tierra",
+   "codigo": "E6148676",
+   "unidad": "u",
+   "resumen": "puente de seccionamiento",
+   "cantidad": 1.0,
+   "precio": 45.0,
+   "importe": 45.0,
+   "descripcion": "puente de seccionamiento"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUJA",
+   "unidad": "u",
+   "resumen": "Kit mecanismos,2 elementos,2 bases enchufe,+marco y bastidor,emp",
+   "cantidad": 9.0,
+   "precio": 73.14,
+   "importe": 658.26,
+   "descripcion": "Kit de mecanismos 2 elementos, con 2 bases de enchufe, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUJQ",
+   "unidad": "u",
+   "resumen": "Kit mecanismos,1 elemento,1 base enchufe,+marco y bastidor,empot",
+   "cantidad": 3.0,
+   "precio": 41.02,
+   "importe": 123.06,
+   "descripcion": "Kit de mecanismos 1 elemento, con 1 base de enchufe, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUJP",
+   "unidad": "u",
+   "resumen": "Kit mecanismos,1 elemento,1 toma RJ45,+marco y bastidor,empotrad",
+   "cantidad": 2.0,
+   "precio": 57.28,
+   "importe": 114.56,
+   "descripcion": "Kit de mecanismos 1 elemento, con 1 toma RJ45, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUJ2",
+   "unidad": "u",
+   "resumen": "Kit mecanismos,1 elemento, 1 interruptor,+marco y bastidor,empot",
+   "cantidad": 2.0,
+   "precio": 39.85,
+   "importe": 79.7,
+   "descripcion": "Kit de mecanismos interruptor de 1 elemento, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUIX",
+   "unidad": "u",
+   "resumen": "Kit de mecanismos 3 elementos de doble tecla, con 6 interruptore",
+   "cantidad": 1.0,
+   "precio": 133.92,
+   "importe": 133.92,
+   "descripcion": "Kit de mecanismos 3 elementos de doble tecla, con 6 interruptores, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG70-78AA",
+   "unidad": "u",
+   "resumen": "Int.detect.mov.,tipo univ.,resistivas,1000W,230V,10 a 300s,5 a 1",
+   "cantidad": 3.0,
+   "precio": 152.24,
+   "importe": 456.72,
+   "descripcion": "Interruptor detector de movimiento de pared, de tipo universal, para cargas resistivas de hasta 1000 W de poténcia y 230 V de tensión de alimentación, de 10 a 300 s de tiempo de desconexión, sensibilidad de activación de 5 a 120 lx, precio superior, empotrado. Modelo Jung Home 1.1 o equivalente"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUIO",
+   "unidad": "u",
+   "resumen": "Kit mecanismos,2 elementos,2 interruptores,+marco y bastidor,emp",
+   "cantidad": 2.0,
+   "precio": 70.6,
+   "importe": 141.2,
+   "descripcion": "Kit de mecanismos 2 elementos, con 2 interruptores, con marco y bastidor, empotrado"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ELECTRICIDAD > Mecanismos",
+   "codigo": "PG6H-CUJX",
+   "unidad": "u",
+   "resumen": "Kit mecanismo,1 elemento,1 caja ciega,+marco y bastidor,empotrad",
+   "cantidad": 3.0,
+   "precio": 39.09,
+   "importe": 117.27,
+   "descripcion": "Kit de mecanismo 1 elemento, con 1 caja ciega, con marco y bastidor, empotrado. Modelo JUNG LS990 blanco o negro dependiendo de la posición, a especificar por la DF. Incluye corrugados y pasos necesarios indicados por la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ILUMINACIÓN",
+   "codigo": "PHN0-H9YX",
+   "unidad": "u",
+   "resumen": "Pantalla estanca Monoblock DALI 2 de 1220-1520mm de longitud de",
+   "cantidad": 72.0,
+   "precio": 117.48,
+   "importe": 8458.56,
+   "descripcion": "Suministro e instalación de pantalla estanca Monoblock DALI 2 de 1220 a 1520 mm de longitud, de la marca CELER o equivalente, montada suspendida a más de 3 m de altura mediante subestructura metálica auxiliar de acero galvanizado, con perfiles, varillas roscadas, anclajes y elementos de fijación necesarios para su correcta sujeción, nivelación y estabilidad. Incluye montaje de la subestructura, fijación de la luminaria, conexionado eléctrico, regulación de altura, comprobación de funcionamiento y todos los materiales y trabajos necesarios para su completa instalación."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ILUMINACIÓN",
+   "codigo": "PHN0-H9X1",
+   "unidad": "u",
+   "resumen": "Apliques de superficie de techo de 100x60mm GU10 C2 de CELER o e",
+   "cantidad": 3.0,
+   "precio": 43.16,
+   "importe": 129.48,
+   "descripcion": "Apliques de superficie de techo de 100x60mm GU10 C2 de CELER o equivalente."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ILUMINACIÓN",
+   "codigo": "PHN0-H9X2",
+   "unidad": "u",
+   "resumen": "Downlight Superficie de 292x15mm Slim Redondo de C2de CELER o eq",
+   "cantidad": 1.0,
+   "precio": 88.2,
+   "importe": 88.2,
+   "descripcion": "Downlight Superficie de 292x15mm Slim Redondo de C2de CELER o equivalente."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ILUMINACIÓN",
+   "codigo": "PHN0-H9X3",
+   "unidad": "u",
+   "resumen": "Portalámparas blanco mate de 70x60mm modelo TEN 70 de FARO o equ",
+   "cantidad": 7.0,
+   "precio": 37.43,
+   "importe": 262.01,
+   "descripcion": "Portalámparas blanco mate de 70x60mm modelo TEN 70 de FARO o equivalente. Bombilla LED decorativa tipo globo opaca de 125mm de diámetro."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ILUMINACIÓN",
+   "codigo": "PG8C-HD15",
+   "unidad": "u",
+   "resumen": "Actuador DALI,bus cable,carril DIN",
+   "cantidad": 1.0,
+   "precio": 561.22,
+   "importe": 561.22,
+   "descripcion": "Actuador para equipos DALI, sompuesto por: Fuente de alimentación DALI con interfaz USB integrada para montaje en carril DIN, modelo PS-DALILINK de la marca B.E.G o equivalente. Ref. 93189 Kit de montaje en superficie para detectores empotrables PD4N-FT modelo de la marca B.E.G o equivalente.. Ref. 93465. Detector de presencia con controlador de aplicación DALI integrado para un control eficiente de la iluminación modelo PD4N-M-DACO DALI-2 de la marca B.E.G o equivalente. Ref. 93460. Mando de control a distancia"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE ILUMINACIÓN",
+   "codigo": "PHN0-6U27",
+   "unidad": "u",
+   "resumen": "Aplique de exterior cilíndrico blanco modelo KOV 2L Aplique redo",
+   "cantidad": 2.0,
+   "precio": 180.99,
+   "importe": 361.98,
+   "descripcion": "Aplique de exterior cilíndrico blanco modelo KOV 2L Aplique redondo blanco 2700K 14°/14° de FARO o equivalente."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Grupos de ventilación",
+   "codigo": "GV001",
+   "unidad": "ud",
+   "resumen": "Recuperador de calor entálpico KOSNER KRC 5 CRHE BP EVO-PH SH (o",
+   "cantidad": 1.0,
+   "precio": 10304.87,
+   "importe": 10304.87,
+   "descripcion": "Recuperador de calor entálpico KOSNER KRC 5 CRHE BP EVO-PH SH o equivalente, a validar según planos y cálculos de la memoria de ventilación y climatización. Potencia eléctrica: 1,27 kW. Alimentación monofásica. Peso: 352 kg. Caudal nominal: 2.916 m³/h. Dimensiones: 2.400×1.740×635 mm. Incluye suministro, montaje y la totalidad del sistema de soportación y anclaje a la estructura del edificio, dimensionado para el peso y las condiciones de funcionamiento del equipo, con todos los perfiles, ménsulas, suspensiones, placas, anclajes, tornillería y apoyos antivibratorios necesarios. Incluye protección anticorrosiva y acabado de los elementos metálicos, conexiones, accesorios, regulación, pruebas y puesta en marcha. Equipo y sistema de soportación totalmente terminados, instalados y en funcionamiento, según documentación de proyecto, instrucciones del fabricante y aprobación de la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Rejas y bocas de extracción",
+   "codigo": "ICR03003C307",
+   "unidad": "Ud",
+   "resumen": "Rejilla de impulsión.",
+   "cantidad": 6.0,
+   "precio": 190.58,
+   "importe": 1143.48,
+   "descripcion": "Rejilla de impulsión con regulación de caudal, para conducto circular, de chapa de acero galvanizado, superficie estándar galvanizada, con lamas verticales y horizontales regulables individualmente, de 800x150 mm, fijación mediante tornillos vistos, montada en conducto metálico circular. Incluso accesorios de montaje y elementos de fijación. Incluye: Replanteo. Montaje y fijación de la rejilla. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Rejas y bocas de extracción",
+   "codigo": "ICR05020799X",
+   "unidad": "Ud",
+   "resumen": "Rejilla de retorno circular.",
+   "cantidad": 1.0,
+   "precio": 90.84,
+   "importe": 90.84,
+   "descripcion": "Rejilla de retorno circular, de aluminio extruido, anodizado color natural E6-C-0, con lamas horizontales fijas, de 450 mm de diámetro, entrada de aire perpendicular a la rejilla, fijación mediante tornillos vistos, montada en conducto metálico rectangular. Incluso accesorios de montaje y elementos de fijación. Incluye: Replanteo. Montaje y fijación de la rejilla. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Rejas y bocas de extracción",
+   "codigo": "PEP6-8FV3",
+   "unidad": "u",
+   "resumen": "Boca extracción D.conex.=100mm,D.ext.=140mm,acero galv.pintado,f",
+   "cantidad": 2.0,
+   "precio": 61.9,
+   "importe": 123.8,
+   "descripcion": "Boca de extracción de 100 mm de diámetro de conexión y 140 mm de diámetro exterior, de acero galvanizado con acabado pintado, fijada con tornillos a pared o techo y ajustada a caudales de salida"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Rejas y bocas de extracción",
+   "codigo": "ICR070079904",
+   "unidad": "Ud",
+   "resumen": "Rejilla de intemperie.",
+   "cantidad": 1.0,
+   "precio": 230.89,
+   "importe": 230.89,
+   "descripcion": "Rejilla de intemperie circular para instalaciones de ventilación, marco frontal y lamas de chapa perfilada de acero galvanizado, de 450 mm de diámetro, tela metálica de acero galvanizado con malla de 20x20 mm, con marco de montaje de chapa de acero galvanizado. Incluso accesorios de montaje y elementos de fijación. Incluye: Replanteo. Montaje y fijación del marco en el cerramiento. Fijación de la rejilla en el marco. Conexión al conducto. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Rejas y bocas de extracción",
+   "codigo": "PE40-60DD",
+   "unidad": "u",
+   "resumen": "Sombrerete chimenea planc.ac.inox.d=500mm,adapt.doble tubo,col.f",
+   "cantidad": 1.0,
+   "precio": 318.75,
+   "importe": 318.75,
+   "descripcion": "Sombrerete de chimenea de plancha de acero inoxidable, de 500 mm, adaptado para doble tubo, colocado con fijaciones mecánicas"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Rejas y bocas de extracción",
+   "codigo": "ICR03003C30X",
+   "unidad": "Ud",
+   "resumen": "Embocadura de reja plana de 800x150 mm sobre conducto circular f",
+   "cantidad": 6.0,
+   "precio": 57.24,
+   "importe": 343.44,
+   "descripcion": "Embocadura de reja plana de 800x150 mm sobre conducto circular formado por 4 largueros de chapa de acero galvanizado, mismo acabado que rejas y conducto. Incluye tornillería, manguitos y accesorios necesarios."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Red de conductos y accesorios",
+   "codigo": "E6148664",
+   "unidad": "m",
+   "resumen": "Conducto chapa galvanizada d450",
+   "cantidad": 32.3,
+   "precio": 79.79,
+   "importe": 2577.22,
+   "descripcion": "Red de conductos circulares helicoidales de distribución de aire para climatización de 450mm de diámetro, constituida por conductos de chapa galvanizada de 0,6 mm de espesor y juntas transversales con vaina deslizante tipo bayoneta. Incluso embocaduras, derivaciones, accesorios de montaje, elementos de fijación y piezas especiales, como manguitos, abrazaderas reforzadas, varillas roscadas de zinc y tapas ciegas"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Red de conductos y accesorios",
+   "codigo": "E614867X",
+   "unidad": "m",
+   "resumen": "Conducto de extracción aislado",
+   "cantidad": 2.0,
+   "precio": 145.68,
+   "importe": 291.36,
+   "descripcion": "Conducto circular helicoidal de chapa galvanizada de 450mm de diámetro interior y 500mm exterior para la distribución de aire climatizado formado por panel rígido de alta densidad de lana de vidrio Climaver Neto ´´ISOVER´´, según UNE-EN 14303, de 25 mm de espesor, revestido por un complejo triplex aluminio visto + malla de fibra de vidrio + kraft por el exterior y un tejido de vidrio acústico de alta resistencia mecánica (tejido NETO) por el interior, resistencia térmica 0,78 m²K/W, conductividad térmica 0,032 W/(mK), instalado con sistema Climaver Metal compuesto por perfiles de aluminio extrusionado Perfiver L ´´ISOVER´´ en las aristas longitudinales del conducto y Perfiver H ´´ISOVER´´ para la formación de puertas de inspección o registro, conexiones a máquinas, a rejillas o a difusores. Incluso codos, derivaciones, sellado de uniones con cola Climaver, embocaduras, soportes metálicos galvanizados, elementos de fijación, sellado de tramos con cinta Climaver Neto de aluminio, accesorios de montaje y piezas especiales, como manguitos, abrazaderas reforzadas, varillas roscadas de zinc y tapas ciegas"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Red de conductos y accesorios",
+   "codigo": "IVV030000000",
+   "unidad": "m",
+   "resumen": "Conducto de PVC.",
+   "cantidad": 10.8,
+   "precio": 24.53,
+   "importe": 264.92,
+   "descripcion": "Conducto de ventilación, formado por tubo liso de PVC, de 90 mm de diámetro exterior, pegado mediante adhesivo, colocado en posición vertical u horizontal. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas especiales. Incluye parte proporcional de tubo flexible en caso de ser necesario. Criterio de valoración económica: El precio no incluye las compuertas de regulación, las compuertas cortafuego, las rejillas ni los difusores. Incluye: Replanteo del recorrido del conducto y de la situación de los elementos de sujeción. Presentación en seco de tubos y piezas especiales. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto funcionamiento. Criterio de medición de proyecto: Longitud proyectada, según documentación gráfica de Proyecto, medida entre los ejes de los elementos o de los puntos a conectar, sin descontar las piezas especiales. Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE VENTILACIÓN > Ventiladores industriales",
+   "codigo": "PEJ4-48CY",
+   "unidad": "u",
+   "resumen": "Ventilador de techo Ø2400mm marca Magnovent modelo Airslim S+",
+   "cantidad": 3.0,
+   "precio": 1427.65,
+   "importe": 4282.95,
+   "descripcion": "Instalación de ventilador industrial de techo de Ø2400mm de 6 aspas marca Magnovent modelo Airslim S+, instalado a una altura de más de 5m. Incluye el lacado de las aspas en blanco."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Unidades autónomas",
+   "codigo": "BCD001",
+   "unidad": "u",
+   "resumen": "Máquina de aire acondicionado tipo split de conductos formado po",
+   "cantidad": 2.0,
+   "precio": 5157.2,
+   "importe": 10314.4,
+   "descripcion": "Equipo de aire acondicionado tipo split de conductos con bomba de calor y tecnología Inverter, Mitsubishi Electric, gama Mr. Slim Serie Pro, modelo MGPEZ-140YJA o equivalente, formado por unidad interior PEAD-SM140JA y unidad exterior PUZ-SM140YKA, con refrigerante R32 y alimentación trifásica a 400 V. A validar según planos y cálculos de la memoria de climatización. Clase A+ Capacidad frigorífica: 14,1 kW Capacidad calorífica: 16,1 kW Incluye mando de control y posibilidad de regulación mediante sonda de temperatura ambiente independiente, ubicada separadamente de la unidad interior y del mando, con accesorio compatible aprobado por el fabricante. Su instalación, cableado y configuración quedan incluidos. Incluye suministro, montaje y sistema completo de soportación y fijación de ambas unidades, con perfiles, suspensiones, anclajes, tornillería y elementos antivibratorios necesarios, dimensionados para el equipo y con protección anticorrosiva y acabado. Incluye conexiones, accesorios, ajustes, pruebas y puesta en marcha. Conjunto totalmente instalado, acabado y en funcionamiento, según documentación de proyecto, instrucciones del fabricante y aprobación de la DF."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Rejas y bocas de extracción",
+   "codigo": "ICR03003C307",
+   "unidad": "Ud",
+   "resumen": "Rejilla de impulsión.",
+   "cantidad": 6.0,
+   "precio": 190.58,
+   "importe": 1143.48,
+   "descripcion": "Rejilla de impulsión con regulación de caudal, para conducto circular, de chapa de acero galvanizado, superficie estándar galvanizada, con lamas verticales y horizontales regulables individualmente, de 800x150 mm, fijación mediante tornillos vistos, montada en conducto metálico circular. Incluso accesorios de montaje y elementos de fijación. Incluye: Replanteo. Montaje y fijación de la rejilla. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Rejas y bocas de extracción",
+   "codigo": "ICR050207990",
+   "unidad": "Ud",
+   "resumen": "Rejilla de retorno.",
+   "cantidad": 1.0,
+   "precio": 85.92,
+   "importe": 85.92,
+   "descripcion": "Rejilla de retorno, de aluminio extruido, anodizado color natural E6-C-0, con lamas horizontales fijas, de 425x325 mm, salida de aire perpendicular a la rejilla, fijación mediante tornillos vistos, montada en conducto metálico rectangular. Incluso accesorios de montaje y elementos de fijación. Incluye: Replanteo. Montaje y fijación de la rejilla. Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto. Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Red de conductos",
+   "codigo": "E61486X7",
+   "unidad": "m",
+   "resumen": "Conducto de impulsión aislado",
+   "cantidad": 32.9,
+   "precio": 145.71,
+   "importe": 4793.86,
+   "descripcion": "Conducto circular helicoidal de chapa galvanizada de 450mm de diámetro interior y 500mm exterior para la distribución de aire climatizado formado por panel rígido de alta densidad de lana de vidrio Climaver Neto ´´ISOVER´´, según UNE-EN 14303, de 25 mm de espesor, revestido por un complejo triplex aluminio visto + malla de fibra de vidrio + kraft por el exterior y un tejido de vidrio acústico de alta resistencia mecánica (tejido NETO) por el interior, resistencia térmica 0,78 m²K/W, conductividad térmica 0,032 W/(mK), instalado con sistema Climaver Metal compuesto por perfiles de aluminio extrusionado Perfiver L ´´ISOVER´´ en las aristas longitudinales del conducto y Perfiver H ´´ISOVER´´ para la formación de puertas de inspección o registro, conexiones a máquinas, a rejillas o a difusores. Incluso codos, derivaciones, sellado de uniones con cola Climaver, embocaduras, soportes metálicos galvanizados, elementos de fijación, sellado de tramos con cinta Climaver Neto de aluminio, accesorios de montaje y piezas especiales"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Distribución de fluidos",
+   "codigo": "EFB45357",
+   "unidad": "ud",
+   "resumen": "Desagüe tubo PE-R, d=16mm, maq. cond+evap. conn.",
+   "cantidad": 30.0,
+   "precio": 4.86,
+   "importe": 145.8,
+   "descripcion": "Ud. de desagüe con polietileno reticulado (PE-R) de 16 mm de diámetro nominal, serie 5 según norma UNE 53-381, conectado a presión, con grado de dificultad medio recogida a sumidero más cercano por maquina exterior e interior hasta bajando más cercano. Etiquetado Energético (Frío) A Etiquetado Energético (Calor) A Frigorías 11500 SEER 210% SCOP 150% Consumo Frío (W) 4265 Consumo Calor (W) 3680 Superficie recomendada (m2) Más de 105 m2 Nivel de ruido Moderado Longitud máxima tubería 30 Diferencia de nivel máxima 40 Nivel sonoro (Unidad interior) dB(A) 34/38/43 Nivel sonoro (Unidad exterior) db(A) 55 Refrigerante R-32 Diámetro línea frig. Líquido mm (pulg´´) 9.52 (3/8´´) Diámetro línea frig. Gas mm (pulg´´) 15.875 (5/8´´) Medidas (Alto x Ancho x Fondo) 250x1600x732 mm Medidas Unidad Exterior (Alto x Ancho x Fondo) 981x1050x330 (+40) mm Peso aproximado 44 kg ud. int / 85 kg ud. ext Bomba de drenaje Incluida Gama Serie PRO Referencia Unidad Interior PEAD-SM140JA Referencia Unidad Exterior PUZ-SM140YKA Carga de refrigerante de fábrica (kg) 3.6 Cableado eléctrico Trifásico Alimentación eléctrica Unidad exterior"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Distribución de fluidos",
+   "codigo": "EF5BXX01",
+   "unidad": "M",
+   "resumen": "Tubo cobre frigorífico,D=3/8'',G=1,00mm soldado+aislamiento",
+   "cantidad": 20.0,
+   "precio": 26.75,
+   "importe": 535.0,
+   "descripcion": "Tubo de cobre frigorífico de 3/8'' de diámetro nominal, de 1,00 mm de espesor, limpio, purgado con nitrógeno, con coquilla elastomérica de conductividad y espesor conforme a UNE 100-170 y homologado con comportamiento en el fuego M1. Incluye accesorios, soportes mediante bridas isofónicas, perfil normalizado, montaje y aislamiento mod. HT/Armaflex de 25mm de espesor. Los tramos que queden en contacto directo con el ambiente irán protegidos con pintura o protección contra los rayos UVA."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Distribución de fluidos",
+   "codigo": "EF5BXX02",
+   "unidad": "M",
+   "resumen": "Tubo cobre frigorífico,D=5/8'',G=1,00mm soldado+aislamiento",
+   "cantidad": 30.0,
+   "precio": 45.3,
+   "importe": 1359.0,
+   "descripcion": "Tubo de cobre frigorífico de 5/8'' de diámetro nominal, de 1,00 mm de espesor, limpio, purgado con nitrógeno, con coquilla elastomérica de conductividad y espesor conforme a UNE 100-170 y homologado con comportamiento en el fuego M1. Incluye accesorios, soportes mediante bridas isofónicas, perfil normalizado, montaje y aislamiento mod. HT/Armaflex de 25mm de espesor. Los tramos que queden en contacto directo con el ambiente irán protegidos con pintura o protección contra los rayos UVA."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Varios",
+   "codigo": "US110458",
+   "unidad": "u",
+   "resumen": "Precarga de nitrógeno a 25 atm.",
+   "cantidad": 2.0,
+   "precio": 300.0,
+   "importe": 600.0,
+   "descripcion": "Precarga de nitrógeno a 25 atm. y pruebas de estanqueidad mínimo 48 horas."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE CLIMATIZACIÓN > Varios",
+   "codigo": "PEZ1-6RX2",
+   "unidad": "kg",
+   "resumen": "Carga gas R-32",
+   "cantidad": 4.0,
+   "precio": 134.49,
+   "importe": 537.96,
+   "descripcion": "Carga de circuito refrigerante de gas refrigerante tipo R-32. Incluye limpieza interior circuito frigorífico hacer el vacío con bomba y pruebas necesarias."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE SANEAMIENTO",
+   "codigo": "PD18-8D4X",
+   "unidad": "m",
+   "resumen": "Colector PVC-U pared maciza,B,DN=160mm,fija.meca.bridas",
+   "cantidad": 1.0,
+   "precio": 34.97,
+   "importe": 34.97,
+   "descripcion": "Colector de tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 160 mm, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, incluidas las piezas especiales y fijado mecánicamente con bridas"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE SANEAMIENTO",
+   "codigo": "PD18-8D5M",
+   "unidad": "m",
+   "resumen": "Colector PVC-U pared maciza,B,DN=125mm,fija.meca.bridas",
+   "cantidad": 15.24,
+   "precio": 31.94,
+   "importe": 486.77,
+   "descripcion": "Colector de tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 125 mm, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, incluidas las piezas especiales y fijado mecánicamente con bridas"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE SANEAMIENTO",
+   "codigo": "PD18-8D50",
+   "unidad": "m",
+   "resumen": "Colector y bajante PVC-U pared maciza,B,DN=110mm,fija.meca.brida",
+   "cantidad": 26.8,
+   "precio": 24.67,
+   "importe": 661.16,
+   "descripcion": "Colector y bajante de tubo de PVC-U de pared maciza, área de aplicación B según norma UNE-EN 1329-1, de DN 110 mm, clase de reacción al fuego B-s1, d0 según norma UNE-EN 13501-1, incluidas las piezas especiales y fijado mecánicamente con bridas. Incluye empalme a sistema existente, sellados y accesorios para su correcto funcionamiento."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE SANEAMIENTO",
+   "codigo": "PD16-HAWZ",
+   "unidad": "m",
+   "resumen": "Bajante tubo zinc-titanio unión plegada,DN=120mm E=0,6mm,fij.mec",
+   "cantidad": 11.5,
+   "precio": 61.17,
+   "importe": 703.46,
+   "descripcion": "Bajante exterior de tubo de chapa de zinc-titanio con unión longitudinal plegada, de diámetro nominal 110 mm y de 0,6 mm de espesor, incluidas las piezas especiales y fijado mecánicamente con soportes exteriores a pared. Incluye formación de codo en la parte inferior para evacuación. Incluye empalme a sistema existente, sellados y accesorios para su correcto funcionamiento."
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE SANEAMIENTO",
+   "codigo": "PD54-10MWK",
+   "unidad": "u",
+   "resumen": "Sumidero sifónico de acero inoxidable de 15x15cm con salida hori",
+   "cantidad": 1.0,
+   "precio": 46.62,
+   "importe": 46.62,
+   "descripcion": "Sumidero sifónico de acero inoxidable de 15x15cm con salida horizontal D50mm. Modelo 21011 de Genebre o equivalente"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN DE SANEAMIENTO",
+   "codigo": "PD31-56AD",
+   "unidad": "u",
+   "resumen": "Arqueta paso,tapa regis.,75x75x70cm,pared e=15cm ladrillo perfor",
+   "cantidad": 1.0,
+   "precio": 416.84,
+   "importe": 416.84,
+   "descripcion": "Arqueta de paso y tapa registrable, de 75x75x70 cm de medidas interiores, con pared de 15 cm de espesor de ladrillo perforado de 290x140x100 mm, enfoscada y enlucida por dentro con mortero 1:8, sobre solera de hormigón en masa de 10 cm y con tapa prefabricada de hormigón armado"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN CONTRAINCENDIOS",
+   "codigo": "PM32-DZ5H",
+   "unidad": "u",
+   "resumen": "Extintor manual polvo seco poliv.,6kg,presión incorpo.,pintado,a",
+   "cantidad": 2.0,
+   "precio": 167.92,
+   "importe": 335.84,
+   "descripcion": "Extintor manual de polvo seco polivalente, de carga 6 kg, con presión incorporada, pintado, con armario montado superficialmente"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN CONTRAINCENDIOS",
+   "codigo": "PM32-DZ5C",
+   "unidad": "u",
+   "resumen": "Extintor manual CO2,5kg,presión incorpo.,pintado,sop.pared",
+   "cantidad": 1.0,
+   "precio": 102.94,
+   "importe": 102.94,
+   "descripcion": "Extintor manual de dióxido de carbono, de carga 5 kg, con presión incorporada, pintado, con soporte a pared"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN CONTRAINCENDIOS",
+   "codigo": "PMS0-6Z8Z",
+   "unidad": "u",
+   "resumen": "Rótulo señ. salid.emergencia,297x148mm2,panel PVC,espesor=0,7mm,",
+   "cantidad": 2.0,
+   "precio": 13.05,
+   "importe": 26.1,
+   "descripcion": "Rótulo señalización salida de emergencia, rectangular, de 297x148 mm2 de panel de PVC de 0,7 mm de espesor, fotoluminiscente categoría B según UNE 23035-4, colocado fijado mecánicamente sobre paramento vertical"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN CONTRAINCENDIOS",
+   "codigo": "PMS0-6Z90",
+   "unidad": "u",
+   "resumen": "Rótulo señ. instal.protección/incendios,210x210mm2,panel PVC,esp",
+   "cantidad": 2.0,
+   "precio": 12.97,
+   "importe": 25.94,
+   "descripcion": "Rótulo señalización instalación de protección contra incendios, cuadrado, de 210x210 mm2 de panel de PVC de 0,7 mm de espesor, fotoluminiscente categoría B según UNE 23035-4, colocado fijado mecánicamente sobre paramento vertical"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN CONTRAINCENDIOS",
+   "codigo": "PH56-61US",
+   "unidad": "u",
+   "resumen": "Equipo autónomo de emergencia y señalización con 340 lúmenes y l",
+   "cantidad": 5.0,
+   "precio": 141.13,
+   "importe": 705.65,
+   "descripcion": "Equipo autónomo de emergencia y señalización con 340 lúmenes y lámpara de LEDs marca Duisa modelo D-Ecold-320, colocada, tubo corrugado de PVC de DN 16 mm, conductor de cobre de designación H07Z-K unipolar de 1,5 mm2 de sección y caja de derivación cuadrada colocada empotrada"
+  },
+  {
+   "capitulo": "INSTALACIONES > INSTALACIÓN CONTRAINCENDIOS",
+   "codigo": "PH56-61UX",
+   "unidad": "u",
+   "resumen": "Equipo autónomo de emergencia y señalización con 100 lúmenes y l",
+   "cantidad": 2.0,
+   "precio": 235.9,
+   "importe": 471.8,
+   "descripcion": "Equipo autónomo de emergencia y señalización con 100 lúmenes y lámpara de LEDs marca Duisa modelo D-Ecold-90, colocada, tubo corrugado de PVC de DN 16 mm, conductor de cobre de designación H07Z-K unipolar de 1,5 mm2 de sección y caja de derivación cuadrada colocada empotrada"
+  },
+  {
+   "capitulo": "VARIOS",
+   "codigo": "PQ14-H8SZ",
+   "unidad": "u",
+   "resumen": "Banco de bloque de hormigón de color blanco, tipo Sócrates de Es",
+   "cantidad": 1.0,
+   "precio": 1969.92,
+   "importe": 1969.92,
+   "descripcion": "Banco de bloque de hormigón de color blanco, tipo Sócrates de Escofet, o equivalente, acabado arenado e hidrofugado, de 240x60x46 cm, colocado sobre el pavimento con 3 anclajes químicos de diámetro 12mm. Incluye replanteo, medios auxiliares de elevación necesarios y transporte hasta su ubicación final."
+  },
+  {
+   "capitulo": "VARIOS",
+   "codigo": "PB90-FK6V",
+   "unidad": "u",
+   "resumen": "Señalización exterior con pictogramas independientes cortados me",
+   "cantidad": 15.0,
+   "precio": 30.49,
+   "importe": 457.35,
+   "descripcion": "Señalización exterior con pictogramas independientes cortados mediante corte laser con medidas aproximadas de 18x18cm, de chapa de acero galvanizado de 10mm, fijado con barillas posteriores y epoxi. Acabado pintado con 2 capas de esmalte al agua color de fachada, previa imprimación"
+  },
+  {
+   "capitulo": "VARIOS",
+   "codigo": "CL40-00J3",
+   "unidad": "d",
+   "resumen": "Plataform.elevad. telesc.artic.,autopro.motor gasoil,h= 20m,anch",
+   "cantidad": 110.0,
+   "precio": 56.36,
+   "importe": 6199.6,
+   "descripcion": "Alquiler de plataforma elevadora autopropulsada de tijera eléctrica de 10 m de altura de trabajo, para la ejecución de trabajos en altura. Incluye la repercusión del transporte de entrega y recogida en obra, carga y descarga, seguro de responsabilidad civil y cobertura de daños de la máquina según las condiciones del contrato de alquiler, mantenimiento, revisiones y gastos de gestión y residuos asociados al alquiler. Precio por día laborable, con repercusión de los costes correspondientes a días no laborables,"
+  },
+  {
+   "capitulo": "VARIOS",
+   "codigo": "C152-003B",
+   "unidad": "h",
+   "resumen": "Camión grúa",
+   "cantidad": 6.0,
+   "precio": 69.4,
+   "importe": 416.4,
+   "descripcion": "Camión grúa"
+  },
+  {
+   "capitulo": "GESTIÓN DE RESIDUOS",
+   "codigo": "PPAUAB0X",
+   "unidad": "PA",
+   "resumen": "Partida alzada de abono íntegro para el cumplimiento de la gesti",
+   "cantidad": 1.0,
+   "precio": 2656.61,
+   "importe": 2656.61,
+   "descripcion": "Partida alzada de abono íntegro para el cumplimiento de la gestión de residuos descrito en el Estudio de Gestión de Residuos de Demolición y Construcción"
+  },
+  {
+   "capitulo": "SEGURIDAD Y SALUD",
+   "codigo": "PPAUAB01",
+   "unidad": "PA",
+   "resumen": "Partida alzada de abono íntegro para el cumplimiento de las medi",
+   "cantidad": 0.97,
+   "precio": 3687.38,
+   "importe": 3576.76,
+   "descripcion": "Partida alzada de abono íntegro para el cumplimiento de las medidas de seguridad y salud descritas en el Plan de Seguridad"
+  }
+ ]
+}

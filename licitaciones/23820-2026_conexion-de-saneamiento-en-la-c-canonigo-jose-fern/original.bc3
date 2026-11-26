@@ -1,0 +1,535 @@
+~V|SOFT S.A.|FIEBDC-3/2012|Presto 15.01||ANSI||2||||
+~L||ESP\Especificación\TEC\Características técnicas\PRE\Condiciones previas\EJE\Ejecución\MED\Medición\CON\Control\SEG\Seguridad y salud\GMA\Gestión ambiental\NOR\Normas de aplicación\MAN\Mantenimiento\VAR\Varios\TEX\Texto sin faceta\|
+~K|\2\2\3\2\2\2\2\EUR\|0|3\2\\3\3\\2\2\2\2\2\2\2\2\EUR\|
+~C|%CI|%|Costes Indirectos|3|070515|0|
+~T|%CI|Costes indirectos|
+~C|%UH|%|Utiles y herramientas|2|201099|0|
+~C|%medaux2%|%|Medios auxiliares...(s/total)|2|300606|0|
+~C|0801|ud|Ensayo Próctor Modificado|103.33|070515|0|
+~D|0801|E32A110\1\1\%CI\1\0.03\|
+~T|0801|Determinación de la densidad máxima y humedad óptima de compactación por método de Próctor Modificado, según norma UNE 103501.|
+~C|0802|ud|Determinación densidad in-situ|31.95|070515|0|
+~D|0802|E32A120\1\1\%CI\1\0.03\|
+~T|0802|Determinación de la densidad "in situ" de un terreno por el método de isótopos radioactivos, según ASTM D3017|
+~C|0805|ud|Ensayo para hormigón fresco, fabric. en obra, transp. y rotura de 4 probetas|79.2|070515|0|
+~D|0805|E12BC0025\1\1\%CI\1\0.03\|
+~T|0805|Ensayo para hormigón fresco, comprendiendo: fabricación en obra, transporte y rotura de una serie de 4 probetas de hormigón, incluyendo curado y refrentado de caras, determinación de la consistencia y resistencia a compresión, según UNE-EN 12350-1 y 2 y  UNE-EN 12390-2 y 3.|
+~C|170101|t|Residuos de hormigón|10.56|300821|0|
+~D|170101|GEST. HORM.\1\1\|
+~T|170101|Canon de vertido controlado en planta de gestor autorizado de residuos de hormigón limpio sin armadura de código 170101, según el Catálogo Europeo de Residuos (ORDEN MAM/304/2002)|
+~C|170107|t|Residuos mezclados de demolición|10.56|300821|0|
+~D|170107|GEST. DEMO.\1\1\|
+~T|170107|Canon de vertido controlado en centro de gestor autorizado, de residuos de demolición no peligrosos (no especiales), procedentes de construcción o demolición sin clasificar o separar, con código 170107 según el Catalogo Europeo de Residuos (ORDEN MAM/304/2002)|
+~C|170302b|t|Residuos de asfalto (demolición)|18.48|300821|0|
+~D|170302b|GEST. ASF.2\1\1\|
+~T|170302b|Canon de vertido controlado en centro de gestor autorizado, de residuos de asfalto no peligrosos (no especiales), procedentes de la demolición de firmes, con código 170302 según el Catálogo Europeo de Residuos (ORDEN MAM/304/2002)|
+~C|170504|t|Residuos de material de excavación|6.6|300821|0|
+~D|170504|GEST.TIE\1\1\|
+~T|170504|Canon de vertido controlado en planta de gestor autorizado, de residuos de tierra inertes, procedentes de excavación, con código 170504 según el Catalogo Europeo de Residuos (ORDEN MAM/304/2002)|
+~C|2110-023##||LOTE 1. PROYECTO CONEXIÓN DE SANEAMIENTO EN LA CALLE CANÓNIGO JOSÉ FERNÁNDEZ ABAD|64031.39|201099|0|
+~D|2110-023##|L1.1\1\1\L1.2\1\1\L1.3\1\1\L1.4\1\1\L1.5\1\1\L1.6\1\1\L1.7\1\1\L1.8\1\1\|
+~C|A01.0020|m³|Mortero 1:3 de 440 Kg. cemento|153.85|300821|3|
+~T|A01.0020|M3 Mortero 1:3 de 440 Kg de cemento y arena, incluso confección.|
+~C|A01B0010|m³|Pasta de cemento|196.34|300821|3|
+~D|A01B0010|E01BA0040\1\0.9\E01E0010\1\1\M01A0030\1\2\|
+~T|A01B0010|m³. Pasta de cemento, amasada a mano, s/RC-08. |
+~C|A02A0030|m³|Mortero 1:5 de cemento|138.18|300821|3|
+~D|A02A0030|E01BA0040\1\0.3\E01CA0020\1\1.1\E01E0010\1\0.25\QAD0010\1\0.5\M01A0030\1\2.4\|
+~T|A02A0030|m³. Mortero 1:5 de cemento y arena, M-7,5, confeccionado con hormigonera, s/RC-08. |
+~C|A02A0040|m³|Mortero 1:6 de cemento|129.56|300821|3|
+~D|A02A0040|E01BA0040\1\0.25\E01CA0020\1\1.1\E01E0010\1\0.25\QAD0010\1\0.5\M01A0030\1\2.4\|
+~T|A02A0040|Mortero 1:6 de cemento y arena, M 5, confeccionado con hormigonera, s/RC-08.|
+~C|A03A0040|m³|Hormigón en masa de fck= 15 N/mm²|126.06|300821|3|
+~D|A03A0040|E01BA0040\1\0.26\E01CA0010\1\0.62\E01CB0070\1\1.25\E01E0010\1\0.2\QAD0010\1\0.45\M01A0030\1\2.1\|
+~T|A03A0040|m³. Hormigón en masa de fck= 15 N/mm², árido machaqueo 16 mm máx., confeccionado con hormigonera. |
+~C|A03A0060|m³|Hormigón en masa HM-20/P/16/X0|143.54|300821|3|
+~D|A03A0060|M01A0030\1\2.1\E01BA0040\1\0.35\E01CA0010\1\0.65\E01CB0070\1\1.3\E01E0010\1\0.2\QAD0010\1\0.5\|
+~T|A03A0060|Hormigón en masa HM-20/P/16/I, confeccionado con hormigonera.|
+~C|A03A0070-S|m³|Hormigón masa HM-30/P/16/XC3|159.65|300821|3|
+~T|A03A0070-S|Hormigón en masa HM-30/B/20/I+Qb, resistencia 30 Nw/mm2, consistencia blanda, árido machaqueo tamaño máximo 20 mm., relación agua cemento máxima 0.50, protección a la corrosión tipo "I", protección química tipo Qb y dosificación mínima de cemento 300 kg/m3.
+|
+~C|A05AG0020|m²|Encofrado y desencof. en paredes de arquetas, cámaras y sótanos.|24.08|300821|3|
+~D|A05AG0020|M01A0010\1\0.47\M01A0030\1\0.47\E01IB0010\1\0.013\E01IA0110\1\0.001\E01MA0020\1\0.02\|
+~T|A05AG0020|Encofrado y desencof. en paredes de arquetas, cámaras y sótanos.|
+~C|A08PAV0020|t|Emulsión bituminosa para riegos de adherencia|1174.35|300821|3|
+~D|A08PAV0020|E01KA0020\1\1\maq0202\1\20.4\|
+~C|A09A0002|t|Árido fino mezclas bituminosas|15.11|300821|3|
+~D|A09A0002|E01AMB010\1\1\maq0200\1\25\|
+~C|A09A0003|t|Árido grueso mezclas bituminosas|15.97|300821|3|
+~D|A09A0003|E01AMB020\1\1\maq0200\1\25\|
+~C|A09A010-R|m³|Tierra de préstamo exenta de áridos mayores de 8 cm, raíces escombros, materia orgánica.|6.32|300821|3|
+~C|A09B0004|t|Betún asfáltico 60/70 a emplear en MBC|785.73|300821|3|
+~D|A09B0004|E01KA0010\1\1\maq0202\1\39\|
+~T|A09B0004|Tn. Betún asfáltico B 60/70 a emplear en mezclas bituminosas en caliente|
+~C|A09F0001|t|Filler (cemento) para MBC|175.85|300821|3|
+~D|A09F0001|E01CB0130_-S\1\1\maq0204-S\1\25\|
+~C|DA001|m²|Corte de borde de calzada|102.04|300606|0|
+~D|DA001|equipo019\1\0.16\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|DA001|Corte del pavimento de calzada con máquina cortadora, longitud del corte por profundidad, totalmente terminado.|
+~C|DA002|m²|Demolición con compresor todo tipo de pavimento|8.42|300606|0|
+~D|DA002|M01A0030\1\0.1\QAA0020\1\0.1\QAB0030\1\0.04\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|DA002|Demolición de firmes o pavimentos de cualquier tipo, hasta 10 cm. de espesor, incluso carga manual o mecánica, transporte de los productos resultantes a vertedero autorizado, incluido limpieza y regulación del fondo totalmente terminado.|
+~C|DA008|m²|Levantado piedra de Arucas en acera con recuperación|14.29|300606|0|
+~D|DA008|M01A0030\1\0.5\QBC0010\1\0.34\QAB0030\1\0.04\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|DA008|Levantado de piedra natural en acera, con martillo eléctrico manual, incluso retirada de atezado, incluso carga manual, transporte de los elementos de cantería a punto autorizado por la Dirección Facultativa, incluido limpieza y regulación del fondo totalmente terminado.|
+~C|DR001-B|m³|Hormigón HM-20 en rellenos diversos|158.48|300606|0|
+~D|DR001-B|M01A0010\1\0.07\M01A0030\1\0.153\A03A0060\1\1.02\E01E0010\1\0.02\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|DR001-B|m³ Hormigón HM-20 en rellenos diversos en ejecuciones a elegir por la DF: protección de tubos, cimentaciones, zanjas y pozo de cimentación, i/p.p. de pequeños encofrados, vibrado, alambre de sujeción de tubos, hormigonado en dos fases. Completamente terminado.|
+~C|E01AMB010|t|Árido fino mezclas bituminosas|11.11|300821|3|
+~C|E01AMB020|t|Árido grueso mezclas bituminosas|11.97|300821|3|
+~C|E01BA0030-S|t|Cemento CEM IV/A 32.5 R, ensacad|146.26|300821|3|
+~T|E01BA0030-S|Cemento CEM IV/A 32.5 R, ensacado.|
+~C|E01BA0040|t|Cemento portland, CEM II/B-P 32,5 R, granel|172.32|300821|3|
+~T|E01BA0040|Cemento portland, CEM II/B-P 32,5 R, UNE-EN 197-1, tipo II/B, con puzolana natural (P), clase de resistencia 32,5 N/mm² y alta resistencia inicial, a granel, con marcado CE.|
+~C|E01CA0010|t|Arena seca|21.9|300821|3|
+~T|E01CA0010|Arena seca|
+~C|E01CA0020|m³|Arena seca|32.81|300821|3|
+~T|E01CA0020|Arena seca|
+~C|E01CB0070|t|Arido machaqueo 4-16 mm|18.85|300821|3|
+~T|E01CB0070|Arido machaqueo 4-16 mm|
+~C|E01CB0130_-S|t|Filler (cemento) para MBC|175.1|300821|3|
+~C|E01E0010|m³|Agua|2.79|300821|3|
+~T|E01E0010|Agua|
+~C|E01IA0110|m³|Madera pino gallego|428.34|300821|3|
+~T|E01IA0110|Madera pino gallego|
+~C|E01IB0010|m³|Madera pino gallego en tablas 25 mm|382.8|300821|3|
+~T|E01IB0010|Madera pino gallego en tablas 25 mm|
+~C|E01KA0010|t|Betún asfáltico B 50/70|775.59|300821|3|
+~T|E01KA0010|Betún asfáltico B 50/70, a granel, s/UNE-EN 12591.|
+~C|E01KA0020|t|Emulsión bituminosa catiónica C60B3 ADH (ECR-1) a granel|1169.05|300821|3|
+~T|E01KA0020|Emulsión bituminosa catiónica C60B3 ADH (antigua ECR-1), a granel, para riegos de adherencia s/UNE-EN 13808.|
+~C|E01MA0020|kg|Clavos 2"|1.53|300821|3|
+~T|E01MA0020|Clavos 2"|
+~C|E0701MAT|m²|Materiales a emplear remate fachadas|23.76|300821|3|
+~C|E0702MAT|ud|Materiales a emplear reparaciones instalaciones varias|125.4|300821|3|
+~C|E12BC0025|ud|Ensayo para hormigón fresco, fabric. en obra, transp. y rotura de 4 probetas|76.89|300821|3|
+~T|E12BC0025|Ensayo para hormigón fresco, comprendiendo: fabricación en obra, transporte y rotura de una serie de 4 probetas de hormigón, incluyendo curado y refrentado de caras, determinación de la consistencia y resistencia a compresión, según EHE-08, UNE-EN 12350-1 y 2 y  UNE-EN 12390-2 y 3.|
+~C|E24BAB0080|m|Tubería PVC PN 16 D=32mm, T.P.P.|4.03|300821|3|
+~T|E24BAB0080|Tubería PVC-U, 16 atm, DN(exterior) 32 mm, UNE EN 12201-2|
+~C|E24BC0180|m|Tub. PVC-U presión unión encol 10 Atm D 63 mm T.P.P.|9.62|300821|3|
+~T|E24BC0180|Tub. PVC-U junta elástica 16 Atm DN(exterior) 63 mm, e=3,0 mm, UNE EN 1452-2, T.P.P.|
+~C|E24BE0040|ud|Codo de latón 40 mm, Itap|17.16|300821|3|
+~T|E24BE0040|Codo de latón 40 mm (1 1/4"), UNE EN 1254, Itap|
+~C|E24BE0120|ud|Collarín de toma de latón 50x1 1/2", Itap|26.6|300821|3|
+~T|E24BE0120|Collarín de toma de latón 50x1 1/2", UNE EN 1254, Itap|
+~C|E24GA0300|ud|Válvula de compuerta 2" latón, Cimberio|24.01|300821|3|
+~T|E24GA0300|Válvula de compuerta 2" de latón, Cimberio|
+~C|E24GB0300|ud|Válvula paso|9.52|300821|3|
+~T|E24GB0300|Válvula de paso de bola 1" de latón, Cimberio|
+~C|E26BAC0020|ud|Extintor portátil CO2 fuegos BC 5 kg|105.97|300821|3|
+~T|E26BAC0020|Extintor portátil CO2 fuegos BC, 5 kg, s/ UNE EN 3|
+~C|E28AC0040|ud|Base de pozo 1200x1000 (Dxh) mm|584.01|300821|3|
+~T|E28AC0040|Base de pozo prefabricada de 1200x1000 (Dxh) mm de hormigón armado c/2 acometidas para tubo D 300 a 500 mm, con marcado CE s/UNE-EN 1917 y UNE 127917.|
+~C|E28AC0050A|ud|Cono de pozo 1200/625x850 (Dxh) e=160 mm i/pates|235.85|300821|3|
+~T|E28AC0050A|ud. Cono de pozo prefabricado de 1200/625x850 (Dxh) mm, e=160 mm, de hormigón armado c/pates, con marcado CE s/UNE-EN 1917 y UNE 127917. |
+~C|E28AC0060|ud|Anillo de pozo 1200/1200 (Dxh) e=160 mm i/pates|233.11|300821|3|
+~T|E28AC0060|Anillo de pozo prefabricado de 1200/1200 (Dxh) mm, e=160 mm, de hormigón armado c/pates, con marcado CE s/UNE-EN 1917 y UNE 127917.|
+~C|E28AD0030|ud|Junta de goma D=1200 mm|11.99|300821|3|
+~T|E28AD0030|Junta de goma D=1200 mm para pozos de registro para unión entre dos piezas.|
+~C|E28BA0050|ud|Tapa cuadrada 300x300 mm, fundición dúctil B-125, QUATTRO 400, E|48.01|300821|3|
+~T|E28BA0050|Tapa cuadrada y marco con garganta hidráulica anti-olores para telecomunicaciones de fundición dúctil, 4 patines de goma clipados sobre la tapa impidiendo el contacto metal/metal entre tapa y marco y anti-ruido, con ángulo de apertura de 105º, cierre de seguridad 1/4 de vuelta, con llave codificada y bloqueo de seguridad de 90º, clase B-125, con medidas exteriores de marco 400x400x40 mm y hueco libre de 300x300 mm, certificado AENOR, peso del conjunto tapa y marco de 12 Kg, con marcado fundido en relieve antideslizante, s/ norma EN-124, ref QUATTRO 400, de EJ-NORINCO|
+~C|E28BA0100|ud|Tapa redonda y marco cuadrado Ø 150 mm, fundición dúctil, y tornillo antivandálico, B-125, TC 250, EJ-NORINCO|26.74|300821|3|
+~T|E28BA0100|Tapa redonda y marco cuadrado de fundición dúctil y tornillo antivandálico, clase B-125, cumpliendo norma EN-124, con medidas exteriores de marco 250x250x19 mm y hueco libre de Ø 150 mm, certificado AENOR, peso del conjunto tapa y marco de 5 Kg, con marcado fundido en relieve antideslizante, s/ norma EN-124, ref TC 250, de EJ-NORINCO|
+~C|E28BBA0060|ud|Tapa y marco cuadrado para rellenar 600x600 mm fund dúctil, C-250, RRC 650, EJ-NORINCO|497.08|300821|3|
+~T|E28BBA0060|Tapa cuadrada y marco, para pavimento u hormigón, de fundición dúctil, soporte élastico de policloropreno pegado al marco, anti-ruido y anti-desplazamiento, clase C-250, con medidas exteriores de marco 74x740x100 mm y hueco libre de 600x600 mm, altura de relleno 75 mm, peso del conjunto tapa y marco de 83 Kg, s/ norma EN-124, ref RRC500, de EJ-NORINCO|
+~C|E28BCA0040|ud|Tapa redonda articulada y marco octogonal p/ rellenar ø 600 mm fund dúctil, D-400, SOLO O PAV8, EJ-NORINCO|486.72|300821|3|
+~T|E28BCA0040|Tapa redonda articulada y marco octogonal de fundición dúctil para rellenar, soporte elastico de policloropreno pegado a la tapa, anti-ruido y anti-desplazamiento, tapa extraíble a 120º y bloqueo de seguridad de 90º, clase D-400, con medidas exteriores de marco ø 850x100 mm y hueco libre de ø 600 mm, altura de relleno 80 mm, peso del conjunto tapa y marco de 74 Kg, certificado Kitemark, s/ norma EN-124, ref SOLO O PAV8, de EJ-NORINCO.|
+~C|E28EB001JUPV|kg|Material unión junta elástica y accesorios|14.48|300821|3|
+~T|E28EB001JUPV|Kg. 
+Material unión junta elástica y accesorios|
+~C|E28EC0020|m|Tubería saneam. PEAD SN8 D 200 mm, Condusan (T.P.P.)|11.33|300821|3|
+~T|E28EC0020|Tubería saneamiento PEAD SN8 D 200 mm, PNE-prEN 13476-1, Condusan (T.P.P.)|
+~C|E28EC0020P|ud|Piezas especiales unión Tubería PEAD SN8 D 200 mm|102.96|300821|3|
+~C|E28EC0040|m|Tubería saneam. PEAD SN8 D 315 mm, Condusan (T.P.P.)|24.21|300821|3|
+~T|E28EC0040|Tubería saneamiento PEAD SN8 D 315 mm, PNE-prEN 13476-1, Condusan (T.P.P.)|
+~C|E28P0030|ud|Conexión con red existente|211.2|300821|3|
+~C|E32A110|ud|Ensayo Próctor Modificado|100.32|300821|3|
+~C|E32A120|ud|Determinación densidad in-situ isotopos radiactivos|31.02|300821|3|
+~C|E33C0020|m²|Pavimento hidráulico Santo Domingo o equivalente 25x25|11.85|300821|3|
+~C|E33LA0090|ud|Bordillo prefabricado 50x20x30 cm, Cardón o similar|11.88|300821|3|
+~T|E33LA0090|m. Bordillo hormigón fck=30 N/mm², 50x20x30cm|
+~C|E35HD0005-S|Kg.|Pintura acrílica reflexiva cualquier color|1.45|300821|3|
+~C|E35HD0030|kg|Microesferas vidrio|2.51|300821|3|
+~T|E35HD0030|Microesferas vidrio|
+~C|E35HD0030-S|kg|kg. Microesferas vidrio|2.51|300821|3|
+~T|E35HD0030-S|kg. Microesferas vidrio |
+~C|E35HD0050|kg|Granulos antiderrapantes|0.66|300821|3|
+~T|E35HD0050| |
+~C|E38AA0020|ud|Gafa antisalpicaduras acetato c/ventil. indirecta|11.59|300821|3|
+~T|E38AA0020|Gafa antisalpicaduras acetato con ventilación indirecta, 9405 Uvex, CE.|
+~C|E38AA0191|ud|Mascarilla desechable FFP2 o similar|0.55|300821|3|
+~C|E38AA0320|ud|Mascarilla FFP3 autofiltrante, Würth|26.82|300821|3|
+~T|E38AA0320|Mascarilla FFP3 autofiltrante, protección contra partículas sólidas y líquidas de alta toxicidad, con marcado CE, Würth|
+~C|E38AA0340|ud|Tapones antirruidos, Würth|1.02|300821|3|
+~T|E38AA0340|Tapones antirruidos, valor medio de protección 36dB, Würth|
+~C|E38AA0370|ud|Casco seguridad SH 6, Würth|23.72|300821|3|
+~T|E38AA0370|Casco seguridad SH 6, con marcado CE, Würth|
+~C|E38AB0200|ud|Guantes protección nitrilo amarillo, Würth|8.95|300821|3|
+~T|E38AB0200|Guantes protección nitrilo amarillo, Würth, con marcado CE.|
+~C|E38AC0110|ud|Botas S3 marrón, Würth|111.98|300821|3|
+~T|E38AC0110|Botas S3 marrón S3 (par), con puntera y plantilla metálica, con marcado CE, Würth|
+~C|E38AE0120|ud|Arnés anticaida|40|081121|3|
+~T|E38AE0120|Arnés anticaída de dos puntos de anclaje, con anillas en D dorsal y anillas de sujeción frontal , tirantes  ajustables en el pecho y muslo. Con correa de asiento y con Capacidad hasta 140KG .Fabricado en poliéster|
+~C|E38BB0010|ud|Valla metálica amarilla de 2,50x1 m|59.82|300821|3|
+~T|E38BB0010|Valla metálica amarilla de 2,50x1 m|
+~C|E38CB0020|m|Cinta bicolor rojo-blanco, balizamiento|0.12|300821|3|
+~T|E38CB0020|Cinta bicolor rojo-blanco, de balizamiento, en rollos de 250 m.|
+~C|E38CC0020|ud|Chaleco reflectante|7.91|300821|3|
+~T|E38CC0020|Chaleco reflectante|
+~C|E38CE010|ud|Pies de hormigón para cerramiento|7.92|300821|3|
+~C|E38CE020|m|Valla cerramiento acero galv h=2m|3.96|300821|3|
+~C|E38CE021|m²|Lona polietileno alta densidad tratamiento UV|0.79|300821|3|
+~C|E38E0020|ud|Botiquín tipo bolso c/correa, c/contenido|55.45|300821|3|
+~T|E38E0020|Botiquín tipo bolso con correa, con contenido completo.|
+~C|E38PA0020|mes|Alquiler de aseo portátil de PE de 1,20x1.20x2.35, con inodoro químico|225|300821|3|
+~C|E38PA0025|mes|Alquiler de caseta prefabricada para almacenamiento|165|300821|3|
+~C|E38PA010|ud|Tapa de madera|5.81|300821|3|
+~C|E38PM050|m²|Chapa de acero e=10 mm protección zanjas y pozos|85.8|300821|3|
+~C|EP27EB120|ud|Captafaro reflectante dos caras|19.25|300821|3|
+~C|EP27EB130|kg|Resina de fijación al pavimento|36.3|300821|3|
+~C|Ensayos MBC_Riego|u|Ensayos MBC_Riego|138.6|300821|0|
+~T|Ensayos MBC_Riego| |
+~C|GEST. ASF.2|t|Canon de planta asfáltica gestor autorizado|18.48|300821|0|
+~C|GEST. DEMO.|tn|Canon de planta de gestor autorizado|10.56|300821|0|
+~C|GEST. HORM.|t|Canon de planta de gestor autorizado|10.56|300821|0|
+~C|GEST.TIE|t|Canon vertido a gestor autorizado|6.6|300821|0|
+~C|L1.1#||DEMOLICIONES|3776.87|300606|0|
+~D|L1.1#|DA001\1\24.75\DA002\1\136.4\DA008\1\7.2\|
+~C|L1.2#||MOVIMIENTO DE TIERRAS|17843.55|300606|0|
+~D|L1.2#|MT001-B\1\144.44\MT002-B\1\8.86\MT003-B\1\37.19\DR001-B\1\89.38\|
+~C|L1.3#||SANEAMIENTO|15121.9|201099|0|
+~D|L1.3#|RAP006\1\2\RAP007\1\1.2\RAP010\1\7\RAP011\1\2\RAP012\1\1\RAP013\1\115.5\|
+~C|L1.4#||ABASTECIMIENTO|2479.86|300606|0|
+~D|L1.4#|REAB001\1\75\REAB002\1\7\REAB003\1\7\REAB004\1\2\|
+~C|L1.5#||REPOSICIONES|12283.52|201099|0|
+~D|L1.5#|PAV002\1\0.01\PAV007\1\7.08\REP070\1\35.5\REP071\1\9\RAAC02\1\42.6\RAAC01\1\71\SAV001\1\5\SAV002\1\50\SAER04\1\10\SSAA2110_023\1\1\|
+~C|L1.6#||CALIDAD|0|070515|0|
+~D|L1.6#|0801\1\0\0802\1\0\0805\1\0\|
+~C|L1.7#||GESTIÓN DE RESIDUOS|2424.43|300821|0|
+~D|L1.7#|170101\1\22.44\170107\1\36.66\170302b\1\9.21\170504\1\246.99\|
+~C|L1.8#||SEGURIDAD Y SALUD|10101.26|201099|0|
+~D|L1.8#|L1.8.1\1\1\L1.8.2\1\1\L1.8.3\1\1\L1.8.4\1\1\|
+~C|L1.8.1#||Protecciones individuales|432.96|070515|0|
+~D|L1.8.1#|SS001\1\4\SS002\1\4\SS004\1\4\SS005\1\4\SS006\1\4\SS008\1\4\SSC05\1\12\SS016\1\4\SS024\1\2\|
+~C|L1.8.2#||Protecciones colectivas|1346.6|070515|0|
+~D|L1.8.2#|SS012\1\6\SS015\1\150\SS013\1\50\SS029\1\12\SS030\1\50\|
+~C|L1.8.3#||Señalización|5552.29|300606|0|
+~D|L1.8.3#|SEÑOB2110_023\1\1\|
+~C|L1.8.4#||Varios|2769.41|201099|0|
+~D|L1.8.4#|SS017\1\1\SS018\1\1\SS034\1\50\SS032\1\1.5\SS033\1\1.5\SS040\1\36\SS041\1\1.5\|
+~C|M01A0005|h|Capataz|21.59|300821|1|
+~C|M01A0010|h|Oficial primera|20.42|300821|1|
+~T|M01A0010|Oficial primera|
+~C|M01A0020|H.|Oficial segunda|19.94|300821|1|
+~C|M01A0030|h|Peón|19.23|300821|1|
+~T|M01A0030|Peón|
+~C|M01B0050|h|Oficial fontanero|20.42|300821|1|
+~T|M01B0050|Oficial fontanero|
+~C|M01B0060|h|Ayudante fontanero|19.38|300821|1|
+~T|M01B0060|Ayudante fontanero|
+~C|M01B0070|h|Oficial electricista|20.42|300821|1|
+~T|M01B0070|Oficial electricista|
+~C|M01B0090|h|Oficial pintor|20.42|300821|1|
+~T|M01B0090|Oficial pintor|
+~C|M01B0100|h|Ayudante pintor|19.38|300821|1|
+~T|M01B0100|Ayudante pintor|
+~C|M01B0130|h|Encargado señalización.|20.42|300821|1|
+~T|M01B0130|Encargado señalización.|
+~C|M11SA010|h.|Ahoyadora|18.29|300821|2|
+~C|MT001-B|m³|Excav. en zanjas, pozos cualquier terreno, medios mecánicos|20.42|300606|0|
+~D|MT001-B|M01A0010\1\0.1\QAA0020\1\0.3\QAB0030\1\0.1\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|MT001-B|m³. Excavación en zanjas, pozos o cimientos, en todo tipo de terreno, con medios mecánicos, refino y compactación del fondo de la excavación, incluso carga y transporte de material sobrante a gestor de residuos autorizado, totalmente terminada.|
+~C|MT002-B|m³|Relleno de zanjas material seleccionado de la excavación|12.45|070515|0|
+~D|MT002-B|M01A0010\1\0.38\E01E0010\1\0.02\QAA0020\1\0.05\maq009\1\0.08\%CI\1\0.03\|
+~T|MT002-B|m³ Relleno de zanjas con materiales seleccionados de préstamos o procedentes de la excavación, incluso extendido, regado y compactado por capas de 30 cm, al Proctor Modificado del 95 % 
+|
+~C|MT003-B|m³|Relleno de zanjas material seleccionado procedente de préstamos|16.64|300606|0|
+~D|MT003-B|maq015\1\0.025\maq009\1\0.096\M01A0030\1\0.3\E01E0010\1\0.2\A09A010-R\1\1\%medaux2%\1\0.02\|
+~T|MT003-B|m³. Relleno de zanjas con materiales seleccionados de préstamos, incluso extendido, regado y compactado por capas de 30 cm, al proctor modificado del 95% |
+~C|P27EB082|ud|Cono PVC normal 3,3 kg h=700mm|28.31|300821|3|
+~A|P27EB082|cono\PVC\|
+~C|P27EB211|ud|Panel direc.b/r 80x40 reflex.parcial 2|78.69|300821|3|
+~A|P27EB211|panel\|
+~C|P27EB501|ud|Barrera New Jersey BM-1850|157.83|300821|3|
+~A|P27EB501|barrera\|
+~C|P27EC160|ud|Valla contenc.peatones 2,5 m.|140.18|300821|3|
+~A|P27EC160|valla\peatonal\|
+~C|P27EL010|ud|Baliza destellante incandescente|35.75|300821|3|
+~A|P27EL010|incandescencia\baliza\|
+~C|P27EL400|ud|Juego 2 semaforos trafico altern|11233.61|300821|3|
+~A|P27EL400|semáforo\tráfico\juego\|
+~C|P27ER180|ud|Señal rectangular refl. E.G.120x180cm|420.1|300821|3|
+~C|P27EW010|m.|Poste galvanizado 80x40x2 mm.|21.12|300821|3|
+~A|P27EW010|galvanizar\poste\|
+~C|P27EW020|m.|Poste galvanizado 100x50x3 mm.|31.34|300821|3|
+~A|P27EW020|poste\galvanizar\|
+~C|P27EW130|ud|Pie galv. para panel direccional|47.35|300821|3|
+~A|P27EW130|panel\dirección\galvanizar\pie\|
+~C|PAV002|t|Riego de adherencia termohaderente C60B3 TER|1234.47|300606|0|
+~D|PAV002|equipo030\1\0.001\A08PAV0020\1\1\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|PAV002|Tn. Emulsión catiónica de rotura rápida termoadherente C60B3 TER, en riego de adherencia, con dotación mínima de 0.60 Kg/m2, totalmente colocada.|
+~C|PAV007|t|MBC AC 16 surf 60/70 D (D-12) i/ filler i/betún reposición en zanjas|103.12|300606|0|
+~D|PAV007|equipo002\1\0.007\A09A0002\1\0.7\A09A0003\1\0.3\A09F0001\1\0.06\A09B0004\1\0.055\Ensayos MBC_Riego\1\0.02\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|PAV007|Tn. Mezcla bituminosa en caliente tipo hormigón bituminoso AC16 surf 60/70 D (D-12) para reposición de zanjas en capas de rodadura, extendida, compactada con maquinaria pequeña y totalmente terminada. Incluso p.p de formación de vados o accesos a garajes, incluye filler de aportación (6%) y el ligante (5,5%) incluso transporte y pesaje en báscula oficial autorizada por la Dirección Facultativa. Densidad media = 2,3 t/m³ |
+~C|PP SEÑAL005|Ud.|PART. PROP. SEÑAL REFLEX. TRIANGULAR 90|255|300606|3|
+~D|PP SEÑAL005|mat0008\1\2.8\mat0007\1\1\A03A0060\1\0.125\equipo012\1\0.003\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|PP SEÑAL005|Ud. Señal reflectante triangular de 90 cm., incluso poste galvanizado de 80x40x2 mm., tornillería, cimentación y anclaje, totalmente colocada.|
+~C|PP SEÑAL006|Ud.|PART. PROP. SEÑAL REFLEX. CIRCULAR 60|240.37|300606|3|
+~D|PP SEÑAL006|equipo012\1\0.003\A03A0060\1\0.125\mat0006\1\1\mat0008\1\2.8\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|PP SEÑAL006|Ud. Señal reflectante circular de 60 cm., incluso poste galvanizado de 80x40x2 mm., tornillería, cimentación y anclaje, totalmente colocada.|
+~C|PP U18BCN012|ud|PART. PROP. CONO PVC NORMAL h=700mm|29.08|300821|3|
+~D|PP U18BCN012|M01A0030\1\0.04\P27EB082\1\1\|
+~A|PP U18BCN012|colocación\cono\PVC\baliza\|
+~T|PP U18BCN012|Cono de balizamiento de PVC 3,3 kg. normal de 700 mm. de altura, colocado.|
+~C|PP U18BPD011|ud|PART. PROP. P.DIRECCIONAL b/r 80x40 cm. REFL.PARC. 2|261.98|300821|3|
+~D|PP U18BPD011|M01A0005\1\0.25\M01A0010\1\0.5\M01A0030\1\0.5\P27EB211\1\1\P27EW010\1\3\P27EW130\1\2\|
+~A|PP U18BPD011|colocación\poste\galvanizar\dirección\panel\blanco\nivel\reflexivo\soporte\pie\baliza\desviación\rojo\|
+~T|PP U18BPD011|Panel direccional de 80x40 cm., blanco y rojo, reflexivo zona blanca nivel 2, incluso poste galvanizado de sustentación con pie, en balizamiento de desvíos, colocado.|
+~C|PP U18BV011|ud|PART. PROP. BARRERA MÓVIL NEW JERSEY BM-1850|181.44|300821|3|
+~D|PP U18BV011|M01A0030\1\1\P27EB501\1\1\E01CA0010\1\0.2\|
+~A|PP U18BV011|barrera\móvil\polietileno\colocación\|
+~T|PP U18BV011|Barrera móvil New Jersey BM-1850 de polietileno, rellenable de arena/agua, de medidas 1x0,80x0,5 m., colocada.|
+~C|PP U18DVR040|ud|PART. PROP. VALLA CONTENCIÓN PEATONES 2,5 m.|149.8|300821|3|
+~D|PP U18DVR040|M01A0030\1\0.5\P27EC160\1\1\|
+~A|PP U18DVR040|valla\amarillo\colocación\peatonal\contenedor\|
+~T|PP U18DVR040|Valla de contención de peatones de 2,50 m., convencional, amarilla, colocada.|
+~C|PP U18LB010|ud|PART. PROP. BALIZA DESTELLANTE INCANDESCENTE|54.98|300821|3|
+~D|PP U18LB010|M01A0030\1\1\P27EL010\1\1\|
+~A|PP U18LB010|celular\automático\baliza\incandescencia\intermitente\luz\lente\cara\ámbar\|
+~T|PP U18LB010|Baliza de obra TL-2 de destellos intermitentes de luz incandescente, lente 2 caras ambar d=200 mm y celula crepuscular automatica.|
+~C|PP U18LS010|ud|PART. PROP. JUEGO 2 SEMÁFOROS PORTÁTILES OBRA|11252.84|300821|2|
+~D|PP U18LS010|M01A0030\1\1\P27EL400\1\1\|
+~A|PP U18LS010|semáforo\regulación\digital\juego\tráfico\cabezal\cuarzo\cable\límite\control\portátil\|
+~T|PP U18LS010|Juego de 2 semáforos con controlador digital de 50 progamas y diferentes funciones para regular el trafico alternativo. Sincronizacion por cuarzo (sin cables ni limite de distancia entre los dos cabezales) con carro portabaterias.|
+~C|PP U18VAR020|ud|PART. PROP. PANEL DE DESVÍOS REFLEX 120x180cm|902.91|300821|3|
+~D|PP U18VAR020|M01A0005\1\0.5\M01A0020\1\1\M01A0030\1\1\M11SA010\1\0.5\P27ER180\1\1\P27EW020\1\11\A03A0060\1\0.55\|
+~A|PP U18VAR020|nivel\cimiento\colocación\reflexivo\troquelado\soporte\galvanizar\poste\|
+~T|PP U18VAR020|Señal rectangular de 120x180 cm., reflexiva nivel I (E.G.) y troquelada, incluso poste galvanizado de sustentación y cimentación, colocada.|
+~C|QAA0020|h|Retroexcavadora 72 kW|43.12|300821|2|
+~T|QAA0020|Retroexcavadora sobre ruedas, 72 kW, peso en orden de trabajo 8140 kg|
+~C|QAA0070|h|Pala cargadora sobre neumáticos, 96 kW|51.26|300821|2|
+~T|QAA0070|Pala cargadora sobre neumáticos, 96 kW, peso en orden de trabajo 10968 kg|
+~C|QAB0030|h|Camión basculante 15 t|44.62|300821|2|
+~T|QAB0030|Camión basculante 15 t|
+~C|QAB0050|h|Furgón de 3,5 t|21.29|300821|2|
+~T|QAB0050|Furgón de 3,5 t|
+~C|QAC0010|h|Camión grúa 20 t|43.81|300821|2|
+~T|QAC0010|Camión grúa de 20 t, pluma de 23 m|
+~C|QAD0010|h|Hormigonera portátil 250 l|7.07|300821|2|
+~T|QAD0010|Hormigonera portátil 250 l|
+~C|QAF0080|h|Máquina pintabandas autopropuls airless|40.99|300821|2|
+~T|QAF0080|Máquina pintabandas autopropuls. airless|
+~C|QBB0043|h|Compresor móvil de 2,5 m³/min|7.8|300821|2|
+~T|QBB0043|Compresor móvil de 2,5 m³/min|
+~C|QBC0010|h|Martillo eléctrico manual picador.|6.47|300821|2|
+~T|QBC0010|Martillo eléctrico manual picador.|
+~C|RAAC01|m|Bordillo recto o curvo prefabricado de hormigón 50x20x30 cm|51.93|070515|0|
+~D|RAAC01|M01A0010\1\0.45\M01A0030\1\0.45\E33LA0090\1\2\A03A0060\1\0.045\A02A0030\1\0.01\A01B0010\1\0.005\%CI\1\0.03\|
+~T|RAAC01|Bordillo recto o curvo para acera prefabricado de hormigón vibrado, de 50x20x30 cm, tipo Cardón o equivalente, con base y refuerzo de hormigón en masa HM-20, rejuntado y nivelado sobre capa de mortero de arena y cemento 1:5. Perfectamente colocado en planta y alzado, según rasantes actuales de la calle y salvando en todo momento las distintas entradas a las viviendas, por lo que es imprescindible el replanteo y marcaje en el terreno de la solución prevista en el proyecto, incluso la realización de cortes e ingletes con cortadora eléctrica en los encuentros entre alineaciones diferentes, así como cortes longitudinales en aglomerado asfáltico u hormigón para la ejecución de solera y colocación del bordillo.
+|
+~C|RAAC02|m²|Pavimento de loseta hidráulica antideslizante 25x25x3 cm|52.61|300606|0|
+~D|RAAC02|M01A0010\1\0.35\M01A0030\1\0.4\E33C0020\1\1.05\A02A0040\1\0.05\A01B0010\1\0.01\A03A0060\1\0.1\E01E0010\1\0.005\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|RAAC02|Pavimento de loseta antideslizante de cemento hidráulica medio de 25x25x3 cm de 4 pastillas tipo Santo Domingo o equivalente conforme UNE-EN-1339, color a elegir por la Dirección Facultativa, colocadas con mortero 1:6 de cemento y arena, incluso solera de hormigón de fck=20 N/mm² de 10 cm de espesor medio, cortes, formación de juntas de dilatación, rejuntado y limpieza. Perfectamente colocado en planta y alzado, según rasantes actuales de la calle y salvando en todo momento las distintas entradas a las viviendas o huecos existentes, por lo que es imprescindible el replanteo y marcaje en el terreno de la solución prevista en el proyecto. Incluso recrecido de arquetas a cota definitiva, colocación y remate de tapas de arquetas. Totalmente terminado.|
+~C|RAP006|Ud|Pozo registro circular D=1,20 m horm., parte fija (sup e inf) i/tapa fund|1733.3|300606|0|
+~D|RAP006|M01A0010\1\0.9\M01A0030\1\0.9\QAC0010\1\0.45\E28BCA0040\1\1\E28AC0040\1\1\E28AC0050A\1\1\E28AD0030\1\1\A03A0060\1\1.5\%medaux2%\1\0.02\%CI\1\0.03\MT001-B\1\2.2\MT002-B\1\1.5\|
+~T|RAP006|Ud. Pozo de registro circular (parte fija), prefabricado de hormigón armado, de diámetro interior 1,20 m, con marcado CE s/UNE-EN 1917 y UNE 127917, formado por pieza inferior constituída por base de pozo de 1200x1000 mm (Dxh) y pieza superior constituída por cono de 1200/625x1000 mm (D inf/sup x h), incluso pates montados en fábrica, registro reforzado D 400, s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de D=600 mm, juntas de estanqueidad o material de sellado, conexión a conducciones, incluso excavación precisa, relleno de trasdós con carga y transporte de tierras sobrantes a vertedero, totalmente terminado, según ordenanzas municipales.|
+~C|RAP007|m|Pozo registro circular D=1,20 m horm., parte intermedia|357.38|300606|0|
+~D|RAP007|M01A0010\1\1\M01A0030\1\1\QAC0010\1\0.3\E28AC0060\1\0.833\E28AD0030\1\1\A03A0060\1\0.2\%medaux2%\1\0.02\%CI\1\0.03\MT001-B\1\2\MT002-B\1\1.15\|
+~T|RAP007|m. Pozo de registro circular (parte intermedia), prefabricado de hormigón armado, de diámetro interior 1,20 m, con marcado CE s/UNE-EN 1917 y UNE 127917, formado realizado con aros prefabricadas (3 ud/m) de hormigón, incluso pates montados en fábrica, juntas de estanqueidad o material de sellado, conexión a conducciones, incluso excavación precisa, relleno de trasdós con carga y transporte de tierras sobrantes a vertedero, totalmente terminado, según ordenanzas municipales.|
+~C|RAP010|Ud|Arqueta registro 600x600 mm interior, i/tapa fundición dúctil|861.35|300606|0|
+~D|RAP010|M01A0010\1\3\M01A0030\1\3\A03A0040\1\0.06\A03A0060\1\0.45\A05AG0020\1\4.5\E28BBA0060\1\1\%medaux2%\1\0.02\%CI\1\0.03\MT001-B\1\1.2\|
+~T|RAP010|Arqueta de registro y de paso del colector, formado por arqueta de hormigón en masa HM-20/P/16/I de 10 cms de espesor de paredes y losa de fondo, de dimensiones interiores totales 600x600 mm y altura variable comprendida entre los 0,85 y 1,25 metros, incluso registro peatonal C-250 s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, incluso excavación, relleno de trasdós con carga y transporte de tierras sobrantes a vertedero, encofrado y desencofrado, acometida y remate de tubos, según C.T.E. DB HS-5.|
+~C|RAP011|Ud|Acometida domiciliaria saneam. a red terciaria alcantarillado|358.98|300606|0|
+~D|RAP011|M01A0010\1\1\M01A0030\1\1\E28EC0020\1\3\E28EC0020P\1\1\A03A0060\1\0.25\A05AG0020\1\0.95\E28BA0050\1\1\%medaux2%\1\0.02\%CI\1\0.03\MT001-B\1\3\|
+~T|RAP011|Acometida domiciliaria de saneamiento a red terciaria de alcantarillado, con registro peatonal (tapa y cerco) B 125, s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de 400x400 mm incluso tubería de PE SN8 Ø 200 mm de doble pared corrugado exterior e interior liso, i/p.p. de piezas especiales, excavación precisa, carga y transporte de tierras a vertedero, terminada según ordenanzas municipales y según C.T.E. DB HS-5.|
+~C|RAP012|Ud|Conexión con red existente|226.32|201099|0|
+~D|RAP012|E28P0030\1\1\%UH\1\0.02\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|RAP012|Ud Conexión de las nuevas redes de saneamiento o de pluviales con redes existentes totalmente acabada. Se incluirán todos los medios de seguridad y salud necesarios para la correcta ejecución de la unidad de obra, así como la gestión de los residuos originados.|
+~C|RAP013|m|Tub. saneam. enterrado PE SN 8, Ø 315 mm dos capas|36.82|300606|0|
+~D|RAP013|M01A0010\1\0.05\M01A0030\1\0.06\QAC0010\1\0.007\E28EC0040\1\1.05\E28EB001JUPV\1\0.265\E01CA0010\1\0.151\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|RAP013|m. Tubería de saneamiento de polietileno de alta densidad, SN-8 (rigidez anular nominal 8 kN/m²), según UNE-EN 13476, Condusan (T.P.P. Tuberías y perfiles plásticos) o equivalente, de Ø 315 mm, compuesta de dos capas: una exterior en color negro y corrugada y una interior lisa y en color blanco, con junta elástica, enterrada en zanja, con p.p. de pequeño material, incluso solera de arena de 10 cm de espesor, nivelación del tubo, sin incluir excavación ni relleno de la zanja. Totalmente instalada y probada|
+~C|REAB001|m|Tub. abast. PVC, DN-63 mm, PN-16, junta elástica, T.P.P.|16.1|300606|0|
+~D|REAB001|M01A0010\1\0.055\M01A0030\1\0.06\E24BC0180\1\1.05\E01CA0020\1\0.09\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|REAB001|Tubería de PVC, UNE-EN ISO 1452, PN-16, T.P.P. o equivalente, de D=63 mm, e=3,0 mm, junta elástica, en red de abastecimiento, colocada en fondo de zanja, incluso solera de arena de 15 cm de espesor, p.p. de pequeño material, piezas especiales, nivelación del tubo, sin incluir excavación ni relleno de la zanja, colocada s/ UNE-ENV 1452-6. Instalada y probada|
+~C|REAB002|Ud|Acometida a red terciaria abast. con tub. PE AD, DN-40 mm, 16 atm|97.11|300606|0|
+~D|REAB002|M01B0060\1\1\M01B0050\1\1\E24BAB0080\1\2.2\E24BE0120\1\1\E24BE0040\1\1\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|REAB002|Acometida a la red terciaria municipal de agua potable (sin incluir arqueta y válvula) con tubería de polietileno de alta densidad de 40 mm (1 1/2") de diámetro y 16 atm. de presión, con collarín de toma y piezas especiales de latón, excavación, relleno, carga y transporte de tierras sobrantes a vertedero, totalmente terminada y probada, según C.T.E. DB HS-4.|
+~C|REAB003|Ud|Arqueta acometida abast. y válv. paso 1", c/tapa y cerco fund. d|61.83|300606|0|
+~D|REAB003|E28BA0100\1\1\E24GB0300\1\1\M01A0010\1\0.5\M01B0050\1\0.2\A03A0060\1\0.02\A05AG0020\1\0.25\%CI\1\0.03\MT001-B\1\0.03\|
+~T|REAB003|Arqueta de acometida y válvula de paso "macho" esférica de 1 1/4",  constituída por paredes y solera de hormigón de fck=15 N/mm² y registro peatonal B-125 s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de 250X250 mm, incluso p.p. de piezas especiales, excavación, relleno, encofrado, carga y transporte de tierras sobrantes a vertedero, totalmente terminada s/ ordenanzas.|
+~C|REAB004|Ud|Arqueta p/válv. compuerta 1 1/4" hasta 4" c/tapa y cerco fund. d|79.89|300606|0|
+~D|REAB004|E28BA0100\1\1\E24GA0300\1\1\M01A0010\1\0.5\M01B0050\1\0.2\A03A0060\1\0.03\A05AG0020\1\0.3\%CI\1\0.03\MT001-B\1\0.05\|
+~T|REAB004|Arqueta en acera para alojamiento de válvula de compuerta de 1 1/4" hasta 4" (válvulas incluida), en red terciaria de abastecimiento y acometida, constituída por paredes y solera de hormigón de fck=15 N/mm² y registro peatonal B-125 s/UNE EN 124, de fundición dúctil EJ-Norinco o equivalente, de 250x250 mm, incluso p.p. de excavación, relleno, encofrado, carga y transporte de tierras sobrantes a vertedero.|
+~C|REP070|m²|Remate de fachadas por actividades en acera|41.5|201099|0|
+~D|REP070|M01A0010\1\0.1\M01A0030\1\0.3\M01B0090\1\0.15\M01B0100\1\0.15\E0701MAT\1\1.05\%UH\1\0.02\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|REP070|Remate de fachadas hasta una altura de 1 metro desde encuentro de la misma con acera, por posibles daños ocasionados en las mismas a causa de las ejecuciones llevadas a cabo en aceras. La partida incluye los trabajos de reposición de materiales dañados. enfoscado y pintura, aplacados en piedra natural o artificial, cerámica, fachadas ventiladas etc.. de tal modo que la fachada o continuidad de la misma quede igual a su estado posterior a los comienzos de la obra.|
+~C|REP071|Ud|Reparaciones en instalaciones varias|307.53|201099|0|
+~D|REP071|M01A0010\1\0.5\M01A0030\1\1.5\M01B0070\1\2\M01B0050\1\4\E0702MAT\1\1\%UH\1\0.02\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|REP071|Reparaciones eventuales en acometidas de abastecimiento, saneamiento, electricidad y cualquier otra afectada, incluso pequeño material de fontanería y obras necesarias, conforme se especifica en planos y documentos del proyecto|
+~C|SAER04|Ud|Captafaro retrorreflectante para señalización vial horizontal|26.46|201099|0|
+~D|SAER04|M01A0030\1\0.12\EP27EB120\1\1\EP27EB130\1\0.1\%UH\1\0.02\%CI\1\0.03\|
+~T|SAER04|Suministro y colocación sobre la calzada decaptafaro reflectante a dos caras, de clase PRP1 y NCR1 según UNE 1463-1. Incluso p/p de elementos de fijación al pavimento, mantenimiento en condiciones seguras durante todo el periodo de tiempo que se requiera. Totalmente terminado.|
+~C|SAV001|m|Marca cont. ó disc. de 0,10 m|1.85|201099|0|
+~D|SAV001|E35HD0005-S\1\0.11\E35HD0050\1\0.06\E35HD0030\1\0.065\equipo008\1\0.002\%CI\1\0.03\|
+~T|SAV001|Ml. de Marca vial continua o discontinua de 10 cm. de ancho, realmente pintada con pintura acrílica aplicada por pulverización, cualquier color, con microesferas de vidrio y gránulos antideslizantes conforme al artículo 700 del PG-3, aplicadas por pulverización, incluso limpieza del firme y premarcado, completamente terminada, así como la gestión de los residuos originados. Se abonarán por metros realmente aplicados.|
+~C|SAV002|m|Marca cont. ó disc. de 0,15 m|1.96|201099|0|
+~D|SAV002|E35HD0005-S\1\0.15\E35HD0050\1\0.07\E35HD0030\1\0.075\equipo008\1\0.002\%CI\1\0.03\|
+~T|SAV002|Ml. de Marca vial continua o discontinua de 15 cm. de ancho, realmente pintada con pintura acrílica aplicada por pulverización, cualquier color, con microesferas de vidrio y gránulos antideslizantes conforme al artículo 700 del PG-3, aplicadas por pulverización, incluso limpieza del firme y premarcado, completamente terminada, así como la gestión de los residuos originados. Se abonarán por metros realmente aplicados.|
+~C|SEÑOB2110_023|P.A.|Señalización de obras y desvíos|5552.29|300606|0|
+~D|SEÑOB2110_023|PP U18LS010\1\0.08\PP U18BCN012\1\5\PP U18BV011\1\7\PP SEÑAL005\1\2.5\PP SEÑAL006\1\2.5\PP U18BPD011\1\2\PP U18DVR040\1\2\PP U18LB010\1\2\PP U18VAR020\1\1\%CI\1\0.03\|
+~T|SEÑOB2110_023|Partida alzada de señalización, balizamiento y vallado de la obra, incluyendo pareja de semáforos, señalización vertical según esquema de desvío (Señalización de obras fijas, fig.A6/4), conos de balizamiento, balizamiento nocturno, paneles direccionales de desvíos, paneles direccionales y vallado de la obra. Esta unidad contempla su conservación, mantenimiento y reposición de estas actuaciones  a lo largo de todo el periodo de la obra, asi como su retirada una vez finalizada la obra.|
+~C|SS001|ud|Gafa antisalpicaduras, de acetato, con ventilación indirecta|11.94|070515|0|
+~D|SS001|E38AA0020\1\1\%CI\1\0.03\|
+~T|SS001|Gafa antisalpicaduras, de acetato, con ventilación indirecta, homologada CE, s/normativa vigente.|
+~C|SS002|ud|Casco de seguridad|4.88|070515|0|
+~D|SS002|E38AA0370\1\0.2\%CI\1\0.03\|
+~T|SS002|Casco de seguridad CE, homologado, CE s/normativa vigente.|
+~C|SS004|ud|Tapones protectores auditivos tipo aural|1.05|070515|0|
+~D|SS004|E38AA0340\1\1\%CI\1\0.03\|
+~T|SS004|Tapones protectores auditivos tipo aural, (par) homologados CE s/normativa vigente.|
+~C|SS005|ud|Mascarilla con filtro contra polvo|27.62|070515|0|
+~D|SS005|E38AA0320\1\1\%CI\1\0.03\|
+~T|SS005|Mascarilla con filtro contra polvo, homologada CE s/normativa vigente.|
+~C|SS006|ud|Guantes de látex, amarillo, anticorte|9.22|070515|0|
+~D|SS006|E38AB0200\1\1\%CI\1\0.03\|
+~T|SS006|Guantes de látex, amarillo, anticorte (par). CE s/normativa vigente.|
+~C|SS008|ud|Bota lona y serraje, con puntera y plantilla metálica|23.07|070515|0|
+~D|SS008|E38AC0110\1\0.2\%CI\1\0.03\|
+~T|SS008|Bota lona y serraje, con puntera y plantilla metálicas incorporada, (par) homologada CE s/normativa vigente.|
+~C|SS012|ud|Valla metálica modular, tipo Ayuntamiento, de 2,50x1,10 m|8.14|070515|0|
+~D|SS012|M01A0030\1\0.1\E38BB0010\1\0.1\%CI\1\0.03\|
+~T|SS012|Valla metálica modular, tipo Ayuntamiento, de 2,50 de largo y 1,10 m de altura, (amortización = 10 %), incluso colocación y posterior retirada.|
+~C|SS013|m|Valla p/cerramiento de obras acero galv h=2m|16.5|070515|0|
+~D|SS013|M01A0010\1\0.2\M01A0030\1\0.3\E38CE010\1\0.08\E38CE020\1\1\E38CE021\1\2\%CI\1\0.03\|
+~T|SS013|Valla para cerramiento de obras de h=2 m y 3,5m de largo, realizada con mallazo de acero galvanizado colocado horizontalmente y postes cilíndricos del mismo material colocados c/3,5 m, y bases prefabricadas de hormigón, i/accesorios y taladro de fijación en pavimentación actual o bases de hormigón prefabricado, totalmente montada (amortización en obra para varias puestas y traslados de las mismas) incluso acceso para entrada de trabajadores y paso de camiones o cualquier vehículo de obra. Malla de ocultación de polietileno de alta densidad, color verde, colocada sobre las vallas.|
+~C|SS015|m|Cinta de balizamiento bicolor|0.25|070515|0|
+~D|SS015|M01A0030\1\0.006\E38CB0020\1\1\%CI\1\0.03\|
+~T|SS015|Cinta de balizamiento, bicolor (rojo y blanco), (amortización = 100 %), incluso colocación y desmontaje.|
+~C|SS016|ud|Chaleco reflectante|8.15|070515|0|
+~D|SS016|E38CC0020\1\1\%CI\1\0.03\|
+~T|SS016|Chaleco reflectante CE s/normativa vigente.|
+~C|SS017|ud|Botiquín tipo bolso con correa, con contenido sanitario|57.12|070515|0|
+~D|SS017|E38E0020\1\1\%CI\1\0.03\|
+~T|SS017|Botiquín tipo bolso con correa, con contenido sanitario completo según ordenanzas.|
+~C|SS018|ud|Extintor portátil|105.97|300821|0|
+~D|SS018|E26BAC0020\1\1\|
+~T|SS018|Extintor de polvo químico ABC polivalente antibrasa de eficacia 43A/233B, de 12k. de agente extintor, tipo Parsi modelo PI-12 U o similar, con soporte, manómetro comprobable y manguera con difusor, según norma UNE 23110.Medida la unidad instalada|
+~C|SS024|ud|Arnés anticaídas|41.2|070515|0|
+~D|SS024|E38AE0120\1\1\%CI\1\0.03\|
+~T|SS024|Arnés anticaída de dos puntos de anclaje, con anillas en D dorsal y anillas de sujeción frontal , tirantes  ajustables en el pecho y muslo. Con correa de asiento y con Capacidad hasta 140KG .Fabricado en poliéster.|
+~C|SS029|ud|Tapa de madera|5.98|070515|0|
+~D|SS029|E38PA010\1\1\%CI\1\0.03\|
+~T|SS029|Protección de hueco horizontal para hueco de 100x100 cm de sección, durante su proceso de construcción hasta que se coloque su tapa definitiva o relleno de hueco, realizada mediante tabloncillos de madera de pino de 15x5,2 cm, colocados uno junto a otro hasta cubrir la totalidad del hueco, reforzados en su parte inferior por tres tabloncillos en sentido contrario, fijados con clavos de acero, con rebaje en su refuerzo para alojarla en el hueco de la planta de la arqueta de modo que impida su movimiento horizontal, preparada para soportar una carga puntual de 3 kN. Amortizable en 6 usos.|
+~C|SS030|m²|Plataforma protección paso vehículos sobre zanjas|7.27|070515|0|
+~D|SS030|M01A0010\1\0.05\M01A0030\1\0.1\E38PM050\1\0.007\A01.0020\1\0.02\QAC0010\1\0.01\%CI\1\0.03\|
+~T|SS030|Protección de paso de vehículos sobre zanjas abiertas en calzada, mediante plataforma de chapa de acero de 10 mm de espesor, amortizable en 150 usos. Incluso cemento rápido para evitar la vibración de la chapa al paso de los vehículos.|
+~C|SS032|mes|Alquiler de aseo portátil de PE de 1,20x1.20x2.35, con inodoro químico|236.39|300606|0|
+~D|SS032|E38PA0020\1\1\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|SS032|Mes de alquiler de aseo portátil de polietileno, de 1,20x1,20x2,35 m, color gris, sin conexiones, con inodoro químico anaerobio con sistema de descarga de bomba de pie, espejo, puerta con cerradura y techo translúcido para entrada de luz exterior. El precio incluye transporte a obra, descarga y recogida del aseo portatil, además de la limpieza y el mantenimiento del aseo durante el periodo de alquiler.|
+~C|SS033|mes|Alquiler de caseta para almacenamiento, peq. maquinaria y herramientas|173.35|300606|0|
+~D|SS033|E38PA0025\1\1\%medaux2%\1\0.02\%CI\1\0.03\|
+~T|SS033|Mes de alquiler de caseta prefabricada para almacenamiento en obra de materiales, pequeña maquinaria y herramientas, de 2,20x2,44x2,05 m (5,40 m²) con ventana. El precio incluye transporte a obra, descarga y recogida de la caseta, además de la limpieza y el mantenimiento durante el periodo de alquiler.|
+~C|SS034|h|Cuadrilla p/conservación y mantenimiento protecciones|21.45|201099|0|
+~D|SS034|M01A0010\1\1\%UH\1\0.02\%CI\1\0.03\|
+~T|SS034|Hora de cuadrilla de seguridad formada por un oficial de 1ª, para conservación y mantenimiento de protecciones|
+~C|SS040|h|Hora peón señalista|20.2|201099|0|
+~D|SS040|M01A0030\1\1\%UH\1\0.02\%CI\1\0.03\|
+~T|SS040|Hora de señalista de seguridad formada por un peón (persona con placa de STOP/PASEN), para permitir cortar tráfico y dar paso|
+~C|SS041|mes|Costo mensual formación seguridad y salud|128|231020|0|
+~T|SS041|Costo mensual de formación de seguridad y salud en el trabajo, considerando una hora a la semana y realizada por un encargado.|
+~C|SSAA2110_023|Ud|PAJ Servicios afectados e imprevistos|1000|300821|0|
+~T|SSAA2110_023|Ud. Partida alzada a justificar en la reposición de servicios urbanos afectados generales, no especificados en proyecto, durante la ejecución de las obras (abastecimiento, , saneamiento, inst. eléctricas, telefonía, etc), incluso asegurar salidas de pluviales edificios, así como reposición de rejillas y suministros de drenaje en calzada, además de cualquier otro imprevisto.|
+~C|SSC05|ud|Mascarilla desechable FFP2 o similar|0.57|070515|0|
+~D|SSC05|E38AA0191\1\1\%CI\1\0.03\|
+~T|SSC05|Mascarilla desechable FFP2 o similar|
+~C|equipo002|d|Equipo de fabricación y extensión de MBC maq pequeña|3749.73|300821|2|
+~D|equipo002|M01A0030\1\60\M01A0010\1\6\M01A0005\1\4\maq0112\1\3.5\QAA0070\1\2\maq0600\1\2\maq0500\1\3.5\maq0520\1\3.5\|
+~T|equipo002|d. Equipo de fabricación y extensión de mezclas bituminosas en caliente con maquinaria pequeña o compacta compuesto por planta asfáltica, extendedora pequeña de aglomerado, compactador compacto de rodillos, 6 peones, 1 oficial y 1 capataz.|
+~C|equipo008|d.|Equipo de pintura señalización|721.97|201099|2|
+~D|equipo008|QAF0080\1\1.5\QAB0050\1\4\maq0110\1\1\M01A0010\1\8\M01A0030\1\8\M01B0130\1\8\%UH\1\0.02\|
+~T|equipo008|d. Equipo de aplicación de pintura acrílica en marcas viales, compuesto por máquina para pintar líneas, barredora autopropulsada, 1 peon, 1 oficial y 1 encargado de señalización|
+~C|equipo012|d.|Equipo de colocación de señales|1112.64|300821|1|
+~D|equipo012|maq0023\1\8\maq0020\1\8\M01A0030\1\16\M01A0010\1\8\|
+~T|equipo012|d. Equipo de colocación de señales compuesto por camión grúa, compresor, 2 peones y 1 oficial 1ª.|
+~C|equipo019|d|Equipo de corte de asfalto|607.04|300821|2|
+~D|equipo019|maq0021\1\8\maq0030\1\8\QBB0043\1\8\M01A0030\1\8\|
+~T|equipo019|d. Equipo de corte de asfalto compuesto por furgoneta, compresor móvil, 1 peón.|
+~C|equipo030|d|Equipo de riego autoadherente|658.56|300821|2|
+~D|equipo030|maq0031\1\7\M01A0030\1\7\|
+~T|equipo030|d. Equipo de riegos de emulsiones bituminosas compuesto por camión cuba y 1 peón.|
+~C|maq0020|H.|Compresor móvil motor eléctrico|8.02|300821|2|
+~C|maq0021|h|Furgonetas de caja abierta|33.25|300821|2|
+~C|maq0023|H.|Camión caja fija y grúa auxiliar|72.18|300821|2|
+~T|maq0023|Ml. Defensa rígida prefabricada, tipo new jersey, con hormigón HA-350 IIIa según plano de detalles en piezas de 3 ó 6 m, juntas de colocación ejecutadas e impermebilizadas, remate de partes vistas, incluso abatimientos según normativa y remates con bordillos existentes, nivelada, totalmente colocada.
+|
+~C|maq0030|h|Cortadora de asfalto|15.6|300821|2|
+~C|maq0031|h|Tanque autopropulsado con rampa de riego|74.85|300821|2|
+~C|maq0042-S|h|Pala cargadora s/neumáticos 93 kW de pot.|92.42|300821|2|
+~C|maq009|h|Compactador de conducción manual (rana)|26.34|300821|2|
+~T|maq009| |
+~C|maq0110|h|Barredora autopropulsada|80.6|300821|2|
+~C|maq0112|h|Barredora Remolcada|61.02|300821|2|
+~C|maq015|h|Retro-pala con martillo rompedor|45.32|300821|2|
+~C|maq0200|Km.|Tracto camión 4x2 y semirr. caja basc. 16 m3|0.16|300821|2|
+~C|maq0202|Km.|Camión tanque para combustible|0.26|300821|2|
+~C|maq0204-S|Km.|Camión caja fija y grúa auxiliar|0.03|300821|2|
+~C|maq0400-S|Km.|Camión tanque para combustible|0.26|300821|2|
+~C|maq0500|h|Extend aglom pequeña 60 kW c/maquinista|126.74|300821|2|
+~C|maq0520|h|Compactador rodillos vibratorio pequeño autopropulsado|84.62|300821|2|
+~C|maq0600|h|Planta mezclas asfálticas 40 t/h|665.6|300821|2|
+~C|mat0006|Ud.|Señal reflexiva circular 60 cm.|155.51|300821|3|
+~C|mat0007|Ud.|Señal reflexiva triangular 90 cm.|169.44|300821|3|
+~C|mat0008|Ml.|Poste galvanizado 80x40|18.57|300821|3|
+~M|L1.1\DA001|1\1\|24.75|\Hormigón Miguel Suárez\2\40\0.15\\\Acometidas\\\\\\Nº 4\2\2\0.15\\\Nº 7\2\2\0.15\\\Asfalto Miguel Suárez\2\8.5\0.15\\\Asfalto Camino del Guincho\2\30\0.15\\1\\\\\\|
+~M|L1.1\DA002|1\2\|136.4|\Acera Canónigo José Fernández Abad\\\\\\Tramo 1\1\28\0.8\\\Tramo 2\1\18\0.8\\\Hormigón Miguel Suárez\2\40\0.8\\\Acometida Nº 4\1\3\0.8\\\Acometida Nº 7\1\3\0.8\\\Demolición asfalto\\\\\\Asfalto Miguel Suárez\1\8.5\0.8\\\Conexión Red Existente (Camino del Guincho)\1\30\0.8\\1\\\\\\|
+~M|L1.1\DA008|1\3\|7.2|\Acera Canónigo José Fernández Abad\1\12\0.6\\1\\\\\\|
+~M|L1.2\MT001-B|2\1\|144.44|\EJE 1\\\\\\A-1 a A-5\1\50\0.8\1.45\\A-5 a P-2\1\25\0.8\1.85\\EJE 2\\\\\\P1 a A-6\1\20\0.8\1.45\\A-6 a A-4\1\20.5\0.8\1.6\1\\\\\\|
+~M|L1.2\MT002-B|2\2\|8.86|\EJE 1\\\\\\A-5 a P-2\1\25\0.8\0.2\\EJE 2\\\\\\P1 a A-6\1\20\0.8\0.15\\A-6 a A-4\1\20.5\0.8\0.15\1\\\\\\|
+~M|L1.2\MT003-B|2\3\|37.19|\EJE 1\\\\\\A-1 a A-5\1\50\0.8\0.5\\A-5 a P-2\1\25\0.8\0.5\\EJE 2\\\\\\P1 a A-6\1\20\0.8\0.5\\A-6 a A-4\1\20.5\0.8\0.5\\Descontar tuberia Ø315\-9.009\\\\1\\\\\\|
+~M|L1.2\DR001-B|2\4\|89.38|\EJE 1\\\\\\A-1 a A-5\1\50\0.8\0.95\\A-5 a P-2\1\25\0.8\1.15\\EJE 2\\\\\\P1 a A-6\1\20\0.8\0.8\\A-6 a A-4\1\20.5\0.8\0.95\1\\\\\\|
+~M|L1.3\RAP006|3\1\|2|\P-1\1\\\\\P-2\1\\\\1\\\\\\|
+~M|L1.3\RAP007|3\2\|1.2|\P-2\1\1.2\\\1\\\\\\|
+~M|L1.3\RAP010|3\3\|7|\Arquetas dispuestas\7\\\\1\\\\\\|
+~M|L1.3\RAP011|3\4\|2|\Acometidas\2\\\\1\\\\\\|
+~M|L1.3\RAP012|3\5\|1|\Conexión pozo existente\1\\\\1\\\\\\|
+~M|L1.3\RAP013|3\6\|115.5|\EJE 1\\\\\\A-1 a A-5\1\50\\\\A-5 a P-2\1\25\\\\EJE 2\\\\\\P1 a A-6\1\20\\\\A-6 a A-4\1\20.5\\\1\\\\\\|
+~M|L1.4\REAB001|4\1\|75|\Acera Canónigo José Fernández\1\35\\\\Concejal Miguel Suárez\1\40\\\1\\\\\\|
+~M|L1.4\REAB002|4\2\|7|\Concejal Miguel Suárez\\\\\\Acometidas\5\\\\\Acera Canónigo José Fernández Abad\\\\\\Acometidas\2\\\\1\\\\\\|
+~M|L1.4\REAB003|4\3\|7|\Concejal Miguel Suárez\\\\\\Acometidas\5\\\\\Acera Canónigo José Fernández Abad\\\\\\Acometidas\2\\\\1\\\\\\|
+~M|L1.4\REAB004|4\4\|2|\Concejal Miguel Suárez\1\\\\\Acera Canónigo José Fernández Abad\1\\\\1\\\\\\|
+~M|L1.5\PAV002|5\1\|0.01|\Concejal Miguel Suárez (Asfalto)\0.0006\8.5\0.4\\\Conexión Red Existente (Camino del Guincho)\0.0006\30\0.4\\1\\\\\\|
+~M|L1.5\PAV007|5\2\|7.08|\Concejal Miguel Suárez (Asfalto)\2.3\8.5\0.8\0.1\\Conexión Red Existente (Camino del Guincho)\2.3\30\0.8\0.1\1\\\\\\|
+~M|L1.5\REP070|5\3\|35.5|\Acera Canónigo José Fernández\\\\\\Tramo 1\1\28\\0.5\\Tramo 2\1\18\\0.5\\Miguel Suárez\1\25\\0.5\1\\\\\\|
+~M|L1.5\REP071|5\4\|9|\A justificar\9\\\\1\\\\\\|
+~M|L1.5\RAAC02|5\5\|42.6|\Acera Canónigo José Fernández\\\\\\Tramo 1\1\28\0.6\\\Tramo 2\1\18\0.6\\\Miguel Suárez\1\25\0.6\\1\\\\\\|
+~M|L1.5\RAAC01|5\6\|71|\Acera Canónigo José Fernández\\\\\\Tramo 1\1\28\\\\Tramo 2\1\18\\\\Miguel Suárez\1\25\\\1\\\\\\|
+~M|L1.5\SAV001|5\7\|5|\Marcas a reponer\1\5\\\1\\\\\\|
+~M|L1.5\SAV002|5\8\|50|\Marcas a reponer\1\50\\\1\\\\\\|
+~M|L1.5\SAER04|5\9\|10|\A reponer\10\\\\1\\\\\\|
+~M|L1.5\SSAA2110_023|5\10\|1||
+~M|L1.7\170101|7\1\|22.44|\Residuo previsto\22.4378\\\\1\\\\\\|
+~M|L1.7\170107|7\2\|36.66|\Residuo previsto\36.66432\\\\1\\\\\\|
+~M|L1.7\170302b|7\3\|9.21|\Residuo previsto\9.207\\\\1\\\\\\|
+~M|L1.7\170504|7\4\|246.99|\Residuo previsto\246.9924\\\\1\\\\\\|
+~M|L1.8.1\SS001|8\1\1\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SS002|8\1\2\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SS004|8\1\3\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SS005|8\1\4\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SS006|8\1\5\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SS008|8\1\6\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SSC05|8\1\7\|12|\\12\\\\1\\\\\\|
+~M|L1.8.1\SS016|8\1\8\|4|\\4\\\\1\\\\\\|
+~M|L1.8.1\SS024|8\1\9\|2|\\2\\\\1\\\\\\|
+~M|L1.8.2\SS012|8\2\1\|6|\\6\\\\1\\\\\\|
+~M|L1.8.2\SS015|8\2\2\|150|\\1\150\\\1\\\\\\|
+~M|L1.8.2\SS013|8\2\3\|50|\\50\\\\1\\\\\\|
+~M|L1.8.2\SS029|8\2\4\|12|\\12\\\\1\\\\\\|
+~M|L1.8.2\SS030|8\2\5\|50|\\1\50\1\\1\\\\\\|
+~M|L1.8.3\SEÑOB2110_023|8\3\1\|1|\\1\\\\1\\\\\\|
+~M|L1.8.4\SS017|8\4\1\|1|\\1\\\\1\\\\\\|
+~M|L1.8.4\SS018|8\4\2\|1|\\1\\\\1\\\\\\|
+~M|L1.8.4\SS034|8\4\3\|50|\\50\\\\1\\\\\\|
+~M|L1.8.4\SS032|8\4\4\|1.5||
+~M|L1.8.4\SS033|8\4\5\|1.5||
+~M|L1.8.4\SS040|8\4\6\|36||
+~M|L1.8.4\SS041|8\4\7\|1.5||
