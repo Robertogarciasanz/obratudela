@@ -99,9 +99,9 @@ def generar_html_partida(partidas, palabra_clave):
                     "@type": "ListItem",
                     "position": {i},
                     "item": {{
-                        "@type": "Product",
-                        "name": "{partida['res'][:100]}",
-                        "sku": "{partida['cod']}",
+                        "@type": "Service",
+                        "name": {json.dumps(partida['res'][:100], ensure_ascii=False)},
+                        "identifier": "{partida['cod']}",
                         "offers": {{
                             "@type": "Offer",
                             "price": "{partida['precio']:.2f}",
