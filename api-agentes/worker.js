@@ -572,7 +572,7 @@ function info(env) {
       {
         ruta: 'GET /api/piezas?q=TEXTO',
         precio_usd: '0',
-        descripcion: 'Gratis. Catálogo de las 113 piezas de la bici en 3D de cenital.org (licencia libre): id, nombre, conjunto y medidas.'
+        descripcion: 'Gratis. Catálogo de las 113 piezas de la bici en 3D de cenital.org (todos los derechos reservados): id, nombre, conjunto y medidas.'
       },
       {
         ruta: 'GET /api/pieza?id=ID',
@@ -613,7 +613,7 @@ function info(env) {
 
 // ---------------------------------------------------------------------------
 // Bici en 3D de cenital.org: 113 piezas con STL, plano PDF y SolidWorks.
-// Los datos salen de cenital.org/bici/datos.json (público, licencia libre);
+// Los datos salen de cenital.org/bici/datos.json (público, todos los derechos reservados);
 // la superficie de cada pieza, de bici-superficies.js.
 // ---------------------------------------------------------------------------
 
@@ -1035,7 +1035,7 @@ function llmsTxt(request, env) {
     '2. Precio de una partida (' + env.PRECIO_CONSULTA + ' USD): `GET ' + o + '/api/precio?cod=M12O013`.',
     '3. Oferta completa (' + env.PRECIO_OFERTA + ' USD): `POST ' + o + '/api/oferta` con `{"lineas":[{"cod":"M05RN060","cantidad":8},{"texto":"contenedor escombros 8 m3","cantidad":2}]}` (hasta ' + MAX_LINEAS_OFERTA + ' líneas, por código o descripción). Devuelve precio, importe y total en EUR.',
     '',
-    '## Modelos 3D: bicicleta de carretera de cenital.org (113 piezas, licencia libre)',
+    '## Modelos 3D: bicicleta de carretera de cenital.org (113 piezas, todos los derechos reservados)',
     '',
     '1. Catálogo (gratis): `GET ' + o + '/api/piezas?q=buje` → id, nombre, conjunto y medidas de cada pieza.',
     '2. Ficha de una pieza (' + env.PRECIO_PIEZA + ' USD): `GET ' + o + '/api/pieza?id=Buje_cuerpo_1` → medidas, volumen, superficie, peso en acero, aluminio, titanio, carbono y PLA, si cabe en una impresora de 256 mm, y enlaces a STL, plano PDF y SolidWorks.',
@@ -1442,7 +1442,7 @@ function herramientasMcp(env) {
     {
       name: 'buscar_piezas_3d',
       title: 'Catálogo de piezas 3D de la bicicleta (gratis)',
-      description: 'Catálogo de las 113 piezas de la bicicleta de carretera en 3D de cenital.org (SolidWorks, licencia libre): ' +
+      description: 'Catálogo de las 113 piezas de la bicicleta de carretera en 3D de cenital.org (SolidWorks, todos los derechos reservados): ' +
         'id, nombre, conjunto y medidas. Gratis. Texto vacío = todas.',
       inputSchema: { type: 'object', properties: { texto: { type: 'string', description: 'Filtro, p. ej. buje, cuadro, tornillo' } } },
       annotations: SOLO_LECTURA

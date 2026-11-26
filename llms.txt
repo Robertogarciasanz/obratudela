@@ -60,7 +60,7 @@ Parcelas del Catastro (España, salvo Navarra y País Vasco; sin titulares):
 
 - `GET /api/parcela?rc=REFERENCIA_CATASTRAL` o `?lat=..&lon=..`: superficie oficial, perímetro, centro, contorno, municipio, dirección, clase, inmuebles y, para un inmueble, uso, metros construidos, año y cultivos (0,05 USDC). No se cobra si la parcela no existe.
 
-Modelos 3D (bicicleta de carretera de cenital.org, 113 piezas con STL, plano PDF y SolidWorks, licencia libre):
+Modelos 3D (bicicleta de carretera de cenital.org, 113 piezas con STL, plano PDF y SolidWorks, © Roberto Garcia Sanz, todos los derechos reservados):
 
 - `GET /api/piezas?q=TEXTO`: **gratis**. Catálogo de piezas con id, nombre, conjunto y medidas.
 - `GET /api/pieza?id=ID`: ficha técnica (medidas, volumen, superficie, peso en 5 materiales, si cabe en una impresora de 256 mm, enlaces a STL, PDF y SolidWorks) (0,01 USDC).
