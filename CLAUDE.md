@@ -12,8 +12,7 @@ tocar los archivos si hace falta.
 
 ## Stack
 
-- HTML/CSS/JS "vanilla", sin frameworks ni bundler. Cada página tiene su
-  propio `css/<page>.css` y, si necesita interactividad, `js/<page>.js`.
+- HTML/CSS/JS "vanilla", sin frameworks ni bundler.
 - `admin-server.js`: servidor Node con `http` puro (sin Express), solo para
   uso **local** del dueño del negocio vía `iniciar-admin.bat` — gestiona
   `anuncios.json` y sube cambios a git. No es un backend de producción.
@@ -36,13 +35,10 @@ Hay dos herramientas de presupuestos, pero **una sola fuente de verdad**:
 gestor se **genera a partir de ese JSON**, no se edita a mano:
 
 - **`data/base-precios.json`** — fuente de verdad única. Cada partida lleva
-  `cod`, `uni`, `res`, `precio`, `desc`, `grupo` (oficio, 17 categorías
-  curadas a mano para el gestor) y, cuando el código existe en el banco de
-  precios BC3 real (`data/BCEXTREM26.bc3`, no versionado, ver más abajo),
-  también `capitulo`/`subcapitulo` (jerarquía real del banco de precios,
-  24 capítulos). Versiones comprimidas `.json.gz`/`.json.br` junto al
-  original. La usan `pages/calculadora-ia.html` (vía `js/precios-loader.js`
-  + `js/search.js`) y `pages/base-precios-listado.html`.
+  `grupo` (oficio, 17 categorías curadas a mano para el gestor) y, cuando
+  el código existe en el banco de precios BC3 real (`data/BCEXTREM26.bc3`,
+  no versionado, ver más abajo), también `capitulo`/`subcapitulo`
+  (jerarquía real del banco de precios, 24 capítulos).
 - **`pages/gestor-presupuestos.html`** — herramienta principal, la que usan
   clientes reales. Lleva las mismas partidas **incrustadas dentro del propio
   HTML** como un bloque comprimido (zlib + base64, variable `DATA_B64`),
@@ -53,26 +49,15 @@ gestor se **genera a partir de ese JSON**, no se edita a mano:
   agrupando por `grupo`.
 - **`data/precios-con-desgloses.json`** (no versionado, ver `.gitignore`) —
   para las partidas compuestas (~24.200 de 61.447), el desglose real de
-  recursos (mano de obra, maquinaria, materiales) que forman su precio:
-  `{cod_partida: [{cod, res, uni, precio, cantidad, importe}, ...]}`.
+  recursos (mano de obra, maquinaria, materiales) que forman su precio.
   Generado, no consumido todavía por ninguna página — pensado para una
   futura vista de "ver desglose" en el gestor o la calculadora.
 
-Scripts relevantes (en orden de uso si hay que regenerar todo desde cero):
-`scripts/parsear_bc3.py` (parser genérico del formato FIEBDC-3/BC3, no se
-ejecuta directo) → `scripts/enriquecer-base-precios.py` (lee
-`data/BCEXTREM26.bc3` + `data/base-precios.json`, añade capítulo real y
-desglose) → `scripts/unificar-bases-precios.py` (regenera el gestor desde
-`data/base-precios.json`). El `.bc3` original (~18 MB, formato FIEBDC-3 de
-CYPE/Presto) no está en git (`*.bc3` en `.gitignore`) — si hay que volver a
-ejecutar `enriquecer-base-precios.py`, colócalo en `data/BCEXTREM26.bc3`
-antes.
+Para regenerar el gestor o la base de precios (pipeline de scripts, `.bc3`,
+`CACHE_VERSION`), usa la skill `regenerar-base-precios`.
 
 `data/base-precios.json` **no lo leas entero** con Read — usa `Grep`/`head`/
-`jq` para consultar entradas concretas, o se desperdicia el contexto. Si lo
-regeneras, actualiza también `CACHE_VERSION` en `js/precios-loader.js` y el
-parámetro `?v=` de los imports en `js/main.js` (cache-busting), o quien ya
-haya visitado la calculadora seguirá viendo la base antigua.
+`jq` para consultar entradas concretas, o se desperdicia el contexto.
 
 `anuncios.json` (compraventa de maquinaria, gestionado por `admin-server.js`)
 no existe actualmente en el repo — `js/anuncios.js` hace `fetch('anuncios.json')`
@@ -82,19 +67,9 @@ pregunta al dueño del negocio por qué se revirtió.
 
 ## API para agentes de IA (`api-agentes/`) — ACTIVA CON DINERO REAL
 
-Cloudflare Worker sin dependencias que vende consultas a la base de precios
-por céntimos con el protocolo x402 v2 (USDC). Desplegado aparte con
-`npx wrangler deploy` (no con GitHub Pages) en
-`obratudela-api-agentes.excavacionesart.workers.dev`, en la **red real** Base
-desde el 25/11/2026 (el dueño lo consultó con su gestor) y con el facilitador
-de PayAI. Los cambios en `worker.js` o `wrangler.toml` afectan a cobros
-reales: pruébalos antes en local o con `RED = "eip155:84532"`.
-La dirección de cobro va en `api-agentes/.dev.vars` y en los secretos de
-Cloudflare, nunca en `wrangler.toml`. Pasos y estado en `api-agentes/LEEME.md`. Lee
-`data/base-precios-ligero.json`: si cambias `base-precios.json`, regenérala con
-`python scripts/generar-base-ligera.py`. La carpeta se publica en GitHub Pages
-como el resto del repo: nunca pongas claves en `wrangler.toml` (usa
-`wrangler secret put`).
+Los cambios en `api-agentes/` afectan a cobros reales (red Base). Antes de
+tocarla, lee `api-agentes/CLAUDE.md` (despliegue, pruebas, estado). Nunca
+pongas claves en `wrangler.toml` (usa `wrangler secret put`).
 
 ## Despliegue
 
@@ -118,8 +93,7 @@ primero a comprobar.
 ## App instalable (PWA)
 
 La web es instalable ("Instalar app" en Chrome/Edge, "Añadir a pantalla de
-inicio" en iPhone): `manifest.json` + `sw.js` en la raíz, iconos y capturas en
-`img/` (`icon-*.png`, `screenshot-*.png`). Cada página lleva en el `<head>` un bloque
+inicio" en iPhone): `manifest.json` + `sw.js` en la raíz. Cada página lleva en el `<head>` un bloque
 `<!-- App instalable (PWA) -->` con el manifest y el registro del service
 worker — si creas una página nueva, cópialo (con `../` si está dentro de
 `pages/` o `partidas/`). El service worker sirve siempre primero la red, así
