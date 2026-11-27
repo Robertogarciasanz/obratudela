@@ -480,6 +480,8 @@
     color: var(--text);
   }
   .empresa-datos strong { display: block; font-size: 13px; color: var(--orange); }
+  .empresa-datos input { width: 100%; margin-bottom: 4px; font-size: 11.5px; padding: 4px 6px; }
+  #company-logo:not([src]) { display: none; }
 
   /* TOGGLE TEXTO CORTO/LARGO */
   .text-toggle {
@@ -1006,17 +1008,18 @@
   <!-- PRESUPUESTO -->
   <div class="presupuesto">
     <div class="logo-box">
-      <img id="company-logo" src="../img/logo.jpg" alt="Logo empresa" />
+      <img id="company-logo" alt="Logo empresa" />
       <div class="logo-actions">
         <button class="mini-btn" onclick="document.getElementById('logo-file').click()">📁 Cambiar logo</button>
         <button class="mini-btn" onclick="resetLogo()">↺ Por defecto</button>
         <input type="file" id="logo-file" accept="image/*" style="display:none" onchange="uploadLogo(event)" />
       </div>
       <div class="empresa-datos">
-        <strong>Excavaciones y Servicios Arturo S.L.</strong>
-        NIF B47489612<br>
-        C/ Manzano, 2 · 47320 Tudela de Duero (Valladolid)<br>
-        Tel. 607 444 903 · excavacionesart@gmail.com
+        <input type="text" id="emp-nombre" placeholder="Nombre de tu empresa" autocomplete="off" />
+        <input type="text" id="emp-nif" placeholder="NIF" autocomplete="off" />
+        <input type="text" id="emp-direccion" placeholder="Dirección" autocomplete="off" />
+        <input type="text" id="emp-telefono" placeholder="Teléfono" autocomplete="off" />
+        <input type="text" id="emp-email" placeholder="Email" autocomplete="off" />
       </div>
     </div>
     <div class="pres-header">
@@ -1171,6 +1174,7 @@ async function init() {
     }
   });
   initLogo();
+  initEmpresa();
   initTextMode();
 }
 
@@ -1560,7 +1564,9 @@ function logoComoPNG() {
       } catch (_) { resolve(null); }
     };
     img.onerror = () => resolve(null);
-    img.src = document.getElementById('company-logo').src;
+    const logoActual = document.getElementById('company-logo').getAttribute('src');
+    if (!logoActual) return resolve(null);
+    img.src = logoActual;
   });
 }
 
@@ -1580,7 +1586,8 @@ async function exportExcel() {
   const relleno = argb => ({ type: 'pattern', pattern: 'solid', fgColor: { argb } });
 
   const wb = new ExcelJS.Workbook();
-  wb.creator = 'Excavaciones y Servicios Arturo S.L.';
+  const e = datosEmpresa();
+  wb.creator = e.nombre || 'Presupuesto';
   const ws = wb.addWorksheet('Presupuesto', {
     pageSetup: { paperSize: 9, orientation: 'portrait', fitToPage: true, fitToWidth: 1, fitToHeight: 0, margins: { left: 0.5, right: 0.5, top: 0.6, bottom: 0.6, header: 0.3, footer: 0.3 } }
   });
@@ -1588,12 +1595,12 @@ async function exportExcel() {
 
   // --- Cabecera: logo a la izquierda, datos de la empresa a la derecha ---
   const empresa = [
-    ['Excavaciones y Servicios Arturo S.L.', true],
-    ['NIF B47489612', false],
-    ['C/ Manzano, 2 · 47320 Tudela de Duero (Valladolid)', false],
-    ['Tel. 607 444 903', false],
-    ['excavacionesart@gmail.com · www.obratudela.com', false]
-  ];
+    [e.nombre, true],
+    [e.nif ? 'NIF ' + e.nif : '', false],
+    [e.direccion, false],
+    [e.telefono ? 'Tel. ' + e.telefono : '', false],
+    [e.email, false]
+  ].filter(([txt]) => txt);
   empresa.forEach(([txt, negrita], i) => {
     const r = i + 1;
     ws.mergeCells(r, 4, r, 7);
@@ -1705,7 +1712,7 @@ async function exportExcel() {
   const filaPie = filaBase + 4;
   ws.mergeCells(filaPie, 1, filaPie, 7);
   const pie = ws.getCell(filaPie, 1);
-  pie.value = 'Excavaciones y Servicios Arturo S.L. · NIF B47489612 · C/ Manzano, 2, 47320 Tudela de Duero (Valladolid) · 607 444 903 · www.obratudela.com';
+  pie.value = [e.nombre, e.nif && 'NIF ' + e.nif, e.direccion, e.telefono, e.email].filter(Boolean).join(' · ');
   pie.font = { size: 9, color: { argb: 'FF666666' } };
   pie.alignment = { horizontal: 'center' };
 
@@ -1759,7 +1766,7 @@ function exportBC3() {
 
   // ~V: Registro tipo Propiedad y Version (FIEBDC-3/2016, TIPO INFORMACIÓN=2 Presupuesto)
   lineas.push(
-    `~V|Excavaciones y Servicios Arturo S.L.|FIEBDC-3/2016\\${fechaBC3}|` +
+    `~V|${esc(datosEmpresa().nombre)}|FIEBDC-3/2016\\${fechaBC3}|` +
     `Gestor de Presupuestos ObraTudela||ANSI|${esc(titulo)}|2||||`
   );
 
@@ -1842,6 +1849,8 @@ function printPres() {
     </tr>`;
   }).join('');
 
+  const e = datosEmpresa();
+  const logoSrc = document.getElementById('company-logo').getAttribute('src');
   const w = window.open('','_blank');
   if (!w) { toast('El navegador ha bloqueado la ventana de impresión. Permite las ventanas emergentes para este sitio.'); return; }
   w.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
@@ -1862,17 +1871,17 @@ function printPres() {
     @media print{@page{margin:15mm}}
   </style></head><body>
   <div style="display:flex;align-items:center;gap:20px;margin-bottom:16px;border-bottom:2px solid #ff6b00;padding-bottom:10px">
-    <img src="${document.getElementById('company-logo').src}" style="max-height:90px;max-width:180px;object-fit:contain" alt="logo"/>
+    ${logoSrc ? `<img src="${logoSrc}" style="max-height:90px;max-width:180px;object-fit:contain" alt="logo"/>` : ''}
     <div style="flex:1">
       <h1 style="margin:0 0 4px">${titulo}</h1>
       <div class="meta">Cliente: <strong>${cliente}</strong> &nbsp;·&nbsp; Fecha: <strong>${fecha}</strong></div>
     </div>
     <div style="text-align:right;font-size:11px;line-height:1.5;color:#333">
-      <strong style="font-size:12px">Excavaciones y Servicios Arturo S.L.</strong><br>
-      NIF: B47489612<br>
-      Calle Manzano, 2 · 47320 Tudela de Duero (Valladolid)<br>
-      Tel. 607 444 903<br>
-      excavacionesart@gmail.com
+      <strong style="font-size:12px">${escHtml(e.nombre)}</strong><br>
+      ${e.nif ? `NIF: ${escHtml(e.nif)}<br>` : ''}
+      ${e.direccion ? `${escHtml(e.direccion)}<br>` : ''}
+      ${e.telefono ? `Tel. ${escHtml(e.telefono)}<br>` : ''}
+      ${escHtml(e.email)}
     </div>
   </div>
   ${obs ? `<div class="obs">${obs}</div><br>` : ''}
@@ -1886,7 +1895,7 @@ function printPres() {
     <tr class="grand"><td>TOTAL</td><td style="text-align:right">${fmt(total)}</td></tr>
   </table></div>
   <div style="clear:both;border-top:1px solid #ccc;padding-top:8px;font-size:10px;color:#666;text-align:center">
-    Excavaciones y Servicios Arturo S.L. · NIF B47489612 · Calle Manzano, 2, 47320 Tudela de Duero (Valladolid) · 607 444 903 · www.obratudela.com
+    ${[e.nombre, e.nif && 'NIF ' + e.nif, e.direccion, e.telefono, e.email].filter(Boolean).map(escHtml).join(' · ')}
   </div>
   <script>window.onload=()=>window.print()<\/script>
   </body></html>`);
@@ -2057,8 +2066,25 @@ function uploadLogo(ev) {
   };
   reader.readAsDataURL(file);
 }
+// Datos de la empresa (campos editables; se guardan en este navegador)
+function datosEmpresa() {
+  const v = id => (document.getElementById(id).value || '').trim();
+  return { nombre: v('emp-nombre'), nif: v('emp-nif'), direccion: v('emp-direccion'), telefono: v('emp-telefono'), email: v('emp-email') };
+}
+function guardarEmpresa() {
+  try { localStorage.setItem('bcextrem_empresa', JSON.stringify(datosEmpresa())); } catch(_) {}
+}
+function initEmpresa() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('bcextrem_empresa') || '{}');
+    const campos = { 'emp-nombre': 'nombre', 'emp-nif': 'nif', 'emp-direccion': 'direccion', 'emp-telefono': 'telefono', 'emp-email': 'email' };
+    Object.entries(campos).forEach(([id, clave]) => { document.getElementById(id).value = saved[clave] || ''; });
+  } catch(_) {}
+  Object.keys({ 'emp-nombre': 1, 'emp-nif': 1, 'emp-direccion': 1, 'emp-telefono': 1, 'emp-email': 1 })
+    .forEach(id => document.getElementById(id).addEventListener('input', guardarEmpresa));
+}
 function resetLogo() {
-  document.getElementById('company-logo').src = logoDefault;
+  document.getElementById('company-logo').removeAttribute('src');
   try { localStorage.removeItem('bcextrem_logo'); } catch(_) {}
   toast('Logo restaurado');
 }
